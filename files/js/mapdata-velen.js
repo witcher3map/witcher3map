@@ -241,6 +241,8 @@ $(function()
 
 		// todo, entrance to what?
 		entranceMarkers = L.layerGroup([
+			// Novigrad
+				L.marker([80.68, -55.02], setMarker(entranceIcon)).bindLabel('Entrance').bindPopup('<h1>Entrance</h1>Entrance to cave or ruins'),
 			// NE Novigrad
 				L.marker([82.18, 32.78], setMarker(entranceIcon)).bindLabel('Entrance').bindPopup('<h1>Entrance</h1>Entrance to cave or ruins'),
 			// SE Novigrad
@@ -767,6 +769,7 @@ $(function()
 				L.marker([79.04, 65.21], setMarker(signpostIcon)).bindLabel('Martin Feuille\'s Farmstead').bindPopup('<h1>Martin Feuille\'s Farmstead</h1>Founded by Lord Martin Feuille, this vast plantation was until not so long ago the largest producer of alfalfa in the region. Sadly, when war broke out the lord fled to his winter residence in Kovir, leaving his land to be administered by an ill-suited stward who squandered his liege\'s fertile fields'),
 				L.marker([81.02, 49.09], setMarker(signpostIcon)).bindLabel('Winespring Grange').bindPopup('<h1>Winespring Grange</h1>Years ago, an eccentric count named Jacobus Ruth of the Rieslings settled here. The count could not stand the pomposity of court life but loved good wine. He thus planted a vineyard here which produces a fabulous beaujolais prized on both sides of the Pontar'),
 				L.marker([79.59, 31.03], setMarker(signpostIcon)).bindLabel('Moldavie Residence').bindPopup('<h1>Moldavie Residence</h1>Despite its ideal location and beautiful surroundings, this residence has been tossed from owner to owner like a hot potato, and for some unknown reason suffers from a bad reputation'),
+				L.marker([81.66, -31.55], setMarker(signpostIcon)).bindLabel('Cavern').bindPopup('<h1>Cavern</h1>One of those places wise men avoid at all costs, so as not to tempt fate'),
 			// E Novigrad
 				L.marker([72.92, 41.31], setMarker(signpostIcon)).bindLabel('Alness').bindPopup('<h1>Alness</h1>Until recently, this was a thoroughly unremarkable village. then the Vegelbuds began organizing their famous horse races here, granting Alness the enviable honor of hosting the region\'s most pretigious equestrian contests'),
 				L.marker([67.58, 31.03], setMarker(signpostIcon)).bindLabel('Wheat Fields').bindPopup('<h1>Wheat Fields</h1>The fertile soils of the Pontar delta guarantee the inhabitants of Novigrad full granaries and full stomaches all year long'),
@@ -778,6 +781,8 @@ $(function()
 				L.marker([49.45, 70.67], setMarker(signpostIcon)).bindLabel('Herbalist\'s Hut').bindPopup('<h1>Herbalist\'s Hut</h1>Home to a halfling herbalist who is a passionate devotee of innovative gardening methods and experimental herbal medicine'),
 				L.marker([35.51, 110.67], setMarker(signpostIcon)).bindLabel('Aeramas\' Abandoned Manor').bindPopup('<h1>Aeramas\' Abandoned Manor</h1>Peasants living nearby often complain about the overwhelming cheese stench wafting out of this residence...'),
 				L.marker([19.89, 83.06], setMarker(signpostIcon)).bindLabel('Crossroads').bindPopup('<h1>Crossroads</h1>A small crossroads in the woods'),
+				L.marker([49.85, 52.73], setMarker(signpostIcon)).bindLabel('Gustfields Farm').bindPopup('<h1>Gustfields Farm</h1>Farmstead founded years ago by an eccentric flaxen-haired painter named Cunigund de Cabbrae, who came here seeking peace, quiet and fresh country air'),
+				L.marker([76.64, 37.00], setMarker(signpostIcon)).bindLabel('Dancing Windmill').bindPopup('<h1>Dancing Windmill</h1>When the current owner\'s grandfather, the famous dancer Pablo "Sugar" Sasko, ended his career, he settled here and organised nights of dancing for the nearby peasantry. Supposedly these revelries became so fashionable that dung-booted peasants were dancing rounds with members of Novigrad\'s most elite familes and adventure-seeking urban dandies'),
 			// S Novigrad
 				L.marker([67.20, -65.48], setMarker(signpostIcon)).bindLabel('Loggers Hut').bindPopup('<h1>Loggers Hut</h1>A lone cabin deep in the Novigrad Forest - an ideal base for woodcutters'),
 				L.marker([66.92, -85.25], setMarker(signpostIcon)).bindLabel('Lighthouse').bindPopup('<h1>Lighthouse</h1>Many years ago a horrible accident took place here: a ship carrying the cousin of King Radovid IV the Bald wrecked against the rocks during a storm. The king ordered a lighthouse erected on that spot in order to warn other seafarers of its deadly danger'),

@@ -19,7 +19,7 @@ $(function()
 	});
 
 	map = L.map('map', {
-		minZoom: ((mobile) ? 2 : 3 ),
+		minZoom: 2,
 		maxZoom: 5,
 		center: [60, -5],
 		zoom: 3,
