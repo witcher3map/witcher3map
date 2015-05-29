@@ -145,6 +145,8 @@ $(function()
 				L.marker([69.15, -41.00], setMarker(blacksmithIcon)).bindLabel('Master Blacksmith*').bindPopup('<h1>Master Blacksmith</h1>You must complete "Of Swords and Dumplings" (level 24) quest in order to unlock this blacksmith. Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
 				L.marker([73.14, -37.96], setMarker(blacksmithIcon)).bindLabel('Journeyman Blacksmith').bindPopup('<h1>Journeyman Blacksmith</h1>This blacksmith is available immediately. Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
 				L.marker([75.17, -43.15], setMarker(blacksmithIcon)).bindLabel('Amateur Blacksmith').bindPopup('<h1>Amateur Blacksmith</h1>This blacksmith is available immediately. Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
+			// Oxenfurt
+				L.marker([32.00, 59.77], setMarker(blacksmithIcon)).bindLabel('Journeyman Blacksmith').bindPopup('<h1>Journeyman Blacksmith</h1>This blacksmith is available immediately. Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
 			// NW Velen
 				L.marker([-29.27, -106.47], setMarker(blacksmithIcon)).bindLabel('Amateur Blacksmith').bindPopup('<h1>Amateur Blacksmith</h1>Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
 				L.marker([-64.28, -75.87], setMarker(blacksmithIcon)).bindLabel('Amateur Blacksmith').bindPopup('<h1>Amateur Blacksmith</h1>Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
@@ -379,6 +381,7 @@ $(function()
 				L.marker([36.56, 52.47], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Innkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([38.92, 54.21], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Armorer Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([40.11, 51.68], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Shopkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
+				L.marker([32.20, 59.87], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Blacksmith Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 			// NE Velen
 				L.marker([2.58, -12.92], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Armorer Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 			// NW Velen
@@ -392,10 +395,12 @@ $(function()
 				L.marker([-62.53, -76.44], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Shopkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([-54.27, -121.56], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Shopkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([-53.86, -122.97], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Armorer Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
+				L.marker([-30.17, -71.43], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Yoana (Armorer\'s assistant) Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 			// SE Velen
 				L.marker([-36.78, -24.15], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Shopkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([-32.76, -26.61], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Blacksmith Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([-78.74, 108.44], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Quartermaster Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
+				L.marker([-57.20, 27.23], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Gwent Player</h1>This Gwent player disappears sometime after the \'Family matters\' quest. Gamble your hard earned coin playing Gwent here'),
 		]);
 
 	// Harbor
@@ -722,6 +727,7 @@ $(function()
 				L.marker([-52.96, -56.65], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells runestones and alchemy supplies'),
 				L.marker([-45.09, -138.96], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells armour and crafting supplies'),
 				L.marker([-58.36, -142.91], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells armour and crafting supplies'),
+				L.marker([-30.37, -71.63], setMarker(shopkeeperIcon)).bindLabel('Yoana').bindPopup('<h1>Yoana Armorer\'s assistant</h1>Sells armour and crafting supplies'),
 			// SW Velen
 				L.marker([-79.58, -114.12], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>This merchant appears after liberating the area. Sells runestones, alchemy supplies and food'),
 			// SE Velen
@@ -729,6 +735,7 @@ $(function()
 				L.marker([-36.88, -24.35], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells Gwent cards, and crafting supplies'),
 				L.marker([-37.79, -26.19], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells runestones, alchemy supplies and food'),
 				L.marker([-78.79, 108.24], setMarker(shopkeeperIcon)).bindLabel('Quartermaster').bindPopup('<h1>Quartermaster</h1>Sells nothing note worthy'),
+				L.marker([-57.35, 27.03], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>This merchant disappears sometime after the \'Family matters\' quest. Sells drink'),
 			
 		]);
 
