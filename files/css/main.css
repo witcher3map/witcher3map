@@ -127,20 +127,23 @@ ul.controls {
 	font-weight: bold;
 }
 div#note {
-	background: url('../img/paperfull.png') no-repeat center center;
+	background: url('../img/paperfull.png') no-repeat;
 	background-size: contain;
 	color: #000;
 	font-size: 18px;
 	text-align: center;
 	height: 85px;
-	padding-top: 42px;
-	margin-top: -5px;
+	margin-top: 15px;
+	padding-top: 18px;
+}
+div#note a {
+	color: #000;
+}
+div#note a:hover {
+	color: #000;
+	text-decoration: none;
 }
 div#sfw {
-	position: absolute;
-	bottom: 60px;
-	left: 0;
-	width: 330px;
 	font-size: 14px;
 	text-align: center;
 }
@@ -157,13 +160,18 @@ div#sfw a:hover {
 	text-decoration: underline;
 }
 div#copyright {
-	width: 330px;
-	position: absolute;
-	bottom: 10px;
-	left: 0;
 	font-size: 13px;
 	text-align: center;
 	color: #999;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+div#copyright.absolute {
+	width: 330px;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	padding-left:5px;
 }
 div#copyright > a,
 div#copyright > a:visited,

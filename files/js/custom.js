@@ -12,6 +12,9 @@ $(function()
 		$('#warn').remove();
 	}
 
+	hackySticky();
+	$(window).on('resize', function(){ hackySticky() });
+
 	$('div#sidebar').niceScroll({
 		cursorcolor  : '#5E4F32',
 		cursorborder : 'none',
@@ -233,3 +236,11 @@ $(function()
 		alert('This page makes use of the following Javascript libraries:\n\njQuery (MIT) - http://jquery.com\njQuery.NiceScroll (MIT) - http://git.io/vkLly\nLeaflet (BSD2) - http://leafletjs.com\nLeaflet.label (MIT) - http://git.io/vkfA2\nLeaflet-hash (MIT) - http://git.io/mwK1oA\nLeaflet.fullscreen (BSD2) - http://git.io/vJw5v\nLeaflet Control Search (MIT) - http://git.io/vkCPC\n\nMany thanks to the developers for their hard work');
 	});
 });
+
+function hackySticky() {
+	if ($(window).height() > $('#sidebar-wrap').outerHeight() + $('div#copyright').outerHeight() + 45) {
+		$('div#copyright').addClass('absolute');
+	} else {
+		$('div#copyright').removeClass('absolute');
+	}
+}
