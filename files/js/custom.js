@@ -8,6 +8,10 @@ $(function()
 		$('div#sfw').find('a.original').show();
 	}
 
+	if (localStorage['hideWarn']) {
+		$('#warn').remove();
+	}
+
 	$('div#sidebar').niceScroll({
 		cursorcolor  : '#5E4F32',
 		cursorborder : 'none',
@@ -197,6 +201,11 @@ $(function()
 			$('#sidebar-border').attr('style', '');
 			$('#map').attr('style', '');
 		}
+	});
+
+	$(document).on('click', 'div#warn', function(e) {
+		localStorage['hideWarn'] = true;
+		$(this).remove();
 	});
 
 	$('div#sfw').on('click', 'a.gotosfw', function(e) {

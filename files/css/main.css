@@ -242,6 +242,7 @@ div#title {
 	text-align: center;
 	line-height: 52px;
 }
+div#warn,
 div#hide-sidebar {
 	display: none;
 }
@@ -329,6 +330,29 @@ div#hide-sidebar {
 	}
 	.leaflet-label {
 		display: none !important;
+	}
+}
+@media all and (max-width: 768px) and (orientation:portrait) {
+	div#warn {
+		display: block;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 200px;
+		height: 46px;
+		z-index: 1000;
+		background: url('../img/paper.png') no-repeat;
+		font-family: 'PFDinTextCondPro', Arial, sans-serif;
+		color: #000;
+		font-size: 16px;
+		overflow: hidden;
+		text-align: center;
+		padding-top:8px;
+		box-shadow: 0 1px 7px rgba(0, 0, 0, .65);
+		cursor: pointer;
 	}
 }
 i.alchemy { background-image:url('../img/icons/alchemy.png'); }
