@@ -134,7 +134,8 @@ div#note {
 	text-align: center;
 	height: 85px;
 	margin-top: 15px;
-	padding-top: 18px;
+	padding-top: 8px;
+	margin-bottom: 5px;
 }
 div#note a {
 	color: #000;

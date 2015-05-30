@@ -27,7 +27,7 @@ $(function()
 
 	map = L.map('map', {
 		minZoom: 2,
-		maxZoom: 5,
+		maxZoom: 6,
 		center: [60, -5],
 		zoom: 3,
 		attributionControl: false,
