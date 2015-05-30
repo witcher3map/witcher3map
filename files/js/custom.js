@@ -169,6 +169,7 @@ $(function()
 		origHide = $('#hide-sidebar').css('left');
 		origMap = $('#map').css('left');
 
+		$('#info-wrap').css({'left' : '0px' , 'width' : '100%' });
 		$('#map').css('left', '0px');
 		map.invalidateSize();
 
@@ -190,6 +191,7 @@ $(function()
 			$('.show-sidebar').removeClass('show-sidebar');
 			$('#sidebar').attr('style', '');
 			$('#sidebar-border').attr('style', '');
+			$('#info-wrap').attr('style', '');
 			$('#map').attr('style', '');
 		});
 	});
