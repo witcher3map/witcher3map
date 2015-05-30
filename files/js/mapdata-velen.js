@@ -738,6 +738,9 @@ $(function()
 				L.marker([-37.79, -26.19], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells runestones, alchemy supplies and food'),
 				L.marker([-78.79, 108.24], setMarker(shopkeeperIcon)).bindLabel('Quartermaster').bindPopup('<h1>Quartermaster</h1>Sells nothing note worthy'),
 				L.marker([-57.35, 27.03], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>This merchant disappears sometime after the \'Family matters\' quest. Sells drink'),
+				L.marker([-76.16, 107.67], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells runestones and alchemy supplies'),
+				L.marker([-75.93, 110.28], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells armour and crafting supplies'),
+				L.marker([-75.50, 110.81], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells weapons and crafting supplies'),
 			
 		]);
 
