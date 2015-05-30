@@ -187,6 +187,18 @@ $(function()
 		});
 	});
 
+	$(window).on('resize', function() {
+		if ($('.show-sidebar').length && $(this).width() > 768) {
+			$('#map').css('left', origMap);
+			map.invalidateSize();
+			$('.show-sidebar').removeClass('show-sidebar');
+			$('#hide-sidebar').attr('style', '');
+			$('#sidebar').attr('style', '');
+			$('#sidebar-border').attr('style', '');
+			$('#map').attr('style', '');
+		}
+	});
+
 	$('div#sfw').on('click', 'a.gotosfw', function(e) {
 		e.preventDefault();
 		if (confirm('This will change \'Brothel\' to \'Love Interest\', are you sure?')) {
