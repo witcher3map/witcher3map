@@ -204,6 +204,7 @@ $(function()
 			$('#hide-sidebar').attr('style', '');
 			$('#sidebar').attr('style', '');
 			$('#sidebar-border').attr('style', '');
+			$('#info-wrap').attr('style', '');
 			$('#map').attr('style', '');
 		}
 	});
