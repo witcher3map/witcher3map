@@ -151,7 +151,43 @@ $(function()
 		}
 	});
 
-	$(document).on('click', 'a.gotosfw', function(e) {
+	var origSidebar;
+	var origBorder;
+	var origHide;
+	var origMap;
+
+	$(document).on('click', 'div#hide-sidebar:not(.show-sidebar)', function(e) {
+		origSidebar = $('#sidebar').css('left');
+		origBorder = $('#sidebar-border').css('left');
+		origHide = $('#hide-sidebar').css('left');
+		origMap = $('#map').css('left');
+
+		$('#map').css('left', '0px');
+		map.invalidateSize();
+
+		var base = $('#sidebar').outerWidth();
+		$('#sidebar').animate({left : '-' + base + 'px'}, 200);
+		$('#sidebar-border').animate({left : '-' + (base + 15) + 'px'}, 200);
+		$('#hide-sidebar').animate({left : '0px'}, 200, function() {
+			$('#hide-sidebar').addClass('show-sidebar');
+		});
+	});
+
+	$(document).on('click', 'div#hide-sidebar.show-sidebar', function(e) {
+		$('#sidebar').animate({left : origSidebar}, 200);
+		$(this).animate({left : origHide}, 200);
+		$('#sidebar-border').animate({left : origBorder}, 200, function()
+		{
+			$('#map').css('left', origMap);
+			map.invalidateSize();
+			$('.show-sidebar').removeClass('show-sidebar');
+			$('#sidebar').attr('style', '');
+			$('#sidebar-border').attr('style', '');
+			$('#map').attr('style', '');
+		});
+	});
+
+	$('div#sfw').on('click', 'a.gotosfw', function(e) {
 		e.preventDefault();
 		if (confirm('This will change \'Brothel\' to \'Love Interest\', are you sure?')) {
 			localStorage['sfw'] = true;

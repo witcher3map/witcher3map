@@ -242,14 +242,33 @@ div#title {
 	text-align: center;
 	line-height: 52px;
 }
+div#hide-sidebar {
+	display: none;
+}
 @media all and (max-width: 768px) {
 	div#logo {
 		width: 140px;
 		height: 72px;
 		background: url('../img/logo-small.png') no-repeat;
+		margin-left: 5px;
 	}
 	div#sidebar {
 		width: 150px;
+	}
+	div#hide-sidebar {
+		display: block;
+		position: absolute;
+		left: 180px;
+		top: 0px;
+		background: rgba(0, 0, 0, .7) url(../img/sidebarhide.png) no-repeat 0px 3px;
+		border-bottom-right-radius: 8px;
+		width: 28px;
+		height: 32px;
+		cursor: pointer;
+	}
+	div#hide-sidebar.show-sidebar {
+		left: 0px;
+		background-position: -22px 3px;
 	}
 	div#sidebar-border {
 		left: 175px;
