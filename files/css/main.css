@@ -19,6 +19,14 @@
 	font-weight: normal;
 	font-style: italic
 }
+* {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 body {
 	padding: 0;
 	margin: 0;
@@ -45,12 +53,6 @@ div#sidebar {
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
 	color: #fff;
 	overflow: hidden;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
 }
 div#sidebar-border {
 	width: 15px;
@@ -202,12 +204,6 @@ div#info {
 	padding-bottom: 10px;
 	font-size: 18px;
 	line-height: 21px;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
 	cursor: default;
 }
 div#info-fade-intro {

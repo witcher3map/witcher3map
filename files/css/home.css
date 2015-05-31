@@ -89,7 +89,7 @@ ul#nav li {
 	display: block;
 }
 #nav li a:hover {
-	color: #040404;
+	color: #020202;
 }
 #nav li.enabled:hover {
 	background-position: top;

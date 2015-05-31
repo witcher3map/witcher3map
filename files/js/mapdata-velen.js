@@ -1,5 +1,11 @@
 $(function()
 {
+	map_path   = 'velen';
+	map_sWest  = L.latLng(-85.05, -180);
+	map_nEast  = L.latLng(85.05, 135);
+	map_center = [60, -5];
+	map_mZoom  = 6;
+
 	// Abandoned Site
 		var abandonedIcon = L.icon({
 			iconUrl  : '/files/img/icons/abandoned.png',

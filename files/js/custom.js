@@ -27,8 +27,8 @@ $(function()
 
 	map = L.map('map', {
 		minZoom: 2,
-		maxZoom: 6,
-		center: [60, -5],
+		maxZoom: map_mZoom,
+		center: map_center,
 		zoom: 3,
 		attributionControl: false,
 		zoomControl: false,
@@ -38,7 +38,7 @@ $(function()
 	new L.Control.Zoom({ position: 'topright' }).addTo(map);
 	new L.Control.Fullscreen({ position: 'topright' }).addTo(map);
 	var hash = new L.Hash(map);
-	var bounds = new L.LatLngBounds(map.unproject([0, 8192], 5), map.unproject([7168, 0], 5));
+	var bounds = new L.LatLngBounds(map_sWest, map_nEast);
 	map.setMaxBounds(bounds);
 
 	if (!mobile) {
@@ -85,7 +85,7 @@ $(function()
 		});
 	}
 
-	L.tileLayer('/files/maps/novigrad/{z}/{x}/{y}.png', {
+	L.tileLayer('/files/maps/' + map_path + '/{z}/{x}/{y}.png', {
 		tms: true,
 		bounds: bounds,
 		noWrap: true
@@ -98,9 +98,9 @@ $(function()
 
 	map.on('click', function(e) {
 // for dev
-//		prompt('', '[' + e.latlng.lat.toFixed(2) + ', ' + e.latlng.lng.toFixed(2) + ']');
+//		prompt('', '[' + e.latlng.lat.toFixed(3) + ', ' + e.latlng.lng.toFixed(3) + ']');
 		console.log('Clicked at:');
-		console.log('[' + e.latlng.lat.toFixed(2) + ', ' + e.latlng.lng.toFixed(2) + ']');
+		console.log('[' + e.latlng.lat.toFixed(3) + ', ' + e.latlng.lng.toFixed(3) + ']');
 	});
 
 	map.on('popupopen', function(e) {
@@ -113,7 +113,7 @@ $(function()
 		$('#info').getNiceScroll(0).doScrollTop(0,0);
 		$('#info-wrap').fadeIn('fast');
 		console.log('Popup at:');
-		console.log('[' + e.popup._latlng.lat.toFixed(2) + ', ' + e.popup._latlng.lng.toFixed(2) + ']');
+		console.log('[' + e.popup._latlng.lat.toFixed(3) + ', ' + e.popup._latlng.lng.toFixed(3) + ']');
 	});
 
 	map.on('popupclose', function(e) {
