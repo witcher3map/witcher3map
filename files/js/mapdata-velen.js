@@ -57,8 +57,9 @@ $(function()
 			// NE Velen
 				L.marker([2.18, -12.92], setMarker(armourerIcon)).bindLabel('Amateur Armorer').bindPopup('<h1>Amateur Armorer</h1>Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
 			// NW Velen
-				L.marker([-30.95, -71.02], setMarker(armourerIcon)).bindLabel('Journeyman Armorer').bindPopup('<h1>Journeyman Armorer</h1>Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
+				L.marker([-31.25, -71.02], setMarker(armourerIcon)).bindLabel('Journeyman Armorer').bindPopup('<h1>Journeyman Armorer</h1>Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
 				L.marker([-54.06, -122.97], setMarker(armourerIcon)).bindLabel('Amateur Armorer').bindPopup('<h1>Amateur Armorer</h1>Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
+				L.marker([-30.87, -71.63], setMarker(armourerIcon)).bindLabel('Master Armorer*').bindPopup('<h1>Master Armorer* (Yoana)</h1>Is available after the \'Master Armorers\' (lvl 26) quest. Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
 		]);
 
 	// Armourer's Table
@@ -275,6 +276,9 @@ $(function()
 				L.marker([-43.71, 39.20], setMarker(entranceIcon)).bindLabel('Entrance').bindPopup('<h1>Entrance</h1>Entrance to cave or ruins'),
 				L.marker([-35.32, 69.74], setMarker(entranceIcon)).bindLabel('Entrance').bindPopup('<h1>Entrance</h1>Entrance to cave or ruins'),
 				L.marker([-38.00, 70.36], setMarker(entranceIcon)).bindLabel('Entrance').bindPopup('<h1>Entrance</h1>Entrance to cave or ruins'),
+				L.marker([-79.628, 2.351], setMarker(entranceIcon)).bindLabel('Entrance').bindPopup('<h1>Entrance</h1>Entrance to cave or ruins'),
+				L.marker([-52.670, 31.069], setMarker(entranceIcon)).bindLabel('Entrance').bindPopup('<h1>Entrance</h1>Entrance to cave or ruins'),
+				L.marker([-75.834, 50.361], setMarker(entranceIcon)).bindLabel('Entrance').bindPopup('<h1>Entrance</h1>Entrance to cave or ruins'),
 		]);
 
 	// Grindstone
@@ -361,6 +365,7 @@ $(function()
 
 		gwentMarkers = L.layerGroup([
 			// Novigrad
+				L.marker([74.618, -35.132], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Crippled Kate Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([71.00, -41.90], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Crippled Kate Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([78.25, -33.79], setMarker(gwentIcon)).bindLabel('Gwent Tournament').bindPopup('<h1>Gwent Tournament (Quest)</h1>Find the scribe and sign up for the high-stakes Gwent tournament'),
 				L.marker([72.58, -26.21], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Shopkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
@@ -396,14 +401,14 @@ $(function()
 				L.marker([-27.64, -102.54], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Shopkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([-28.87, -106.47], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Blacksmith Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([-34.76, -72.57], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Shopkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
-				L.marker([-31.70, -71.52], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Quartermaster Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
-				L.marker([-30.85, -70.82], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Shopkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
+				L.marker([-31.90, -71.52], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Quartermaster Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
+				L.marker([-31.15, -70.82], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Shopkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([-28.39, -75.45], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Bloody Baron Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([-52.60, -81.19], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Shopkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([-62.53, -76.44], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Shopkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([-54.27, -121.56], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Shopkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([-53.86, -122.97], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Armorer Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
-				L.marker([-30.17, -71.43], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Yoana (Armorer\'s assistant) Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
+				L.marker([-30.67, -71.43], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Yoana (Armorer\'s assistant) Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 			// SE Velen
 				L.marker([-36.78, -24.15], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Shopkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([-32.76, -26.61], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Blacksmith Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
@@ -421,7 +426,7 @@ $(function()
 			// Novigrad
 				[70.64, -58.93],
 			// Oxenfurt
-				[37.75, 47.99],
+				[38.17, 46.85],
 			// NE Velen
 				[-6.53, 62.93],
 				[-19.10, 9.49],
@@ -681,6 +686,25 @@ $(function()
 				L.marker([70.12, -28.76], setMarker(poiIcon)).bindLabel('Dandelion &amp; Zoltan\'s Residence').bindPopup('<h1>Dandelion &amp; Zoltan\'s Residence</h1>todo'),
 			// NW Velen
 				L.marker([-47.34, -111.81], setMarker(poiIcon)).bindLabel('Keira Metz\'s Residence').bindPopup('<h1>Keira Metz\'s Residence</h1>todo'),
+			// Velen
+				L.marker([61.90, -91.82], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Feline Crossbow</h1>'),
+				L.marker([57.651, -30.169], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Superior Feline Silver Sword</h1>'),
+				L.marker([75.70, -19.50], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Enhanced Feline Silver Sword</h1>You need to climp up a Leader'),
+				L.marker([60.60, 89.80], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Feline Silver Sword</h1>Inside the Est Tayiar Ruine, behind a Wall that you can break'),
+				L.marker([36.50, 114,50], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Enhanced Feline Armor</h1>on top of the Aeramas’ Abandoned Manor'),
+				L.marker([33, -114.5], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Griffin Silver Sword Diagram</h1>'),
+				L.marker([29.373, -73], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Enhanced Griffin Boots</h1>'),
+				L.marker([41, -1], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Griffin Steel Sword</h1>Near the Monster Nest'),
+				L.marker([36.5, 35], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Enhance Griffin Armor </h1> Near the Troll at White Eagle Fort'),
+				L.marker([22, 9.5], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Enhance Feline Gauntlets </h1>Inside a Shaft from the Codgers Quarry'),
+				L.marker([-28, -61], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Enhanced Griffin Trousers </h1>Inside the Burned Ruin'),
+				L.marker([-57, -156], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Enhanced Griffin Steel Sword </h1>'),
+				L.marker([-61, -8.5], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Superior Feline Armor</h1>'),
+				L.marker([-54.5, 12], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Griffin Armor Set</h1>Inside the Dragonslayers Grotto'),
+				L.marker([-64, 38], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Superior Ursine Steel Sword</h1>'),
+				L.marker([-81.1, 30.8], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Mastercrafted Ursine Armor</h1>'),
+				L.marker([-75.6, -28], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Mastercrafted Ursine Silver Sword </h1>'),
+				L.marker([-81.2, -70], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Enhanced Griffin Gauntlets</h1>'),
 		]);
 
 	// Shopkeeper
@@ -692,6 +716,7 @@ $(function()
 		shopkeeperMarkers = L.layerGroup([
 			// Novigrad
 				L.marker([74.22, -35.41], setMarker(shopkeeperIcon)).bindLabel('Book Merchant').bindPopup('<h1>Book Merchant</h1>Buys and sells books'),
+				L.marker([74.578, -35.332], setMarker(shopkeeperIcon)).bindLabel('Book Merchant').bindPopup('<h1>Book Merchant</h1>Buys and sells books'),
 				L.marker([72.82, -39.99], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells alchemy supplies, food, and drink'),
 				L.marker([73.71, -37.96], setMarker(shopkeeperIcon)).bindLabel('Banker').bindPopup('<h1>Banker</h1>You can exchange your unusable currency or borrow gold here'),
 				L.marker([69.90, -20.47], setMarker(shopkeeperIcon)).bindLabel('Clothing Merchant').bindPopup('<h1>Clothing Merchant</h1>Sells clothes and masks'),
@@ -713,6 +738,7 @@ $(function()
 			// S Novigrad
 // appears on my map but nobody there?
 //				L.marker([65.95, -21.09], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper'),
+				L.marker([58.677, -55.415], setMarker(shopkeeperIcon)).bindLabel('Wandering Merchant').bindPopup('<h1>Wandering Merchant</h1>Traveling from Lucian\'s Windmill to the Portside Gate. Sells runestones, alchemy supplies and food'),
 				L.marker([63.27, -63.46], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells crafting supplies, food, and weapons'),
 				L.marker([48.72, -51.94], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells armour and crafting supplies'),
 				L.marker([57.98, -12.00], setMarker(shopkeeperIcon)).bindLabel('Wandering Merchant').bindPopup('<h1>Shopkeeper</h1>Sells runestones, alchemy supplies and food'),
@@ -728,14 +754,13 @@ $(function()
 				L.marker([-34.96, -72.77], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells Gwent cards and drink'),
 				L.marker([-54.42, -121.65], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells Gwent cards and jewellery (crafting supplies)'),
 				L.marker([-47.04, -112.50], setMarker(shopkeeperIcon)).bindLabel('Keira Metz').bindPopup('<h1>Keira Metz</h1>Sells alchemy supplies, recipes and \'Potion of Clearance\' (1000 gold)'),
-				L.marker([-31.83, -71.77], setMarker(shopkeeperIcon)).bindLabel('Quartermaster').bindPopup('<h1>Quartermaster</h1>Sells Gwent cards, food, and drink'),
+				L.marker([-32.03, -71.77], setMarker(shopkeeperIcon)).bindLabel('Quartermaster').bindPopup('<h1>Quartermaster</h1>Sells Gwent cards, food, and drink'),
 				L.marker([-36.10, -72.51], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper Anselm').bindPopup('<h1>Shopkeeper Anselm</h1>This merchant appears here after being rescued. Sells \'Racing Horse Blinders\' (+40)'),
 				L.marker([-62.57, -76.89], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells drink and \'Rugged Saddlebags\' (+70)'),
 				L.marker([-52.70, -81.49], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells Gwent cards and drink'),
 				L.marker([-52.96, -56.65], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells runestones and alchemy supplies'),
 				L.marker([-45.09, -138.96], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells armour and crafting supplies'),
 				L.marker([-58.36, -142.91], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells armour and crafting supplies'),
-				L.marker([-30.37, -71.63], setMarker(shopkeeperIcon)).bindLabel('Yoana').bindPopup('<h1>Yoana Armorer\'s assistant</h1>Sells armour and crafting supplies'),
 			// SW Velen
 				L.marker([-79.58, -114.12], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>This merchant appears after liberating the area. Sells runestones, alchemy supplies and food'),
 			// SE Velen
