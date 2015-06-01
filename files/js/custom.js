@@ -240,6 +240,17 @@ $(function()
 	});
 });
 
+function go(cords) {
+	map.panTo(cords);
+	map.setZoom(map_mZoom);
+	new L.marker(cords, {
+		icon : L.icon({
+			iconUrl  : '/files/img/searchhover.png',
+			iconSize : [22, 22]
+		})
+	}).addTo(map);
+}
+
 function hackySticky() {
 	if ($(window).height() > $('#sidebar-wrap').outerHeight() + $('div#copyright').outerHeight() + 45) {
 		$('div#copyright').addClass('absolute');

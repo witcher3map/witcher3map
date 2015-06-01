@@ -6,7 +6,7 @@ Currently only Velen & Novigrad map is complete, more coming soon.
 
 Map Files
 --------------------------------------
-The map files are excluded from this repositry due to their size (170MB) To download them [click here](https://mega.co.nz/#!2Bk13TIR!oiLGmlQ-SKoVkkrUGi2tg01v2BGzEZ8DeYM0pKvDITE), extract, and place the resulting 'maps' folder in the 'file' directory.
+The map files are excluded from this repository due to their size (170MB) To download them [click here](https://mega.co.nz/#!2Bk13TIR!oiLGmlQ-SKoVkkrUGi2tg01v2BGzEZ8DeYM0pKvDITE), extract, and place the resulting 'maps' folder in the 'file' directory.
 
 Credits & Licence
 --------------------------------------
