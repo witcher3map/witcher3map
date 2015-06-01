@@ -250,11 +250,11 @@ $(function()
 	// Point of Interest
 		var poiIcon = L.icon({
 			iconUrl  : '/files/img/icons/poi.png',
-			iconSize : [10, 30]
+			iconSize : [28, 28]
 		});
-			L.marker([-49.611, 7.998], setMarker(poiIcon)).bindLabel('Lootable Battlefield').bindPopup('<h1>Lootable Battlefield</h1>This battlefield can be looted for easy early game coin'),
 
 		poiMarkers = L.layerGroup([
+			L.marker([-49.611, 7.998], setMarker(poiIcon)).bindLabel('Lootable Battlefield').bindPopup('<h1>Lootable Battlefield</h1>This battlefield can be looted for easy early game coin'),
 		]);
 
 	// Shopkeeper

@@ -676,7 +676,7 @@ $(function()
 	// Point of Interest
 		var poiIcon = L.icon({
 			iconUrl  : '/files/img/icons/poi.png',
-			iconSize : [10, 30]
+			iconSize : [28, 28]
 		});
 
 
