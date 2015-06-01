@@ -58,6 +58,8 @@ $(function()
 			[-73.800, -43.418],
 			[-53.678, -157.720],
 			[-34.307, -25.537],
+			[-72.462, -16.699],
+			[-66.000, -19.688],
 		], banditcampIcon, 'Bandit Camp', '<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here'));
 
 	// Barber
@@ -122,6 +124,7 @@ $(function()
 			[-48.517, -167.695],
 			[-29.645, -96.943],
 			[-27.333, -134.077],
+			[-74.776, 0.352],
 		], guardedIcon, 'Guarded Treasure', '<h1>Guarded Treasure</h1>A particularly powerful monster guards a valuable cache here');
 
 		guardedMarkers = L.layerGroup($.merge(guardedGeneric, [
@@ -135,7 +138,7 @@ $(function()
 		});
 
 		gwentMarkers = L.layerGroup([
-//				L.marker([0, 0], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
+				L.marker([-65.946, -81.387], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Gwent Player</h1>Gamble your hard earned coin playing Gwent here. Disappears after progressing through story quests'),
 		]);
 
 	// Harbor
@@ -153,7 +156,8 @@ $(function()
 		});
 
 		herbalistMarkers = L.layerGroup([
-			L.marker([-66.267, -132.627], setMarker(herbalistIcon)).bindLabel('Herbalist').bindPopup('<h1>Herbalist</h1>This merchant appears after liberating the area. Here you can buy alchemy ingredients'),
+			L.marker([-66.267, -132.627], setMarker(herbalistIcon)).bindLabel('Herbalist').bindPopup('<h1>Herbalist</h1>Here you can buy alchemy ingredients'),
+			L.marker([-77.542, -49.043], setMarker(herbalistIcon)).bindLabel('Herbalist').bindPopup('<h1>Herbalist</h1>This merchant appears after liberating the area. Here you can buy alchemy ingredients'),
 		]);
 
 
@@ -181,7 +185,7 @@ $(function()
 		});
 
 		innkeepMarkers = L.layerGroup([
-			L.marker([-65.731, -80.068], setMarker(innkeepIcon)).bindLabel('Inn at the Crossroads').bindPopup('<h1>Innkeep</h1>Sells Gwent cards, and drink'),
+			L.marker([-65.731, -80.068], setMarker(innkeepIcon)).bindLabel('White Orchard Inn').bindPopup('<h1>Innkeep</h1>Sells Gwent cards, and drink. Disappears after progressing through story quests'),
 		]);
 
 	// Monster Den
@@ -201,6 +205,7 @@ $(function()
 		var monsternestGeneric = genericMarkers([
 			[-14.264, -95.625],
 			[-45.027, -0.308],
+			[-64.206, 9.712],
 		], monsternestIcon, 'Monster Nest', '<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs');
 
 		monsternestMarkers = L.layerGroup($.merge(monsternestGeneric, [
@@ -233,12 +238,12 @@ $(function()
 
 		//todo get all place of power types
 		popMarkers = L.layerGroup([
-			L.marker([-81.492, -106.699], setMarker(popIcon)).bindLabel('Place of Power').bindPopup('<h1>Place of Power - todo</h1>Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'),
-			L.marker([-79.703, -52.822], setMarker(popIcon)).bindLabel('Place of Power').bindPopup('<h1>Place of Power - todo</h1>Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'),
-			L.marker([-51.536, -130.386], setMarker(popIcon)).bindLabel('Place of Power').bindPopup('<h1>Place of Power - todo</h1>Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'),
-			L.marker([-34.235, -94.043], setMarker(popIcon)).bindLabel('Place of Power').bindPopup('<h1>Place of Power - todo</h1>Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'),
-			L.marker([-13.325, -97.559], setMarker(popIcon)).bindLabel('Place of Power').bindPopup('<h1>Place of Power - todo</h1>Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'),
-			L.marker([-43.771, 0.308], setMarker(popIcon)).bindLabel('Place of Power').bindPopup('<h1>Place of Power - todo</h1>Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'),
+			L.marker([-81.492, -106.699], setMarker(popIcon)).bindLabel('Place of Power').bindPopup('<h1>Place of Power - Quen</h1>Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'),
+			L.marker([-79.703, -52.822], setMarker(popIcon)).bindLabel('Place of Power').bindPopup('<h1>Place of Power - Yrden</h1>Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'),
+			L.marker([-51.536, -130.386], setMarker(popIcon)).bindLabel('Place of Power').bindPopup('<h1>Place of Power - Axii</h1>Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'),
+			L.marker([-34.235, -94.043], setMarker(popIcon)).bindLabel('Place of Power').bindPopup('<h1>Place of Power - Igni</h1>Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'),
+			L.marker([-13.325, -97.559], setMarker(popIcon)).bindLabel('Place of Power').bindPopup('<h1>Place of Power - Aard</h1>Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'),
+			L.marker([-43.771, 0.308], setMarker(popIcon)).bindLabel('Place of Power').bindPopup('<h1>Place of Power - Quen</h1>Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'),
 				
 		]);
 
@@ -247,7 +252,7 @@ $(function()
 			iconUrl  : '/files/img/icons/poi.png',
 			iconSize : [10, 30]
 		});
-
+			L.marker([-49.611, 7.998], setMarker(poiIcon)).bindLabel('Lootable Battlefield').bindPopup('<h1>Lootable Battlefield</h1>This battlefield can be looted for easy early game coin'),
 
 		poiMarkers = L.layerGroup([
 		]);
@@ -259,8 +264,8 @@ $(function()
 		});
 
 		shopkeeperMarkers = L.layerGroup([
-				L.marker([-66.320, -75.674], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>todo'),
-				L.marker([-66.338, -155.654], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>todo'),
+				L.marker([-66.320, -75.674], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells Gwent cards, crafting supplies, and Temerian: blinders, saddle, saddlebags, armour'),
+				L.marker([-66.338, -155.654], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells runestones, alchemy supplies and food'),
 		]);
 
 	// Sign Post
