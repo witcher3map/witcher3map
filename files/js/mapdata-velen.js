@@ -12,22 +12,26 @@ $(function()
 			iconSize : [30, 30]
 		});
 
-		abandonedMarkers = L.layerGroup(genericMarkers([
-			// NE Velen
-				[13.70, 46.05],
-				[-8.23, 72.16],
-				[-17.06, 8.26],
+		abandonedGeneric = genericMarkers([
 			// NW Velen
 				[-53.59, -56.34],
 				[-29.34, -136.23],
 				[-50.25, -140.63],
 				[-58.95, -142.21],
 			// SW Velen
-				[-79.70, -112.15],
 				[-78.68, -40.69],
+		], abandonedIcon, 'Abandoned Site', '<h1>Abandoned Site</h1>A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more');
+
+		abandonedMarkers = L.layerGroup($.merge(abandonedGeneric, [
+			// NE Velen
+				L.marker([-17.06, 8.26], setMarker(abandonedIcon)).bindLabel('Abandoned Site').bindPopup('<h1>Abandoned Site</h1>A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 4<span> Drowners</span>)'),
+				L.marker([13.70, 46.05], setMarker(abandonedIcon)).bindLabel('Abandoned Site').bindPopup('<h1>Abandoned Site</h1>A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 9<span> Drowners</span>)'),
+				L.marker([-8.23, 72.16], setMarker(abandonedIcon)).bindLabel('Abandoned Site').bindPopup('<h1>Abandoned Site</h1>A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 9<span> Ghouls</span> &amp; lvl 11<span> Alghoul</span>)'),
+			// SW Velen
+				L.marker([-79.70, -112.15], setMarker(abandonedIcon)).bindLabel('Abandoned Site').bindPopup('<h1>Abandoned Site</h1>A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 9<span> Bandits</span>)'),
 			// SE Velen
-				[-36.95, 3.08],
-		], abandonedIcon, 'Abandoned Site', '<h1>Abandoned Site</h1>A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more'));
+				L.marker([-36.95, 3.08], setMarker(abandonedIcon)).bindLabel('Abandoned Site').bindPopup('<h1>Abandoned Site</h1>A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 5<span> Bandits</span>)'),
+		]));
 
 	// Alchemy Supplies
 		var alchemyIcon = L.icon({
@@ -93,17 +97,9 @@ $(function()
 			iconSize : [29, 30]
 		});
 
-		banditcampMarkers = L.layerGroup(genericMarkers([
-			// E Novigrad
-				[74.40, 49.06],
-			// SE Novigrad
-				[13.37, 84.36],
-			// S Novigrad
-				[55.43, -63.00],
+		banditcampGeneric = genericMarkers([
 			// NE Velen
-				[0.53, 33.05],
 				[11.61, -54.42],
-				[8.67, 1.76],
 			// NW Velen
 				[-23.92, -95.51],
 				[-42.81, -128.14],
@@ -115,15 +111,28 @@ $(function()
 			// SW Velen
 				[-64.55, -146.69],
 				[-65.04, -142.34],
-				[-69.81, -142.91],
 			// SE Velen
 				[-74.40, -6.81],
-				[-77.24, 36.69],
-				[-53.33, 54.49],
-				[-38.96, -4.75],
 				[-29.69, -17.23],
-				[-26.90, 24.43],
-		], banditcampIcon, 'Bandit Camp', '<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here'));
+		], banditcampIcon, 'Bandit Camp', '<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here');
+
+		banditcampMarkers = L.layerGroup($.merge(banditcampGeneric, [
+			// S Novigrad
+				L.marker([55.43, -63.00], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here (lvl 9)'),
+			// E Novigrad
+				L.marker([74.40, 49.06], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here (lvl 7)'),
+			// NE Velen
+				L.marker([0.53, 33.05], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here (lvl 9)'),
+				L.marker([8.67, 1.76], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here (lvl 9)'),
+			// SE Velen
+				L.marker([-77.24, 36.69], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here (lvl 10)'),
+				L.marker([-53.33, 54.49], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here (lvl 9)'),
+				L.marker([-26.90, 24.43], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here (lvl 9)'),
+				L.marker([-38.96, -4.75], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here (lvl 7-9)'),
+				L.marker([13.37, 84.36], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here (lvl 9)'),
+			// SW Velen
+				L.marker([-69.81, -142.91], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here. Bugged area, never shows as cleared'),
+		]));
 
 	// Barber
 		var barberIcon = L.icon({
@@ -317,44 +326,48 @@ $(function()
 		});
 
 		var guardedGeneric = genericMarkers([
-			// NE Novigrad
-				[82.61, -33.49],
-				[80.52, -4.53],
-				[76.43, -2.07],
-			// SE Novigrad
-				[45.62, 99.05],
-			// S Novigrad
-				[51.97, -12.00],
-				[62.00, -97.38],
 			// NE Velen
-				[-7.89, 55.37],
-				[-8.93, 12.30],
 				[22.51, -56.78],
 			// NW Velen
-				[25.96, -99.67],
-				[-43.55, -40.08],
 				[-28.07, -119.66],
 				[-38.62, -123.40],
-				[-62.39, -118.17],
-				[-45.61, -152.31],
 				[-38.27, -149.24],
 			// SW Velen
-				[-77.77, -102.04],
-				[-81.30, -69.74],
 				[-82.20, -69.57],
 				[-78.56, -48.91],
 			// SE Velen
-				[-81.11, 31.33],
-				[-80.19, 28.87],
-				[-75.81, 30.63],
 				[-73.42, 31.77],
-				[-70.26, 102.44],
-				[-63.27, 48.87],
 				[-51.78, -6.42],
 		], guardedIcon, 'Guarded Treasure', '<h1>Guarded Treasure</h1>A particularly powerful monster guards a valuable cache here');
 
 		guardedMarkers = L.layerGroup($.merge(guardedGeneric, [
-			// No custom markers needed
+			// NE Novigrad
+				L.marker([76.43, -2.07], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 8<span> Water Hag</span>) guards a valuable cache here'),
+				L.marker([80.52, -4.53], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 15<span> Bilge Hag</span>) guards a valuable cache here'),
+				L.marker([82.61, -33.49], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 23<span> Armored Arachas</span>) guards a valuable cache here'),
+			// SE Novigrad
+				L.marker([45.62, 99.05], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 20<span> Leshen</span>) guards a valuable cache here'),
+			// S Novigrad
+				L.marker([51.97, -12.00], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 18<span> Wyvern</span>) guards a valuable cache here'),
+				L.marker([62.00, -97.38], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 15<span> Noonwraith</span>) guards a valuable cache here'),
+			// NE Velen
+				L.marker([-8.93, 12.30], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 13<span> Alghoul</span>) guards a valuable cache here'),
+				L.marker([-7.89, 55.37], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 9<span> Drowners</span>) guards a valuable cache here'),
+			// NW Velen
+				L.marker([4.193, -82.463], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>Available after the \'Master Armorers\' (lvl 26) quest. A particularly powerful monster guards a valuable cache here'),
+				L.marker([-62.39, -118.17], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 7<span> Wraiths</span>) guards a valuable cache here'),
+				L.marker([-43.55, -40.08], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 14<span> Forktail</span>) guards a valuable cache here'),
+				L.marker([-45.61, -152.31], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 4<span> Drowners</span>) guards a valuable cache here'),
+				L.marker([25.96, -99.67], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 14<span> Basilisk</span>) guards a valuable cache here'),
+			// SW Velen
+				L.marker([-77.77, -102.04], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 8<span> Water Hag</span>) guards a valuable cache here'),
+				L.marker([-81.30, -69.74], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 18<span> Noonwraith/Nightwraith</span>) guards a valuable cache here'),
+			// SE Velen
+				L.marker([-70.260, 102.440], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 24<span> Earth Elemental</span>) guards a valuable cache here'),
+				L.marker([-75.81, 30.63], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 20<span> Bilge Hag</span>) guards a valuable cache here'),
+				L.marker([-80.190, 28.870], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 14<span> Wyvern</span>) guards a valuable cache here'),
+				L.marker([-81.11, 31.33], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 19<span> Cyclops</span>) guards a valuable cache here'),
+				L.marker([-63.27, 48.87], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 8<span> Water Hag</span>) guards a valuable cache here'),
 		]));
 
 	// Gwent Player
@@ -476,37 +489,39 @@ $(function()
 		});
 
 		var hiddenGeneric = genericMarkers([
-			// S Novigrad
-				[49.38, -68.91],
-				[34.55, -43.68],
-			// NE Velen
-				[3.03, 64.56],
-				[45.49, 26.76],
-				[-3.51, 21.40],
-				[-16.89, 10.06],
-				[47.72, 38.50],
-				[52.35, 16.17],
 			// NW Velen
 				[33.06, -115.25],
 				[-27.92, -128.06],
 				[-31.65, -143.17],
 				[-42.33, -140.33],
-				[-50.76, -155.04],
 			// SW Velen
-				[-70.50, -150.64],
-				[-72.78, -131.40],
 				[-71.34, -107.75],
-				[-71.09, -109.96],
-				[-76.90, -80.68],
 			// SE Velen
-				[-72.84, 77.08],
-				[-37.16, 97.29],
-				[-20.96, 48.78],
 				[-29.99, 28.39],
 		], hiddenIcon, 'Hidden Treasure', '<h1>Hidden Treasure</h1>A hidden cache of valuable goods');
 
 		hiddenMarkers = L.layerGroup($.merge(hiddenGeneric, [
-			// No custom markers needed
+			// S Novigrad
+				L.marker([34.55, -43.68], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 6<span> Nekkers</span>)'),
+				L.marker([49.38, -68.91], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 15<span> Mucknixers</span>)'),
+			// NE Velen
+				L.marker([-16.89, 10.06], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 10<span> Drowners</span>)'),
+				L.marker([3.03, 64.56], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 4<span> Drowners</span>)'),
+				L.marker([45.49, 26.76], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 4<span> Drowners</span>)'),
+				L.marker([-3.51, 21.40], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 4<span> Foglet</span>)'),
+				L.marker([52.35, 16.17], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 18<span> Bilge Hag</span>)'),
+				L.marker([47.72, 38.50], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 26+<span> Basilisk</span>)'),
+			// NW Velen
+				L.marker([-50.76, -155.04], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 4<span> Drowners</span>)'),
+			// SE Velen
+				L.marker([-72.84, 77.08], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 22<span> Fiend</span>)'),
+				L.marker([-37.16, 97.29], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 4<span> Foglets</span>)'),
+				L.marker([-20.96, 48.78], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 9<span> Bandits</span>)'),
+			// SW Velen
+				L.marker([-70.50, -150.64], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 25+<span> Grave Hag</span>)'),
+				L.marker([-72.78, -131.40], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 10<span> Bandits</span>)'),
+				L.marker([-71.09, -109.96], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 13<span> Wraiths</span>)'),
+				L.marker([-76.90, -80.68], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 4<span> Drowners</span>)'),
 		]));
 
 	// Innkeep
@@ -538,10 +553,6 @@ $(function()
 		});
 
 		var monsterdenGeneric = genericMarkers([
-			// NE Novigrad
-				[82.19, -32.08],
-			// S Novigrad
-				[46.99, -40.08],
 			// NE Velen
 				[20.47, -13.76],
 			// SE Velen
@@ -549,7 +560,10 @@ $(function()
 		], monsterdenIcon, 'Monster Den', '<h1>Monster Den</h1>Monster-infested location. A constant worry for those living nearby');
 
 		monsterdenMarkers = L.layerGroup($.merge(monsterdenGeneric, [
-			// No custom markers needed
+			// NE Novigrad
+				L.marker([82.19, -32.08], setMarker(monsterdenIcon)).bindLabel('Monster Den').bindPopup('<h1>Monster Den</h1>Monster-infested location. A constant worry for those living nearby (lvl 19<span> Golem</span>)'),
+			// S Novigrad
+				L.marker([46.99, -40.08], setMarker(monsterdenIcon)).bindLabel('Monster Den').bindPopup('<h1>Monster Den</h1>Monster-infested location. A constant worry for those living nearby (lvl 16<span> Rabid Rock Troll</span> &amp; lvl 18<span> Nekkers</span>)'),
 		]));
 
 	// Monster Nest
@@ -559,18 +573,9 @@ $(function()
 		});
 
 		var monsternestGeneric = genericMarkers([
-			// S Novigrad
-				[50.98, -20.99],
-				[50.79, -42.19],
-				[49.84, -45.97],
-				[34.31, -60.51],
 			// NE Velen
-				[7.36, 48.78],
-				[8.01, 47.37],
-				[41.64, 13.97],
 				[33.87, 10.20],
 				[41.44, -0.79],
-				[-2.94, 27.38],
 			// NW Velen
 				[-23.97, -55.95],
 				[-36.56, -87.14],
@@ -578,19 +583,30 @@ $(function()
 			// SW Velen
 				[-75.14, -122.29],
 				[-74.73, -121.49],
-				[-75.68, -27.11],
 			// SE Velen
 				[-68.69, -2.20],
-				[-49.12, 42.36],
-				[-49.04, 46.93],
-				[-46.01, 52.56],
-				[-50.23, 57.57],
-				[-40.18, 80.29],
-				[-41.38, 80.38],
 		], monsternestIcon, 'Monster Nest', '<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs');
 
 		monsternestMarkers = L.layerGroup($.merge(monsternestGeneric, [
-			// No custom markers needed
+			// S Novigrad
+				L.marker([34.31, -60.51], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 6<span> Rotfiends</span>)'),
+				L.marker([49.84, -45.97], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 9<span> Endregas</span>)'),
+				L.marker([50.79, -42.19], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 9<span> Endregas</span>)'),
+				L.marker([50.98, -20.99], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 6<span> Rotfiends</span>)'),
+			// NE Velen
+				L.marker([7.36, 48.78], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 9<span> Ghouls</span>)'),
+				L.marker([8.01, 47.37], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 9<span> Ghouls</span>)'),
+				L.marker([-2.94, 27.38], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 9<span> Ghouls</span>)'),
+				L.marker([41.64, 13.97], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 6<span> Rotfiends</span>)'),
+			// SW Velen
+				L.marker([-75.68, -27.11], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 4&amp;9<span> Drowners</span>)'),
+			// SE Velen
+				L.marker([-50.23, 57.57], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 8<span> Nekkers</span>)'),
+				L.marker([-46.01, 52.56], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 8/9<span> Nekkers</span>)'),
+				L.marker([-49.04, 46.93], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 8/9<span> Nekkers</span>)'),
+				L.marker([-49.12, 42.36], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 8/9<span> Nekkers</span>)'),
+				L.marker([-40.18, 80.29], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 21<span> Wyvern</span>)'),
+				L.marker([-41.38, 80.38], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 21<span> Wyvern</span>)'),
 		]));
 
 	// Notice Board
@@ -635,18 +651,19 @@ $(function()
 		});
 
 		var pidGeneric = genericMarkers([
-			// SE Novigrad
-				[20.47, 100.55],
 			// NE Velen
-				[-17.64, -29.18],
 				[26.43, -11.87],
 			// NW Velen
-				[-61.23, -33.93],
 				[-33.94, -132.36],
 		], pidIcon, 'Person(s) in Distress', '<h1>Person(s) in Distress</h1>There\'s a person or a group of people here in need of assitance');
 
 		pidMarkers = L.layerGroup($.merge(pidGeneric, [
-			// No custom markers needed
+			// SE Novigrad
+				L.marker([20.47, 100.55], setMarker(pidIcon)).bindLabel('Person(s) in Distress').bindPopup('<h1>Person(s) in Distress</h1>There\'s a person or a group of people here in need of assitance (lvl 9<span> Bandits</span>)'),
+			// NE Velen
+				L.marker([-17.64, -29.18], setMarker(pidIcon)).bindLabel('Person(s) in Distress').bindPopup('<h1>Person(s) in Distress</h1>There\'s a person or a group of people here in need of assitance (lvl 10-16<span> Bandits</span>)'),
+			// NW Velen
+				L.marker([-61.23, -33.93], setMarker(pidIcon)).bindLabel('Person(s) in Distress').bindPopup('<h1>Person(s) in Distress</h1>There\'s a person or a group of people here in need of assitance (lvl 5<span> Bandits</span>)'),
 		]));
 
 	// Place of Power
@@ -701,7 +718,7 @@ $(function()
 				L.marker([-57, -156], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Enhanced Griffin Steel Sword </h1>'),
 				L.marker([-61, -8.5], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Superior Feline Armor</h1>'),
 				L.marker([-54.5, 12], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Griffin Armor Set</h1>Inside the Dragonslayers Grotto'),
-				L.marker([-64, 38], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Superior Ursine Steel Sword</h1>'),
+				L.marker([-64, 38], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Superior Ursine Steel Sword</h1>Guarded by lvl 25<span> Earth Elemental</span>'),
 				L.marker([-81.1, 30.8], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Mastercrafted Ursine Armor</h1>'),
 				L.marker([-75.6, -28], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Mastercrafted Ursine Silver Sword </h1>'),
 				L.marker([-81.2, -70], setMarker(poiIcon)).bindLabel('Witcher Upgrade Gear').bindPopup('<h1>Enhanced Griffin Gauntlets</h1>'),
@@ -889,8 +906,6 @@ $(function()
 				L.marker([-36.81, -25.97], setMarker(signpostIcon)).bindLabel('Lindenvale').bindPopup('<h1>Lindenvale</h1>One of Velen\'s many impoverished villages, its poverty deepened by war levies and the epidemic that spread after the Nilfgaardians\' arrival'),
 				L.marker([-17.22, 40.17], setMarker(signpostIcon)).bindLabel('Marauders\' Bridge').bindPopup('<h1>Marauders\' Bridge</h1>After the Battle of Velen, marauders swarmed over this bridge in their rush to scavenge the battlefield'),
 				L.marker([-22.92, 71.59], setMarker(signpostIcon)).bindLabel('Grotto').bindPopup('<h1>Grotto</h1>A dark and hostile place which creaks from time to time with unsettling, throaty noises...'),
-			
-				
 		]);
 
 	// Smugglers' Cache
@@ -919,14 +934,14 @@ $(function()
 			iconSize : [25, 28]
 		});
 
-		spoilsMarkers = L.layerGroup(genericMarkers([
+		spoilsMarkers = L.layerGroup([
 			// NE Velen
-				[33.91, -68.51],
+				L.marker([33.91, -68.51], setMarker(spoilsIcon)).bindLabel('Spoils of War').bindPopup('<h1>Spoils of War</h1>Search here for loot left behind after a battle or skirmish'),
 			// NW Velen
-				[-22.72, -32.04],
+				L.marker([-22.72, -32.04], setMarker(spoilsIcon)).bindLabel('Spoils of War').bindPopup('<h1>Spoils of War</h1>Search here for loot left behind after a battle or skirmish (lvl 4<span> Drowners</span>'),
 			// SW Velen
-				[-74.75, -144.93],
-		], spoilsIcon, 'Spoils of War', '<h1>Spoils of War</h1>Search here for loot left behind after a battle or skirmish'));
+				L.marker([-74.75, -144.93], setMarker(spoilsIcon)).bindLabel('Spoils of War').bindPopup('<h1>Spoils of War</h1>Search here for loot left behind after a battle or skirmish (lvl 10<span> Drowners</span>)'),
+		]);
 
 	allLayers = [abandonedMarkers, alchemyMarkers, armourerMarkers, armourerstableMarkers, banditcampMarkers, barberMarkers, blacksmithMarkers, brothelMarkers, entranceMarkers, grindstoneMarkers, guardedMarkers, gwentMarkers, harborMarkers, herbalistMarkers, hiddenMarkers, innkeepMarkers, monsterdenMarkers, monsternestMarkers, noticeMarkers, pidMarkers, popMarkers, poiMarkers, shopkeeperMarkers, signpostMarkers, smugglersMarkers, spoilsMarkers];
 });
