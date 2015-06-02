@@ -1,6 +1,7 @@
 $(function()
 {
-	var mobile = ($('#sidebar').width() < 300);
+	var mobile   = ($('#sidebar').width() < 300);
+	var wayPoint = false;
 
 	if (localStorage['sfw']) {
 		$('span#brothel-text').text('Love Interest');
@@ -95,6 +96,26 @@ $(function()
 		var pos = map._initialTopLeftPoint.subtract(this._newPos);
 		this._newPos = this._newPos.subtract(map._getBoundsOffset(new L.Bounds(pos, pos.add(map.getSize())), map.options.maxBounds));
 	});
+
+	map.on('contextmenu', function(e) {
+		if (wayPoint) {
+			map.removeLayer(wayPoint);
+		}
+		wayPoint = new L.marker(e.latlng, {
+			icon : L.icon({
+				iconUrl  : '/files/img/icons/waypoint.png',
+				iconSize : [26, 32]
+			})
+		}).addTo(map);
+		wayPoint.on('click', function(e) {
+			map.removeLayer(wayPoint);
+		});
+		wayPoint.on('contextmenu', function(e) {
+			map.removeLayer(wayPoint);
+		});
+	});
+
+	$('.leaflet-marker-icon').on('contextmenu',function(e){ return false; });
 
 	map.on('click', function(e) {
 // for dev
