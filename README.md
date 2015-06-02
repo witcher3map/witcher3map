@@ -2,7 +2,10 @@
 --------------------------------------
 Unofficial Witcher 3 interactive maps, with a mobile & tablet friendly design faithful to the game. Any contributions, suggestions, bug reports etc welcome.
 
-Currently only Velen & Novigrad map is complete, more coming soon.
+Currently only 'Velen & Novigrad' and 'White Orchard' maps are complete, more coming soon.
+
+What can you do to help?
+--------------------------------------
 
 Map Files
 --------------------------------------
