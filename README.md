@@ -6,6 +6,7 @@ Currently only 'Velen & Novigrad' and 'White Orchard' maps are complete, more co
 
 What can you do to help?
 --------------------------------------
+If you notice anything missing or would like to help add detail (eg. level of monsters found at nests, guarded treasure etc) please create a pull request of your changes, or link me to your forked repo. Or if you're not experienced with Javascript and Github, create a ticket or message me on [reddit](http://www.reddit.com/message/compose/?to=untamed0) with in game screenshots. Thanks! 
 
 Map Files
 --------------------------------------
