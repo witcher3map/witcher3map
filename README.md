@@ -10,7 +10,7 @@ If you notice anything missing or would like to help add detail (eg. level of mo
 
 Map Files
 --------------------------------------
-The map files are excluded from this repository due to their size (170MB) To download them [click here](https://mega.co.nz/#!2Bk13TIR!oiLGmlQ-SKoVkkrUGi2tg01v2BGzEZ8DeYM0pKvDITE), extract, and place the resulting 'maps' folder in the 'file' directory.
+The map files are excluded from this repository due to their size (500MB) To download them [click here](https://mega.co.nz/#!TRM2CbLa!VWTS1fsV58kF1GoH4Bxz_U2EHNAUH9vlu_HBSP6seEo), extract, and place the resulting 'maps' folder in the 'file' directory.
 
 Credits & Licence
 --------------------------------------
