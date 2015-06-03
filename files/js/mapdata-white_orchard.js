@@ -312,6 +312,9 @@ $(function()
 		], spoilsIcon, 'Spoils of War', '<h1>Spoils of War</h1>Search here for loot left behind after a battle or skirmish'));
 
 	allLayers = [abandonedMarkers, alchemyMarkers, armourerMarkers, armourerstableMarkers, banditcampMarkers, barberMarkers, blacksmithMarkers, brothelMarkers, entranceMarkers, grindstoneMarkers, guardedMarkers, gwentMarkers, harborMarkers, herbalistMarkers, hiddenMarkers, innkeepMarkers, monsterdenMarkers, monsternestMarkers, noticeMarkers, pidMarkers, popMarkers, poiMarkers, shopkeeperMarkers, signpostMarkers, smugglersMarkers, spoilsMarkers];
+
+	var mapPath = 'markers-opacity-white-orchard';
+	initializeInvisibleMarkers(mapPath, allLayers);
 });
 
 function genericMarkers(cords, icon, label, popup) {
