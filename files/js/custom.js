@@ -161,6 +161,7 @@ $(function()
 		});
 	}
 
+
 	$('ul.key').on('click', 'li:not(.none)', function(e) {
 		var marker   = $(this).find('i').attr('class');
 		var remember = (!localStorage['markers-' + map_path]) ? {} : $.parseJSON(localStorage['markers-' + map_path]);
@@ -297,4 +298,54 @@ function hackySticky() {
 	} else {
 		$('div#copyright').removeClass('absolute');
 	}
+}
+
+// opacity setting for invisible markers
+var invisibleMarkerOpacity = 0.25;
+
+// save invisible markers as object so every map can have their own invisible markers
+var invisibleMarkers = {};
+
+function getLatLngKey (lat, lng) {
+	return lat + ';' + lng;
+}
+
+// mapKey would be the key for the map. e.g. map-markers-velen 
+function initializeInvisibleMarkers (mapKey, allLayers) {
+	if(!localStorage[mapKey]) {
+	 localStorage[mapKey] = JSON.stringify([]);
+	}
+
+	invisibleMarkers[mapKey] = JSON.parse(localStorage[mapKey]);
+
+	// add the click listener to every marker
+	$.each(allLayers, function (layerKey, layer) {
+		$.each(layer._layers, function (markerKey, marker) {
+			marker.on('click', function (e) {
+				toggleOpacity(e, mapKey);
+			});
+			if(isMarkerInvisible(mapKey, marker.getLatLng().lat, marker.getLatLng().lng)) {
+				marker.setOpacity(invisibleMarkerOpacity);
+			}
+		})
+	});
+}
+
+function toggleOpacity (event, mapPath) {
+	var key = getLatLngKey(event.latlng.lat, event.latlng.lng);    
+
+	if(event.target && event.target.options.opacity === 1.0) {
+		event.target.setOpacity(invisibleMarkerOpacity);
+		invisibleMarkers[mapPath].push(key);
+	}
+	else {
+		event.target.setOpacity(1.0);
+		invisibleMarkers[mapPath].splice(invisibleMarkers.indexOf(key), 1);
+	}
+
+	localStorage[mapPath] = JSON.stringify(invisibleMarkers[mapPath]);		
+}
+
+function isMarkerInvisible(mapPath, lat, lng) {
+	return invisibleMarkers[mapPath].indexOf(getLatLngKey(lat, lng)) > -1;
 }

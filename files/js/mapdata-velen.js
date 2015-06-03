@@ -943,6 +943,10 @@ $(function()
 		]);
 
 	allLayers = [abandonedMarkers, alchemyMarkers, armourerMarkers, armourerstableMarkers, banditcampMarkers, barberMarkers, blacksmithMarkers, brothelMarkers, entranceMarkers, grindstoneMarkers, guardedMarkers, gwentMarkers, harborMarkers, herbalistMarkers, hiddenMarkers, innkeepMarkers, monsterdenMarkers, monsternestMarkers, noticeMarkers, pidMarkers, popMarkers, poiMarkers, shopkeeperMarkers, signpostMarkers, smugglersMarkers, spoilsMarkers];
+
+	var mapPath = 'markers-opacity-velen';
+
+	initializeInvisibleMarkers(mapPath, allLayers);
 });
 
 function genericMarkers(cords, icon, label, popup) {
