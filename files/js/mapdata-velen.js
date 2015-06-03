@@ -18,8 +18,6 @@ $(function()
 				[-29.34, -136.23],
 				[-50.25, -140.63],
 				[-58.95, -142.21],
-			// SW Velen
-				[-78.68, -40.69],
 		], abandonedIcon, 'Abandoned Site', '<h1>Abandoned Site</h1>A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more');
 
 		abandonedMarkers = L.layerGroup($.merge(abandonedGeneric, [
@@ -29,6 +27,7 @@ $(function()
 				L.marker([-8.23, 72.16], setMarker(abandonedIcon)).bindLabel('Abandoned Site').bindPopup('<h1>Abandoned Site</h1>A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 9<span> Ghouls</span> &amp; lvl 11<span> Alghoul</span>)'),
 			// SW Velen
 				L.marker([-79.70, -112.15], setMarker(abandonedIcon)).bindLabel('Abandoned Site').bindPopup('<h1>Abandoned Site</h1>A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 9<span> Bandits</span>)'),
+				L.marker([-78.68, -40.69], setMarker(abandonedIcon)).bindLabel('Abandoned Site').bindPopup('<h1>Abandoned Site</h1>A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 9<span> Endregas</span>)'),
 			// SE Velen
 				L.marker([-36.95, 3.08], setMarker(abandonedIcon)).bindLabel('Abandoned Site').bindPopup('<h1>Abandoned Site</h1>A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 5<span> Bandits</span>)'),
 		]));
@@ -112,7 +111,6 @@ $(function()
 				[-64.55, -146.69],
 				[-65.04, -142.34],
 			// SE Velen
-				[-74.40, -6.81],
 				[-29.69, -17.23],
 		], banditcampIcon, 'Bandit Camp', '<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here');
 
@@ -130,6 +128,7 @@ $(function()
 				L.marker([-26.90, 24.43], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here (lvl 9)'),
 				L.marker([-38.96, -4.75], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here (lvl 7-9)'),
 				L.marker([13.37, 84.36], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here (lvl 9)'),
+				L.marker([-74.40, -6.81], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here (lvl 9)'),
 			// SW Velen
 				L.marker([-69.81, -142.91], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here. Bugged area, never shows as cleared'),
 		]));
@@ -332,9 +331,6 @@ $(function()
 				[-28.07, -119.66],
 				[-38.62, -123.40],
 				[-38.27, -149.24],
-			// SW Velen
-				[-82.20, -69.57],
-				[-78.56, -48.91],
 			// SE Velen
 				[-73.42, 31.77],
 				[-51.78, -6.42],
@@ -362,6 +358,8 @@ $(function()
 			// SW Velen
 				L.marker([-77.77, -102.04], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 8<span> Water Hag</span>) guards a valuable cache here'),
 				L.marker([-81.30, -69.74], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 18<span> Noonwraith/Nightwraith</span>) guards a valuable cache here'),
+				L.marker([-82.20, -69.57], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 19<span> Gargoyle</span>) guards a valuable cache here'),
+				L.marker([-78.56, -48.91], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 13<span> Alghoul</span>) guards a valuable cache here'),
 			// SE Velen
 				L.marker([-70.260, 102.440], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 24<span> Earth Elemental</span>) guards a valuable cache here'),
 				L.marker([-75.81, 30.63], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 20<span> Bilge Hag</span>) guards a valuable cache here'),
@@ -697,11 +695,11 @@ $(function()
 			iconSize : [28, 28]
 		});
 
-
 		poiMarkers = L.layerGroup([
 			// Novigrad
 				L.marker([74.84, -25.88], setMarker(poiIcon)).bindLabel('Triss\' Residence').bindPopup('<h1>Triss\' Residence</h1>todo'),
 				L.marker([70.12, -28.76], setMarker(poiIcon)).bindLabel('Dandelion &amp; Zoltan\'s Residence').bindPopup('<h1>Dandelion &amp; Zoltan\'s Residence</h1>todo'),
+				L.marker([77.245, -24.829], setMarker(poiIcon)).bindLabel('Vilmerius Hospital').bindPopup('<h1>Vilmerius Hospital</h1>todo'),
 			// NW Velen
 				L.marker([-47.34, -111.81], setMarker(poiIcon)).bindLabel('Keira Metz\'s Residence').bindPopup('<h1>Keira Metz\'s Residence</h1>todo'),
 			// Velen
