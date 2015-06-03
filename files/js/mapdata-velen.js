@@ -1,10 +1,11 @@
-$(function()
-{
-	map_path   = 'velen';
-	map_sWest  = L.latLng(-85.05, -180);
-	map_nEast  = L.latLng(85.05, 135);
-	map_center = [60, -5];
-	map_mZoom  = 6;
+$(function() {
+	window.map_path   = 'velen';
+	window.map_sWest  = L.latLng(-85.05, -180);
+	window.map_nEast  = L.latLng(85.05, 135);
+	window.map_center = [60, -5];
+	window.map_mZoom  = 6;
+
+	window.markers = {};
 
 	// Abandoned Site
 		var abandonedIcon = L.icon({
@@ -12,7 +13,7 @@ $(function()
 			iconSize : [30, 30]
 		});
 
-		abandonedGeneric = genericMarkers([
+		var abandonedGeneric = genericMarkers([
 			// NW Velen
 				[-53.59, -56.34],
 				[-29.34, -136.23],
@@ -20,7 +21,7 @@ $(function()
 				[-58.95, -142.21],
 		], abandonedIcon, 'Abandoned Site', '<h1>Abandoned Site</h1>A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more');
 
-		abandonedMarkers = L.layerGroup($.merge(abandonedGeneric, [
+		window.markers['abandoned'] = L.layerGroup($.merge(abandonedGeneric, [
 			// NE Velen
 				L.marker([-17.06, 8.26], setMarker(abandonedIcon)).bindLabel('Abandoned Site').bindPopup('<h1>Abandoned Site</h1>A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 4<span> Drowners</span>)'),
 				L.marker([13.70, 46.05], setMarker(abandonedIcon)).bindLabel('Abandoned Site').bindPopup('<h1>Abandoned Site</h1>A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 9<span> Drowners</span>)'),
@@ -38,7 +39,7 @@ $(function()
 			iconSize : [20, 28]
 		});
 
-		alchemyMarkers = L.layerGroup([
+		window.markers['alchemy'] = L.layerGroup([
 			// Novigrad
 				L.marker([77.71, -15.91], setMarker(alchemyIcon)).bindLabel('Alchemy Supplies*').bindPopup('<h1>Alchemy Supplies*</h1>Here you can buy alchemy ingredients, also pays well trophies'),
 				L.marker([79.75, -49.83], setMarker(alchemyIcon)).bindLabel('Alchemy Supplies').bindPopup('<h1>Alchemy Supplies</h1>Here you can buy alchemy ingredients'),
@@ -52,7 +53,7 @@ $(function()
 			iconSize : [24, 34]
 		});
 
-		armourerMarkers = L.layerGroup([
+		window.markers['armourer'] = L.layerGroup([
 			// Novigrad
 				L.marker([74.23, -38.23], setMarker(armourerIcon)).bindLabel('Journeyman Armorer').bindPopup('<h1>Journeyman Armorer</h1>Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
 			// Oxenfurt
@@ -71,7 +72,7 @@ $(function()
 			iconSize : [30, 27]
 		});
 
-		armourerstableMarkers = L.layerGroup(genericMarkers([
+		window.markers['armourerstable'] = L.layerGroup(genericMarkers([
 			// Novigrad
 				[75.27, -43.35],
 				[75.00, -40.68],
@@ -96,7 +97,7 @@ $(function()
 			iconSize : [29, 30]
 		});
 
-		banditcampGeneric = genericMarkers([
+		var banditcampGeneric = genericMarkers([
 			// NE Velen
 				[11.61, -54.42],
 			// NW Velen
@@ -114,7 +115,7 @@ $(function()
 				[-29.69, -17.23],
 		], banditcampIcon, 'Bandit Camp', '<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here');
 
-		banditcampMarkers = L.layerGroup($.merge(banditcampGeneric, [
+		window.markers['banditcamp'] = L.layerGroup($.merge(banditcampGeneric, [
 			// S Novigrad
 				L.marker([55.43, -63.00], setMarker(banditcampIcon)).bindLabel('Bandit Camp').bindPopup('<h1>Bandit Camp</h1>A group of dangerous bandits have made camp here (lvl 9)'),
 			// E Novigrad
@@ -139,7 +140,7 @@ $(function()
 			iconSize : [30, 30]
 		});
 
-		barberMarkers = L.layerGroup(genericMarkers([
+		window.markers['barber'] = L.layerGroup(genericMarkers([
 			// Novigrad
 				[76.45, -33.18],
 				[76.32, -20.39],
@@ -155,7 +156,7 @@ $(function()
 			iconSize : [27, 30]
 		});
 
-		blacksmithMarkers = L.layerGroup([
+		window.markers['blacksmith'] = L.layerGroup([
 			// Novigrad
 				L.marker([69.15, -41.00], setMarker(blacksmithIcon)).bindLabel('Master Blacksmith*').bindPopup('<h1>Master Blacksmith</h1>You must complete "Of Swords and Dumplings" (level 24) quest in order to unlock this blacksmith. Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
 				L.marker([73.14, -37.96], setMarker(blacksmithIcon)).bindLabel('Journeyman Blacksmith').bindPopup('<h1>Journeyman Blacksmith</h1>This blacksmith is available immediately. Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
@@ -175,7 +176,7 @@ $(function()
 			iconSize : [28, 26]
 		});
 
-		brothelMarkers = L.layerGroup([
+		window.markers['brothel'] = L.layerGroup([
 			// Novigrad
 				L.marker([71.22, -41.84], setMarker(brothelIcon)).bindLabel('Crippled Kate').bindPopup('<h1>Crippled Kate Brothel</h1>You can call on the services of a prostitute here'),
 				L.marker([78.34, -33.40], setMarker(brothelIcon)).bindLabel('Passiflora').bindPopup('<h1>Passiflora Brothel</h1>You can call on the services of a prostitute here')
@@ -188,7 +189,7 @@ $(function()
 			iconSize : [30, 28]
 		});
 
-		boatMarkers = L.layerGroup(genericMarkers([
+		window.markers['boat'] = L.layerGroup(genericMarkers([
 			// Novigrad
 				[69.84, -13.01],
 				[72.82, -10.28],
@@ -255,7 +256,7 @@ $(function()
 		});
 
 		// todo, entrance to what?
-		entranceMarkers = L.layerGroup([
+		window.markers['entrance'] = L.layerGroup([
 			// Novigrad
 				L.marker([80.68, -55.02], setMarker(entranceIcon)).bindLabel('Entrance').bindPopup('<h1>Entrance</h1>Entrance to cave or ruins'),
 			// NE Novigrad
@@ -295,7 +296,7 @@ $(function()
 			iconSize : [30, 26]
 		});
 
-		grindstoneMarkers = L.layerGroup(genericMarkers([
+		window.markers['grindstone'] = L.layerGroup(genericMarkers([
 			// Novigrad
 				[75.27, -42.95],
 				[74.96, -40.28],
@@ -336,7 +337,7 @@ $(function()
 				[-51.78, -6.42],
 		], guardedIcon, 'Guarded Treasure', '<h1>Guarded Treasure</h1>A particularly powerful monster guards a valuable cache here');
 
-		guardedMarkers = L.layerGroup($.merge(guardedGeneric, [
+		window.markers['guarded'] = L.layerGroup($.merge(guardedGeneric, [
 			// NE Novigrad
 				L.marker([76.43, -2.07], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 8<span> Water Hag</span>) guards a valuable cache here'),
 				L.marker([80.52, -4.53], setMarker(guardedIcon)).bindLabel('Guarded Treasure').bindPopup('<h1>Guarded Treasure</h1>A particularly powerful monster (lvl 15<span> Bilge Hag</span>) guards a valuable cache here'),
@@ -374,7 +375,7 @@ $(function()
 			iconSize : [24, 30]
 		});
 
-		gwentMarkers = L.layerGroup([
+		window.markers['gwent'] = L.layerGroup([
 			// Novigrad
 				L.marker([74.618, -35.132], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Book Merchant Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([71.00, -41.90], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Crippled Kate Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
@@ -434,7 +435,7 @@ $(function()
 			iconSize : [27, 30]
 		});
 
-		harborMarkers = L.layerGroup(genericMarkers([
+		window.markers['harbor'] = L.layerGroup(genericMarkers([
 			// Novigrad
 				[70.64, -58.93],
 			// Oxenfurt
@@ -470,7 +471,7 @@ $(function()
 				[50.54, 72.07],
 		], herbalistIcon, 'Herbalist', '<h1>Herbalist</h1>Here you can buy alchemy ingredients');
 
-		herbalistMarkers = L.layerGroup($.merge(herbalistGeneric, [
+		window.markers['herbalist'] = L.layerGroup($.merge(herbalistGeneric, [
 			// NW Velen
 				L.marker([-50.26, -138.91], setMarker(herbalistIcon)).bindLabel('Herbalist').bindPopup('<h1>Herbalist</h1>This merchant appears after liberating the area. Here you can buy alchemy ingredients'),
 				L.marker([-28.15, -135.26], setMarker(herbalistIcon)).bindLabel('Herbalist').bindPopup('<h1>Herbalist</h1>This merchant appears after liberating the area. Here you can buy alchemy ingredients'),
@@ -499,7 +500,7 @@ $(function()
 				[-29.99, 28.39],
 		], hiddenIcon, 'Hidden Treasure', '<h1>Hidden Treasure</h1>A hidden cache of valuable goods');
 
-		hiddenMarkers = L.layerGroup($.merge(hiddenGeneric, [
+		window.markers['hidden'] = L.layerGroup($.merge(hiddenGeneric, [
 			// S Novigrad
 				L.marker([34.55, -43.68], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 6<span> Nekkers</span>)'),
 				L.marker([49.38, -68.91], setMarker(hiddenIcon)).bindLabel('Hidden Treasure').bindPopup('<h1>Hidden Treasure</h1>A hidden cache of valuable goods (Guarded by lvl 15<span> Mucknixers</span>)'),
@@ -529,7 +530,7 @@ $(function()
 			iconSize : [26, 30]
 		});
 
-		innkeepMarkers = L.layerGroup([
+		window.markers['innkeep'] = L.layerGroup([
 			// Novigrad
 				L.marker([73.24, -44.21], setMarker(innkeepIcon)).bindLabel('The Golden Sturgen').bindPopup('<h1>Innkeep</h1>Sells Gwent cards, food, and drink'),
 				L.marker([78.22, -33.49], setMarker(innkeepIcon)).bindLabel('Passiflora').bindPopup('<h1>Innkeep</h1>Sells Gwent cards, food, and drink'),
@@ -558,7 +559,7 @@ $(function()
 				[-54.47, 12.00],
 		], monsterdenIcon, 'Monster Den', '<h1>Monster Den</h1>Monster-infested location. A constant worry for those living nearby');
 
-		monsterdenMarkers = L.layerGroup($.merge(monsterdenGeneric, [
+		window.markers['monsterden'] = L.layerGroup($.merge(monsterdenGeneric, [
 			// NE Novigrad
 				L.marker([82.19, -32.08], setMarker(monsterdenIcon)).bindLabel('Monster Den').bindPopup('<h1>Monster Den</h1>Monster-infested location. A constant worry for those living nearby (lvl 19<span> Golem</span>)'),
 			// S Novigrad
@@ -586,7 +587,7 @@ $(function()
 				[-68.69, -2.20],
 		], monsternestIcon, 'Monster Nest', '<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs');
 
-		monsternestMarkers = L.layerGroup($.merge(monsternestGeneric, [
+		window.markers['monsternest'] = L.layerGroup($.merge(monsternestGeneric, [
 			// S Novigrad
 				L.marker([34.31, -60.51], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 6<span> Rotfiends</span>)'),
 				L.marker([49.84, -45.97], setMarker(monsternestIcon)).bindLabel('Monster Nest').bindPopup('<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 9<span> Endregas</span>)'),
@@ -614,7 +615,7 @@ $(function()
 			iconSize : [23, 28]
 		});
 
-		noticeMarkers = L.layerGroup(genericMarkers([
+		window.markers['notice'] = L.layerGroup(genericMarkers([
 			// Novigrad
 				[74.38, -34.06],
 				[73.00, -43.37],
@@ -656,7 +657,7 @@ $(function()
 				[-33.94, -132.36],
 		], pidIcon, 'Person(s) in Distress', '<h1>Person(s) in Distress</h1>There\'s a person or a group of people here in need of assitance');
 
-		pidMarkers = L.layerGroup($.merge(pidGeneric, [
+		window.markers['pid'] = L.layerGroup($.merge(pidGeneric, [
 			// SE Novigrad
 				L.marker([20.47, 100.55], setMarker(pidIcon)).bindLabel('Person(s) in Distress').bindPopup('<h1>Person(s) in Distress</h1>There\'s a person or a group of people here in need of assitance (lvl 9<span> Bandits</span>)'),
 			// NE Velen
@@ -672,7 +673,7 @@ $(function()
 		});
 
 		//todo get all place of power types
-		popMarkers = L.layerGroup([
+		window.markers['pop'] = L.layerGroup([
 			// Novigrad
 				L.marker([80.72, -40.83], setMarker(popIcon)).bindLabel('Place of Power').bindPopup('<h1>Place of Power - Igni</h1>Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'),
 			// E Novigrad
@@ -695,7 +696,7 @@ $(function()
 			iconSize : [28, 28]
 		});
 
-		poiMarkers = L.layerGroup([
+		window.markers['poi'] = L.layerGroup([
 			// Novigrad
 				L.marker([74.84, -25.88], setMarker(poiIcon)).bindLabel('Triss\' Residence').bindPopup('<h1>Triss\' Residence</h1>todo'),
 				L.marker([70.12, -28.76], setMarker(poiIcon)).bindLabel('Dandelion &amp; Zoltan\'s Residence').bindPopup('<h1>Dandelion &amp; Zoltan\'s Residence</h1>todo'),
@@ -729,7 +730,7 @@ $(function()
 			iconSize : [21, 30]
 		});
 
-		shopkeeperMarkers = L.layerGroup([
+		window.markers['shopkeeper'] = L.layerGroup([
 			// Novigrad
 				L.marker([74.22, -35.41], setMarker(shopkeeperIcon)).bindLabel('Book Merchant').bindPopup('<h1>Book Merchant</h1>Buys and sells books'),
 				L.marker([74.578, -35.332], setMarker(shopkeeperIcon)).bindLabel('Book Merchant').bindPopup('<h1>Book Merchant</h1>Buys and sells books'),
@@ -797,7 +798,7 @@ $(function()
 			iconSize : [27, 34]
 		});
 
-		signpostMarkers = L.layerGroup([
+		window.markers['signpost'] = L.layerGroup([
 			// Novigrad
 				L.marker([73.76, -33.97], setMarker(signpostIcon)).bindLabel('Hierarch Square').bindPopup('<h1>Hierarch Square</h1>Until quite recently a great many mages lived near Novigrad\'s main square. They fled when the witch hunters began their reign of terror, leaving many of the city\'s most beautiful townhouses abandoned and uncared for'),
 				L.marker([74.23, -15.86], setMarker(signpostIcon)).bindLabel('Southern Gate').bindPopup('<h1>Southern Gate</h1>In truth demarcating the eastern and not southern edge of the city, the Southern Gate was given its inappropriate name by a one-time city planner who knew nothing about architecture and could not read a map, but had in his favor the fact that he was the mayor\'s cousin and thew lavish parties. Though confusingly incorrect, the name stuck and now the city\'s residents never think twice about its illogical appellation'),
@@ -923,7 +924,7 @@ $(function()
 				[-58.90, -158.82],
 		], smugglersIcon, 'Smuggler\'s Cache', '<h1>Smuggler\'s Cache</h1>Smuggled goods have been hidden here');
 
-		smugglersMarkers = L.layerGroup($.merge(smugglersGeneric, [
+		window.markers['smugglers'] = L.layerGroup($.merge(smugglersGeneric, [
 			// No custom markers needed
 		]));
 
@@ -933,7 +934,7 @@ $(function()
 			iconSize : [25, 28]
 		});
 
-		spoilsMarkers = L.layerGroup([
+		window.markers['spoils'] = L.layerGroup([
 			// NE Velen
 				L.marker([33.91, -68.51], setMarker(spoilsIcon)).bindLabel('Spoils of War').bindPopup('<h1>Spoils of War</h1>Search here for loot left behind after a battle or skirmish'),
 			// NW Velen
@@ -942,18 +943,32 @@ $(function()
 				L.marker([-74.75, -144.93], setMarker(spoilsIcon)).bindLabel('Spoils of War').bindPopup('<h1>Spoils of War</h1>Search here for loot left behind after a battle or skirmish (lvl 10<span> Drowners</span>)'),
 		]);
 
-	allLayers = [abandonedMarkers, alchemyMarkers, armourerMarkers, armourerstableMarkers, banditcampMarkers, barberMarkers, blacksmithMarkers, brothelMarkers, entranceMarkers, grindstoneMarkers, guardedMarkers, gwentMarkers, harborMarkers, herbalistMarkers, hiddenMarkers, innkeepMarkers, monsterdenMarkers, monsternestMarkers, noticeMarkers, pidMarkers, popMarkers, poiMarkers, shopkeeperMarkers, signpostMarkers, smugglersMarkers, spoilsMarkers];
+	window.allLayers = [
+		window.markers['abandoned'],
+		window.markers['alchemy'],
+		window.markers['armourer'],
+		window.markers['armourerstable'],
+		window.markers['banditcamp'],
+		window.markers['barber'],
+		window.markers['blacksmith'],
+		window.markers['brothel'],
+		window.markers['entrance'],
+		window.markers['grindstone'],
+		window.markers['guarded'],
+		window.markers['gwent'],
+		window.markers['harbor'],
+		window.markers['herbalist'],
+		window.markers['hidden'],
+		window.markers['innkeep'],
+		window.markers['monsterden'],
+		window.markers['monsternest'],
+		window.markers['notice'],
+		window.markers['pid'],
+		window.markers['pop'],
+		window.markers['poi'],
+		window.markers['shopkeeper'],
+		window.markers['signpost'],
+		window.markers['smugglers'],
+		window.markers['spoils']
+	];
 });
-
-function genericMarkers(cords, icon, label, popup) {
-	var out = [];
-	$.each(cords, function(key, val)
-	{
-		out.push(L.marker(val, setMarker(icon)).bindLabel(label).bindPopup(popup));
-	});
-	return out;
-}
-
-function setMarker(icon, tooltip) {
-	return {icon : icon, riseOnHover : true};
-}

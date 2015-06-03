@@ -1,5 +1,4 @@
-$(function()
-{
+$(function() {
 	var mobile   = ($('#sidebar').width() < 300);
 	var wayPoint = false;
 
@@ -28,8 +27,8 @@ $(function()
 
 	map = L.map('map', {
 		minZoom: 2,
-		maxZoom: map_mZoom,
-		center: map_center,
+		maxZoom: window.map_mZoom,
+		center: window.map_center,
 		zoom: 3,
 		attributionControl: false,
 		zoomControl: false,
@@ -39,7 +38,7 @@ $(function()
 	new L.Control.Zoom({ position: 'topright' }).addTo(map);
 	new L.Control.Fullscreen({ position: 'topright' }).addTo(map);
 	var hash = new L.Hash(map);
-	var bounds = new L.LatLngBounds(map_sWest, map_nEast);
+	var bounds = new L.LatLngBounds(window.map_sWest, window.map_nEast);
 	map.setMaxBounds(bounds);
 
 	if (!mobile) {
@@ -86,7 +85,7 @@ $(function()
 		});
 	}
 
-	L.tileLayer('/files/maps/' + map_path + '/{z}/{x}/{y}.png', {
+	L.tileLayer('/files/maps/' + window.map_path + '/{z}/{x}/{y}.png', {
 		tms: true,
 		bounds: bounds,
 		noWrap: true
@@ -152,18 +151,18 @@ $(function()
 		map.closePopup();
 	});
 
-	if (localStorage['markers-' + map_path]) {
-		$.each($.parseJSON(localStorage['markers-' + map_path]), function(key, val) {
+	if (localStorage['markers-' + window.map_path]) {
+		$.each($.parseJSON(localStorage['markers-' + window.map_path]), function(key, val) {
 			if (val === false) {
 				$('i.' + key).parent().addClass('layer-disabled');
-				map.removeLayer(eval(key + 'Markers'));
+				map.removeLayer(window.markers[key]);
 			}
 		});
 	}
 
 	$('ul.key').on('click', 'li:not(.none)', function(e) {
 		var marker   = $(this).find('i').attr('class');
-		var remember = (!localStorage['markers-' + map_path]) ? {} : $.parseJSON(localStorage['markers-' + map_path]);
+		var remember = (!localStorage['markers-' + window.map_path]) ? {} : $.parseJSON(localStorage['markers-' + window.map_path]);
 		if (marker == 'hide') {
 			$.each(allLayers, function(key, val) {
 				map.removeLayer(val);
@@ -186,16 +185,16 @@ $(function()
 			});
 		} else {
 			if ($(this).hasClass('layer-disabled')) {
-				map.addLayer(eval(marker + 'Markers'));
+				map.addLayer(window.markers[marker]);
 				$(this).removeClass('layer-disabled');
 				remember[marker] = true;
 			} else {
-				map.removeLayer(eval(marker + 'Markers'));
+				map.removeLayer(window.markers[marker]);
 				$(this).addClass('layer-disabled');
 				remember[marker] = false;
 			}
 		}
-		localStorage['markers-' + map_path] = JSON.stringify(remember);
+		localStorage['markers-' + window.map_path] = JSON.stringify(remember);
 	});
 
 	var origSidebar;
@@ -224,8 +223,7 @@ $(function()
 	$(document).on('click', 'div#hide-sidebar.show-sidebar', function(e) {
 		$('#sidebar').animate({left : origSidebar}, 200);
 		$(this).animate({left : origHide}, 200);
-		$('#sidebar-border').animate({left : origBorder}, 200, function()
-		{
+		$('#sidebar-border').animate({left : origBorder}, 200, function() {
 			$('#map').css('left', origMap);
 			map.invalidateSize();
 			$('.show-sidebar').removeClass('show-sidebar');
@@ -282,7 +280,7 @@ $(function()
 
 function go(cords) {
 	map.panTo(cords);
-	map.setZoom(map_mZoom);
+	map.setZoom(window.map_mZoom);
 	new L.marker(cords, {
 		icon : L.icon({
 			iconUrl  : '/files/img/searchhover.png',
@@ -297,4 +295,17 @@ function hackySticky() {
 	} else {
 		$('div#copyright').removeClass('absolute');
 	}
+}
+
+function genericMarkers(cords, icon, label, popup) {
+	var out = [];
+	$.each(cords, function(key, val)
+	{
+		out.push(L.marker(val, setMarker(icon)).bindLabel(label).bindPopup(popup));
+	});
+	return out;
+}
+
+function setMarker(icon, tooltip) {
+	return {icon : icon, riseOnHover : true};
 }

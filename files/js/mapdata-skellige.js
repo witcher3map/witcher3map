@@ -1,10 +1,11 @@
-$(function()
-{
-	map_path   = 'skellige';
-	map_sWest  = L.latLng(-85.05, -180);
-	map_nEast  = L.latLng(79.30, 135);
-	map_center = [-35, -10];
-	map_mZoom  = 6;
+$(function() {
+	window.map_path   = 'skellige';
+	window.map_sWest  = L.latLng(-85.05, -180);
+	window.map_nEast  = L.latLng(79.30, 135);
+	window.map_center = [-35, -10];
+	window.map_mZoom  = 6;
+
+	window.markers = {};
 
 	// Abandoned Site
 		var abandonedIcon = L.icon({
@@ -12,7 +13,7 @@ $(function()
 			iconSize : [30, 30]
 		});
 
-		abandonedMarkers = L.layerGroup(genericMarkers([
+		window.markers['abandoned'] = L.layerGroup(genericMarkers([
 			// Hindarsfjall
 				[-35.996, 92.439],
 				[-32.916, 85.562],
@@ -27,7 +28,7 @@ $(function()
 			iconSize : [20, 28]
 		});
 
-		alchemyMarkers = L.layerGroup([
+		window.markers['alchemy'] = L.layerGroup([
 			L.marker([-20.468, 93.318], setMarker(alchemyIcon)).bindLabel('Alchemy Supplies').bindPopup('<h1>Alchemy Supplies</h1>Here you can buy alchemy ingredients'),
 			L.marker([-28.208, -26.147], setMarker(alchemyIcon)).bindLabel('Alchemy Supplies').bindPopup('<h1>Alchemy Supplies</h1>Here you can buy alchemy ingredients'),
 			L.marker([-19.705, 17.314], setMarker(alchemyIcon)).bindLabel('Gremist').bindPopup('<h1>Gremist</h1>\'Practicum in Advanced Alchemy\' (lvl 24) Quest'),
@@ -39,7 +40,7 @@ $(function()
 			iconSize : [24, 34]
 		});
 
-		armourerMarkers = L.layerGroup([
+		window.markers['armourer'] = L.layerGroup([
 			// Hindarsfjall
 				L.marker([-29.037, 98.569], setMarker(armourerIcon)).bindLabel('Amateur Armorer').bindPopup('<h1>Amateur Armorer</h1>Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
 			// An Skellig
@@ -55,7 +56,7 @@ $(function()
 			iconSize : [30, 27]
 		});
 
-		armourerstableMarkers = L.layerGroup(genericMarkers([
+		window.markers['armourerstable'] = L.layerGroup(genericMarkers([
 			// Hindarsfjall
 				[-28.159, 101.851],
 				[-28.825, 98.062],
@@ -76,7 +77,7 @@ $(function()
 			iconSize : [29, 30]
 		});
 
-		banditcampMarkers = L.layerGroup(genericMarkers([
+		window.markers['banditcamp'] = L.layerGroup(genericMarkers([
 			// Spikeroog
 				[21.861, -121.047],
 			// Ard Skellig
@@ -94,7 +95,7 @@ $(function()
 			iconSize : [30, 30]
 		});
 
-		barberMarkers = L.layerGroup(genericMarkers([
+		window.markers['barber'] = L.layerGroup(genericMarkers([
 			// Spikeroog
 				[31.072, -111.973],
 				[-3.601, -34.277],
@@ -106,7 +107,7 @@ $(function()
 			iconSize : [27, 30]
 		});
 
-		blacksmithMarkers = L.layerGroup([
+		window.markers['blacksmith'] = L.layerGroup([
 			// Faroe
 				L.marker([-77.390, 50.142], setMarker(blacksmithIcon)).bindLabel('Amateur Blacksmith').bindPopup('<h1>Amateur Blacksmith</h1>Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'),
 			// Hindarsfjall
@@ -129,7 +130,7 @@ $(function()
 			iconSize : [28, 26]
 		});
 
-		brothelMarkers = L.layerGroup([]);
+		window.markers['brothel'] = L.layerGroup([]);
 
 	// Entrance
 		var entranceIcon = L.icon({
@@ -138,7 +139,7 @@ $(function()
 		});
 
 		// todo, entrance to what?
-		entranceMarkers = L.layerGroup([
+		window.markers['entrance'] = L.layerGroup([
 			// Faroe
 				L.marker([-78.469, 43.484], setMarker(entranceIcon)).bindLabel('Entrance').bindPopup('<h1>Entrance</h1>Entrance to cave or ruins'),
 				L.marker([-77.250, 44.187], setMarker(entranceIcon)).bindLabel('Entrance').bindPopup('<h1>Entrance</h1>Entrance to cave or ruins'),
@@ -186,7 +187,7 @@ $(function()
 			iconSize : [30, 26]
 		});
 
-		grindstoneMarkers = L.layerGroup(genericMarkers([
+		window.markers['grindstone'] = L.layerGroup(genericMarkers([
 			// Faroe
 				[-77.355, 50.647],
 			// Hindarsfjall
@@ -240,7 +241,7 @@ $(function()
 				[57.845, -1.670],
 		], guardedIcon, 'Guarded Treasure', '<h1>Guarded Treasure</h1>A particularly powerful monster guards a valuable cache here');
 
-		guardedMarkers = L.layerGroup($.merge(guardedGeneric, [
+		window.markers['guarded'] = L.layerGroup($.merge(guardedGeneric, [
 			// No custom markers needed
 		]));
 
@@ -250,7 +251,7 @@ $(function()
 			iconSize : [24, 30]
 		});
 
-		gwentMarkers = L.layerGroup([
+		window.markers['gwent'] = L.layerGroup([
 			// Faroe
 				L.marker([-77.455, 49.227], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Innkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([-77.350, 50.242], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Blacksmith Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
@@ -290,7 +291,7 @@ $(function()
 			iconSize : [27, 30]
 		});
 
-		harborMarkers = L.layerGroup(genericMarkers([
+		window.markers['harbor'] = L.layerGroup(genericMarkers([
 			[-6.075, -40.496],
 			[11.265, -23.005],
 			[-28.498, -28.696],
@@ -322,7 +323,7 @@ $(function()
 				[-6.097, -34.607],
 		], herbalistIcon, 'Herbalist', '<h1>Herbalist</h1>Here you can buy alchemy ingredients');
 
-		herbalistMarkers = L.layerGroup($.merge(herbalistGeneric, [
+		window.markers['herbalist'] = L.layerGroup($.merge(herbalistGeneric, [
 			// No custom markers needed
 		]));
 
@@ -368,7 +369,7 @@ $(function()
 				[50.373, -7.515],
 		], hiddenIcon, 'Hidden Treasure', '<h1>Hidden Treasure</h1>A hidden cache of valuable goods');
 
-		hiddenMarkers = L.layerGroup($.merge(hiddenGeneric, [
+		window.markers['hidden'] = L.layerGroup($.merge(hiddenGeneric, [
 			// No custom markers needed
 		]));
 
@@ -378,7 +379,7 @@ $(function()
 			iconSize : [26, 30]
 		});
 
-		innkeepMarkers = L.layerGroup([
+		window.markers['innkeep'] = L.layerGroup([
 			// Faroe
 				L.marker([-77.485, 49.007], setMarker(innkeepIcon)).bindLabel('Harviken Inn').bindPopup('<h1>Innkeep</h1>Sells Gwent cards, food, and drink'),
 			// Hindarsfjall
@@ -409,7 +410,7 @@ $(function()
 				[-2.416, -21.841],
 		], monsterdenIcon, 'Monster Den', '<h1>Monster Den</h1>Monster-infested location. A constant worry for those living nearby');
 
-		monsterdenMarkers = L.layerGroup($.merge(monsterdenGeneric, [
+		window.markers['monsterden'] = L.layerGroup($.merge(monsterdenGeneric, [
 			// No custom markers needed
 		]));
 
@@ -429,7 +430,7 @@ $(function()
 				[-23.544, -37.551],
 		], monsternestIcon, 'Monster Nest', '<h1>Monster Nest</h1>Destroy monster nests with Grapeshot or Dancing Star bombs');
 
-		monsternestMarkers = L.layerGroup($.merge(monsternestGeneric, [
+		window.markers['monsternest'] = L.layerGroup($.merge(monsternestGeneric, [
 			// No custom markers needed
 		]));
 
@@ -439,7 +440,7 @@ $(function()
 			iconSize : [23, 28]
 		});
 
-		noticeMarkers = L.layerGroup(genericMarkers([
+		window.markers['notice'] = L.layerGroup(genericMarkers([
 			// Hindarsfjall
 				[-28.343, 100.239],
 			// Spikeroog
@@ -464,7 +465,7 @@ $(function()
 			[-38.994, -6.372],
 		], pidIcon, 'Person(s) in Distress', '<h1>Person(s) in Distress</h1>There\'s a person or a group of people here in need of assitance');
 
-		pidMarkers = L.layerGroup($.merge(pidGeneric, [
+		window.markers['pid'] = L.layerGroup($.merge(pidGeneric, [
 			// No custom markers needed
 		]));
 
@@ -475,7 +476,7 @@ $(function()
 		});
 
 		//todo get all place of power types
-		popMarkers = L.layerGroup([
+		window.markers['pop'] = L.layerGroup([
 			// Faroe
 				L.marker([-76.851, 40.891], setMarker(popIcon)).bindLabel('Place of Power').bindPopup('<h1>Place of Power - Yrden</h1>Draw from a Place of Power to gain a temporary bonus. The first time you draw from any 	Place of Power, you also receive 1 Ability Point'),
 			// An Skellig
@@ -498,7 +499,7 @@ $(function()
 		});
 
 
-		poiMarkers = L.layerGroup([
+		window.markers['poi'] = L.layerGroup([
 			// Faroe
 				L.marker([-76.985, 57.788], setMarker(poiIcon)).bindLabel('Jutta An Dimun').bindPopup('<h1>Jutta An Dimun</h1>todo'), //double check this
 			// Ard Skellig
@@ -515,7 +516,7 @@ $(function()
 			iconSize : [21, 30]
 		});
 
-		shopkeeperMarkers = L.layerGroup([
+		window.markers['shopkeeper'] = L.layerGroup([
 			// Hindarsfjall
 				L.marker([-29.306, 99.492], setMarker(shopkeeperIcon)).bindLabel('Shopkeeper').bindPopup('<h1>Shopkeeper</h1>Sells crafting supplies and fish'),
 			// Spikeroog
@@ -543,7 +544,7 @@ $(function()
 			iconSize : [27, 34]
 		});
 
-		signpostMarkers = L.layerGroup([
+		window.markers['signpost'] = L.layerGroup([
 			// Faroe
 				L.marker([-77.490, 69.829], setMarker(signpostIcon)).bindLabel('Trottheim').bindPopup('<h1>Trottheim</h1>This village was once famed across all of Skellige for the fact that it was inhabited exclusively by women, all their men having died during one raid or another'),
 				L.marker([-77.206, 49.526], setMarker(signpostIcon)).bindLabel('Harviken').bindPopup('<h1>Harviken</h1>Home seat to Clan Dimun, and the location where Holger Blackhand divvies out the loot after every successful raid'),
@@ -676,7 +677,7 @@ $(function()
 			[56.023, -8.877],
 		], smugglersIcon, 'Smuggler\'s Cache', '<h1>Smuggler\'s Cache</h1>Smuggled goods have been hidden here');
 
-		smugglersMarkers = L.layerGroup($.merge(smugglersGeneric, [
+		window.markers['smugglers'] = L.layerGroup($.merge(smugglersGeneric, [
 			// No custom markers needed
 		]));
 
@@ -686,7 +687,7 @@ $(function()
 			iconSize : [25, 28]
 		});
 
-		spoilsMarkers = L.layerGroup(genericMarkers([
+		window.markers['spoils'] = L.layerGroup(genericMarkers([
 			[29.650, -63.896],
 			[21.412, -47.285],
 			[-50.709, 43.550],
@@ -697,18 +698,32 @@ $(function()
 			[57.891, -28.564],
 		], spoilsIcon, 'Spoils of War', '<h1>Spoils of War</h1>Search here for loot left behind after a battle or skirmish'));
 
-	allLayers = [abandonedMarkers, alchemyMarkers, armourerMarkers, armourerstableMarkers, banditcampMarkers, barberMarkers, blacksmithMarkers, brothelMarkers, entranceMarkers, grindstoneMarkers, guardedMarkers, gwentMarkers, harborMarkers, herbalistMarkers, hiddenMarkers, innkeepMarkers, monsterdenMarkers, monsternestMarkers, noticeMarkers, pidMarkers, popMarkers, poiMarkers, shopkeeperMarkers, signpostMarkers, smugglersMarkers, spoilsMarkers];
+	window.allLayers = [
+		window.markers['abandoned'],
+		window.markers['alchemy'],
+		window.markers['armourer'],
+		window.markers['armourerstable'],
+		window.markers['banditcamp'],
+		window.markers['barber'],
+		window.markers['blacksmith'],
+		window.markers['brothel'],
+		window.markers['entrance'],
+		window.markers['grindstone'],
+		window.markers['guarded'],
+		window.markers['gwent'],
+		window.markers['harbor'],
+		window.markers['herbalist'],
+		window.markers['hidden'],
+		window.markers['innkeep'],
+		window.markers['monsterden'],
+		window.markers['monsternest'],
+		window.markers['notice'],
+		window.markers['pid'],
+		window.markers['pop'],
+		window.markers['poi'],
+		window.markers['shopkeeper'],
+		window.markers['signpost'],
+		window.markers['smugglers'],
+		window.markers['spoils']
+	];
 });
-
-function genericMarkers(cords, icon, label, popup) {
-	var out = [];
-	$.each(cords, function(key, val)
-	{
-		out.push(L.marker(val, setMarker(icon)).bindLabel(label).bindPopup(popup));
-	});
-	return out;
-}
-
-function setMarker(icon, tooltip) {
-	return {icon : icon, riseOnHover : true};
-}
