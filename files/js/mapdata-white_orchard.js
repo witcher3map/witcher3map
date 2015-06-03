@@ -128,7 +128,7 @@
 
 	// Notice Board
 	markers.notice = L.layerGroup(genericMarkers([
-			[-67.643, -89.385],
+		[-67.643, -89.385],
 	], icons.notice, 'Notice Board', '<h1>Notice Board</h1>Here you can find monster contracts and announcements about matters of local concern'));
 
 	// Person in Distress
@@ -212,17 +212,4 @@
 		markers.smugglers,
 		markers.spoils
 	];
-
-	function genericMarkers(cords, icon, label, popup) {
-		var out = [];
-		$.each(cords, function(key, val)
-		{
-			out.push(L.marker(val, setMarker(icon)).bindLabel(label).bindPopup(popup));
-		});
-		return out;
-	}
-
-	function setMarker(icon, tooltip) {
-		return {icon : icon, riseOnHover : true};
-	}
 }());
