@@ -128,6 +128,9 @@ ul.controls {
 	margin-top: 10px;
 	font-weight: bold;
 }
+ul.key  li.none {
+	cursor: default;
+}
 div#note {
 	background: url('../img/paperfull.png') no-repeat;
 	background-size: contain;
@@ -136,7 +139,7 @@ div#note {
 	text-align: center;
 	height: 85px;
 	margin-top: 15px;
-	padding-top: 8px;
+	padding-top: 18px;
 	margin-bottom: 5px;
 }
 div#note a {
