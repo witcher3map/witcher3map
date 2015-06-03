@@ -152,32 +152,50 @@ $(function()
 		map.closePopup();
 	});
 
+	if (localStorage['markers-' + map_path]) {
+		$.each($.parseJSON(localStorage['markers-' + map_path]), function(key, val) {
+			if (val === false) {
+				$('i.' + key).parent().addClass('layer-disabled');
+				map.removeLayer(eval(key + 'Markers'));
+			}
+		});
+	}
+
 	$('ul.key').on('click', 'li:not(.none)', function(e) {
-		var marker = $(this).find('i').attr('class');
+		var marker   = $(this).find('i').attr('class');
+		var remember = (!localStorage['markers-' + map_path]) ? {} : $.parseJSON(localStorage['markers-' + map_path]);
 		if (marker == 'hide') {
 			$.each(allLayers, function(key, val) {
 				map.removeLayer(val);
 			});
+			$.each($('ul.key:not(.controls) li:not(.none) i'), function(key, val) {
+				remember[$(this).attr('class')] = false;
+			});
 			$('ul.key:first li').each(function(id, li) {
 				$(li).addClass('layer-disabled');
 			});
-			return;
 		} else if (marker == 'show') {
 			$.each(allLayers, function(key, val) {
 				map.addLayer(val);
 			});
+			$.each($('ul.key:not(.controls) li:not(.none) i'), function(key, val) {
+				remember[$(this).attr('class')] = true;
+			});
 			$('ul.key:first li').each(function(id, li) {
 				$(li).removeClass('layer-disabled');
 			});
-			return;
-		}
-		if ($(this).hasClass('layer-disabled')) {
-			map.addLayer(eval(marker + 'Markers'));
-			$(this).removeClass('layer-disabled');
 		} else {
-			map.removeLayer(eval(marker + 'Markers'));
-			$(this).addClass('layer-disabled');
+			if ($(this).hasClass('layer-disabled')) {
+				map.addLayer(eval(marker + 'Markers'));
+				$(this).removeClass('layer-disabled');
+				remember[marker] = true;
+			} else {
+				map.removeLayer(eval(marker + 'Markers'));
+				$(this).addClass('layer-disabled');
+				remember[marker] = false;
+			}
 		}
+		localStorage['markers-' + map_path] = JSON.stringify(remember);
 	});
 
 	var origSidebar;
