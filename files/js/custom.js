@@ -98,6 +98,9 @@ $(function()
 	});
 
 	map.on('contextmenu', function(e) {
+		if (!bounds.contains(e.latlng)) {
+			return false;
+		}
 		if (wayPoint) {
 			map.removeLayer(wayPoint);
 		}
@@ -106,13 +109,11 @@ $(function()
 				iconUrl  : '/files/img/icons/waypoint.png',
 				iconSize : [26, 32]
 			})
+		}).on('click', function() {
+			map.removeLayer(wayPoint);
+		}).on('contextmenu', function() {
+			map.removeLayer(wayPoint);
 		}).addTo(map);
-		wayPoint.on('click', function(e) {
-			map.removeLayer(wayPoint);
-		});
-		wayPoint.on('contextmenu', function(e) {
-			map.removeLayer(wayPoint);
-		});
 	});
 
 	$('.leaflet-marker-icon').on('contextmenu',function(e){ return false; });
@@ -151,7 +152,7 @@ $(function()
 		map.closePopup();
 	});
 
-	$('ul.key').on('click', 'li', function(e) {
+	$('ul.key').on('click', 'li:not(.none)', function(e) {
 		var marker = $(this).find('i').attr('class');
 		if (marker == 'hide') {
 			$.each(allLayers, function(key, val) {
