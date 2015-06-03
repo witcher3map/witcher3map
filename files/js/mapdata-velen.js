@@ -378,7 +378,7 @@ $(function()
 
 		gwentMarkers = L.layerGroup([
 			// Novigrad
-				L.marker([74.618, -35.132], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Crippled Kate Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
+				L.marker([74.618, -35.132], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Book Merchant Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([71.00, -41.90], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Crippled Kate Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([78.25, -33.79], setMarker(gwentIcon)).bindLabel('Gwent Tournament').bindPopup('<h1>Gwent Tournament (Quest)</h1>Find the scribe and sign up for the high-stakes Gwent tournament'),
 				L.marker([72.58, -26.21], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Shopkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
@@ -399,6 +399,7 @@ $(function()
 				L.marker([75.39, -19.02], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Loan Shark Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([79.80, -49.53], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Alchemist Player</h1>Gamble your hard earned coin playing Gwent here'),
 				L.marker([77.77, -15.58], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Alchemist Player</h1>Gamble your hard earned coin playing Gwent here'),
+				L.marker([74.55, -32.41], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Innkeeper Player</h1>Warning, this player may disappear later in the game. Gamble your hard earned coin playing Gwent here'),
 			// S Novigrad
 				L.marker([62.43, -14.22], setMarker(gwentIcon)).bindLabel('Gwent Player').bindPopup('<h1>Innkeeper Gwent Player</h1>Gamble your hard earned coin playing Gwent here'),
 			// SE Novigrad
@@ -537,7 +538,7 @@ $(function()
 				L.marker([76.20, -24.35], setMarker(innkeepIcon)).bindLabel('The Nowhere').bindPopup('<h1>Innkeep</h1>Sells Food and drink'),
 				L.marker([70.02, -29.56], setMarker(innkeepIcon)).bindLabel('Rosemary &amp; Thyme').bindPopup('<h1>Innkeep</h1>Sells Food and drink'),
 				L.marker([70.04, -1.85], setMarker(innkeepIcon)).bindLabel('Seven Cats Inn').bindPopup('<h1>Innkeep</h1>Sells Gwent cards, food, and drink'),
-				L.marker([74.50, -32.61], setMarker(innkeepIcon)).bindLabel('The Kingfisher').bindPopup('<h1>The Kingfisher</h1>You cannot seem to buy anything here, although it is a tavern/cabaret'),
+				L.marker([74.50, -32.61], setMarker(innkeepIcon)).bindLabel('The Kingfisher').bindPopup('<h1>The Kingfisher</h1>Warning, this trader may disappear later in the game. Sells Gwent cards, food, and drink'),
 			// S Novigrad
 				L.marker([62.33, -14.02], setMarker(innkeepIcon)).bindLabel('Cunny of the Goose').bindPopup('<h1>Innkeep</h1>Sells Gwent cards, food, and drink'),
 			// Oxenfurt
