@@ -163,28 +163,32 @@
 
 	// Place of Power
 		pop: [{
-			coord: [-81.492, -106.699],
+			coords: [[-81.492, -106.699]],
 			label: 'Place of Power',
-			popupTitle: 'Place of Power - Quen'
+			popupTitle: 'Place of Power - Quen',
 			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
 		}, {
-			coord: [-79.703, -52.822],
+			coords: [[-79.703, -52.822]],
 			label: 'Place of Power',
 			popupTitle: 'Place of Power - Yrden',
 			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
-		}, { coord: [-51.536, -130.386],
+		}, {
+			coords: [[-51.536, -130.386]],
 			label: 'Place of Power',
 			popupTitle: 'Place of Power - Axii',
 			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
-		}, { coord: [-34.235, -94.043],
+		}, {
+			coords: [[-34.235, -94.043]],
 			label: 'Place of Power',
 			popupTitle: 'Place of Power - Igni',
 			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
-		}, { coord: [-13.325, -97.559],
+		}, {
+			coords: [[-13.325, -97.559]],
 			label: 'Place of Power',
 			popupTitle: 'Place of Power - Aard',
 			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
-		}, { coord: [-43.771, 0.308],
+		}, {
+			coords: [[-43.771, 0.308]],
 			label: 'Place of Power',
 			popupTitle: 'Place of Power - Quen',
 			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
