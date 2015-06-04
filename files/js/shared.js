@@ -7,18 +7,33 @@
 		return coords.map(function (coord) {
 			return window.createMarker(coord, icon, label, popup);
 		});
-	}
+	};
 
 	window.setMarker = function (icon, tooltip) {
 		return {icon : icon, riseOnHover : true};
-	}
-
+	};
 
 	window.icons = {};
 	window.markers = {};
 
-
 	var icons = window.icons;
+	var markers = window.markers;
+
+	window.processData = function (data) {
+		Object.keys(data).forEach(function (key) {
+			var items = data[key];
+			var groupItems = [];
+			items.forEach(function (item) {
+				if (item.popupTitle == null) {
+					item.popupTitle = item.label;
+				}
+				item.coords.forEach(function (coord) {
+					groupItems.push(createMarker(coord, icons[key], item.label, '<h1>' + item.popupTitle + '</h1>' + item.popup));
+				});
+			});
+			markers[key] = L.layerGroup(groupItems);
+		});
+	};
 
 	icons.abandoned = L.icon({
 		iconUrl  : '/files/img/icons/abandoned.png',
