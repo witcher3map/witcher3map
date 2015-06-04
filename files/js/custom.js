@@ -1,5 +1,4 @@
-$(function()
-{
+$(function() {
 	var mobile   = ($('#sidebar').width() < 300);
 	var wayPoint = false;
 
@@ -13,6 +12,13 @@ $(function()
 		$('#warn').remove();
 	}
 
+	var hackySticky = function () {
+		if ($(window).height() > $('#sidebar-wrap').outerHeight() + $('div#copyright').outerHeight() + 45) {
+			$('div#copyright').addClass('absolute');
+		} else {
+			$('div#copyright').removeClass('absolute');
+		}
+	};
 	hackySticky();
 	$(window).on('resize', function(){ hackySticky() });
 
@@ -26,20 +32,31 @@ $(function()
 		cursorborder : 'none',
 	});
 
-	map = L.map('map', {
+	var map = L.map('map', {
 		minZoom: 2,
-		maxZoom: map_mZoom,
-		center: map_center,
+		maxZoom: window.map_mZoom,
+		center: window.map_center,
 		zoom: 3,
 		attributionControl: false,
 		zoomControl: false,
 		layers: allLayers
 	});
 
+	var go = function (cords) {
+		map.panTo(cords);
+		map.setZoom(window.map_mZoom);
+		new L.marker(cords, {
+			icon : L.icon({
+				iconUrl  : '/files/img/searchhover.png',
+				iconSize : [22, 22]
+			})
+		}).addTo(map);
+	};
+
 	new L.Control.Zoom({ position: 'topright' }).addTo(map);
 	new L.Control.Fullscreen({ position: 'topright' }).addTo(map);
 	var hash = new L.Hash(map);
-	var bounds = new L.LatLngBounds(map_sWest, map_nEast);
+	var bounds = new L.LatLngBounds(window.map_sWest, window.map_nEast);
 	map.setMaxBounds(bounds);
 
 	if (!mobile) {
@@ -86,7 +103,7 @@ $(function()
 		});
 	}
 
-	L.tileLayer('/files/maps/' + map_path + '/{z}/{x}/{y}.png', {
+	L.tileLayer('/files/maps/' + window.map_path + '/{z}/{x}/{y}.png', {
 		tms: true,
 		bounds: bounds,
 		noWrap: true
@@ -152,18 +169,18 @@ $(function()
 		map.closePopup();
 	});
 
-	if (localStorage['markers-' + map_path]) {
-		$.each($.parseJSON(localStorage['markers-' + map_path]), function(key, val) {
+	if (localStorage['markers-' + window.map_path]) {
+		$.each($.parseJSON(localStorage['markers-' + window.map_path]), function(key, val) {
 			if (val === false) {
 				$('i.' + key).parent().addClass('layer-disabled');
-				map.removeLayer(eval(key + 'Markers'));
+				map.removeLayer(window.markers[key]);
 			}
 		});
 	}
 
 	$('ul.key').on('click', 'li:not(.none)', function(e) {
 		var marker   = $(this).find('i').attr('class');
-		var remember = (!localStorage['markers-' + map_path]) ? {} : $.parseJSON(localStorage['markers-' + map_path]);
+		var remember = (!localStorage['markers-' + window.map_path]) ? {} : $.parseJSON(localStorage['markers-' + window.map_path]);
 		if (marker == 'hide') {
 			$.each(allLayers, function(key, val) {
 				map.removeLayer(val);
@@ -186,16 +203,16 @@ $(function()
 			});
 		} else {
 			if ($(this).hasClass('layer-disabled')) {
-				map.addLayer(eval(marker + 'Markers'));
+				map.addLayer(window.markers[marker]);
 				$(this).removeClass('layer-disabled');
 				remember[marker] = true;
 			} else {
-				map.removeLayer(eval(marker + 'Markers'));
+				map.removeLayer(window.markers[marker]);
 				$(this).addClass('layer-disabled');
 				remember[marker] = false;
 			}
 		}
-		localStorage['markers-' + map_path] = JSON.stringify(remember);
+		localStorage['markers-' + window.map_path] = JSON.stringify(remember);
 	});
 
 	var origSidebar;
@@ -224,8 +241,7 @@ $(function()
 	$(document).on('click', 'div#hide-sidebar.show-sidebar', function(e) {
 		$('#sidebar').animate({left : origSidebar}, 200);
 		$(this).animate({left : origHide}, 200);
-		$('#sidebar-border').animate({left : origBorder}, 200, function()
-		{
+		$('#sidebar-border').animate({left : origBorder}, 200, function() {
 			$('#map').css('left', origMap);
 			map.invalidateSize();
 			$('.show-sidebar').removeClass('show-sidebar');
@@ -276,25 +292,21 @@ $(function()
 
 	$('div#copyright').on('click', 'a.js-credits', function(e) {
 		e.preventDefault();
-		alert('This page makes use of the following Javascript libraries:\n\njQuery (MIT) - http://jquery.com\njQuery.NiceScroll (MIT) - http://git.io/vkLly\nLeaflet (BSD2) - http://leafletjs.com\nLeaflet.label (MIT) - http://git.io/vkfA2\nLeaflet-hash (MIT) - http://git.io/mwK1oA\nLeaflet.fullscreen (BSD2) - http://git.io/vJw5v\nLeaflet Control Search (MIT) - http://git.io/vkCPC\n\nMany thanks to the developers for their hard work');
+		alert([
+			'This page makes use of the following Javascript libraries:',
+			'',
+			'jQuery (MIT) - http://jquery.com',
+			'jQuery.NiceScroll (MIT) - http://git.io/vkLly',
+			'Leaflet (BSD2) - http://leafletjs.com',
+			'Leaflet.label (MIT) - http://git.io/vkfA2',
+			'Leaflet-hash (MIT) - http://git.io/mwK1oA',
+			'Leaflet.fullscreen (BSD2) - http://git.io/vJw5v',
+			'Leaflet Control Search (MIT) - http://git.io/vkCPC',
+			'',
+			'Many thanks to the developers for their hard work.'
+		].join('\n'));
 	});
+
+
 });
 
-function go(cords) {
-	map.panTo(cords);
-	map.setZoom(map_mZoom);
-	new L.marker(cords, {
-		icon : L.icon({
-			iconUrl  : '/files/img/searchhover.png',
-			iconSize : [22, 22]
-		})
-	}).addTo(map);
-}
-
-function hackySticky() {
-	if ($(window).height() > $('#sidebar-wrap').outerHeight() + $('div#copyright').outerHeight() + 45) {
-		$('div#copyright').addClass('absolute');
-	} else {
-		$('div#copyright').removeClass('absolute');
-	}
-}
