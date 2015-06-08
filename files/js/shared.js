@@ -1,18 +1,23 @@
 (function () {
-	window.createMarker = function (coord, icon, label, popup) {
+	window.createMarker = function (coord, icon, label, popup, dataKey) {
 		var mapKey = 'markers-' + map_path + '-hidden';
 		var marker = L.marker(coord, setMarker(icon)).bindLabel(label).bindPopup(popup);
 
 		marker.on('contextmenu', function (e) {
 			toggleOpacity(e, mapKey);
+			updatePills(e, dataKey);
 		}).on('dblclick', function (e) {
 			toggleOpacity(e, mapKey);
+			updatePills(e, dataKey);
 		});
 
 		if (isMarkerInvisible(mapKey, marker.getLatLng().lat, marker.getLatLng().lng)) {
 			marker.setOpacity(invisibleMarkerOpacity);
+			if(!markerCount[dataKey]) markerCount[dataKey] = 0;
+		} else {
+			markerCount[dataKey] = (markerCount[dataKey] + 1) || 1;
 		}
-
+		
 		return marker;
 	};
 
@@ -39,12 +44,22 @@
 			invisibleMarkers[mapPath].splice(invisibleMarkers[mapPath].indexOf(key), 1);
 		}
 
-		localStorage[mapPath] = JSON.stringify(invisibleMarkers[mapPath]);		
+		localStorage[mapPath] = JSON.stringify(invisibleMarkers[mapPath]);
+	};
+	
+	window.updatePills = function(event, dataKey) {
+		if (event.target && event.target.options.opacity === 1.0) {
+			markerCount[dataKey] = (markerCount[dataKey] + 1) || 1;
+		} else {
+			markerCount[dataKey] = (markerCount[dataKey] - 1) || 0;
+		}
+		$('ul.key:not(.controls) > li:not(.none) > i.'+dataKey+' ~ :last').text(markerCount[dataKey]);
 	};
 
 	window.icons = {};
 	window.markers = {};
 	window.invisibleMarkers = {};
+	window.markerCount = {};
 
 	var icons = window.icons;
 	var markers = window.markers;
@@ -58,18 +73,18 @@
 		}
 		invisibleMarkers[mapKey] = JSON.parse(localStorage[mapKey]);
 
-		Object.keys(data).forEach(function (key) {
-			var items = data[key];
+		Object.keys(data).forEach(function (dataKey) {
+			var items = data[dataKey];
 			var groupItems = [];
 			items.forEach(function (item) {
 				if (item.popupTitle == null) {
 					item.popupTitle = item.label;
 				}
 				item.coords.forEach(function (coord) {
-					groupItems.push(createMarker(coord, icons[key], item.label, '<h1>' + item.popupTitle + '</h1>' + item.popup));
+					groupItems.push(createMarker(coord, icons[dataKey], item.label, '<h1>' + item.popupTitle + '</h1>' + item.popup, dataKey));
 				});
 			});
-			markers[key] = L.layerGroup(groupItems);
+			markers[dataKey] = L.layerGroup(groupItems);
 		});
 	};
 

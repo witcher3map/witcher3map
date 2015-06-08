@@ -180,7 +180,7 @@ $(function() {
     
     $('ul.key:not(.controls) li:not(.none) i').each(function(i, e) {
         var marker = $(this).attr('class');
-        $(this).next().after("<span class='pill'>"+window.markers[marker].getLayers().length+"</span>");
+        $(this).next().after("<span class='pill'>"+window.markerCount[marker]+"</span>");
     });
     
 	$('ul.key').on('click', 'li:not(.none)', function(e) {
@@ -224,6 +224,7 @@ $(function() {
 	var origBorder;
 	var origHide;
 	var origMap;
+	var pills = {};
 
 	$(document).on('click', 'div#hide-sidebar:not(.show-sidebar)', function(e) {
 		origSidebar = $('#sidebar').css('left');
