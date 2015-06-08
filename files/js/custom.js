@@ -177,7 +177,12 @@ $(function() {
 			}
 		});
 	}
-
+    
+    $('ul.key:not(.controls) li:not(.none) i').each(function(i, e) {
+        var marker = $(this).attr('class');
+        $(this).next().after("<span class='pill'>"+window.markers[marker].getLayers().length+"</span>");
+    });
+    
 	$('ul.key').on('click', 'li:not(.none)', function(e) {
 		var marker   = $(this).find('i').attr('class');
 		var remember = (!localStorage['markers-' + window.map_path]) ? {} : $.parseJSON(localStorage['markers-' + window.map_path]);

@@ -42,7 +42,7 @@ div#map {
 	z-index: -1;
 }
 div#sidebar {
-	width: 310px;
+	width: 360px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -62,11 +62,12 @@ div#sidebar-border {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	left: 335px;
+	left: 385px;
 }
 div#logo {
 	width: 300px;
 	height: 155px;
+    margin-left:25px;
 	margin-bottom: 10px;
 	background: url('../img/logo.png') no-repeat;
 }
@@ -107,6 +108,13 @@ ul.key > li > i {
 ul.key > li > span {
 	float: left;
 	line-height: 21px;
+}
+ul.key > li > span.pill {
+    margin-left:5px;
+    padding:0px 2px 0px 2px;
+    background-color:#B08948;
+    color:#000000;
+    border-radius:5px;
 }
 ul.key > li:after {
 	clear: both;
@@ -191,7 +199,7 @@ div#copyright > a:hover {
 }
 div#info-wrap {
 	position: absolute;
-	left: 330px;
+	left: 380px;
 	bottom: 0;
 	width: 620px;
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
@@ -259,15 +267,15 @@ div#hide-sidebar {
 		width: 140px;
 		height: 72px;
 		background: url('../img/logo-small.png') no-repeat;
-		margin-left: 5px;
+		margin-left: 20px;
 	}
 	div#sidebar {
-		width: 150px;
+		width: 180px;
 	}
 	div#hide-sidebar {
 		display: block;
 		position: absolute;
-		left: 180px;
+		left: 210px;
 		top: 0px;
 		background: rgba(0, 0, 0, .7) url(../img/sidebarhide.png) no-repeat 0px 3px;
 		border-bottom-right-radius: 8px;
@@ -280,10 +288,10 @@ div#hide-sidebar {
 		background-position: -22px 3px;
 	}
 	div#sidebar-border {
-		left: 175px;
+		left: 205px;
 	}
 	div#map {
-		left: 175px;
+		left: 205px;
 	}
 	ul.key {
 		-webkit-column-count: 1;
@@ -313,8 +321,8 @@ div#hide-sidebar {
 		display: none;
 	}
 	div#info-wrap {
-		left: 175px;
-		width: calc(100% - 175px);
+		left: 205px;
+		width: calc(100% - 205px);
 	}
 	div#info-fade-intro {
 		width: 10px;
