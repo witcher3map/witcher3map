@@ -55,6 +55,13 @@
 		}
 		$('ul.key:not(.controls) > li:not(.none) > i.'+dataKey+' ~ :last').text(markerCount[dataKey]);
 	};
+	
+	window.resetInvisibleMarkers = function() {
+		var mapKey = 'markers-' + map_path + '-hidden';
+		invisibleMarkers[mapKey] = [];
+		localStorage[mapKey] = JSON.stringify(invisibleMarkers[mapKey]);
+		location.reload();
+	};
 
 	window.icons = {};
 	window.markers = {};
@@ -69,6 +76,7 @@
 		var mapKey = 'markers-' + map_path + '-hidden';
 
 		if(!localStorage[mapKey]) {
+			console.log('im here');
 			localStorage[mapKey] = JSON.stringify([]);
 		}
 		invisibleMarkers[mapKey] = JSON.parse(localStorage[mapKey]);

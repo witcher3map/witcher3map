@@ -402,8 +402,6 @@ i.signpost { background-image:url('../img/icons/fasttravel.png'); }
 i.shopkeeper { background-image:url('../img/icons/merchant.png'); }
 i.smugglers { background-image:url('../img/icons/smugglers.png'); }
 i.spoils { background-image:url('../img/icons/spoils.png'); }
-i.hide { background-image:url('../img/icons/hide.png'); }
-i.show { background-image:url('../img/icons/show.png'); }
 .leaflet-container {
 	background: #222;
 }
