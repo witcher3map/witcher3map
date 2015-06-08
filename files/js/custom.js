@@ -306,7 +306,4 @@ $(function() {
 			'Many thanks to the developers for their hard work.'
 		].join('\n'));
 	});
-
-
 });
-

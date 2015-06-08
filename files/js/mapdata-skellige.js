@@ -1120,4 +1120,3 @@
 		markers.spoils
 	];
 }());
-
