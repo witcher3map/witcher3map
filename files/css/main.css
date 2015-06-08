@@ -199,6 +199,9 @@ div#info-wrap {
 	z-index: 10;
 	display: none;
 }
+div#info-wrap a {
+	color: #B08948;
+}
 div#info {
 	width: 520px;
 	margin-left: 20px;
