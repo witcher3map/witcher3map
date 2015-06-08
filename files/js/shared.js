@@ -8,8 +8,10 @@
 		invisibleMarkers[mapKey] = JSON.parse(localStorage[mapKey]);
 
 		var marker = L.marker(coord, setMarker(icon)).bindLabel(label).bindPopup(popup);
-		
+
 		marker.on('contextmenu', function (e) {
+			toggleOpacity(e, mapKey);
+		}).on('dblclick', function (e) {
 			toggleOpacity(e, mapKey);
 		});
 
