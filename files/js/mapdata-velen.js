@@ -536,6 +536,11 @@
 
 	// Gwent Player
 		gwent: [{ // Novigrad
+			coords: [[72.900, -39.790]],
+			label: 'Gwent Player',
+			popupTitle: 'Shopkeeper Gwent Player',
+			popup: 'Gamble your hard earned coin playing Gwent here'
+		}, {
 			coords: [[74.618, -35.132]],
 			label: 'Gwent Player',
 			popupTitle: 'Book Merchant Gwent Player',
@@ -1251,7 +1256,7 @@
 			popupTitle: 'Enhanced Griffin Gauntlets',
 			popup: ''
 		}, {
-			coords: [[-71.740, -2.109]],
+			coords: [[-72.047, 3.999]],
 			label: 'Witcher Upgrade Gear',
 			popupTitle: 'Superior Ursine silver sword',
 			popup: ''
