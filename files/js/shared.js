@@ -1,12 +1,6 @@
 (function () {
 	window.createMarker = function (coord, icon, label, popup) {
 		var mapKey = 'markers-' + map_path + '-hidden';
-
-		if(!localStorage[mapKey]) {
-			localStorage[mapKey] = JSON.stringify([]);
-		}
-		invisibleMarkers[mapKey] = JSON.parse(localStorage[mapKey]);
-
 		var marker = L.marker(coord, setMarker(icon)).bindLabel(label).bindPopup(popup);
 
 		marker.on('contextmenu', function (e) {
@@ -57,6 +51,13 @@
 	var invisibleMarkerOpacity = 0.25;
 
 	window.processData = function (data) {
+		var mapKey = 'markers-' + map_path + '-hidden';
+
+		if(!localStorage[mapKey]) {
+			localStorage[mapKey] = JSON.stringify([]);
+		}
+		invisibleMarkers[mapKey] = JSON.parse(localStorage[mapKey]);
+
 		Object.keys(data).forEach(function (key) {
 			var items = data[key];
 			var groupItems = [];
