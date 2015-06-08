@@ -71,7 +71,7 @@
 		}, { // NE Velen
 			coords: [[2.18, -12.92]],
 			label: 'Amateur Armorer',
-			popup: 'Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			popup: 'Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets. Needs to be saved from <a href="#6/-18.761/-25.785">Peet\'s Landing</a>'
 		}, { // NW Velen
 			coords: [[-31.25, -71.02]],
 			label: 'Journeyman Armorer',
@@ -186,11 +186,13 @@
 				[76.32, -20.39],
 				// Oxenfurt
 				[33.87, 52.12],
-				// NW Velen
-				[-54.36, -81.81],
 			],
 			label: 'Barber',
 			popup: 'Visit barbers for a shave or a new haircut'
+		}, { // NW Velen
+			coords: [[-54.36, -81.81]],
+			label: 'Barber',
+			popup: 'Visit barbers for a shave or a new haircut. Cuts Hair for free! Needs to saved from <a href="#6/-35.362/-127.430">here</a>'
 		}],
 
 	// Blacksmith
@@ -534,6 +536,11 @@
 
 	// Gwent Player
 		gwent: [{ // Novigrad
+			coords: [[72.900, -39.790]],
+			label: 'Gwent Player',
+			popupTitle: 'Shopkeeper Gwent Player',
+			popup: 'Gamble your hard earned coin playing Gwent here'
+		}, {
 			coords: [[74.618, -35.132]],
 			label: 'Gwent Player',
 			popupTitle: 'Book Merchant Gwent Player',
@@ -677,7 +684,7 @@
 			coords: [[2.58, -12.92]],
 			label: 'Gwent Player',
 			popupTitle: 'Armorer Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			popup: 'Gamble your hard earned coin playing Gwent here. Needs to be saved from <a href="#6/-18.761/-25.785">Peet\'s Landing</a>'
 		}, { // NW Velen
 			coords: [[-27.64, -102.54]],
 			label: 'Gwent Player',
@@ -712,7 +719,7 @@
 			coords: [[-52.60, -81.19]],
 			label: 'Gwent Player',
 			popupTitle: 'Shopkeeper Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			popup: 'Gamble your hard earned coin playing Gwent here. Needs to be saved from the <a href="#6/-61.954/-33.893">Bandits\' Camp</a>'
 		}, {
 			coords: [[-62.53, -76.44]],
 			label: 'Gwent Player',
@@ -1248,6 +1255,16 @@
 			label: 'Witcher Upgrade Gear',
 			popupTitle: 'Enhanced Griffin Gauntlets',
 			popup: ''
+		}, {
+			coords: [[-72.047, 3.999]],
+			label: 'Witcher Upgrade Gear',
+			popupTitle: 'Superior Ursine silver sword',
+			popup: ''
+		}, {
+			coords: [[20.406, -14.304]],
+			label: 'Witcher Upgrade Gear',
+			popupTitle: 'Superior Ursine Gauntlets',
+			popup: ''
 		}],
 
 	// Shopkeeper
@@ -1397,7 +1414,7 @@
 		}, {
 			coords: [[-52.70, -81.49]],
 			label: 'Shopkeeper',
-			popup: 'Sells Gwent cards and drink'
+			popup: 'Sells Gwent cards and drink. Needs to be saved from the <a href="#6/-61.954/-33.893">Bandits\' Camp</a>'
 		}, {
 			coords: [[-52.96, -56.65]],
 			label: 'Shopkeeper',

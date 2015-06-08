@@ -690,15 +690,15 @@
 			coords: [[-76.985, 57.788]],
 			label: 'Jutta An Dimun',
 			popup: 'todo'
-		}, {
-					// Ard Skellig
+		}, { // Ard Skellig
 			coords: [[-58.344, -2.549]],
 			label: 'Ursine Steel Sword',
 			popupTitle: 'Ursine Steel Sword Diagram',
 			popup: 'In a chest in the basement of this ruin'
 		}, {
 			coords: [[-40.112, -14.546]],
-			label: 'Griffin Steel Sword Mastercrafted',
+			label: 'Mastercrafted Griffin Steel Sword',
+			popupTitle: 'Mastercrafted Griffin Steel Sword Diagram',
 			popup: ''
 		}, {
 			coords: [[-1.274, -11.931]],
@@ -710,6 +710,44 @@
 			label: 'Superior Griffin Armour Set',
 			popupTitle: 'Superior Griffin Armour Set Diagrams',
 			popup: 'Armor, boots, gauntlets, trousers'
+		}, {
+			coords: [[-22, 31]],
+			label: 'Mastercrafted Griffin Armor',
+			popup: ''
+		}, {
+			coords: [[54.5, 32]],
+			label: 'Superior Griffin Steel Sword',
+			popupTitle: 'Superior Griffin Steel Sword Diagram',
+			popup: ''
+		}, {
+			coords: [[5.5, -17]],
+			label: 'Ursine Silver Sword',
+			popupTitle: 'Ursine Silver Sword Diagram',
+			popup: ''
+		}, {
+			coords: [[53.8, 38.5]],
+			label: 'Ursine Armor Set',
+			popupTitle: 'Ursine Armor Set Diagrams',
+			popup: 'Armor, gauntlets, trousers and boots'
+		}, {
+			coords: [[17.8, -123.5]],
+			label: 'Ursine Crossbow',
+			popupTitle: 'Ursine Crossbow Diagram',
+			popup: ''
+		}, {
+			coords: [[-70.5, -8.6]],
+			label: 'Superior Griffin silver sword',
+			popupTitle: 'Superior Griffin silver sword Diagram',
+			popup: 'Located in the cave system below'
+		}, {
+			coords: [[-50, -34.5]],
+			label: 'Mastercrafted Griffin Silver Sword',
+			popupTitle: 'Mastercrafted Griffin Silver Diagram',
+			popup: ''
+		}, {
+			coords: [[-62.8, -39]],
+			label: 'Jarl Madman Lugos',
+			popup: 'You get the Card \'Vampire: Katakan\' from him (Gwent Quest: Skellige) (all cards <a href="https://wiiare.in/portfolio-type/the-witcher-3-wild-hunt-card-collector-achievement-trophy-guide/" target="_blank">here</a>'
 		}],
 				
 

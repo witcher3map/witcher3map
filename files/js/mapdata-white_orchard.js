@@ -199,6 +199,18 @@
 			coords: [[-49.611, 7.998]],
 			label: 'Lootable Battlefield',
 			popup: 'This battlefield can be looted for easy early game coin'
+		}, {
+			coords: [[-72.5, -17]],
+			label: 'Serpentine steel sword',
+			popup: 'Viper School Diagram (1/2)'
+		}, {
+			coords: [[-32.953, -95.142]],
+			label: 'Serpentine silver sword',
+			popup: 'Viper School Diagram (2/2), below the chapel'
+		}, {
+			coords: [[-60, 2]],
+			label: 'Crystal Skull',
+			popup: 'From the Intro Video, unlocks a dialog with Yennifer at her \'The Last Wish\' Quest. Can only be picked up if you haven\'t left White Orchard yet'
 		}],
 
 	// Shopkeeper

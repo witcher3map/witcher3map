@@ -103,7 +103,7 @@ $(function() {
 		});
 	}
 
-	L.tileLayer('/files/maps/' + window.map_path + '/{z}/{x}/{y}.png', {
+	L.tileLayer('../files/maps/' + window.map_path + '/{z}/{x}/{y}.png', {
 		tms: true,
 		bounds: bounds,
 		noWrap: true
