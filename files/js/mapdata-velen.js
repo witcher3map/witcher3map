@@ -1871,7 +1871,6 @@
 		}]
 	});
 
-
 	window.allLayers = [
 		markers.abandoned,
 		markers.alchemy,
@@ -1901,4 +1900,3 @@
 		markers.spoils
 	];
 }());
-
