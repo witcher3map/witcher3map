@@ -267,7 +267,7 @@ div#warn {
 div#hide-sidebar {
 	display: block;
 	position: absolute;
-	left: 340px;
+	left: 390px;
 	top: 0px;
 	background: rgba(0, 0, 0, .7) url(../img/sidebarhide.png) no-repeat 0px 3px;
 	border-bottom-right-radius: 8px;
