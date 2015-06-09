@@ -76,7 +76,6 @@
 		var mapKey = 'markers-' + map_path + '-hidden';
 
 		if(!localStorage[mapKey]) {
-			console.log('im here');
 			localStorage[mapKey] = JSON.stringify([]);
 		}
 		invisibleMarkers[mapKey] = JSON.parse(localStorage[mapKey]);

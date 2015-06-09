@@ -253,7 +253,6 @@ $(function() {
 	var origBorder;
 	var origHide;
 	var origMap;
-	var pills = {};
 
 	$(document).on('click', 'div#hide-sidebar:not(.show-sidebar)', function(e) {
 		origSidebar = $('#sidebar').css('left');
