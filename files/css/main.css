@@ -110,11 +110,14 @@ ul.key > li > span {
 	line-height: 21px;
 }
 ul.key > li > span.pill {
+	background-color:#97702F;
+	box-shadow: 1px 1px 3px #000000 inset;
     margin-left:5px;
-    padding:0px 2px 0px 2px;
-    background-color:#B08948;
+    padding:2px 3px 0px 4px;
     color:#000000;
-    border-radius:5px;
+    border-radius:7px;
+	font-size: 14px;
+	line-height: 17px;
 }
 ul.key > li:after {
 	clear: both;
