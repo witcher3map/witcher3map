@@ -11,6 +11,11 @@ $(function() {
 	if (localStorage['hideWarn']) {
 		$('#warn').remove();
 	}
+	
+	if(localStorage['hide-all']) {
+		$('#hide-all').hide();
+		$('#show-all').show();
+	}
 
 	var hackySticky = function () {
 		if ($(window).height() > $('#sidebar-wrap').outerHeight() + $('div#copyright').outerHeight() + 45) {
@@ -180,8 +185,17 @@ $(function() {
     
     $('ul.key:not(.controls) li:not(.none) i').each(function(i, e) {
         var marker = $(this).attr('class');
-        $(this).next().after("<span class='pill'>"+window.markerCount[marker]+"</span>");
-    });
+		var pill = $("<span class='pill'>"+window.markerCount[marker]+"</span>");
+        $(this).next().after(pill);
+		if(localStorage['hide-counts']) {
+			pill.hide();
+		}
+    }).promise().done(function() {
+		if(localStorage['hide-counts']) {
+			$('#hide-counts').hide();
+			$('#show-counts').show();
+		}
+	});
 	
 	$('#hide-all').on('click', function(e) {
 		var remember = (!localStorage['markers-' + window.map_path]) ? {} : $.parseJSON(localStorage['markers-' + window.map_path]);
@@ -197,6 +211,7 @@ $(function() {
 		$(this).hide();
 		$('#show-all').show();
 		localStorage['markers-' + window.map_path] = JSON.stringify(remember);
+		localStorage['hide-all'] = true;
 	});
 	
 	$('#show-all').on('click', function(e) {
@@ -213,6 +228,7 @@ $(function() {
 		$(this).hide();
 		$('#hide-all').show();
 		localStorage['markers-' + window.map_path] = JSON.stringify(remember);
+		localStorage.removeItem('hide-all');
 	});
 	
 	$('#hide-counts').on('click', function(e) {
@@ -221,6 +237,7 @@ $(function() {
 		});
 		$(this).hide();
 		$('#show-counts').show();
+		localStorage['hide-counts'] = true;
 	});
 	
 	$('#show-counts').on('click', function(e) {
@@ -228,7 +245,8 @@ $(function() {
 			$(this).siblings(':last').show();
 		});
 		$(this).hide();
-		$('#hide-counts').show();		
+		$('#hide-counts').show();
+		localStorage.removeItem('hide-counts');
 	});
 	
 	$('#reset-tracking').on('click', function(e) {
@@ -237,7 +255,7 @@ $(function() {
 			resetInvisibleMarkers();
 		}
 	});
-    
+	
 	$('ul.key:not(.controls)').on('click', 'li:not(.none)', function(e) {
 		var marker   = $(this).find('i').attr('class');
 		var remember = (!localStorage['markers-' + window.map_path]) ? {} : $.parseJSON(localStorage['markers-' + window.map_path]);
@@ -251,6 +269,7 @@ $(function() {
 			remember[marker] = false;
 		}
 		localStorage['markers-' + window.map_path] = JSON.stringify(remember);
+		localStorage.removeItem('hide-all');
 	});
 
 	var origSidebar;
