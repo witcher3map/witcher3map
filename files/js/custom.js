@@ -269,7 +269,6 @@ $(function() {
 			remember[marker] = false;
 		}
 		localStorage['markers-' + window.map_path] = JSON.stringify(remember);
-		localStorage.removeItem('hide-all-'+window.map_path);
 	});
 
 	var origSidebar;
