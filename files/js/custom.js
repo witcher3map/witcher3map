@@ -12,7 +12,7 @@ $(function() {
 		$('#warn').remove();
 	}
 	
-	if(localStorage['hide-all']) {
+	if(localStorage['hide-all-'+window.map_path]) {
 		$('#hide-all').hide();
 		$('#show-all').show();
 	}
@@ -211,7 +211,7 @@ $(function() {
 		$(this).hide();
 		$('#show-all').show();
 		localStorage['markers-' + window.map_path] = JSON.stringify(remember);
-		localStorage['hide-all'] = true;
+		localStorage['hide-all-'+window.map_path] = true;
 	});
 	
 	$('#show-all').on('click', function(e) {
@@ -228,7 +228,7 @@ $(function() {
 		$(this).hide();
 		$('#hide-all').show();
 		localStorage['markers-' + window.map_path] = JSON.stringify(remember);
-		localStorage.removeItem('hide-all');
+		localStorage.removeItem('hide-all-'+window.map_path);
 	});
 	
 	$('#hide-counts').on('click', function(e) {
@@ -269,7 +269,7 @@ $(function() {
 			remember[marker] = false;
 		}
 		localStorage['markers-' + window.map_path] = JSON.stringify(remember);
-		localStorage.removeItem('hide-all');
+		localStorage.removeItem('hide-all-'+window.map_path);
 	});
 
 	var origSidebar;
