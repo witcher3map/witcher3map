@@ -42,7 +42,7 @@ div#map {
 	z-index: -1;
 }
 div#sidebar {
-	width: 310px;
+	width: 360px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -62,11 +62,12 @@ div#sidebar-border {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	left: 335px;
+	left: 385px;
 }
 div#logo {
 	width: 300px;
 	height: 155px;
+    margin-left:25px;
 	margin-bottom: 10px;
 	background: url('../img/logo.png') no-repeat;
 }
@@ -107,6 +108,16 @@ ul.key > li > i {
 ul.key > li > span {
 	float: left;
 	line-height: 21px;
+}
+ul.key > li > span.pill {
+	background-color:#97702F;
+	box-shadow: 1px 1px 3px #000000 inset;
+    margin-left:5px;
+    padding:2px 3px 0px 4px;
+    color:#000000;
+    border-radius:7px;
+	font-size: 14px;
+	line-height: 17px;
 }
 ul.key > li:after {
 	clear: both;
@@ -173,7 +184,7 @@ div#copyright {
 	margin-bottom: 5px;
 }
 div#copyright.absolute {
-	width: 330px;
+	width: 380px;
 	position: absolute;
 	bottom: 5px;
 	left: 0;
@@ -191,7 +202,7 @@ div#copyright > a:hover {
 }
 div#info-wrap {
 	position: absolute;
-	left: 330px;
+	left: 380px;
 	bottom: 0;
 	width: 620px;
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
@@ -259,7 +270,7 @@ div#warn {
 div#hide-sidebar {
 	display: block;
 	position: absolute;
-	left: 340px;
+	left: 390px;
 	top: 0px;
 	background: rgba(0, 0, 0, .7) url(../img/sidebarhide.png) no-repeat 0px 3px;
 	border-bottom-right-radius: 8px;
@@ -276,19 +287,19 @@ div#hide-sidebar.show-sidebar {
 		width: 140px;
 		height: 72px;
 		background: url('../img/logo-small.png') no-repeat;
-		margin-left: 5px;
+		margin-left: 20px;
 	}
 	div#sidebar {
-		width: 150px;
+		width: 180px;
 	}
 	div#hide-sidebar {
-		left: 180px;
+		left: 210px;
 	}
 	div#sidebar-border {
-		left: 175px;
+		left: 205px;
 	}
 	div#map {
-		left: 175px;
+		left: 205px;
 	}
 	ul.key {
 		-webkit-column-count: 1;
@@ -318,8 +329,8 @@ div#hide-sidebar.show-sidebar {
 		display: none;
 	}
 	div#info-wrap {
-		left: 175px;
-		width: calc(100% - 175px);
+		left: 205px;
+		width: calc(100% - 205px);
 	}
 	div#info-fade-intro {
 		width: 10px;
@@ -394,8 +405,6 @@ i.signpost { background-image:url('../img/icons/fasttravel.png'); }
 i.shopkeeper { background-image:url('../img/icons/merchant.png'); }
 i.smugglers { background-image:url('../img/icons/smugglers.png'); }
 i.spoils { background-image:url('../img/icons/spoils.png'); }
-i.hide { background-image:url('../img/icons/hide.png'); }
-i.show { background-image:url('../img/icons/show.png'); }
 .leaflet-container {
 	background: #222;
 }
