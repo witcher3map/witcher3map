@@ -128,7 +128,7 @@
 				[-64.55, -146.69],
 				[-65.04, -142.34],
 				// SE Velen
-				[-29.69, -17.23],
+				[-29.69, -17.23]
 			],
 			label: 'Bandit Camp',
 			popup: 'A group of dangerous bandits have made camp here'
@@ -185,7 +185,7 @@
 				[76.45, -33.18],
 				[76.32, -20.39],
 				// Oxenfurt
-				[33.87, 52.12],
+				[33.87, 52.12]
 			],
 			label: 'Barber',
 			popup: 'Visit barbers for a shave or a new haircut'
@@ -423,7 +423,7 @@
 				[-59.09, -144.05],
 				// SE Velen
 				[-35.89, 55.20],
-				[-33.80, -26.81],
+				[-33.80, -26.81]
 			],
 			label: 'Grindstone',
 			popup: 'A blade sharpened here will deal more damage'
@@ -440,7 +440,7 @@
 					[-38.27, -149.24],
 				// SE Velen
 					[-73.42, 31.77],
-					[-51.78, -6.42],
+					[-51.78, -6.42]
 			],
 			label: 'Guarded Treasure',
 			popup: 'A particularly powerful monster guards a valuable cache here'
@@ -781,7 +781,7 @@
 				[-71.90, -73.92],
 				[-80.18, -114.17],
 				// SE Velen
-				[-78.78, -11.07],
+				[-78.78, -11.07]
 			],
 			label: 'Harbor',
 			popup: 'A place where you can find a boat, boats will respawn here'
@@ -796,7 +796,7 @@
 				// S Novigrad
 				[61.89, -13.16],
 				// SE Novigrad
-				[50.54, 72.07],
+				[50.54, 72.07]
 			],
 			label: 'Herbalist',
 			popup: 'Here you can buy alchemy ingredients'
@@ -829,7 +829,7 @@
 				// SW Velen
 				[-71.34, -107.75],
 				// SE Velen
-				[-29.99, 28.39],
+				[-29.99, 28.39]
 			],
 			label: 'Hidden Treasure',
 			popup: 'A hidden cache of valuable goods'
@@ -952,7 +952,7 @@
 				// NE Velen
 				[20.47, -13.76],
 				// SE Velen
-				[-54.47, 12.00],
+				[-54.47, 12.00]
 			],
 			label: 'Monster Den',
 			popup: 'Monster-infested location. A constant worry for those living nearby'
@@ -980,7 +980,7 @@
 				[-75.14, -122.29],
 				[-74.73, -121.49],
 				// SE Velen
-				[-68.69, -2.20],
+				[-68.69, -2.20]
 			],
 			label: 'Monster Nest',
 			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs'
@@ -1074,7 +1074,7 @@
 				// SE Velen
 				[-58.08, 27.95],
 				[-36.17, -26.02],
-				[-78.73, 110.17],
+				[-78.73, 110.17]
 			],
 			label: 'Notice Board',
 			popup: 'Here you can find monster contracts and announcements about matters of local concern'
@@ -1086,7 +1086,7 @@
 				// NE Velen
 				[26.43, -11.87],
 				// NW Velen
-				[-33.94, -132.36],
+				[-33.94, -132.36]
 			],
 			label: 'Person(s) in Distress',
 			popup: "There's a person or a group of people here in need of assitance"
@@ -1865,7 +1865,7 @@
 				// S Novigrad
 				[61.17, -84.11],
 				// NW Velen
-				[-58.90, -158.82],
+				[-58.90, -158.82]
 			],
 			label: "Smugglers' Cache",
 			popup: 'Smuggled goods have been hidden here'
