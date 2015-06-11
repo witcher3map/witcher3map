@@ -1,0 +1,62 @@
+{
+  "sidebar": {
+    "alchemy": "Alchemy Supplies",
+    "abandoned": "Abandoned Site",
+    "armourer": "Armorer",
+    "armourerstable": "Armorer's Table",
+    "banditcamp": "Bandit Camp",
+    "barber": "Barber",
+    "blacksmith": "Blacksmith",
+    "brothel": "Brothel",
+    "entrance": "Entrance",
+    "grindstone": "Grindstone",
+    "guarded": "Guarded Treasure",
+    "gwent": "Gwent Player",
+    "harbor": "Harbor",
+    "herbalist": "Herbalist",
+    "hidden": "Hidden Treasure",
+    "innkeep": "Innkeep",
+    "monsternest": "Monster Nest",
+    "monsterden": "Monster Den",
+    "notice": "Notice Board",
+    "pid": "Person in Distress",
+    "pop": "Place of Power",
+    "poi": "Point of Interest",
+    "signpost": "Sign Post",
+    "shopkeeper": "Shopkeeper",
+    "smugglers": "Smugglers' Cache",
+    "spoils": "Spoils of War"
+  },
+  "controls": {
+    "show": "Show All",
+    "hide": "Hide All"
+  },
+  "monsters": {
+    "alghoul": "Alghoul",
+    "bandits": "Bandits",
+    "drowners": "Drowners",
+    "endregas": "Endregas",
+    "ghouls": "Ghouls"
+  },
+  "abandoned": {
+    "label": "Abandoned Site",
+    "text": "A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more"
+  },
+  "alchemy": {
+    "pellar": "Pellar",
+    "supplies": "Alchemy Supplies",
+    "supplies*": "Alchemy Supplies*",
+    "text": "Here you can buy alchemy ingredients",
+    "text*": "Here you can buy alchemy ingredients, also pays well trophies"
+  },
+  "armourer": {
+    "amateur": "Amateur Armorer",
+    "journeyman": "Journeyman Armorer",
+    "master": "Master Armorer*",
+    "petesLanding": "Peet's Landing",
+    "quest": "Is available after the \"Master Armorers\" (lvl 26) quest. ",
+    "rescue": "Needs to be saved from",
+    "text": "Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets.",
+    "yoana": "Master Armorer* (Yoana)"
+  }
+}

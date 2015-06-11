@@ -15,76 +15,76 @@
 				[-50.25, -140.63],
 				[-58.95, -142.21]
 			],
-			label: 'Abandoned Site',
-			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more'
+			label: $.t("abandoned.label"),
+			popup: $.t("abandoned.text")
 		}, { // NE Velen
 			coords: [[-17.06, 8.26]],
-			label: 'Abandoned Site',
-			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 4<span> Drowners</span>)'
+			label: $.t("abandoned.label"),
+			popup: $.t("abandoned.text") + '(lvl 4<span> ' + $.t("monsters.drowners") + '</span>)'
 		}, {
 			coords: [[13.70, 46.05]],
-			label: 'Abandoned Site',
-			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 9<span> Drowners</span>)'
+            label: $.t("abandoned.label"),
+			popup: $.t("abandoned.text") + '(lvl 9<span> ' + $.t("monsters.drowners") + '</span>)'
 		}, {
 			coords: [[-8.23, 72.16]],
-			label: 'Abandoned Site',
-			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 9<span> Ghouls</span> &amp; lvl 11<span> Alghoul</span>)'
+            label: $.t("abandoned.label"),
+			popup: $.t("abandoned.text") + '(lvl 9<span> ' + $.t("monsters.ghouls") + '</span> &amp; lvl 11<span> ' + $.t("monsters.alghoul") + '</span>)'
 		}, { // SW Velen
 			coords: [[-79.70, -112.15]],
-			label: 'Abandoned Site',
-			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 9<span> Bandits</span>)'
+            label: $.t("abandoned.label"),
+			popup: $.t("abandoned.text") + '(lvl 9<span> ' + $.t("monsters.bandits") + '</span>)'
 		}, {
 			coords: [[-78.68, -40.69]],
-			label: 'Abandoned Site',
-			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 9<span> Endregas</span>)'
+            label: $.t("abandoned.label"),
+			popup: $.t("abandoned.text") + '(lvl 9<span> ' + $.t("monsters.endregas") + '</span>)'
 		}, { // SE Velen
 			coords: [[-36.95, 3.08]],
-			label: 'Abandoned Site',
-			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 5<span> Bandits</span>)'
+            label: $.t("abandoned.label"),
+			popup: $.t("abandoned.text") + '(lvl 5<span> ' + $.t("monsters.bandits") + '</span>)'
 		}],
 
 	// Alchemy Supplies
 		alchemy: [{ //Novigrad
 			coords: [[77.71, -15.91]],
-			label: 'Alchemy Supplies*',
-			popup: 'Here you can buy alchemy ingredients, also pays well trophies'
+			label: $.t("alchemy.supplies*"),
+			popup: $.t("alchemy.text*")
 		}, {
 			coords: [[79.75, -49.83]],
-			label: 'Alchemy Supplies',
-			popup: 'Here you can buy alchemy ingredients'
+			label: $.t("alchemy.supplies"),
+			popup: $.t("alchemy.text")
 		}, { // NW Velen
 			coords: [[-18.52, -110.21]],
-			label: 'Alchemy Supplies',
-			popupTitle: 'Pellar',
-			popup: 'Here you can buy alchemy ingredients'
+			label: $.t("alchemy.supplies"),
+			popupTitle: $.t("alchemy.pellar"),
+			popup: $.t("alchemy.text")
 		}],
 
 	// Armourer
 		armourer: [{ // Novigrad
 			coords: [[74.23, -38.23]],
-			label: 'Journeyman Armorer',
-			popup: 'Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("armourer.journeyman"),
+			popup: $.t("armourer.text")
 		}, { // Oxenfurt
 			coords: [[38.82, 54.01]],
-			label: 'Journeyman Armorer',
-			popup: 'Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("armourer.journeyman"),
+			popup: $.t("armourer.text")
 		}, { // NE Velen
 			coords: [[2.18, -12.92]],
-			label: 'Amateur Armorer',
-			popup: 'Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets. Needs to be saved from <a href="#6/-18.761/-25.785">Peet\'s Landing</a>'
+			label: $.t("armourer.amateur"),
+			popup: $.t("armourer.text") + ' ' + $.t("armourer.rescue") + ' <a href="#6/-18.761/-25.785">' + $.t("armourer.petesLanding") + '</a>'
 		}, { // NW Velen
 			coords: [[-31.25, -71.02]],
-			label: 'Journeyman Armorer',
-			popup: 'Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("armourer.journeyman"),
+			popup: $.t("armourer.text")
 		}, {
 			coords: [[-54.06, -122.97]],
-			label: 'Amateur Armorer',
-			popup: 'Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("armourer.amateur"),
+			popup: $.t("armourer.text")
 		}, {
 			coords: [[-30.87, -71.63]],
-			label: 'Master Armorer*',
-			popupTitle: 'Master Armorer* (Yoana)',
-			popup: 'Is available after the "Master Armorers" (lvl 26) quest. Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("armourer.master"),
+			popupTitle: $.t("armourer.yoana"),
+			popup: $.t("armourer.quest") + $.t("armourer.text")
 		}],
 
 	// Armourer's Table

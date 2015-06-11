@@ -1,5 +1,18 @@
 (function () {
-	window.createMarker = function (coord, icon, label, popup) {
+
+    var options = {
+        debug: true,
+        getAsync: false,
+        fallbackLng: "en",
+        resGetPath: "/witcher3map/locales/__lng__/__ns__.json"
+    };
+    i18n.init(options,
+        function(t) {
+            $(".key").i18n();
+        }
+    );
+
+    window.createMarker = function (coord, icon, label, popup) {
 		var mapKey = 'markers-' + map_path + '-hidden';
 		var marker = L.marker(coord, setMarker(icon)).bindLabel(label).bindPopup(popup);
 
