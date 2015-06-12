@@ -1076,8 +1076,8 @@
 				[-36.17, -26.02],
 				[-78.73, 110.17]
 			],
-			label: 'Notice Board',
-			popup: 'Here you can find monster contracts and announcements about matters of local concern'
+			label: $.t("notice.label"),
+			popup: $.t("notice.desc")
 		}],
 
 	// Person in Distress
@@ -1088,64 +1088,64 @@
 				// NW Velen
 				[-33.94, -132.36]
 			],
-			label: 'Person(s) in Distress',
+			label: $.t("pid.label"),
 			popup: "There's a person or a group of people here in need of assitance"
 		}, { // SE Novigrad
 			coords: [[20.47, 100.55]],
-			label: 'Person(s) in Distress',
-			popup: "There's a person or a group of people here in need of assitance (lvl 9<span> Bandits</span>)"
+			label: $.t("pid.label"),
+			popup: $.t("pid.desc", {monster: '(lvl 9 <span>' + $.t("monsters.bandits") + '</span>)'})
 		}, { // NE Velen
 			coords: [[-17.64, -29.18]],
-			label: 'Person(s) in Distress',
-			popup: "There's a person or a group of people here in need of assitance (lvl 10-16<span> Bandits</span>)"
+			label: $.t("pid.label"),
+			popup: $.t("pid.desc", {monster: '(lvl 10-16 <span>' + $.t("monsters.bandits") + '</span>)'})
 		}, { // NW Velen
 			coords: [[-61.23, -33.93]],
-			label: 'Person(s) in Distress',
-			popup: "There's a person or a group of people here in need of assitance (lvl 5<span> Bandits</span>)"
+			label: $.t("pid.label"),
+			popup: $.t("pid.desc", {monster: '(lvl 5 <span>' + $.t("monsters.bandits") + '</span>)'})
 		}],
 
 	// Place of Power
 		//todo get all place of power types
 		pop: [{ // Novigrad
 			coords: [[80.72, -40.83]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Igni',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.igni")}),
+			popup: $.t("pop.desc")
 		}, { // E Novigrad
 			coords: [[71.02, 48.78]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Axii',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.axii")}),
+			popup: $.t("pop.desc")
 		}, { // NW Velen
 			coords: [[32.69, -112.60]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Quen',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.quen")}),
+			popup: $.t("pop.desc")
 		}, { // SW Velen
 			coords: [[-82.85, -72.69]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Aard',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.aard")}),
+			popup: $.t("pop.desc")
 		}, {
 			coords: [[-71.82, -105.91]],
-			label: 'Place of Power*',
-			popupTitle: 'Place of Power - Yrden',
-			popup: '"Wandering in the Dark" quest. Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label") + '*',
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.yrden")}),
+			popup: $.t("misc.wanderingInTheDark") + $.t("pop.desc")
 		}, { // SE Velen
 			coords: [[-78.19, 7.91]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - todo',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: "todo"}),
+			popup: $.t("pop.desc")
 		}, {
 			coords: [[-70.41, 38.41]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - todo',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: "todo"}),
+			popup: $.t("pop.desc")
 		}, {
 			coords: [[-55.68, 18.94]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Yrden',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.yrden")}),
+			popup: $.t("pop.desc")
 		}],
 
 	// Point of Interest
