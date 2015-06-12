@@ -29,7 +29,10 @@
   },
   "controls": {
     "show": "Show All",
-    "hide": "Hide All"
+    "hide": "Hide All",
+    "showCounts": "Show Counts",
+    "hideCounts": "Hide Counts",
+    "resetInvisible": "Reset Invisible"
   },
   "monsters": {
     "alghoul": "Alghoul",
