@@ -1151,120 +1151,120 @@
 	// Point of Interest
 		poi: [{ // Novigrad
 			coords: [[74.84, -25.88]],
-			label: "Triss's Residence",
-			popup: 'todo'
+			label: $.t("poi.label.triss"),
+			popup: $.t("poi.desc.triss")
 		}, {
 			coords: [[70.12, -28.76]],
-			label: "Dandelion &amp; Zoltan's Residence",
-			popup: 'todo'
+			label: $.t("poi.label.dandelionAndZoltan"),
+			popup: $.t("poi.desc.dandelionAndZoltan")
 		}, {
 			coords: [[77.245, -24.829]],
-			label: 'Vilmerius Hospital',
-			popup: 'todo'
+			label: $.t("poi.label.vilmeriusHospital"),
+			popup: $.t("poi.desc.vilmeriusHospital")
 		}, { // NW Velen
 			coords: [[-47.34, -111.81]],
-			label: "Keira Metz's Residence",
-			popup: 'todo'
+			label: $.t("poi.label.keira"),
+			popup: $.t("poi.desc.keira")
 		}, { // Velen
 			coords: [[61.90, -91.82]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Feline Crossbow',
-			popup: ''
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.crossbow.feline"),
+			popup: $.t("poi.desc.witcherGear.crossbow.feline")
 		}, {
 			coords: [[57.651, -30.169]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Superior Feline Silver Sword',
-			popup: ''
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.silversword.feline.superior"),
+			popup: $.t("poi.desc.witcherGear.silversword.feline.superior")
 		}, {
 			coords: [[75.70, -19.50]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhanced Feline Silver Sword',
-			popup: 'You need to climp up a Leader'
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.silversword.feline.enhanced"),
+			popup: $.t("poi.desc.witcherGear.silversword.feline.enhanced")
 		}, {
 			coords: [[60.60, 89.80]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Feline Silver Sword',
-			popup: 'Inside the Est Tayiar Ruine, behind a Wall that you can break'
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.silversword.feline.standard"),
+			popup: $.t("poi.desc.witcherGear.silversword.feline.standard")
 		}, {
 			coords: [[36.50, 114,50]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhanced Feline Armor',
-			popup: 'on top of the Aeramas’ Abandoned Manor'
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.armor.feline.enhanced"),
+			popup: $.t("poi.desc.witcherGear.armor.feline.enhanced")
 		}, {
 			coords: [[33, -114.5]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Griffin Silver Sword Diagram',
-			popup: ''
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.silversword.griffin.standard"),
+			popup: $.t("poi.desc.witcherGear.silversword.griffin.standard")
 		}, {
 			coords: [[29.373, -73]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhanced Griffin Boots',
-			popup: ''
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.boots.griffin.enhanced"),
+			popup: $.t("poi.desc.witcherGear.boots.griffin.enhanced")
 		}, {
 			coords: [[41, -1]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Griffin Steel Sword',
-			popup: 'Near the Monster Nest'
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.steelsword.griffin.standard"),
+			popup: $.t("poi.desc.witcherGear.steelsword.griffin.standard")
 		}, {
 			coords: [[36.5, 35]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhance Griffin Armor',
-			popup: ' Near the Troll at White Eagle Fort'
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.armor.griffin.enhanced"),
+			popup: $.t("poi.desc.witcherGear.armor.griffin.enhanced")
 		}, {
 			coords: [[22, 9.5]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhance Feline Gauntlets',
-			popup: 'Inside a Shaft from the Codgers Quarry'
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.gauntlets.feline.enhanced"),
+			popup: $.t("poi.desc.witcherGear.gauntlets.feline.enhanced")
 		}, {
 			coords: [[-28, -61]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhanced Griffin Trousers',
-			popup: 'Inside the Burned Ruin'
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.trousers.griffin.enhanced"),
+			popup: $.t("poi.desc.witcherGear.trousers.griffin.enhanced")
 		}, {
 			coords: [[-57, -156]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhanced Griffin Steel Sword',
-			popup: ''
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.steelsword.griffin.enhanced"),
+			popup: $.t("poi.desc.witcherGear.steelsword.griffin.enhanced")
 		}, {
 			coords: [[-61, -8.5]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Superior Feline Armor',
-			popup: ''
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.armor.feline.superior"),
+			popup: $.t("poi.desc.witcherGear.armor.feline.superior")
 		}, {
 			coords: [[-54.5, 12]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Griffin Armor Set',
-			popup: 'Inside the Dragonslayers Grotto'
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.armor.griffin.standard"),
+			popup: $.t("poi.desc.witcherGear.armor.griffin.standard")
 		}, {
 			coords: [[-64, 38]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Superior Ursine Steel Sword',
-			popup: 'Guarded by lvl 25<span> Earth Elemental</span>'
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.steelsword.ursine.superior"),
+			popup: $.t("misc.guardedBy", {monster: 'lvl 25 <span>' + $.t("monsters.elemental.earth") + '</span>'})
 		}, {
 			coords: [[-81.1, 30.8]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Mastercrafted Ursine Armor',
-			popup: ''
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.armor.ursine.mastercrafted"),
+			popup: $.t("poi.desc.witcherGear.armor.ursine.mastercrafted")
 		}, {
 			coords: [[-75.6, -28]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Mastercrafted Ursine Silver Sword',
-			popup: ''
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.silversword.ursine.mastercrafted"),
+			popup: $.t("poi.desc.witcherGear.silversword.ursine.mastercrafted")
 		}, {
 			coords: [[-81.2, -70]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhanced Griffin Gauntlets',
-			popup: ''
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.gauntlets.griffin.enhanced"),
+			popup: $.t("poi.desc.witcherGear.gauntlets.griffin.enhanced")
 		}, {
 			coords: [[-72.047, 3.999]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Superior Ursine silver sword',
-			popup: ''
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.silversword.ursine.superior"),
+			popup: $.t("poi.desc.witcherGear.silversword.ursine.superior")
 		}, {
 			coords: [[20.406, -14.304]],
-			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Superior Ursine Gauntlets',
-			popup: ''
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.gauntlets.ursine.superior"),
+			popup: $.t("poi.desc.witcherGear.gauntlets.ursine.superior")
 		}],
 
 	// Shopkeeper
