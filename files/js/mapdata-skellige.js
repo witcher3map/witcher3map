@@ -696,6 +696,11 @@
 			popupTitle: 'Ursine Steel Sword Diagram',
 			popup: 'In a chest in the basement of this ruin'
 		}, {
+		coords: [[-57.404, -49.349]],
+			label: 'Enhanced Ursine Boots',
+			popupTitle: 'Enhanced Ursine Boots Diagram',
+			popup: 'In an unmarked cave in the mountainside'
+		}, {
 			coords: [[-40.112, -14.546]],
 			label: 'Mastercrafted Griffin Steel Sword',
 			popupTitle: 'Mastercrafted Griffin Steel Sword Diagram',

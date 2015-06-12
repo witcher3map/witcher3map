@@ -11,6 +11,11 @@ $(function() {
 	if (localStorage['hideWarn']) {
 		$('#warn').remove();
 	}
+	
+	if(localStorage['hide-all-'+window.map_path]) {
+		$('#hide-all').hide();
+		$('#show-all').show();
+	}
 
 	var hackySticky = function () {
 		if ($(window).height() > $('#sidebar-wrap').outerHeight() + $('div#copyright').outerHeight() + 45) {
@@ -31,7 +36,7 @@ $(function() {
 		cursorcolor  : '#5E4F32',
 		cursorborder : 'none',
 	});
-
+	
 	var map = L.map('map', {
 		minZoom: 2,
 		maxZoom: window.map_mZoom,
@@ -177,40 +182,91 @@ $(function() {
 			}
 		});
 	}
-
-	$('ul.key').on('click', 'li:not(.none)', function(e) {
+    
+    $('ul.key:not(.controls) li:not(.none) i').each(function(i, e) {
+        var marker = $(this).attr('class');
+		var pill = $("<span class='pill'>"+window.markerCount[marker]+"</span>");
+        $(this).next().after(pill);
+		if(localStorage['hide-counts']) {
+			pill.hide();
+		}
+    }).promise().done(function() {
+		if(localStorage['hide-counts']) {
+			$('#hide-counts').hide();
+			$('#show-counts').show();
+		}
+	});
+	
+	$('#hide-all').on('click', function(e) {
+		var remember = (!localStorage['markers-' + window.map_path]) ? {} : $.parseJSON(localStorage['markers-' + window.map_path]);
+		$.each(allLayers, function(key, val) {
+			map.removeLayer(val);
+		});
+		$.each($('ul.key:not(.controls) li:not(.none) i'), function(key, val) {
+			remember[$(this).attr('class')] = false;
+		});
+		$('ul.key:first li').each(function(id, li) {
+			$(li).addClass('layer-disabled');
+		});
+		$(this).hide();
+		$('#show-all').show();
+		localStorage['markers-' + window.map_path] = JSON.stringify(remember);
+		localStorage['hide-all-'+window.map_path] = true;
+	});
+	
+	$('#show-all').on('click', function(e) {
+		var remember = (!localStorage['markers-' + window.map_path]) ? {} : $.parseJSON(localStorage['markers-' + window.map_path]);
+		$.each(allLayers, function(key, val) {
+			map.addLayer(val);
+		});
+		$.each($('ul.key:not(.controls) li:not(.none) i'), function(key, val) {
+			remember[$(this).attr('class')] = true;
+		});
+		$('ul.key:first li').each(function(id, li) {
+			$(li).removeClass('layer-disabled');
+		});
+		$(this).hide();
+		$('#hide-all').show();
+		localStorage['markers-' + window.map_path] = JSON.stringify(remember);
+		localStorage.removeItem('hide-all-'+window.map_path);
+	});
+	
+	$('#hide-counts').on('click', function(e) {
+		$('ul.key:not(.controls) > li:not(.none) i').each(function(i, e) {
+			$(this).siblings(':last').hide();
+		});
+		$(this).hide();
+		$('#show-counts').show();
+		localStorage['hide-counts'] = true;
+	});
+	
+	$('#show-counts').on('click', function(e) {
+		$('ul.key:not(.controls) > li:not(.none) i').each(function(i, e) {
+			$(this).siblings(':last').show();
+		});
+		$(this).hide();
+		$('#hide-counts').show();
+		localStorage.removeItem('hide-counts');
+	});
+	
+	$('#reset-tracking').on('click', function(e) {
+		e.preventDefault();
+		if (confirm('This will reset all invisible/tracked markers to their default state (visible), are you sure?')) {
+			resetInvisibleMarkers();
+		}
+	});
+	
+	$('ul.key:not(.controls)').on('click', 'li:not(.none)', function(e) {
 		var marker   = $(this).find('i').attr('class');
 		var remember = (!localStorage['markers-' + window.map_path]) ? {} : $.parseJSON(localStorage['markers-' + window.map_path]);
-		if (marker == 'hide') {
-			$.each(allLayers, function(key, val) {
-				map.removeLayer(val);
-			});
-			$.each($('ul.key:not(.controls) li:not(.none) i'), function(key, val) {
-				remember[$(this).attr('class')] = false;
-			});
-			$('ul.key:first li').each(function(id, li) {
-				$(li).addClass('layer-disabled');
-			});
-		} else if (marker == 'show') {
-			$.each(allLayers, function(key, val) {
-				map.addLayer(val);
-			});
-			$.each($('ul.key:not(.controls) li:not(.none) i'), function(key, val) {
-				remember[$(this).attr('class')] = true;
-			});
-			$('ul.key:first li').each(function(id, li) {
-				$(li).removeClass('layer-disabled');
-			});
+		if ($(this).hasClass('layer-disabled')) {
+			map.addLayer(window.markers[marker]);
+			$(this).removeClass('layer-disabled');
+			remember[marker] = true;
 		} else {
-			if ($(this).hasClass('layer-disabled')) {
-				map.addLayer(window.markers[marker]);
-				$(this).removeClass('layer-disabled');
-				remember[marker] = true;
-			} else {
-				map.removeLayer(window.markers[marker]);
-				$(this).addClass('layer-disabled');
-				remember[marker] = false;
-			}
+			map.removeLayer(window.markers[marker]);
+			$(this).addClass('layer-disabled');
+			remember[marker] = false;
 		}
 		localStorage['markers-' + window.map_path] = JSON.stringify(remember);
 	});

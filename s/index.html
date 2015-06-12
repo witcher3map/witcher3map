@@ -14,6 +14,7 @@
 		<meta name="keywords" content="Witcher 3, Witcher 3 map, Witcher 3 interactive map, Skellige Map, gwent player map, gwent map, shopkeeper map, merchant map">
 		<link type="text/css" rel="stylesheet" href="../files/js/leaflet/leaflet.css">
 		<link type="text/css" rel="stylesheet" href="../files/css/main.css">
+		<link type="text/css" rel="stylesheet" href="../files/css/font-awesome.min.css">
 	</head>
 	<body>
 		<div id="sidebar">
@@ -48,8 +49,11 @@
 					<li class="none"></li>
 				</ul>
 				<ul class="key controls">
-					<li><i class="show"></i><span>Show All</span></li>
-					<li><i class="hide"></i><span>Hide All</span></li>
+					<li style="display:none;" id="show-all"><i class="fa fa-eye"></i><span>Show All</span></li>
+					<li id="hide-all"><i class="fa fa-eye-slash"></i><span>Hide All</span></li>
+					<li style="display:none;" id="show-counts"><i class="fa fa-check-square"></i><span>Show Counts</span></li>
+					<li id="hide-counts"><i class="fa fa-square"></i><span>Hide Counts</span></li>
+					<li id="reset-tracking"><i class="fa fa-eraser"></i><span>Reset Invisible</span></li>
 				</ul>
 				<div id="note">Work in progress! Help appreciated @ <a href="https://github.com/untamed0/witcher3map" target="_blank">Github</a><br>Feedback, suggestions? Discuss on <a href="#" target="_blank">reddit</a></div>
 			</div>
