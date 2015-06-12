@@ -373,6 +373,7 @@ $(function() {
 			'Leaflet-hash (MIT) - http://git.io/mwK1oA',
 			'Leaflet.fullscreen (BSD2) - http://git.io/vJw5v',
 			'Leaflet Control Search (MIT) - http://git.io/vkCPC',
+			'Font Awesome (MIT) - http://git.io/vIAs2',
 			'',
 			'Many thanks to the developers for their hard work.'
 		].join('\n'));
