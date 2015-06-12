@@ -902,48 +902,48 @@
 	// Innkeep
 		innkeep: [{ // Novigrad
 			coords: [[73.24, -44.21]],
-			label: 'The Golden Sturgen',
-			popupTitle: 'Innkeep',
-			popup: 'Sells Gwent cards, food, and drink'
+			label: $.t("innkeep.inns.theGoldenSturgen"),
+			popupTitle: $.t("innkeep.popup"),
+			popup: $.t("innkeep.desc.foodDrinkAndGwent")
 		}, {
 			coords: [[78.22, -33.49]],
-			label: 'Passiflora',
-			popup: 'Sells Gwent cards, food, and drink'
+			label: $.t("innkeep.inns.passiflora"),
+			popup: $.t("innkeep.desc.foodDrinkAndGwent")
 		}, {
 			coords: [[76.20, -24.35]],
-			label: 'The Nowhere',
-			popupTitle: 'Innkeep',
-			popup: 'Sells Food and drink'
+			label: $.t("innkeep.inns.theNowhere"),
+			popupTitle: $.t("innkeep.popup"),
+			popup: $.t("innkeep.desc.foodAndDrink")
 		}, {
 			coords: [[70.02, -29.56]],
-			label: 'Rosemary &amp; Thyme',
-			popupTitle: 'Innkeep',
-			popup: 'Sells Food and drink'
+			label: $.t("innkeep.inns.rosemaryAndThyme"),
+			popupTitle: $.t("innkeep.popup"),
+			popup: $.t("innkeep.desc.foodAndDrink")
 		}, {
 			coords: [[70.04, -1.85]],
-			label: 'Seven Cats Inn',
-			popupTitle: 'Innkeep',
-			popup: 'Sells Gwent cards, food, and drink'
+			label: $.t("innkeep.inns.sevenCatsInn"),
+			popupTitle: $.t("innkeep.popup"),
+			popup: $.t("innkeep.desc.foodDrinkAndGwent")
 		}, {
 			coords: [[74.50, -32.61]],
-			label: 'The Kingfisher',
-			popupTitle: 'Innkeep',
-			popup: 'Warning, this trader may disappear later in the game. Sells Gwent cards, food, and drink'
+			label: $.t("innkeep.inns.theKingfisher"),
+			popupTitle: $.t("innkeep.popup"),
+			popup: $.t("misc.disappearingTrader") + $.t("innkeep.desc.foodDrinkAndGwent")
 		}, { // S Novigrad
 			coords: [[62.33, -14.02]],
-			label: 'Cunny of the Goose',
-			popupTitle: 'Innkeep',
-			popup: 'Sells Gwent cards, food, and drink'
+			label: $.t("innkeep.inns.cunnyOfTheGoose"),
+			popupTitle: $.t("innkeep.popup"),
+			popup: $.t("innkeep.desc.foodDrinkAndGwent")
 		}, { // Oxenfurt
 			coords: [[36.46, 52.27]],
-			label: 'The Alchemy',
-			popupTitle: 'Innkeep',
-			popup: 'Sells Gwent cards, food, and drink'
+			label: $.t("innkeep.inns.theAlchemy"),
+			popupTitle: $.t("innkeep.popup"),
+			popup: $.t("innkeep.desc.foodDrinkAndGwent")
 		}, { // NE Velen
 			coords: [[0.09, -45.62]],
-			label: 'Inn at the Crossroads',
-			popupTitle: 'Innkeep',
-			popup: 'Sells Gwent cards, and drink'
+			label: $.t("innkeep.inns.innAtTheCrossroads"),
+			popupTitle: $.t("innkeep.popup"),
+			popup: $.t("innkeep.desc.gwentAndDrink")
 		}],
 
 	// Monster Den
@@ -1331,7 +1331,7 @@
 		}, {
 			coords: [[71.00, -41.60]],
 			label: 'Shopkeeper',
-			popup: 'Sells food and drink'
+			popup: $.t("innkeep.desc.foodAndDrink")
 		}, { // NE Novigrad
 			coords: [[80.92, 50.49]],
 			label: 'Shopkeeper',
@@ -1402,7 +1402,7 @@
 		}, {
 			coords: [[-32.03, -71.77]],
 			label: 'Quartermaster',
-			popup: 'Sells Gwent cards, food, and drink'
+			popup: $.t("innkeep.desc.foodDrinkAndGwent")
 		}, {
 			coords: [[-36.10, -72.51]],
 			label: 'Shopkeeper Anselm',

@@ -179,6 +179,25 @@
     "desc": "A hidden cache of valuable goods",
     "guarded": "A hidden cache of valuable goods (Guarded by __monster__)"
   },
+  "innkeep": {
+    "inns": {
+      "theGoldenSturgen": "The Golden Sturgen",
+      "passiflora": "Passiflora",
+      "theNowhere": "The Nowhere",
+      "rosemaryAndThyme": "Rosemary &amp; Thyme",
+      "sevenCatsInn": "Seven Cats Inn",
+      "theKingfisher": "The Kingfisher",
+      "cunnyOfTheGoose": "Cunny of the Goose",
+      "theAlchemy": "The Alchemy",
+      "innAtTheCrossroads": "Inn at the Crossroads"
+    },
+    "popup": "Innkeep",
+    "desc": {
+      "foodAndDrink": "Sells Food and drink",
+      "foodDrinkAndGwent": "Sells Gwent cards, food, and drink",
+      "gwentAndDrink": "Sells Gwent cards, and drink"
+    }
+  },
 
 
 
@@ -188,6 +207,7 @@
 
 
   "misc": {
+    "disappearingTrader": "Warning, this trader may disappear later in the game. ",
     "liberated": "This merchant appears after liberating the area. ",
     "locations": {
       "petesLanding": "Peet's Landing",
