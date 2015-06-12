@@ -36,30 +36,163 @@
   },
   "monsters": {
     "alghoul": "Alghoul",
+    "armoredArachas": "Armored Arachas",
     "bandits": "Bandits",
+    "basilisk": "Basilisk",
+    "cyclops": "Cyclops",
     "drowners": "Drowners",
+    "elemental": {
+      "earth": "Earth Elemental"
+    },
     "endregas": "Endregas",
-    "ghouls": "Ghouls"
+    "fiend": "Fiend",
+    "foglet": "Foglet",
+    "forktail": "Forktail",
+    "gargoyle": "Gargoyle",
+    "ghouls": "Ghouls",
+    "hag": {
+      "bilge": "Bilge Hag",
+      "grave": "Grave Hag",
+      "water": "Water Hag"
+    },
+    "leshen": "Leshen",
+    "mucknixers": "Mucknixers",
+    "nekkers": "Nekkers",
+    "wraiths": {
+      "night": "Nightwraith",
+      "noon": "Noonwraith",
+      "wraiths": "Wraiths"
+    },
+    "wyvern": "Wyvern"
   },
   "abandoned": {
     "label": "Abandoned Site",
-    "text": "A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more"
+    "desc": "A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more"
   },
   "alchemy": {
     "pellar": "Pellar",
-    "supplies": "Alchemy Supplies",
-    "supplies*": "Alchemy Supplies*",
-    "text": "Here you can buy alchemy ingredients",
-    "text*": "Here you can buy alchemy ingredients, also pays well trophies"
+    "label": "Alchemy Supplies",
+    "label*": "Alchemy Supplies*",
+    "desc": "Here you can buy alchemy ingredients",
+    "desc*": "Here you can buy alchemy ingredients, also pays well trophies"
   },
   "armourer": {
-    "amateur": "Amateur Armorer",
-    "journeyman": "Journeyman Armorer",
-    "master": "Master Armorer*",
-    "petesLanding": "Peet's Landing",
+    "amateurLabel": "Amateur Armorer",
+    "journeymanLabel": "Journeyman Armorer",
+    "masterLabel": "Master Armorer*",
     "quest": "Is available after the \"Master Armorers\" (lvl 26) quest. ",
-    "rescue": "Needs to be saved from",
-    "text": "Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets.",
+    "desc": "Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets.",
     "yoana": "Master Armorer* (Yoana)"
+  },
+  "armourerstable": {
+    "label": "Armorer's Table",
+    "desc": "Armorer's tables grant your gear increased armor for a limited duration."
+  },
+  "banditcamp": {
+    "label": "Bandit Camp",
+    "desc": "A group of dangerous bandits have made camp here. ",
+    "bug": "Bugged area, never shows as cleared."
+  },
+  "barber": {
+    "label": "Barber",
+    "desc": "Visit barbers for a shave or a new haircut. ",
+    "free": "Cuts Hair for free! ",
+    "rescueLocation": "here"
+  },
+  "blacksmith": {
+    "amateurLabel": "Amateur Blacksmith",
+    "journeymanLabel": "Journeyman Blacksmith",
+    "masterLabel": "Master Blacksmith*",
+    "hattori": "Master Blacksmith* (Hattori)",
+    "desc": "Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets.",
+    "availability": "This blacksmith is available immediately. ",
+    "quest": "You must complete \"Of Swords and Dumplings\" (level 24) quest in order to unlock this blacksmith. "
+  },
+  "brothel": {
+    "label": {
+      "crippledKate": "Crippled Kate",
+      "passiflora": "Passiflora"
+    },
+    "popup": {
+      "crippledKate": "Crippled Kate Brothel",
+      "passiflora": "Passiflora Brothel"
+    },
+    "desc": "You can call on the services of a prostitute here."
+  },
+  "boat": {
+    "label": "Boat",
+    "desc": "You can use boats to travel across bodies of water"
+  },
+  "entrance": {
+    "label": "Entrance",
+    "desc": "Entrance to cave or ruins"
+  },
+  "grindstone": {
+    "label": "Grindstone",
+    "desc": "A blade sharpened here will deal more damage"
+  },
+  "guarded": {
+    "label": "Guarded Treasure",
+    "desc": "A particularly powerful monster __monster__ guards a valuable cache here"
+  },
+  "gwent": {
+    "label": {
+      "player": "Gwent Player",
+      "tournament": "Gwent Tournament"
+    },
+    "desc": {
+      "player": "Gamble your hard earned coin playing Gwent here. ",
+      "quest": "This Gwent player disappears sometime after the \"Family matters\" quest. ",
+      "tournament": "Find the scribe and sign up for the high-stakes Gwent tournament",
+      "warn": "Warning, this player may disappear later in the game. "
+    },
+    "popup": {
+      "shopkeeper": "Shopkeeper Gwent Player",
+      "bookMerchant": "Book Merchant Gwent Player",
+      "crippledKate": "Crippled Kate Gwent Player",
+      "tournament": "Gwent Tournament (Quest)",
+      "herbalist": "Herbalist Gwent Player",
+      "innkeeper": "Innkeeper Gwent Player",
+      "merchant": "Merchant Gwent Player",
+      "blacksmith": "Blacksmith Gwent Player",
+      "banker": "Banker Gwent Player",
+      "fishmonger": "Fishmonger Gwent Player",
+      "loanShark": "Loan Shark Gwent Player",
+      "alchemist": "Alchemist Player",
+      "armorer": "Armorer Gwent Player",
+      "quartermaster": "Quartermaster Gwent Player",
+      "bloodyBaron": "Bloody Baron Gwent Player",
+      "yoana": "Yoana (Armorer's assistant) Gwent Player",
+      "player": "Gwent Player"
+    }
+  },
+  "harbor": {
+    "label": "Harbor",
+    "desc": "A place where you can find a boat, boats will respawn here"
+  },
+  "herbalist": {
+    "label": "Herbalist",
+    "desc": "Here you can buy alchemy ingredients"
+  },
+  "hidden": {
+    "label": "Hidden Treasure",
+    "desc": "A hidden cache of valuable goods",
+    "guarded": "A hidden cache of valuable goods (Guarded by __monster__)"
+  },
+
+
+
+
+
+
+
+
+  "misc": {
+    "liberated": "This merchant appears after liberating the area. ",
+    "locations": {
+      "petesLanding": "Peet's Landing",
+      "banditsCamp": "Bandits' Camp"
+    },
+    "rescue": "Needs to be saved from: "
   }
 }
