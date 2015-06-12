@@ -954,16 +954,16 @@
 				// SE Velen
 				[-54.47, 12.00]
 			],
-			label: 'Monster Den',
-			popup: 'Monster-infested location. A constant worry for those living nearby'
+			label: $.t("monsterden.label"),
+			popup: $.t("monsterden.desc", {monster: ''})
 		}, { // NE Novigrad
 			coords: [[82.19, -32.08]],
-			label: 'Monster Den',
-			popup: 'Monster-infested location. A constant worry for those living nearby (lvl 19<span> Golem</span>)'
+			label: $.t("monsterden.label"),
+			popup: $.t("monsterden.desc", {monster: '(lvl 19 <span>' + $.t("monsters.golem") + '</span>)'})
 		}, { // S Novigrad
 			coords: [[46.99, -40.08]],
-			label: 'Monster Den',
-			popup: 'Monster-infested location. A constant worry for those living nearby (lvl 16<span> Rabid Rock Troll</span> &amp; lvl 18<span> Nekkers</span>)'
+			label: $.t("monsterden.label"),
+			popup: $.t("monsterden.desc", {monster: '(lvl 16 <span>' + $.t("monsters.rabidRockTroll") + '</span> &amp; lvl 18 <span>' + $.t("monsters.nekkers") + '</span>)'})
 		}],
 
 	// Monster Nest
@@ -982,68 +982,68 @@
 				// SE Velen
 				[-68.69, -2.20]
 			],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: ''})
 		}, { // S Novigrad
 			coords: [[34.31, -60.51]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 6<span> Rotfiends</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: '(lvl 6 <span>' + $.t("monsters.rotfiends") + '</span>)'})
 		}, {
 			coords: [[49.84, -45.97]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 9<span> Endregas</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: '(lvl 9 <span>' + $.t("monsters.endregas") + '</span>)'})
 		}, {
 			coords: [[50.79, -42.19]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 9<span> Endregas</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: '(lvl 9 <span>' + $.t("monsters.endregas") + '</span>)'})
 		}, {
 			coords: [[50.98, -20.99]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 6<span> Rotfiends</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: '(lvl 6 <span>' + $.t("monsters.rotfiends") + '</span>)'})
 		}, { // NE Velen
 			coords: [[7.36, 48.78]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 9<span> Ghouls</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: '(lvl 9 <span>' + $.t("monsters.ghouls") + '</span>)'})
 		}, {
 			coords: [[8.01, 47.37]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 9<span> Ghouls</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: '(lvl 9 <span>' + $.t("monsters.ghouls") + '</span>)'})
 		}, {
 			coords: [[-2.94, 27.38]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 9<span> Ghouls</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: '(lvl 9 <span>' + $.t("monsters.ghouls") + '</span>)'})
 		}, {
 			coords: [[41.64, 13.97]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 6<span> Rotfiends</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: '(lvl 6 <span>' + $.t("monsters.rotfiends") + '</span>)'})
 		}, { // SW Velen
 			coords: [[-75.68, -27.11]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 4&amp;9<span> Drowners</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: '(lvl 4&amp;9 <span>' + $.t("monsters.drowners") + '</span>)'})
 		}, { // SE Velen
 			coords: [[-50.23, 57.57]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 8<span> Nekkers</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: '(lvl 8 <span>' + $.t("monsters.nekkers") + '</span>)'})
 		}, {
 			coords: [[-46.01, 52.56]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 8/9<span> Nekkers</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: '(lvl 8/9 <span>' + $.t("monsters.nekkers") + '</span>)'})
 		}, {
 			coords: [[-49.04, 46.93]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 8/9<span> Nekkers</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: '(lvl 8/9 <span>' + $.t("monsters.nekkers") + '</span>)'})
 		}, {
 			coords: [[-49.12, 42.36]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 8/9<span> Nekkers</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: '(lvl 8/9 <span>' + $.t("monsters.nekkers") + '</span>)'})
 		}, {
 			coords: [[-40.18, 80.29]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 21<span> Wyvern</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: '(lvl 21 <span>' + $.t("monsters.wyvern") + '</span>)'})
 		}, {
 			coords: [[-41.38, 80.38]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 21<span> Wyvern</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc", {monster: '(lvl 21 <span>' + $.t("monsters.wyvern") + '</span>)'})
 		}],
 
 	// Notice Board

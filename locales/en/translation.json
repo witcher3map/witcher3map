@@ -50,6 +50,7 @@
     "forktail": "Forktail",
     "gargoyle": "Gargoyle",
     "ghouls": "Ghouls",
+    "golem": "Golem",
     "hag": {
       "bilge": "Bilge Hag",
       "grave": "Grave Hag",
@@ -58,6 +59,8 @@
     "leshen": "Leshen",
     "mucknixers": "Mucknixers",
     "nekkers": "Nekkers",
+    "rabidRockTroll": "Rabid Rock Troll",
+    "rotfiends": "Rotfiends",
     "wraiths": {
       "night": "Nightwraith",
       "noon": "Noonwraith",
@@ -197,6 +200,14 @@
       "foodDrinkAndGwent": "Sells Gwent cards, food, and drink",
       "gwentAndDrink": "Sells Gwent cards, and drink"
     }
+  },
+  "monsterden": {
+    "label": "Monster Den",
+    "desc": "Monster-infested location. A constant worry for those living nearby __monster__"
+  },
+  "monsternest": {
+    "label": "Monster Nest",
+    "desc": "Destroy monster nests with Grapeshot or Dancing Star bombs __monster__"
   },
 
 
