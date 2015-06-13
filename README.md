@@ -26,3 +26,4 @@ This software uses the following libraries developed by third parties, and are l
 * [Leaflet-hash](http://git.io/mwK1oA) (MIT)
 * [Leaflet.fullscreen](http://git.io/vJw5v) (BSD2)
 * [Leaflet Control Search](http://git.io/vkCPC) (MIT)
+* [Font Awesome](http://fortawesome.github.io/Font-Awesome/) (MIT)
