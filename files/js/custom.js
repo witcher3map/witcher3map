@@ -137,7 +137,7 @@ $(function() {
 			map.removeLayer(wayPoint);
 		}).addTo(map);
 		$('#info-wrap').stop();
-		$('#info').html('<input type="text" value="coords:[['+e.latlng.lat.toFixed(3)+','+e.latlng.lng.toFixed(3)+']]"/>').getNiceScroll(0).doScrollTop(0,0);
+		$('#info').html('<h1>Waypoint Coordinates</h1><input type="text" value="['+e.latlng.lat.toFixed(3)+','+e.latlng.lng.toFixed(3)+']" onfocus="this.select();" onmouseup="return false;" />').getNiceScroll(0).doScrollTop(0,0);
 		$('#info-wrap').fadeIn('fast');
 	});
 

@@ -252,6 +252,7 @@ div#info input {
 	color: #AF834E;
 	background: rgba(0, 0, 0, 0);
 	border: none;
+	width:80%;
 }
 div#title {
 	position: absolute;
