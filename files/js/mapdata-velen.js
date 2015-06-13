@@ -1270,199 +1270,199 @@
 	// Shopkeeper
 		shopkeeper: [{ // Novigrad
 			coords: [[74.22, -35.41]],
-			label: 'Book Merchant',
-			popup: 'Buys and sells books'
+			label: $.t("shopkeeper.label.bookMerchant"),
+			popup: $.t("shopkeeper.desc.bookMerchant")
 		}, {
 			coords: [[74.578, -35.332]],
-			label: 'Book Merchant',
-			popup: 'Buys and sells books'
+			label: $.t("shopkeeper.label.bookMerchant"),
+			popup: $.t("shopkeeper.desc.bookMerchant")
 		}, {
 			coords: [[72.82, -39.99]],
-			label: 'Shopkeeper',
-			popup: 'Sells alchemy supplies, food, and drink'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.alchemyFoodAndDrink")
 		}, {
 			coords: [[73.71, -37.96]],
-			label: 'Banker',
-			popup: 'You can exchange your unusable currency or borrow gold here'
+			label: $.t("shopkeeper.label.banker"),
+			popup: $.t("shopkeeper.desc.banker")
 		}, {
 			coords: [[69.90, -20.47]],
-			label: 'Clothing Merchant',
-			popup: 'Sells clothes and masks'
+			label: $.t("shopkeeper.label.clothingMerchant"),
+			popup: $.t("shopkeeper.desc.clothingMerchant")
 		}, {
 			coords: [[70.05, -37.13]],
-			label: 'Shopkeeper',
-			popup: 'Sells crafting supplies, weapons and "Zerrikanian Saddlebags" (+100)'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.kingfOfBeggarsMerchant")
 		}, {
 			coords: [[76.81, -33.26]],
-			label: 'Shopkeeper',
-			popup: 'Sells alchemy supplies, quest items (for Aeramas\' Manor), and "Potion of Clearance" (1000 gold)'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.aeramasTrinketMerchant")
 		}, {
 			coords: [[75.41, -44.82]],
-			label: 'Shopkeeper',
-			popup: 'Sells alchemy supplies, food, and drink'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.alchemyFoodAndDrink")
 		}, {
 			coords: [[74.47, -46.93]],
-			label: 'Fishmonger',
-			popup: 'Sells fish'
+			label: $.t("shopkeeper.label.fishmonger"),
+			popup: $.t("shopkeeper.desc.fishmonger")
 		}, {
 			coords: [[76.57, -50.10]],
-			label: 'Shopkeeper',
-			popup: 'Sells empty bottles'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.emptyBottlesMerchant")
 		}, {
 			coords: [[76.12, -49.04]],
-			label: 'Shopkeeper',
-			popup: 'Sells runestones and alchemy supplies'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.runesAndAlchemy")
 		}, {
 			coords: [[74.98, -20.57]],
-			label: 'Shopkeeper',
-			popup: 'Sells nothing note worthy'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.uselessMerchant")
 		}, {
 			coords: [[72.58, -26.41]],
-			label: 'Shopkeeper',
-			popup: 'Sells gem dust (crafting supplies), weapons, food, and drink'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.gemDustWeaponsFoodAndDrink")
 		}, {
 			coords: [[75.33, -19.28]],
-			label: 'Loan Shark',
-			popup: 'Sells nothing note worthy'
+			label: $.t("shopkeeper.label.loanShark"),
+			popup: $.t("shopkeeper.desc.uselessMerchant")
 		}, {
 			coords: [[75.61, -23.82]],
-			label: 'Shopkeeper',
-			popup: 'Sells crafting supplies'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.craftingSupplies")
 		}, {
 			coords: [[71.00, -41.60]],
-			label: 'Shopkeeper',
-			popup: $.t("innkeep.desc.foodAndDrink")
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.foodAndDrink")
 		}, { // NE Novigrad
 			coords: [[80.92, 50.49]],
-			label: 'Shopkeeper',
-			popup: 'Sells runestones, alchemy supplies and food'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.runesAlchemyAndFood")
 		}, { // SE Novigrad
 			coords: [[3.43, 97.08]],
-			label: 'Shopkeeper',
-			popup: 'This merchant appears here after being rescued'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("misc.rescuedMerchant")
 		}, /*{ // S Novigrad
 			// appears on map but nobody there?
 			coords: [[65.95, -21.09]],
-			label: 'Shopkeeper',
+			label: $.t("shopkeeper.shopkeeper"),
 			popup: '???'
 		},*/ {
 			coords: [[58.677, -55.415]],
-			label: 'Wandering Merchant',
-			popup: 'Traveling from Lucian\'s Windmill to the Portside Gate. Sells runestones, alchemy supplies and food'
+			label: $.t("shopkeeper.label.wanderingMerchant"),
+			popup: $.t("shopkeeper.desc.windmillMerchant")
 		}, {
 			coords: [[63.27, -63.46]],
-			label: 'Shopkeeper',
-			popup: 'Sells crafting supplies, food, and weapons'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.craftingSuppliesFoodAndWeapons")
 		}, {
 			coords: [[48.72, -51.94]],
-			label: 'Shopkeeper',
-			popup: 'Sells armour and crafting supplies'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.armourAndCraftingSupplies")
 		}, {
 			coords: [[57.98, -12.00]],
-			label: 'Wandering Merchant',
-			popupTitle: 'Shopkeeper',
-			popup: 'Sells runestones, alchemy supplies and food'
+			label: $.t("shopkeeper.label.wanderingMerchant"),
+			popupTitle: $.t("shopkeeper.shopkeeper"),
+			popup: $.t("shopkeeper.desc.runesAlchemyAndFood")
 		}, { // Oxenfurt
 			coords: [[40.01, 51.48]],
-			label: 'Shopkeeper',
-			popup: 'Sells paint (quest item), hides, and drink'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.paintMerchant")
 		}, { // NE Velen
 			coords: [[26.00, 30.11]],
-			label: 'Wandering Merchant',
-			popupTitle: 'Shopkeeper',
-			popup: 'Sells runestones, alchemy supplies and food'
+			label: $.t("shopkeeper.label.wanderingMerchant"),
+			popupTitle: $.t("shopkeeper.shopkeeper"),
+			popup: $.t("shopkeeper.desc.runesAlchemyAndFood")
 		}, {
 			coords: [[31.65, -17.93]],
-			label: 'Shopkeeper',
-			popup: 'This merchant appears here after being rescued. Sells alchemy supplies and food'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("misc.rescuedMerchant") + $.t("shopkeeper.desc.alchemyAndFood")
 		}, {
 			coords: [[-6.84, 72.38]],
-			label: 'Shopkeeper',
-			popup: 'This merchant appears after liberating the area. Sells weapons and crafting supplies'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("misc.liberated") + $.t("shopkeeper.desc.weaponsAndCraftingSupplies")
 		}, {
 			coords: [[13.07, 46.27]],
-			label: 'Shopkeeper',
-			popup: 'This merchant appears after liberating the area. Sells runestones, alchemy supplies and food'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("misc.liberated") + $.t("shopkeeper.desc.runesAlchemyAndFood")
 		}, { // NW Velen
 			coords: [[-27.84, -102.74]],
-			label: 'Shopkeeper',
-			popup: 'Sells nothing note worthy'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.uselessMerchant")
 		}, {
 			coords: [[-34.96, -72.77]],
-			label: 'Shopkeeper',
-			popup: 'Sells Gwent cards and drink'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.gwentAndDrinks")
 		}, {
 			coords: [[-54.42, -121.65]],
-			label: 'Shopkeeper',
-			popup: 'Sells Gwent cards and jewellery (crafting supplies)'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.gwentAndJewellery")
 		}, {
 			coords: [[-47.04, -112.50]],
-			label: 'Keira Metz',
-			popup: 'Sells alchemy supplies, recipes and "Potion of Clearance" (1000 gold)'
+			label: $.t("shopkeeper.label.keira"),
+			popup: $.t("shopkeeper.desc.alchemyRecipesAndClearance")
 		}, {
 			coords: [[-32.03, -71.77]],
-			label: 'Quartermaster',
-			popup: $.t("innkeep.desc.foodDrinkAndGwent")
+			label: $.t("shopkeeper.label.quartermaster"),
+			popup: $.t("shopkeeper.desc.gwentFoodAndDrink")
 		}, {
 			coords: [[-36.10, -72.51]],
-			label: 'Shopkeeper Anselm',
-			popup: 'This merchant appears here after being rescued. Sells "Racing Horse Blinders" (+40)'
+			label: $.t("shopkeeper.label.anselm"),
+			popup: $.t("misc.rescuedMerchant") + $.t("shopkeeper.desc.blindersMerchant")
 		}, {
 			coords: [[-62.57, -76.89]],
-			label: 'Shopkeeper',
-			popup: 'Sells drink and "Rugged Saddlebags" (+70)'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.drinksAndSaddlebags")
 		}, {
 			coords: [[-52.70, -81.49]],
-			label: 'Shopkeeper',
-			popup: 'Sells Gwent cards and drink. Needs to be saved from the <a href="#6/-61.954/-33.893">Bandits\' Camp</a>'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.gwentAndDrinks") + $.t("misc.rescue") + '<a href="#6/-61.954/-33.893">' + $.t("misc.locations.banditsCamp") + '</a>'
 		}, {
 			coords: [[-52.96, -56.65]],
-			label: 'Shopkeeper',
-			popup: 'Sells runestones and alchemy supplies'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.runesAndAlchemy")
 		}, {
 			coords: [[-45.09, -138.96]],
-			label: 'Shopkeeper',
-			popup: 'Sells armour and crafting supplies'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.armourAndCraftingSupplies")
 		}, {
 			coords: [[-58.36, -142.91]],
-			label: 'Shopkeeper',
-			popup: 'Sells armour and crafting supplies'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.armourAndCraftingSupplies")
 		}, { // SW Velen
 			coords: [[-79.58, -114.12]],
-			label: 'Shopkeeper',
-			popup: 'This merchant appears after liberating the area. Sells runestones, alchemy supplies and food'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("misc.liberated") + $.t("shopkeeper.desc.runesAlchemyAndFood")
 		}, { // SE Velen
 			coords: [[-36.17, 3.69]],
-			label: 'Shopkeeper',
-			popup: 'This merchant appears here after being rescued. Sells alchemy supplies and food'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("misc.rescuedMerchant") + $.t("shopkeeper.desc.alchemyAndFood")
 		}, {
 			coords: [[-36.88, -24.35]],
-			label: 'Shopkeeper',
-			popup: 'Sells Gwent cards, and crafting supplies'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.gwentAndCrafting")
 		}, {
 			coords: [[-37.79, -26.19]],
-			label: 'Shopkeeper',
-			popup: 'Sells runestones, alchemy supplies and food'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.runesAlchemyAndFood")
 		}, {
 			coords: [[-78.79, 108.24]],
-			label: 'Quartermaster',
-			popup: 'Sells nothing note worthy'
+			label: $.t("shopkeeper.label.quartermaster"),
+			popup: $.t("shopkeeper.desc.uselessMerchant")
 		}, {
 			coords: [[-57.35, 27.03]],
-			label: 'Shopkeeper',
-			popup: 'This merchant disappears sometime after the "Family Matters" quest. Sells drink'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.disappearingDrinksMerchant")
 		}, {
 			coords: [[-76.16, 107.67]],
-			label: 'Shopkeeper',
-			popup: 'Sells runestones and alchemy supplies'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.runesAndAlchemy")
 		}, {
 			coords: [[-75.93, 110.28]],
-			label: 'Shopkeeper',
-			popup: 'Sells armour and crafting supplies'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.armourAndCraftingSupplies")
 		}, {
 			coords: [[-75.50, 110.81]],
-			label: 'Shopkeeper',
-			popup: 'Sells weapons and crafting supplies'
+			label: $.t("shopkeeper.label.shopkeeper"),
+			popup: $.t("shopkeeper.desc.weaponsAndCraftingSupplies")
 		}],
 
 	// Sign Post

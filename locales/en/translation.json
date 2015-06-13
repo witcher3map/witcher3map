@@ -210,6 +210,7 @@
       "banditsCamp": "Bandits' Camp"
     },
     "rescue": "Needs to be saved from: ",
+    "rescuedMerchant": "This merchant appears here after being rescued. ",
     "wanderingInTheDark": "\"Wandering in the Dark\" quest. "
   },
   "monsterden": {
@@ -500,6 +501,51 @@
           }
         }
       }
+    }
+  },
+  "shopkeeper": {
+    "label": {
+      "anselm": "Shopkeeper Anselm",
+      "banker": "Banker",
+      "bookMerchant": "Book Merchant",
+      "clothingMerchant": "Clothing Merchant",
+      "fishmonger": "Fishmonger",
+      "keira": "Keira Metz",
+      "loanShark": "Loan Shark",
+      "quartermaster": "Quartermaster",
+      "shopkeeper": "Shopkeeper",
+      "wanderingMerchant": "Wandering Merchant"
+    },
+    "desc": {
+      "aeramasTrinketMerchant": "Sells alchemy supplies, quest items (for Aeramas&#39; Manor), and \"Potion of Clearance\" (1000 gold)",
+      "alchemyAndFood": "Sells alchemy supplies and food",
+      "alchemyAndRunes": "Sells runestones and alchemy supplies",
+      "alchemyFoodAndDrink": "Sells alchemy supplies, food, and drink",
+      "alchemyRecipesAndClearance": "Sells alchemy supplies, recipes and \"Potion of Clearance\" (1000 gold)",
+      "armourAndCraftingSupplies": "Sells armour and crafting supplies",
+      "banker": "You can exchange your unusable currency or borrow gold here",
+      "blindersMerchant": "Sells \"Racing Horse Blinders\" (+40)",
+      "bookMerchant": "Buys and sells books",
+      "clothingMerchant": "Sells clothes and masks",
+      "craftingSupplies": "Sells crafting supplies",
+      "craftingSuppliesFoodAndWeapons": "Sells crafting supplies, food, and weapons",
+      "disappearingDrinksMerchant": "This merchant disappears sometime after the \"Family Matters\" quest. Sells drink",
+      "drinksAndSaddlebags": "Sells drink and \"Rugged Saddlebags\" (+70)",
+      "emptyBottlesMerchant": "Sells empty bottles",
+      "fishmonger": "Sells fish",
+      "foodAndDrink": "Sells Food and drink",
+      "gemDustWeaponsFoodAndDrink": "Sells gem dust (crafting supplies), weapons, food, and drink",
+      "gwentAndCrafting": "Sells Gwent cards, and crafting supplies",
+      "gwentAndDrinks": "Sells Gwent cards and drink. ",
+      "gwentFoodAndDrink": "Sells Gwent cards, food, and drink",
+      "gwentAndJewellery": "Sells Gwent cards and jewellery (crafting supplies)",
+      "kingfOfBeggarsMerchant": "Sells crafting supplies, weapons and \"Zerrikanian Saddlebags\" (+100)",
+      "paintMerchant": "Sells paint (quest item), hides, and drink",
+      "runesAlchemyAndFood": "Sells runestones, alchemy supplies and food",
+      "runesAndAlchemy": "Sells runestones and alchemy supplies",
+      "uselessMerchant": "Sells nothing note worthy",
+      "weaponsAndCraftingSupplies": "Sells weapons and crafting supplies",
+      "windmillMerchant": "Traveling from Lucian&#39;s Windmill to the Portside Gate. Sells runestones, alchemy supplies and food"
     }
   },
 
