@@ -1468,72 +1468,72 @@
 	// Sign Post
 		signpost: [{ // Novigrad
 			coords: [[73.76, -33.97]],
-			label: 'Hierarch Square',
-			popup: 'Until quite recently a great many mages lived near Novigrad\'s main square. They fled when the witch hunters began their reign of terror, leaving many of the city\'s most beautiful townhouses abandoned and uncared for'
+			label: $.t("signpost.label.hierarchSquare"),
+			popup: $.t("signpost.desc.hierarchSquare")
 		}, {
 			coords: [[74.23, -15.86]],
-			label: 'Southern Gate',
-			popup: 'In truth demarcating the eastern and not southern edge of the city, the Southern Gate was given its inappropriate name by a one-time city planner who knew nothing about architecture and could not read a map, but had in his favor the fact that he was the mayor\'s cousin and thew lavish parties. Though confusingly incorrect, the name stuck and now the city\'s residents never think twice about its illogical appellation'
+			label: $.t("signpost.label.southernGate"),
+			popup: $.t("signpost.desc.southernGate")
 		}, {
 			coords: [[76.44, -16.20]],
-			label: 'Oxenfurt Gate',
-			popup: 'In the times when Novigrad and Oxenfurt were embroiled in fierce neighborly disputes, this gate went through several completely different names, the Gate of Harlots and the Gate of Bloodsuckers being two of the longer lived examples. Its current name was chosen when this conflict was finally put to rest'
+			label: $.t("signpost.label.oxenfurtGate"),
+			popup: $.t("signpost.desc.oxenfurtGate")
 		}, {
 			coords: [[77.64, -36.47]],
-			label: 'St. Gregory\'s Bridge',
-			popup: 'Bridge named after the hero of Novigrad who saved the city from a horrible famine three hundred years ago by sacrificing half his fortune to import food from Nazair. After this, he was declared a saint, something even the jurors of the Church of the Eternal Fire were unable to change'
+			label: $.t("signpost.label.stGregorysBridge"),
+			popup: $.t("signpost.desc.stGregorysBridge")
 		}, {
 			coords: [[79.73, -51.24]],
-			label: 'Electors\' Square',
-			popup: 'Square named after a group of Novigrad reformers who enacted bold transformations that led to the city\'s rapid growth, enriching its residents considerably and ushering in the city\'s golden age'
+			label: $.t("signpost.label.electorsSquare"),
+			popup: $.t("signpost.desc.electorsSquare")
 		}, {
 			coords: [[71.16, -22.94]],
-			label: 'Tretogor Gate',
-			popup: 'Gate erected with funds from the Redanian royal family, who, wanting to earn favor with Novigrad merchants and the hierach, dedicated a significant amount of coin to its construction, as well as some no-less-valuable (wo)manpower in the form of the master architect Countess Anna Yaye-Pinkovitz and her skilled crew'
+			label: $.t("signpost.label.tretogorGate"),
+			popup: $.t("signpost.desc.tretogorGate")
 		}, {
 			coords: [[68.94, -27.77]],
-			label: 'Gate of the Hierarch',
-			popup: 'This gate is named in honor of Novigrad\'s own son, the Hierach of the eternal Fire. Supposedly this name was given to it upon popular request, though no one can be found who remembers requesting any such thing'
+			label: $.t("signpost.label.gateOfTheHierarch"),
+			popup: $.t("signpost.desc.gateOfTheHierarch")
 		}, {
 			coords: [[66.32, -35.31]],
-			label: 'Glory Gate',
-			popup: 'Toughs and hooligans often end a night of drunken escapades under this gate after being thrown out of the nearby taverns'
+			label: $.t("signpost.label.gloryGate"),
+			popup: $.t("signpost.desc.gloryGate")
 		}, {
 			coords: [[65.99, -43.90]],
-			label: 'Portside Gate',
-			popup: 'Though not the most stately of gates, this one\'s location near the bustling port has made it the calling card of the city'
+			label: $.t("signpost.label.portsideGate"),
+			popup: $.t("signpost.desc.portsideGate")
 		}, {
 			coords: [[69.57, -55.28]],
-			label: 'Novigrad Docks',
-			popup: 'A den of dirt and depravity and the shadiest part of Novigrad. After dark all one finds here are women of loose morals, hoodlums and drunk sailors'
+			label: $.t("signpost.label.novigradDocks"),
+			popup: $.t("signpost.desc.novigradDocks")
 		}, {
 			coords: [[75.39, -8.88]],
-			label: 'Arette',
-			popup: 'Novigrad has always attracted those in search of a better life. Some of them found no welcome within the city walls, and so built huts outside the city'
+			label: $.t("signpost.label.arette"),
+			popup: $.t("signpost.desc.arette")
 		}, {
 			coords: [[69.57, -2.81]],
-			label: 'Seven Cats Inn',
-			popup: 'This dank establishment is host to a shady clientele'
+			label: $.t("signpost.label.sevenCatsInn"),
+			popup: $.t("signpost.desc.sevenCatsInn")
 		}, { // NE Novigrad
 			coords: [[83.53, -9.40]],
-			label: 'Sarrasin Grange',
-			popup: 'Lord Antares Sarrasin moved his wife and smattering of comely daughters here from far-off Nazair on his medic\'s recommendations. The leech proclaimed with absolute certainy that "if you wish to sire a son, it must be in the Gustfields." While waiting to produce a male heir, the Sarrasins took to wine cultivation and soon their grange became renowned from Nazair to Skellige'
+			label: $.t("signpost.label.sarrasinGrange"),
+			popup: $.t("signpost.desc.sarrasinGrange")
 		}, {
 			coords: [[81.92, 3.60]],
-			label: 'Yantra',
-			popup: 'The inhabitants of this village are known for their talkativeness and tendency to exagerrate, which makes them good companions for a round of drink, but impossible to tolerate for long stretches of time'
+			label: $.t("signpost.label.yantra"),
+			popup: $.t("signpost.desc.yantra")
 		}, {
 			coords: [[82.09, 30.15]],
-			label: 'Isolated Hut',
-			popup: 'Rumors claim a famous painter lives in this house, though no one has ever seen him or knows his name'
+			label: $.t("signpost.label.isolatedHut"),
+			popup: $.t("signpost.desc.isolatedHut")
 		}, {
 			coords: [[76.24, 18.26]],
-			label: 'Honeyfill Meadworks',
-			popup: 'The renowned Honeyfill Meadworks has for generations belonged to a respected family of halflings'
+			label: $.t("signpost.label.honeyfillMeadworks"),
+			popup: $.t("signpost.desc.honeyfillMeadworks")
 		}, {
 			coords: [[79.04, 65.21]],
-			label: 'Martin Feuille\'s Farmstead',
-			popup: 'Founded by Lord Martin Feuille, this vast plantation was until not so long ago the largest producer of alfalfa in the region. Sadly, when war broke out the lord fled to his winter residence in Kovir, leaving his land to be administered by an ill-suited stward who squandered his liege\'s fertile fields'
+			label: $.t("signpost.label.martinFeuillesFarmstead"),
+			popup: $.t("signpost.desc.martinFeuillesFarmstead")
 		}, {
 			coords: [[81.02, 49.09]],
 			label: 'Winespring Grange',
