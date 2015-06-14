@@ -133,12 +133,18 @@ $(function() {
 			})
 		}).on('click', function() {
 			map.removeLayer(wayPoint);
+            hash.removeParam('wpLat');
+            hash.removeParam('wpLon');
 		}).on('contextmenu', function() {
 			map.removeLayer(wayPoint);
+            hash.removeParam('wpLat');
+            hash.removeParam('wpLon');
 		}).addTo(map);
 		$('#info-wrap').stop();
 		$('#info').html('<h1>Waypoint Coordinates</h1><input type="text" value="['+e.latlng.lat.toFixed(3)+','+e.latlng.lng.toFixed(3)+']" onfocus="this.select();" onmouseup="return false;" />').getNiceScroll(0).doScrollTop(0,0);
 		$('#info-wrap').fadeIn('fast');
+        hash.addParam('wpLat', e.latlng.lat.toFixed(3));
+        hash.addParam('wpLon', e.latlng.lng.toFixed(3));
 	});
 
 	$('.leaflet-marker-icon').on('contextmenu',function(e){ return false; });
