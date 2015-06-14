@@ -63,6 +63,24 @@ $(function() {
 	var hash = new L.Hash(map);
 	var bounds = new L.LatLngBounds(window.map_sWest, window.map_nEast);
 	map.setMaxBounds(bounds);
+    
+    var loadingHashParams = hash.getHashParams();
+    if(loadingHashParams['wpLat'] && loadingHashParams['wpLon']) {
+		wayPoint = new L.marker(L.latLng(loadingHashParams.wpLat.values, loadingHashParams.wpLon.values), {
+			icon : L.icon({
+				iconUrl  : '../files/img/icons/waypoint.png',
+				iconSize : [26, 32]
+			})
+		}).on('click', function() {
+			map.removeLayer(wayPoint);
+            hash.removeParam('wpLat');
+            hash.removeParam('wpLon');
+		}).on('contextmenu', function() {
+			map.removeLayer(wayPoint);
+            hash.removeParam('wpLat');
+            hash.removeParam('wpLon');
+		}).addTo(map);
+    }
 
 	if (!mobile) {
 		var searchData = [];
