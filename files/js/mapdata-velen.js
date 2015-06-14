@@ -1536,324 +1536,324 @@
 			popup: $.t("signpost.desc.martinFeuillesFarmstead")
 		}, {
 			coords: [[81.02, 49.09]],
-			label: 'Winespring Grange',
-			popup: 'Years ago, an eccentric count named Jacobus Ruth of the Rieslings settled here. The count could not stand the pomposity of court life but loved good wine. He thus planted a vineyard here which produces a fabulous beaujolais prized on both sides of the Pontar'
+			label: $.t("signpost.label.winespringGrange"),
+			popup: $.t("signpost.desc.winespringGrange")
 		}, {
 			coords: [[79.59, 31.03]],
-			label: 'Moldavie Residence',
-			popup: 'Despite its ideal location and beautiful surroundings, this residence has been tossed from owner to owner like a hot potato, and for some unknown reason suffers from a bad reputation'
+			label: $.t("signpost.label.moldavieResidence"),
+			popup: $.t("signpost.desc.moldavieResidence")
 		}, {
 			coords: [[81.66, -31.55]],
-			label: 'Cavern',
-			popup: 'One of those places wise men avoid at all costs, so as not to tempt fate'
+			label: $.t("signpost.label.cavern"),
+			popup: $.t("signpost.desc.cavern")
 		}, { // E Novigrad
 			coords: [[72.92, 41.31]],
-			label: 'Alness',
-			popup: 'Until recently, this was a thoroughly unremarkable village. then the Vegelbuds began organizing their famous horse races here, granting Alness the enviable honor of hosting the region\'s most pretigious equestrian contests'
+			label: $.t("signpost.label.alness"),
+			popup: $.t("signpost.desc.alness")
 		}, {
 			coords: [[67.58, 31.03]],
-			label: 'Wheat Fields',
-			popup: 'The fertile soils of the Pontar delta guarantee the inhabitants of Novigrad full granaries and full stomaches all year long'
+			label: $.t("signpost.label.wheatFields"),
+			popup: $.t("signpost.desc.wheatFields")
 		}, {
 			coords: [[65.31, 46.67]],
-			label: 'Vegelbud Residence',
-			popup: 'Domicile of a prominent Novigrad family whose line can be traced back to the times when the first human settlers came to these lands'
+			label: $.t("signpost.label.vegelbudResidence"),
+			popup: $.t("signpost.desc.vegelbudResidence")
 		}, { // SE Novigrad
 			coords: [[62.02, 39.11]],
-			label: 'Carsten',
-			popup: 'A village named after a baker whose exquisite goods gained him fame, as well as the privilege of supplying bread to the table of the hierarch of the Church of the Eternal Fire in Novigrad. Following his death, none proved capable of recreating his recipes for his delicious and depply aromatic breads, so these days Carsten is known chiefly for its trade in grain and flour'
+			label: $.t("signpost.label.carsten"),
+			popup: $.t("signpost.desc.carsten")
 		}, {
 			coords: [[58.56, 66.27]],
-			label: 'Temerian Partisan Hideout',
-			popup: 'Though the Nilfgaardians thought Temeria died along with King Foltest, Temerian guerillas still hide in the woods, prepared to give their lives at a moment\'s notice in their fight for independence'
+			label: $.t("signpost.label.temerianPartisanHideout"),
+			popup: $.t("signpost.desc.temerianPartisanHideout")
 		}, {
 			coords: [[59.82, 85.87]],
-			label: 'Est Tayiar',
-			popup: 'Long before men first peopled these lands, a beautiful, prospering elven city stood here, centered around the palace of King Maeglor. One day, however, the city\'s inhabitants began mysteriously dying off in large numbers. According to legend, King Maeglor sensed he, too, would soon perish and cast a powerful spell that caused the earth to swallow the city whole so that no outsider could ever desecrate it. Centuries later, scholars from the Oxenfurt Academy began painstaking excavations of King Maeglor\'s palace in a search for the causes of the catastrophe. Yet work came to a sudden halt when three subsequent expeditions ventured into the ruins\' depths - and were never heard from again...'
+			label: $.t("signpost.label.estTayiar"),
+			popup: $.t("signpost.desc.estTayiar")
 		}, {
 			coords: [[49.45, 70.67]],
-			label: 'Herbalist\'s Hut',
-			popup: 'Home to a halfling herbalist who is a passionate devotee of innovative gardening methods and experimental herbal medicine'
+			label: $.t("signpost.label.herbalistsHut"),
+			popup: $.t("signpost.desc.herbalistsHut")
 		}, {
 			coords: [[35.51, 110.67]],
-			label: 'Aeramas\' Abandoned Manor',
-			popup: 'Peasants living nearby often complain about the overwhelming cheese stench wafting out of this residence...'
+			label: $.t("signpost.label.aeramasAbandonedManor"),
+			popup: $.t("signpost.desc.aeramasAbandonedManor")
 		}, {
 			coords: [[19.89, 83.06]],
-			label: 'Crossroads',
-			popup: 'A small crossroads in the woods'
+			label: $.t("signpost.label.crossroads"),
+			popup: $.t("signpost.desc.crossroads")
 		}, {
 			coords: [[49.85, 52.73]],
-			label: 'Gustfields Farm',
-			popup: 'Farmstead founded years ago by an eccentric flaxen-haired painter named Cunigund de Cabbrae, who came here seeking peace, quiet and fresh country air'
+			label: $.t("signpost.label.gustfieldsFarm"),
+			popup: $.t("signpost.desc.gustfieldsFarm")
 		}, {
 			coords: [[76.64, 37.00]],
-			label: 'Dancing Windmill',
-			popup: 'When the current owner\'s grandfather, the famous dancer Pablo "Sugar" Sasko, ended his career, he settled here and organised nights of dancing for the nearby peasantry. Supposedly these revelries became so fashionable that dung-booted peasants were dancing rounds with members of Novigrad\'s most elite familes and adventure-seeking urban dandies'
+			label: $.t("signpost.label.dancingWindmill"),
+			popup: $.t("signpost.desc.dancingWindmill")
 		}, { // S Novigrad
 			coords: [[67.20, -65.48]],
-			label: 'Loggers Hut',
-			popup: 'A lone cabin deep in the Novigrad Forest - an ideal base for woodcutters'
+			label: $.t("signpost.label.loggersHut"),
+			popup: $.t("signpost.desc.loggersHut")
 		}, {
 			coords: [[66.92, -85.25]],
-			label: 'Lighthouse',
-			popup: 'Many years ago a horrible accident took place here: a ship carrying the cousin of King Radovid IV the Bald wrecked against the rocks during a storm. The king ordered a lighthouse erected on that spot in order to warn other seafarers of its deadly danger'
+			label: $.t("signpost.label.lighthouse"),
+			popup: $.t("signpost.desc.lighthouse")
 		}, {
 			coords: [[61.90, -14.08]],
-			label: 'Cunny of the Goose',
-			popup: 'This inn owes its name to its former owner, a swaggering, blustering fellow who wanted to attract those of a similar temperatment. Luckily he died of liver poisoning after a few years and ownership passed to a distant relative, who turned the Cunny of the Goose into the best spot for stuffed goose liver in all the region'
+			label: $.t("signpost.label.cunnyOfTheGoose"),
+			popup: $.t("signpost.desc.cunnyOfTheGoose")
 		}, {
 			coords: [[58.03, -29.44]],
-			label: 'Drahim Castle',
-			popup: 'In its glory years, this castle was home to the Redanian Moskovitz of the Sea Cats dynasty, patrons of the arts and admirers of elven culture. After the death by suicide of the dynasty\'s last member, Prince Adrien, the castle fell into the hands of the Redanian crown - and then into ruin'
+			label: $.t("signpost.label.drahimCastle"),
+			popup: $.t("signpost.desc.drahimCastle")
 		}, {
 			coords: [[54.10, -71.98]],
-			label: 'Widows\' Grotto',
-			popup: 'According to legend, many years ago a young woman would wait here and watch for her husband\'s return from an overseas raid. Years passed and the woman grew old, still waiting for her husband. Yet he never came, and finally, she died. Three days after her funeral, her husband returned, having at last escaped from the pirates who had held him captive all that time. When he learned about his beloved\'s loyal vigil, he wept bitter tears, then lept to his death'
+			label: $.t("signpost.label.widowsGrotto"),
+			popup: $.t("signpost.desc.widowsGrotto")
 		}, {
 			coords: [[45.98, -51.33]],
-			label: 'Ursten',
-			popup: 'War has caused countless refugees to flee Temeria. With the Pontar blockaded, they have tended to flood villages which, like Ursten, are located close to river crossings'
+			label: $.t("signpost.label.ursten"),
+			popup: $.t("signpost.desc.ursten")
 		}, {
 			coords: [[60.50, -55.55]],
-			label: 'Lucian\'s Windmill',
-			popup: 'Lucian le Foix, the famous Oxenfurt sculptor and architect, bought this windmill several years ago and made it into his country retreat. Sadly the enormous popularity of the great Lucian\'s designs means he spends little time in his fortress of solitude and has entrusted its care to a steward'
+			label: $.t("signpost.label.luciansWindmill"),
+			popup: $.t("signpost.desc.luciansWindmill")
 		}, {
 			coords: [[62.35, 11.69]],
-			label: 'Eternal Fire Chapel',
-			popup: 'This shrine greets travelers on their way to Oxenfurt. Merchants sometimes stop here to sell goods to pilgrims and visiting scholars'
+			label: $.t("signpost.label.eternalFireChapel"),
+			popup: $.t("signpost.desc.eternalFireChapel")
 		}, {
 			coords: [[37.11, -27.23]],
-			label: 'Border Post',
-			popup: 'A small isle stuck in the river\'s central current - an ideal place for bleaching cloth'
+			label: $.t("signpost.label.borderPost"),
+			popup: $.t("signpost.desc.borderPost")
 		}, { // Oxenfurt
 			coords: [[38.17, 62.31]],
-			label: 'Novigrad Gate',
-			popup: 'During Oxenfurt Academy\'s exam sessions, this gate would be closed, to spare the students from Novigrad\'s temptations'
+			label: $.t("signpost.label.novigradGate"),
+			popup: $.t("signpost.desc.novigradGate")
 		}, {
 			coords: [[29.10, 52.58]],
-			label: 'Western Gate',
-			popup: 'Before war broke out, several hundred people a day would pass through here. Now the Redanian blockade has slowed traffic to a mere trickle'
+			label: $.t("signpost.label.westernGate"),
+			popup: $.t("signpost.desc.westernGate")
 		}, {
 			coords: [[37.40, 48.34]],
-			label: 'Oxenfurt Harbor',
-			popup: 'Oxenfurt\'s picturesque port has featured as the subject of numerous odes and ballads, the setting for at least three lurid crime novels, and a favorite spot for romantic outings for generations of students'
+			label: $.t("signpost.label.oxenfurtHarbor"),
+			popup: $.t("signpost.desc.oxenfurtHarbor")
 		}, { // NE Velen
 			coords: [[15.62, 25.66]],
-			label: 'Stonecutters\' Settlement',
-			popup: 'Over Twenty years ago a certain Bartolomeo, known as "Badger" on account of certain characteristic aspects of his coiffure, discovered a rich deposit of high-quality stone on this spot. He bought the land for a song, then leased it back to local peasants before heading off to Kovir, where he lives the life of a rich and powerful townsman to this day'
+			label: $.t("signpost.label.stonecuttersSettlement"),
+			popup: $.t("signpost.desc.stonecuttersSettlement")
 		}, {
 			coords: [[35.96, 34.41]],
-			label: 'White Eagle Fort',
-			popup: 'The grand name might seem in ill-fitting with this place, but the troll that lives here - a Redanian patriot and military aficionado - goes to great lengths to make his beloved King Radovid proud'
+			label: $.t("signpost.label.whiteEagleFort"),
+			popup: $.t("signpost.desc.whiteEagleFort")
 		}, {
 			coords: [[27.45, 12.00]],
-			label: 'Codgers\' Quarry',
-			popup: 'The now-inactive quarry once only employed stonebreakers over thirty years of age who would work hard all day, then spend the evenings racing down the sides of the quarry pit on hand-crafted wagons'
+			label: $.t("signpost.label.codgersQuarry"),
+			popup: $.t("signpost.desc.codgersQuarry")
 		}, {
 			coords: [[39.61, -2.42]],
-			label: 'Hindhold',
-			popup: 'This watchtower used to protect barges traveling between Oxenfurt and Novigrad. It once even boasted a bridge connecting the two sides of the river, but now it stands abandoned and neglected, its bridge a collapsed ruin'
+			label: $.t("signpost.label.hindhold"),
+			popup: $.t("signpost.desc.hindhold")
 		}, {
 			coords: [[-4.01, 63.37]],
-			label: 'Ferry Station',
-			popup: 'The ferry\'s former owners were famed for treating travelers who were forced to wait for better conditions to raucous and unforgettable evenings'
+			label: $.t("signpost.label.ferryStation"),
+			popup: $.t("signpost.desc.ferryStation")
 		}, {
 			coords: [[13.75, -9.05]],
-			label: 'Hanged Man\'s Tree',
-			popup: 'During the war, both sides committed acts of exorbitant cruelty meant to keep the conquered populaces in check'
+			label: $.t("signpost.label.hangedMansTree"),
+			popup: $.t("signpost.desc.hangedMansTree")
 		}, {
 			coords: [[5.22, 5.41]],
-			label: 'Devil\'s Pit',
-			popup: 'The inhabitants of Velen believe the expanse of caverns underneath the Devil\'s Pit are home to demons'
+			label: $.t("signpost.label.devilsPit"),
+			popup: $.t("signpost.desc.devilsPit")
 		}, {
 			coords: [[1.43, -15.16]],
-			label: 'Mulbrydale',
-			popup: 'One of the oldest villages in the region. Owes its name to a certain undereducated botanist who could not discern one kind of tree from another and so called them all mulberries'
+			label: $.t("signpost.label.mulbrydale"),
+			popup: $.t("signpost.desc.mulbrydale")
 		}, {
 			coords: [[0.82, -47.20]],
-			label: 'Inn at the Crossroads',
-			popup: 'A sizeable establishment able to accommodate a crowd of travelers and revelers'
+			label: $.t("signpost.label.innAtTheCrossroads"),
+			popup: $.t("signpost.desc.innAtTheCrossroads")
 		}, { // NW Velen
 			coords: [[21.78, -106.54]],
-			label: 'Harpy Feeding Ground',
-			popup: 'One of those places entered by only the very brave, or very foolish'
+			label: $.t("signpost.label.harpyFeedingGround"),
+			popup: $.t("signpost.desc.harpyFeedingGround")
 		}, {
 			coords: [[30.56, -114.31]],
-			label: 'Lornruk',
-			popup: 'Years ago smugglers would come here to load and unload illicit cargo'
+			label: $.t("signpost.label.lornruk"),
+			popup: $.t("signpost.desc.lornruk")
 		}, {
 			coords: [[-1.85, -98.61]],
-			label: 'Heatherton',
-			popup: 'The inhabitants of this village were relieved when they learned the path of the marching armies had shifted slightly and passed their village bye. Then, one night... they changed their mind'
+			label: $.t("signpost.label.heatherton"),
+			popup: $.t("signpost.desc.heatherton")
 		}, {
 			coords: [[0.97, -110.39]],
-			label: 'Abandoned Tower',
-			popup: 'Legend has it a beleaguered traveler once stood at this tower\'s gates. He begged for shelter for the night, claiming he\'d been injured, but the baron living inside was afraid the traveler was a spy and sent him away. Little did he know the traveler was a powerful mage, who cast a curse on the tower, its inhospitable owner and all who dwelled with him. Soon thereafter the baron and all his retinue died in mysterious circumstances, and the tower fell into ruin'
+			label: $.t("signpost.label.abandonedTower"),
+			popup: $.t("signpost.desc.abandonedTower")
 		}, {
 			coords: [[2.37, -122.34]],
-			label: 'Isolated Shack',
-			popup: 'Small hut constructed by a famous sculptor who, having garnered every laurel possible for his trade, abandoned his Koviri residence and moved here in order to find inspiration in solitude and reflect on what to make of the rest of his life'
+			label: $.t("signpost.label.isolatedShack"),
+			popup: $.t("signpost.desc.isolatedShack")
 		}, {
 			coords: [[-28.27, -103.97]],
-			label: 'Blackbough',
-			popup: 'This village takes its name from the unwanted limbs loggers used to bring here to burn, leaving stacks of charred logs behind. The locals, however, prefer the old legend which holds that their village was founded by a prominent member of an ancient race of tree people'
+			label: $.t("signpost.label.blackbough"),
+			popup: $.t("signpost.desc.blackbough")
 		}, {
 			coords: [[-32.44, -123.05]],
-			label: 'Hangman\'s Alley',
-			popup: 'The road is lined with the hanged bodies of peasants who opposed their new rulers or had the bad luck of happening across bandits who had nothing against adding another dangling installation to the boulevard\'s scenery'
+			label: $.t("signpost.label.hangmansAlley"),
+			popup: $.t("signpost.desc.hangmansAlley")
 		}, {
 			coords: [[-39.71, -74.62]],
-			label: 'Crow\'s Perch',
-			popup: 'After Vserad, its previous owner, panicked at the news that armies were approaching and fled to Fyke Isle, this castle became home to Phillip Strenger, alias the Bloody Baron, along with his family and entourage'
+			label: $.t("signpost.label.crowsPerch"),
+			popup: $.t("signpost.desc.crowsPerch")
 		}, {
 			coords: [[-52.81, -55.63]],
-			label: 'Boatmakers\' Hut',
-			popup: 'Though nothing about this small domicile is particularly eye-catching, a family of the best shipwrights in Velen has lived here for generations, crafting the finest skiffs and dinghies north of the Yaruga'
+			label: $.t("signpost.label.boatmakersHut"),
+			popup: $.t("signpost.desc.boatmakersHut")
 		}, {
 			coords: [[-50.35, -140.98]],
-			label: 'Regugees\' Camp',
-			popup: 'The members of this small community have erected a large, winged statue - evidence of people turning to old gods and ancient cults in this time of war and famine'
+			label: $.t("signpost.label.refugeesCamp"),
+			popup: $.t("signpost.desc.refugeesCamp")
 		}, {
 			coords: [[-45.01, -140.36]],
-			label: 'Coast of Wrecks',
-			popup: 'Once the local youth would come here to revel amidst the wrecks. Now inhabitants of nearby villages have started combing the place day and night in search of anything that can be exchanged for food'
+			label: $.t("signpost.label.coastOfWrecks"),
+			popup: $.t("signpost.desc.coastOfWrecks")
 		}, {
 			coords: [[-53.67, -119.50]],
-			label: 'Midcopse',
-			popup: 'Typical farming settlement which the worst of the fighting has left untouched - but which famine now grips all the same. One of the larger villages in this region'
+			label: $.t("signpost.label.midcopse"),
+			popup: $.t("signpost.desc.midcopse")
 		}, {
 			coords: [[-57.30, -98.57]],
-			label: 'Wastrel Manor',
-			popup: 'The once-beautiful manor house located near here was known for its extravagant balls, which were attended by the cream of the local youth. Its owners abandoned it over a century ago, but soon afterwards it became a place of worship for the local community, which believes a deity dwells in the ruins'
+			label: $.t("signpost.label.wastrelManor"),
+			popup: $.t("signpost.desc.wastrelManor")
 		}, {
 			coords: [[-62.01, -34.94]],
-			label: "Bandits' Camp",
-			popup: 'A place some particularly nasty characters have decided to call home'
+			label: $.t("signpost.label.banditsCamp"),
+			popup: $.t("signpost.desc.banditsCamp")
 		}, {
 			coords: [[-63.55, -74.44]],
-			label: 'Oreton',
-			popup: 'Village founded by Count Primislavus don Stessa, distant cousin to King Foltest of Temeria. The count was known for his passion for racing chariots down winding forest paths and narrow country roads. This spectacle delighted onlookers, won the hearts of the highborn ladies and aroused hatred in his rivals'
+			label: $.t("signpost.label.oreton"),
+			popup: $.t("signpost.desc.oreton")
 		}, {
 			coords: [[-45.68, -127.05]],
-			label: 'Forest Hut',
-			popup: 'Though his friends advised against building a house in the middle of the woods, Hans refused to listen and did things his way. When the war broke out and laid waste to this region, Hans and his family lived in peace, untouched by the troubles of the wider world - until one fateful night...'
+			label: $.t("signpost.label.forestHut"),
+			popup: $.t("signpost.desc.forestHut")
 		}, {
 			coords: [[-13.67, -84.20]],
-			label: 'Wolven Glade',
-			popup: 'A long, long time ago, when this land was ruled by forest spirits and ancient gods, the living would come here to pay their respects to the dead in the way their holy tome comanded: "Walk thee in darkness, on a path of blood, standing under bare sky, naked before the gods and their messengers."'
+			label: $.t("signpost.label.wolvenGlade"),
+			popup: $.t("signpost.desc.wolvenGlade")
 		}, {
 			coords: [[-28.84, -60.56]],
-			label: 'Burned Ruins',
-			popup: 'One of many structures in the area which did not survive the onslaught of war'
+			label: $.t("signpost.label.burnedRuins"),
+			popup: $.t("signpost.desc.burnedRuins")
 		}, {
 			coords: [[-47.10, -92.64]],
-			label: 'Troll Bridge',
-			popup: 'Local legend has it this bridge was erected by trolls who were later killed by an anonymous witcher'
+			label: $.t("signpost.label.trollBridge"),
+			popup: $.t("signpost.desc.trollBridge")
 		}, {
 			coords: [[-53.96, -80.86]],
-			label: 'Claywich',
-			popup: 'Every year at Belleteyn, a great feast is held in Claywich accompanied by games, song and dance. On that night villagers from far and wide come to celebrate, with passing travelers welcome as well. Shortly before midnight the youth in attendance race deep into the forest in search of a fern flower, and though no one has as yet found one, many have found their other halves, or at least a night of moonlight passion'
+			label: $.t("signpost.label.claywich"),
+			popup: $.t("signpost.desc.claywich")
 		}, {
 			coords: [[-69.33, -39.59]],
-			label: 'Drudge',
-			popup: 'This once-peaceful fishermen\'s settlement now stands almost completely empty. Road-weary travelers sometimes find shelter in its abandoned huts - besides that, not a soul is to be seen'
+			label: $.t("signpost.label.drudge"),
+			popup: $.t("signpost.desc.drudge")
 		}, { // SW Velen
 			coords: [[-64.09, -147.83]],
-			label: 'Condyle',
-			popup: 'This village has been completely and utterly destroyed. Rumors claim its inhabitants perished in a gruesome massacre'
+			label: $.t("signpost.label.condyle"),
+			popup: $.t("signpost.desc.condyle")
 		}, {
 			coords: [[-65.73, -128.41]],
-			label: 'Duen Hen',
-			popup: 'Religious site where the old gods are worshipped'
+			label: $.t("signpost.label.duenHen"),
+			popup: $.t("signpost.desc.duenHen")
 		}, {
 			coords: [[-73.30, -69.92]],
-			label: 'Fyke Isle',
-			popup: 'Ruined tower which is said to be afflicted by a terrible curse'
+			label: $.t("signpost.label.fykeIsle"),
+			popup: $.t("signpost.desc.fykeIsle")
 		}, {
 			coords: [[-77.12, -112.72]],
-			label: 'Byways',
-			popup: 'Most of this area\'s residents have fled north or died of plague. In better times they busied themselves making prize-winning bricks'
+			label: $.t("signpost.label.byways"),
+			popup: $.t("signpost.desc.byways")
 		}, {
 			coords: [[-80.79, -69.83]],
-			label: 'Frischlow',
-			popup: 'Like many other settlements in the area, this one has suffered greatly on account of the war. Its inhabitants have abandoned their property and evacuated lands in which they once dwelled in relative peace'
+			label: $.t("signpost.label.frischlow"),
+			popup: $.t("signpost.desc.frischlow")
 		}, {
 			coords: [[-78.73, -41.44]],
-			label: 'Olena\'s Grove',
-			popup: 'Legends claim that a beautiful nymph named Olena once lived in this grove. She fell in love with a young hunter and the man swore to be true to the nymph, but later betrayed her. She decided to punish him by casting a spell on his spirit, which wanders the grove to this day'
+			label: $.t("signpost.label.olenasGrove"),
+			popup: $.t("signpost.desc.olenasGrove")
 		}, { // SE Velen
 			coords: [[-79.15, -10.28]],
-			label: 'Road to Bald Mountain',
-			popup: 'The peasants of Velen believe the summit of Bald Mountain is home to witches, werebbubbs and wights'
+			label: $.t("signpost.label.roadToBaldMountain"),
+			popup: $.t("signpost.desc.roadToBaldMountain")
 		}, {
 			coords: [[-80.90, 30.32]],
-			label: 'Destroyed Bastion',
-			popup: 'Bastion built during the reign of King Gardic and destroyed during the First Nilfgaardian War'
+			label: $.t("signpost.label.destroyedBastion"),
+			popup: $.t("signpost.desc.destroyedBastion")
 		}, {
 			coords: [[-76.49, 41.62]],
-			label: 'Crossroads',
-			popup: 'A small crossroads, well trodden by the inhabitants of the surrounding villages'
+			label: $.t("signpost.label.crossroadsVillage"),
+			popup: $.t("signpost.desc.crossroadsVillage")
 		}, {
 			coords: [[-77.56, 110.92]],
-			label: 'Nilfgaardian Army Group \'Center\' Camp',
-			popup: 'Pitched in a mere two weeks, the Army Group \'Center\' camp constitutes the quintessence of Nilfgaardian martial architecture'
+			label: $.t("signpost.label.nilfgaardianArmyGroupCenterCamp"),
+			popup: $.t("signpost.desc.nilfgaardianArmyGroupCenterCamp")
 		}, {
 			coords: [[-74.73, 98.61]],
-			label: 'House of Respite',
-			popup: 'The House of Respite\'s motto: "A soldier does not live on war alone." This is slightly misleading, however, for the club is not open to all soldiers, only Nilfgaardian officers (or those capable of passing themselves off as such)'
+			label: $.t("signpost.label.houseOfRespite"),
+			popup: $.t("signpost.desc.houseOfRespite")
 		}, {
 			coords: [[-69.16, 82.13]],
-			label: 'Kimbolt Way',
-			popup: 'Road built on orders of Baron Kimbolt, meant to act as a safe escape route in case his plans to take power after King Foltest\'s death went awry'
+			label: $.t("signpost.label.kimboltWay"),
+			popup: $.t("signpost.desc.kimboltWay")
 		}, {
 			coords: [[-67.09, 22.19]],
-			label: 'The Orphans of Crookback Bog',
-			popup: 'Orphaned and unwanted children from nearby villages find a roof over their head and a bowl of warm food here'
+			label: $.t("signpost.label.theOrphansOfCrookbackBog"),
+			popup: $.t("signpost.desc.theOrphansOfCrookbackBog")
 		}, {
 			coords: [[-65.05, 37.53]],
-			label: 'Ruined Tower',
-			popup: 'Five centuries ago King Geddes sent his most loyal knight, Martin of Oakdale, to watch over the inhabitants of this troubled land. He also sent his least-loyal knight, to scrub Martin\'s latrines'
+			label: $.t("signpost.label.ruinedTower"),
+			popup: $.t("signpost.desc.ruinedTower")
 		}, {
 			coords: [[-70.73, 43.68]],
-			label: 'Ancient Oak',
-			popup: 'Centuries ago bloody rituals in honor of the old gods were conducted here. Locals believe dark forces still haunt this place'
+			label: $.t("signpost.label.ancientOak"),
+			popup: $.t("signpost.desc.ancientOak")
 		}, {
 			coords: [[-58.79, 30.63]],
-			label: 'Downwarren',
-			popup: 'Before the war, the inhabitants of this village were known for their intricate lacemaking and artisanal smithery'
+			label: $.t("signpost.label.downwarren"),
+			popup: $.t("signpost.desc.downwarren")
 		}, {
 			coords: [[-54.39, 10.99]],
-			label: 'Dragonslayer\'s Grotto',
-			popup: 'Underneath this fortress lies a musty, rank cave in which a lost traveler will find nothing but a few fattened leeches - if he\'s lucky. Nevertheless, village elders insist on repeating the legend that gave the grotto its name: that of a legendary dragonslayer said to be buried somewhere deep inside'
+			label: $.t("signpost.label.dragonslayersGrotto"),
+			popup: $.t("signpost.desc.dragonslayersGrotto")
 		}, {
 			coords: [[-48.75, 30.72]],
-			label: 'Reardon Manor',
-			popup: 'Abandoned estate of the once prominent Reardon family, relatives to the royal La Louve dynasty'
+			label: $.t("signpost.label.reardonManor"),
+			popup: $.t("signpost.desc.reardonManor")
 		}, {
 			coords: [[-50.63, 67.32]],
-			label: 'Benek',
-			popup: 'This small village owes its name to its founding elder, who erected the largest windmill the land had ever seen on this spot - thereby providing work for all the village\'s inhabitants'
+			label: $.t("signpost.label.benek"),
+			popup: $.t("signpost.desc.benek")
 		}, {
 			coords: [[-36.10, 51.68]],
-			label: 'Toderas',
-			popup: 'Village founded by King Griffin of Temeria, the husband of Clarissa of Toussaint. The king had planned to turn Toderas into a large, bustling university city, a sort of Temerian alternative to Oxenfurt, but, as any visitor can quickly attest, his efforts failed utterly'
+			label: $.t("signpost.label.toderas"),
+			popup: $.t("signpost.desc.toderas")
 		}, {
 			coords: [[-34.42, 11.69]],
-			label: 'Lurtch',
-			popup: 'Once the Evves family estate was located here and the area bore the name of Lord Evves\' wife, Mortilanca. When the couple died, their will stipulated their land be turned over to their serfs. The grateful peasants then founded a village of freeholders and named it after their first ealdorman, Lurtch, who had previously served as the Evves family\'s butler'
+			label: $.t("signpost.label.lurtch"),
+			popup: $.t("signpost.desc.lurtch")
 		}, {
 			coords: [[-36.81, -25.97]],
-			label: 'Lindenvale',
-			popup: 'One of Velen\'s many impoverished villages, its poverty deepened by war levies and the epidemic that spread after the Nilfgaardians\' arrival'
+			label: $.t("signpost.label.lindenvale"),
+			popup: $.t("signpost.desc.lindenvale")
 		}, {
 			coords: [[-17.22, 40.17]],
-			label: 'Marauders\' Bridge',
-			popup: 'After the Battle of Velen, marauders swarmed over this bridge in their rush to scavenge the battlefield'
+			label: $.t("signpost.label.maraudersBridge"),
+			popup: $.t("signpost.desc.maraudersBridge")
 		}, {
 			coords: [[-22.92, 71.59]],
-			label: 'Grotto',
-			popup: 'A dark and hostile place which creaks from time to time with unsettling, throaty noises...'
+			label: $.t("signpost.label.grotto"),
+			popup: $.t("signpost.desc.grotto")
 		}],
 
 	// Smugglers' Cache
@@ -1867,24 +1867,23 @@
 				// NW Velen
 				[-58.90, -158.82]
 			],
-			label: "Smugglers' Cache",
-			popup: 'Smuggled goods have been hidden here'
+			label: $.t("smugglers.label"),
+			popup: $.t("smugglers.desc")
 		}],
-
 
 	// Spoils of War
 		spoils: [{ // NE Velen
 			coords: [[33.91, -68.51]],
-			label: 'Spoils of War',
-			popup: 'Search here for loot left behind after a battle or skirmish'
+			label: $.t("spoils.label"),
+			popup: $.t("spoils.desc", {monster: ''})
 		}, { // NW Velen
 			coords: [[-22.72, -32.04]],
-			label: 'Spoils of War',
-			popup: 'Search here for loot left behind after a battle or skirmish (lvl 4<span> Drowners</span>'
+			label: $.t("spoils.label"),
+			popup: $.t("spoils.desc", {monster: '(lvl 4 <span>' + $.t("monsters.drowners") + '</span>)'})
 		}, { // SW Velen
 			coords: [[-74.75, -144.93]],
-			label: 'Spoils of War',
-			popup: 'Search here for loot left behind after a battle or skirmish (lvl 10<span> Drowners</span>)'
+			label: $.t("spoils.label"),
+			popup: $.t("spoils.desc", {monster: '(lvl 10 <span>' + $.t("monsters.drowners") + '</span>)'})
 		}]
 	});
 
