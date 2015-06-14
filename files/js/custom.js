@@ -52,7 +52,7 @@ $(function() {
 		map.setZoom(window.map_mZoom);
 		new L.marker(cords, {
 			icon : L.icon({
-				iconUrl  : '/files/img/searchhover.png',
+				iconUrl  : '../files/img/searchhover.png',
 				iconSize : [22, 22]
 			})
 		}).addTo(map);
@@ -128,7 +128,7 @@ $(function() {
 		}
 		wayPoint = new L.marker(e.latlng, {
 			icon : L.icon({
-				iconUrl  : '/files/img/icons/waypoint.png',
+				iconUrl  : '../files/img/icons/waypoint.png',
 				iconSize : [26, 32]
 			})
 		}).on('click', function() {
