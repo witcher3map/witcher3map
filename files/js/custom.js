@@ -323,7 +323,7 @@ $(function() {
 	};
 
 	if(localStorage['hide-sidebar']) {
-		setTimeout(function() { hideSidebar(); }, 100);
+		setTimeout(function() { hideSidebar(); }, 500);
 	}
 
 	$(window).on('resize', function() {
