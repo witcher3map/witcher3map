@@ -52,7 +52,7 @@ $(function() {
 		map.setZoom(window.map_mZoom);
 		new L.marker(cords, {
 			icon : L.icon({
-				iconUrl  : '/files/img/searchhover.png',
+				iconUrl  : '../files/img/searchhover.png',
 				iconSize : [22, 22]
 			})
 		}).addTo(map);
@@ -128,7 +128,7 @@ $(function() {
 		}
 		wayPoint = new L.marker(e.latlng, {
 			icon : L.icon({
-				iconUrl  : '/files/img/icons/waypoint.png',
+				iconUrl  : '../files/img/icons/waypoint.png',
 				iconSize : [26, 32]
 			})
 		}).on('click', function() {
@@ -136,6 +136,9 @@ $(function() {
 		}).on('contextmenu', function() {
 			map.removeLayer(wayPoint);
 		}).addTo(map);
+		$('#info-wrap').stop();
+		$('#info').html('<h1>Waypoint Coordinates</h1><input type="text" value="['+e.latlng.lat.toFixed(3)+','+e.latlng.lng.toFixed(3)+']" onfocus="this.select();" onmouseup="return false;" />').getNiceScroll(0).doScrollTop(0,0);
+		$('#info-wrap').fadeIn('fast');
 	});
 
 	$('.leaflet-marker-icon').on('contextmenu',function(e){ return false; });
