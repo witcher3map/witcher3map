@@ -40,6 +40,16 @@
 		}
 		return hashParams;
 	};
+    
+    L.Hash.removeParam = function(paramName) {
+        var params = this.getHashParams();
+        var newHash, hashParams = [];
+        for(prop in params) {
+            if(paramName != prop) hashParams.push(prop + '=' + params[prop].values);
+        }
+		newHash = '&' + hashParams.join('&');
+		window.location.hash = newHash;
+    };
 	
 	// Create a parameter from scratch (automatically builds object)
 	L.Hash.addParam = function( paramName, values ){
@@ -101,6 +111,7 @@
 
 		getHashParams: L.Hash.getHashParams,
 		addParam: L.Hash.addParam,
+        removeParam: L.Hash.removeParam,
 		updateUrlHash: L.Hash.updateUrlHash,
         parseHash: L.Hash.parseHash,
         formatHash: L.Hash.formatHash,
