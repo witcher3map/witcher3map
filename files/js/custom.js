@@ -11,12 +11,12 @@ $(function() {
 	if (localStorage['hideWarn']) {
 		$('#warn').remove();
 	}
-	
+
 	if(localStorage['hide-all-'+window.map_path]) {
 		$('#hide-all').hide();
 		$('#show-all').show();
 	}
-	
+
 	var hackySticky = function () {
 		if ($(window).height() > $('#sidebar-wrap').outerHeight() + $('div#copyright').outerHeight() + 45) {
 			$('div#copyright').addClass('absolute');
@@ -36,7 +36,7 @@ $(function() {
 		cursorcolor  : '#5E4F32',
 		cursorborder : 'none',
 	});
-	
+
 	var map = L.map('map', {
 		minZoom: 2,
 		maxZoom: window.map_mZoom,
@@ -209,7 +209,7 @@ $(function() {
 			}
 		});
 	}
-    
+
     $('ul.key:not(.controls) li:not(.none) i').each(function(i, e) {
         var marker = $(this).attr('class');
 		var pill = $("<span class='pill'>"+window.markerCount[marker]+"</span>");
@@ -223,7 +223,7 @@ $(function() {
 			$('#show-counts').show();
 		}
 	});
-	
+
 	$('#hide-all').on('click', function(e) {
 		var remember = (!localStorage['markers-' + window.map_path]) ? {} : $.parseJSON(localStorage['markers-' + window.map_path]);
 		$.each(allLayers, function(key, val) {
@@ -240,7 +240,7 @@ $(function() {
 		localStorage['markers-' + window.map_path] = JSON.stringify(remember);
 		localStorage['hide-all-'+window.map_path] = true;
 	});
-	
+
 	$('#show-all').on('click', function(e) {
 		var remember = (!localStorage['markers-' + window.map_path]) ? {} : $.parseJSON(localStorage['markers-' + window.map_path]);
 		$.each(allLayers, function(key, val) {
@@ -257,7 +257,7 @@ $(function() {
 		localStorage['markers-' + window.map_path] = JSON.stringify(remember);
 		localStorage.removeItem('hide-all-'+window.map_path);
 	});
-	
+
 	$('#hide-counts').on('click', function(e) {
 		$('ul.key:not(.controls) > li:not(.none) i').each(function(i, e) {
 			$(this).siblings(':last').hide();
@@ -266,7 +266,7 @@ $(function() {
 		$('#show-counts').show();
 		localStorage['hide-counts'] = true;
 	});
-	
+
 	$('#show-counts').on('click', function(e) {
 		$('ul.key:not(.controls) > li:not(.none) i').each(function(i, e) {
 			$(this).siblings(':last').show();
@@ -275,14 +275,14 @@ $(function() {
 		$('#hide-counts').show();
 		localStorage.removeItem('hide-counts');
 	});
-	
+
 	$('#reset-tracking').on('click', function(e) {
 		e.preventDefault();
 		if (confirm('This will reset all invisible/tracked markers to their default state (visible), are you sure?')) {
 			resetInvisibleMarkers();
 		}
 	});
-	
+
 	$('ul.key:not(.controls)').on('click', 'li:not(.none)', function(e) {
 		var marker   = $(this).find('i').attr('class');
 		var remember = (!localStorage['markers-' + window.map_path]) ? {} : $.parseJSON(localStorage['markers-' + window.map_path]);
@@ -302,7 +302,7 @@ $(function() {
 	var origBorder;
 	var origHide;
 	var origMap;
-	
+
 	var hideSidebar = function() {
 		origSidebar = $('#sidebar').css('left');
 		origBorder = $('#sidebar-border').css('left');
@@ -320,7 +320,7 @@ $(function() {
 			$('#hide-sidebar').addClass('show-sidebar');
 		});
 	};
-	
+
 
 	$(document).on('click', 'div#hide-sidebar:not(.show-sidebar)', function(e) {
 		hideSidebar();
@@ -331,7 +331,7 @@ $(function() {
 		showSidebar($(this));
 		localStorage.removeItem('hide-sidebar');
 	});
-	
+
 	var showSidebar = function(elem) {
 		$('#sidebar').animate({left : origSidebar}, 200);
 		$(elem).animate({left : origHide}, 200);
@@ -345,9 +345,9 @@ $(function() {
 			$('#map').attr('style', '');
 		});
 	};
-	
+
 	if(localStorage['hide-sidebar']) {
-		hideSidebar();
+		setTimeout(function() { hideSidebar(); }, 100);
 	}
 
 	$(window).on('resize', function() {

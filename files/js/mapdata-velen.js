@@ -1139,7 +1139,7 @@
 		}, {
 			coords: [[-70.41, 38.41]],
 			label: 'Place of Power',
-			popupTitle: 'Place of Power - todo',
+			popupTitle: 'Place of Power - Igni',
 			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
 		}, {
 			coords: [[-55.68, 18.94]],
