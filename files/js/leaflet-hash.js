@@ -43,7 +43,7 @@
 	
 	// Create a parameter from scratch (automatically builds object)
 	L.Hash.addParam = function addParam( paramName, values ){
-		var params = getHashParams();
+		var params = this.getHashParams();
 		params[paramName] = {};
 		params[paramName].values = values;
 		params[paramName].comparator = '=';
