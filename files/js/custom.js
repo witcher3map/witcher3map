@@ -63,7 +63,7 @@ $(function() {
 	var hash = new L.Hash(map);
 	var bounds = new L.LatLngBounds(window.map_sWest, window.map_nEast);
 	map.setMaxBounds(bounds);
-    
+
     var loadingHashParams = hash.getHashParams();
     if(loadingHashParams['wpLat'] && loadingHashParams['wpLon']) {
 		wayPoint = new L.marker(L.latLng(loadingHashParams.wpLat.values, loadingHashParams.wpLon.values), {
@@ -347,7 +347,7 @@ $(function() {
 	};
 
 	if(localStorage['hide-sidebar']) {
-		setTimeout(function() { hideSidebar(); }, 100);
+		setTimeout(function() { hideSidebar(); }, 500);
 	}
 
 	$(window).on('resize', function() {
