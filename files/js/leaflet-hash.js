@@ -42,7 +42,7 @@
 	};
 	
 	// Create a parameter from scratch (automatically builds object)
-	L.Hash.addParam = function addParam( paramName, values ){
+	L.Hash.addParam = function( paramName, values ){
 		var params = this.getHashParams();
 		params[paramName] = {};
 		params[paramName].values = values;
@@ -51,7 +51,7 @@
 	};
 	
 	// The `generateUrlHash` method builds and returns a URL hash from a set of object parameters
-	L.Hash.updateUrlHash = function updateUrlHash(params) {
+	L.Hash.updateUrlHash = function(params) {
 		var newHash,
 		hashParams = [];
 		// Loop through params, stringify them and push them into the temp array.
