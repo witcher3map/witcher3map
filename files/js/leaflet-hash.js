@@ -1,3 +1,4 @@
+// based on https://github.com/sephcoster/leaflet-hash but heavily modified to remove underscore and fix a few issues
 (function(window) {
     var HAS_HASHCHANGE = (function() {
         var doc_mode = window.documentMode;
