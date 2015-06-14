@@ -247,6 +247,13 @@ div#info h1 {
 	padding: 10px 0 5px 0;
 	font-size: 20px;
 }
+div#info input {
+	font-family: 'PFDinTextCondPro', Arial, sans-serif;
+	color: #AF834E;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	width:80%;
+}
 div#title {
 	position: absolute;
 	width: 200px;
