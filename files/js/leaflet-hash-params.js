@@ -34,11 +34,11 @@
 
   L.Hash.removeParam = function(paramName) {
     var hashParams = this.getHashParams();
-    var newHash, hashParamsTemp = [];
+    var newHash, hashParamsTemp = {};
     for(var param in hashParams) {
-        if(paramName != param) hashParamsTemp.push(param + '=' + hashParams[param]);
+        if(paramName != param) hashParamsTemp[param] = hashParams[param];
     }
-    this.updateUrlHash(hashParamsTemp.join('&'));
+    this.updateUrlHash(hashParamsTemp);
   };
 
 	L.Hash.addParam = function( paramName, value ){
