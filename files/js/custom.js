@@ -1,6 +1,7 @@
 $(function() {
 	var mobile   = ($('#sidebar').width() < 300);
 	var wayPoint = false;
+	var circle;
 
 	if (localStorage['sfw']) {
 		$('span#brothel-text').text('Love Interest');
@@ -63,23 +64,6 @@ $(function() {
 	var hash = new L.Hash(map);
 	var bounds = new L.LatLngBounds(window.map_sWest, window.map_nEast);
 	map.setMaxBounds(bounds);
-
-  var hashParams = hash.getHashParams();
-  if(hashParams && hashParams.w) {
-		var hashWayPoint = hashParams.w.split(",");
-		wayPoint = new L.marker(L.latLng(hashWayPoint[0], hashWayPoint[1]), {
-			icon : L.icon({
-				iconUrl  : '../files/img/icons/waypoint.png',
-				iconSize : [26, 32]
-			})
-		}).on('click', function() {
-			map.removeLayer(wayPoint);
-	    hash.removeParam('w');
-		}).on('contextmenu', function() {
-			map.removeLayer(wayPoint);
-	    hash.removeParam('w');
-		}).addTo(map);
-  }
 
 	if (!mobile) {
 		var searchData = [];
@@ -167,15 +151,8 @@ $(function() {
 		console.log('[' + e.latlng.lat.toFixed(3) + ', ' + e.latlng.lng.toFixed(3) + ']');
 	});
 
-	var circle;
-
 	map.on('popupopen', function(e) {
-		circle = L.circleMarker(L.latLng(e.popup._latlng.lat.toFixed(3),e.popup._latlng.lng.toFixed(3)), {
-			color: 'red',
-			fillColor: '#f03',
-			fillOpacity: 0.5,
-			radius: 20
-		}).addTo(map);
+		createCircle(e.popup._latlng.lat.toFixed(3),e.popup._latlng.lng.toFixed(3));
 		$('#info-wrap').stop();
 		if (localStorage['sfw'] && e.popup._source._popup._content.match(/prostitute/i)) {
 			$('#info').html('<h1>Love Interest</h1>Meet your love interest here');
@@ -189,10 +166,23 @@ $(function() {
 		console.log('[' + e.popup._latlng.lat.toFixed(3) + ', ' + e.popup._latlng.lng.toFixed(3) + ']');
 	});
 
-	map.on('popupclose', function(e) {
+	var createCircle = function(lat, long) {
+		circle = L.circleMarker(L.latLng(lat,long), {
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5,
+			radius: 20
+		}).addTo(map);
+	};
+
+	var deleteCircle = function() {
 		if(circle !== null) {
 			map.removeLayer(circle);
 		}
+	};
+
+	map.on('popupclose', function(e) {
+		deleteCircle();
 		$('#info-wrap').fadeOut('fast', function() {
 			$('#info').html('');
 			hash.removeParam('m');
@@ -407,4 +397,27 @@ $(function() {
 			'Many thanks to the developers for their hard work.'
 		].join('\n'));
 	});
+
+	var hashParams = hash.getHashParams();
+	if(hashParams) {
+		if(hashParams.w) {
+			var hashWayPoint = hashParams.w.split(",");
+			wayPoint = new L.marker(L.latLng(hashWayPoint[0], hashWayPoint[1]), {
+				icon : L.icon({
+					iconUrl  : '../files/img/icons/waypoint.png',
+					iconSize : [26, 32]
+				})
+			}).on('click', function() {
+				map.removeLayer(wayPoint);
+				hash.removeParam('w');
+			}).on('contextmenu', function() {
+				map.removeLayer(wayPoint);
+				hash.removeParam('w');
+			}).addTo(map);
+		}
+		if(hashParams.m) {
+			var hashMarker = hashParams.m.split(",");
+			createCircle(hashMarker[0], hashMarker[1]);
+		}
+	}
 });
