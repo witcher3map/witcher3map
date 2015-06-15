@@ -1,7 +1,27 @@
 (function () {
+
+   	var lang = getCookie("lang");
+    if (lang == null) {
+        lang = window.navigator.userLanguage || window.navigator.language;
+        lang = lang.substring(0,2);
+        document.cookie = "lang="+lang;
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+        }
+        return "";
+    }
+
     var options = {
         debug: true,
         getAsync: false,
+		lng: lang,
         fallbackLng: "en",
         resGetPath: "/witcher3map/locales/__lng__/__ns__.json"
     };

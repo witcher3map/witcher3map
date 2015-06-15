@@ -176,6 +176,18 @@ div#sfw a:hover {
 	color: #F0CB0B;
 	text-decoration: underline;
 }
+div#lang {
+    font-size: 14px;
+    text-align: center;
+}
+div#lang a {
+    color: #B08948;
+    text-decoration: none;
+}
+div#lang a:hover {
+    color: #F0CB0B;
+    text-decoration: underline;
+}
 div#copyright {
 	font-size: 13px;
 	text-align: center;
