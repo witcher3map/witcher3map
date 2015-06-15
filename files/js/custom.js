@@ -25,7 +25,7 @@ $(function() {
 		}
 	};
 	hackySticky();
-	$(window).on('resize', function(){ hackySticky() });
+	$(window).on('resize', function(){ hackySticky(); });
 
 	$('div#sidebar').niceScroll({
 		cursorcolor  : '#5E4F32',
@@ -64,23 +64,22 @@ $(function() {
 	var bounds = new L.LatLngBounds(window.map_sWest, window.map_nEast);
 	map.setMaxBounds(bounds);
 
-    var loadingHashParams = hash.getHashParams();
-    if(loadingHashParams['wpLat'] && loadingHashParams['wpLon']) {
-		wayPoint = new L.marker(L.latLng(loadingHashParams.wpLat.values, loadingHashParams.wpLon.values), {
+  var hashParams = hash.getHashParams();
+  if(hashParams.w) {
+		var hashWayPoint = hashParams.w.split(",");
+		wayPoint = new L.marker(L.latLng(hashWayPoint[0], hashWayPoint[1]), {
 			icon : L.icon({
 				iconUrl  : '../files/img/icons/waypoint.png',
 				iconSize : [26, 32]
 			})
 		}).on('click', function() {
 			map.removeLayer(wayPoint);
-            hash.removeParam('wpLat');
-            hash.removeParam('wpLon');
+	    hash.removeParam('w');
 		}).on('contextmenu', function() {
 			map.removeLayer(wayPoint);
-            hash.removeParam('wpLat');
-            hash.removeParam('wpLon');
+	    hash.removeParam('w');
 		}).addTo(map);
-    }
+  }
 
 	if (!mobile) {
 		var searchData = [];
@@ -151,18 +150,15 @@ $(function() {
 			})
 		}).on('click', function() {
 			map.removeLayer(wayPoint);
-            hash.removeParam('wpLat');
-            hash.removeParam('wpLon');
+      hash.removeParam('w');
 		}).on('contextmenu', function() {
 			map.removeLayer(wayPoint);
-            hash.removeParam('wpLat');
-            hash.removeParam('wpLon');
+      hash.removeParam('w');
 		}).addTo(map);
 		$('#info-wrap').stop();
 		$('#info').html('<h1>Waypoint Coordinates</h1><input type="text" value="['+e.latlng.lat.toFixed(3)+','+e.latlng.lng.toFixed(3)+']" onfocus="this.select();" onmouseup="return false;" />').getNiceScroll(0).doScrollTop(0,0);
 		$('#info-wrap').fadeIn('fast');
-        hash.addParam('wpLat', e.latlng.lat.toFixed(3));
-        hash.addParam('wpLon', e.latlng.lng.toFixed(3));
+		hash.addParam('w', e.latlng.lat.toFixed(3)+','+e.latlng.lng.toFixed(3));
 	});
 
 	$('.leaflet-marker-icon').on('contextmenu',function(e){ return false; });
