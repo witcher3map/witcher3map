@@ -1,7 +1,7 @@
 $(function() {
 	var mobile   = ($('#sidebar').width() < 300);
 	var wayPoint = false;
-	var circle;
+	var circle = null;
 
 	if (localStorage['sfw']) {
 		$('span#brothel-text').text('Love Interest');
