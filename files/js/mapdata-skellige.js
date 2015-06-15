@@ -637,7 +637,6 @@
 		}],
 
 	// Place of Power
-		//todo get all place of power types
 		pop: [{ // Faroe
 			coords: [[-76.851, 40.891]],
 			label: 'Place of Power',
@@ -661,28 +660,28 @@
 		}, {
 			coords: [[-24.667, -36.497]],
 			label: 'Place of Power',
-			popupTitle: 'Place of Power - Todo',
+			popupTitle: 'Place of Power - Axii',
 			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
 		}, {
 			coords: [[-32.194, 15.710]],
 			label: 'Place of Power',
-			popupTitle: 'Place of Power - Todo',
+			popupTitle: 'Place of Power - Yrden',
 			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
 		}, {
 			coords: [[4.784, -42.451]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Todo',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: 'Place of Power*',
+			popupTitle: 'Place of Power - Quen',
+			popup: '"King\'s Gambit" Quest. Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
 		}, {
 			coords: [[-21.576, 29.795]],
 			label: 'Place of Power',
-			popupTitle: 'Place of Power - Todo',
+			popupTitle: 'Place of Power - Aard',
 			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
 		}, {
 			coords: [[4.390, -25.708]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Todo',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: 'Place of Power*',
+			popupTitle: 'Place of Power - Igni',
+			popup: '"The Sunstone" quest. Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
 		}],
 
 	// Point of Interest

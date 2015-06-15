@@ -1105,7 +1105,6 @@
 		}],
 
 	// Place of Power
-		//todo get all place of power types
 		pop: [{ // Novigrad
 			coords: [[80.72, -40.83]],
 			label: $.t("pop.label"),
@@ -1133,13 +1132,13 @@
 			popup: $.t("misc.wanderingInTheDark") + $.t("pop.desc")
 		}, { // SE Velen
 			coords: [[-78.19, 7.91]],
-			label: $.t("pop.label"),
-			popupTitle: $.t("pop.popup", {sign: "todo"}),
-			popup: $.t("pop.desc")
+			label: $.t("pop.label") + '*',
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.quen")}),
+			popup: $.t("misc.baldMountain") + $.t("pop.desc")
 		}, {
 			coords: [[-70.41, 38.41]],
 			label: $.t("pop.label"),
-			popupTitle: $.t("pop.popup", {sign: "todo"}),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.igni")}),
 			popup: $.t("pop.desc")
 		}, {
 			coords: [[-55.68, 18.94]],
