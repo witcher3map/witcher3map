@@ -186,12 +186,9 @@ $(function() {
 	map.on('popupclose', function(e) {
 		$('#info-wrap').fadeOut('fast', function() {
 			$('#info').html('');
+			deleteCircle();
+			map.closePopup();
 		});
-	});
-
-	$(document).on('click', '*', function() {
-		deleteCircle();
-		map.closePopup();
 	});
 
 	if (localStorage['markers-' + window.map_path]) {
