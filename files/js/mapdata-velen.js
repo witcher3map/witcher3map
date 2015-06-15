@@ -1105,7 +1105,6 @@
 		}],
 
 	// Place of Power
-		//todo get all place of power types
 		pop: [{ // Novigrad
 			coords: [[80.72, -40.83]],
 			label: 'Place of Power',
@@ -1133,9 +1132,9 @@
 			popup: '"Wandering in the Dark" quest. Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
 		}, { // SE Velen
 			coords: [[-78.19, 7.91]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - todo',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: 'Place of Power*',
+			popupTitle: 'Place of Power - Quen',
+			popup: '"Bald mountain" quest. Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
 		}, {
 			coords: [[-70.41, 38.41]],
 			label: 'Place of Power',
