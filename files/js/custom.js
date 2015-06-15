@@ -192,10 +192,6 @@ $(function() {
 		map.closePopup();
 	});
 
-	$('div#sidebar').on('mouseover', function() {
-		map.closePopup();
-	});
-
 	if (localStorage['markers-' + window.map_path]) {
 		$.each($.parseJSON(localStorage['markers-' + window.map_path]), function(key, val) {
 			if (val === false) {
