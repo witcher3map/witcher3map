@@ -65,7 +65,7 @@ $(function() {
 	map.setMaxBounds(bounds);
 
   var hashParams = hash.getHashParams();
-  if(hashParams.w) {
+  if(hashParams && hashParams.w) {
 		var hashWayPoint = hashParams.w.split(",");
 		wayPoint = new L.marker(L.latLng(hashWayPoint[0], hashWayPoint[1]), {
 			icon : L.icon({
