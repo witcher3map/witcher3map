@@ -167,7 +167,15 @@ $(function() {
 		console.log('[' + e.latlng.lat.toFixed(3) + ', ' + e.latlng.lng.toFixed(3) + ']');
 	});
 
+	var circle;
+
 	map.on('popupopen', function(e) {
+		circle = L.circleMarker(L.latLng(e.popup._latlng.lat.toFixed(3),e.popup._latlng.lng.toFixed(3)), {
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5,
+			radius: 20
+		}).addTo(map);
 		$('#info-wrap').stop();
 		if (localStorage['sfw'] && e.popup._source._popup._content.match(/prostitute/i)) {
 			$('#info').html('<h1>Love Interest</h1>Meet your love interest here');
@@ -182,6 +190,9 @@ $(function() {
 	});
 
 	map.on('popupclose', function(e) {
+		if(circle !== null) {
+			map.removeLayer(circle);
+		}
 		$('#info-wrap').fadeOut('fast', function() {
 			$('#info').html('');
 			hash.removeParam('m');
