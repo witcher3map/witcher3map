@@ -152,6 +152,7 @@ $(function() {
 	});
 
 	map.on('popupopen', function(e) {
+		deleteCircle();
 		createCircle(e.popup._latlng.lat.toFixed(3),e.popup._latlng.lng.toFixed(3));
 		$('#info-wrap').stop();
 		if (localStorage['sfw'] && e.popup._source._popup._content.match(/prostitute/i)) {
@@ -182,7 +183,6 @@ $(function() {
 	};
 
 	map.on('popupclose', function(e) {
-		deleteCircle();
 		$('#info-wrap').fadeOut('fast', function() {
 			$('#info').html('');
 			hash.removeParam('m');
@@ -190,6 +190,7 @@ $(function() {
 	});
 
 	$(document).on('click', '*', function() {
+		deleteCircle();
 		map.closePopup();
 	});
 
