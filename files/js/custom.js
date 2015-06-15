@@ -162,12 +162,12 @@ $(function() {
 		}
 		$('#info').getNiceScroll(0).doScrollTop(0,0);
 		$('#info-wrap').fadeIn('fast');
-		hash.addParam('m', e.popup._latlng.lat.toFixed(3) + ',' + e.popup._latlng.lng.toFixed(3));
 		console.log('Popup at:');
 		console.log('[' + e.popup._latlng.lat.toFixed(3) + ', ' + e.popup._latlng.lng.toFixed(3) + ']');
 	});
 
 	var createCircle = function(lat, long) {
+		hash.addParam('m', lat + ',' + long);
 		circle = L.circleMarker(L.latLng(lat,long), {
 			color: 'red',
 			fillColor: '#f03',
@@ -179,13 +179,13 @@ $(function() {
 	var deleteCircle = function() {
 		if(circle !== null) {
 			map.removeLayer(circle);
+			hash.removeParam('m');
 		}
 	};
 
 	map.on('popupclose', function(e) {
 		$('#info-wrap').fadeOut('fast', function() {
 			$('#info').html('');
-			hash.removeParam('m');
 		});
 	});
 
