@@ -202,6 +202,7 @@
     }
   },
   "misc": {
+    "baldMountain": "\"Bald mountain\" quest. ",
     "disappearingTrader": "Warning, this trader may disappear later in the game. ",
     "guardedBy": "Guarded by __monster__",
     "liberated": "This merchant appears after liberating the area. ",
