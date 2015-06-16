@@ -14,8 +14,7 @@ Unofficial Witcher 3 interactive maps, with a mobile & tablet friendly design fa
 * Fullscreen option (both desktop and mobile)
 * Downloadable for offline browsing
 
-#### Stats
-In the first 2 weeks of going live, there were over 200,000 unique visitors to the map. This equated to over 43,000,000 requests, of which 38,000,000 (~2.4TB worth of data) were cached by Cloudflare.
+In the first 2 weeks of going live, there were over 200,000 unique visitors to the map. This equated to over 43,000,000 HTTP requests, of which 38,500,000 (~2.4TB worth of data) were cached by Cloudflare.
 
 What can you do to help?
 --------------------------------------
