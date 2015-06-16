@@ -531,6 +531,11 @@
 			label: 'Gwent Player',
 			popupTitle: 'Innkeeper Gwent Player',
 			popup: 'Gamble your hard earned coin playing Gwent here'
+		}, {
+			coords: [[-19.555, 17.514]],
+			label: 'Gwent Player',
+			popupTitle: 'Gremist Gwent Player',
+			popup: 'Gamble your hard earned coin playing Gwent here'
 		}],
 
 	// Harbor
