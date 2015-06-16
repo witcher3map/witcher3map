@@ -32,7 +32,9 @@
     "hide": "Hide All",
     "showCounts": "Show Counts",
     "hideCounts": "Hide Counts",
-    "resetInvisible": "Reset Invisible"
+    "resetInvisible": "Reset Invisible",
+    "hideMonsters": "Hide Monsters",
+    "showMonsters": "Show Monsters"
   },
   "monsters": {
     "alghoul": "Alghoul",
