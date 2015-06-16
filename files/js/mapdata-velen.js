@@ -1188,7 +1188,7 @@
 			coords: [[36.50, 114,50]],
 			label: 'Witcher Upgrade Gear',
 			popupTitle: 'Enhanced Feline Armor',
-			popup: 'on top of the Aeramas’ Abandoned Manor'
+			popup: 'on top of the Aeramas\' Abandoned Manor'
 		}, {
 			coords: [[33, -114.5]],
 			label: 'Witcher Upgrade Gear',
@@ -1263,6 +1263,16 @@
 			coords: [[20.406, -14.304]],
 			label: 'Witcher Upgrade Gear',
 			popupTitle: 'Superior Ursine Gauntlets',
+			popup: ''
+		}, {
+			coords: [[-43.710, 39.200]],
+			label: 'Witcher Upgrade Gear',
+			popupTitle: 'Enhanced Feline Steel Sword',
+			popup: ''
+		}, {
+			coords: [[-35.320, 69.740]],
+			label: 'Witcher Upgrade Gear',
+			popupTitle: 'Enhanced Feline Boots',
 			popup: ''
 		}],
 
