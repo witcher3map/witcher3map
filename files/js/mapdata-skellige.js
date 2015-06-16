@@ -879,6 +879,16 @@
 			coords: [[-62.8, -39]],
 			label: 'Jarl Madman Lugos',
 			popup: 'You get the Card \'Vampire: Katakan\' from him (Gwent Quest: Skellige) (all cards <a href="https://wiiare.in/portfolio-type/the-witcher-3-wild-hunt-card-collector-achievement-trophy-guide/" target="_blank">here</a>'
+		}, {
+			coords: [[-78.587, 68.071]],
+			label: 'Mastercrafted Feline Armor',
+			popupTitle: 'Mastercrafted Feline Armor Diagram',
+			popup: 'Mastercrafted Feline Armor, Gautlets, Trousers and Boots',
+		}, {
+			coords: [[-77.133, 56.646]],
+			label: 'Mastercrafted Feline Silver Sword',
+			popupTitle: 'Mastercrafted Feline Silver Sword',
+			popup: '',
 		}],
 				
 
@@ -1069,7 +1079,7 @@
 		}, {
 			coords: [[-54.098, -60.754]],
 			label: 'Wild Shore',
-			popup: 'A wild and untamed™ part of the isle\'s coastline. A favourite spot for bandits and lovers'
+			popup: 'A wild and untamedâ„¢ part of the isle\'s coastline. A favourite spot for bandits and lovers'
 		}, {
 			coords: [[-50.958, -42.935]],
 			label: 'Fornhala',
