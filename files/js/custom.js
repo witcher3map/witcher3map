@@ -13,9 +13,15 @@ $(function() {
 		$('#warn').remove();
 	}
 
-	if(localStorage['hide-all-'+window.map_path]) {
+	if (localStorage['hide-all-' + window.map_path]) {
 		$('#hide-all').hide();
 		$('#show-all').show();
+	}
+
+	if (localStorage['hide-monsters']) {
+		$('#info').addClass('hideMonsters');
+		$('#hide-monsters').hide();
+		$('#show-monsters').show();
 	}
 
 	var hackySticky = function () {
@@ -273,6 +279,20 @@ $(function() {
 		}
 	});
 
+	$(document).on('click', 'li#hide-monsters', function(e) {
+		localStorage['hide-monsters'] = true;
+		$('#info').addClass('hideMonsters');
+		$('#hide-monsters').hide();
+		$('#show-monsters').show();
+	});
+
+	$(document).on('click', 'li#show-monsters', function(e) {
+		localStorage.removeItem('hide-monsters');
+		$('#info').removeClass('hideMonsters');
+		$('#hide-monsters').show();
+		$('#show-monsters').hide();
+	});
+
 	$('ul.key:not(.controls)').on('click', 'li:not(.none)', function(e) {
 		var marker   = $(this).find('i').attr('class');
 		var remember = (!localStorage['markers-' + window.map_path]) ? {} : $.parseJSON(localStorage['markers-' + window.map_path]);
@@ -310,7 +330,6 @@ $(function() {
 			$('#hide-sidebar').addClass('show-sidebar');
 		});
 	};
-
 
 	$(document).on('click', 'div#hide-sidebar:not(.show-sidebar)', function(e) {
 		hideSidebar();
