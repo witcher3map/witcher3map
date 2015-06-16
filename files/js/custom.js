@@ -208,7 +208,7 @@ $(function() {
 
     $('ul.key:not(.controls) li:not(.none) i').each(function(i, e) {
         var marker = $(this).attr('class');
-		var pill = $("<span class='pill'>"+window.markerCount[marker]+"</span>");
+		var pill = $("<div class='pill'>"+window.markerCount[marker]+"</div>");
         $(this).next().after(pill);
 		if(localStorage['hide-counts']) {
 			pill.hide();

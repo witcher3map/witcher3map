@@ -67,7 +67,8 @@ div#sidebar-border {
 div#logo {
 	width: 300px;
 	height: 155px;
-    margin-left:25px;
+    margin-left: auto;
+    margin-right: auto;
 	margin-bottom: 10px;
 	background: url('../img/logo.png') no-repeat;
 }
@@ -89,7 +90,7 @@ ul.key {
 }
 ul.key > li {
 	color: #B08948;
-	font-size: 18px;
+	font-size: 16px;
 	height: 32px;
 	cursor: pointer;
 }
@@ -105,24 +106,31 @@ ul.key > li > i {
 	float: left;
 	margin-right: 7px;
 }
-ul.key > li > span {
-	float: left;
-	line-height: 21px;
+ul.key > li > div {
+    line-height: 21px;
+    white-space: nowrap;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
 }
-ul.key > li > span.pill {
-	background-color:#97702F;
-	box-shadow: 1px 1px 3px #000000 inset;
+ul.key > li > div.pill {
+    background-color:#97702F;
+    box-shadow: 1px 1px 3px #000000 inset;
     margin-left:5px;
     padding:2px 3px 0px 4px;
     color:#000000;
     border-radius:7px;
-	font-size: 14px;
-	line-height: 17px;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 15px;
+    float: left;
+    text-align: center;
 }
 ul.key > li:after {
 	clear: both;
 }
-ul.key > li.layer-disabled > span {
+ul.key > li.layer-disabled > div {
 	text-decoration: line-through;
 	filter: alpha(opacity=60);
 	-moz-opacity: 0.6;

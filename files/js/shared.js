@@ -1,36 +1,28 @@
 (function () {
 
-   	var lang = getCookie("lang");
-    if (lang == null) {
-        lang = window.navigator.userLanguage || window.navigator.language;
-        lang = lang.substring(0,2);
-        document.cookie = "lang="+lang;
-    }
+	if (localStorage['lang'] == null) {
+		var lang = window.navigator.userLanguage || window.navigator.language;
+		lang = lang.substring(0,2);
+		localStorage['lang'] = lang;
+	}
 
-    function getCookie(cname) {
-        var name = cname + "=";
-        var ca = document.cookie.split(';');
-        for(var i=0; i<ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0)==' ') c = c.substring(1);
-            if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
-        }
-        return "";
-    }
+	window.changeLang = function(lang) {
+		localStorage['lang'] = lang;
+	};
 
-    var options = {
-        debug: true,
-        getAsync: false,
-		lng: lang,
-        fallbackLng: "en",
-        resGetPath: "/witcher3map/locales/__lng__/__ns__.json"
-    };
-    i18n.init(options,
-              function(t) {
-                  $(".key").i18n();
-              }
-    );
-    
+	var options = {
+		debug: true,
+		getAsync: false,
+		lng: localStorage['lang'],
+		fallbackLng: "en",
+		resGetPath: "/witcher3map/locales/__lng__/__ns__.json"
+	};
+	i18n.init(options,
+			  function(t) {
+				  $(".key").i18n();
+			  }
+	);
+
     window.createMarker = function (coord, icon, label, popup, dataKey) {
 		var mapKey = 'markers-' + map_path + '-hidden';
 		var marker = L.marker(coord, setMarker(icon)).bindLabel(label).bindPopup(popup);
