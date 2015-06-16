@@ -1,6 +1,7 @@
 $(function() {
 	var mobile   = ($('#sidebar').width() < 300);
 	var wayPoint = false;
+	var circle = null;
 
 	if (localStorage['sfw']) {
 		$('span#brothel-text').text('Love Interest');
@@ -12,9 +13,15 @@ $(function() {
 		$('#warn').remove();
 	}
 
-	if(localStorage['hide-all-'+window.map_path]) {
+	if (localStorage['hide-all-' + window.map_path]) {
 		$('#hide-all').hide();
 		$('#show-all').show();
+	}
+
+	if (localStorage['hide-monsters']) {
+		$('#info').addClass('hideMonsters');
+		$('#hide-monsters').hide();
+		$('#show-monsters').show();
 	}
 
 	var hackySticky = function () {
@@ -25,7 +32,7 @@ $(function() {
 		}
 	};
 	hackySticky();
-	$(window).on('resize', function(){ hackySticky() });
+	$(window).on('resize', function(){ hackySticky(); });
 
 	$('div#sidebar').niceScroll({
 		cursorcolor  : '#5E4F32',
@@ -133,12 +140,12 @@ $(function() {
 			})
 		}).on('click', function() {
 			map.removeLayer(wayPoint);
+      hash.removeParam('w');
 		}).on('contextmenu', function() {
 			map.removeLayer(wayPoint);
+      hash.removeParam('w');
 		}).addTo(map);
-		$('#info-wrap').stop();
-		$('#info').html('<h1>Waypoint Coordinates</h1><input type="text" value="['+e.latlng.lat.toFixed(3)+','+e.latlng.lng.toFixed(3)+']" onfocus="this.select();" onmouseup="return false;" />').getNiceScroll(0).doScrollTop(0,0);
-		$('#info-wrap').fadeIn('fast');
+		hash.addParam('w', e.latlng.lat.toFixed(3)+','+e.latlng.lng.toFixed(3));
 	});
 
 	$('.leaflet-marker-icon').on('contextmenu',function(e){ return false; });
@@ -151,6 +158,8 @@ $(function() {
 	});
 
 	map.on('popupopen', function(e) {
+		deleteCircle();
+		createCircle(e.popup._latlng.lat.toFixed(3),e.popup._latlng.lng.toFixed(3));
 		$('#info-wrap').stop();
 		if (localStorage['sfw'] && e.popup._source._popup._content.match(/prostitute/i)) {
 			$('#info').html('<h1>Love Interest</h1>Meet your love interest here');
@@ -163,18 +172,29 @@ $(function() {
 		console.log('[' + e.popup._latlng.lat.toFixed(3) + ', ' + e.popup._latlng.lng.toFixed(3) + ']');
 	});
 
+	var createCircle = function(lat, long) {
+		hash.addParam('m', lat + ',' + long);
+		circle = L.circleMarker(L.latLng(lat,long), {
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5,
+			radius: 20
+		}).addTo(map);
+	};
+
+	var deleteCircle = function() {
+		if(circle !== null) {
+			map.removeLayer(circle);
+			hash.removeParam('m');
+		}
+	};
+
 	map.on('popupclose', function(e) {
 		$('#info-wrap').fadeOut('fast', function() {
 			$('#info').html('');
+			deleteCircle();
+			map.closePopup();
 		});
-	});
-
-	$(document).on('click', '*', function() {
-		map.closePopup();
-	});
-
-	$('div#sidebar').on('mouseover', function() {
-		map.closePopup();
 	});
 
 	if (localStorage['markers-' + window.map_path]) {
@@ -259,6 +279,20 @@ $(function() {
 		}
 	});
 
+	$(document).on('click', 'li#hide-monsters', function(e) {
+		localStorage['hide-monsters'] = true;
+		$('#info').addClass('hideMonsters');
+		$('#hide-monsters').hide();
+		$('#show-monsters').show();
+	});
+
+	$(document).on('click', 'li#show-monsters', function(e) {
+		localStorage.removeItem('hide-monsters');
+		$('#info').removeClass('hideMonsters');
+		$('#hide-monsters').show();
+		$('#show-monsters').hide();
+	});
+
 	$('ul.key:not(.controls)').on('click', 'li:not(.none)', function(e) {
 		var marker   = $(this).find('i').attr('class');
 		var remember = (!localStorage['markers-' + window.map_path]) ? {} : $.parseJSON(localStorage['markers-' + window.map_path]);
@@ -296,7 +330,6 @@ $(function() {
 			$('#hide-sidebar').addClass('show-sidebar');
 		});
 	};
-
 
 	$(document).on('click', 'div#hide-sidebar:not(.show-sidebar)', function(e) {
 		hideSidebar();
@@ -381,4 +414,27 @@ $(function() {
 			'Many thanks to the developers for their hard work.'
 		].join('\n'));
 	});
+
+	var hashParams = hash.getHashParams();
+	if(hashParams) {
+		if(hashParams.w) {
+			var hashWayPoint = hashParams.w.split(",");
+			wayPoint = new L.marker(L.latLng(hashWayPoint[0], hashWayPoint[1]), {
+				icon : L.icon({
+					iconUrl  : '../files/img/icons/waypoint.png',
+					iconSize : [26, 32]
+				})
+			}).on('click', function() {
+				map.removeLayer(wayPoint);
+				hash.removeParam('w');
+			}).on('contextmenu', function() {
+				map.removeLayer(wayPoint);
+				hash.removeParam('w');
+			}).addTo(map);
+		}
+		if(hashParams.m) {
+			var hashMarker = hashParams.m.split(",");
+			createCircle(hashMarker[0], hashMarker[1]);
+		}
+	}
 });

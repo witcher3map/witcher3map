@@ -266,6 +266,9 @@ div#info input {
 	border: none;
 	width:80%;
 }
+div#info.hideMonsters span {
+	display: none;
+}
 div#title {
 	position: absolute;
 	width: 200px;

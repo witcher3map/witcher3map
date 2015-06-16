@@ -7,17 +7,22 @@
 
 	processData({
 	// Abandoned Site
-		abandoned: [{
-			coords: [
-				// Hindarsfjall
-					[-35.996, 92.439],
-					[-32.916, 85.562],
-				// Ard Skellig
-					[-45.522, -49.570],
-					[-23.745, -19.841],
-			],
+		abandoned: [{ // Hindarsfjall
+			coords: [[-32.916, 85.562]],
 			label: 'Abandoned Site',
-			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more'
+			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 15<span> Wolves</span>)'
+		}, {
+			coords: [[-35.996, 92.439]],
+			label: 'Abandoned Site',
+			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 13<span> Harpies</span>)'
+		}, { // Ard Skellig
+			coords: [[-23.745, -19.841]],
+			label: 'Abandoned Site',
+			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 15<span> Drowners</span>)'
+		}, {
+			coords: [[-45.522, -49.570]],
+			label: 'Abandoned Site',
+			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 14<span> Bandits</span>)'
 		}],
 
 	// Alchemy Supplies
@@ -77,18 +82,31 @@
 	// Bandit Camp
 		banditcamp: [{
 			coords: [
-				// Spikeroog
-				[21.861, -121.047],
-				// Ard Skellig
-				[-61.260, -50.669],
-				[-29.459, -17.886],
-				[-14.562, 27.861],
-				[5.616, 15.557],
 				// Sea
 				[20.797, 38.848],
 			],
 			label: 'Bandit Camp',
 			popup: 'A group of dangerous bandits have made camp here'
+		}, { // Spikeroog
+			coords: [[21.861, -121.047]],
+			label: 'Bandit Camp',
+			popup: 'A group of dangerous bandits have made camp here (lvl 12<span> Bandits</span>)'
+		}, { // Ard Skellig
+			coords: [[-29.459, -17.886]],
+			label: 'Bandit Camp',
+			popup: 'A group of dangerous bandits have made camp here (lvl 15<span> Bandits</span>)'
+		}, {
+			coords: [[-61.260, -50.669]],
+			label: 'Bandit Camp',
+			popup: 'A group of dangerous bandits have made camp here (lvl 14<span> Bandits</span>)'
+		}, {
+			coords: [[-14.562, 27.861]],
+			label: 'Bandit Camp',
+			popup: 'A group of dangerous bandits have made camp here (lvl 14<span> Bandits</span>)'
+		}, {
+			coords: [[5.616, 15.557]],
+			label: 'Bandit Camp',
+			popup: 'A group of dangerous bandits have made camp here (lvl 12<span> Bandits</span>)'
 		}],
 
 	// Barber
@@ -302,36 +320,84 @@
 	// Guarded Treasure
 		guarded: [{
 			coords: [
-				// Faroe
-				[-75.958, 43.835],
-				// Hindarsfjall
-				[-22.472, 85.386],
 				// Undvik
-				[-46.134, -120.586],
 				[-69.877, -160.225],
-				// Ard Skellig
-				[-70.873, -5.625],
-				[-66.531, -15.908],
-				[-53.278, -63.413],
-				[-46.815, -37.639],
-				[-21.678, -32.717],
-				[-26.392, -5.142],
-				[-13.625, -43.506],
-				[-23.765, 23.291],
-				[5.791, -17.754],
 				// Sea
 				[28.111, 91.406],
 				[-73.788, 20.347],
 				[-70.215, 35.552],
-				[53.801, -64.336],
 				[55.279, -40.869],
-				[55.826, -30.674],
-				[59.623, -26.279],
-				[61.058, -17.754],
-				[57.845, -1.670],
 			],
 			label: 'Guarded Treasure',
 			popup: 'A particularly powerful monster guards a valuable cache here'
+		}, { // Undvik
+			coords: [[-46.134, -120.586]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 13<span> Sirens</span>)'
+		}, { // Faroe
+			coords: [[-75.958, 43.835]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 21<span> Cyclops</span>)'
+		}, { // Hindarsfjall
+			coords: [[-22.472, 85.386]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 16<span> Wraith</span>)'
+		}, { // Ard Skellig
+			coords: [[-46.815, -37.639]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 19<span> Echidna</span>)'
+		}, {
+			coords: [[5.791, -17.754]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 13<span> Gargoyles</span> & lvl 30<span>Ice Elemental</span>)'
+		}, {
+			coords: [[-21.678, -32.717]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 14<span> Wyvern</span>)'
+		}, {
+			coords: [[-23.765, 23.291]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 27<span> Earth Elemental</span>)'
+		}, {
+			coords: [[-53.278, -63.413]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 21<span> Cyclops</span>)'
+		}, {
+			coords: [[-13.625, -43.506]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 7<span> Wraiths</span>)'
+		}, {
+			coords: [[-70.873, -5.625]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 19<span> Sirens</span>)'
+		}, {
+			coords: [[-66.531, -15.908]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 13<span> Sirens</span>)'
+		}, {
+			coords: [[-26.392, -5.142]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 23<span> Wraiths</span>)'
+		}, { // Sea
+			coords: [[53.801, -64.336]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 18<span> Drowners</span>)'
+		}, {
+			coords: [[55.826, -30.674]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 19<span> Sirens</span>)'
+		}, {
+			coords: [[59.623, -26.279]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 18<span> Drowners</span>)'
+		}, {
+			coords: [[61.058, -17.754]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 16<span> Sirens</span>)'
+		}, {
+			coords: [[57.845, -1.670]],
+			label: 'Guarded Treasure',
+			popup: 'A particularly powerful monster guards a valuable cache here (lvl 32<span> Basilisk</span>)'
 		}],
 
 	// Gwent Player
@@ -465,6 +531,11 @@
 			label: 'Gwent Player',
 			popupTitle: 'Innkeeper Gwent Player',
 			popup: 'Gamble your hard earned coin playing Gwent here'
+		}, {
+			coords: [[-19.555, 17.514]],
+			label: 'Gwent Player',
+			popupTitle: 'Gremist Gwent Player',
+			popup: 'Gamble your hard earned coin playing Gwent here'
 		}],
 
 	// Harbor
@@ -506,33 +577,17 @@
 	// Hidden Treasure
 		hidden: [{
 			coords: [
-				// Faroe
-				[-78.469, 42.957],
 				// An Skellig
 				[46.905, 46.582],
-				// Spikeroog
-				[26.274, -104.238],
-				[27.020, -95.977],
 				// Undvik
 				[-46.073, -133.835],
-				[-55.937, -121.223],
 				[-56.317, -150.073],
 				[-45.568, -102.327],
-				// Eastern Islands
-				[-12.039, -98.701],
 				// Ard Skellig
-				[-72.262, 5.317],
-				[-58.825, -3.735],
-				[-32.287, -50.757],
 				[-40.028, -18.083],
 				[-38.857, -26.543],
-				[-24.127, -69.829],
-				[-36.315, 0.264],
-				[-21.739, 30.498],
 				[2.021, -21.709],
 				// Sea
-				[4.083, -78.223],
-				[31.541, -65.566],
 				[38.788, -21.533],
 				[-65.658, 41.396],
 				[-78.044, -41.968],
@@ -541,6 +596,58 @@
 			],
 			label: 'Hidden Treasure',
 			popup: 'A hidden cache of valuable goods'
+		}, { // Spikeroog
+			coords: [[26.274, -104.238]],
+			label: 'Hidden Treasure',
+			popup: 'A hidden cache of valuable goods (lvl 15<span> Drowners</span>)'
+		}, {
+			coords: [[27.020, -95.977]],
+			label: 'Hidden Treasure',
+			popup: 'A hidden cache of valuable goods (lvl 13<span> Sirens</span>)'
+		}, { // Undvik
+			coords: [[-55.937, -121.223]],
+			label: 'Hidden Treasure',
+			popup: 'A hidden cache of valuable goods (lvl 14<span> Bandits</span>)'
+		}, { // Eastern Islands
+			coords: [[-12.039, -98.701]],
+			label: 'Hidden Treasure',
+			popup: 'A hidden cache of valuable goods (lvl 12-14<span> Bandits</span>)'
+		}, { // Faroe
+			coords: [[-78.469, 42.957]],
+			label: 'Hidden Treasure',
+			popup: 'A hidden cache of valuable goods (lvl 9<span> Endrega</span>)'
+		}, { // Ard Skellig
+			coords: [[-36.315, 0.264]],
+			label: 'Hidden Treasure',
+			popup: 'A hidden cache of valuable goods (lvl 15<span> Drowners</span>)'
+		}, {
+			coords: [[-58.825, -3.735]],
+			label: 'Hidden Treasure',
+			popup: 'A hidden cache of valuable goods (lvl 13<span> Sirens</span>)'
+		}, {
+			coords: [[-32.287, -50.757]],
+			label: 'Hidden Treasure',
+			popup: 'A hidden cache of valuable goods (lvl 19<span> Sirens</span>)'
+		}, {
+			coords: [[-72.262, 5.317]],
+			label: 'Hidden Treasure',
+			popup: 'A hidden cache of valuable goods (lvl 13<span> Sirens</span>)'
+		}, {
+			coords: [[-21.739, 30.498]],
+			label: 'Hidden Treasure',
+			popup: 'A hidden cache of valuable goods (lvl 30<span> Cyclops</span>)'
+		}, {
+			coords: [[-24.127, -69.829]],
+			label: 'Hidden Treasure',
+			popup: 'A hidden cache of valuable goods (lvl 12<span> Bandits</span>)'
+		}, { // Sea
+			coords: [[4.083, -78.223]],
+			label: 'Hidden Treasure',
+			popup: 'A hidden cache of valuable goods (lvl 18<span> Drowners</span>)'
+		}, {
+			coords: [[31.541, -65.566]],
+			label: 'Hidden Treasure',
+			popup: 'A hidden cache of valuable goods (lvl 18<span> Drowners</span>)'
 		}],
 
 	// Innkeep
@@ -582,29 +689,48 @@
 				// Faroe
 				[-78.587, 68.071],
 				[-77.133, 56.646],
-				// Ard Skellig
-				[-50.078, -33.245],
-				[-10.401, 1.758],
-				[-5.922, 8.262],
-				[-2.416, -21.841],
 			],
 			label: 'Monster Den',
 			popup: 'Monster-infested location. A constant worry for those living nearby'
+		}, { // Ard Skellig
+			coords: [[-2.416, -21.841]],
+			label: 'Monster Den',
+			popup: 'Monster-infested location. A constant worry for those living nearby (lvl 31<span> Ghost</span>)'
+		}, {
+			coords: [[-50.078, -33.245]],
+			label: 'Monster Den',
+			popup: 'Monster-infested location. A constant worry for those living nearby (lvl 8<span> Nekkers</span> & lvl 12<span> Nekker Warrior</span>)'
+		}, { // An Skellig
+			coords: [[-10.401, 1.758]],
+			label: 'Monster Den',
+			popup: 'Monster-infested location. A constant worry for those living nearby (lvl 29<span> Wraiths</span>)'
+		}, {
+			coords: [[-5.922, 8.262]],
+			label: 'Monster Den',
+			popup: 'Monster-infested location. A constant worry for those living nearby (lvl 21<span> Alghouls</span>)'
 		}],
 
 	// Monster Nest
-		monsternest: [{
-			coords: [
-				// An Skellig
-				[50.458, 26.521],
-				// Ard Skellig
-				[-59.074, -24.521],
-				[-59.120, -4.131],
-				[-24.827, -29.070],
-				[-23.544, -37.551],
-			],
+		monsternest: [{ // An Skellig
+			coords: [[50.458, 26.521]],
 			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs'
+			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 13<span> Harpies</span>)'
+		}, {
+			coords: [[-23.544, -37.551]],
+			label: 'Monster Nest',
+			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 19<span> Echidna</span>)'
+		}, {
+			coords: [[-59.074, -24.521]],
+			label: 'Monster Nest',
+			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 13<span> Harpies</span>)'
+		}, {
+			coords: [[-24.827, -29.070]],
+			label: 'Monster Nest',
+			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 15<span> Drowners</span>)'
+		}, { // Ard Skellig
+			coords: [[-59.120, -4.131]],
+			label: 'Monster Nest',
+			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 13<span> Sirens</span> & lvl 19<span> Echidna</span>)'
 		}],
 
 	// Notice Board
@@ -627,13 +753,14 @@
 		}],
 
 	// Person in Distress
-		pid: [{
-			coords: [
-				[-33.633, -40.298],
-				[-38.994, -6.372],
-			],
+		pid: [{ // Ard Skellig
+			coords: [[-33.633, -40.298]],
 			label: 'Person(s) in Distress',
-			popup: 'There\'s a person or a group of people here in need of assitance'
+			popup: 'There\'s a person or a group of people here in need of assitance (lvl 12<span> Bandits</span>)'
+		}, {
+			coords: [[-38.994, -6.372]],
+			label: 'Person(s) in Distress',
+			popup: 'There\'s a person or a group of people here in need of assitance (lvl 12<span> Bandits</span>)'
 		}],
 
 	// Place of Power
@@ -1107,19 +1234,21 @@
 				[-37.125, -97.383],
 				[-36.510, -82.046],
 				[61.186, -90.264],
-				[53.697, -55.371],
 				[52.107, -22.500],
 				[56.023, -8.877],
 			],
 			label: 'Smuggler\'s Cache',
 			popup: 'Smuggled goods have been hidden here'
+		}, {
+			coords: [[53.697, -55.371]],
+			label: 'Smuggler\'s Cache',
+			popup: 'Smuggled goods have been hidden here (lvl 19<span> Sirens</span>)'
 		}],
 
 
 	// Spoils of War
 		spoils: [{
 			coords: [
-				[29.650, -63.896],
 				[21.412, -47.285],
 				[-50.709, 43.550],
 				[-69.396, 25.356],
@@ -1130,6 +1259,10 @@
 			],
 			label: 'Spoils of War',
 			popup: 'Search here for loot left behind after a battle or skirmish'
+		}, {
+			coords: [[29.650, -63.896]],
+			label: 'Spoils of War',
+			popup: 'Search here for loot left behind after a battle or skirmish (lvl 16<span> Sirens</span>)'
 		}],
 	});
 
