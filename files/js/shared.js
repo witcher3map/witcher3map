@@ -15,7 +15,7 @@
 		getAsync: false,
 		lng: localStorage['lang'],
 		fallbackLng: "en",
-		resGetPath: "/witcher3map/locales/__lng__/__ns__.json"
+		resGetPath: "../locales/__lng__/__ns__.json"
 	};
 	i18n.init(options,
 			  function(t) {
