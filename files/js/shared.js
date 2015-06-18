@@ -13,6 +13,7 @@
 	var options = {
 		debug: true,
 		getAsync: false,
+		ns: 'general',
 		lng: localStorage['lang'],
 		fallbackLng: "en",
 		resGetPath: "../locales/__lng__/__ns__.json"
