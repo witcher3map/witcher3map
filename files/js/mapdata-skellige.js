@@ -817,78 +817,109 @@
 			label: 'Jutta An Dimun',
 			popup: 'todo'
 		}, { // Ard Skellig
+			coords: [[-78.587, 68.071]],
+			label: 'Diagram: Mastercrafted Feline Armor Set',
+			popupTitle: 'Diagram: Mastercrafted Feline Armor Set',
+			popup: 'Mastercrafted Feline Armor, Gautlets, Trousers and Boots',
+		}, { 
 			coords: [[-58.344, -2.549]],
-			label: 'Ursine Steel Sword',
-			popupTitle: 'Ursine Steel Sword Diagram',
+			label: 'Diagram: Ursine Steel Sword',
+			popupTitle: 'Diagram: Ursine Steel Sword',
 			popup: 'In a chest in the basement of this ruin'
 		}, {
 		coords: [[-57.404, -49.349]],
-			label: 'Enhanced Ursine Boots',
-			popupTitle: 'Enhanced Ursine Boots Diagram',
+			label: 'Diagram: Enhanced Ursine Boots',
+			popupTitle: 'Diagram: Enhanced Ursine Boots',
 			popup: 'In an unmarked cave in the mountainside'
 		}, {
 			coords: [[-40.112, -14.546]],
-			label: 'Mastercrafted Griffin Steel Sword',
-			popupTitle: 'Mastercrafted Griffin Steel Sword Diagram',
+			label: 'Diagram: Mastercrafted Griffin Steel Sword',
+			popupTitle: 'Diagram: Mastercrafted Griffin Steel Sword',
 			popup: ''
 		}, {
 			coords: [[-1.274, -11.931]],
-			label: 'Enhanced Ursine Gauntlets',
-			popupTitle: 'Enhanced Ursine Gauntlets Diagram',
+			label: 'Diagram: Enhanced Ursine Gauntlets',
+			popupTitle: 'Diagram: Enhanced Ursine Gauntlets',
 			popup: ''
 		}, {
 			coords: [[8.559, 13.733]],
-			label: 'Superior Griffin Armour Set',
-			popupTitle: 'Superior Griffin Armour Set Diagrams',
+			label: 'Diagrams: Superior Griffin Armor Set',
+			popupTitle: 'Diagrams: Superior Griffin Armor Set',
 			popup: 'Armor, boots, gauntlets, trousers'
 		}, {
 			coords: [[-22, 31]],
-			label: 'Mastercrafted Griffin Armor',
+			label: 'Diagram: Mastercrafted Griffin Armor',
+			popupTitle: 'Diagram: Mastercrafted Griffin Armor',
 			popup: ''
 		}, {
 			coords: [[54.5, 32]],
-			label: 'Superior Griffin Steel Sword',
-			popupTitle: 'Superior Griffin Steel Sword Diagram',
+			label: 'Diagram: Superior Griffin Steel Sword',
+			popupTitle: 'Diagram: Superior Griffin Steel Sword',
 			popup: ''
 		}, {
 			coords: [[5.5, -17]],
-			label: 'Ursine Silver Sword',
-			popupTitle: 'Ursine Silver Sword Diagram',
+			label: 'Diagram: Ursine Silver Sword',
+			popupTitle: 'Diagram: Ursine Silver Sword',
 			popup: ''
 		}, {
 			coords: [[53.8, 38.5]],
-			label: 'Ursine Armor Set',
-			popupTitle: 'Ursine Armor Set Diagrams',
+			label: 'Diagrams: Ursine Armor Set',
+			popupTitle: 'Diagrams: Ursine Armor Set',
 			popup: 'Armor, gauntlets, trousers and boots'
 		}, {
 			coords: [[17.8, -123.5]],
-			label: 'Ursine Crossbow',
-			popupTitle: 'Ursine Crossbow Diagram',
+			label: 'Diagram: Ursine Crossbow',
+			popupTitle: 'Diagram: Ursine Crossbow',
 			popup: ''
 		}, {
 			coords: [[-70.5, -8.6]],
-			label: 'Superior Griffin silver sword',
-			popupTitle: 'Superior Griffin silver sword Diagram',
+			label: 'Diagram: Superior Griffin Silver Sword',
+			popupTitle: 'Diagram: Superior Griffin Silver Sword',
 			popup: 'Located in the cave system below'
 		}, {
 			coords: [[-50, -34.5]],
-			label: 'Mastercrafted Griffin Silver Sword',
-			popupTitle: 'Mastercrafted Griffin Silver Diagram',
+			label: 'Diagram: Mastercrafted Griffin Silver Sword',
+			popupTitle: 'Diagram: Mastercrafted Griffin Silver Sword',
 			popup: ''
 		}, {
 			coords: [[-62.8, -39]],
 			label: 'Jarl Madman Lugos',
-			popup: 'You get the Card \'Vampire: Katakan\' from him (Gwent Quest: Skellige) (all cards <a href="https://wiiare.in/portfolio-type/the-witcher-3-wild-hunt-card-collector-achievement-trophy-guide/" target="_blank">here</a>'
-		}, {
-			coords: [[-78.587, 68.071]],
-			label: 'Mastercrafted Feline Armor',
-			popupTitle: 'Mastercrafted Feline Armor Diagram',
-			popup: 'Mastercrafted Feline Armor, Gautlets, Trousers and Boots',
+			popup: 'You get the Card \'Vampire: Katakan\' from him (Gwent Quest: Skellige)'
 		}, {
 			coords: [[-77.133, 56.646]],
-			label: 'Mastercrafted Feline Silver Sword',
-			popupTitle: 'Mastercrafted Feline Silver Sword',
-			popup: '',
+			label: 'Diagram: Mastercrafted Feline Silver Sword',
+			popupTitle: 'Diagram: Mastercrafted Feline Silver Sword',
+			popup: ''
+		}, {
+			coords: [[-37.440, -21.907]],
+			label: 'Diagram: Mastercrafted Wolven Gauntlets',
+			popupTitle: 'Diagram: Mastercrafted Wolvn Gauntlets',
+			popup: ''
+		}, {
+			coords: [[22.634,-120.850]],
+			label: 'Diagram: Mastercrafted Wolven Trousers',
+			popupTitle: 'Diagram: Mastercrafted Wolven Trousers',
+			popup: 'You must climb the wall of the old watchtower'
+		}, {
+			coords: [[-58.043, -107.886]],
+			label: 'Diagram: Mastercrafted Wolven Boots',
+			popupTitle: 'Diagram: Mastercrafted Wolven Boots',
+			popup: ''
+		}, {
+			coords: [[-27.722, 73.894]],
+			label: 'Diagram: Superior Wolven Steel Sword',
+			popupTitle: 'Diagram: Superior Wolven Steel Sword',
+			popup: 'Going down to the catacomb and enter a room filled with poison gas'
+		}, {
+			coords: [[-46.119, -57.437]],
+			label: 'Diagram: Superior Wolven Silver Sword',
+			popupTitle: 'Diagram: Superior Wolven Silver Sword',
+			popup: ''
+		}, {
+			coords: [[-59.221, -23.730]],
+			label: 'Diagram: Superior Wolven Armor',
+			popupTitle: 'Diagram: Superior Wolven Armor',
+			popup: 'you need to get to the second floor of the fortress'
 		}],
 				
 
