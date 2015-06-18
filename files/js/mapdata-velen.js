@@ -1167,104 +1167,135 @@
 		}, { // Velen
 			coords: [[61.90, -91.82]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Feline Crossbow',
+			popupTitle: 'Diagram: Feline Crossbow',
 			popup: ''
 		}, {
 			coords: [[57.651, -30.169]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Superior Feline Silver Sword',
+			popupTitle: 'Diagram: Superior Feline Silver Sword',
 			popup: ''
 		}, {
 			coords: [[75.70, -19.50]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhanced Feline Silver Sword',
+			popupTitle: 'Diagram: Enhanced Feline Silver Sword',
 			popup: 'You need to climp up a Leader'
 		}, {
 			coords: [[60.60, 89.80]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Feline Silver Sword',
+			popupTitle: 'Diagram: Feline Silver Sword',
 			popup: 'Inside the Est Tayiar Ruine, behind a Wall that you can break'
 		}, {
 			coords: [[36.50, 114,50]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhanced Feline Armor',
-			popup: 'on top of the Aeramas’ Abandoned Manor'
+			popupTitle: 'Diagram: Enhanced Feline Armor',
+			popup: 'on top of the AeramasÂ’ Abandoned Manor'
 		}, {
 			coords: [[33, -114.5]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Griffin Silver Sword Diagram',
+			popupTitle: 'Diagram: Griffin Silver Sword',
 			popup: ''
 		}, {
 			coords: [[29.373, -73]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhanced Griffin Boots',
+			popupTitle: 'Diagram: Enhanced Griffin Boots',
 			popup: ''
 		}, {
 			coords: [[41, -1]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Griffin Steel Sword',
+			popupTitle: 'Diagram: Griffin Steel Sword',
 			popup: 'Near the Monster Nest'
 		}, {
 			coords: [[36.5, 35]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhance Griffin Armor',
+			popupTitle: 'Diagram: Enhanced Griffin Armor',
 			popup: ' Near the Troll at White Eagle Fort'
 		}, {
 			coords: [[22, 9.5]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhance Feline Gauntlets',
+			popupTitle: 'Diagram: Enhanced Feline Gauntlets',
 			popup: 'Inside a Shaft from the Codgers Quarry'
 		}, {
 			coords: [[-28, -61]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhanced Griffin Trousers',
+			popupTitle: 'Diagram: Enhanced Griffin Trousers',
 			popup: 'Inside the Burned Ruin'
 		}, {
 			coords: [[-57, -156]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhanced Griffin Steel Sword',
+			popupTitle: 'Diagram: Enhanced Griffin Steel Sword',
 			popup: ''
 		}, {
 			coords: [[-61, -8.5]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Superior Feline Armor',
+			popupTitle: 'Diagram: Superior Feline Armor',
 			popup: ''
 		}, {
 			coords: [[-54.5, 12]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Griffin Armor Set',
+			popupTitle: 'Diagram: Griffin Armor Set',
 			popup: 'Inside the Dragonslayers Grotto'
 		}, {
 			coords: [[-64, 38]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Superior Ursine Steel Sword',
+			popupTitle: 'Diagram: Superior Ursine Steel Sword',
 			popup: 'Guarded by lvl 25<span> Earth Elemental</span>'
 		}, {
 			coords: [[-81.1, 30.8]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Mastercrafted Ursine Armor',
+			popupTitle: 'Diagram: Mastercrafted Ursine Armor',
 			popup: ''
 		}, {
 			coords: [[-75.6, -28]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Mastercrafted Ursine Silver Sword',
+			popupTitle: 'Diagram: Mastercrafted Ursine Silver Sword',
 			popup: ''
 		}, {
 			coords: [[-81.2, -70]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Enhanced Griffin Gauntlets',
+			popupTitle: 'Diagram: Enhanced Griffin Gauntlets',
 			popup: ''
 		}, {
 			coords: [[-72.047, 3.999]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Superior Ursine silver sword',
+			popupTitle: 'Diagram: Superior Ursine Silver Sword',
 			popup: ''
 		}, {
 			coords: [[20.406, -14.304]],
 			label: 'Witcher Upgrade Gear',
-			popupTitle: 'Superior Ursine Gauntlets',
+			popupTitle: 'Diagram: Superior Ursine Gauntlets',
 			popup: ''
-		}],
+		}, {
+			coords: [[-28.710, -77.410]],
+			label: 'Witcher Upgrade Gear',
+			popupTitle: 'Diagram: Enhanced Wolven Silver Sword',
+			popup: 'Going down into the cave'
+		}, {
+			coords: [[-23.645, 72.070]],
+			label: 'Witcher Upgrade Gear',
+			popupTitle: 'Diagram: Enhanced Wolven Boots',
+			popup: 'Going down into the cave'
+		}, {
+			coords: [[-77.128, -78.926]],
+			label: 'Witcher Upgrade Gear',
+			popupTitle: 'Diagram: Enhanced Wolven Armor',
+			popup: 'Dive into the water'
+		}, {
+			coords: [[-72.836, 76.816]],
+			label: 'Witcher Upgrade Gear',
+			popupTitle: 'Diagram: Mastercrafted Wolven Silver Sword',
+			popup: 'Near hidden treasure'
+		}, {
+			coords: [[-77.897, -104.963]],
+			label: 'Witcher Upgrade Gear',
+			popupTitle: 'Diagram: Mastercrafted Wolven Armor',
+			popup: 'In the well'
+		}, {
+			coords: [[-74.496, -145.239]],
+			label: 'Witcher Upgrade Gear',
+			popupTitle: 'Diagram: Mastercrafted Wolven Steel Sword',
+			popup: 'In the hold of the sunken ship'
+		}
+		],
 
 	// Shopkeeper
 		shopkeeper: [{ // Novigrad
