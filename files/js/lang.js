@@ -10,7 +10,7 @@
 	};
 
 	var options = {
-		debug: true,
+		debug: false,
 		getAsync: true,
 		ns: 'general',
 		lng: localStorage['lang'],
