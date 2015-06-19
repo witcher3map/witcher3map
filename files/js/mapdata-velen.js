@@ -1,11 +1,9 @@
-(function () {
+$(document).on("loadMapdata", function () {
 	window.map_path   = 'velen';
 	window.map_sWest  = L.latLng(-85.05, -180);
 	window.map_nEast  = L.latLng(85.05, 135);
 	window.map_center = [60, -5];
 	window.map_mZoom  = 6;
-
-    i18n.loadNamespace('v');
 
 	processData({
 	// Abandoned Site
@@ -1888,33 +1886,32 @@
 		}]
 	});
 
-    window.allLayers = [
-        markers.abandoned,
-        markers.alchemy,
-        markers.armourer,
-        markers.armourerstable,
-        markers.banditcamp,
-        markers.barber,
-        markers.blacksmith,
-        markers.brothel,
-        markers.entrance,
-        markers.grindstone,
-        markers.guarded,
-        markers.gwent,
-        markers.harbor,
-        markers.herbalist,
-        markers.hidden,
-        markers.innkeep,
-        markers.monsterden,
-        markers.monsternest,
-        markers.notice,
-        markers.pid,
-        markers.pop,
-        markers.poi,
-        markers.shopkeeper,
-        markers.signpost,
-        markers.smugglers,
-        markers.spoils
-    ];
-
-}());
+	window.allLayers = [
+			markers.abandoned,
+			markers.alchemy,
+			markers.armourer,
+			markers.armourerstable,
+			markers.banditcamp,
+			markers.barber,
+			markers.blacksmith,
+			markers.brothel,
+			markers.entrance,
+			markers.grindstone,
+			markers.guarded,
+			markers.gwent,
+			markers.harbor,
+			markers.herbalist,
+			markers.hidden,
+			markers.innkeep,
+			markers.monsterden,
+			markers.monsternest,
+			markers.notice,
+			markers.pid,
+			markers.pop,
+			markers.poi,
+			markers.shopkeeper,
+			markers.signpost,
+			markers.smugglers,
+			markers.spoils
+	];
+});

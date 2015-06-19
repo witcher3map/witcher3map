@@ -1,29 +1,4 @@
-(function () {
-
-	if (localStorage['lang'] == null) {
-		var lang = window.navigator.userLanguage || window.navigator.language;
-		lang = lang.substring(0,2);
-		localStorage['lang'] = lang;
-	}
-
-	window.changeLang = function(lang) {
-		localStorage['lang'] = lang;
-	};
-
-	var options = {
-		debug: true,
-		getAsync: false,
-		ns: 'general',
-		lng: localStorage['lang'],
-		fallbackLng: "en",
-		resGetPath: "../locales/__lng__/__ns__.json"
-	};
-	i18n.init(options,
-			  function(t) {
-				  $(".key").i18n();
-			  }
-	);
-
+$(document).on("loadShared", function () {
     window.createMarker = function (coord, icon, label, popup, dataKey) {
 		var mapKey = 'markers-' + map_path + '-hidden';
 		var marker = L.marker(coord, setMarker(icon)).bindLabel(label).bindPopup(popup);
@@ -249,4 +224,4 @@
 		iconUrl  : '../files/img/icons/spoils.png',
 		iconSize : [25, 28]
 	});
-}());
+});

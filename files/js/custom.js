@@ -1,4 +1,4 @@
-$(function() {
+$(document).on("loadCustom", function() {
 	var mobile   = ($('#sidebar').width() < 300);
 	var wayPoint = false;
 	var circle = null;
@@ -206,14 +206,14 @@ $(function() {
 		});
 	}
 
-    $('ul.key:not(.controls) li:not(.none) i').each(function(i, e) {
-        var marker = $(this).attr('class');
+  $('ul.key:not(.controls) li:not(.none) i').each(function(i, e) {
+		var marker = $(this).attr('class');
 		var pill = $("<div class='pill'>"+window.markerCount[marker]+"</div>");
-        $(this).next().after(pill);
+    $(this).next().after(pill);
 		if(localStorage['hide-counts']) {
 			pill.hide();
 		}
-    }).promise().done(function() {
+	}).promise().done(function() {
 		if(localStorage['hide-counts']) {
 			$('#hide-counts').hide();
 			$('#show-counts').show();
@@ -438,28 +438,31 @@ $(function() {
 		}
 	}
 
-    $('ul.key:not(.controls) li:not(.none) i').each(function (i, e) {
-        var key = $(this).attr('class');
-        key = $.t("sidebar." + key);
-        var tooltip = $("<span class='tooltip'>" + key + "</span>");
+	setTimeout(function() {
+		$('ul.key:not(.controls) li:not(.none) i').each(function(i, e) {
+			var key = $(this).attr('class');
+			key = $.t("sidebar." + key);
+			var tooltip = $("<span class='tooltip'>" + key + "</span>");
 
-        $(this).parent().mousemove(function(e) {
-            var x = e.clientX,
-                y = e.clientY;
+			var ellipsis = $(this).next();
+			if(ellipsis.outerWidth() < ellipsis[0].scrollWidth) {
+				$(this).parent().mousemove(function(e) {
+					var x = e.clientX,
+					y = e.clientY;
 
-            // calculate y-position to counteract scroll offset
-            var offset = $("#logo").offset();
-            y = y - offset.top;
+					// calculate y-position to counteract scroll offset
+					var offset = $("#logo").offset();
+					y = y - offset.top;
 
-            tooltip.css('top', (y + 15) + 'px');
-            tooltip.css('left', (x + 15) + 'px');
-            tooltip.css('display', 'block');
-        });
-        $(this).parent().mouseleave(function() {
-            tooltip.css('display', 'none');
-        });
+					tooltip.css('top', (y + 15) + 'px');
+					tooltip.css('left', (x + 15) + 'px');
+					tooltip.css('display', 'block');
+				}).mouseleave(function() {
+					tooltip.css('display', 'none');
+				});
+			}
 
-        $("#sidebar-wrap").append(tooltip);
-    })
-
+			$("#sidebar-wrap").append(tooltip);
+	  });
+	}, 100);
 });
