@@ -64,10 +64,33 @@ div#sidebar-border {
 	bottom: 0;
 	left: 385px;
 }
+div#sidebar-wrap > span.tooltip {
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    background-clip: padding-box;
+    border-color: rgb(0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 4px;
+    color: #F0CB0B;
+    display: none;
+    font: 20px 'PFDinTextCondPro', Arial, sans-serif;
+    padding: 1px 6px;
+    position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 6;
+}
 div#logo {
 	width: 300px;
 	height: 155px;
-    margin-left:25px;
+    margin-left: auto;
+    margin-right: auto;
 	margin-bottom: 10px;
 	background: url('../img/logo.png') no-repeat;
 }
@@ -105,24 +128,31 @@ ul.key > li > i {
 	float: left;
 	margin-right: 7px;
 }
-ul.key > li > span {
-	float: left;
-	line-height: 21px;
+ul.key > li > div {
+    line-height: 21px;
+    white-space: nowrap;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
 }
-ul.key > li > span.pill {
-	background-color:#97702F;
-	box-shadow: 1px 1px 3px #000000 inset;
+ul.key > li > div.pill {
+    background-color:#97702F;
+    box-shadow: 1px 1px 3px #000000 inset;
     margin-left:5px;
     padding:2px 3px 0px 4px;
     color:#000000;
     border-radius:7px;
-	font-size: 14px;
-	line-height: 17px;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 15px;
+    float: left;
+    text-align: center;
 }
 ul.key > li:after {
 	clear: both;
 }
-ul.key > li.layer-disabled > span {
+ul.key > li.layer-disabled > div {
 	text-decoration: line-through;
 	filter: alpha(opacity=60);
 	-moz-opacity: 0.6;
@@ -175,6 +205,18 @@ div#sfw a.original {
 div#sfw a:hover {
 	color: #F0CB0B;
 	text-decoration: underline;
+}
+div#lang {
+    font-size: 14px;
+    text-align: center;
+}
+div#lang a {
+    color: #B08948;
+    text-decoration: none;
+}
+div#lang a:hover {
+    color: #F0CB0B;
+    text-decoration: underline;
 }
 div#copyright {
 	font-size: 13px;
