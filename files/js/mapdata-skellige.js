@@ -1,4 +1,4 @@
-(function () {
+$(document).on("loadMapdata", function () {
 	window.map_path   = 'skellige';
 	window.map_sWest  = L.latLng(-85.05, -180);
 	window.map_nEast  = L.latLng(79.30, 135);
@@ -890,7 +890,7 @@
 			popupTitle: 'Mastercrafted Feline Silver Sword',
 			popup: '',
 		}],
-				
+
 
 	// Shopkeeper
 		shopkeeper: [{ // Hindarsfjall
@@ -1304,4 +1304,4 @@
 		markers.smugglers,
 		markers.spoils
 	];
-}());
+});

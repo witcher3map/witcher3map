@@ -1,4 +1,4 @@
-(function () {
+$(document).on("loadMapdata", function () {
 	window.map_path   = 'white_orchard';
 	window.map_sWest  = L.latLng(-85, -180);
 	window.map_nEast  = L.latLng(0, 45);
@@ -310,4 +310,4 @@
 		markers.smugglers,
 		markers.spoils
 	];
-}());
+});
