@@ -1,4 +1,4 @@
-$(function() {
+$(document).on("loadCustom", function() {
 	var mobile   = ($('#sidebar').width() < 300);
 	var wayPoint = false;
 	var circle = null;
