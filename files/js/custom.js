@@ -434,7 +434,13 @@ $(document).on("loadCustom", function() {
 		}
 		if(hashParams.m) {
 			var hashMarker = hashParams.m.split(",");
-			createCircle(hashMarker[0], hashMarker[1]);
+			$.each(allLayers, function(key, val) {
+				$.each(val.getLayers(), function(key, marker) {
+					if(hashMarker[0] == marker._latlng.lat && hashMarker[1] == marker._latlng.lng) {
+						marker.openPopup();
+					}
+				});
+			});
 		}
 	}
 
