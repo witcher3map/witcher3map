@@ -312,14 +312,20 @@ $(document).on("loadCustom", function() {
 	var origBorder;
 	var origHide;
 	var origMap;
+	var origInfoWrap;
+	var origInfo;
 
 	var hideSidebar = function() {
 		origSidebar = $('#sidebar').css('left');
 		origBorder = $('#sidebar-border').css('left');
 		origHide = $('#hide-sidebar').css('left');
 		origMap = $('#map').css('left');
+		origInfoWrap = $('#info-wrap').css(['left','width']);
+		origInfo = $('#info').css(['width']);
 
 		$('#info-wrap').css({'left' : '0px' , 'width' : '100%' });
+		$('#info').css({'width' : '100%'});
+		$('#info-fade-outro').hide();
 		$('#map').css('left', '0px');
 		map.invalidateSize();
 
@@ -350,7 +356,9 @@ $(document).on("loadCustom", function() {
 			$('.show-sidebar').removeClass('show-sidebar');
 			$('#sidebar').attr('style', '');
 			$('#sidebar-border').attr('style', '');
-			$('#info-wrap').attr('style', '');
+			$('#info-wrap').css(origInfoWrap);
+			$('#info').css(origInfo);
+			$('#info-fade-outro').show();
 			$('#map').attr('style', '');
 		});
 	};
