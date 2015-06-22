@@ -140,10 +140,10 @@ $(document).on("loadCustom", function() {
 			})
 		}).on('click', function() {
 			map.removeLayer(wayPoint);
-      hash.removeParam('w');
+			hash.removeParam('w');
 		}).on('contextmenu', function() {
 			map.removeLayer(wayPoint);
-      hash.removeParam('w');
+			hash.removeParam('w');
 		}).addTo(map);
 		hash.addParam('w', e.latlng.lat.toFixed(3)+','+e.latlng.lng.toFixed(3));
 	});
@@ -211,12 +211,12 @@ $(document).on("loadCustom", function() {
   $('ul.key:not(.controls) li:not(.none) i').each(function(i, e) {
 		var marker = $(this).attr('class');
 		var pill = $("<div class='pill'>"+window.markerCount[marker]+"</div>");
-    $(this).next().after(pill);
-		if(localStorage['hide-counts']) {
+		$(this).next().after(pill);
+		if (localStorage['hide-counts']) {
 			pill.hide();
 		}
 	}).promise().done(function() {
-		if(localStorage['hide-counts']) {
+		if (localStorage['hide-counts']) {
 			$('#hide-counts').hide();
 			$('#show-counts').show();
 		}
@@ -412,27 +412,21 @@ $(document).on("loadCustom", function() {
 		popupClose();
 	};
 
-	var popupClose = function() {
+	window.popupClose = function() {
 		$('#popup-wrap').remove();
 		$(document).off('click', '*', popupClick);
 	};
 
 	var popup = function(title, content) {
-		$('body').prepend('<div id="popup-wrap"><div id="popup-border"><div id="popup-content"><h1>' + title + '</h1><hr>' + content + '</div></div></div>');
+		$('body').prepend('<div id="popup-wrap"><div id="popup-border"><img id="popup-close" src="../files/img/exit.png" alt="Close" onclick="popupClose();"><div id="popup-content"><h1>' + title + '</h1><hr>' + content + '</div></div></div>');
 		$('div#popup-content').niceScroll({
 			cursorcolor  : '#5E4F32',
 			cursorborder : 'none',
 			autohidemode : false,
-			railpadding  : { top: 5 , right : 5, bottom: 5}
+			railpadding  : { top: 22 , right : 5, bottom: 5}
 		});
 		$(document).on('click', '*', popupClick);
 	};
-
-	$(document).on('click', '#show-help', function(e) {
-		popup('Features &amp; Help', [
-			'todo'
-		].join('\n'));
-	});
 
 	$(document).on('click', '.credits', function(e) {
 		e.preventDefault();
