@@ -425,35 +425,6 @@ $(document).on("loadCustom", function() {
 		].join('\n'));
 	});
 
-	var hashParams = hash.getHashParams();
-	if(hashParams) {
-		if(hashParams.w) {
-			var hashWayPoint = hashParams.w.split(",");
-			wayPoint = new L.marker(L.latLng(hashWayPoint[0], hashWayPoint[1]), {
-				icon : L.icon({
-					iconUrl  : '../files/img/icons/waypoint.png',
-					iconSize : [26, 32]
-				})
-			}).on('click', function() {
-				map.removeLayer(wayPoint);
-				hash.removeParam('w');
-			}).on('contextmenu', function() {
-				map.removeLayer(wayPoint);
-				hash.removeParam('w');
-			}).addTo(map);
-		}
-		if(hashParams.m) {
-			var hashMarker = hashParams.m.split(",");
-			$.each(allLayers, function(key, val) {
-				$.each(val.getLayers(), function(key, marker) {
-					if(hashMarker[0] == marker._latlng.lat && hashMarker[1] == marker._latlng.lng) {
-						marker.openPopup();
-					}
-				});
-			});
-		}
-	}
-
 	setTimeout(function() {
 		$('ul.key:not(.controls) li:not(.none) i').each(function(i, e) {
 			var key = $(this).attr('class');
@@ -544,4 +515,38 @@ $(document).on("loadCustom", function() {
 			map.setView(map_center);
 		}
 	}, 'Center Highlighted Marker', 'centerButton').addTo(map);
+
+
+	var hashParams = hash.getHashParams();
+	if(hashParams) {
+		if(hashParams.w) {
+			var hashWayPoint = hashParams.w.split(",");
+			wayPoint = new L.marker(L.latLng(hashWayPoint[0], hashWayPoint[1]), {
+				icon : L.icon({
+					iconUrl  : '../files/img/icons/waypoint.png',
+					iconSize : [26, 32]
+				})
+			}).on('click', function() {
+				map.removeLayer(wayPoint);
+				hash.removeParam('w');
+			}).on('contextmenu', function() {
+				map.removeLayer(wayPoint);
+				hash.removeParam('w');
+			}).addTo(map);
+		}
+		if(hashParams.m) {
+			var hashMarker = hashParams.m.split(",");
+			$.each(allLayers, function(key, val) {
+				$.each(val.getLayers(), function(key, marker) {
+					if(hashMarker[0] == marker._latlng.lat && hashMarker[1] == marker._latlng.lng) {
+						marker.openPopup();
+					}
+				});
+			});
+		} else {
+			$('#centerButton').hide();
+		}
+	} else {
+		$('#centerButton').hide();
+	}
 });
