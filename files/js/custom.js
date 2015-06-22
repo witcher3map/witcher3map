@@ -180,12 +180,14 @@ $(document).on("loadCustom", function() {
 			fillOpacity: 0.5,
 			radius: 20
 		}).addTo(map);
+		$('#centerButton').show();
 	};
 
 	var deleteCircle = function() {
 		if(circle !== null) {
 			map.removeLayer(circle);
 			hash.removeParam('m');
+			$('#centerButton').hide();
 		}
 	};
 
@@ -541,5 +543,5 @@ $(document).on("loadCustom", function() {
 		} else {
 			map.setView(map_center);
 		}
-	}, 'Center Highlighted Marker').addTo(map);
+	}, 'Center Highlighted Marker', 'centerButton').addTo(map);
 });
