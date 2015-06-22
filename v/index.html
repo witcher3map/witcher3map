@@ -59,7 +59,10 @@
 					<li><a href="https://github.com/untamed0/witcher3map/wiki" target="_blank"><i class="fa fa-info-circle"></i><span data-i18n="controls.helpFeatures"></span></a></li>
 					<li class="credits"><i class="fa fa-copyright"></i><span data-i18n="controls.credits"></span></li>
 				</ul>
-				<div id="note">Work in progress! Help appreciated at <a href="https://github.com/untamed0/witcher3map" target="_blank">Github</a><br>Feedback, suggestions? Discuss on <a href="http://www.reddit.com/r/witcher/comments/37png2/new_interactive_map_of_velen_novigrad_all/" target="_blank">reddit</a><br>Want to help translate? <a href="https://crowdin.com/project/witcher3map" target="_blank">Click here</a></div>
+				<div id="note">
+					<span data-i18n="[html]misc.contribute" data-i18n-options='{"link":"<a href=\"https://github.com/untamed0/witcher3map\" target=\"_blank\">Github</a>"}'></span><br>
+					<span data-i18n="[html]misc.discuss" data-i18n-options='{"link":"<a href=\"http://www.reddit.com/r/witcher/comments/37png2/new_interactive_map_of_velen_novigrad_all/\" target=\"_blank\">reddit</a>"}'></span><br>
+					<a href="https://crowdin.com/project/witcher3map" target="_blank" data-i18n="misc.helpTranslate"></a></div>
 				<div id="lang">
 					<a href="" onclick="changeLang('en')"><img src="../files/img/flags/en.png"></a>
 					<a href="" onclick="changeLang('de')"><img src="../files/img/flags/de.png"></a>
@@ -67,12 +70,13 @@
 				</div>
 			</div>
 			<div id="copyright">
-				Created by <a href="https://github.com/untamed0" target="_blank">untamed0</a>, licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA</a><br>Witcher 3, logo, icons, map &amp; text are the property of <a href="http://en.cdprojektred.com/" target="_blank">CD PROJEKT RED</a>
+				<span data-i18n="[html]credits.botCreated" data-i18n-options='{"untamed0":"<a href=\"https://github.com/untamed0\" target=\"_blank\">untamed0</a>","license":"<a href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\" target=\"_blank\">CC BY-NC-SA</a>"}'></span><br>
+				<span data-i18n="[html]credits.botAssets" data-i18n-options='{"cdpr":"<a href=\"http://en.cdprojektred.com\" target=\"_blank\">CD PROJEKT RED</a>"}'></span>
 			</div>
 		</div>
 		<div id="sidebar-border"></div>
 		<div id="hide-sidebar"></div>
-		<div id="warn">Note: the map is best viewed in landscape mode, tap to dismiss</div>
+		<div id="warn" data-i18n="misc.portraitWarn"></div>
 		<div id="info-wrap"><div id="info-fade-intro"></div><div id="info"></div><div id="info-fade-outro"></div></div>
 		<div id="map"><!-- <div id="title">Novigrad &amp; Velen</div> --></div>
 		<script type="text/javascript" src="../files/js/jquery-2.1.4.min.js"></script>

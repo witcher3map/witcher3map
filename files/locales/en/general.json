@@ -39,7 +39,14 @@
 		"credits": "Credits"
 	},
 	"credits": {
-		
+		"botCreated": "Created by __untamed0__, licensed under __license__",
+		"botAssets": "Witcher 3, logo, icons, map &amp; text are the property of __cdpr__"
+	},
+	"misc": {
+		"contribute": "Work in progress! Help appreciated at __link__",
+		"discuss": "Feedback, suggestions? Discuss on __link__",
+		"helpTranslate": "Want to help or improve translations?",
+		"portraitWarn": "Note: the map is best viewed in landscape mode, tap to dismiss"
 	},
 	"abandoned": {
 		"label": "Abandoned Site",

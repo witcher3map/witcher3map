@@ -249,13 +249,13 @@ div#copyright.absolute {
 	left: 0;
 	padding-left:5px;
 }
-div#copyright > a,
-div#copyright > a:visited,
-div#copyright > a:active {
+div#copyright a,
+div#copyright a:visited,
+div#copyright a:active {
 	color: #bbb;
 	text-decoration: none;
 }
-div#copyright > a:hover {
+div#copyright a:hover {
 	color: #ddd;
 	text-decoration: underline;
 }

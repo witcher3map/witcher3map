@@ -15,7 +15,8 @@
 		ns: 'general',
 		lng: localStorage['lang'],
 		fallbackLng: "en",
-		resGetPath: "../files/locales/__lng__/__ns__.json"
+		resGetPath: "../files/locales/__lng__/__ns__.json",
+		useDataAttrOptions: true
 	};
 
 	$.i18n.init(options, function() {
