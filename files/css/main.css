@@ -127,6 +127,7 @@ ul.key > li > i {
 	background-size: contain;
 	float: left;
 	margin-right: 7px;
+	line-height: 25px;
 }
 ul.key > li > div {
     line-height: 21px;
@@ -180,7 +181,7 @@ div#note {
 	text-align: center;
 	height: 85px;
 	margin-top: 15px;
-	padding-top: 26px;
+	padding-top: 17px;
 	margin-bottom: 5px;
 }
 div#note a {
@@ -213,10 +214,19 @@ div#lang {
 div#lang a {
     color: #B08948;
     text-decoration: none;
+	margin: 2px;
 }
 div#lang a:hover {
     color: #F0CB0B;
     text-decoration: underline;
+}
+div#lang  img{
+	height: 24px;
+	width: 24px;
+	opacity: 0.4;
+}
+div#lang img:hover {
+	opacity: 0.7;
 }
 div#copyright {
 	font-size: 13px;
@@ -333,6 +343,64 @@ div#hide-sidebar {
 div#hide-sidebar.show-sidebar {
 	left: 0px;
 	background-position: -22px 3px;
+}
+div#popup-wrap {
+	display: flex;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	vertical-align: center;
+	max-width: 600px;
+	margin: 0 auto;
+	z-index: 2;
+}
+div#popup-wrap #popup-border {
+	position: relative;
+	background: #0E0E0F;
+	padding: 5px;
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+}
+div#popup-wrap #popup-content {
+	position: relative;
+	border: 1px solid #393128;
+	padding: 20px;
+	color: #796C56;
+	max-height: 400px; 
+	font-family: 'PFDinTextCondPro', Arial, sans-serif;
+}
+div#popup-wrap #popup-content a {
+	color: #8C8068;
+	text-decoration: none;
+}
+div#popup-wrap #popup-content a:hover {
+	text-decoration: underline;
+}
+div#popup-wrap h1 {
+	text-transform: uppercase;
+	margin: -0.35em 0 0.25em;
+	font-size: 2em;
+	text-align: center;
+	color: #635540;
+}
+div#popup-wrap h3 {
+	margin: 0;
+	padding: 0;
+}
+div#popup-wrap hr {
+	height: 1px;
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #635540), to(rgba(0, 0, 0, 0)));
+	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #635540, rgba(0, 0, 0, 0));
+	background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #635540, rgba(0, 0, 0, 0));
+	background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #635540, rgba(0, 0, 0, 0));
+	background: linear-gradient(left, rgba(0, 0, 0, 0), #635540, rgba(0, 0, 0, 0));
+	border: 0;
 }
 @media all and (max-width: 768px) {
 	div#logo {
