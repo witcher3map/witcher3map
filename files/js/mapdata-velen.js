@@ -1024,7 +1024,7 @@ $(document).on("loadMapdata", function () {
 				[-33.94, -132.36]
 			],
 			label: $.t("pid.label"),
-			popup: "There's a person or a group of people here in need of assitance"
+			popup: $.t("pid.desc", {monster: ''})
 		}, { // SE Novigrad
 			coords: [[20.47, 100.55]],
 			label: $.t("pid.label"),
