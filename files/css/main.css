@@ -38,7 +38,7 @@ div#map {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	left: 335px;
+	left: 375px;
 	z-index: -1;
 }
 div#sidebar {
@@ -372,7 +372,7 @@ div#popup-wrap #popup-content {
 	border: 1px solid #393128;
 	padding: 20px;
 	color: #796C56;
-	max-height: 400px; 
+	max-height: 400px;
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
 }
 div#popup-wrap #popup-content a {
