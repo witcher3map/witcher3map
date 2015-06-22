@@ -180,12 +180,14 @@ $(document).on("loadCustom", function() {
 			fillOpacity: 0.5,
 			radius: 20
 		}).addTo(map);
+		$('#centerButton').show();
 	};
 
 	var deleteCircle = function() {
 		if(circle !== null) {
 			map.removeLayer(circle);
 			hash.removeParam('m');
+			$('#centerButton').hide();
 		}
 	};
 
@@ -321,11 +323,10 @@ $(document).on("loadCustom", function() {
 		origHide = $('#hide-sidebar').css('left');
 		origMap = $('#map').css('left');
 		origInfoWrap = $('#info-wrap').css(['left','width']);
-		origInfo = $('#info').css(['width']);
+		origInfo = $('#info').css(['width', 'margin-right']);
 
 		$('#info-wrap').css({'left' : '0px' , 'width' : '100%' });
-		$('#info').css({'width' : '100%'});
-		$('#info-fade-outro').hide();
+		$('#info').css({'width' : 'auto', 'margin-right' : '80px'});
 		$('#map').css('left', '0px');
 		map.invalidateSize();
 
@@ -358,7 +359,6 @@ $(document).on("loadCustom", function() {
 			$('#sidebar-border').attr('style', '');
 			$('#info-wrap').css(origInfoWrap);
 			$('#info').css(origInfo);
-			$('#info-fade-outro').show();
 			$('#map').attr('style', '');
 		});
 	};
@@ -423,35 +423,6 @@ $(document).on("loadCustom", function() {
 		].join('\n'));
 	});
 
-	var hashParams = hash.getHashParams();
-	if(hashParams) {
-		if(hashParams.w) {
-			var hashWayPoint = hashParams.w.split(",");
-			wayPoint = new L.marker(L.latLng(hashWayPoint[0], hashWayPoint[1]), {
-				icon : L.icon({
-					iconUrl  : '../files/img/icons/waypoint.png',
-					iconSize : [26, 32]
-				})
-			}).on('click', function() {
-				map.removeLayer(wayPoint);
-				hash.removeParam('w');
-			}).on('contextmenu', function() {
-				map.removeLayer(wayPoint);
-				hash.removeParam('w');
-			}).addTo(map);
-		}
-		if(hashParams.m) {
-			var hashMarker = hashParams.m.split(",");
-			$.each(allLayers, function(key, val) {
-				$.each(val.getLayers(), function(key, marker) {
-					if(hashMarker[0] == marker._latlng.lat && hashMarker[1] == marker._latlng.lng) {
-						marker.openPopup();
-					}
-				});
-			});
-		}
-	}
-
 	setTimeout(function() {
 		$('ul.key:not(.controls) li:not(.none) i').each(function(i, e) {
 			var key = $(this).attr('class');
@@ -479,4 +450,106 @@ $(document).on("loadCustom", function() {
 			$("#sidebar-wrap").append(tooltip);
 	  });
 	}, 100);
+
+	var fileSaver = null;
+	var backupData = function() {
+		var currentDate = new Date();
+		var formattedDate = currentDate.getFullYear()+'-'+((currentDate.getMonth()+1 < 10) ? '0' : '')+(currentDate.getMonth()+1)+'-'+((currentDate.getDate() < 10) ? '0' : '')+currentDate.getDate();
+		var backupFileName = 'witcher3map_backup_'+formattedDate+'.json';
+		if (confirm('This will download a backup copy of all Witcher 3 Map settings.\n\nThe file will be saved as: '+backupFileName+'\n\nAre you sure?')) {
+			if(!fileSaver) {
+				fileSaver = $.getScript('../files/js/FileSaver.min.js', function() {
+					var blob = new Blob([JSON.stringify(localStorage)], {type: "text/plain;charset=utf-8"});
+					saveAs(blob, backupFileName);
+				});
+			}
+		}
+	};
+	var showRestore = function() {
+		if (!window.File && !window.FileReader && !window.FileList && !window.Blob) {
+			alert('Sorry.  Restore is not possible.  This browser does not support HTML5 File APIs.');
+			return;
+		}
+		if($('#restoreDiv').length) return;
+		var restoreButtonPos = $('#restoreButton')[0].getBoundingClientRect();
+		var restoreDiv = '<div id="restoreDiv" style="top:'+restoreButtonPos.top+'px;right:'+(14+restoreButtonPos.right-restoreButtonPos.left)+'px;"><div style="float:right;"><button class="fa fa-times-circle" onclick="$(\'#restoreDiv\').remove()" style="cursor:pointer" /></div><strong>Restore your settings:</strong><br/><input type="file" id="files" name="file[]" /></div>';
+		$('body').append($(restoreDiv));
+		var filesInput = document.getElementById('files');
+		filesInput.addEventListener('change', function(e) {
+			var file = e.target.files[0];
+			var reader = new FileReader();
+			reader.onload = function(e) {
+				var content = e.target.result;
+				try {
+					var restoreData = $.parseJSON(content);
+					console.log('restore started.');
+					for(var prop in restoreData) {
+						console.log('restoring property:'+prop+' using value:'+restoreData[prop]);
+						localStorage[prop] = restoreData[prop];
+					}
+					console.log('restore complete!');
+					alert('Data Restore Complete!');
+					location.reload();
+				} catch(err) {
+					alert('restore failed, double-check your file');
+					console.log(err.message);
+				} finally {
+					$('#restoreDiv').remove();
+				}
+			};
+			reader.readAsText(file);
+		});
+	};
+
+	var backupButton = L.easyButton('fa-floppy-o', function(btn, map) {
+		backupData();
+	}, 'Backup Data');
+	var restoreButton = L.easyButton('fa-upload', function(btn, map) {
+		showRestore();
+	}, 'Restore Data', 'restoreButton');
+	L.easyBar([backupButton, restoreButton]).addTo(map);
+
+	L.easyButton('fa-crosshairs', function(btn, map) {
+		hashParams = hash.getHashParams();
+		if(hashParams && hashParams.m) {
+			var hashMarker = hashParams.m.split(",");
+			map.setView([hashMarker[0], hashMarker[1]]);
+		} else {
+			map.setView(map_center);
+		}
+	}, 'Center Highlighted Marker', 'centerButton').addTo(map);
+
+
+	var hashParams = hash.getHashParams();
+	if(hashParams) {
+		if(hashParams.w) {
+			var hashWayPoint = hashParams.w.split(",");
+			wayPoint = new L.marker(L.latLng(hashWayPoint[0], hashWayPoint[1]), {
+				icon : L.icon({
+					iconUrl  : '../files/img/icons/waypoint.png',
+					iconSize : [26, 32]
+				})
+			}).on('click', function() {
+				map.removeLayer(wayPoint);
+				hash.removeParam('w');
+			}).on('contextmenu', function() {
+				map.removeLayer(wayPoint);
+				hash.removeParam('w');
+			}).addTo(map);
+		}
+		if(hashParams.m) {
+			var hashMarker = hashParams.m.split(",");
+			$.each(allLayers, function(key, val) {
+				$.each(val.getLayers(), function(key, marker) {
+					if(hashMarker[0] == marker._latlng.lat && hashMarker[1] == marker._latlng.lng) {
+						marker.openPopup();
+					}
+				});
+			});
+		} else {
+			$('#centerButton').hide();
+		}
+	} else {
+		$('#centerButton').hide();
+	}
 });
