@@ -6,9 +6,6 @@ $(document).on("loadShared", function () {
 		marker.on('contextmenu', function (e) {
 			toggleOpacity(e, mapKey);
 			updatePills(e, dataKey);
-		}).on('dblclick', function (e) {
-			toggleOpacity(e, mapKey);
-			updatePills(e, dataKey);
 		});
 
 		if (isMarkerInvisible(mapKey, marker.getLatLng().lat, marker.getLatLng().lng)) {
