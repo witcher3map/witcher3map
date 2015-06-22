@@ -400,6 +400,7 @@ div#hide-sidebar.show-sidebar {
 		font-size: 15px;
 		margin-left: 10px;
 		line-height: normal;
+		margin-right:0px !important;
 	}
 	div#info-fade-outro {
 		display: none;

@@ -323,11 +323,10 @@ $(document).on("loadCustom", function() {
 		origHide = $('#hide-sidebar').css('left');
 		origMap = $('#map').css('left');
 		origInfoWrap = $('#info-wrap').css(['left','width']);
-		origInfo = $('#info').css(['width']);
+		origInfo = $('#info').css(['width', 'margin-right']);
 
 		$('#info-wrap').css({'left' : '0px' , 'width' : '100%' });
-		$('#info').css({'width' : '100%'});
-		$('#info-fade-outro').hide();
+		$('#info').css({'width' : 'auto', 'margin-right' : '80px'});
 		$('#map').css('left', '0px');
 		map.invalidateSize();
 
@@ -360,7 +359,6 @@ $(document).on("loadCustom", function() {
 			$('#sidebar-border').attr('style', '');
 			$('#info-wrap').css(origInfoWrap);
 			$('#info').css(origInfo);
-			$('#info-fade-outro').show();
 			$('#map').attr('style', '');
 		});
 	};
