@@ -44,8 +44,7 @@ $(document).on("loadCustom", function() {
 		cursorborder : 'none',
 	});
 
-	var map = {};
-	map = L.map('map', {
+	var map = L.map('map', {
 		minZoom: 2,
 		maxZoom: window.map_mZoom,
 		center: window.map_center,
