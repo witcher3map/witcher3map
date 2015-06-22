@@ -1079,7 +1079,7 @@ $(document).on("loadMapdata", function () {
 		}, {
 			coords: [[-54.098, -60.754]],
 			label: 'Wild Shore',
-			popup: 'A wild and untamed™ part of the isle\'s coastline. A favourite spot for bandits and lovers'
+			popup: 'A wild and untamed&trade; part of the isle\'s coastline. A favourite spot for bandits and lovers'
 		}, {
 			coords: [[-50.958, -42.935]],
 			label: 'Fornhala',
