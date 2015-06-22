@@ -44,7 +44,8 @@ $(document).on("loadCustom", function() {
 		cursorborder : 'none',
 	});
 
-	var map = L.map('map', {
+	var map = {};
+	map = L.map('map', {
 		minZoom: 2,
 		maxZoom: window.map_mZoom,
 		center: window.map_center,
@@ -479,4 +480,67 @@ $(document).on("loadCustom", function() {
 			$("#sidebar-wrap").append(tooltip);
 	  });
 	}, 100);
+
+	var fileSaver = null;
+	var backupData = function() {
+		if(!fileSaver) {
+			fileSaver = $.getScript('../files/js/FileSaver.min.js', function() {
+				var blob = new Blob([JSON.stringify(localStorage)], {type: "text/plain;charset=utf-8"});
+				saveAs(blob, "witcher3map_data.json");
+			});
+		}
+	};
+	var showRestore = function() {
+		if (!window.File && !window.FileReader && !window.FileList && !window.Blob) {
+			alert('Sorry.  Restore is not possible.  This browser does not support HTML5 File APIs.');
+			return;
+		}
+		if($('#restoreDiv').length) return;
+		var restoreButtonPos = $('#restoreButton')[0].getBoundingClientRect();
+		var restoreDiv = '<div id="restoreDiv" style="top:'+restoreButtonPos.top+'px;right:'+(14+restoreButtonPos.right-restoreButtonPos.left)+'px;"><div style="float:right;"><button class="fa fa-times-circle" onclick="$(\'#restoreDiv\').remove()" style="cursor:pointer" /></div><strong>Restore your settings:</strong><br/><input type="file" id="files" name="file[]" /></div>';
+		$('body').append($(restoreDiv));
+		var filesInput = document.getElementById('files');
+		filesInput.addEventListener('change', function(e) {
+			var file = e.target.files[0];
+			var reader = new FileReader();
+			reader.onload = function(e) {
+				var content = e.target.result;
+				try {
+					var restoreData = $.parseJSON(content);
+					console.log('restore started.');
+					for(var prop in restoreData) {
+						console.log('restoring property:'+prop+' using value:'+restoreData[prop]);
+						localStorage[prop] = restoreData[prop];
+					}
+					console.log('restore complete!');
+					alert('Data Restore Complete!');
+					location.reload();
+				} catch(err) {
+					alert('restore failed, double-check your file');
+					console.log(err.message);
+				} finally {
+					$('#restoreDiv').remove();
+				}
+			};
+			reader.readAsText(file);
+		});
+	};
+
+	var backupButton = L.easyButton('fa-floppy-o', function(btn, map) {
+		backupData();
+	}, 'Backup Data');
+	var restoreButton = L.easyButton('fa-upload', function(btn, map) {
+		showRestore();
+	}, 'Restore Data', 'restoreButton');
+	L.easyBar([backupButton, restoreButton]).addTo(map);
+
+	L.easyButton('fa-crosshairs', function(btn, map) {
+		hashParams = hash.getHashParams();
+		if(hashParams && hashParams.m) {
+			var hashMarker = hashParams.m.split(",");
+			map.setView([hashMarker[0], hashMarker[1]]);
+		} else {
+			map.setView(map_center);
+		}
+	}, 'Center Highlighted Marker').addTo(map);
 });
