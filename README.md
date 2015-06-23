@@ -18,7 +18,7 @@ In the first 2 weeks of going live, there were over 200,000 unique visitors to t
 
 What can you do to help?
 --------------------------------------
-If you notice anything missing or have any improvements please create a pull request of your changes, or link me to your forked repo. Or if you're not experienced with Javascript and Github, create a ticket or message me on [reddit](http://www.reddit.com/message/compose/?to=untamed0) with in game screenshots. Thanks! 
+If you notice anything missing or have any improvements please create a pull request of your changes, or link me to your forked repo. Or if you're not experienced with Javascript and Github, create a ticket or message me on [reddit](http://www.reddit.com/message/compose/?to=untamed0) with in game screenshots. Thanks!
 
 Map Files
 --------------------------------------
@@ -39,4 +39,6 @@ This software uses the following libraries developed by third parties, and are l
 * [Leaflet-hash](http://git.io/mwK1oA) (MIT)
 * [Leaflet.fullscreen](http://git.io/vJw5v) (BSD2)
 * [Leaflet Control Search](http://git.io/vkCPC) (MIT)
+* [Leaflet.EasyButton](http://git.io/vLhAa)
+* [FileSaver.js](http://git.io/vLhxv)
 * [Font Awesome](http://fortawesome.github.io/Font-Awesome/) (MIT)
