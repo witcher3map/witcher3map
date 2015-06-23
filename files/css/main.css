@@ -266,7 +266,7 @@ div#info-wrap {
 	width: 620px;
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
 	color: #AF834E;
-	z-index: 10;
+	z-index: 2;
 	display: none;
 }
 div#info-wrap a {
