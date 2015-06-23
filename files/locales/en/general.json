@@ -8,6 +8,7 @@
 		"barber": "Barber",
 		"blacksmith": "Blacksmith",
 		"brothel": "Brothel",
+		"loveInterest": "Love Interest",
 		"entrance": "Entrance",
 		"grindstone": "Grindstone",
 		"guarded": "Guarded Treasure",
@@ -33,10 +34,16 @@
 		"showCounts": "Show Counts",
 		"hideCounts": "Hide Counts",
 		"resetInvisible": "Reset Invisible",
+		"resetInvisConfirm": "This will reset all invisible/tracked markers to their default state (visible), are you sure?",
 		"hideMonsters": "Hide Monsters",
 		"showMonsters": "Show Monsters",
 		"helpFeatures": "Features & Help",
-		"credits": "Credits"
+		"credits": "Credits",
+		"backupSave": "This will download a backup copy of all Witcher 3 Map settings.\n\nThe file will be saved as: __fileName__\n\nAre you sure?",
+		"backupLoad": "Restore your settings:",
+		"backupLoadSuccess": "Data Restore Complete!",
+		"backupLoadFail": "Restore failed, double-check your file",
+		"backupHtmlFail": "Sorry.  Restore is not possible.  This browser does not support HTML5 File APIs."
 	},
 	"credits": {
 		"botCreated": "Created by __untamed0__, licensed under __license__",
@@ -46,7 +53,10 @@
 		"contribute": "Work in progress! Help appreciated at __link__",
 		"discuss": "Feedback, suggestions? Discuss on __link__",
 		"helpTranslate": "Want to help or improve translations?",
-		"portraitWarn": "Note: the map is best viewed in landscape mode, tap to dismiss"
+		"portraitWarn": "Note: the map is best viewed in landscape mode, tap to dismiss",
+		"loveInterestDesc": "Meet your love interest here",
+		"nsfwConfirm": "This will change 'Brothel' to 'Love Interest', are you sure?",
+		"nsfwUndo": "Are you sure you want to go back?"
 	},
 	"abandoned": {
 		"label": "Abandoned Site",

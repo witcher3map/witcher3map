@@ -4,7 +4,7 @@ $(document).on("loadCustom", function() {
 	var circle = null;
 
 	if (localStorage['sfw']) {
-		$('span#brothel-text').text('Love Interest');
+		$('span#brothel-text').text($.t('sidebar.loveInterest'));
 		$('div#sfw').find('a').hide();
 		$('div#sfw').find('a.original').show();
 	}
@@ -151,8 +151,6 @@ $(document).on("loadCustom", function() {
 	$('.leaflet-marker-icon').on('contextmenu',function(e){ return false; });
 
 	map.on('click', function(e) {
-// for dev
-//		prompt('', '[' + e.latlng.lat.toFixed(3) + ', ' + e.latlng.lng.toFixed(3) + ']');
 		console.log('Clicked at:');
 		console.log('[' + e.latlng.lat.toFixed(3) + ', ' + e.latlng.lng.toFixed(3) + ']');
 	});
@@ -162,7 +160,7 @@ $(document).on("loadCustom", function() {
 		createCircle(e.popup._latlng.lat.toFixed(3),e.popup._latlng.lng.toFixed(3));
 		$('#info-wrap').stop();
 		if (localStorage['sfw'] && e.popup._source._popup._content.match(/prostitute/i)) {
-			$('#info').html('<h1>Love Interest</h1>Meet your love interest here');
+			$('#info').html('<h1>' + $.t('sidebar.loveInterest') + '</h1>' + $.t('misc.loveInterestDesc'));
 		} else {
 			$('#info').html(e.popup._source._popup._content);
 		}
@@ -276,7 +274,7 @@ $(document).on("loadCustom", function() {
 
 	$('#reset-tracking').on('click', function(e) {
 		e.preventDefault();
-		if (confirm('This will reset all invisible/tracked markers to their default state (visible), are you sure?')) {
+		if (confirm($.t('controls.resetInvisConfirm'))) {
 			resetInvisibleMarkers();
 		}
 	});
@@ -387,9 +385,9 @@ $(document).on("loadCustom", function() {
 
 	$('div#sfw').on('click', 'a.gotosfw', function(e) {
 		e.preventDefault();
-		if (confirm('This will change \'Brothel\' to \'Love Interest\', are you sure?')) {
+		if (confirm($.t('misc.nsfwConfirm'))) {
 			localStorage['sfw'] = true;
-			$('span#brothel-text').text('Love Interest');
+			$('span#brothel-text').text($.t('sidebar.loveInterest'));
 			$('div#sfw > a.gotosfw').hide();
 			$('div#sfw > a.original').show();
 		}
@@ -397,9 +395,9 @@ $(document).on("loadCustom", function() {
 
 	$('div#sfw').on('click', 'a.original', function(e) {
 		e.preventDefault();
-		if (confirm('Are you sure you want to go back?')) {
+		if ($.t('misc.nsfwUndo')) {
 			localStorage.removeItem('sfw');
-			$('span#brothel-text').text('Brothel');
+			$('span#brothel-text').text($.t('sidebar.brothel'));
 			$('div#sfw > a.original').hide();
 			$('div#sfw > a.gotosfw').show();
 		}
@@ -495,7 +493,7 @@ $(document).on("loadCustom", function() {
 		var currentDate = new Date();
 		var formattedDate = currentDate.getFullYear()+'-'+((currentDate.getMonth()+1 < 10) ? '0' : '')+(currentDate.getMonth()+1)+'-'+((currentDate.getDate() < 10) ? '0' : '')+currentDate.getDate();
 		var backupFileName = 'witcher3map_backup_'+formattedDate+'.json';
-		if (confirm('This will download a backup copy of all Witcher 3 Map settings.\n\nThe file will be saved as: '+backupFileName+'\n\nAre you sure?')) {
+		if (confirm($.t('controls.backupSave', {fileName:backupFileName}))) {
 			if(!fileSaver) {
 				fileSaver = $.getScript('../files/js/FileSaver.min.js', function() {
 					var blob = new Blob([JSON.stringify(localStorage)], {type: "text/plain;charset=utf-8"});
@@ -506,12 +504,12 @@ $(document).on("loadCustom", function() {
 	};
 	var showRestore = function() {
 		if (!window.File && !window.FileReader && !window.FileList && !window.Blob) {
-			alert('Sorry.  Restore is not possible.  This browser does not support HTML5 File APIs.');
+			alert($.t('controls.backupHtmlFail'));
 			return;
 		}
 		if($('#restoreDiv').length) return;
 		var restoreButtonPos = $('#restoreButton')[0].getBoundingClientRect();
-		var restoreDiv = '<div id="restoreDiv" style="top:'+restoreButtonPos.top+'px;right:'+(14+restoreButtonPos.right-restoreButtonPos.left)+'px;"><div style="float:right;"><button class="fa fa-times-circle" onclick="$(\'#restoreDiv\').remove()" style="cursor:pointer" /></div><strong>Restore your settings:</strong><br/><input type="file" id="files" name="file[]" /></div>';
+		var restoreDiv = '<div id="restoreDiv" style="top:'+restoreButtonPos.top+'px;right:'+(14+restoreButtonPos.right-restoreButtonPos.left)+'px;"><div style="float:right;"><button class="fa fa-times-circle" onclick="$(\'#restoreDiv\').remove()" style="cursor:pointer" /></div><strong>' + $.t('controls.backupLoad') + '</strong><br/><input type="file" id="files" name="file[]" /></div>';
 		$('body').append($(restoreDiv));
 		var filesInput = document.getElementById('files');
 		filesInput.addEventListener('change', function(e) {
@@ -527,10 +525,10 @@ $(document).on("loadCustom", function() {
 						localStorage[prop] = restoreData[prop];
 					}
 					console.log('restore complete!');
-					alert('Data Restore Complete!');
+					alert($.t('controls.backupLoadSuccess'));
 					location.reload();
 				} catch(err) {
-					alert('restore failed, double-check your file');
+					alert($.t('controls.backupLoadFail'));
 					console.log(err.message);
 				} finally {
 					$('#restoreDiv').remove();
