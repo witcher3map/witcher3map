@@ -364,7 +364,7 @@ div#popup-wrap {
 	vertical-align: center;
 	max-width: 600px;
 	margin: 0 auto;
-	z-index: 2;
+	z-index: 8;
 }
 div#popup-wrap #popup-border {
 	position: relative;
