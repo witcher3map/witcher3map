@@ -7,7 +7,7 @@ Unofficial Witcher 3 interactive maps, with a mobile & tablet friendly design fa
 * Mobile and tablet friendly
 * Clean interface, absolutely no ads
 * Easily link your map view to others, address bar is automatically updated with a permalink
-* Hide markers by right or double clicking them (long press or double tap on mobile)
+* Hide markers, right click (or long press on mobile)
 * Search feature (top right, bottom icon)
 * 'Waypoint' marker, right click (or long press on mobile)
 * Collapsible sidebar
