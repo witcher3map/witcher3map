@@ -132,7 +132,7 @@ $(document).on("loadMapdata", function () {
 	// Innkeep
 		innkeep: [{
 			coords: [[-65.731, -80.068]],
-			label: 'White Orchard Inn',
+			label: $.t("w:innkeep.inns.whiteOrchardInn"),
 			popupTitle: $.t("w:innkeep.popup"),
 			popup: $.t("w:innkeep.desc.foodDrinkAndGwent") + $.t("w:misc.disappears")
 		}],
@@ -197,80 +197,80 @@ $(document).on("loadMapdata", function () {
 	// Point of Interest
 		poi: [{
 			coords: [[-49.611, 7.998]],
-			label: 'Lootable Battlefield',
-			popup: 'This battlefield can be looted for easy early game coin'
+			label: $.t("w:poi.label.lootableBattlefield"),
+			popup: $.t("w:poi.desc.lootableBattlefield")
 		}, {
 			coords: [[-72.5, -17]],
-			label: 'Serpentine steel sword',
-			popup: 'Viper School Diagram (1/2)'
+			label: $.t("w:poi.label.serpentineSteelSword"),
+			popup: $.t("w:poi.desc.serpentineSteelSword")
 		}, {
 			coords: [[-32.953, -95.142]],
-			label: 'Serpentine silver sword',
-			popup: 'Viper School Diagram (2/2), below the chapel'
+			label: $.t("w:poi.label.serpentineSilverSword"),
+			popup: $.t("w:poi.desc.serpentineSilverSword")
 		}, {
 			coords: [[-60, 2]],
-			label: 'Crystal Skull',
-			popup: 'From the Intro Video, unlocks a dialog with Yennifer at her \'The Last Wish\' Quest. Can only be picked up if you haven\'t left White Orchard yet'
+			label: $.t("w:poi.label.crystalSkull"),
+			popup: $.t("w:poi.desc.crystalSkull")
 		}],
 
 	// Shopkeeper
 		shopkeeper: [{
 			coords: [[-66.320, -75.674]],
 			label: $.t("w:shopkeeper.label.shopkeeper"),
-			popup: 'Sells Gwent cards, crafting supplies, and Temerian: blinders, saddle, saddlebags, armour',
+			popup: $.t("w:shopkeeper.desc.gwentCraftingAndHorse")
 		}, {
 			coords: [[-66.338, -155.654]],
 			label: $.t("w:shopkeeper.label.shopkeeper"),
-			popup: 'Sells runestones, alchemy supplies and food',
+			popup: $.t("w:shopkeeper.desc.alchemyRunesAndFood")
 		}],
 
 	// Sign Post
 		signpost: [{
 			coords: [[-78.955, -85.869]],
-			label: 'Abandoned Village',
-			popup: 'A few years ago, a group of armed men marched into this settlement. They butchered its inhabitants and burned down their homes. Not a soul has dwelt here since that black and bloody day'
+			label: $.t("w:signpost.label.abandonedVillage"),
+			popup: $.t("w:signpost.desc.abandonedVillage")
 		}, {
 			coords: [[-77.916, -109.819]],
-			label: 'Broken Bridge',
-			popup: 'This bridge was destroyed by retreating Temerian troops during the Nilfgaardian attack. It was shoddily built to begin with. Good riddance'
+			label: $.t("w:signpost.label.brokenBridge"),
+			popup: $.t("w:signpost.desc.brokenBridge")
 		}, {
 			coords: [[-67.136, -72.202]],
-			label: 'Woesong Bridge',
-			popup: "So named because of a girl who once would stand on the bridge and sing, waiting for her beloved's return"
+			label: $.t("w:signpost.label.woesongBridge"),
+			popup: $.t("w:signpost.desc.woesongBridge")
 		}, {
 			coords: [[-65.440, -141.855]],
-			label: 'Sawmill',
-			popup: 'White Orchard is famous not only for its premium fruit, but also for the top-quality, furniture-grade lumber harvested from the Vulpine Woods'
+			label: $.t("w:signpost.label.sawmill"),
+			popup: $.t("w:signpost.desc.sawmill")
 		}, {
 			coords: [[-47.339, -89.912]],
-			label: 'Mill',
-			popup: "Carts haul grain from all the surrounding villages to White Orchard's mill"
+			label: $.t("w:signpost.label.mill"),
+			popup: $.t("w:signpost.desc.mill")
 		}, {
 			coords: [[-20.468, -153.281]],
-			label: 'Nilfgaardian Garrison',
-			popup: "This strategic point guards White Orchard's main river crossing. Nilfgaardian troops have taken it over"
+			label: $.t("w:signpost.label.nilfgaardianGarrison"),
+			popup: $.t("w:signpost.desc.nilfgaardianGarrison")
 		}, {
 			coords: [[-46.073, -13.271]],
-			label: 'Cackler Bridge',
-			popup: 'Bridge named in honor of a woman who went mad from unfulfilled love. After her heart snapped, she spent all her days running up and down this bridge while laughing hysterically'
+			label:  $.t("w:signpost.label.cacklerBridge"),
+			popup: $.t("w:signpost.desc.cacklerBridge")
 		}, {
 			coords: [[-63.015, -4.482]],
-			label: 'Crossroads',
-			popup: 'The road splits here. One fork leads to Vizima, the other to Novigrad'
+			label: $.t("w:signpost.label.crossroads"),
+			popup: $.t("w:signpost.desc.crossroads")
 		}, {
 			coords: [[-68.106, -37.266]],
-			label: 'Ford',
-			popup: 'Before the war, merchants and travelers would cross the river here. Now only Nilfgaardian soldiers traverse this path'
+			label: $.t("w:signpost.label.ford"),
+			popup: $.t("w:signpost.desc.ford")
 		}, {
 			coords: [[-71.413, 1.230]],
-			label: 'Ransacked Village',
-			popup: 'A band of soldiers attacked this village early one morning. They slaughtered most of the villagers in their beds, and the lucky few who fled to the woods in time had nothing left to return to'
+			label: $.t("w:signpost.label.ransackedVillage"),
+			popup: $.t("w:signpost.desc.ransackedVillage")
 		}],
 
 	// Smugglers' Cache
 		smugglers: [{
 			coords: [[-76.720, -31.201]],
-			label: "Smugglers' Cache",
+			label: $.t("smugglers.label"),
 			popup: $.t("smugglers.desc")
 		}],
 
