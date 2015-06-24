@@ -74,6 +74,10 @@
 		"label": "Entrance",
 		"desc": "Entrance to cave or ruins"
 	},
+	"entranceunderwatercave" : {
+		"label": "Underwater Cave",
+		"desc": "Underwater entrance to cave"
+	},
 	"grindstone": {
 		"label": "Grindstone",
 		"desc": "A blade sharpened here will deal more damage"

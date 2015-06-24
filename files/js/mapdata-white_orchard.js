@@ -12,8 +12,8 @@ $(document).on("loadMapdata", function () {
 				[-77.786, -48.604],
 				[-65.293, -152.842]
 			],
-			label: 'Abandoned Site',
-			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more'
+			label: $.t("abandoned.label"),
+			popup: $.t("abandoned.desc")
 		}],
 
 	// Alchemy Supplies
@@ -22,8 +22,8 @@ $(document).on("loadMapdata", function () {
 	// Armourer
 		armourer: [{
 			coords: [[-69.069, -88.945]],
-			label: 'Amateur Armorer',
-			popup: 'Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("w:armourer.amateurLabel"),
+			popup: $.t("w:armourer.desc")
 		}],
 
 	// Armourer's Table
@@ -45,8 +45,8 @@ $(document).on("loadMapdata", function () {
 				[-72.462, -16.699],
 				[-66.000, -19.688]
 			],
-			label: 'Bandit Camp',
-			popup: 'A group of dangerous bandits have made camp here'
+			label: $.t("w:banditcamp.label"),
+			popup: $.t("w:banditcamp.desc")
 		}],
 
 	// Barber
@@ -55,8 +55,8 @@ $(document).on("loadMapdata", function () {
 	// Blacksmith
 		blacksmith: [{
 			coords: [[-26.981, -151.348]],
-			label: 'Amateur Blacksmith',
-			popup: 'Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("w:blacksmith.amateurLabel"),
+			popup: $.t("w:blacksmith.desc")
 		}],
 
 	// Brothel
@@ -65,12 +65,12 @@ $(document).on("loadMapdata", function () {
 	// Entrance
 		entrance: [{
 			coords: [[-79.592, -84.199]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins',
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc"),
 		}, {
 			coords: [[-77.897, -75.586]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}],
 
 	// Grindstone
@@ -81,8 +81,8 @@ $(document).on("loadMapdata", function () {
 				[-64.624, -155.215],
 				[-26.902, -149.941]
 			],
-			label: 'Grindstone',
-			popup: 'A blade sharpened here will deal more damage'
+			label: $.t("grindstone.label"),
+			popup: $.t("grindstone.desc")
 		}],
 
 	// Guarded Treasure
@@ -94,14 +94,14 @@ $(document).on("loadMapdata", function () {
 				[-27.333, -134.077],
 				[-74.776, 0.352]
 			],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc")
 		}],
 
 	// Gwent Player
 		gwent: [{
 			coords: [[-65.946, -81.387]],
-			label: 'Gwent Player',
+			label: $.t("w:gwent.label.player"),
 			popup: 'Gamble your hard earned coin playing Gwent here. Disappears after progressing through story quests'
 		}],
 
@@ -110,11 +110,11 @@ $(document).on("loadMapdata", function () {
 	// Herbalist
 		herbalist: [{
 			coords: [[-66.267, -132.627]],
-			label: 'Herbalist',
-			popup: 'Here you can buy alchemy ingredients'
+			label: $.t("herbalist.label"),
+			popup: $.t("alchemy.desc")
 		}, {
 			coords: [[-77.542, -49.043]],
-			label: 'Herbalist',
+			label: $.t("herbalist.label"),
 			popup: 'This merchant appears after liberating the area. Here you can buy alchemy ingredients'
 		}],
 
@@ -125,15 +125,15 @@ $(document).on("loadMapdata", function () {
 				[-39.028, -56.865],
 				[-28.613, -42.188]
 			],
-			label: 'Hidden Treasure',
-			popup: 'A hidden cache of valuable goods'
+			label: $.t("hidden.label"),
+			label: $.t("hidden.desc")
 		}],
 
 	// Innkeep
 		innkeep: [{
 			coords: [[-65.731, -80.068]],
 			label: 'White Orchard Inn',
-			popupTitle: 'Innkeep',
+			popupTitle: $.t("w:innkeep.popup"),
 			popup: 'Sells Gwent cards, and drink. Disappears after progressing through story quests'
 		}],
 
@@ -147,15 +147,15 @@ $(document).on("loadMapdata", function () {
 				[-45.027, -0.308],
 				[-64.206, 9.712]
 			],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc")
 		}],
 
 	// Notice Board
 		notice: [{
 			coords: [[-67.643, -89.385]],
-			label: 'Notice Board',
-			popup: 'Here you can find monster contracts and announcements about matters of local concern'
+			label: $.t("notice.label"),
+			popup: $.t("notice.desc")
 		}],
 
 	// Person in Distress
@@ -164,34 +164,34 @@ $(document).on("loadMapdata", function () {
 	// Place of Power
 		pop: [{
 			coords: [[-81.492, -106.699]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Quen',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.quen")}),
+			popup: $.t("pop.desc")
 		}, {
 			coords: [[-79.703, -52.822]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Yrden',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.yrden")}),
+			popup: $.t("pop.desc")
 		}, {
 			coords: [[-51.536, -130.386]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Axii',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.axii")}),
+			popup: $.t("pop.desc")
 		}, {
 			coords: [[-34.235, -94.043]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Igni',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.igni")}),
+			popup: $.t("pop.desc")
 		}, {
 			coords: [[-13.325, -97.559]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Aard',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.aard")}),
+			popup: $.t("pop.desc")
 		}, {
 			coords: [[-43.771, 0.308]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Quen',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.quen")}),
+			popup: $.t("pop.desc")
 		}],
 
 	// Point of Interest
@@ -216,11 +216,11 @@ $(document).on("loadMapdata", function () {
 	// Shopkeeper
 		shopkeeper: [{
 			coords: [[-66.320, -75.674]],
-			label: 'Shopkeeper',
+			label: $.t("w:shopkeeper.label.shopkeeper"),
 			popup: 'Sells Gwent cards, crafting supplies, and Temerian: blinders, saddle, saddlebags, armour',
 		}, {
 			coords: [[-66.338, -155.654]],
-			label: 'Shopkeeper',
+			label: $.t("w:shopkeeper.label.shopkeeper"),
 			popup: 'Sells runestones, alchemy supplies and food',
 		}],
 
@@ -271,14 +271,14 @@ $(document).on("loadMapdata", function () {
 		smugglers: [{
 			coords: [[-76.720, -31.201]],
 			label: "Smugglers' Cache",
-			popup: 'Smuggled goods have been hidden here'
+			popup: $.t("smugglers.desc")
 		}],
 
 	// Spoils of War
 		spoils: [{
 			coords: [[-12.726, -128.452]],
-			label: 'Spoils of War',
-			popup: 'Search here for loot left behind after a battle or skirmish'
+			label: $.t("spoils.label"),
+			popup: $.t("spoils.desc")
 		}]
 	});
 

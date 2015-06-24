@@ -9,31 +9,31 @@ $(document).on("loadMapdata", function () {
 	// Abandoned Site
 		abandoned: [{ // Hindarsfjall
 			coords: [[-32.916, 85.562]],
-			label: 'Abandoned Site',
-			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 15<span> Wolves</span>)'
+			label: $.t("abandoned.label"),
+			popup: $.t("abandoned.desc") + '(lvl 15<span> ' + $.t("s:monsters.wolves") + '</span>)'
 		}, {
 			coords: [[-35.996, 92.439]],
-			label: 'Abandoned Site',
-			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 13<span> Harpies</span>)'
+			label: $.t("abandoned.label"),
+			popup: $.t("abandoned.desc") + '(lvl 13<span> ' + $.t("s:monsters.harpies") + '</span>)'
 		}, { // Ard Skellig
 			coords: [[-23.745, -19.841]],
-			label: 'Abandoned Site',
-			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 15<span> Drowners</span>)'
+			label: $.t("abandoned.label"),
+			popup: $.t("abandoned.desc") + '(lvl 15<span> ' + $.t("s:monsters.drowners") + '</span>)'
 		}, {
 			coords: [[-45.522, -49.570]],
-			label: 'Abandoned Site',
-			popup: 'A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more (lvl 14<span> Bandits</span>)'
+			label: $.t("abandoned.label"),
+			popup: $.t("abandoned.desc") + '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'
 		}],
 
 	// Alchemy Supplies
 		alchemy: [{
 			coords: [[-20.468, 93.318]],
-			label: 'Alchemy Supplies',
-			popup: 'Here you can buy alchemy ingredients'
+			label: $.t("alchemy.label"),
+			popup: $.t("alchemy.desc")
 		}, {
 			coords: [[-28.208, -26.147]],
-			label: 'Alchemy Supplies',
-			popup: 'Here you can buy alchemy ingredients'
+			label: $.t("alchemy.label"),
+			popup: $.t("alchemy.desc")
 		}, {
 			coords: [[-19.705, 17.314]],
 			label: 'Gremist',
@@ -43,20 +43,20 @@ $(document).on("loadMapdata", function () {
 	// Armourer
 		armourer: [{ // Hindarsfjall
 			coords: [[-29.037, 98.569]],
-			label: 'Amateur Armorer',
-			popup: 'Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("s:armourer.amateurLabel"),
+			popup: $.t("s:armourer.desc")
 		}, { // An Skellig
 			coords: [[49.253, 39.243]],
-			label: 'Amateur Armorer',
-			popup: 'Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("s:armourer.amateurLabel"),
+			popup: $.t("s:armourer.desc")
 		}, { // Ard Skellig
 			coords: [[-62.492, -37.705]],
-			label: 'Journeyman Armorer',
-			popup: 'Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("s:armourer.journeymanLabel"),
+			popup: $.t("s:armourer.desc")
 		}, {
 			coords: [[2.965, -40.210]],
-			label: 'Journeyman Armorer',
-			popup: 'Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("s:armourer.journeymanLabel"),
+			popup: $.t("s:armourer.desc")
 		}],
 
 	// Armourer's Table
@@ -75,8 +75,8 @@ $(document).on("loadMapdata", function () {
 				[-39.455, -63.127],
 				[2.826, -40.997],
 			],
-			label: 'Armorer\'s Table',
-			popup: 'Armorer\'s tables grant your gear increased armor for a limited duration'
+			label: $.t("armourerstable.label"),
+			popup: $.t("armourerstable.desc")
 		}],
 
 	// Bandit Camp
@@ -85,28 +85,28 @@ $(document).on("loadMapdata", function () {
 				// Sea
 				[20.797, 38.848],
 			],
-			label: 'Bandit Camp',
-			popup: 'A group of dangerous bandits have made camp here'
+			label: $.t("s:banditcamp.label"),
+			popup: $.t("s:banditcamp.desc")
 		}, { // Spikeroog
 			coords: [[21.861, -121.047]],
-			label: 'Bandit Camp',
-			popup: 'A group of dangerous bandits have made camp here (lvl 12<span> Bandits</span>)'
+			label: $.t("s:banditcamp.label"),
+			popup: $.t("s:banditcamp.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
 		}, { // Ard Skellig
 			coords: [[-29.459, -17.886]],
-			label: 'Bandit Camp',
-			popup: 'A group of dangerous bandits have made camp here (lvl 15<span> Bandits</span>)'
+			label: $.t("s:banditcamp.label"),
+			popup: $.t("s:banditcamp.desc") + '(lvl 15<span> ' + $.t("s:monsters.bandits") + '</span>)'
 		}, {
 			coords: [[-61.260, -50.669]],
-			label: 'Bandit Camp',
-			popup: 'A group of dangerous bandits have made camp here (lvl 14<span> Bandits</span>)'
+			label: $.t("s:banditcamp.label"),
+			popup: $.t("s:banditcamp.desc") + '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'
 		}, {
 			coords: [[-14.562, 27.861]],
-			label: 'Bandit Camp',
-			popup: 'A group of dangerous bandits have made camp here (lvl 14<span> Bandits</span>)'
+			label: $.t("s:banditcamp.label"),
+			popup: $.t("s:banditcamp.desc") + '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'
 		}, {
 			coords: [[5.616, 15.557]],
-			label: 'Bandit Camp',
-			popup: 'A group of dangerous bandits have made camp here (lvl 12<span> Bandits</span>)'
+			label: $.t("s:banditcamp.label"),
+			popup: $.t("s:banditcamp.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
 		}],
 
 	// Barber
@@ -116,47 +116,47 @@ $(document).on("loadMapdata", function () {
 				[31.072, -111.973],
 				[-3.601, -34.277],
 			],
-			label: 'Barber',
-			popup: 'Visit barbers for a shave or a new haircut'
+			label: $.t("s:barber.label"),
+			popup: $.t("s:barber.desc")
 		}],
 
 	// Blacksmith
 		blacksmith: [{ // Faroe
 			coords: [[-77.390, 50.142]],
-			label: 'Amateur Blacksmith',
-			popup: 'Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("s:blacksmith.amateurLabel"),
+			popup: $.t("s:blacksmith.desc")
 		}, { // Hindarsfjall
 			coords: [[-28.613, 102.458]],
-			label: 'Amateur Blacksmith',
-			popup: 'Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("s:blacksmith.amateurLabel"),
+			popup: $.t("s:blacksmith.desc")
 		}, { // An Skellig
 			coords: [[50.641, 38.013]],
-			label: 'Amateur Blacksmith',
-			popup: 'Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("s:blacksmith.amateurLabel"),
+			popup: $.t("s:blacksmith.desc")
 		}, { // Spikeroog
 			coords: [[33.101, -111.709]],
-			label: 'Amateur Blacksmith',
-			popup: 'Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("s:blacksmith.amateurLabel"),
+			popup: $.t("s:blacksmith.desc")
 		}, { // Ard Skellig
 			coords: [[-62.007, -37.903]],
-			label: 'Journeyman Blacksmith',
-			popup: 'Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("s:blacksmith.journeymanLabel"),
+			popup: $.t("s:blacksmith.desc")
 		}, {
 			coords: [[-39.504, -63.647]],
-			label: 'Amateur Blacksmith',
-			popup: 'Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("s:blacksmith.amateurLabel"),
+			popup: $.t("s:blacksmith.desc")
 		}, {
 			coords: [[-37.265, -32.014]],
-			label: 'Amateur Blacksmith',
-			popup: 'Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("s:blacksmith.amateurLabel"),
+			popup: $.t("s:blacksmith.desc")
 		}, {
 			coords: [[-56.945, -15.513]],
-			label: 'Amateur Blacksmith',
-			popup: 'Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("s:blacksmith.amateurLabel"),
+			popup: $.t("s:blacksmith.desc")
 		}, {
 			coords: [[3.141, -40.649]],
-			label: 'Journeyman Blacksmith',
-			popup: 'Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets'
+			label: $.t("s:blacksmith.journeymanLabel"),
+			popup: $.t("s:blacksmith.desc")
 		}],
 
 	// Brothel
@@ -166,132 +166,132 @@ $(document).on("loadMapdata", function () {
 		// todo, entrance to what?
 		entrance: [{ // Faroe
 			coords: [[-78.469, 43.484]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-77.250, 44.187]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, { // Hindarsfjall
 			coords: [[-17.036, 91.230]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-18.750, 88.022]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-18.813, 108.677]],
-			label: 'Underwater Cave',
-			popup: 'Underwater entrance to cave'
+			label: $.t("entranceunderwatercave.label"),
+			popup: $.t("entranceunderwatercave.desc")
 		}, {
 			coords: [[-25.205, 92.769]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-28.033, 89.912]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-29.955, 94.131]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, { // An Skellig
 			coords: [[50.317, 33.289]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, { // Spikeroog
 			coords: [[17.225, -123.640]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, { // Eastern Islands
 			coords: [[-15.623, -139.043]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, { // Undvik
 			coords: [[-51.727, -134.517]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-60.791, -127.375]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-61.470, -122.278]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-56.933, -124.343]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-59.108, -111.313]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, { // Ard Skellig
 			coords: [[-71.124, -8.525]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-69.756, -8.503]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-69.938, -23.906]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-52.389, -42.473]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-45.722, -30.256]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-23.322, -67.983]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-18.396, -38.804]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-56.801, 23.379]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-54.581, 12.964]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-47.145, 17.468]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-44.072, 6.350]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-12.897, -13.667]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-13.240, -27.598]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-20.056, 17.446]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[-1.801, -1.099]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}, {
 			coords: [[9.926, -22.168]],
-			label: 'Entrance',
-			popup: 'Entrance to cave or ruins'
+			label: $.t("entrance.label"),
+			popup: $.t("entrance.desc")
 		}],
 
 	// Grindstone
@@ -313,8 +313,8 @@ $(document).on("loadMapdata", function () {
 				[-23.564, -20.522],
 				[2.526, -40.957],
 			],
-			label: 'Grindstone',
-			popup: 'A blade sharpened here will deal more damage'
+			label: $.t("grindstone.label"),
+			popup: $.t("grindstone.desc")
 		}],
 
 	// Guarded Treasure
@@ -328,214 +328,214 @@ $(document).on("loadMapdata", function () {
 				[-70.215, 35.552],
 				[55.279, -40.869],
 			],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc")
 		}, { // Undvik
 			coords: [[-46.134, -120.586]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 13<span> Sirens</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'
 		}, { // Faroe
 			coords: [[-75.958, 43.835]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 21<span> Cyclops</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 21<span> ' + $.t("s:monsters.cyclops") + '</span>)'
 		}, { // Hindarsfjall
 			coords: [[-22.472, 85.386]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 16<span> Wraith</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 16<span> ' + $.t("s:monsters.wraiths.wraith") + '</span>)'
 		}, { // Ard Skellig
 			coords: [[-46.815, -37.639]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 19<span> Echidna</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 19<span> ' + $.t("s:monsters.echidna") + '</span>)'
 		}, {
 			coords: [[5.791, -17.754]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 13<span> Gargoyles</span> & lvl 30<span>Ice Elemental</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 13<span> ' + $.t("s:monsters.gargoyles") + '</span> & lvl 30<span>' + $.t("s:monsters.elemental.ice") + '</span>)'
 		}, {
 			coords: [[-21.678, -32.717]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 14<span> Wyvern</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 14<span> ' + $.t("s:monsters.wyvern") + '</span>)'
 		}, {
 			coords: [[-23.765, 23.291]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 27<span> Earth Elemental</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 27<span> ' + $.t("s:monsters.elemental.earth") + '</span>)'
 		}, {
 			coords: [[-53.278, -63.413]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 21<span> Cyclops</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 21<span> ' + $.t("s:monsters.cyclops") + '</span>)'
 		}, {
 			coords: [[-13.625, -43.506]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 7<span> Wraiths</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 7<span> ' + $.t("s:monsters.wraiths.wraiths") + '</span>)'
 		}, {
 			coords: [[-70.873, -5.625]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 19<span> Sirens</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 19<span> ' + $.t("s:monsters.sirens") + '</span>)'
 		}, {
 			coords: [[-66.531, -15.908]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 13<span> Sirens</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'
 		}, {
 			coords: [[-26.392, -5.142]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 23<span> Wraiths</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 23<span> ' + $.t("s:monsters.wraiths.wraiths") + '</span>)'
 		}, { // Sea
 			coords: [[53.801, -64.336]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 18<span> Drowners</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'
 		}, {
 			coords: [[55.826, -30.674]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 19<span> Sirens</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 19<span> ' + $.t("s:monsters.sirens") + '</span>)'
 		}, {
 			coords: [[59.623, -26.279]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 18<span> Drowners</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'
 		}, {
 			coords: [[61.058, -17.754]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 16<span> Sirens</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 16<span> ' + $.t("s:monsters.sirens") + '</span>)'
 		}, {
 			coords: [[57.845, -1.670]],
-			label: 'Guarded Treasure',
-			popup: 'A particularly powerful monster guards a valuable cache here (lvl 32<span> Basilisk</span>)'
+			label: $.t("guarded.label"),
+			popup: $.t("guarded.desc") + '(lvl 32<span> ' + $.t("s:monsters.basilisk") + '</span>)'
 		}],
 
 	// Gwent Player
 		gwent: [{ // Faroe
 			coords: [[-77.455, 49.227]],
-			label: 'Gwent Player',
-			popupTitle: 'Innkeeper Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.innkeeper"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-77.350, 50.242]],
-			label: 'Gwent Player',
-			popupTitle: 'Blacksmith Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.blacksmith"),
+			popup: $.t("s:gwent.desc.player")
 		}, { // Hindarsfjall
 			coords: [[-29.206, 99.662]],
-			label: 'Gwent Player',
-			popupTitle: 'Shopkeeper Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.shopkeeper"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-28.985, 100.993]],
-			label: 'Gwent Player',
-			popupTitle: 'Innkeeper Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.innkeeper"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-28.513, 102.658]],
-			label: 'Gwent Player',
-			popupTitle: 'Innkeeper Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.innkeeper"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-28.937, 98.769]],
-			label: 'Gwent Player',
-			popupTitle: 'Armorer Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.armorer"),
+			popup: $.t("s:gwent.desc.player")
 		}, { // An Skellig
 			coords: [[50.701, 38.203]],
-			label: 'Gwent Player',
-			popupTitle: 'Blacksmith Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.blacksmith"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[50.669, 40.630]],
-			label: 'Gwent Player',
-			popupTitle: 'Innkeeper Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.innkeeper"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[49.313, 39.443]],
-			label: 'Gwent Player',
-			popupTitle: 'Armorer Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.armorer"),
+			popup: $.t("s:gwent.desc.player")
 		}, { // Spikeroog
 			coords: [[33.201, -111.909]],
-			label: 'Gwent Player',
-			popupTitle: 'Blacksmith Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.blacksmith"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[31.360, -110.856]],
-			label: 'Gwent Player',
-			popupTitle: 'Shopkeeper Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.shopkeeper"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[31.361, -112.799]],
-			label: 'Gwent Player',
-			popupTitle: 'Innkeeper Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.innkeeper"),
+			popup: $.t("s:gwent.desc.player")
 		}, { // Ard Skellig
 			coords: [[-62.442, -37.585]],
-			label: 'Gwent Player',
-			popupTitle: 'Armorer Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.armorer"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-61.917, -37.753]],
-			label: 'Gwent Player',
-			popupTitle: 'Blacksmith Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.blacksmith"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-64.003, -47.744]],
-			label: 'Gwent Player',
-			popupTitle: 'Shopkeeper Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.shopkeeper"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-42.031, -61.873]],
-			label: 'Gwent Player',
-			popupTitle: 'Innkeeper Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.innkeeper"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-39.404, -63.487]],
-			label: 'Gwent Player',
-			popupTitle: 'Blacksmith Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.blacksmith"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-37.165, -31.814]],
-			label: 'Gwent Player',
-			popupTitle: 'Blacksmith Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.blacksmith"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-37.584, -29.837]],
-			label: 'Gwent Player',
-			popupTitle: 'Shopkeeper Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.shopkeeper"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-56.435, -13.731]],
-			label: 'Gwent Player',
-			popupTitle: 'Shopkeeper Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.shopkeeper"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-56.845, -15.313]],
-			label: 'Gwent Player',
-			popupTitle: 'Blacksmith Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.blacksmith"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[3.085, -40.010]],
-			label: 'Gwent Player',
-			popupTitle: 'Armorer Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.armorer"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[3.241, -40.449]],
-			label: 'Gwent Player',
-			popupTitle: 'Blacksmith Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.blacksmith"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-30.576, -2.481]],
-			label: 'Gwent Player',
-			popupTitle: 'Shopkeeper Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.shopkeeper"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-5.997, -34.407]],
-			label: 'Gwent Player',
-			popupTitle: 'Herbalist Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.herbalist"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-3.194, -35.967]],
-			label: 'Gwent Player',
-			popupTitle: 'Innkeeper Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.innkeeper"),
+			popup: $.t("s:gwent.desc.player")
 		}, {
 			coords: [[-19.555, 17.514]],
-			label: 'Gwent Player',
-			popupTitle: 'Gremist Gwent Player',
-			popup: 'Gamble your hard earned coin playing Gwent here'
+			label: $.t("s:gwent.label.player"),
+			popupTitle: $.t("s:gwent.popup.gremist"),
+			popup: $.t("s:gwent.desc.player")
 		}],
 
 	// Harbor
@@ -559,8 +559,8 @@ $(document).on("loadMapdata", function () {
 				[32.769, -107.974],
 				[-14.477, -141.064],
 			],
-			label: 'Harbor',
-			popup: 'A place where you can find a boat, boats will respawn here'
+			label: $.t("harbor.label"),
+			popup: $.t("harbor.desc")
 		}],
 
 	// Herbalist
@@ -570,8 +570,8 @@ $(document).on("loadMapdata", function () {
 					[-32.473, 14.722],
 					[-6.097, -34.607],
 			],
-			label: 'Herbalist',
-			popup: 'Here you can buy alchemy ingredients'
+			label: $.t("herbalist.label"),
+			popup: $.t("alchemy.desc")
 		}],
 
 	// Hidden Treasure
@@ -594,93 +594,93 @@ $(document).on("loadMapdata", function () {
 				[63.666, -88.154],
 				[50.373, -7.515],
 			],
-			label: 'Hidden Treasure',
-			popup: 'A hidden cache of valuable goods'
+			label: $.t("hidden.label"),
+			label: $.t("hidden.desc")
 		}, { // Spikeroog
 			coords: [[26.274, -104.238]],
-			label: 'Hidden Treasure',
-			popup: 'A hidden cache of valuable goods (lvl 15<span> Drowners</span>)'
+			label: $.t("hidden.label"),
+			label: $.t("hidden.desc") + '(lvl 15<span> ' + $.t("s:monsters.drowners") + '</span>)'
 		}, {
 			coords: [[27.020, -95.977]],
-			label: 'Hidden Treasure',
-			popup: 'A hidden cache of valuable goods (lvl 13<span> Sirens</span>)'
+			label: $.t("hidden.label"),
+			label: $.t("hidden.desc") + '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'
 		}, { // Undvik
 			coords: [[-55.937, -121.223]],
-			label: 'Hidden Treasure',
-			popup: 'A hidden cache of valuable goods (lvl 14<span> Bandits</span>)'
+			label: $.t("hidden.label"),
+			label: $.t("hidden.desc") + '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'
 		}, { // Eastern Islands
 			coords: [[-12.039, -98.701]],
-			label: 'Hidden Treasure',
-			popup: 'A hidden cache of valuable goods (lvl 12-14<span> Bandits</span>)'
+			label: $.t("hidden.label"),
+			label: $.t("hidden.desc") + '(lvl 12-14<span> ' + $.t("s:monsters.bandits") + '</span>)'
 		}, { // Faroe
 			coords: [[-78.469, 42.957]],
-			label: 'Hidden Treasure',
-			popup: 'A hidden cache of valuable goods (lvl 9<span> Endrega</span>)'
+			label: $.t("hidden.label"),
+			label: $.t("hidden.desc") + '(lvl 9<span> ' + $.t("s:monsters.endrega") + '</span>)'
 		}, { // Ard Skellig
 			coords: [[-36.315, 0.264]],
-			label: 'Hidden Treasure',
-			popup: 'A hidden cache of valuable goods (lvl 15<span> Drowners</span>)'
+			label: $.t("hidden.label"),
+			label: $.t("hidden.desc") + '(lvl 15<span> ' + $.t("s:monsters.drowners") + '</span>)'
 		}, {
 			coords: [[-58.825, -3.735]],
-			label: 'Hidden Treasure',
-			popup: 'A hidden cache of valuable goods (lvl 13<span> Sirens</span>)'
+			label: $.t("hidden.label"),
+			label: $.t("hidden.desc") + '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'
 		}, {
 			coords: [[-32.287, -50.757]],
-			label: 'Hidden Treasure',
-			popup: 'A hidden cache of valuable goods (lvl 19<span> Sirens</span>)'
+			label: $.t("hidden.label"),
+			label: $.t("hidden.desc") + '(lvl 19<span> ' + $.t("s:monsters.sirens") + '</span>)'
 		}, {
 			coords: [[-72.262, 5.317]],
-			label: 'Hidden Treasure',
-			popup: 'A hidden cache of valuable goods (lvl 13<span> Sirens</span>)'
+			label: $.t("hidden.label"),
+			label: $.t("hidden.desc") + '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'
 		}, {
 			coords: [[-21.739, 30.498]],
-			label: 'Hidden Treasure',
-			popup: 'A hidden cache of valuable goods (lvl 30<span> Cyclops</span>)'
+			label: $.t("hidden.label"),
+			label: $.t("hidden.desc") + '(lvl 30<span> ' + $.t("s:monsters.cyclops") + '</span>)'
 		}, {
 			coords: [[-24.127, -69.829]],
-			label: 'Hidden Treasure',
-			popup: 'A hidden cache of valuable goods (lvl 12<span> Bandits</span>)'
+			label: $.t("hidden.label"),
+			label: $.t("hidden.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
 		}, { // Sea
 			coords: [[4.083, -78.223]],
-			label: 'Hidden Treasure',
-			popup: 'A hidden cache of valuable goods (lvl 18<span> Drowners</span>)'
+			label: $.t("hidden.label"),
+			label: $.t("hidden.desc") + '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'
 		}, {
 			coords: [[31.541, -65.566]],
-			label: 'Hidden Treasure',
-			popup: 'A hidden cache of valuable goods (lvl 18<span> Drowners</span>)'
+			label: $.t("hidden.label"),
+			label: $.t("hidden.desc") + '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'
 		}],
 
 	// Innkeep
 		innkeep: [{ // Faroe
 			coords: [[-77.485, 49.007]],
-			label: 'Harviken Inn',
-			popupTitle: 'Innkeep',
-			popup: 'Sells Gwent cards, food, and drink'
+			label: $.t("s:innkeep.inns.harvikenInn"),
+			popupTitle: $.t("s:innkeep.popup"),
+			popup:  $.t("s:innkeep.desc.foodDrinkAndGwent")
 		}, { // Hindarsfjall
 			coords: [[-29.075, 100.723]],
-			label: 'House of Warriors',
-			popupTitle: 'Innkeep',
-			popup: 'Sells Food, and drink'
+			label: $.t("s:innkeep.inns.houseOfWarriors"),
+			popupTitle: $.t("s:innkeep.popup"),
+			popup: $.t("s:innkeep.desc.foodAndDrink")
 		}, { // An Skellig
 			coords: [[50.569, 40.430]],
-			label: 'Urialla Harbour Inn',
-			popupTitle: 'Innkeep',
-			popup: 'Sells Gwent cards, food, and drink'
+			label: $.t("s:innkeep.inns.uriallaHarbourInn"),
+			popupTitle: $.t("s:innkeep.popup"),
+			popup:  $.t("s:innkeep.desc.foodDrinkAndGwent")
 		}, { // Spikeroog
 			coords: [[31.241, -113.049]],
-			label: 'Svorlag Inn',
-			popupTitle: 'Innkeep',
-			popup: 'Sells Gwent cards, food, and drink'
+			label: $.t("s:innkeep.inns.svorlagInn"),
+			popupTitle: $.t("s:innkeep.popup"),
+			popup:  $.t("s:innkeep.desc.foodDrinkAndGwent")
 		}, { // Ard Skellig
 			coords: [[-42.131, -62.073]],
-			label: 'Arinbjorn Inn',
-			popupTitle: 'Innkeep',
-			popup: 'Sells Gwent cards, food, and drink'
+			label: $.t("s:innkeep.inns.arinbjornInn"),
+			popupTitle: $.t("s:innkeep.popup"),
+			popup:  $.t("s:innkeep.desc.foodDrinkAndGwent")
 		}, {
 			coords: [[-3.294, -36.167]],
-			label: 'The New Port',
-			popupTitle: 'Innkeep',
-			popup: 'Sells Gwent cards, food, and drink'
+			label: $.t("s:innkeep.inns.theNewPort"),
+			popupTitle: $.t("s:innkeep.popup"),
+			popup:  $.t("s:innkeep.desc.foodDrinkAndGwent")
 		}],
 
 	// Monster Den
@@ -690,47 +690,47 @@ $(document).on("loadMapdata", function () {
 				[-78.587, 68.071],
 				[-77.133, 56.646],
 			],
-			label: 'Monster Den',
-			popup: 'Monster-infested location. A constant worry for those living nearby'
+			label: $.t("monsterden.label"),
+			popup: $.t("monsterden.desc")
 		}, { // Ard Skellig
 			coords: [[-2.416, -21.841]],
-			label: 'Monster Den',
-			popup: 'Monster-infested location. A constant worry for those living nearby (lvl 31<span> Ghost</span>)'
+			label: $.t("monsterden.label"),
+			popup: $.t("monsterden.desc") + '(lvl 31<span> ' + $.t("s:monsters.ghost") + '</span>)'
 		}, {
 			coords: [[-50.078, -33.245]],
-			label: 'Monster Den',
-			popup: 'Monster-infested location. A constant worry for those living nearby (lvl 8<span> Nekkers</span> & lvl 12<span> Nekker Warrior</span>)'
+			label: $.t("monsterden.label"),
+			popup: $.t("monsterden.desc") + '(lvl 8<span> ' + $.t("s:monsters.nekkers") + '</span> & lvl 12<span> Nekker Warrior</span>)'
 		}, { // An Skellig
 			coords: [[-10.401, 1.758]],
-			label: 'Monster Den',
-			popup: 'Monster-infested location. A constant worry for those living nearby (lvl 29<span> Wraiths</span>)'
+			label: $.t("monsterden.label"),
+			popup: $.t("monsterden.desc") + '(lvl 29<span> ' + $.t("s:monsters.wraiths.wraiths") + '</span>)'
 		}, {
 			coords: [[-5.922, 8.262]],
-			label: 'Monster Den',
-			popup: 'Monster-infested location. A constant worry for those living nearby (lvl 21<span> Alghouls</span>)'
+			label: $.t("monsterden.label"),
+			popup: $.t("monsterden.desc") + '(lvl 21<span> ' + $.t("s:monsters.alghouls") + '</span>)'
 		}],
 
 	// Monster Nest
 		monsternest: [{ // An Skellig
 			coords: [[50.458, 26.521]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 13<span> Harpies</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc") + '(lvl 13<span> ' + $.t("s:monsters.harpies") + '</span>)'
 		}, {
 			coords: [[-23.544, -37.551]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 19<span> Echidna</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc") + '(lvl 19<span> ' + $.t("s:monsters.echidna") + '</span>)'
 		}, {
 			coords: [[-59.074, -24.521]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 13<span> Harpies</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc") + '(lvl 13<span> ' + $.t("s:monsters.harpies") + '</span>)'
 		}, {
 			coords: [[-24.827, -29.070]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 15<span> Drowners</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc") + '(lvl 15<span> ' + $.t("s:monsters.drowners") + '</span>)'
 		}, { // Ard Skellig
 			coords: [[-59.120, -4.131]],
-			label: 'Monster Nest',
-			popup: 'Destroy monster nests with Grapeshot or Dancing Star bombs (lvl 13<span> Sirens</span> & lvl 19<span> Echidna</span>)'
+			label: $.t("monsternest.label"),
+			popup: $.t("monsternest.desc") + '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span> & lvl 19<span> Echidna</span>)'
 		}],
 
 	// Notice Board
@@ -748,66 +748,66 @@ $(document).on("loadMapdata", function () {
 				[-30.468, -1.890],
 				[-6.905, -35.178],
 			],
-			label: 'Notice Board',
-			popup: 'Here you can find monster contracts and announcements about matters of local concern'
+			label: $.t("notice.label"),
+			popup: $.t("notice.desc")
 		}],
 
 	// Person in Distress
 		pid: [{ // Ard Skellig
 			coords: [[-33.633, -40.298]],
 			label: 'Person(s) in Distress',
-			popup: 'There\'s a person or a group of people here in need of assitance (lvl 12<span> Bandits</span>)'
+			popup: $.t("pid.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
 		}, {
 			coords: [[-38.994, -6.372]],
 			label: 'Person(s) in Distress',
-			popup: 'There\'s a person or a group of people here in need of assitance (lvl 12<span> Bandits</span>)'
+			popup: $.t("pid.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
 		}],
 
 	// Place of Power
 		pop: [{ // Faroe
 			coords: [[-76.851, 40.891]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Yrden',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any 	Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.yrden")}),
+			popup: $.t("pop.desc")
 		}, { // An Skellig
 			coords: [[54.496, 35.903]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Quen',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any 	Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.quen")}),
+			popup: $.t("pop.desc")
 		}, { // Spikeroog
 			coords: [[34.343, -120.564]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Igni',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any 	Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.igni")}),
+			popup: $.t("pop.desc")
 		}, { // Ard Skellig
 			coords: [[-57.350, -48.604]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Axii',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.axii")}),
+			popup: $.t("pop.desc")
 		}, {
 			coords: [[-24.667, -36.497]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Axii',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.axii")}),
+			popup: $.t("pop.desc")
 		}, {
 			coords: [[-32.194, 15.710]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Yrden',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.yrden")}),
+			popup: $.t("pop.desc")
 		}, {
 			coords: [[4.784, -42.451]],
 			label: 'Place of Power*',
-			popupTitle: 'Place of Power - Quen',
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.quen")}),
 			popup: '"King\'s Gambit" Quest. Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
 		}, {
 			coords: [[-21.576, 29.795]],
-			label: 'Place of Power',
-			popupTitle: 'Place of Power - Aard',
-			popup: 'Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			label: $.t("pop.label"),
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.aard")}),
+			popup: $.t("pop.desc")
 		}, {
 			coords: [[4.390, -25.708]],
 			label: 'Place of Power*',
-			popupTitle: 'Place of Power - Igni',
+			popupTitle: $.t("pop.popup", {sign: $.t("signs.igni")}),
 			popup: '"The Sunstone" quest. Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
 		}],
 
@@ -895,68 +895,68 @@ $(document).on("loadMapdata", function () {
 	// Shopkeeper
 		shopkeeper: [{ // Hindarsfjall
 			coords: [[-29.306, 99.492]],
-			label: 'Shopkeeper',
-			popup: 'Sells crafting supplies and fish'
+			label: $.t("s:shopkeeper.label.shopkeeper"),
+			popup: $.t("s:shopkeeper.desc.craftingSuppliesAndFish")
 		}, { // Spikeroog
 			coords: [[31.260, -111.006]],
-			label: 'Shopkeeper',
-			popup: 'Sells crafting supplies and fish'
+			label: $.t("s:shopkeeper.label.shopkeeper"),
+			popup: $.t("s:shopkeeper.desc.craftingSuppliesAndFish")
 		}, { // Ard Skellig
 			coords: [[-64.063, -47.944]],
-			label: 'Shopkeeper',
+			label: $.t("s:shopkeeper.label.shopkeeper"),
 			popup: 'Sells maps, crafting supplies, fish and \'Mastercrafted Cavalry Saddle\' (+75)'
 		}, {
 			coords: [[-60.555, -51.416]],
-			label: 'Wandering Merchant',
-			popup: 'Sells maps and crafting supplies'
+			label: $.t("s:shopkeeper.label.wanderingMerchant"),
+			popup: $.t("s:shopkeeper.desc.mapsCraftingSupplies")
 		}, {
 			coords: [[-42.747, -58.535]],
-			label: 'Wandering Merchant',
-			popup: 'Sells maps and crafting supplies'
+			label: $.t("s:shopkeeper.label.wanderingMerchant"),
+			popup: $.t("s:shopkeeper.desc.mapsCraftingSupplies")
 		}, {
 			coords: [[-43.229, -49.175]],
-			label: 'Wandering Merchant',
-			popup: 'Sells maps and crafting supplies'
+			label: $.t("s:shopkeeper.label.wanderingMerchant"),
+			popup: $.t("s:shopkeeper.desc.mapsCraftingSupplies")
 		}, {
 			coords: [[-32.045, -17.996]],
-			label: 'Wandering Merchant',
-			popup: 'Sells maps and crafting supplies'
+			label: $.t("s:shopkeeper.label.wanderingMerchant"),
+			popup: $.t("s:shopkeeper.desc.mapsCraftingSupplies")
 		}, {
 			coords: [[-24.107, -22.632]],
-			label: 'Wandering Merchant',
-			popup: 'Sells maps and crafting supplies'
+			label: $.t("s:shopkeeper.label.wanderingMerchant"),
+			popup: $.t("s:shopkeeper.desc.mapsCraftingSupplies")
 		}, {
 			coords: [[-37.684, -30.037]],
-			label: 'Shopkeeper',
-			popup: 'Sells maps and crafting supplies'
+			label: $.t("s:shopkeeper.label.shopkeeper"),
+			popup: $.t("s:shopkeeper.desc.mapsCraftingSupplies")
 		}, {
 			coords: [[-56.535, -13.931]],
-			label: 'Shopkeeper',
-			popup: 'Sells crafting supplies and fish'
+			label: $.t("s:shopkeeper.label.shopkeeper"),
+			popup: $.t("s:shopkeeper.desc.craftingSuppliesAndFish")
 		}, {
 			coords: [[-22.837, -20.522]],
-			label: 'Shopkeeper',
+			label: $.t("s:shopkeeper.label.shopkeeper"),
 			popup: 'This merchant appears after liberating the area. Sells armour and crafting supplies'
 		}, {
 			coords: [[-30.676, -2.681]],
-			label: 'Shopkeeper',
-			popup: 'Sells maps, crafting supplies, food, and drink'
+			label: $.t("s:shopkeeper.label.shopkeeper"),
+			popup: $.t("s:shopkeeper.desc.mapsCraftingSuppliesFoodAndDrink")
 		}, {
 			coords: [[-14.541, -32.080]],
-			label: 'Shopkeeper',
-			popup: 'Sells maps and crafting supplies'
+			label: $.t("s:shopkeeper.label.shopkeeper"),
+			popup: $.t("s:shopkeeper.desc.mapsCraftingSupplies")
 		}, {
 			coords: [[-7.559, -40.408]],
-			label: 'Shopkeeper',
-			popup: 'Sells maps and crafting supplies'
+			label: $.t("s:shopkeeper.label.shopkeeper"),
+			popup: $.t("s:shopkeeper.desc.mapsCraftingSupplies")
 		}, {
 			coords: [[-3.401, -34.077]],
 			label: 'Tailor',
 			popup: 'Sells clothes and crafting supplies. Is also a barber'
 		}, {
 			coords: [[-8.581, -34.321]],
-			label: 'Wandering Merchant',
-			popup: 'Sells maps and crafting supplies'
+			label: $.t("s:shopkeeper.label.wanderingMerchant"),
+			popup: $.t("s:shopkeeper.desc.mapsCraftingSupplies")
 		}],
 
 	// Sign Post
@@ -1247,12 +1247,12 @@ $(document).on("loadMapdata", function () {
 				[52.107, -22.500],
 				[56.023, -8.877],
 			],
-			label: 'Smuggler\'s Cache',
-			popup: 'Smuggled goods have been hidden here'
+			label: $.t("smugglers.label"),
+			popup: $.t("smugglers.desc")
 		}, {
 			coords: [[53.697, -55.371]],
-			label: 'Smuggler\'s Cache',
-			popup: 'Smuggled goods have been hidden here (lvl 19<span> Sirens</span>)'
+			label: $.t("smugglers.label"),
+			popup: $.t("smugglers.desc") + '(lvl 19<span> ' + $.t("s:monsters.sirens") + '</span>)'
 		}],
 
 
@@ -1267,12 +1267,12 @@ $(document).on("loadMapdata", function () {
 				[-20.879, -158.467],
 				[57.891, -28.564],
 			],
-			label: 'Spoils of War',
-			popup: 'Search here for loot left behind after a battle or skirmish'
+			label: $.t("spoils.label"),
+			popup: $.t("spoils.desc")
 		}, {
 			coords: [[29.650, -63.896]],
-			label: 'Spoils of War',
-			popup: 'Search here for loot left behind after a battle or skirmish (lvl 16<span> Sirens</span>)'
+			label: $.t("spoils.label"),
+			popup: $.t("spoils.desc") + '(lvl 16<span> ' + $.t("s:monsters.sirens") + '</span>)'
 		}],
 	});
 
