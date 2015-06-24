@@ -160,7 +160,7 @@
 		"rescue": "Needs to be saved from: ",
 		"rescuedMerchant": "This merchant appears here after being rescued. ",
 		"wanderingInTheDark": "\"Wandering in the Dark\" quest. ",
-		"disappears": "Disappears after progressing through story quests";
+		"disappears": "Disappears after progressing through story quests"
 	},
 	"poi": {
 		"label": {
