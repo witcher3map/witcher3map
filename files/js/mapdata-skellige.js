@@ -599,55 +599,55 @@ $(document).on("loadMapdata", function () {
 		}, { // Spikeroog
 			coords: [[26.274, -104.238]],
 			label: $.t("hidden.label"),
-			popup: $.t("hidden.desc") + '(lvl 15<span> ' + $.t("s:monsters.drowners") + '</span>)'
+			popup: $.t("hidden.desc", {monster: '(lvl 15<span> ' + $.t("s:monsters.drowners") + '</span>)'})
 		}, {
 			coords: [[27.020, -95.977]],
 			label: $.t("hidden.label"),
-			popup: $.t("hidden.desc") + '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'
+			popup: $.t("hidden.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'})
 		}, { // Undvik
 			coords: [[-55.937, -121.223]],
 			label: $.t("hidden.label"),
-			popup: $.t("hidden.desc") + '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'
+			popup: $.t("hidden.desc", {monster: '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'})
 		}, { // Eastern Islands
 			coords: [[-12.039, -98.701]],
 			label: $.t("hidden.label"),
-			popup: $.t("hidden.desc") + '(lvl 12-14<span> ' + $.t("s:monsters.bandits") + '</span>)'
+			popup: $.t("hidden.desc", {monster: '(lvl 12-14<span> ' + $.t("s:monsters.bandits") + '</span>)'})
 		}, { // Faroe
 			coords: [[-78.469, 42.957]],
 			label: $.t("hidden.label"),
-			popup: $.t("hidden.desc") + '(lvl 9<span> ' + $.t("s:monsters.endrega") + '</span>)'
+			popup: $.t("hidden.desc", {monster: '(lvl 9<span> ' + $.t("s:monsters.endrega") + '</span>)'})
 		}, { // Ard Skellig
 			coords: [[-36.315, 0.264]],
 			label: $.t("hidden.label"),
-			popup: $.t("hidden.desc") + '(lvl 15<span> ' + $.t("s:monsters.drowners") + '</span>)'
+			popup: $.t("hidden.desc", {monster: '(lvl 15<span> ' + $.t("s:monsters.drowners") + '</span>)'})
 		}, {
 			coords: [[-58.825, -3.735]],
 			label: $.t("hidden.label"),
-			popup: $.t("hidden.desc") + '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'
+			popup: $.t("hidden.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'})
 		}, {
 			coords: [[-32.287, -50.757]],
 			label: $.t("hidden.label"),
-			popup: $.t("hidden.desc") + '(lvl 19<span> ' + $.t("s:monsters.sirens") + '</span>)'
+			popup: $.t("hidden.desc", {monster: '(lvl 19<span> ' + $.t("s:monsters.sirens") + '</span>)'})
 		}, {
 			coords: [[-72.262, 5.317]],
 			label: $.t("hidden.label"),
-			popup: $.t("hidden.desc") + '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'
+			popup: $.t("hidden.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'})
 		}, {
 			coords: [[-21.739, 30.498]],
 			label: $.t("hidden.label"),
-			popup: $.t("hidden.desc") + '(lvl 30<span> ' + $.t("s:monsters.cyclops") + '</span>)'
+			popup: $.t("hidden.desc", {monster: '(lvl 30<span> ' + $.t("s:monsters.cyclops") + '</span>)'})
 		}, {
 			coords: [[-24.127, -69.829]],
 			label: $.t("hidden.label"),
-			popup: $.t("hidden.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
+			popup: $.t("hidden.desc", {monster: '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'})
 		}, { // Sea
 			coords: [[4.083, -78.223]],
 			label: $.t("hidden.label"),
-			popup: $.t("hidden.desc") + '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'
+			popup: $.t("hidden.desc", {monster: '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'})
 		}, {
 			coords: [[31.541, -65.566]],
 			label: $.t("hidden.label"),
-			popup: $.t("hidden.desc") + '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'
+			popup: $.t("hidden.desc", {monster: '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'})
 		}],
 
 	// Innkeep
@@ -695,42 +695,42 @@ $(document).on("loadMapdata", function () {
 		}, { // Ard Skellig
 			coords: [[-2.416, -21.841]],
 			label: $.t("monsterden.label"),
-			popup: $.t("monsterden.desc") + '(lvl 31<span> ' + $.t("s:monsters.ghost") + '</span>)'
+			popup: $.t("monsterden.desc", {monster: '(lvl 31<span> ' + $.t("s:monsters.ghost") + '</span>)'})
 		}, {
 			coords: [[-50.078, -33.245]],
 			label: $.t("monsterden.label"),
-			popup: $.t("monsterden.desc") + '(lvl 8<span> ' + $.t("s:monsters.nekkers") + '</span> & lvl 12<span> ' + $.t("s:monsters.nekkerWarrior") + '</span>)'
+			popup: $.t("monsterden.desc", {monster: '(lvl 8<span> ' + $.t("s:monsters.nekkers") + '</span> & lvl 12<span> ' + $.t("s:monsters.nekkerWarrior") + '</span>)'})
 		}, { // An Skellig
 			coords: [[-10.401, 1.758]],
 			label: $.t("monsterden.label"),
-			popup: $.t("monsterden.desc") + '(lvl 29<span> ' + $.t("s:monsters.wraiths.wraiths") + '</span>)'
+			popup: $.t("monsterden.desc", {monster: '(lvl 29<span> ' + $.t("s:monsters.wraiths.wraiths") + '</span>)'})
 		}, {
 			coords: [[-5.922, 8.262]],
 			label: $.t("monsterden.label"),
-			popup: $.t("monsterden.desc") + '(lvl 21<span> ' + $.t("s:monsters.alghouls") + '</span>)'
+			popup: $.t("monsterden.desc", {monster: '(lvl 21<span> ' + $.t("s:monsters.alghouls") + '</span>)'})
 		}],
 
 	// Monster Nest
 		monsternest: [{ // An Skellig
 			coords: [[50.458, 26.521]],
 			label: $.t("monsternest.label"),
-			popup: $.t("monsternest.desc") + '(lvl 13<span> ' + $.t("s:monsters.harpies") + '</span>)'
+			popup: $.t("monsternest.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.harpies") + '</span>)'})
 		}, {
 			coords: [[-23.544, -37.551]],
 			label: $.t("monsternest.label"),
-			popup: $.t("monsternest.desc") + '(lvl 19<span> ' + $.t("s:monsters.echidna") + '</span>)'
+			popup: $.t("monsternest.desc", {monster: '(lvl 19<span> ' + $.t("s:monsters.echidna") + '</span>)'})
 		}, {
 			coords: [[-59.074, -24.521]],
 			label: $.t("monsternest.label"),
-			popup: $.t("monsternest.desc") + '(lvl 13<span> ' + $.t("s:monsters.harpies") + '</span>)'
+			popup: $.t("monsternest.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.harpies") + '</span>)'})
 		}, {
 			coords: [[-24.827, -29.070]],
 			label: $.t("monsternest.label"),
-			popup: $.t("monsternest.desc") + '(lvl 15<span> ' + $.t("s:monsters.drowners") + '</span>)'
+			popup: $.t("monsternest.desc", {monster: '(lvl 15<span> ' + $.t("s:monsters.drowners") + '</span>)'})
 		}, { // Ard Skellig
 			coords: [[-59.120, -4.131]],
 			label: $.t("monsternest.label"),
-			popup: $.t("monsternest.desc") + '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span> & lvl 19<span> ' + $.t("s:monsters.echidna") + '</span>)'
+			popup: $.t("monsternest.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span> & lvl 19<span> ' + $.t("s:monsters.echidna") + '</span>)'})
 		}],
 
 	// Notice Board
