@@ -814,83 +814,84 @@ $(document).on("loadMapdata", function () {
 	// Point of Interest
 		poi: [{ // Faroe
 			coords: [[-76.985, 57.788]],
-			label: $.t("s.poi.label.juttaAnDimun"),
-			popup: $.t("s.poi.desc.juttaAnDimun")
+			label: $.t("s:poi.label.juttaAnDimun"),
+			popup: $.t("s:poi.desc.juttaAnDimun")
 		}, { // Ard Skellig
 			coords: [[-58.344, -2.549]],
-			label: $.t("s.poi.label.ursineSteelSword"),
-			popupTitle: $.t("s.poi.popupTitle.ursineSteelSword"),
-			popup: $.t("s.poi.desc.ursineSteelSword")
+			label: $.t("s:poi.label.ursineSteelSword"),
+			popupTitle: $.t("s:poi.popupTitle.ursineSteelSword"),
+			popup: $.t("s:poi.desc.ursineSteelSword")
 		}, {
 		coords: [[-57.404, -49.349]],
-			label: 'Enhanced Ursine Boots',
-			popupTitle: 'Enhanced Ursine Boots Diagram',
-			popup: 'In an unmarked cave in the mountainside'
+			label: $.t("s:poi.label.enhancedUrsineBoots"),
+			popupTitle: $.t("s:poi.popupTitle.enhancedUrsineBoots"),
+			popup: $.t("s:poi.desc.enhancedUrsineBoots")
 		}, {
 			coords: [[-40.112, -14.546]],
-			label: 'Mastercrafted Griffin Steel Sword',
-			popupTitle: 'Mastercrafted Griffin Steel Sword Diagram',
-			popup: ''
+			label: $.t("s:poi.label.mastercraftedGriffinSteelSword"),
+			popupTitle: $.t("s:poi.popupTitle.mastercraftedGriffinSteelSword"),
+			popup: $.t("s:poi.desc.mastercraftedGriffinSteelSword")
 		}, {
 			coords: [[-1.274, -11.931]],
-			label: 'Enhanced Ursine Gauntlets',
-			popupTitle: 'Enhanced Ursine Gauntlets Diagram',
-			popup: ''
+			label: $.t("s:poi.label.enhancedUrsineGauntlets"),
+			popupTitle:  $.t("s:poi.popupTitle.enhancedUrsineGauntlets"),
+			popup: $.t("s:poi.desc.enhancedUrsineGauntlets")
 		}, {
 			coords: [[8.559, 13.733]],
-			label: 'Superior Griffin Armour Set',
-			popupTitle: 'Superior Griffin Armour Set Diagrams',
-			popup: 'Armor, boots, gauntlets, trousers'
+			label: $.t("s:poi.label.superiorGriffinArmourSet"),
+			popupTitle:  $.t("s:poi.popupTitle.superiorGriffinArmourSet"),
+			popup: $.t("s:poi.desc.superiorGriffinArmourSet")
 		}, {
 			coords: [[-22, 31]],
-			label: 'Mastercrafted Griffin Armor',
-			popup: ''
+			label: $.t("s:poi.label.mastercraftedGriffinArmor"),
+			popupTitle:  $.t("s:poi.popupTitle.mastercraftedGriffinArmor"),
+			popup: $.t("s:poi.desc.mastercraftedGriffinArmor")
 		}, {
 			coords: [[54.5, 32]],
-			label: 'Superior Griffin Steel Sword',
-			popupTitle: 'Superior Griffin Steel Sword Diagram',
-			popup: ''
+			label: $.t("s:poi.label.superiorGriffinSteelSword"),
+			popupTitle:  $.t("s:poi.popupTitle.superiorGriffinSteelSword"),
+			popup: $.t("s:poi.desc.superiorGriffinSteelSword")
 		}, {
 			coords: [[5.5, -17]],
-			label: 'Ursine Silver Sword',
-			popupTitle: 'Ursine Silver Sword Diagram',
-			popup: ''
+			label: $.t("s:poi.label.ursineSilverSword"),
+			popupTitle:  $.t("s:poi.popupTitle.ursineSilverSword"),
+			popup: $.t("s:poi.desc.ursineSilverSword")
 		}, {
 			coords: [[53.8, 38.5]],
-			label: 'Ursine Armor Set',
-			popupTitle: 'Ursine Armor Set Diagrams',
-			popup: 'Armor, gauntlets, trousers and boots'
+			label: $.t("s:poi.label.ursineArmorSet"),
+			popupTitle:  $.t("s:poi.popupTitle.ursineArmorSet"),
+			popup: $.t("s:poi.desc.ursineArmorSet")
 		}, {
 			coords: [[17.8, -123.5]],
-			label: 'Ursine Crossbow',
-			popupTitle: 'Ursine Crossbow Diagram',
-			popup: ''
+			label: $.t("s:poi.label.ursineCrossbow"),
+			popupTitle:  $.t("s:poi.popupTitle.ursineCrossbow"),
+			popup: $.t("s:poi.desc.ursineCrossbow")
 		}, {
 			coords: [[-70.5, -8.6]],
-			label: 'Superior Griffin silver sword',
-			popupTitle: 'Superior Griffin silver sword Diagram',
-			popup: 'Located in the cave system below'
+			label: $.t("s:poi.label.superiorGriffinSilverSword"),
+			popupTitle:  $.t("s:poi.popupTitle.superiorGriffinSilverSword"),
+			popup: $.t("s:poi.desc.superiorGriffinSilverSword")
 		}, {
 			coords: [[-50, -34.5]],
-			label: 'Mastercrafted Griffin Silver Sword',
-			popupTitle: 'Mastercrafted Griffin Silver Diagram',
-			popup: ''
+			label: $.t("s:poi.label.mastercraftedGriffinSilverSword"),
+			popupTitle:  $.t("s:poi.popupTitle.mastercraftedGriffinSilverSword"),
+			popup: $.t("s:poi.desc.mastercraftedGriffinSilverSword")
 		}, {
 			coords: [[-62.8, -39]],
-			label: 'Jarl Madman Lugos',
-			popup: 'You get the Card \'Vampire: Katakan\' from him (Gwent Quest: Skellige) (all cards <a href="https://wiiare.in/portfolio-type/the-witcher-3-wild-hunt-card-collector-achievement-trophy-guide/" target="_blank">here</a>'
+			label: $.t("s:poi.label.jarlMadmanLugos"),
+			popupTitle:  $.t("s:poi.popupTitle.jarlMadmanLugos"),
+			popup: $.t("s:poi.desc.jarlMadmanLugos")
 		}, {
 			coords: [[-78.587, 68.071]],
-			label: 'Mastercrafted Feline Armor',
-			popupTitle: 'Mastercrafted Feline Armor Diagram',
-			popup: 'Mastercrafted Feline Armor, Gautlets, Trousers and Boots',
+			label: $.t("s:poi.label.mastercraftedFelineArmor"),
+			popupTitle:  $.t("s:poi.popupTitle.mastercraftedFelineArmor"),
+			popup: $.t("s:poi.desc.mastercraftedFelineArmor")
 		}, {
 			coords: [[-77.133, 56.646]],
-			label: 'Mastercrafted Feline Silver Sword',
-			popupTitle: 'Mastercrafted Feline Silver Sword',
-			popup: '',
+			label: $.t("s:poi.label.mastercraftedFelineSilverSword"),
+			popupTitle:  $.t("s:poi.popupTitle.mastercraftedFelineSilverSword"),
+			popup: $.t("s:poi.desc.mastercraftedFelineSilverSword")
 		}],
-
 
 	// Shopkeeper
 		shopkeeper: [{ // Hindarsfjall
@@ -904,7 +905,7 @@ $(document).on("loadMapdata", function () {
 		}, { // Ard Skellig
 			coords: [[-64.063, -47.944]],
 			label: $.t("s:shopkeeper.label.shopkeeper"),
-			popup: 'Sells maps, crafting supplies, fish and \'Mastercrafted Cavalry Saddle\' (+75)'
+			popup: $.t("s:shopkeeper.desc.mapsCraftingSuppliesFishAndSaddles")
 		}, {
 			coords: [[-60.555, -51.416]],
 			label: $.t("s:shopkeeper.label.wanderingMerchant"),
@@ -936,7 +937,7 @@ $(document).on("loadMapdata", function () {
 		}, {
 			coords: [[-22.837, -20.522]],
 			label: $.t("s:shopkeeper.label.shopkeeper"),
-			popup: 'This merchant appears after liberating the area. Sells armour and crafting supplies'
+			popup: $.t("s:misc.liberated") + $.t("s:shopkeeper.desc.armourAndCraftingSupplies")
 		}, {
 			coords: [[-30.676, -2.681]],
 			label: $.t("s:shopkeeper.label.shopkeeper"),
@@ -951,8 +952,8 @@ $(document).on("loadMapdata", function () {
 			popup: $.t("s:shopkeeper.desc.mapsCraftingSupplies")
 		}, {
 			coords: [[-3.401, -34.077]],
-			label: 'Tailor',
-			popup: 'Sells clothes and crafting supplies. Is also a barber'
+			label: $.t("s:shopkeeper.label.tailor"),
+			popup: $.t("s:shopkeeper.desc.clothesAndCraftingSupplies") + $.t("s:shopkeeper.desc.barber")
 		}, {
 			coords: [[-8.581, -34.321]],
 			label: $.t("s:shopkeeper.label.wanderingMerchant"),

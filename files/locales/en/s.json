@@ -81,18 +81,61 @@
 		}
 	},
 	"misc": {
+		"liberated": "This merchant appears after liberating the area. "
 	},
 	"poi": {
 		"label": {
 			"juttaAnDimun": "Jutta An Dimun",
-			"ursineSteelSword": "Ursine Steel Sword"
+			"ursineSteelSword": "Ursine Steel Sword",
+			"enhancedUrsineBoots": "Enhanced Ursine Boots",
+			"mastercraftedGriffinSteelSword": "Mastercrafted Griffin Steel Sword",
+			"enhancedUrsineGauntlets": "Enhanced Ursine Gauntlets",
+			"superiorGriffinArmourSet": "Superior Griffin Armour Set",
+			"mastercraftedGriffinArmor": "Mastercrafted Griffin Armor",
+			"superiorGriffinSteelSword": "Superior Griffin Steel Sword",
+			"ursineSilverSword": "Ursine Silver Sword",
+			"ursineArmorSet": "Ursine Armor Set",
+			"ursineCrossbow": "Ursine Crossbow",
+			"superiorGriffinSilverSword": "Superior Griffin Silver Sword",
+			"mastercraftedGriffinSilverSword": "Mastercrafted Griffin Silver Sword",
+			"jarlMadmanLugos": "Jarl Madman Lugos",
+			"mastercraftedFelineArmor": "Mastercrafted Feline Armor",
+			"mastercraftedFelineSilverSword": "Mastercrafted Feline Silver Sword"
 		},
 		"popupTitle": {
-			"ursineSteelSword": "Ursine Steel Sword Diagram"
+			"ursineSteelSword": "Ursine Steel Sword Diagram",
+			"enhancedUrsineBoots": "Enhanced Ursine Boots Diagram",
+			"mastercraftedGriffinSteelSword": "Mastercrafted Griffin Steel Sword Diagram",
+			"enhancedUrsineGauntlets": "Enhanced Ursine Gauntlets Diagram",
+			"superiorGriffinArmourSet": "Superior Griffin Armour Set Diagrams",
+			"mastercraftedGriffinArmor": "Mastercrafted Griffin Armor Diagrams",
+			"superiorGriffinSteelSword": "Superior Griffin Steel Sword Diagram",
+			"ursineSilverSword": "Ursine Silver Sword Diagram",
+			"ursineArmorSet": "Ursine Armor Set Diagrams",
+			"ursineCrossbow": "Ursine Crossbow Diagram",
+			"superiorGriffinSilverSword": "Superior Griffin Silver Sword Diagram",
+			"mastercraftedGriffinSilverSword": "Mastercrafted Griffin Silver Sword Diagram",
+			"jarlMadmanLugos": "Jarl Madman Lugos",
+			"mastercraftedFelineArmor": "Mastercrafted Feline Armor Diagram",
+			"mastercraftedFelineSilverSword": "Mastercrafted Feline Silver Sword Diagram"
 		},
 		"desc": {
 			"juttaAnDimun": "todo",
-			"ursineSteelSword": "In a chest in the basement of this ruin"
+			"ursineSteelSword": "In a chest in the basement of this ruin",
+			"enhancedUrsineBoots": "In an unmarked cave in the mountainside",
+			"mastercraftedGriffinSteelSword": "",
+			"enhancedUrsineGauntlets": "",
+			"superiorGriffinArmourSet": "Armor, boots, gauntlets, trousers",
+			"mastercraftedGriffinArmor": "",
+			"superiorGriffinSteelSword": "",
+			"ursineSilverSword": "",
+			"ursineArmorSet": "Armor, gauntlets, trousers and boots",
+			"ursineCrossbow": "",
+			"superiorGriffinSilverSword": "Located in the cave system below",
+			"mastercraftedGriffinSilverSword": "",
+			"jarlMadmanLugos": "You get the Card 'Vampire: Katakan' from him (Gwent Quest: Skellige) (all cards <a href=\"https://wiiare.in/portfolio-type/the-witcher-3-wild-hunt-card-collector-achievement-trophy-guide/\" target=\"_blank\">here</a>",
+			"mastercraftedFelineArmor": "Mastercrafted Feline Armor, Gautlets, Trousers and Boots",
+			"mastercraftedFelineSilverSword": ""
 		}
 	},
 	"pop": {
@@ -104,12 +147,17 @@
 	"shopkeeper": {
 		"label": {
 			"shopkeeper": "Shopkeeper",
+			"tailor": "Tailor",
 			"wanderingMerchant": "Wandering Merchant"
 		},
 		"desc": {
+			"armourAndCraftingSupplies": "Sells armour and crafting supplies",
+			"barber": "Is also a barber",
+			"clothesAndCraftingSupplies": "Sells clothes and crafting supplies. ",
 			"craftingSuppliesAndFish": "Sells crafting supplies and fish",
 			"mapsCraftingSupplies": "Sells maps and crafting supplies",
-			"mapsCraftingSuppliesFoodAndDrink": "Sells maps, crafting supplies, food, and drink"
+			"mapsCraftingSuppliesFoodAndDrink": "Sells maps, crafting supplies, food, and drink",
+			"mapsCraftingSuppliesFishAndSaddles": "Sells maps, crafting supplies, fish and 'Mastercrafted Cavalry Saddle' (+75)"
 		}
 	},
 	"signpost": {
