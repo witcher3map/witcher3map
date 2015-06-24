@@ -333,71 +333,71 @@ $(document).on("loadMapdata", function () {
 		}, { // Undvik
 			coords: [[-46.134, -120.586]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'})
 		}, { // Faroe
 			coords: [[-75.958, 43.835]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 21<span> ' + $.t("s:monsters.cyclops") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 21<span> ' + $.t("s:monsters.cyclops") + '</span>)'})
 		}, { // Hindarsfjall
 			coords: [[-22.472, 85.386]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 16<span> ' + $.t("s:monsters.wraiths.wraith") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 16<span> ' + $.t("s:monsters.wraiths.wraith") + '</span>)'})
 		}, { // Ard Skellig
 			coords: [[-46.815, -37.639]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 19<span> ' + $.t("s:monsters.echidna") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 19<span> ' + $.t("s:monsters.echidna") + '</span>)'})
 		}, {
 			coords: [[5.791, -17.754]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 13<span> ' + $.t("s:monsters.gargoyles") + '</span> & lvl 30<span>' + $.t("s:monsters.elemental.ice") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.gargoyles") + '</span> & lvl 30<span>' + $.t("s:monsters.elemental.ice") + '</span>)'})
 		}, {
 			coords: [[-21.678, -32.717]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 14<span> ' + $.t("s:monsters.wyvern") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 14<span> ' + $.t("s:monsters.wyvern") + '</span>)'})
 		}, {
 			coords: [[-23.765, 23.291]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 27<span> ' + $.t("s:monsters.elemental.earth") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 27<span> ' + $.t("s:monsters.elemental.earth") + '</span>)'})
 		}, {
 			coords: [[-53.278, -63.413]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 21<span> ' + $.t("s:monsters.cyclops") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 21<span> ' + $.t("s:monsters.cyclops") + '</span>)'})
 		}, {
 			coords: [[-13.625, -43.506]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 7<span> ' + $.t("s:monsters.wraiths.wraiths") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 7<span> ' + $.t("s:monsters.wraiths.wraiths") + '</span>)'})
 		}, {
 			coords: [[-70.873, -5.625]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 19<span> ' + $.t("s:monsters.sirens") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 19<span> ' + $.t("s:monsters.sirens") + '</span>)'})
 		}, {
 			coords: [[-66.531, -15.908]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'})
 		}, {
 			coords: [[-26.392, -5.142]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 23<span> ' + $.t("s:monsters.wraiths.wraiths") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 23<span> ' + $.t("s:monsters.wraiths.wraiths") + '</span>)'})
 		}, { // Sea
 			coords: [[53.801, -64.336]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'})
 		}, {
 			coords: [[55.826, -30.674]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 19<span> ' + $.t("s:monsters.sirens") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 19<span> ' + $.t("s:monsters.sirens") + '</span>)'})
 		}, {
 			coords: [[59.623, -26.279]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'})
 		}, {
 			coords: [[61.058, -17.754]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 16<span> ' + $.t("s:monsters.sirens") + '</span>)'
+			popup: $.t("guarded.desc", {monster: '(lvl 16<span> ' + $.t("s:monsters.sirens") + '</span>)'})
 		}, {
 			coords: [[57.845, -1.670]],
 			label: $.t("guarded.label"),
-			popup: $.t("guarded.desc") + '(lvl 32<span> ' + $.t("s:monsters.basilisk") + '</span>)'
+			popup: $.t("guarded.desc", {monster: + '(lvl 32<span> ' + $.t("s:monsters.basilisk") + '</span>)'})
 		}],
 
 	// Gwent Player
@@ -756,11 +756,11 @@ $(document).on("loadMapdata", function () {
 		pid: [{ // Ard Skellig
 			coords: [[-33.633, -40.298]],
 			label: $.t("pid.label"),
-			popup: $.t("pid.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
+			popup: $.t("pid.desc", {monster: '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'})
 		}, {
 			coords: [[-38.994, -6.372]],
 			label:  $.t("pid.label"),
-			popup: $.t("pid.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
+			popup: $.t("pid.desc", {monster: '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'})
 		}],
 
 	// Place of Power
