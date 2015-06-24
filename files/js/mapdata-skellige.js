@@ -36,8 +36,8 @@ $(document).on("loadMapdata", function () {
 			popup: $.t("alchemy.desc")
 		}, {
 			coords: [[-19.705, 17.314]],
-			label: 'Gremist',
-			popup: '\'Practicum in Advanced Alchemy\' (lvl 24) Quest'
+			label: $.t("s:alchemy.gremist.label"),
+			popup: $.t("s:alchemy.gremist.desc")
 		}],
 
 	// Armourer
@@ -699,7 +699,7 @@ $(document).on("loadMapdata", function () {
 		}, {
 			coords: [[-50.078, -33.245]],
 			label: $.t("monsterden.label"),
-			popup: $.t("monsterden.desc") + '(lvl 8<span> ' + $.t("s:monsters.nekkers") + '</span> & lvl 12<span> Nekker Warrior</span>)'
+			popup: $.t("monsterden.desc") + '(lvl 8<span> ' + $.t("s:monsters.nekkers") + '</span> & lvl 12<span> ' + $.t("s:monsters.nekkerWarrior") + '</span>)'
 		}, { // An Skellig
 			coords: [[-10.401, 1.758]],
 			label: $.t("monsterden.label"),
@@ -730,7 +730,7 @@ $(document).on("loadMapdata", function () {
 		}, { // Ard Skellig
 			coords: [[-59.120, -4.131]],
 			label: $.t("monsternest.label"),
-			popup: $.t("monsternest.desc") + '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span> & lvl 19<span> Echidna</span>)'
+			popup: $.t("monsternest.desc") + '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span> & lvl 19<span> ' + $.t("s:monsters.echidna") + '</span>)'
 		}],
 
 	// Notice Board
@@ -755,11 +755,11 @@ $(document).on("loadMapdata", function () {
 	// Person in Distress
 		pid: [{ // Ard Skellig
 			coords: [[-33.633, -40.298]],
-			label: 'Person(s) in Distress',
+			label: $.t("pid.label"),
 			popup: $.t("pid.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
 		}, {
 			coords: [[-38.994, -6.372]],
-			label: 'Person(s) in Distress',
+			label:  $.t("pid.label"),
 			popup: $.t("pid.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
 		}],
 
@@ -796,9 +796,9 @@ $(document).on("loadMapdata", function () {
 			popup: $.t("pop.desc")
 		}, {
 			coords: [[4.784, -42.451]],
-			label: 'Place of Power*',
+			label: $.t("pop.label*"),
 			popupTitle: $.t("pop.popup", {sign: $.t("signs.quen")}),
-			popup: '"King\'s Gambit" Quest. Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			popup: $.t("s:pop.desc.kingsGambit")
 		}, {
 			coords: [[-21.576, 29.795]],
 			label: $.t("pop.label"),
@@ -806,21 +806,21 @@ $(document).on("loadMapdata", function () {
 			popup: $.t("pop.desc")
 		}, {
 			coords: [[4.390, -25.708]],
-			label: 'Place of Power*',
+			label: $.t("pop.label*"),
 			popupTitle: $.t("pop.popup", {sign: $.t("signs.igni")}),
-			popup: '"The Sunstone" quest. Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point'
+			popup: $.t("s:pop.desc.sunstone")
 		}],
 
 	// Point of Interest
 		poi: [{ // Faroe
 			coords: [[-76.985, 57.788]],
-			label: 'Jutta An Dimun',
-			popup: 'todo'
+			label: $.t("s.poi.label.juttaAnDimun"),
+			popup: $.t("s.poi.desc.juttaAnDimun")
 		}, { // Ard Skellig
 			coords: [[-58.344, -2.549]],
-			label: 'Ursine Steel Sword',
-			popupTitle: 'Ursine Steel Sword Diagram',
-			popup: 'In a chest in the basement of this ruin'
+			label: $.t("s.poi.label.ursineSteelSword"),
+			popupTitle: $.t("s.poi.popupTitle.ursineSteelSword"),
+			popup: $.t("s.poi.desc.ursineSteelSword")
 		}, {
 		coords: [[-57.404, -49.349]],
 			label: 'Enhanced Ursine Boots',

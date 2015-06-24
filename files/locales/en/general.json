@@ -378,6 +378,7 @@
 	},
 	"pop": {
 		"label": "Place of Power",
+		"label*": "Place of Power*",
 		"desc": "Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point",
 		"popup": "Place of Power - __sign__"
 	},

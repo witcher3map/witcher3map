@@ -15,6 +15,7 @@
 		"ghost": "Ghost",
 		"harpies": "Harpies",
 		"nekkers": "Nekkers",
+		"nekkerWarrior": "Nekker Warrior",
 		"sirens": "Sirens",
 		"wolves" : "Wolves",
 		"wraiths": {
@@ -22,6 +23,12 @@
 			"wraith": "Wraith"
 		},
 		"wyvern": "Wyvern"
+	},
+	"alchemy": {
+		"gremist": {
+			"label": "Gremist",
+			"desc": "'Practicum in Advanced Alchemy' (lvl 24) Quest"
+		}
 	},
 	"armourer": {
 		"amateurLabel": "Amateur Armorer",
@@ -77,8 +84,21 @@
 	},
 	"poi": {
 		"label": {
+			"juttaAnDimun": "Jutta An Dimun",
+			"ursineSteelSword": "Ursine Steel Sword"
+		},
+		"popupTitle": {
+			"ursineSteelSword": "Ursine Steel Sword Diagram"
 		},
 		"desc": {
+			"juttaAnDimun": "todo",
+			"ursineSteelSword": "In a chest in the basement of this ruin"
+		}
+	},
+	"pop": {
+		"desc": {
+			"kingsGambit": "'King's Gambit Quest'. Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point",
+			"sunstone": "'The Sunstone' quest. Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point"
 		}
 	},
 	"shopkeeper": {
