@@ -126,7 +126,7 @@ $(document).on("loadMapdata", function () {
 				[-28.613, -42.188]
 			],
 			label: $.t("hidden.label"),
-			label: $.t("hidden.desc")
+			popup: $.t("hidden.desc")
 		}],
 
 	// Innkeep
