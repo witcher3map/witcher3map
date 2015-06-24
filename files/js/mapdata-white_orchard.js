@@ -31,8 +31,8 @@ $(document).on("loadMapdata", function () {
 			coords: [
 				[-25.362, -152.539],
 			],
-			label: "Armorer's Table",
-			popup: "Armorer's tables grant your gear increased armor for a limited duration"
+			label: $.t("armourerstable.label"),
+			popup: $.t("armourerstable.desc")
 		}],
 
 	// Bandit Camp
@@ -102,7 +102,7 @@ $(document).on("loadMapdata", function () {
 		gwent: [{
 			coords: [[-65.946, -81.387]],
 			label: $.t("w:gwent.label.player"),
-			popup: 'Gamble your hard earned coin playing Gwent here. Disappears after progressing through story quests'
+			popup: $.t("w:gwent.desc.player") + $.t("w:gwent.desc.warn")
 		}],
 
 		harbor: [],
@@ -115,7 +115,7 @@ $(document).on("loadMapdata", function () {
 		}, {
 			coords: [[-77.542, -49.043]],
 			label: $.t("herbalist.label"),
-			popup: 'This merchant appears after liberating the area. Here you can buy alchemy ingredients'
+			popup: $.t("w:misc.liberated") + $.t("herbalist.desc")
 		}],
 
 	// Hidden Treasure
@@ -134,7 +134,7 @@ $(document).on("loadMapdata", function () {
 			coords: [[-65.731, -80.068]],
 			label: 'White Orchard Inn',
 			popupTitle: $.t("w:innkeep.popup"),
-			popup: 'Sells Gwent cards, and drink. Disappears after progressing through story quests'
+			popup: $.t("w:innkeep.desc.foodDrinkAndGwent") + $.t("w:misc.disappears")
 		}],
 
 	// Monster Den
