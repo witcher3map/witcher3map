@@ -33,8 +33,26 @@
 		"showCounts": "Show Counts",
 		"hideCounts": "Hide Counts",
 		"resetInvisible": "Reset Invisible",
+		"resetInvisConfirm": "This will reset all invisible/tracked markers to their default state (visible), are you sure?",
 		"hideMonsters": "Hide Monsters",
-		"showMonsters": "Show Monsters"
+		"showMonsters": "Show Monsters",
+		"helpFeatures": "Features & Help",
+		"credits": "Credits",
+		"backupSave": "This will download a backup copy of all Witcher 3 Map settings.\n\nThe file will be saved as: __fileName__\n\nAre you sure?",
+		"backupLoad": "Restore your settings:",
+		"backupLoadSuccess": "Data Restore Complete!",
+		"backupLoadFail": "Restore failed, double-check your file",
+		"backupHtmlFail": "Sorry.  Restore is not possible.  This browser does not support HTML5 File APIs."
+	},
+	"credits": {
+		"botCreated": "Created by __untamed0__, licensed under __license__",
+		"botAssets": "Witcher 3, logo, icons, map &amp; text are the property of __cdpr__"
+	},
+	"misc": {
+		"contribute": "Work in progress! Help appreciated at __link__",
+		"discuss": "Feedback, suggestions? Discuss on __link__",
+		"helpTranslate": "Want to help or improve translations?",
+		"portraitWarn": "Note: the map is best viewed in landscape mode, tap to dismiss"
 	},
 	"abandoned": {
 		"label": "Abandoned Site",
@@ -356,6 +374,7 @@
 	},
 	"pop": {
 		"label": "Place of Power",
+		"label*": "Place of Power*",
 		"desc": "Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point",
 		"popup": "Place of Power - __sign__"
 	},
