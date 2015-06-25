@@ -14,9 +14,10 @@
 		getAsync: true,
 		ns: 'general',
 		lng: localStorage['lang'],
-		fallbackLng: "en",
-		resGetPath: "../files/locales/__lng__/__ns__.json",
-		useDataAttrOptions: true
+		fallbackLng: 'en',
+		resGetPath: '../files/locales/__lng__/__ns__.json',
+		useDataAttrOptions: true,
+		lngWhitelist: [ 'de', 'en' ]
 	};
 
 	$.i18n.init(options, function() {
@@ -25,13 +26,13 @@
 		$.i18n.loadNamespace(namespace, function() {
 			if (options.debug) console.log('i18next is ready.');
 			if (options.debug) console.log('loading shared');
-			$(document).trigger("loadShared");
+			$(document).trigger('loadShared');
 
 			if (options.debug) console.log('loading mapdata');
-			$(document).trigger("loadMapdata");
+			$(document).trigger('loadMapdata');
 
 			if (options.debug) console.log('loading custom');
-			$(document).trigger("loadCustom");
+			$(document).trigger('loadCustom');
 
 			if (options.debug) console.log('performing language substitutions')
 			$(document).i18n();
