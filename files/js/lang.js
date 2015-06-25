@@ -20,7 +20,7 @@
 	};
 
 	$.i18n.init(options, function() {
-		var namespace = location.pathname.replace(/\//g, '');
+		var namespace = location.pathname.match(/\/(\w)\/$/)[1];
 		if (options.debug) console.log('i18next initialization complete.  loading namespace:'+namespace);
 		$.i18n.loadNamespace(namespace, function() {
 			if (options.debug) console.log('i18next is ready.');
