@@ -1,0 +1,281 @@
+{
+	"monsters": {
+		"alghouls": "Alghouls",
+		"bandits": "Bandits",
+		"basilisk": "Basilisk",
+		"cyclops": "Cyclops",
+		"drowners": "Drowners",
+		"echidna": "Echidna",
+		"elemental": {
+			"earth": "Earth Elemental",
+			"ice" : "Ice"
+		},
+		"endrega": "Endrega",
+		"gargoyles": "Gargoyles",
+		"ghost": "Ghost",
+		"harpies": "Harpies",
+		"nekkers": "Nekkers",
+		"nekkerWarrior": "Nekker Warrior",
+		"sirens": "Sirens",
+		"wolves" : "Wolves",
+		"wraiths": {
+			"wraiths": "Wraiths",
+			"wraith": "Wraith"
+		},
+		"wyvern": "Wyvern"
+	},
+	"alchemy": {
+		"gremist": {
+			"label": "Gremist",
+			"desc": "'Practicum in Advanced Alchemy' (lvl 24) Quest"
+		}
+	},
+	"armourer": {
+		"amateurLabel": "Amateur Armorer",
+		"journeymanLabel": "Journeyman Armorer",
+		"desc": "Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
+	},
+	"banditcamp": {
+		"label": "Bandit Camp",
+		"desc": "A group of dangerous bandits have made camp here. "
+	},
+	"barber": {
+		"label": "Barber",
+		"desc": "Visit barbers for a shave or a new haircut. "
+	},
+	"blacksmith": {
+		"amateurLabel": "Amateur Blacksmith",
+		"journeymanLabel": "Journeyman Blacksmith",
+		"desc": "Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
+	},
+	"gwent": {
+		"label": {
+			"player": "Gwent Player"
+		},
+		"desc": {
+			"player": "Gamble your hard earned coin playing Gwent here. "
+		},
+		"popup": {
+			"player": "Gwent Player",
+			"armorer": "Armorer Gwent Player",
+			"blacksmith": "Blacksmith Gwent Player",
+			"gremist": "Gremist Gwent Player",
+			"herbalist": "Herbalist Gwent Player",
+			"innkeeper": "Innkeeper Gwent Player",
+			"shopkeeper": "Shopkeeper Gwent Player"
+		}
+	},
+	"innkeep": {
+		"inns": {
+			"harvikenInn": "Harviken Inn",
+			"houseOfWarriors": "House of Warriors",
+			"uriallaHarbourInn": "Urialla Harbour Inn",
+			"svorlagInn": "Svorlag Inn",
+			"arinbjornInn": "Arinbjorn Inn",
+			"theNewPort": "The New Port"
+		},
+		"popup": "Innkeep",
+		"desc": {
+			"foodAndDrink": "Sells Food and drink",
+			"foodDrinkAndGwent": "Sells Gwent cards, food, and drink"
+		}
+	},
+	"misc": {
+		"liberated": "This merchant appears after liberating the area. "
+	},
+	"poi": {
+		"label": {
+			"juttaAnDimun": "Jutta An Dimun",
+			"ursineSteelSword": "Ursine Steel Sword",
+			"enhancedUrsineBoots": "Enhanced Ursine Boots",
+			"mastercraftedGriffinSteelSword": "Mastercrafted Griffin Steel Sword",
+			"enhancedUrsineGauntlets": "Enhanced Ursine Gauntlets",
+			"superiorGriffinArmourSet": "Superior Griffin Armour Set",
+			"mastercraftedGriffinArmor": "Mastercrafted Griffin Armor",
+			"superiorGriffinSteelSword": "Superior Griffin Steel Sword",
+			"ursineSilverSword": "Ursine Silver Sword",
+			"ursineArmorSet": "Ursine Armor Set",
+			"ursineCrossbow": "Ursine Crossbow",
+			"superiorGriffinSilverSword": "Superior Griffin Silver Sword",
+			"mastercraftedGriffinSilverSword": "Mastercrafted Griffin Silver Sword",
+			"jarlMadmanLugos": "Jarl Madman Lugos",
+			"mastercraftedFelineArmor": "Mastercrafted Feline Armor",
+			"mastercraftedFelineSilverSword": "Mastercrafted Feline Silver Sword"
+		},
+		"popupTitle": {
+			"ursineSteelSword": "Ursine Steel Sword Diagram",
+			"enhancedUrsineBoots": "Enhanced Ursine Boots Diagram",
+			"mastercraftedGriffinSteelSword": "Mastercrafted Griffin Steel Sword Diagram",
+			"enhancedUrsineGauntlets": "Enhanced Ursine Gauntlets Diagram",
+			"superiorGriffinArmourSet": "Superior Griffin Armour Set Diagrams",
+			"mastercraftedGriffinArmor": "Mastercrafted Griffin Armor Diagrams",
+			"superiorGriffinSteelSword": "Superior Griffin Steel Sword Diagram",
+			"ursineSilverSword": "Ursine Silver Sword Diagram",
+			"ursineArmorSet": "Ursine Armor Set Diagrams",
+			"ursineCrossbow": "Ursine Crossbow Diagram",
+			"superiorGriffinSilverSword": "Superior Griffin Silver Sword Diagram",
+			"mastercraftedGriffinSilverSword": "Mastercrafted Griffin Silver Sword Diagram",
+			"jarlMadmanLugos": "Jarl Madman Lugos",
+			"mastercraftedFelineArmor": "Mastercrafted Feline Armor Diagram",
+			"mastercraftedFelineSilverSword": "Mastercrafted Feline Silver Sword Diagram"
+		},
+		"desc": {
+			"juttaAnDimun": "todo",
+			"ursineSteelSword": "In a chest in the basement of this ruin",
+			"enhancedUrsineBoots": "In an unmarked cave in the mountainside",
+			"mastercraftedGriffinSteelSword": "",
+			"enhancedUrsineGauntlets": "",
+			"superiorGriffinArmourSet": "Armor, boots, gauntlets, trousers",
+			"mastercraftedGriffinArmor": "",
+			"superiorGriffinSteelSword": "",
+			"ursineSilverSword": "",
+			"ursineArmorSet": "Armor, gauntlets, trousers and boots",
+			"ursineCrossbow": "",
+			"superiorGriffinSilverSword": "Located in the cave system below",
+			"mastercraftedGriffinSilverSword": "",
+			"jarlMadmanLugos": "You get the Card 'Vampire: Katakan' from him (Gwent Quest: Skellige) (all cards <a href=\"https://wiiare.in/portfolio-type/the-witcher-3-wild-hunt-card-collector-achievement-trophy-guide/\" target=\"_blank\">here</a>",
+			"mastercraftedFelineArmor": "Mastercrafted Feline Armor, Gautlets, Trousers and Boots",
+			"mastercraftedFelineSilverSword": ""
+		}
+	},
+	"pop": {
+		"desc": {
+			"kingsGambit": "'King's Gambit Quest'. Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point",
+			"sunstone": "'The Sunstone' quest. Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point"
+		}
+	},
+	"shopkeeper": {
+		"label": {
+			"shopkeeper": "Shopkeeper",
+			"tailor": "Tailor",
+			"wanderingMerchant": "Wandering Merchant"
+		},
+		"desc": {
+			"armourAndCraftingSupplies": "Sells armour and crafting supplies",
+			"barber": "Is also a barber",
+			"clothesAndCraftingSupplies": "Sells clothes and crafting supplies. ",
+			"craftingSuppliesAndFish": "Sells crafting supplies and fish",
+			"mapsCraftingSupplies": "Sells maps and crafting supplies",
+			"mapsCraftingSuppliesFoodAndDrink": "Sells maps, crafting supplies, food, and drink",
+			"mapsCraftingSuppliesFishAndSaddles": "Sells maps, crafting supplies, fish and 'Mastercrafted Cavalry Saddle' (+75)"
+		}
+	},
+	"signpost": {
+		"label": {
+			"trottheim": "Trottheim",
+			"harviken": "Harviken",
+			"larvik": "Larvik",
+			"freyasGarden": "Freya's Garden",
+			"lofoten": "Lofoten",
+			"lofotenCemetery": "Lofoten Cemetery",
+			"isolatedHut": "Isolated Hut",
+			"lurthen": "Lurthen",
+			"trailToYngvarsFang": "Trail to Yngvar's Fang",
+			"yngvarsFang": "Yngvar's Fang",
+			"uriallaHarbor": "Urialla Harbor",
+			"bayOfWinds": "Bay Of Winds",
+			"hov": "Hov",
+			"svorlag": "Svorlag",
+			"oldWatchtower": "Old Watchtower",
+			"thePaliGapCoast": "The Pali Gap Coast",
+			"kaerAlmhult": "Kaer Almhult",
+			"marlinCoast": "Marlin Coast",
+			"gullPoint": "Gull Point",
+			"dorveRuins": "Dorve Ruins",
+			"clanTordarrochForge": "Clan Tordarroch Forge",
+			"urskar": "Urskar",
+			"abandonedVillage": "Abandoned Village",
+			"torGvalchca": "Tor Gvalch'ca",
+			"elverumLighthouse": "Elverum Lighthouse",
+			"ruinedInn": "Ruined Inn",
+			"fyresdal": "Fyresdal",
+			"kaerMuire": "Kaer Muire",
+			"holmsteinsPort": "Holmstein's Port",
+			"wildShore": "Wild Shore",
+			"fornhala": "Fornhala",
+			"distillery": "Distillery",
+			"grotto": "Grotto",
+			"palisade": "Palisade",
+			"arinbjorn": "Arinbjorn",
+			"sund": "Sund",
+			"fayrlund": "Fayrlund",
+			"boxholm": "Boxholm",
+			"rannvaig": "Rannvaig",
+			"blandare": "Blandare",
+			"druidsCamp": "Druids' Camp",
+			"redgill": "Redgill",
+			"abandonedSawmill": "Abandoned Sawmill",
+			"gedyneith": "Gedyneith",
+			"gedyneith2": "Gedyneith",
+			"whaleGraveyard": "Whale Graveyard",
+			"crossroads": "Crossroads",
+			"minersCamp": "Miners' Camp",
+			"eldbergLighthouse": "Eldberg Lighthouse",
+			"kaerGelen": "Kaer Gelen",
+			"KaerTroldeHarbor": "Kaer Trolde Harbor",
+			"bridgeToKaerTrolde": "Bridge to Kaer Trolde",
+			"rogne": "Rogne",
+			"yustiannasGrotto": "Yustianna's Grotto",
+			"giantsToes": "Giants' Toes",
+			"ancientCrypt": "Ancient Crypt"
+		},
+		"desc": {
+			"trottheim": "This village was once famed across all of Skellige for the fact that it was inhabited exclusively by women, all their men having died during one raid or another",
+			"harviken": "Home seat to Clan Dimun, and the location where Holger Blackhand divvies out the loot after every successful raid",
+			"larvik": "The largest village on Hindarsfjall and home seat to Donar, head of Clan an Hindar. Its inhabitants are just and god-fearing folk, traditionalists strident in their devotion to Freya",
+			"freyasGarden": "Garden dedicated to the goddess Freya. Once beautiful and filled with thousands of fragrant blooms and herbs, today it lies abandoned and untended",
+			"lofoten": "Once a rich and vibrant village, today Lofoten is a ravaged and crumbling ruin",
+			"lofotenCemetery": "The inhabitants of Lofoten often visit this small cemetery to care for the graves of their loved ones and ask Freya for blessings in the afterlife",
+			"isolatedHut": "They say this was once home to a herbalist who came to the isles from the continent. Unable to find a place in any of the nearby villages, she settled in this seaside hut, where she recieved the occasional visitor in need of magic creams of bandages",
+			"lurthen": "Lurthen's most famous inhabitant was a certain Peter Pijus, known for the fact that he was able to drink an entire barrel of mead in one go and remain standing",
+			"trailToYngvarsFang": "This is the start of the mountain trail leading to Yngvar's Fang, the pride and glory of An Skellig",
+			"yngvarsFang": "This mountain peak was named after the mythical bear which, according to legend, was defeated by Tyr, the heroic founder of Clan Tuirsearch",
+			"uriallaHarbor": "On account of their mastery of their craft and painstaking attention to detail, the shipwrights working in this harbor are considered the best in the isles",
+			"bayOfWinds": "Three generations ago this bay was a popular meeting spot for the local youth. Then one night a terrible storm broke out and the sea pounded into the beach, swallowing up several merry-makers and dragging them out to a watery grave",
+			"hov": "Village known throughout all of Skellige for the infamous arena which once hosted fierce fights between the mightiest warriors in the isles",
+			"svorlag": "The village was founded by the mythical Sove, who killed a terrifying and bloodthirsty chimera on this spot",
+			"oldWatchtower": "The ruins of an old watchtower in which, according to legend, a crazed Koviri princess once locked herself up, convinced only a man able to free her from this tower would be fit to be her husband. No one even tried, however, the princess died of old age and the tower fell into disrepair with the passage of time",
+			"thePaliGapCoast": "Elders say an isolated cave on this coast was once used as a retreat by the world's most famous bard (before the rise of Dandelion, that is): the great Xirdneh of Zanguebar, renowned from Nazair to the Dragon Mountains for his ferocious lute-strumming",
+			"kaerAlmhult": "Built centuries ago to serve as the home keep for the kings of Skellige. In practice, however, each ruler preferred to keep to his clan's seat, and Kaer Almhult was left unused. Eventually the decision was made to turn it into a prison, and today the fortress is a crumbling ruin",
+			"marlinCoast": "Until quite recently this beach was frequented by fishermen come to fish marlins out of the nearby waters",
+			"gullPoint": "Sea fowl come from miles around to congregate on this scrap of barren land, mate and lay eggs",
+			"dorveRuins": "Ruins of a village destroyed by the Ice Giant",
+			"clanTordarrochForge": "A famous forge where the best tools and weapons in all of Skellige were once made. When the Ice Giant took over the isle, he turned it into his larder",
+			"urskar": "The villagers here were famous for their love of pickled herring. They ate it for breakfast, dinner, and supper, and even made jams and compotes out of it",
+			"abandonedVillage": "This village's residents were forced to abandon it in a hurry when the Ice Giant unexpectedly awoke and decided to make known his wrath",
+			"torGvalchca": "An ancient tower which was erected in the days when elves were the unchallenged masters of these lands",
+			"elverumLighthouse": "The former keeper of this lighthouse was a confirmed eccentric. In addition to caring for the lighthouse, he also wrote poetry and wove carpets, was known to strip naked and run laps around the lighthouse at noon while shouting \"sound mind in a sound body\" and for breakfast would eat nothing but fish tails",
+			"ruinedInn": "Ruined and burned-down tavern which once treated locals and travelers to the best roast lamb around",
+			"fyresdal": "Those living here are tough on the outside, but soft and tender within",
+			"kaerMuire": "This fortress has served as Clan Drummond's home base for centuries. the days when it was new and in full repair are a distant memory now",
+			"holmsteinsPort": "Piers and docks for the village of Holmstein - Clan Drummond's chief port",
+			"wildShore": "A wild and untamed&trade; part of the isle's coastline. A favourite spot for bandits and lovers",
+			"fornhala": "Mysterious abandoned village",
+			"distillery": "A shroud of secrecy envelops this place. All that is known is that it produces the finest hooch in all of skellige",
+			"grotto": "An isolated-off locale that can only be reached by boat",
+			"palisade": "The remnants of the palisade that once marked the border between the territories of Clan Drummond and Clan an Craite",
+			"arinbjorn": "A village whose calm is only occasionally disturbed by someone slapping another senseless or one comrade breaking a bottle of mead over his mate's head",
+			"sund": "Small village whose inhabitant are for the most part shepherds",
+			"fayrlund": "This small village has gained great renown as home to the best hunters in Skellige",
+			"boxholm": "Boxholm was once a thriving village serving the nearby fortress, Kaer Nyssen. Today nothing remains of this past glory but a pile of stones, some debris, and fading memories",
+			"rannvaig": "Fifteen years ago, one of the fishermen of Rannvaig bagged an enormous halibut, and from that moment on all the other villagers have devoted their lives to beating his record",
+			"blandare": "Unusually for a Skellige village, Blandare is located inland, far from any shore. Its inhabitants scratch out a living through mining and shepherding",
+			"druidsCamp": "Camp pitched by druids investigating the magic cataclysm which devastated the nearby woods",
+			"redgill": "This village's inhabitants fled in a panic when a mysterious magic cataclysm struck the surrounding area",
+			"abandonedSawmill": "Though located depp in the forest, an ideal place for lumber harvesting, the sawmill now lies abandoned and unused",
+			"gedyneith": "An oak which is sacred to all Skelligers, as it is worshiped both by druids and Freya's disciples. The Isle's most important ceremonies are held here, including weddings and royal coronations",
+			"gedyneith2": "An oak which is sacred to all Skelligers, as it is worshiped both by druids and Freya's disciples. The Isle's most important ceremonies are held here, including weddings and royal coronations",
+			"whaleGraveyard": "The isle's inhabitants come here and gather bones which they use to build their huts",
+			"crossroads": "Fork in the road leading to Kaer Trolde",
+			"minersCamp": "Small camp which local miners use as a base during their gold prospecting expeditions into the mountains to the north",
+			"eldbergLighthouse": "Lighthouse built on orders of Jarl Skjordal in order to light the sea and route to Arinbjorn",
+			"kaerGelen": "This old fort's ruins attract the sort whom one would not want to run into in a dark alley",
+			"KaerTroldeHarbor": "One of the busiest ports in Skellige. Goods from every corner of the world are brought here to be sold and traded",
+			"bridgeToKaerTrolde": "This stone bridge was, according to legend, carved single-handedly by Grymmdjarr, the heroic founder of Clan an Craite",
+			"rogne": "This mountain settlement is home to tough folk of indomitable spirit",
+			"yustiannasGrotto": "Yustianna was a pirate born of a Skelliger from Clan an Craite and a captive woman taken during a raid. In her time she was feared on the Continent from Ofir to Zanguebar. Known for her skill as a navigator and unmatched master of various weapons, she quickly became the terror of the Great Sea, and when she returned to Skellige, they say this cave is where she hid her loot",
+			"giantsToes": "In truth simply a normal rock formation shaped by centuries of wind and water, islanders believe Uroboros punished giants who opposed his will by turning them into these stones",
+			"ancientCrypt": "Though Skelligers are famed for bravery bordering on madness, there are certain places which even they keep their distance from. This is one of them"
+		}
+	}
+}
