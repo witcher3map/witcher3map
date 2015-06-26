@@ -892,7 +892,7 @@ $(document).on("loadMapdata", function () {
 			popupTitle:  $.t("s:poi.popupTitle.mastercraftedFelineArmor"),
 			popup: $.t("s:poi.desc.mastercraftedFelineArmor")
 		}, {
-			coords: [[-77.133, 56.646]],
+			coords: [[-77.147, 58.162]],
 			label: $.t("s:poi.label.mastercraftedFelineSilverSword"),
 			popupTitle:  $.t("s:poi.popupTitle.mastercraftedFelineSilverSword"),
 			popup: $.t("s:poi.desc.mastercraftedFelineSilverSword")
