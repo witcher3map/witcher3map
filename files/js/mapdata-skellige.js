@@ -882,6 +882,11 @@ $(document).on("loadMapdata", function () {
 			popupTitle:  $.t("s:poi.popupTitle.jarlMadmanLugos"),
 			popup: $.t("s:poi.desc.jarlMadmanLugos")
 		}, {
+			coords: [[-12.297, 0.769]],
+			label: $.t("s:poi.label.mastercraftedFelineSteelSword"),
+			popupTitle:  $.t("s:poi.popupTitle.mastercraftedFelineSteelSword"),
+			popup: $.t("s:poi.desc.mastercraftedFelineSteelSword")
+		}, {
 			coords: [[-78.587, 68.071]],
 			label: $.t("s:poi.label.mastercraftedFelineArmor"),
 			popupTitle:  $.t("s:poi.popupTitle.mastercraftedFelineArmor"),
