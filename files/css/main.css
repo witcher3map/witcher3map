@@ -83,8 +83,13 @@ div#sidebar-wrap > span.tooltip {
     -ms-user-select: none;
     user-select: none;
     pointer-events: none;
-    white-space: nowrap;
     z-index: 6;
+		max-width:100px;
+		white-space: pre-wrap;      /* CSS3 */
+		white-space: -moz-pre-wrap; /* Firefox */
+		white-space: -pre-wrap;     /* Opera <7 */
+		white-space: -o-pre-wrap;   /* Opera 7 */
+		word-wrap: break-word;      /* IE */
 }
 div#logo {
 	width: 300px;
