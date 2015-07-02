@@ -111,7 +111,7 @@ $(document).on("loadMapdata", function () {
 		herbalist: [{
 			coords: [[-66.267, -132.627]],
 			label: $.t("herbalist.label"),
-			popup: $.t("alchemy.desc")
+			popup: $.t("herbalist.desc")
 		}, {
 			coords: [[-77.542, -49.043]],
 			label: $.t("herbalist.label"),
