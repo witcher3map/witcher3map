@@ -83,8 +83,13 @@ div#sidebar-wrap > span.tooltip {
     -ms-user-select: none;
     user-select: none;
     pointer-events: none;
-    white-space: nowrap;
     z-index: 6;
+		max-width:100px;
+		white-space: pre-wrap;      /* CSS3 */
+		white-space: -moz-pre-wrap; /* Firefox */
+		white-space: -pre-wrap;     /* Opera <7 */
+		white-space: -o-pre-wrap;   /* Opera 7 */
+		word-wrap: break-word;      /* IE */
 }
 div#logo {
 	width: 300px;
@@ -136,26 +141,29 @@ ul.key > li > a > i {
 	margin-right: 7px;
 	line-height: 25px;
 }
-ul.key > li > div {
-    line-height: 21px;
-    white-space: nowrap;
-    width: 120px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    float: left;
+ul.key > li > div, ul.key > li > a > div {
+	line-height: 21px;
+	white-space: nowrap;
+	width: 120px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	float: left;
+}
+ul.controls > li > div, ul.controls > li > a > div {
+	width: 148px;
 }
 ul.key > li > div.pill {
-    background-color:#97702F;
-    box-shadow: 1px 1px 3px #000000 inset;
-    margin-left:5px;
-    padding:2px 3px 0px 4px;
-    color:#000000;
-    border-radius:7px;
-    font-size: 14px;
-    line-height: 17px;
-    max-width: 15px;
-    float: left;
-    text-align: center;
+	background-color:#97702F;
+	box-shadow: 1px 1px 3px #000000 inset;
+	margin-left:5px;
+	padding:2px 3px 0px 4px;
+	color:#000000;
+	border-radius:7px;
+	font-size: 14px;
+	line-height: 17px;
+	max-width: 15px;
+	float: left;
+	text-align: center;
 }
 ul.key > li:after {
 	clear: both;
@@ -188,13 +196,13 @@ ul.key  li.none {
 }
 div#note {
 	background: url('../img/paperfull.png') no-repeat;
-	background-size: contain;
 	color: #000;
 	font-size: 18px;
 	text-align: center;
-	height: 85px;
+	height: auto;
 	margin-top: 15px;
-	padding-top: 17px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	margin-bottom: 5px;
 }
 div#note a {

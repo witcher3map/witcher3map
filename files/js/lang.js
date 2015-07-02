@@ -17,7 +17,7 @@
 		fallbackLng: 'en',
 		resGetPath: '../files/locales/__lng__/__ns__.json',
 		useDataAttrOptions: true,
-		lngWhitelist: [ 'de', 'en' ]
+		lngWhitelist: [ 'de', 'en', 'ru' ]
 	};
 
 	$.i18n.init(options, function() {
