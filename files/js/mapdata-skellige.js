@@ -1168,8 +1168,8 @@ $(document).on("loadMapdata", function () {
 			popup: $.t("s:signpost.desc.kaerGelen")
 		}, {
 			coords: [[-7.067, -37.617]],
-			label: $.t("s:signpost.label.kaerTroldeHarbor"),
-			popup: $.t("s:signpost.desc.kaerTroldeHarbor")
+			label: $.t("s:signpost.label.KaerTroldeHarbor"),
+			popup: $.t("s:signpost.desc.KaerTroldeHarbor")
 		}, {
 			coords: [[2.636, -38.650]],
 			label: $.t("s:signpost.label.bridgeToKaerTrolde"),
