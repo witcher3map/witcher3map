@@ -84,7 +84,7 @@ $(document).on("loadMapdata", function () {
 			coords: [[-30.87, -71.63]],
 			label: $.t("v:armourer.masterLabel"),
 			popupTitle: $.t("v:armourer.yoana"),
-			popup: $.t("v:armourer.quest") + $.t("armourer.desc")
+			popup: $.t("v:armourer.quest") + $.t("v:armourer.desc")
 		}],
 
 	// Armourer's Table
