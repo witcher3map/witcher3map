@@ -141,19 +141,20 @@ div#search-results-wrapper {
 ul#results {
 	width:100%;
 	margin-top:10px;
-	color: #F0CB0B;
 	list-style-type: none;
 	text-align: left;
 }
 ul#results > li {
 	width:100%;
 	margin-bottom:10px;
+	color: #635540;
 }
 ul#results > li > a {
 	text-transform: uppercase;
 	margin: -0.35em 0 0.25em;
 	font-size: 20px;
-	color: #635540;
+	color: #F0CB0B;
+	text-decoration: none;
 }
 div#footer, div#push {
 	height: 40px;
