@@ -106,12 +106,13 @@ div#search-wrapper {
 	width:100%;
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
 	font-size:20px;
+	margin-top:30px;
 }
 div#search-input-wrapper {
 	width:300px;
 	margin:auto;
-	color: #bbb;
-	border-color: #bbb;
+	color: #635540;
+	border-color: #635540;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
