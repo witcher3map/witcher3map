@@ -37,6 +37,9 @@ $.i18n.init(options, function() {
 							$('#search').keyup(function() {
 								doSearch();
 							});
+
+							//auto search when coming from back button
+							if($('#search').val()) doSearch();
 						});
 					});
 				});
@@ -53,6 +56,7 @@ var processData = function(data) {
 		$.each(markers, function(index,marker) {
 			var link = window.location.href.replace(window.location.hash, '')+mapKey+'/#3/'+marker.coords[0][0]+'/'+marker.coords[0][1]+'/m='+marker.coords[0][0]+','+marker.coords[0][1];
 			mapdata.push({
+				'map':window.map_path,
 				'label':marker.label,
 				'popup':marker.popup,
 				'popupTitle':(marker.popupTitle ? marker.popupTitle : '' ),
@@ -85,6 +89,8 @@ var doSearch = function() {
 		}
 	});
 	$('#results').empty();
+	var count = '<li>'+results.length+' result(s) found.</li>';
+	$('#results').append($(count));
 	$.each(results, function(k,v) {
 		var label;
 		if(v.popupTitle === '') {
@@ -94,7 +100,7 @@ var doSearch = function() {
 		} else {
 			label = v.label+' ('+v.popupTitle+')';
 		}
-		var item = '<li><a href="'+v.link+'">'+label+'</a><br/><span>'+v.popup+'</span></li>';
+		var item = '<li><a href="'+v.link+'">'+label+' - '+v.map+'</a><br/><span>'+v.popup+'</span></li>';
 		$('#results').append($(item));
 	});
 };

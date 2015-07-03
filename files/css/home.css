@@ -126,11 +126,16 @@ div#search-input-wrapper > input {
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
 	font-size:20px;
 }
+div#search-results-wrapper {
+	width:90%;
+	margin:auto;
+}
 ul#results {
-	margin-left:10%;
-	margin-right:10%;
+	width:100%;
+	margin-top:10px;
 	color: #F0CB0B;
 	list-style-type: none;
+	text-align: left;
 }
 ul#results > li {
 	margin-bottom:10px;
@@ -139,7 +144,6 @@ ul#results > li > a {
 	text-transform: uppercase;
 	margin: -0.35em 0 0.25em;
 	font-size: 20px;
-	text-align: center;
 	color: #635540;
 }
 div#footer, div#push {
