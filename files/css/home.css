@@ -111,18 +111,19 @@ div#search-input-wrapper {
 	width:300px;
 	margin:auto;
 	color: #bbb;
+	border-color: #bbb;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 1px;
+	padding-left:5px;
 }
 div#search-input-wrapper > input {
 	width:258px;
-	background: #000;
-	border-color: #bbb;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-	border-style: solid;
-	border-width: 3px;
+	border: none;
+	background: none;
 	color: #F0CB0B;
-	padding-left:10px;
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
 	font-size:20px;
 }
