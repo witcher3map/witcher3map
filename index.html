@@ -3,7 +3,7 @@
 	<head>
 		<title>Witcher 3 Interactive Maps</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta charset="utf-8"> 
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<meta property="og:title" content="Witcher 3 Interactive Maps">
 		<meta property="og:type" content="website">
@@ -13,6 +13,10 @@
 		<meta name="description" content="Witcher 3 interactive maps. All locations including shopkeepers, gwent players, merchants, places of power">
 		<meta name="keywords" content="Witcher 3, Witcher 3 map, Witcher 3 interactive map, gwent player map, gwent map, shopkeeper map, merchant map">
 		<link type="text/css" rel="stylesheet" href="files/css/home.css">
+		<link type="text/css" rel="stylesheet" href="files/css/font-awesome.min.css">
+		<script type="text/javascript" src="files/js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="files/js/i18next-1.9.0.min.js"></script>
+		<script type="text/javascript" src="files/js/home.js"></script>
 		<script type="text/javascript">
 			(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date;c=e.createElement(f);d=e.getElementsByTagName(f)[0];c.async=1;c.src=g;d.parentNode.insertBefore(c,d)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-64557825-1','auto');ga('send','pageview');
 		</script>
@@ -23,6 +27,10 @@
 				<div id="content">
 					<div id="logo"></div>
 					<div id="text">Unofficial The Witcher 3 Interactive Maps<br>(Currently under development)</div>
+					<div id="search-wrapper">
+						<div id="search-input-wrapper"><i class="fa fa-search"></i>&nbsp;<input id="search" type="text"></div>
+						<ul id="results"></ul>
+					</div>
 					<ul id="nav">
 						<li class="enabled"><a href="w/">White Orchard</a></li>
 						<li class="enabled"><a href="v/">Velen &amp; Novigrad</a></li>

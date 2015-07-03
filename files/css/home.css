@@ -58,7 +58,7 @@ div#text {
 	text-align: center;
 	font-size: 20px;
 	margin: 25px 0 20px 0;
-    text-shadow: 1px 1px #000;
+  text-shadow: 1px 1px #000;
 	cursor: default;
 }
 div#logo {
@@ -97,6 +97,46 @@ ul#nav li {
 #nav li.disabled {
 	opacity: 0.5;
 	cursor: not-allowed;
+}
+div#search-wrapper {
+	width:100%;
+	font-family: 'PFDinTextCondPro', Arial, sans-serif;
+	font-size:20px;
+}
+div#search-input-wrapper {
+	width:300px;
+	margin:auto;
+	color: #bbb;
+}
+div#search-input-wrapper > input {
+	width:258px;
+	background: #000;
+	border-color: #bbb;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+	border-style: solid;
+	border-width: 3px;
+	color: #F0CB0B;
+	padding-left:10px;
+	font-family: 'PFDinTextCondPro', Arial, sans-serif;
+	font-size:20px;
+}
+ul#results {
+	margin-left:10%;
+	margin-right:10%;
+	color: #F0CB0B;
+	list-style-type: none;
+}
+ul#results > li {
+	margin-bottom:10px;
+}
+ul#results > li > a {
+	text-transform: uppercase;
+	margin: -0.35em 0 0.25em;
+	font-size: 20px;
+	text-align: center;
+	color: #635540;
 }
 div#footer, div#push {
 	height: 40px;
