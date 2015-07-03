@@ -67,6 +67,10 @@ div#logo {
 	width: 300px;
 	height: 155px;
 }
+div#lang {
+	margin-top: 20px;
+	text-align: center;
+}
 ul#nav {
 	text-align: center;
 }

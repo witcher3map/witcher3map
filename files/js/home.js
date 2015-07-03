@@ -1,3 +1,13 @@
+if (localStorage['lang'] == null) {
+	var lang = window.navigator.userLanguage || window.navigator.language;
+	lang = lang.substring(0,2);
+	localStorage['lang'] = lang;
+}
+
+window.changeLang = function(lang) {
+	localStorage['lang'] = lang;
+};
+
 var options = {
 	debug: false,
 	getAsync: true,
@@ -8,6 +18,7 @@ var options = {
 	useDataAttrOptions: true,
 	lngWhitelist: [ 'de', 'en', 'ru' ]
 };
+
 //i18n init to translate search results
 $.i18n.init(options, function() {
 	$.i18n.loadNamespace('v', function() {
@@ -33,6 +44,8 @@ $.i18n.init(options, function() {
 		});
 	});
 });
+
+//mocks shared.js processData function to generate search results
 var mapdata = [];
 var processData = function(data) {
 	var mapKey = map_path.charAt(0);
@@ -48,11 +61,13 @@ var processData = function(data) {
 		});
 	});
 };
-//mocks to avoid errors on mapdata files
+
+//empty mocks to avoid errors on mapdata files
 var L = {};
 L.latLng = function() {};
 window.markers = {};
 
+//search function
 var doSearch = function() {
 	var searchInput = $('#search').val();
 	if(searchInput.length == 0) {
