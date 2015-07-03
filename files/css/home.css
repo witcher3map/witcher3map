@@ -44,6 +44,7 @@ div#wrap {
 	height: 100%;
 	margin: 0 auto -40px;
 	display: table;
+	width: 100%;
 }
 div#wrap2 {
 	display: table-cell;
