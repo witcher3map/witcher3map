@@ -117,10 +117,17 @@ div#search-input-wrapper {
 	border-radius: 10px;
 	border-style: solid;
 	border-width: 1px;
-	padding-left:5px;
+}
+div#search-input-wrapper .fa-search {
+	padding-left: 5px;
+}
+div#search-input-wrapper .fa-times {
+	padding-right: 5px;
+	cursor: pointer;
 }
 div#search-input-wrapper > input {
-	width:258px;
+	width:244px;
+	padding-left:10px;
 	border: none;
 	background: none;
 	color: #F0CB0B;
@@ -139,6 +146,7 @@ ul#results {
 	text-align: left;
 }
 ul#results > li {
+	width:100%;
 	margin-bottom:10px;
 }
 ul#results > li > a {

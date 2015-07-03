@@ -40,6 +40,12 @@ $.i18n.init(options, function() {
 
 							//auto search when coming from back button
 							if($('#search').val()) doSearch();
+
+							$('#clear').click(function () {
+								$('#search').val('');
+								$('#results').empty();
+								$('#clear').hide();
+							});
 						});
 					});
 				});
@@ -76,8 +82,10 @@ var doSearch = function() {
 	var searchInput = $('#search').val();
 	if(searchInput.length == 0) {
 			$('#results').empty();
+			$('#clear').hide();
 			return;
 	}
+	$('#clear').show();
 	var regex = new RegExp('(?=[^\\s])' + searchInput, 'gi');
 	var results = [];
 	$.each(mapdata, function(k,v) {
