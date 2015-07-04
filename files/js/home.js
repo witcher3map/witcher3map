@@ -62,7 +62,7 @@ var processData = function(data) {
 		$.each(markers, function(index,marker) {
 			var link = window.location.href.replace(window.location.hash, '')+mapKey+'/#3/'+marker.coords[0][0]+'/'+marker.coords[0][1]+'/m='+marker.coords[0][0]+','+marker.coords[0][1];
 			mapdata.push({
-				'map':window.map_path,
+				'map':window.map_path.replace('_', ' '),
 				'label':marker.label,
 				'popup':marker.popup,
 				'popupTitle':(marker.popupTitle ? marker.popupTitle : '' ),
