@@ -176,6 +176,12 @@ div#footer > span > a:active {
 	color: #bbb;
 	text-decoration: none;
 }
+div#lang > a {
+	opacity:0.5;
+}
+div#lang > a:hover {
+	opacity:1;
+}
 div#footer > a:hover {
 	color: #ddd;
 	text-decoration: underline;
