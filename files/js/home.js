@@ -66,7 +66,7 @@ var processData = function(data) {
 			mapdata.push({
 				'map': $.t('maps.'+window.map_path),
 				'label':marker.label,
-				'popup':marker.popup,
+				'popup':marker.popup.replace(/<a\b[^>]*>/i,"").replace(/<\/a>/i, ""),
 				'popupTitle':(marker.popupTitle ? marker.popupTitle : '' ),
 				'link':link
 			});
