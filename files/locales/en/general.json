@@ -1,11 +1,9 @@
 {
 	"maps": {
-		"velen": "Velen",
-		"novigrad": "Novigrad",
+		"velen": "Velen & Novigrad",
 		"skellige": "Skellige Isles",
 		"white_orchard": "White Orchard",
-		"kaer_morhen": "Kaer Morhen",
-		"velenAndNovigrad": "$t(maps.velen) & $t(maps.novigrad)"
+		"kaer_morhen": "Kaer Morhen"
 	},
 	"home": {
 		"tagline": "Unofficial The Witcher 3 Interactive Maps<br>(Currently under development)",
