@@ -170,9 +170,9 @@ div#footer {
 	max-width: 765px;
 	margin: 0 auto;
 }
-div#footer > a,
-div#footer > a:visited,
-div#footer > a:active {
+div#footer > span > a,
+div#footer > span > a:visited,
+div#footer > span > a:active {
 	color: #bbb;
 	text-decoration: none;
 }

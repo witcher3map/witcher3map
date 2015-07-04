@@ -21,6 +21,7 @@ var options = {
 
 //i18n init to translate search results
 $.i18n.init(options, function() {
+	$(document).i18n();
 	$.i18n.loadNamespace('v', function() {
 		$.getScript("files/js/mapdata-velen.js").done(function(script, textStatus) {
 			$(document).trigger('loadMapdata');
@@ -46,6 +47,7 @@ $.i18n.init(options, function() {
 								$('#results').empty();
 								$('#clear').hide();
 							});
+
 						});
 					});
 				});
@@ -62,7 +64,7 @@ var processData = function(data) {
 		$.each(markers, function(index,marker) {
 			var link = window.location.href.replace(window.location.hash, '')+mapKey+'/#3/'+marker.coords[0][0]+'/'+marker.coords[0][1]+'/m='+marker.coords[0][0]+','+marker.coords[0][1];
 			mapdata.push({
-				'map':window.map_path.replace('_', ' '),
+				'map': $.t('maps.'+window.map_path),
 				'label':marker.label,
 				'popup':marker.popup,
 				'popupTitle':(marker.popupTitle ? marker.popupTitle : '' ),
@@ -97,7 +99,7 @@ var doSearch = function() {
 		}
 	});
 	$('#results').empty();
-	var count = '<li>'+results.length+' result(s) found.</li>';
+	var count = '<li>'+results.length+' '+$.t('home.resultsFound')+'</li>';
 	$('#results').append($(count));
 	$.each(results, function(k,v) {
 		var label;
