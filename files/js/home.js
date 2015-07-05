@@ -49,6 +49,7 @@ $.i18n.init(options, function() {
 								$('#search').val('');
 								$('#results').empty();
 								$('#clear').hide();
+								$('#nav').show();
 							});
 						});
 					});
@@ -101,11 +102,16 @@ window.markers = {};
 
 //search function
 var doSearch = function() {
-	var searchText = $('#search').val();
+	var searchElement = $('#search');
+	var resultsElement = $('#results');
+	var searchText = searchElement.val();
 	if(searchText.length === 0) {
-			$('#results').empty();
+			resultsElement.empty();
 			$('#clear').hide();
+			$('#nav').show();
 			return;
+	} else {
+		$('#nav').hide();
 	}
 	$('#clear').show();
 	var regex = new RegExp('(?=[^\\s])' + searchText, 'gi');
@@ -118,9 +124,9 @@ var doSearch = function() {
 			results.push(v);
 		}
 	});
-	$('#results').empty();
+	resultsElement.empty();
 	var count = '<li>'+results.length+' '+$.t('home.resultsFound')+'</li>';
-	$('#results').append($(count));
+	resultsElement.append($(count));
 	$.each(results, function(k,v) {
 		var label;
 		if(v.popupTitle === '') {
@@ -131,7 +137,7 @@ var doSearch = function() {
 			label = v.label+' ('+v.popupTitle+')';
 		}
 		var item = '<li><div><a href="'+v.link+'">'+label+' - '+v.map+'</a></div><div class="searchDescription truncated">'+v.popup+'</div></li>';
-		$('#results').append($(item));
+		resultsElement.append($(item));
 	});
 	var expand = '<span style="float:right;">&#x25BC;</span>';
 	$('#results > li > .searchDescription').each(function() {
