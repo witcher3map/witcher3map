@@ -110,11 +110,6 @@ div#search-wrapper {
 	font-size:20px;
 	margin:30px auto 0px auto;
 }
-div#search-input-container {
-	width:100%;
-	max-width: 1024px;
-	margin:0px auto 0px auto;
-}
 div#search-input-wrapper {
 	width:300px;
 	margin:auto;
@@ -129,6 +124,9 @@ div#search-input-wrapper {
 div.sticky {
 	position:fixed;
 	top:0px;
+	left:50%;
+	margin-left:-151px !important;
+	background: rgba(0, 0, 0, 0.7);
 }
 div#search-input-wrapper .fa-search {
 	padding-left: 5px;
@@ -172,12 +170,19 @@ ul#results > li {
 	margin-bottom:10px;
 	color: #635540;
 }
-ul#results > li > a {
+ul#results > li > div > a {
 	text-transform: uppercase;
 	margin: -0.35em 0 0.25em;
 	font-size: 20px;
 	color: #F0CB0B;
 	text-decoration: none;
+}
+div.searchDescription {
+	width:100%;
+}
+div.truncated {
+	height:24px;
+	overflow: hidden;
 }
 div#footer, div#push {
 	height: 40px;

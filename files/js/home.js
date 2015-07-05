@@ -60,12 +60,11 @@ $.i18n.init(options, function() {
 
 
 $(function() {
-	var s = $('#search-input-container');
+	var s = $('#search-input-wrapper');
 	var pos = s.position();
 	//setup sticky searchbar
 	$(window).scroll(function() {
 		var windowpos = $(window).scrollTop();
-		console.log(pos.top + ' ' + windowpos);
 		if (windowpos >= pos.top) {
 			s.addClass("sticky");
 		} else {
@@ -129,7 +128,17 @@ var doSearch = function() {
 		} else {
 			label = v.label+' ('+v.popupTitle+')';
 		}
-		var item = '<li><a href="'+v.link+'">'+label+' - '+v.map+'</a><br/><span>'+v.popup+'</span></li>';
+		var item = '<li><div><a href="'+v.link+'">'+label+' - '+v.map+'</a></div><div class="searchDescription truncated">'+v.popup+'</div></li>';
 		$('#results').append($(item));
+	});
+	var expand = '<span style="float:right;">&#x25BC;</span>';
+	$('#results > li > .searchDescription').each(function() {
+		if($(this)[0].scrollHeight > 24) {
+			$(this).prepend($(expand));
+			$(this).on("click", function(e) {
+				$(this).children().first().remove();
+				$(this).removeClass("truncated");
+			});
+		}
 	});
 };
