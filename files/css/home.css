@@ -136,6 +136,18 @@ div#search-input-wrapper > input {
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
 	font-size:20px;
 }
+div#search-input-wrapper > input::-webkit-input-placeholder {
+	color: #635540;
+}
+div#search-input-wrapper > input:-moz-placeholder {
+	color: #635540;
+}
+div#search-input-wrapper > input::-moz-placeholder {
+	color: #635540;
+}
+div#search-input-wrapper > input:-ms-input-placeholder {
+	color: #635540;
+}
 div#search-results-wrapper {
 	width:90%;
 	margin:auto;

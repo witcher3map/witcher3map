@@ -7,7 +7,8 @@
 	},
 	"home": {
 		"tagline": "Unofficial The Witcher 3 Interactive Maps<br>(Currently under development)",
-		"resultsFound": "result(s) found."
+		"resultsFound": "result(s) found.",
+		"searchPlaceholder": "Enter search terms..."
 	},
 	"sidebar": {
 		"returnToMapSelection": "Return to Map Selection Page",
