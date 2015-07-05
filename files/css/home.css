@@ -105,9 +105,10 @@ ul#nav li {
 }
 div#search-wrapper {
 	width:100%;
+	max-width: 1024px;
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
 	font-size:20px;
-	margin-top:30px;
+	margin:30px auto 0px auto;
 }
 div#search-input-wrapper {
 	width:300px;
