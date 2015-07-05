@@ -66,7 +66,9 @@ $(function() {
 	$(window).scroll(function() {
 		var windowpos = $(window).scrollTop();
 		if (windowpos >= pos.top) {
-			s.addClass("sticky");
+			if($('#search').val()) {
+				s.addClass("sticky");
+			}
 		} else {
 			s.removeClass("sticky");
 		}
