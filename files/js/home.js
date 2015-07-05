@@ -34,20 +34,22 @@ $.i18n.init(options, function() {
 						$.getScript("files/js/mapdata-white_orchard.js").done(function(script, textStatus) {
 							$(document).trigger('loadMapdata');
 							$(document).unbind('loadMapdata');
+
+							var searchInput = $('#search');
+
 							//bind the search when all scripts are loaded
-							$('#search').keyup(function() {
+							searchInput.keyup(function() {
 								doSearch();
 							});
 
 							//auto search when coming from back button
-							if($('#search').val()) doSearch();
+							if(searchInput.val()) doSearch();
 
 							$('#clear').click(function () {
 								$('#search').val('');
 								$('#results').empty();
 								$('#clear').hide();
 							});
-
 						});
 					});
 				});
@@ -55,6 +57,23 @@ $.i18n.init(options, function() {
 		});
 	});
 });
+
+
+$(function() {
+	var s = $('#search-input-container');
+	var pos = s.position();
+	//setup sticky searchbar
+	$(window).scroll(function() {
+		var windowpos = $(window).scrollTop();
+		console.log(pos.top + ' ' + windowpos);
+		if (windowpos >= pos.top) {
+			s.addClass("sticky");
+		} else {
+			s.removeClass("sticky");
+		}
+	});
+});
+
 
 //mocks shared.js processData function to generate search results
 var mapdata = [];
@@ -81,14 +100,14 @@ window.markers = {};
 
 //search function
 var doSearch = function() {
-	var searchInput = $('#search').val();
-	if(searchInput.length == 0) {
+	var searchText = $('#search').val();
+	if(searchText.length === 0) {
 			$('#results').empty();
 			$('#clear').hide();
 			return;
 	}
 	$('#clear').show();
-	var regex = new RegExp('(?=[^\\s])' + searchInput, 'gi');
+	var regex = new RegExp('(?=[^\\s])' + searchText, 'gi');
 	var results = [];
 	$.each(mapdata, function(k,v) {
 		if((v.label.search(regex) != -1) ||

@@ -110,6 +110,11 @@ div#search-wrapper {
 	font-size:20px;
 	margin:30px auto 0px auto;
 }
+div#search-input-container {
+	width:100%;
+	max-width: 1024px;
+	margin:0px auto 0px auto;
+}
 div#search-input-wrapper {
 	width:300px;
 	margin:auto;
@@ -120,6 +125,10 @@ div#search-input-wrapper {
 	border-radius: 10px;
 	border-style: solid;
 	border-width: 1px;
+}
+div.sticky {
+	position:fixed;
+	top:0px;
 }
 div#search-input-wrapper .fa-search {
 	padding-left: 5px;
@@ -150,12 +159,11 @@ div#search-input-wrapper > input:-ms-input-placeholder {
 	color: #635540;
 }
 div#search-results-wrapper {
-	width:90%;
-	margin:auto;
+	width:100%;
+	padding-top:10px;
 }
 ul#results {
 	width:100%;
-	margin-top:10px;
 	list-style-type: none;
 	text-align: left;
 }
