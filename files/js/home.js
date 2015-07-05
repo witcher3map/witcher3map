@@ -84,11 +84,22 @@ var processData = function(data) {
 	$.each(data, function(markerType,markers) {
 		$.each(markers, function(index,marker) {
 			var link = window.location.href.replace(window.location.hash, '')+mapKey+'/#3/'+marker.coords[0][0]+'/'+marker.coords[0][1]+'/m='+marker.coords[0][0]+','+marker.coords[0][1];
+			var popupText = marker.popup.replace(/<a\b[^>]*>/i,"").replace(/<\/a>/i, "");
+			var popupTitle = (marker.popupTitle ? marker.popupTitle : '' );
+			var label;
+			if(popupTitle === '') {
+				label = marker.label;
+			} else if(popupTitle.indexOf(marker.label) > -1) {
+				label = popupTitle;
+			} else {
+				label = marker.label+' ('+popupTitle+')';
+			}
+
 			mapdata.push({
+				'allText': marker.label+popupText+popupTitle,
 				'map': $.t('maps.'+window.map_path),
-				'label':marker.label,
-				'popup':marker.popup.replace(/<a\b[^>]*>/i,"").replace(/<\/a>/i, ""),
-				'popupTitle':(marker.popupTitle ? marker.popupTitle : '' ),
+				'label':label,
+				'popup':popupText,
 				'link':link
 			});
 		});
@@ -111,34 +122,24 @@ var doSearch = function() {
 			$('#nav').show();
 			return;
 	} else {
+		$('#clear').show();
 		$('#nav').hide();
 	}
-	$('#clear').show();
 	var regex = new RegExp('(?=[^\\s])' + searchText, 'gi');
 	var results = [];
 	$.each(mapdata, function(k,v) {
-		if((v.label.search(regex) != -1) ||
-		(v.popup.search(regex) != -1) ||
-		(v.popupTitle.search(regex) != -1))
-		{
+		if(v.allText.search(regex) != -1) {
 			results.push(v);
 		}
 	});
 	resultsElement.empty();
 	var count = '<li>'+results.length+' '+$.t('home.resultsFound')+'</li>';
 	resultsElement.append($(count));
-	$.each(results, function(k,v) {
-		var label;
-		if(v.popupTitle === '') {
-			label = v.label;
-		} else if(v.popupTitle.indexOf(v.label) > -1) {
-			label = v.popupTitle;
-		} else {
-			label = v.label+' ('+v.popupTitle+')';
-		}
-		var item = '<li><div><a href="'+v.link+'">'+label+' - '+v.map+'</a></div><div class="searchDescription truncated">'+v.popup+'</div></li>';
+	var resultsLength = results.length;
+	for(var i=0;i<resultsLength;i++) {
+		var item = '<li><div><a href="'+results[i].link+'">'+results[i].label+' - '+results[i].map+'</a></div><div class="searchDescription truncated">'+results[i].popup+'</div></li>';
 		resultsElement.append($(item));
-	});
+	}
 	var expand = '<span style="float:right;">&#x25BC;</span>';
 	$('#results > li > .searchDescription').each(function() {
 		if($(this)[0].scrollHeight > 24) {
