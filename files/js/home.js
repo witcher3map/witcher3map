@@ -127,11 +127,12 @@ var doSearch = function() {
 	}
 	var regex = new RegExp('(?=[^\\s])' + searchText, 'gi');
 	var results = [];
-	$.each(mapdata, function(k,v) {
-		if(v.allText.search(regex) != -1) {
-			results.push(v);
+	var mapdataLength = mapdata.length;
+	for(var i=0;i<mapdataLength;i++) {
+		if(mapdata[i].allText.search(regex) != -1) {
+			results.push(mapdata[i]);
 		}
-	});
+	}
 	resultsElement.empty();
 	var count = '<li>'+results.length+' '+$.t('home.resultsFound')+'</li>';
 	resultsElement.append($(count));
@@ -141,13 +142,13 @@ var doSearch = function() {
 		resultsElement.append($(item));
 	}
 	var expand = '<span style="float:right;">&#x25BC;</span>';
-	$('#results > li > .searchDescription').each(function() {
+	$('#results').find('div.searchDescription').each(function() {
 		if($(this)[0].scrollHeight > 24) {
 			$(this).prepend($(expand));
-			$(this).on("click", function(e) {
-				$(this).children().first().remove();
-				$(this).removeClass("truncated");
-			});
 		}
+	});
+	$('#results').on('click','div.searchDescription',function(e) {
+		$(this).children().first().remove();
+		$(this).removeClass("truncated");
 	});
 };
