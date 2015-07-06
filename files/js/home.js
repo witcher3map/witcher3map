@@ -96,7 +96,6 @@ var processData = function(data) {
 			}
 
 			mapdata.push({
-				'allText': marker.label+popupText+popupTitle,
 				'map': $.t('maps.'+window.map_path),
 				'label':label,
 				'popup':popupText,
@@ -129,7 +128,7 @@ var doSearch = function() {
 	var results = [];
 	var mapdataLength = mapdata.length;
 	for(var i=0;i<mapdataLength;i++) {
-		if(mapdata[i].allText.search(regex) != -1) {
+		if((mapdata[i].label.search(regex) != -1) || (mapdata[i].popup.search(regex) != -1)) {
 			results.push(mapdata[i]);
 		}
 	}
@@ -138,17 +137,13 @@ var doSearch = function() {
 	resultsElement.append($(count));
 	var resultsLength = results.length;
 	for(var i=0;i<resultsLength;i++) {
-		var item = '<li><div><a href="'+results[i].link+'">'+results[i].label+' - '+results[i].map+'</a></div><div class="searchDescription truncated">'+results[i].popup+'</div></li>';
+		var item = '<li><div><a href="'+results[i].link+'">'+results[i].label+' - '+results[i].map+'</a></div><div class="searchDescription"><div class="truncated" onclick="toggleTruncate(event, this)">'+results[i].popup+'</div></div></li>';
 		resultsElement.append($(item));
 	}
-	var expand = '<span style="float:right;">&#x25BC;</span>';
-	$('#results').find('div.searchDescription').each(function() {
-		if($(this)[0].scrollHeight > 24) {
-			$(this).prepend($(expand));
-		}
-	});
-	$('#results').on('click','div.searchDescription',function(e) {
-		$(this).children().first().remove();
-		$(this).removeClass("truncated");
-	});
+};
+
+var toggleTruncate = function(e, element) {
+	e.preventDefault();
+	e.stopPropagation();
+	$(element).toggleClass("truncated");
 };

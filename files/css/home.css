@@ -183,10 +183,13 @@ ul#results > li > div > a {
 }
 div.searchDescription {
 	width:100%;
+	display: table;
+	table-layout: fixed;
 }
 div.truncated {
-	height:24px;
+	white-space: nowrap;
 	overflow: hidden;
+	text-overflow: ellipsis;
 }
 div#footer, div#push {
 	height: 40px;
