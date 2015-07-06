@@ -1,4 +1,15 @@
 {
+	"maps": {
+		"velen": "Velen & Novigrad",
+		"skellige": "Skellige Isles",
+		"white_orchard": "White Orchard",
+		"kaer_morhen": "Kaer Morhen"
+	},
+	"home": {
+		"tagline": "Unofficial The Witcher 3 Interactive Maps<br>(Currently under development)",
+		"resultsFound": "result(s) found.",
+		"searchPlaceholder": "Enter search terms..."
+	},
 	"sidebar": {
 		"returnToMapSelection": "Return to Map Selection Page",
 		"alchemy": "Alchemy Supplies",
@@ -48,6 +59,7 @@
 	},
 	"credits": {
 		"botCreated": "Created by __untamed0__, licensed under __license__",
+		"botHelp": "With help from __mcarver__, & other __contributors__. Thanks to __designGears__ & __hhrhhr__ for map & asset extraction. For the full list of Javascript libraries used, __jsCredits__.",
 		"botAssets": "Witcher 3, logo, icons, map &amp; text are the property of __cdpr__"
 	},
 	"misc": {
