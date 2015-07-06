@@ -1229,8 +1229,7 @@ $(document).on("loadMapdata", function () {
 			label: $.t("poi.label.witcherGear"),
 			popupTitle: $.t("poi.popup.witcherGear.steelsword.wolven.mastercrafted"),
 			popup: $.t("poi.desc.witcherGear.steelsword.wolven.mastercrafted")
-		}
-		],
+		}],
 
 	// Shopkeeper
 		shopkeeper: [{ // Novigrad
