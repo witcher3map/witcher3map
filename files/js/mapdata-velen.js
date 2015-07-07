@@ -84,7 +84,7 @@ $(document).on("loadMapdata", function () {
 			coords: [[-30.87, -71.63]],
 			label: $.t("v:armourer.masterLabel"),
 			popupTitle: $.t("v:armourer.yoana"),
-			popup: $.t("v:armourer.quest") + $.t("armourer.desc")
+			popup: $.t("v:armourer.quest") + $.t("v:armourer.desc")
 		}],
 
 	// Armourer's Table
@@ -1199,6 +1199,36 @@ $(document).on("loadMapdata", function () {
 			label: $.t("poi.label.witcherGear"),
 			popupTitle: $.t("poi.popup.witcherGear.gauntlets.ursine.superior"),
 			popup: $.t("poi.desc.witcherGear.gauntlets.ursine.superior")
+		}, {
+			coords: [[-28.710, -77.410]],
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.silversword.wolven.enhanced"),
+			popup: $.t("poi.desc.witcherGear.silversword.wolven.enhanced")
+		}, {
+			coords: [[-23.645, 72.070]],
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.boots.wolven.enhanced"),
+			popup: $.t("poi.desc.witcherGear.boots.wolven.enhanced")
+		}, {
+			coords: [[-77.128, -78.926]],
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.armor.wolven.enhanced"),
+			popup: $.t("poi.desc.witcherGear.armor.wolven.enhanced")
+		}, {
+			coords: [[-72.836, 76.816]],
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.silversword.wolven.mastercrafted"),
+			popup: $.t("poi.desc.witcherGear.silversword.wolven.mastercrafted")
+		}, {
+			coords: [[-77.897, -104.963]],
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.armor.wolven.mastercrafted"),
+			popup: $.t("poi.desc.witcherGear.armor.wolven.mastercrafted")
+		}, {
+			coords: [[-74.496, -145.239]],
+			label: $.t("poi.label.witcherGear"),
+			popupTitle: $.t("poi.popup.witcherGear.steelsword.wolven.mastercrafted"),
+			popup: $.t("poi.desc.witcherGear.steelsword.wolven.mastercrafted")
 		}],
 
 	// Shopkeeper

@@ -896,6 +896,36 @@ $(document).on("loadMapdata", function () {
 			label: $.t("s:poi.label.mastercraftedFelineSilverSword"),
 			popupTitle:  $.t("s:poi.popupTitle.mastercraftedFelineSilverSword"),
 			popup: $.t("s:poi.desc.mastercraftedFelineSilverSword")
+		}, {
+			coords: [[-37.440, -21.907]],
+			label: $.t("s:poi.label.mastercraftedWolvenGauntlets"),
+			popupTitle:  $.t("s:poi.popupTitle.mastercraftedWolvenGauntlets"),
+			popup: $.t("s:poi.desc.mastercraftedWolvenGauntlets")
+		}, {
+			coords: [[22.634,-120.850]],
+			label: $.t("s:poi.label.mastercraftedWolvenTrousers"),
+			popupTitle:  $.t("s:poi.popupTitle.mastercraftedWolvenTrousers"),
+			popup: $.t("s:poi.desc.mastercraftedWolvenTrousers")
+		}, {
+			coords: [[-58.043, -107.886]],
+			label: $.t("s:poi.label.mastercraftedWolvenBoots"),
+			popupTitle:  $.t("s:poi.popupTitle.mastercraftedWolvenBoots"),
+			popup: $.t("s:poi.desc.mastercraftedWolvenBoots")
+		}, {
+			coords: [[-27.722, 73.894]],
+			label: $.t("s:poi.label.superiorWolvenSteelSword"),
+			popupTitle:  $.t("s:poi.popupTitle.superiorWolvenSteelSword"),
+			popup: $.t("s:poi.desc.superiorWolvenSteelSword")
+		}, {
+			coords: [[-46.119, -57.437]],
+			label: $.t("s:poi.label.superiorWolvenSilverSword"),
+			popupTitle:  $.t("s:poi.popupTitle.superiorWolvenSilverSword"),
+			popup: $.t("s:poi.desc.superiorWolvenSilverSword")
+		}, {
+			coords: [[-59.221, -23.730]],
+			label: $.t("s:poi.label.superiorWolvenArmor"),
+			popupTitle:  $.t("s:poi.popupTitle.superiorWolvenArmor"),
+			popup: $.t("s:poi.desc.superiorWolvenArmor")
 		}],
 
 	// Shopkeeper

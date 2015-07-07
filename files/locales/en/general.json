@@ -152,6 +152,12 @@
 						"enhanced": "",
 						"superior": "",
 						"mastercrafted": ""
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "Going down into the cave",
+						"superior": "",
+						"mastercrafted": "You will find near the hidden treasure"
 					}
 				},
 				"steelsword": {
@@ -172,6 +178,12 @@
 						"enhanced": "",
 						"superior": "",
 						"mastercrafted": ""
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": "You will find in the hold of the sunken ship"
 					}
 				},
 				"crossbow": {
@@ -196,6 +208,12 @@
 						"enhanced": "",
 						"superior": "",
 						"mastercrafted": ""
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "Dive into the water",
+						"superior": "",
+						"mastercrafted": "The chest is inside the well"
 					}
 				},
 				"boots": {
@@ -214,6 +232,12 @@
 					"ursine": {
 						"standard": "",
 						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "Going down into the cave",
 						"superior": "",
 						"mastercrafted": ""
 					}
@@ -236,6 +260,12 @@
 						"enhanced": "",
 						"superior": "",
 						"mastercrafted": ""
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
 					}
 				},
 				"trousers": {
@@ -252,6 +282,12 @@
 						"mastercrafted": ""
 					},
 					"ursine": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"wolven": {
 						"standard": "",
 						"enhanced": "",
 						"superior": "",
@@ -280,6 +316,12 @@
 						"enhanced": "Enhanced Ursine Silver Sword",
 						"superior": "Superior Ursine Silver Sword",
 						"mastercrafted": "Mastercrafted Ursine Silver Sword"
+					},
+					"wolven": {
+						"standard": "Wolven Silver Sword",
+						"enhanced": "Enhanced Wolven Silver Sword",
+						"superior": "Superior Wolven Silver Sword",
+						"mastercrafted": "Mastercrafted Wolven Silver Sword"
 					}
 				},
 				"steelsword": {
@@ -300,6 +342,12 @@
 						"enhanced": "Enhanced Ursine Steel Sword",
 						"superior": "Superior Ursine Steel Sword",
 						"mastercrafted": "Mastercrafted Ursine Steel Sword"
+					},
+					"wolven": {
+						"standard": "Wolven Steel Sword",
+						"enhanced": "Enhanced Wolven Steel Sword",
+						"superior": "Superior Wolven Steel Sword",
+						"mastercrafted": "Mastercrafted Wolven Steel Sword"
 					}
 				},
 				"crossbow": {
@@ -324,6 +372,12 @@
 						"enhanced": "Enhanced Ursine Armor",
 						"superior": "Superior Ursine Armor",
 						"mastercrafted": "Mastercrafted Ursine Armor"
+					},
+					"wolven": {
+						"standard": "Wolven Armor",
+						"enhanced": "Enhanced Wolven Armor",
+						"superior": "Superior Wolven Armor",
+						"mastercrafted": "Mastercrafted Wolven Armor"
 					}
 				},
 				"boots": {
@@ -344,6 +398,12 @@
 						"enhanced": "Enhanced Ursine Boots",
 						"superior": "Superior Ursine Boots",
 						"mastercrafted": "Mastercrafted Ursine Boots"
+					},
+					"wolven": {
+						"standard": "Wolven Boots",
+						"enhanced": "Enhanced Wolven Boots",
+						"superior": "Superior Wolven Boots",
+						"mastercrafted": "Mastercrafted Wolven Boots"
 					}
 				},
 				"gauntlets": {
@@ -364,6 +424,12 @@
 						"enhanced": "Enhanced Ursine Gauntlets",
 						"superior": "Superior Ursine Gauntlets",
 						"mastercrafted": "Mastercrafted Ursine Gauntlets"
+					},
+					"wolven": {
+						"standard": "Wolven Gauntlets",
+						"enhanced": "Enhanced Wolven Gauntlets",
+						"superior": "Superior Wolven Gauntlets",
+						"mastercrafted": "Mastercrafted Wolven Gauntlets"
 					}
 				},
 				"trousers": {
@@ -384,6 +450,12 @@
 						"enhanced": "Enhanced Ursine Trousers",
 						"superior": "Superior Ursine Trousers",
 						"mastercrafted": "Mastercrafted Ursine Trousers"
+					},
+					"wolven": {
+						"standard": "Wolven Trousers",
+						"enhanced": "Enhanced Wolven Trousers",
+						"superior": "Superior Wolven Trousers",
+						"mastercrafted": "Mastercrafted Wolven Trousers"
 					}
 				}
 			}
