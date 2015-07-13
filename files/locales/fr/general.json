@@ -1,0 +1,413 @@
+{
+  "maps":{
+    "velen":"Velen & Novigrad",
+    "skellige":"Îles de Skellige",
+    "white_orchard":"Blanchefleur",
+    "kaer_morhen":"Kaer Morhen"
+  },
+  "home":{
+    "tagline":"Cartes de The Witcher 3 Interactive non officielles <br>(en cours d'élaboration)",
+    "resultsFound":"résultat(s) trouvé(s).",
+    "searchPlaceholder":"Entrer le texte de recherche..."
+  },
+  "sidebar":{
+    "returnToMapSelection":"Retour à la carte sélectionnée",
+    "alchemy":"Fournitures alchimiques",
+    "abandoned":"Site abandonné",
+    "armourer":"Armurier",
+    "armourerstable":"Établi d'armurier",
+    "banditcamp":"Campement de bandits",
+    "barber":"Barbier",
+    "blacksmith":"Forgeron",
+    "brothel":"Bordel",
+    "loveInterest":"Points d’intérêt amoureux",
+    "entrance":"Entrée",
+    "grindstone":"Meule à aiguiser",
+    "guarded":"Trésor gardé",
+    "gwent":"Joueur de Gwent",
+    "harbor":"Port",
+    "herbalist":"Herboriste",
+    "hidden":"Trésor caché",
+    "innkeep":"Aubergiste",
+    "monsternest":"Nid de monstres",
+    "monsterden":"Antre de monstre",
+    "notice":"Panneau d'affichage",
+    "pid":"Personne en détresse",
+    "pop":"Site d'énergie",
+    "poi":"Lieu intéressant",
+    "signpost":"Panneau",
+    "shopkeeper":"Commerçant",
+    "smugglers":"Cache de Bandits",
+    "spoils":"Butin de guerre"
+  },
+  "controls":{
+    "show":"Tout Afficher",
+    "hide":"Tout Masquer",
+    "showCounts":"Afficher le nombre",
+    "hideCounts":"Cacher le nombre",
+    "resetInvisible":"Remise à zéro de l'affichage",
+    "resetInvisConfirm":"Cela remet l'affichage des marqueurs à leur statut initial (visible), êtes-vous sûr ?",
+    "hideMonsters":"Masquer les monstres",
+    "showMonsters":"Afficher les monstres",
+    "helpFeatures":"Caractéristique et aide",
+    "credits":"Crédits",
+    "backupSave":"Ceci va télécharger une copie de sauvegarde de tous les paramètres de la carte 3 Witcher.  Le fichier sera enregistré sous : __fileName__ Etes-vous sûr ?",
+    "backupLoad":"Restaurer vos paramètres :",
+    "backupLoadSuccess":"Restauration des données terminée !",
+    "backupLoadFail":"Restauration a échoué, vérifiez votre fichier",
+    "backupHtmlFail":"Désolé. La restauration n'est pas possible. Ce navigateur ne supporte pas l'API HTML5."
+  },
+  "credits":{
+    "botCreated":"Créé par __untamed0__, sous __license__",
+    "botHelp":"Avec l'aide de __mcarver__, & autres __contributors__. Merci à __designGears__ & __hhrhhr__ pour la carte et l'extraction des textes. Pour la liste complète des bibliothèques Javascript utilisé, __jsCredits__.",
+    "botAssets":"Le logo, les icônes, la carte et le texte de Witcher 3 appartiennent à __cdpr__ "
+  },
+  "misc":{
+    "contribute":"Travaux en cours ! Aide appréciée au __link__",
+    "discuss":"Vos commentaires, suggestions ? Discuter sur __link__",
+    "helpTranslate":"Vous voulez aider ou améliorer les traductions ?",
+    "portraitWarn":"Remarque : la carte est optimisée en mode paysage, cliquez pour annuler",
+    "loveInterestDesc":"Laissez vos commentaire ici",
+    "nsfwConfirm":"Cela va changer « Bordel » à « Lieu d'amour », Êtes-vous sûr ?",
+    "nsfwUndo":"Êtes-vous sûr de que vouloir revenir en arrière ?"
+  },
+  "abandoned":{
+    "label":"Site abandonné",
+    "desc":"Un endroit abandonné en raison d'attaques de monstres ou de bandit. Une fois que le danger est écarté, il se remplira une fois de plus avec de la vie"
+  },
+  "armourerstable":{
+    "label":"Établi d'armurier",
+    "desc":"L'établi d'armurier augmente votre la force de votre armure temporairement."
+  },
+  "boat":{
+    "label":"Bateau",
+    "desc":"Vous pouvez utiliser des bateaux pour traverser des étendues d'eau"
+  },
+  "entrance":{
+    "label":"Entrée",
+    "desc":"Entrée de caverne ou de ruine"
+  },
+  "entranceunderwatercave":{
+    "label":"Grotte sous-marine",
+    "desc":"Entrée sous l'eau à la grotte"
+  },
+  "grindstone":{
+    "label":"Meule à aiguiser",
+    "desc":"Une lame affûtée ici fera plus de dégâts"
+  },
+  "guarded":{
+    "label":"Trésor gardé",
+    "desc":"Le monstre __monster__ particulièrement fort se cache ici"
+  },
+  "harbor":{
+    "label":"Port",
+    "desc":"Un endroit où vous pouvez trouver un bateau, les bateaux réapparaissent ici"
+  },
+  "herbalist":{
+    "label":"Herboriste",
+    "desc":"Ici vous pouvez acheter des fournitures d'alchimie"
+  },
+  "hidden":{
+    "label":"Trésor caché",
+    "desc":"Une cachette avec des marchandises précieuses",
+    "guarded":"Une cachette de marchandises précieuses (surveillé par des __monster__)"
+  },
+  "monsterden":{
+    "label":"Antre de monstre",
+    "desc":"Lieu infesté par des monstres. Un soucis constant pour les habitants à proximité de __monster__"
+  },
+  "monsternest":{
+    "label":"Nid de monstres",
+    "desc":"Détruire les nids de monstre  __monster__ avec les bombes Ruche ou Étoile dansante"
+  },
+  "notice":{
+    "label":"Panneau d'affichage",
+    "desc":"Ici vous pouvez trouver des contrats de monstre et annonces concernant des sujets d'intérêt local"
+  },
+  "pid":{
+    "label":"Personne(s) en détresse",
+    "desc":"Il y a une personne ou un groupe de personnes ici qui ont besoin d'aide contre __monster__"
+  },
+  "poi":{
+    "label":{
+      "witcherGear":"Augmentation d'équipement"
+    },
+    "desc":{
+      "witcherGear":{
+        "silversword":{
+          "feline":{
+            "standard":"À l'intérieur de la Ruine de Tayiar Est, derrière un mur que vous pouvez détruire",
+            "enhanced":"Vous devez monter d'un niveau",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "griffin":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "ursine":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          }
+        },
+        "steelsword":{
+          "feline":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "griffin":{
+            "standard":"À proximité du nid de monstres",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "ursine":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          }
+        },
+        "crossbow":{
+          "feline":"",
+          "ursine":""
+        },
+        "armor":{
+          "feline":{
+            "standard":"",
+            "enhanced":"Tout en haut du manoir abandonné de Aeramas",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "griffin":{
+            "standard":"À l'intérieur de la grotte du chasseur de Dragons",
+            "enhanced":"Près du Troll au Fort de l'aigle blanc",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "ursine":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          }
+        },
+        "boots":{
+          "feline":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "griffin":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "ursine":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          }
+        },
+        "gauntlets":{
+          "feline":{
+            "standard":"",
+            "enhanced":"À l'intérieur d'un puits de la carrière de Colgers",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "griffin":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "ursine":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          }
+        },
+        "trousers":{
+          "feline":{
+            "standard":"",
+            "enhanced":"À l'intérieur de la ruine brûlée",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "griffin":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "ursine":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          }
+        }
+      }
+    },
+    "popup":{
+      "witcherGear":{
+        "silversword":{
+          "feline":{
+            "standard":"Épée d'argent de l'école du Chat",
+            "enhanced":"Épée d'argent de l'école du Chat améliorée",
+            "superior":"Épée d'argent de l'école du Chat supérieure",
+            "mastercrafted":"Épée d'argent de l'école du Chat de maître"
+          },
+          "griffin":{
+            "standard":"Épée d'argent de l'École du Griffon",
+            "enhanced":"Épée d'argent de l'École du Griffon améliorée",
+            "superior":"Épée d'argent de l'École du Griffon supérieure",
+            "mastercrafted":"Épée d'argent de l'École du Griffon de maître"
+          },
+          "ursine":{
+            "standard":"Épée d'argent de l'École de l'Ours",
+            "enhanced":"Épée d'argent de l'École de l'Ours améliorée",
+            "superior":"Épée d'argent de l'École de l'Ours supérieure",
+            "mastercrafted":"Épée d'argent de l'École de l'Ours de maître"
+          }
+        },
+        "steelsword":{
+          "feline":{
+            "standard":"Épée d'acier de l'école du Chat",
+            "enhanced":"Épée d'acier de l'école du Chat améliorée",
+            "superior":"Épée d'acier de l'école du Chat supérieure",
+            "mastercrafted":"Épée d'acier de l'école du Chat de maître"
+          },
+          "griffin":{
+            "standard":"Épée d'acier de l'École du Griffon",
+            "enhanced":"Épée d'acier de l'École du Griffon améliorée",
+            "superior":"Épée d'acier de l'École du Griffon supérieure",
+            "mastercrafted":"Épée d'acier de l'École du Griffon de maître"
+          },
+          "ursine":{
+            "standard":"Épée d'acier de l'École de l'Ours",
+            "enhanced":"Épée d'acier de l'École de l'Ours améliorée",
+            "superior":"Épée d'acier de l'École de l'Ours supérieure",
+            "mastercrafted":"Épée d'acier de l'École de l'Ours supérieure de Maître"
+          }
+        },
+        "crossbow":{
+          "feline":"Arbalète de l'École du Chat",
+          "ursine":"Arbalète de l'École de l'Ours"
+        },
+        "armor":{
+          "feline":{
+            "standard":"Armure de l'École du Chat",
+            "enhanced":"Armure de l'École du Chat améliorée",
+            "superior":"Armure de l'École du Chat supérieure",
+            "mastercrafted":"Armure de l'École du Chat de maître"
+          },
+          "griffin":{
+            "standard":"Armure de l'École du Griffon",
+            "enhanced":"Armure de l'École du Griffon améliorée",
+            "superior":"Armure de l'École du Griffon supérieure",
+            "mastercrafted":"Armure de l'École du Griffon de maître"
+          },
+          "ursine":{
+            "standard":"Armure de l'École de l'Ours",
+            "enhanced":"Armure de l'École de l'Ours améliorée",
+            "superior":"Armure de l'école de l'Ours supérieure",
+            "mastercrafted":"Armure de l'École de l'Ours de maître"
+          }
+        },
+        "boots":{
+          "feline":{
+            "standard":"Bottes de l'école du Chat",
+            "enhanced":"Bottes de l'école du Chat améliorées",
+            "superior":"Bottes de l'école du Chat supérieures",
+            "mastercrafted":"Bottes de l'école du Chat de maître"
+          },
+          "griffin":{
+            "standard":"Bottes de l'École du Griffon",
+            "enhanced":"Bottes de l'École du Griffon améliorées",
+            "superior":"Bottes de l'École du Griffon supérieures",
+            "mastercrafted":"Bottes de l'École du Griffon de maître"
+          },
+          "ursine":{
+            "standard":"Bottes de l'École de l'Ours",
+            "enhanced":"Bottes de l'École de l'Ours améliorées",
+            "superior":"Bottes de l'École de l'Ours supérieures",
+            "mastercrafted":"Bottes de l'École de l'Ours de maître"
+          }
+        },
+        "gauntlets":{
+          "feline":{
+            "standard":"Gantelets de l'école du Chat",
+            "enhanced":"Gantelets de l'école du Chat améliorés",
+            "superior":"Gantelets de l'école du Chat supérieurs",
+            "mastercrafted":"Gantelets de l'école du Chat de maître"
+          },
+          "griffin":{
+            "standard":"Gantelets de l'École du Griffon",
+            "enhanced":"Gantelets de l'École du Griffon améliorés",
+            "superior":"Gantelets de l'École du Griffon supérieurs",
+            "mastercrafted":"Gantelets de l'École du Griffon de maître"
+          },
+          "ursine":{
+            "standard":"Gantelets de l'École de l'Ours",
+            "enhanced":"Gantelets de l'École de l'Ours améliorés",
+            "superior":"Gantelets de l'École de l'Ours supérieurs",
+            "mastercrafted":"Gantelets de l'École de l'Ours de maître"
+          }
+        },
+        "trousers":{
+          "feline":{
+            "standard":"Pantalon de l'école du Chat",
+            "enhanced":"Pantalon de l'école du Chat amélioré",
+            "superior":"Pantalon de l'école du Chat supérieur",
+            "mastercrafted":"Pantalon de l'école du Chat de maître"
+          },
+          "griffin":{
+            "standard":"Pantalon de l'École du Griffon",
+            "enhanced":"Pantalon de l'École du Griffon amélioré",
+            "superior":"pantalon de l'École du Griffon supérieur",
+            "mastercrafted":"Pantalon de l'École du Griffon de maître"
+          },
+          "ursine":{
+            "standard":"Pantalon de l'École de l'Ours",
+            "enhanced":"Pantalon de l'École de l'Ours amélioré",
+            "superior":"Pantalon de l'École de l'Ours supérieur",
+            "mastercrafted":"Pantalon de l'École de l'Ours de maître"
+          }
+        }
+      }
+    }
+  },
+  "pop":{
+    "label":"Site d'énergie",
+    "label*":"Site d'énergie*",
+    "desc":"Affiche le site d'énergie pour gagner un bonus temporaire. La première fois que vous trouvez un site d'énergie, vous recevez également 1 Point de capacité",
+    "popup":"Site d'énergie - __sign__"
+  },
+  "smugglers":{
+    "label":"Cache de contrebandiers",
+    "desc":"Des marchandises de contrebande ont été cachées ici"
+  },
+  "spoils":{
+    "label":"Butin de guerre",
+    "desc":"Recherchez ici butin laissé après une bataille ou escarmouche avec  __monster__"
+  },
+  "signs":{
+    "aard":"Aard",
+    "axii":"Axii",
+    "igni":"Igni",
+    "quen":"Quen",
+    "yrden":"Yrden"
+  }
+}
