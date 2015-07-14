@@ -92,6 +92,11 @@ $(document).on("loadShared", function () {
 		});
 	};
 
+  icons.add_marker = L.icon({
+    iconUrl  : '../files/img/icons/add_marker.png',
+    iconSize : [30, 30]
+  });
+
 	icons.abandoned = L.icon({
 		iconUrl  : '../files/img/icons/abandoned.png',
 		iconSize : [30, 30]

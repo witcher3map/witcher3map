@@ -150,14 +150,9 @@ $(document).on("loadCustom", function() {
 
 	$('.leaflet-marker-icon').on('contextmenu',function(e){ return false; });
 
-	map.on('click', function(e) {
-		console.log('Clicked at:');
-		console.log('[' + e.latlng.lat.toFixed(3) + ', ' + e.latlng.lng.toFixed(3) + ']');
-	});
-
 	map.on('popupopen', function(e) {
 		deleteCircle();
-		createCircle(e.popup._latlng.lat.toFixed(3),e.popup._latlng.lng.toFixed(3));
+		createCircle(e.popup._latlng);
 		$('#info-wrap').stop();
 		if (localStorage['sfw'] && e.popup._source._popup._content.match(/prostitute/i)) {
 			$('#info').html('<h1>' + $.t('sidebar.loveInterest') + '</h1>' + $.t('misc.loveInterestDesc'));
@@ -170,15 +165,21 @@ $(document).on("loadCustom", function() {
 		console.log('[' + e.popup._latlng.lat.toFixed(3) + ', ' + e.popup._latlng.lng.toFixed(3) + ']');
 	});
 
-	var createCircle = function(lat, long) {
-		hash.addParam('m', lat + ',' + long);
+	var createCircle = function(latlng) {
+		var noteKey = getNoteKey(latlng);
+		var lat = latlng.lat.toFixed(3);
+		var long = latlng.lng.toFixed(3);
+		//only add param and show center button if not a note
+		if(!noteMarkerList[noteKey]) {
+			hash.addParam('m', lat + ',' + long);
+		 	$('#centerButton').show();
+		}
 		circle = L.circleMarker(L.latLng(lat,long), {
 			color: 'red',
 			fillColor: '#f03',
 			fillOpacity: 0.5,
 			radius: 20
 		}).addTo(map);
-		$('#centerButton').show();
 	};
 
 	var deleteCircle = function() {
@@ -570,6 +571,14 @@ $(document).on("loadCustom", function() {
 	}, 'Restore Data', 'restoreButton');
 	L.easyBar([backupButton, restoreButton]).addTo(map);
 
+	var noteMarkerList = {};
+	var noteStatus = false;
+	var noteCursorCss = null;
+	L.easyButton('fa-book', function(btn, map) {
+		if(!noteStatus) startNote();
+		else endNote();
+	}, 'Add Note', 'noteButton').addTo(map);
+
 	L.easyButton('fa-crosshairs', function(btn, map) {
 		hashParams = hash.getHashParams();
 		if(hashParams && hashParams.m) {
@@ -579,6 +588,64 @@ $(document).on("loadCustom", function() {
 			map.setView(map_center);
 		}
 	}, 'Center Highlighted Marker', 'centerButton').addTo(map);
+
+	window.getNoteKey = function (latlng) {
+		return map_path + '-' + latlng.lat.toFixed(3) + '_' + latlng.lng.toFixed(3);
+	};
+
+	var startNote = function() {
+		console.log('starting note');
+		noteStatus = true;
+		noteCursorCss = $('.leaflet-container').css('cursor');
+		$('.leaflet-container').css('cursor', 'crosshair');
+		map.addEventListener('click', addNote);
+	};
+
+	window.updateNote = function(key) {
+		var markerTitle = $('#note-'+key+'-marker-title').val();
+		var title = $('#note-'+key+'-title').val();
+		var text = $('#note-'+key+'-text').val();
+		var popupContent = getNotePopup(key, markerTitle, title, text);
+		var marker = noteMarkerList[key];
+		marker.bindLabel(markerTitle);
+		marker.bindPopup(popupContent);
+		noteMarkerList[key] = marker;
+		console.log('update note done.');
+	};
+
+	window.deleteNote = function(key) {
+		map.removeLayer(noteMarkerList[key]);
+		delete noteMarkerList.key;
+		console.log('note deleted');
+	};
+
+	var getNotePopup = function(key, markerTitle, title, text) {
+		markerTitle = markerTitle || '';
+		title = title || '';
+		text = text || '';
+		var popupContent =  "<div><span class=\"label\">Label:</span><input type=\"text\" id=\"note-"+key+"-marker-title\" placeholder=\"Enter marker title...\" value=\""+markerTitle+"\" /></div>";
+		popupContent += "<div><span class=\"label\">Title:</span><input type=\"text\" id=\"note-"+key+"-title\" placeholder=\"Enter note title...\" value=\""+title+"\" /></div>";
+		popupContent += "<div><span class=\"label top\">Note:</span><textarea id=\"note-"+key+"-text\" placeholder=\"Enter your note...\">"+text+"</textarea></div>"; //You clicked on the map at " + e.latlng.toString()+"
+		popupContent += "<br/><button onclick=\"updateNote('"+key+"')\"><i class=\"fa fa-floppy-o\"></i>&nbsp;Update Note</button>";
+		popupContent += "<button onclick=\"deleteNote('"+key+"')\"><i class=\"fa fa-trash-o\"></i>&nbsp;Delete Note</button>";
+		return popupContent;
+	};
+
+	var addNote = function(e) {
+		var key = getNoteKey(e.latlng);
+		var noteMarker = L.marker(e.latlng, setMarker(icons['add_marker'])).bindLabel('New Note').bindPopup(getNotePopup(key)).openPopup();
+		noteMarker.addTo(map);
+		noteMarkerList[key] = noteMarker;
+		endNote();
+		return false;
+	};
+
+	var endNote = function() {
+		console.log('stopping note');
+		noteStatus = false;
+		$('.leaflet-container').css('cursor', noteCursorCss);
+		map.removeEventListener('click');
+	};
 
 	var hashParams = hash.getHashParams();
 	if(hashParams) {
