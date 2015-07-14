@@ -344,6 +344,7 @@ div#info span.label {
 	width:50px;
 	text-align:right;
 	margin-right:10px;
+	padding-top:2px;
 }
 div#info span.top {
 	vertical-align: top;
