@@ -92,9 +92,9 @@ $(document).on("loadShared", function () {
 		});
 	};
 
-  icons.add_marker = L.icon({
+  icons.note_marker = L.icon({
     iconUrl  : '../files/img/icons/add_marker.png',
-    iconSize : [30, 30]
+    iconSize : [20, 30]
   });
 
 	icons.abandoned = L.icon({

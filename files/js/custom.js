@@ -647,7 +647,7 @@ $(document).on("loadCustom", function() {
 	var addNote = function(e) {
 		var noteKey = getNoteKey(e.latlng.lat, e.latlng.lng);
 		var note = {key: noteKey, lat: e.latlng.lat, lng: e.latlng.lng, label:'',title:'',text:''};
-		var noteMarker = L.marker(e.latlng, setMarker(icons['add_marker'])).bindPopup(getNotePopup(note)).openPopup();
+		var noteMarker = L.marker(e.latlng, setMarker(icons['note_marker'])).bindPopup(getNotePopup(note)).openPopup();
 		noteMarker.addTo(map);
 		notes[map_path].push(note);
 		noteMarkers[noteKey] = noteMarker;

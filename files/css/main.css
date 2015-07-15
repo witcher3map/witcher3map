@@ -322,7 +322,7 @@ div#info h1 {
 }
 div#info input, div#info textarea {
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
-	color: #AF834E;
+	color: #F0CB0B;
 	background: rgba(0, 0, 0, 0);
 	border: none;
 	width:80%;
@@ -345,6 +345,7 @@ div#info span.label {
 	text-align:right;
 	margin-right:10px;
 	padding-top:2px;
+	font-weight:bold;
 }
 div#info span.top {
 	vertical-align: top;
