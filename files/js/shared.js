@@ -93,7 +93,7 @@ $(document).on("loadShared", function () {
 	};
 
   icons.note_marker = L.icon({
-    iconUrl  : '../files/img/icons/add_marker.png',
+    iconUrl  : '../files/img/icons/note_marker.png',
     iconSize : [20, 30]
   });
 
