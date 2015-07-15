@@ -152,7 +152,7 @@ $(document).on("loadCustom", function() {
 
 	map.on('popupopen', function(e) {
 		deleteCircle();
-		createCircle(e.popup._latlng);
+		createCircle(e.popup._latlng.lat, e.popup._latlng.lng);
 		$('#info-wrap').stop();
 		if (localStorage['sfw'] && e.popup._source._popup._content.match(/prostitute/i)) {
 			$('#info').html('<h1>' + $.t('sidebar.loveInterest') + '</h1>' + $.t('misc.loveInterestDesc'));
@@ -165,16 +165,14 @@ $(document).on("loadCustom", function() {
 		console.log('[' + e.popup._latlng.lat.toFixed(3) + ', ' + e.popup._latlng.lng.toFixed(3) + ']');
 	});
 
-	var createCircle = function(latlng) {
-		var noteKey = getNoteKey(latlng);
-		var lat = latlng.lat.toFixed(3);
-		var long = latlng.lng.toFixed(3);
+	var createCircle = function(lat, lng) {
+		var noteKey = getNoteKey(lat, lng);
 		//only add param and show center button if not a note
-		if(!noteMarkerList[noteKey]) {
-			hash.addParam('m', lat + ',' + long);
+		if(!notes[map_path][getNoteIndex(noteKey)]) {
+			hash.addParam('m', lat + ',' + lng);
 		 	$('#centerButton').show();
 		}
-		circle = L.circleMarker(L.latLng(lat,long), {
+		circle = L.circleMarker(L.latLng(lat, lng), {
 			color: 'red',
 			fillColor: '#f03',
 			fillOpacity: 0.5,
@@ -575,7 +573,12 @@ $(document).on("loadCustom", function() {
 	}, 'Restore Data', 'restoreButton');
 	L.easyBar([backupButton, restoreButton]).addTo(map);
 
-	var noteMarkerList = {};
+	//holds all notes
+	window.notes = {};
+	//holds notes for current map
+	notes[map_path] = [];
+	//holds marker objects for later referencing
+	window.noteMarkers = {};
 	var noteStatus = false;
 	var noteCursorCss = null;
 	L.easyButton('fa-book', function(btn, map) {
@@ -593,9 +596,16 @@ $(document).on("loadCustom", function() {
 		}
 	}, 'Center Highlighted Marker', 'centerButton').addTo(map);
 
-	window.getNoteKey = function (latlng) {
-		return map_path + '-' + latlng.lat.toFixed(3) + '_' + latlng.lng.toFixed(3);
+	window.getNoteKey = function (lat, lng) {
+		return lat.toFixed(3) + '_' + lng.toFixed(3);
 	};
+
+	window.getNoteIndex = function(noteKey) {
+		for(var i=0;i<notes[map_path].length;i++) {
+			if(notes[map_path][i].key == noteKey) return i;
+		}
+		return -1;
+	}
 
 	var startNote = function() {
 		console.log('starting note');
@@ -605,41 +615,42 @@ $(document).on("loadCustom", function() {
 		map.addEventListener('click', addNote);
 	};
 
-	window.updateNote = function(key) {
-		var note = {
-			label: $('#note-'+key+'-label').val(),
-			title: $('#note-'+key+'-title').val(),
-			text: $('#note-'+key+'-text').val()
-		}
-		var marker = noteMarkerList[key];
+	window.saveNote = function(noteKey) {
+		var note = notes[map_path][getNoteIndex(noteKey)];
+		note.label = $('#note-label').val();
+		note.title = $('#note-title').val();
+		note.text = $('#note-text').val();
+		var marker = noteMarkers[note.key];
 		marker.bindLabel(note.label);
-		marker.bindPopup(getNotePopup(key, note));
-		noteMarkerList[key] = marker;
-		console.log('update note done.');
+		marker.bindPopup(getNotePopup(note));
+		noteMarkers[note.key] = marker;
+		console.log('save note done.');
 	};
 
-	window.deleteNote = function(key) {
-		map.removeLayer(noteMarkerList[key]);
-		delete noteMarkerList.key;
+	window.deleteNote = function(noteKey) {
+		map.removeLayer(noteMarkers[noteKey]);
+		notes[map_path].splice(getNoteIndex(noteKey), 1);
+		delete noteMarkers[noteKey];
 		popupClose();
 		console.log('note deleted');
 	};
 
-	var getNotePopup = function(key, note) {
-		note = note || {label:'',title:'',text:''};
-		var popupContent =  "<div><span class=\"label\">Label:</span><input type=\"text\" id=\"note-"+key+"-label\" placeholder=\"Enter map label...\" value=\""+note.label+"\" /></div>";
-		popupContent += "<div><span class=\"label\">Title:</span><input type=\"text\" id=\"note-"+key+"-title\" placeholder=\"Enter note title...\" value=\""+note.title+"\" /></div>";
-		popupContent += "<div><span class=\"label top\">Note:</span><textarea id=\"note-"+key+"-text\" placeholder=\"Enter your note...\">"+note.text+"</textarea></div>"; //You clicked on the map at " + e.latlng.toString()+"
-		popupContent += "<br/><button onclick=\"updateNote('"+key+"')\"><i class=\"fa fa-floppy-o\"></i>&nbsp;Save Note</button>";
-		popupContent += "<button onclick=\"deleteNote('"+key+"')\"><i class=\"fa fa-trash-o\"></i>&nbsp;Delete Note</button>";
+	var getNotePopup = function(note) {
+		var popupContent =  "<div><span class=\"label\">Label:</span><input type=\"text\" id=\"note-label\" placeholder=\"Enter map label...\" value=\""+note.label+"\" /></div>";
+		popupContent += "<div><span class=\"label\">Title:</span><input type=\"text\" id=\"note-title\" placeholder=\"Enter note title...\" value=\""+note.title+"\" /></div>";
+		popupContent += "<div><span class=\"label top\">Note:</span><textarea id=\"note-text\" placeholder=\"Enter your note...\">"+note.text+"</textarea></div>"; //You clicked on the map at " + e.latlng.toString()+"
+		popupContent += "<br/><button onclick=\"saveNote('"+note.key+"')\"><i class=\"fa fa-floppy-o\"></i>&nbsp;Save Note</button>";
+		popupContent += "<button onclick=\"deleteNote('"+note.key+"')\"><i class=\"fa fa-trash-o\"></i>&nbsp;Delete Note</button>";
 		return popupContent;
 	};
 
 	var addNote = function(e) {
-		var key = getNoteKey(e.latlng);
-		var noteMarker = L.marker(e.latlng, setMarker(icons['add_marker'])).bindLabel('New Note').bindPopup(getNotePopup(key)).openPopup();
+		var noteKey = getNoteKey(e.latlng.lat, e.latlng.lng);
+		var note = {key: noteKey, lat: e.latlng.lat, lng: e.latlng.lng, label:'',title:'',text:''};
+		var noteMarker = L.marker(e.latlng, setMarker(icons['add_marker'])).bindPopup(getNotePopup(note)).openPopup();
 		noteMarker.addTo(map);
-		noteMarkerList[key] = noteMarker;
+		notes[map_path].push(note);
+		noteMarkers[noteKey] = noteMarker;
 		endNote();
 		return false;
 	};
