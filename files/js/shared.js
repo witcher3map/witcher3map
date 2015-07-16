@@ -1,5 +1,5 @@
 $(document).on("loadShared", function () {
-		window.createMarker = function (coord, icon, label, popup, dataKey) {
+	window.createMarker = function (coord, icon, label, popup, dataKey) {
 		var mapKey = 'markers-' + map_path + '-hidden';
 		var marker = L.marker(coord, setMarker(icon)).bindLabel(label).bindPopup(popup);
 

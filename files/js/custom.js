@@ -161,6 +161,7 @@ $(document).on("loadCustom", function() {
 		}
 		$('#info').getNiceScroll(0).doScrollTop(0,0);
 		$('#info-wrap').fadeIn('fast');
+		$('#info').i18n();
 		console.log('Popup at:');
 		console.log('[' + e.popup._latlng.lat.toFixed(3) + ', ' + e.popup._latlng.lng.toFixed(3) + ']');
 	});
@@ -612,7 +613,6 @@ $(document).on("loadCustom", function() {
 
 	var backupNotes = function() {
 		localStorage['notes'+map_path] = JSON.stringify(notes[map_path]);
-		console.log('completed backing up notes');
 	};
 
 	window.saveNote = function(noteKey) {
@@ -625,7 +625,6 @@ $(document).on("loadCustom", function() {
 		marker.bindPopup(getNotePopup(note));
 		noteMarkers[note.key] = marker;
 		backupNotes();
-		console.log('save note done.');
 	};
 
 	window.deleteNote = function(noteKey) {
@@ -634,15 +633,14 @@ $(document).on("loadCustom", function() {
 		delete noteMarkers[noteKey];
 		backupNotes();
 		popupClose();
-		console.log('note deleted');
 	};
 
 	var getNotePopup = function(note) {
-		var popupContent =  "<div><span class=\"label\">Label:</span><input type=\"text\" id=\"note-label\" placeholder=\"Enter map label...\" value=\""+note.label+"\" /></div>";
-		popupContent += "<div><span class=\"label\">Title:</span><input type=\"text\" id=\"note-title\" placeholder=\"Enter note title...\" value=\""+note.title+"\" /></div>";
-		popupContent += "<div><span class=\"label top\">Note:</span><textarea id=\"note-text\" placeholder=\"Enter your note...\">"+note.text+"</textarea></div>"; //You clicked on the map at " + e.latlng.toString()+"
-		popupContent += "<br/><button onclick=\"saveNote('"+note.key+"')\"><i class=\"fa fa-floppy-o\"></i>&nbsp;Save Note</button>";
-		popupContent += "<button onclick=\"deleteNote('"+note.key+"')\"><i class=\"fa fa-trash-o\"></i>&nbsp;Delete Note</button>";
+		var popupContent =  "<div><span class=\"label\" data-i18n=\"notes.label\"></span><input type=\"text\" id=\"note-label\" data-i18n=\"[placeholder]notes.enterLabel\" value=\""+note.label+"\" /></div>";
+		popupContent += "<div><span class=\"label\" data-i18n=\"notes.title\"></span><input type=\"text\" id=\"note-title\" data-i18n=\"[placeholder]notes.enterTitle\" value=\""+note.title+"\" /></div>";
+		popupContent += "<div><span class=\"label top\" data-i18n=\"notes.note\"></span><textarea id=\"note-text\" data-i18n=\"[placeholder]notes.enterText\">"+note.text+"</textarea></div>";
+		popupContent += "<br/><button onclick=\"saveNote('"+note.key+"')\"><i class=\"fa fa-floppy-o\"></i>&nbsp;<span data-i18n=\"notes.saveNote\"></span></button>";
+		popupContent += "<button onclick=\"deleteNote('"+note.key+"')\"><i class=\"fa fa-trash-o\"></i>&nbsp;<span data-i18n=\"notes.deleteNote\"></span></button>";
 		return popupContent;
 	};
 
@@ -664,10 +662,10 @@ $(document).on("loadCustom", function() {
 	};
 
 	var endNote = function() {
-		console.log('stopping note');
 		noteStatus = false;
 		$('.leaflet-container').css('cursor', noteCursorCss);
 		map.removeEventListener('click');
+		console.log('stopping note');
 	};
 
 	//create saved notes on load
