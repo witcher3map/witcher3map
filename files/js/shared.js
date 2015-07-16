@@ -1,5 +1,5 @@
 $(document).on("loadShared", function () {
-    window.createMarker = function (coord, icon, label, popup, dataKey) {
+	window.createMarker = function (coord, icon, label, popup, dataKey) {
 		var mapKey = 'markers-' + map_path + '-hidden';
 		var marker = L.marker(coord, setMarker(icon)).bindLabel(label).bindPopup(popup);
 
@@ -64,6 +64,7 @@ $(document).on("loadShared", function () {
 	window.markers = {};
 	window.invisibleMarkers = {};
 	window.markerCount = {};
+	window.notes = {};
 
 	var icons = window.icons;
 	var markers = window.markers;
@@ -76,6 +77,12 @@ $(document).on("loadShared", function () {
 			localStorage[mapKey] = JSON.stringify([]);
 		}
 		invisibleMarkers[mapKey] = JSON.parse(localStorage[mapKey]);
+
+		var notesKey = 'notes'+map_path;
+		if(!localStorage[notesKey]) {
+			localStorage[notesKey] = JSON.stringify([]);
+		}
+		notes[map_path] = JSON.parse(localStorage[notesKey]);
 
 		Object.keys(data).forEach(function (dataKey) {
 			var items = data[dataKey];
@@ -91,6 +98,11 @@ $(document).on("loadShared", function () {
 			markers[dataKey] = L.layerGroup(groupItems);
 		});
 	};
+
+	icons.note_marker = L.icon({
+		iconUrl  : '../files/img/icons/note_marker.png',
+		iconSize : [20, 30]
+	});
 
 	icons.abandoned = L.icon({
 		iconUrl  : '../files/img/icons/abandoned.png',
