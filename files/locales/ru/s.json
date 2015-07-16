@@ -101,7 +101,13 @@
       "jarlMadmanLugos":"Ярл Лугос Безумный",
       "mastercraftedFelineArmor":"Чертеж: мастерский доспех Школы Кота",
       "mastercraftedFelineSteelSword":"Чертеж: мастерский стальной меч Школы Кота",
-      "mastercraftedFelineSilverSword":"Чертеж: мастерский серебряный меч Школы Кота"
+      "mastercraftedFelineSilverSword":"Чертеж: мастерский серебряный меч Школы Кота",
+      "mastercraftedWolvenGauntlets":"Чертеж: мастерские перчатки Школы Волка",
+      "mastercraftedWolvenTrousers":"Чертеж: мастерские штаны Школы Волка",
+      "mastercraftedWolvenBoots":"Чертеж: мастерские сапоги Школы Волка",
+      "superiorWolvenSteelSword":"Чертеж: отличный стальной меч Школы Волка",
+      "superiorWolvenSilverSword":"Чертеж: отличный серебряный меч Школы Волка",
+      "superiorWolvenArmor":"Чертеж: отличный доспех Школы Волка"
     },
     "popupTitle":{
       "ursineSteelSword":"Чертеж: стальной меч Школы Медведя",
@@ -119,7 +125,13 @@
       "jarlMadmanLugos":"Ярл Лугос Безумный",
       "mastercraftedFelineArmor":"Чертеж: мастерский доспех Школы Кота",
       "mastercraftedFelineSteelSword":"Чертеж: мастерский стальной меч Школы Кота",
-      "mastercraftedFelineSilverSword":"Чертеж: мастерский серебряный меч Школы Кота"
+      "mastercraftedFelineSilverSword":"Чертеж: мастерский серебряный меч Школы Кота",
+      "mastercraftedWolvenGauntlets":"Чертеж: мастерские перчатки Школы Волка",
+      "mastercraftedWolvenTrousers":"Чертеж: мастерские штаны Школы Волка",
+      "mastercraftedWolvenBoots":"Чертеж: мастерские сапоги Школы Волка",
+      "superiorWolvenSteelSword":"Чертеж: отличный стальной меч Школы Волка",
+      "superiorWolvenSilverSword":"Чертеж: отличный серебряный меч Школы Волка",
+      "superiorWolvenArmor":"Чертеж: отличный доспех Школы Волка"
     },
     "desc":{
       "juttaAnDimun":"Нет описания",
@@ -138,7 +150,10 @@
       "jarlMadmanLugos":"Можно выиграть карту \"Катакан\" по заданию (Гвинт: игра по-скеллигски)",
       "mastercraftedFelineArmor":"Войдите в рассадник чудовищ на южном побережье острова Фареры. Далее идите налево. В сундуке лежат чертежи на мастерский доспех, перчатки, штаны, сапоги Школы Кота.",
       "mastercraftedFelineSteelSword":"При входе в логово монстров, идите влево на лестницу, подымаясь по ней вы заметите небольшую дыру в стене слева. Чертёж в  сундуке.",
-      "mastercraftedFelineSilverSword":"Войдя в рассадник чудовищ, идите вправо, разрушите стену с помощью знака Аард и следуйте до самого конца.  Чертеж будет в сундуке."
+      "mastercraftedFelineSilverSword":"Войдя в рассадник чудовищ, идите вправо, разрушите стену с помощью знака Аард и следуйте до самого конца.  Чертеж будет в сундуке.",
+      "mastercraftedWolvenTrousers":"Вы должны забраться на стену старой сторожевой башни.",
+      "superiorWolvenSteelSword":"Идите вниз в катакомбы и зайдите в комнату, заполненную отравляющим газом.",
+      "superiorWolvenArmor":"Вам нужно подняться на второй этаж крепости."
     }
   },
   "pop":{
