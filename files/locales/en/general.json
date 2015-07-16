@@ -10,16 +10,6 @@
 		"resultsFound": "result(s) found.",
 		"searchPlaceholder": "Enter search terms..."
 	},
-	"notes": {
-		"label": "Label:",
-		"title": "Title:",
-		"note": "Note:",
-		"enterLabel": "Enter map label...",
-		"enterTitle": "Enter note title...",
-		"enterText": "Enter note text...",
-		"saveNote": "Save Note",
-		"deleteNote": "Delete Note"
-	},
 	"sidebar": {
 		"returnToMapSelection": "Return to Map Selection Page",
 		"alchemy": "Alchemy Supplies",
