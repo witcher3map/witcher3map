@@ -65,8 +65,8 @@ $(document).on("loadCustom", function() {
 		}).addTo(map);
 	};
 
-	new L.Control.Zoom({ position: 'topright' }).addTo(map);
-	new L.Control.Fullscreen({ position: 'topright' }).addTo(map);
+	new L.Control.Zoom({ position: 'topright', zoomInTitle: $.t('controls.zoomInButton'), zoomOutTitle: $.t('controls.zoomOutButton')}).addTo(map);
+	new L.Control.Fullscreen({ position: 'topright', title: { 'false': $.t('controls.viewFullscreenButton'), 'true': $.t('controls.exitFullscreenButton')}}).addTo(map);
 	var hash = new L.Hash(map);
 	var bounds = new L.LatLngBounds(window.map_sWest, window.map_nEast);
 	map.setMaxBounds(bounds);
@@ -96,6 +96,7 @@ $(document).on("loadCustom", function() {
 			position     : 'topright',
 			autoCollapse : false,
 			zoom         : 5,
+			text         : $.t('controls.searchButton'),
 			filterJSON   : function(json){ return json; },
 			callData     : function(text, callResponse) {
 				callResponse($.grep(searchData, function(data) {
@@ -568,10 +569,10 @@ $(document).on("loadCustom", function() {
 
 	var backupButton = L.easyButton('fa-floppy-o', function(btn, map) {
 		backupData();
-	}, 'Backup Data');
+	}, $.t('controls.backupDataButton'));
 	var restoreButton = L.easyButton('fa-upload', function(btn, map) {
 		showRestore();
-	}, 'Restore Data', 'restoreButton');
+	}, $.t('controls.restoreDataButton'), 'restoreButton');
 	L.easyBar([backupButton, restoreButton]).addTo(map);
 
 	window.noteMarkers = {};
@@ -580,7 +581,7 @@ $(document).on("loadCustom", function() {
 	L.easyButton('fa-book', function(btn, map) {
 		if(!noteStatus) startNote();
 		else endNote();
-	}, 'Add Note', 'noteButton').addTo(map);
+	}, $.t('controls.addNoteButton'), 'noteButton').addTo(map);
 
 	L.easyButton('fa-crosshairs', function(btn, map) {
 		hashParams = hash.getHashParams();
@@ -590,7 +591,7 @@ $(document).on("loadCustom", function() {
 		} else {
 			map.setView(map_center);
 		}
-	}, 'Center Highlighted Marker', 'centerButton').addTo(map);
+	}, $.t('controls.centerMarkerButton'), 'centerButton').addTo(map);
 
 	window.getNoteKey = function (lat, lng) {
 		return lat.toFixed(3) + '_' + lng.toFixed(3);
