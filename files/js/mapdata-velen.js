@@ -414,7 +414,7 @@ $(document).on("loadMapdata", function () {
 		}, { // NW Velen
 			coords: [[4.193, -82.463]],
 			label: $.t("guarded.label"),
-			popup: 'Available after the \'Master Armorers\' (lvl 26) quest. ' + $.t("guarded.desc", {monster: ""})
+			popup: 'Available after the \'Master Armorers\' (lvl 26) quest. ' + $.t("guarded.desc", {monster: "(lvl 19 <span>" + $.t("v:monsters.cyclops") + "</span>)"})
 		}, {
 			coords: [[-62.39, -118.17]],
 			label: $.t("guarded.label"),
