@@ -325,8 +325,10 @@ div#info input, div#info textarea {
 	color: #F0CB0B;
 	background: rgba(0, 0, 0, 0);
 	border: none;
-	width:80%;
+	width:100%;
 	font-size:18px;
+	padding-left:10px;
+	display:table-cell;
 }
 div#info button {
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
@@ -339,16 +341,18 @@ div#info button {
 	font-size:18px;
 	cursor:pointer;
 }
-div#info span.label {
-	float:left;
-	width:50px;
-	text-align:right;
-	margin-right:10px;
-	padding-top:2px;
+div#info div.note-row {
+	width:100%;
+	display:table;
+}
+div#info label.label {
+	display:table-cell;
+	width:1px;
 	font-weight:bold;
 }
-div#info span.top {
+div#info label.top {
 	vertical-align: top;
+	padding-top: 4px;
 }
 div#info.hideMonsters span {
 	display: none;
