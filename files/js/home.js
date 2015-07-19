@@ -16,7 +16,7 @@ var options = {
 	fallbackLng: 'en',
 	resGetPath: 'files/locales/__lng__/__ns__.json',
 	useDataAttrOptions: true,
-	lngWhitelist: [ 'de', 'en', 'ru' ]
+	lngWhitelist: [ 'en', 'de', 'ru', 'pl', 'fr' ]
 };
 
 //i18n init to translate search results

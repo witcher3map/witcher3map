@@ -414,7 +414,7 @@ $(document).on("loadMapdata", function () {
 		}, { // NW Velen
 			coords: [[4.193, -82.463]],
 			label: $.t("guarded.label"),
-			popup: 'Available after the \'Master Armorers\' (lvl 26) quest. ' + $.t("guarded.desc", {monster: ""})
+			popup: 'Available after the \'Master Armorers\' (lvl 26) quest. ' + $.t("guarded.desc", {monster: "(lvl 19 <span>" + $.t("v:monsters.cyclops") + "</span>)"})
 		}, {
 			coords: [[-62.39, -118.17]],
 			label: $.t("guarded.label"),
@@ -799,7 +799,7 @@ $(document).on("loadMapdata", function () {
 		}, {
 			coords: [[47.72, 38.50]],
 			label: $.t("hidden.label"),
-			popup: $.t("hidden.guarded", {monster: 'lvl 26+ <span>' + $.t("v:monsters.basilisk") + '</span>'})
+			popup: $.t("hidden.guarded", {monster: 'lvl 32 <span>' + $.t("v:monsters.basilisk") + '</span>'})
 		}, { // NW Velen
 			coords: [[-50.76, -155.04]],
 			label: $.t("hidden.label"),
@@ -819,7 +819,7 @@ $(document).on("loadMapdata", function () {
 		}, { // SW Velen
 			coords: [[-70.50, -150.64]],
 			label: $.t("hidden.label"),
-			popup: $.t("hidden.guarded", {monster: 'lvl 25+ <span>' + $.t("v:monsters.hag.grave") + '</span>'})
+			popup: $.t("hidden.guarded", {monster: 'lvl 28 <span>' + $.t("v:monsters.hag.grave") + '</span>'})
 		}, {
 			coords: [[-72.78, -131.40]],
 			label: $.t("hidden.label"),
