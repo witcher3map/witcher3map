@@ -73,6 +73,7 @@
 		"restoreDataButton": "Restore Data",
 		"centerMarkerButton": "Center Highlighted Marker",
 		"addNoteButton": "Add Note",
+		"cancelNoteButton": "Cancel Note",
 		"viewFullscreenButton": "View Fullscreen",
 		"exitFullscreenButton": "Exit Fullscreen"
 	},

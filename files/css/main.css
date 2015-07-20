@@ -194,6 +194,9 @@ ul.controls {
 ul.key  li.none {
 	cursor: default;
 }
+.activeEasyButton {
+	background-color: rgba(128,128,128,0.5) !important;
+}
 div#note {
 	background: url('../img/paperfull.png') no-repeat;
 	color: #000;

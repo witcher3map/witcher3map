@@ -579,8 +579,12 @@ $(document).on("loadCustom", function() {
 	var noteStatus = false;
 	var noteCursorCss = null;
 	L.easyButton('fa-book', function(btn, map) {
-		if(!noteStatus) startNote();
-		else endNote();
+		if(!noteStatus) {
+			startNote();
+		}
+		else {
+			endNote();
+		}
 	}, $.t('controls.addNoteButton'), 'noteButton').addTo(map);
 
 	L.easyButton('fa-crosshairs', function(btn, map) {
@@ -606,6 +610,7 @@ $(document).on("loadCustom", function() {
 
 	var startNote = function() {
 		console.log('starting note');
+		$('#noteButton').attr('title', $.t('controls.cancelNoteButton')).addClass('activeEasyButton');
 		noteStatus = true;
 		noteCursorCss = $('.leaflet-container').css('cursor');
 		$('.leaflet-container').css('cursor', 'crosshair');
@@ -663,6 +668,7 @@ $(document).on("loadCustom", function() {
 	};
 
 	var endNote = function() {
+		$('#noteButton').attr('title', $.t('controls.addNoteButton')).removeClass('activeEasyButton');
 		noteStatus = false;
 		$('.leaflet-container').css('cursor', noteCursorCss);
 		map.removeEventListener('click');
