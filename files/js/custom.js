@@ -611,6 +611,7 @@ $(document).on("loadCustom", function() {
 	var startNote = function() {
 		console.log('starting note');
 		$('#noteButton').attr('title', $.t('controls.cancelNoteButton')).addClass('activeEasyButton');
+		$(document).keyup(escapeCancelNote);
 		noteStatus = true;
 		noteCursorCss = $('.leaflet-container').css('cursor');
 		$('.leaflet-container').css('cursor', 'crosshair');
@@ -658,6 +659,12 @@ $(document).on("loadCustom", function() {
 		noteMarkers[note.key] = noteMarker;
 	};
 
+	var escapeCancelNote = function(e) {
+		if(e.keyCode === 27) {
+			endNote();
+		}
+	};
+
 	var addNote = function(e) {
 		var note = {key: getNoteKey(e.latlng.lat, e.latlng.lng), lat: e.latlng.lat, lng: e.latlng.lng, label:'',title:'',text:''};
 		createNote(note);
@@ -669,6 +676,7 @@ $(document).on("loadCustom", function() {
 
 	var endNote = function() {
 		$('#noteButton').attr('title', $.t('controls.addNoteButton')).removeClass('activeEasyButton');
+		$(document).unbind("keyup", escapeCancelNote);
 		noteStatus = false;
 		$('.leaflet-container').css('cursor', noteCursorCss);
 		map.removeEventListener('click');
