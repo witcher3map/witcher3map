@@ -101,7 +101,7 @@ $(document).on("loadShared", function () {
 
 	icons.note_marker = L.icon({
 		iconUrl  : '../files/img/icons/note_marker.png',
-		iconSize : [20, 30]
+		iconSize : [23, 28]
 	});
 
 	icons.abandoned = L.icon({
