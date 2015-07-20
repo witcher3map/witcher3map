@@ -570,7 +570,7 @@ $(document).on("loadCustom", function() {
 		});
 	};
 
-	var backupButton = L.easyButton('fa-floppy-o', function(btn, map) {
+	var backupButton = L.easyButton('fa-download', function(btn, map) {
 		backupData();
 	}, $.t('controls.backupDataButton'));
 	var restoreButton = L.easyButton('fa-upload', function(btn, map) {
