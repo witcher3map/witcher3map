@@ -194,9 +194,6 @@ ul.controls {
 ul.key  li.none {
 	cursor: default;
 }
-.activeEasyButton {
-	background-color: rgba(128,128,128,0.5) !important;
-}
 div#note {
 	background: url('../img/paperfull.png') no-repeat;
 	color: #000;
@@ -323,7 +320,10 @@ div#info h1 {
 	padding: 10px 0 5px 0;
 	font-size: 20px;
 }
-div#info input, div#info textarea {
+.activeEasyButton {
+	background-color: rgba(128,128,128,0.5) !important;
+}
+div#note-popup input, div#note-popup textarea {
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
 	color: #F0CB0B;
 	background: rgba(0, 0, 0, 0);
@@ -333,7 +333,7 @@ div#info input, div#info textarea {
 	padding-left:10px;
 	display:table-cell;
 }
-div#info button {
+div#note-popup button {
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
 	color:#000000;
 	background-color:#97702F;
@@ -344,16 +344,19 @@ div#info button {
 	font-size:18px;
 	cursor:pointer;
 }
-div#info div.note-row {
+div#note-popup button:disabled {
+	opacity: 0.5;
+}
+div#note-popup div.note-row {
 	width:100%;
 	display:table;
 }
-div#info label.label {
+div#note-popup label.label {
 	display:table-cell;
 	width:1px;
 	font-weight:bold;
 }
-div#info label.top {
+div#note-popup label.top {
 	vertical-align: top;
 	padding-top: 4px;
 }
