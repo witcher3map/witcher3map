@@ -153,7 +153,10 @@
 			"mastercraftedFelineSilverSword": "Enter the monster den, go to the right and the wall crumbles.  The diagram is in a chest right there.",
 			"mastercraftedWolvenTrousers": "You must climb the wall of the old watchtower.",
 			"superiorWolvenSteelSword": "Going down to the catacomb and enter a room filled with poison gas",
-			"superiorWolvenArmor": "You need to get to the second floor of the fortress"
+			"superiorWolvenArmor": "You need to get to the second floor of the fortress",
+			"mastercraftedWolvenBoots": "",
+			"mastercraftedWolvenGauntlets": "",
+			"superiorWolvenSilverSword": ""
 		}
 	},
 	"pop": {
