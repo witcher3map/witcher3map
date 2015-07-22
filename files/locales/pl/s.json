@@ -107,7 +107,10 @@
       "mastercraftedWolvenBoots":"Mistrzowskie buty wiedźmińskiej szkoły wilka",
       "superiorWolvenSteelSword":"Wyśmienity stalowy miecz wiedźmińskiej szkoły wilka",
       "superiorWolvenSilverSword":"Wyśmienity srebrny miecz wiedźmińskiej szkoły wilka",
-      "superiorWolvenArmor":"Wyśmienita zbroja wiedźmińskiej szkoły wilka"
+      "superiorWolvenArmor":"Wyśmienita zbroja wiedźmińskiej szkoły wilka",
+      "mastercraftedWolvenBoots": "",
+      "mastercraftedWolvenGauntlets": "",
+      "superiorWolvenSilverSword": ""
     },
     "popupTitle":{
       "ursineSteelSword":"Schemat: Srebrny miecz wiedźmińskiej szkoły niedźwiedzia",
