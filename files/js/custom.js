@@ -65,8 +65,8 @@ $(document).on("loadCustom", function() {
 		}).addTo(map);
 	};
 
-	new L.Control.Zoom({ position: 'topright' }).addTo(map);
-	new L.Control.Fullscreen({ position: 'topright' }).addTo(map);
+	new L.Control.Zoom({ position: 'topright', zoomInTitle: $.t('controls.zoomInButton'), zoomOutTitle: $.t('controls.zoomOutButton')}).addTo(map);
+	new L.Control.Fullscreen({ position: 'topright', title: { 'false': $.t('controls.viewFullscreenButton'), 'true': $.t('controls.exitFullscreenButton')}}).addTo(map);
 	var hash = new L.Hash(map);
 	var bounds = new L.LatLngBounds(window.map_sWest, window.map_nEast);
 	map.setMaxBounds(bounds);
@@ -96,6 +96,7 @@ $(document).on("loadCustom", function() {
 			position     : 'topright',
 			autoCollapse : false,
 			zoom         : 5,
+			text         : $.t('controls.searchButton'),
 			filterJSON   : function(json){ return json; },
 			callData     : function(text, callResponse) {
 				callResponse($.grep(searchData, function(data) {
@@ -150,14 +151,9 @@ $(document).on("loadCustom", function() {
 
 	$('.leaflet-marker-icon').on('contextmenu',function(e){ return false; });
 
-	map.on('click', function(e) {
-		console.log('Clicked at:');
-		console.log('[' + e.latlng.lat.toFixed(3) + ', ' + e.latlng.lng.toFixed(3) + ']');
-	});
-
 	map.on('popupopen', function(e) {
 		deleteCircle();
-		createCircle(e.popup._latlng.lat.toFixed(3),e.popup._latlng.lng.toFixed(3));
+		createCircle(e.popup._latlng.lat, e.popup._latlng.lng);
 		$('#info-wrap').stop();
 		if (localStorage['sfw'] && e.popup._source._popup._content.match(/prostitute/i)) {
 			$('#info').html('<h1>' + $.t('sidebar.loveInterest') + '</h1>' + $.t('misc.loveInterestDesc'));
@@ -166,19 +162,26 @@ $(document).on("loadCustom", function() {
 		}
 		$('#info').getNiceScroll(0).doScrollTop(0,0);
 		$('#info-wrap').fadeIn('fast');
+		if ($('#info').html().indexOf('class="note-row"') > -1) {
+			notePopupStart();
+		}
 		console.log('Popup at:');
 		console.log('[' + e.popup._latlng.lat.toFixed(3) + ', ' + e.popup._latlng.lng.toFixed(3) + ']');
 	});
 
-	var createCircle = function(lat, long) {
-		hash.addParam('m', lat + ',' + long);
-		circle = L.circleMarker(L.latLng(lat,long), {
+	var createCircle = function(lat, lng) {
+		var noteKey = getNoteKey(lat, lng);
+		//only add param and show center button if not a note
+		if(!notes[map_path][getNoteIndex(noteKey)]) {
+			hash.addParam('m', lat + ',' + lng);
+		 	$('#centerButton').show();
+		}
+		circle = L.circleMarker(L.latLng(lat, lng), {
 			color: 'red',
 			fillColor: '#f03',
 			fillOpacity: 0.5,
 			radius: 20
 		}).addTo(map);
-		$('#centerButton').show();
 	};
 
 	var deleteCircle = function() {
@@ -189,12 +192,17 @@ $(document).on("loadCustom", function() {
 		}
 	};
 
-	map.on('popupclose', function(e) {
+	var popupClose = function() {
 		$('#info-wrap').fadeOut('fast', function() {
 			$('#info').html('');
 			deleteCircle();
 			map.closePopup();
 		});
+	};
+
+	map.on('popupclose', function(e) {
+		popupClose();
+		if(notePopupOpen) notePopupEnd();
 	});
 
 	if (localStorage['markers-' + window.map_path]) {
@@ -206,7 +214,7 @@ $(document).on("loadCustom", function() {
 		});
 	}
 
-  $('ul.key:not(.controls) li:not(.none) i').each(function(i, e) {
+	$('ul.key:not(.controls) li:not(.none) i').each(function(i, e) {
 		var marker = $(this).attr('class');
 		var pill = $("<div class='pill'>"+window.markerCount[marker]+"</div>");
 		$(this).next().after(pill);
@@ -562,13 +570,26 @@ $(document).on("loadCustom", function() {
 		});
 	};
 
-	var backupButton = L.easyButton('fa-floppy-o', function(btn, map) {
+	var backupButton = L.easyButton('fa-download', function(btn, map) {
 		backupData();
-	}, 'Backup Data');
+	}, $.t('controls.backupDataButton'));
 	var restoreButton = L.easyButton('fa-upload', function(btn, map) {
 		showRestore();
-	}, 'Restore Data', 'restoreButton');
+	}, $.t('controls.restoreDataButton'), 'restoreButton');
 	L.easyBar([backupButton, restoreButton]).addTo(map);
+
+	window.noteMarkers = {};
+	var noteStatus = false;
+	var noteCursorCss = null;
+	var notePopupOpen = false;
+	L.easyButton('fa-book', function(btn, map) {
+		if(!noteStatus) {
+			startNote();
+		}
+		else {
+			endNote();
+		}
+	}, $.t('controls.addNoteButton'), 'noteButton').addTo(map);
 
 	L.easyButton('fa-crosshairs', function(btn, map) {
 		hashParams = hash.getHashParams();
@@ -578,7 +599,109 @@ $(document).on("loadCustom", function() {
 		} else {
 			map.setView(map_center);
 		}
-	}, 'Center Highlighted Marker', 'centerButton').addTo(map);
+	}, $.t('controls.centerMarkerButton'), 'centerButton').addTo(map);
+
+	window.getNoteKey = function (lat, lng) {
+		return lat.toFixed(3) + '_' + lng.toFixed(3);
+	};
+
+	window.getNoteIndex = function(noteKey) {
+		for(var i=0;i<notes[map_path].length;i++) {
+			if(notes[map_path][i].key == noteKey) return i;
+		}
+		return -1;
+	}
+
+	var startNote = function() {
+		console.log('starting note');
+		$('#noteButton').attr('title', $.t('controls.cancelNoteButton')).addClass('activeEasyButton');
+		$(document).on('keyup.addnote', function(e) {
+			if(e.keyCode === 27) endNote();
+		});
+		noteStatus = true;
+		noteCursorCss = $('.leaflet-container').css('cursor');
+		$('.leaflet-container').css('cursor', 'crosshair');
+		map.addEventListener('click', addNote);
+	};
+
+	var backupNotes = function() {
+		localStorage['notes'+map_path] = JSON.stringify(notes[map_path]);
+	};
+
+	window.saveNote = function(noteKey) {
+		var note = notes[map_path][getNoteIndex(noteKey)];
+		note.label = $('#note-label').val();
+		note.title = $('#note-title').val();
+		note.text = $('#note-text').val();
+		var marker = noteMarkers[note.key];
+		marker.bindLabel(note.label);
+		marker.bindPopup(getNotePopup(note));
+		noteMarkers[note.key] = marker;
+		backupNotes();
+		$('#note-save').attr('disabled', true);
+	};
+
+	window.deleteNote = function(noteKey) {
+		map.removeLayer(noteMarkers[noteKey]);
+		notes[map_path].splice(getNoteIndex(noteKey), 1);
+		delete noteMarkers[noteKey];
+		backupNotes();
+		popupClose();
+	};
+
+	var getNotePopup = function(note) {
+		var popupContent =  "<div id=\"note-popup\"><div class=\"note-row\"><label for=\"note-label\" class=\"label\" data-i18n=\"notes.label\"></label><input type=\"text\" id=\"note-label\" data-i18n=\"[placeholder]notes.enterLabel\" value=\""+note.label+"\" /></div>";
+		popupContent += "<div class=\"note-row\"><label for=\"note-title\" class=\"label\" data-i18n=\"notes.title\"></label><input type=\"text\" id=\"note-title\" data-i18n=\"[placeholder]notes.enterTitle\" value=\""+note.title+"\" /></div>";
+		popupContent += "<div class=\"note-row\"><label for=\"note-text\" class=\"label top\" data-i18n=\"notes.note\"></label><textarea id=\"note-text\" data-i18n=\"[placeholder]notes.enterText\">"+note.text+"</textarea></div>";
+		popupContent += "<div><button id=\"note-save\" onclick=\"saveNote('"+note.key+"')\" disabled><i class=\"fa fa-floppy-o\"></i>&nbsp;<span data-i18n=\"notes.saveNote\"></span></button>";
+		popupContent += "<button onclick=\"deleteNote('"+note.key+"')\"><i class=\"fa fa-trash-o\"></i>&nbsp;<span data-i18n=\"notes.deleteNote\"></span></button></div></div>";
+		return popupContent;
+	};
+
+	var createNote = function(note) {
+		var noteMarker = null;
+		if(note.label && note.label != '') noteMarker = L.marker(L.latLng(note.lat, note.lng), setMarker(icons['note_marker'])).bindLabel(note.label).bindPopup(getNotePopup(note)).openPopup();
+		else noteMarker = L.marker(L.latLng(note.lat, note.lng), setMarker(icons['note_marker'])).bindPopup(getNotePopup(note)).openPopup();
+		noteMarker.addTo(map);
+		noteMarkers[note.key] = noteMarker;
+	};
+
+	var addNote = function(e) {
+		var note = {key: getNoteKey(e.latlng.lat, e.latlng.lng), lat: e.latlng.lat, lng: e.latlng.lng, label:'',title:'',text:''};
+		createNote(note);
+		notes[map_path].push(note);
+		backupNotes();
+		endNote();
+		return false;
+	};
+
+	var endNote = function() {
+		$('#noteButton').attr('title', $.t('controls.addNoteButton')).removeClass('activeEasyButton');
+		$(document).off('keyup.addnote');
+		noteStatus = false;
+		$('.leaflet-container').css('cursor', noteCursorCss);
+		map.removeEventListener('click');
+		console.log('stopping note');
+	};
+
+	var notePopupStart = function() {
+		notePopupOpen = true;
+		$('#info').i18n();
+		$('#note-label, #note-title, #note-text').on('keyup.notechange', function() {
+			$('#note-save').attr('disabled', false);
+		});
+		console.log('note popup started!');
+	};
+
+	var notePopupEnd = function() {
+		$('#note-label, #note-title, #note-text').off('keyup.notechange');
+		console.log('note popup ended!');
+	};
+
+	//create saved notes on load
+	for(var i=0;i<notes[map_path].length;i++) {
+		createNote(notes[map_path][i]);
+	}
 
 	var hashParams = hash.getHashParams();
 	if(hashParams) {

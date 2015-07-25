@@ -320,12 +320,45 @@ div#info h1 {
 	padding: 10px 0 5px 0;
 	font-size: 20px;
 }
-div#info input {
+.activeEasyButton {
+	background-color: rgba(128,128,128,0.5) !important;
+}
+div#note-popup input, div#note-popup textarea {
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
-	color: #AF834E;
+	color: #F0CB0B;
 	background: rgba(0, 0, 0, 0);
 	border: none;
-	width:80%;
+	width:100%;
+	font-size:18px;
+	padding-left:10px;
+	display:table-cell;
+}
+div#note-popup button {
+	font-family: 'PFDinTextCondPro', Arial, sans-serif;
+	color:#000000;
+	background-color:#97702F;
+	border-color:#B08948;
+	margin-left:5px;
+	padding:2px 3px 0px 4px;
+	border-radius:7px;
+	font-size:18px;
+	cursor:pointer;
+}
+div#note-popup button:disabled {
+	opacity: 0.5;
+}
+div#note-popup div.note-row {
+	width:100%;
+	display:table;
+}
+div#note-popup label.label {
+	display:table-cell;
+	width:1px;
+	font-weight:bold;
+}
+div#note-popup label.top {
+	vertical-align: top;
+	padding-top: 4px;
 }
 div#info.hideMonsters span {
 	display: none;

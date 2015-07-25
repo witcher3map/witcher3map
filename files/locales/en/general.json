@@ -10,6 +10,16 @@
 		"resultsFound": "result(s) found.",
 		"searchPlaceholder": "Enter search terms..."
 	},
+	"notes": {
+		"label": "Label:",
+		"title": "Title:",
+		"note": "Note:",
+		"enterLabel": "Enter map label...",
+		"enterTitle": "Enter note title...",
+		"enterText": "Enter note text...",
+		"saveNote": "Save Note",
+		"deleteNote": "Delete Note"
+	},
 	"sidebar": {
 		"returnToMapSelection": "Return to Map Selection Page",
 		"alchemy": "Alchemy Supplies",
@@ -55,7 +65,17 @@
 		"backupLoad": "Restore your settings:",
 		"backupLoadSuccess": "Data Restore Complete!",
 		"backupLoadFail": "Restore failed, double-check your file",
-		"backupHtmlFail": "Sorry.  Restore is not possible.  This browser does not support HTML5 File APIs."
+		"backupHtmlFail": "Sorry.  Restore is not possible.  This browser does not support HTML5 File APIs.",
+		"zoomInButton": "Zoom In",
+		"zoomOutButton": "Zoom Out",
+		"searchButton": "Search...",
+		"backupDataButton": "Backup Data",
+		"restoreDataButton": "Restore Data",
+		"centerMarkerButton": "Center Highlighted Marker",
+		"addNoteButton": "Add Note",
+		"cancelNoteButton": "Cancel Note",
+		"viewFullscreenButton": "View Fullscreen",
+		"exitFullscreenButton": "Exit Fullscreen"
 	},
 	"credits": {
 		"botCreated": "Created by __untamed0__, licensed under __license__",
