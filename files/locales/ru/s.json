@@ -131,7 +131,10 @@
       "mastercraftedWolvenBoots":"Чертеж: мастерские сапоги Школы Волка",
       "superiorWolvenSteelSword":"Чертеж: отличный стальной меч Школы Волка",
       "superiorWolvenSilverSword":"Чертеж: отличный серебряный меч Школы Волка",
-      "superiorWolvenArmor":"Чертеж: отличный доспех Школы Волка"
+      "superiorWolvenArmor":"Чертеж: отличный доспех Школы Волка",
+      "mastercraftedWolvenBoots": "",
+      "mastercraftedWolvenGauntlets": "",
+      "superiorWolvenSilverSword": ""
     },
     "desc":{
       "juttaAnDimun":"Нет описания",

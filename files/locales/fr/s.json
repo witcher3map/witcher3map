@@ -153,7 +153,10 @@
       "mastercraftedFelineSilverSword":"Entrez dans l'antre du monstre, tournez à droite et le mur s'effondrera. Le schéma est dans le coffre..",
       "mastercraftedWolvenTrousers":"Vous devez escalader le mur de l'ancienne tour de garde.",
       "superiorWolvenSteelSword":"Descendez dans les catacombes et entrez dans une pièce remplie de gaz toxique",
-      "superiorWolvenArmor":"Vous l'obtiendrez au deuxième étage de la forteresse"
+      "superiorWolvenArmor":"Vous l'obtiendrez au deuxième étage de la forteresse",
+      "mastercraftedWolvenBoots": "",
+      "mastercraftedWolvenGauntlets": "",
+      "superiorWolvenSilverSword": ""
     }
   },
   "pop":{
