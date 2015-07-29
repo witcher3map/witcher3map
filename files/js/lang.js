@@ -62,6 +62,6 @@
 	$('.dd-selected').on('click', function() {
 		setTimeout(function() {
 				$("#sidebar").getNiceScroll().resize();
-		}, 300);
+		}, 500);
 	});
 })();
