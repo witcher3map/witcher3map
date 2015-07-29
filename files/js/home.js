@@ -4,10 +4,6 @@ if (localStorage['lang'] == null) {
 	localStorage['lang'] = lang;
 }
 
-window.changeLang = function(lang) {
-	localStorage['lang'] = lang;
-};
-
 var options = {
 	debug: false,
 	getAsync: true,
@@ -59,6 +55,26 @@ $.i18n.init(options, function() {
 	});
 });
 
+window.changeLang = function(lang) {
+	localStorage['lang'] = lang;
+	$.i18n.setLng(lang, function() { $(document).i18n(); });
+};
+
+var languageOptions = [
+	{text: "English",value: "en",selected: (localStorage['lang'] == "en" ? true : false), description: " ",imageSrc: "files/img/flags/en.png"},
+	{text: "Deutsch",value: "de",selected: (localStorage['lang'] == "de" ? true : false),description: " ",imageSrc: "files/img/flags/de.png"},
+	{text: "Русский",value: "ru",selected: (localStorage['lang'] == "ru" ? true : false),description: " ",imageSrc: "files/img/flags/ru.png"},
+	{text: "Polski",value: "pl",selected: (localStorage['lang'] == "pl" ? true : false),description: " ",imageSrc: "files/img/flags/pl.png"},
+	{text: "Français",value: "fr",selected: (localStorage['lang'] == "fr" ? true : false),description: " ",imageSrc: "files/img/flags/fr.png"}
+];
+
+$('#lang-switcher').ddslick({
+	data: languageOptions,
+	width: 150,
+	onSelected: function(obj){
+		changeLang(obj.selectedData.value);
+	}
+});
 
 $(function() {
 	var s = $('#search-input-wrapper');

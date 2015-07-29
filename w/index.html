@@ -15,6 +15,13 @@
 		<link type="text/css" rel="stylesheet" href="../files/js/leaflet/leaflet.css">
 		<link type="text/css" rel="stylesheet" href="../files/css/main.css">
 		<link type="text/css" rel="stylesheet" href="../files/css/font-awesome.min.css">
+		<script type="text/javascript" src="../files/js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../files/js/i18next-1.9.0.min.js"></script>
+		<script type="text/javascript" src="../files/js/jquery.nicescroll.min.js"></script>
+		<script type="text/javascript" src="../files/js/leaflet/leaflet.js"></script>
+		<script type="text/javascript" src="../files/js/leaflet.plugins.js"></script>
+		<script type="text/javascript" src="../files/js/leaflet-hash-params.js"></script>
+		<script type="text/javascript" src="../files/js/jquery.ddslick.min.js"></script>
 		<script type="text/javascript">
 			if(document.location.protocol!='file:'){(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date;c=e.createElement(f);d=e.getElementsByTagName(f)[0];c.async=1;c.src=g;d.parentNode.insertBefore(c,d)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-64557825-1','auto');ga('send','pageview');}
 		</script>
@@ -71,11 +78,7 @@
 					<a href="https://crowdin.com/project/witcher3map" target="_blank" data-i18n="misc.helpTranslate">Want to help or improve translations?</a>
 				</div>
 				<div id="lang">
-					<a href="" onclick="changeLang('en')" title="English"><img src="../files/img/flags/en.png"></a>
-					<a href="" onclick="changeLang('de')" title="Deutsch"><img src="../files/img/flags/de.png"></a>
-					<a href="" onclick="changeLang('ru')" title="Русский"><img src="../files/img/flags/ru.png"></a>
-					<a href="" onclick="changeLang('pl')" title="Polski"><img src="../files/img/flags/pl.png"></a>
-					<a href="" onclick="changeLang('fr')" title="Français"><img src="../files/img/flags/fr.png"></a>
+					<div id="lang-switcher"></div>
 				</div>
 			</div>
 			<div id="copyright">
@@ -88,12 +91,6 @@
 		<div id="warn" data-i18n="misc.portraitWarn"></div>
 		<div id="info-wrap"><div id="info-fade-intro"></div><div id="info"></div><div id="info-fade-outro"></div></div>
 		<div id="map"><!-- <div id="title">White Orchard</div> --></div>
-		<script type="text/javascript" src="../files/js/jquery-2.1.4.min.js"></script>
-		<script type="text/javascript" src="../files/js/i18next-1.9.0.min.js"></script>
-		<script type="text/javascript" src="../files/js/jquery.nicescroll.min.js"></script>
-		<script type="text/javascript" src="../files/js/leaflet/leaflet.js"></script>
-		<script type="text/javascript" src="../files/js/leaflet.plugins.js"></script>
-		<script type="text/javascript" src="../files/js/leaflet-hash-params.js"></script>
 		<script type="text/javascript" src="../files/js/shared.js"></script>
 		<script type="text/javascript" src="../files/js/mapdata-white_orchard.js"></script>
 		<script type="text/javascript" src="../files/js/custom.js"></script>

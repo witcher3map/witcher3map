@@ -68,10 +68,6 @@ div#logo {
 	width: 300px;
 	height: 155px;
 }
-div#lang {
-	margin-top: 20px;
-	text-align: center;
-}
 ul#nav {
 	text-align: center;
 }
@@ -209,11 +205,35 @@ div#footer > span > a:active {
 	color: #bbb;
 	text-decoration: none;
 }
-div#lang > a {
-	opacity:0.5;
+div#lang {
+	text-align:center;
 }
-div#lang > a:hover {
-	opacity:1;
+div#lang-switcher {
+	margin:0 auto;
+}
+div#lang-switcher .dd-select {
+	background:rgba(0, 0, 0, 0) !important;
+	border: solid 1px #635540;
+	color: #635540;
+}
+div#lang-switcher .dd-pointer-down {
+	border-top: solid 5px #635540;
+}
+div#lang-switcher .dd-pointer-up {
+	border-bottom: solid 5px #635540 !important
+}
+div#lang-switcher .dd-selected-image, div#lang-switcher .dd-option-image {
+	opacity: 0.5;
+}
+div#lang-switcher .dd-options {
+	background:rgba(0, 0, 0, 0) !important;
+	border: solid 1px #635540;
+	box-shadow:none;
+}
+div#lang-switcher .dd-option {
+	background:rgba(0, 0, 0, 0.9) !important;
+	border-bottom: solid 1px #635540;
+	color: #635540;
 }
 div#footer > a:hover {
 	color: #ddd;

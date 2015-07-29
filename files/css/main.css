@@ -229,25 +229,34 @@ div#sfw a:hover {
 	text-decoration: underline;
 }
 div#lang {
-    font-size: 14px;
-    text-align: center;
+	text-align:center;
 }
-div#lang a {
-    color: #B08948;
-    text-decoration: none;
-	margin: 2px;
+div#lang-switcher {
+	margin:0 auto;
 }
-div#lang a:hover {
-    color: #F0CB0B;
-    text-decoration: underline;
+div#lang-switcher .dd-select {
+	background:rgba(0, 0, 0, 0) !important;
+	border: solid 1px #635540;
+	color: #635540;
 }
-div#lang  img{
-	height: 24px;
-	width: 24px;
-	opacity: 0.4;
+div#lang-switcher .dd-pointer-down {
+	border-top: solid 5px #635540;
 }
-div#lang img:hover {
-	opacity: 0.7;
+div#lang-switcher .dd-pointer-up {
+	border-bottom: solid 5px #635540 !important
+}
+div#lang-switcher .dd-selected-image, div#lang-switcher .dd-option-image {
+	opacity: 0.5;
+}
+div#lang-switcher .dd-options {
+	background:rgba(0, 0, 0, 0) !important;
+	border: solid 1px #635540;
+	box-shadow:none;
+}
+div#lang-switcher .dd-option {
+	background:rgba(0, 0, 0, 0.9) !important;
+	border-bottom: solid 1px #635540;
+	color: #635540;
 }
 div#copyright {
 	font-size: 13px;
