@@ -57,4 +57,10 @@
 			changeLang(obj.selectedData.value);
 		}
 	});
+
+	//fix bug where sidebar scrollbar doesn't appear when the language drop-down opens
+	$('.dd-selected').on('click', function() {
+		var s = $('div#sidebar');
+		s.scrollTop(s.scrollTop() - 10);
+	});
 })();
