@@ -6,9 +6,19 @@
     "kaer_morhen":"Kaer Morhen"
   },
   "home":{
-    "tagline":"Cartes de The Witcher 3 Interactive non officielles <br>(en cours d'élaboration)",
+    "tagline":"Cartes interactives non officielles de The Witcher 3<br>(en cours d'élaboration)",
     "resultsFound":"résultat(s) trouvé(s).",
     "searchPlaceholder":"Entrer le texte de recherche..."
+  },
+  "notes":{
+    "label":"Intitulé:",
+    "title":"Titre:",
+    "note":"Note:",
+    "enterLabel":"Entrez l'intitulé de la carte...",
+    "enterTitle":"Entrez le titre de la note...",
+    "enterText":"Entrez la note...",
+    "saveNote":"Enregistrer la note",
+    "deleteNote":"Supprimer une note"
   },
   "sidebar":{
     "returnToMapSelection":"Retour à la carte sélectionnée",
@@ -24,7 +34,7 @@
     "entrance":"Entrée",
     "grindstone":"Meule à aiguiser",
     "guarded":"Trésor gardé",
-    "gwent":"Joueur de Gwent",
+    "gwent":"Joueur de Gwynt",
     "harbor":"Port",
     "herbalist":"Herboriste",
     "hidden":"Trésor caché",
@@ -54,8 +64,18 @@
     "backupSave":"Ceci va télécharger une copie de sauvegarde de tous les paramètres de la carte 3 Witcher.  Le fichier sera enregistré sous : __fileName__ Etes-vous sûr ?",
     "backupLoad":"Restaurer vos paramètres :",
     "backupLoadSuccess":"Restauration des données terminée !",
-    "backupLoadFail":"Restauration a échoué, vérifiez votre fichier",
-    "backupHtmlFail":"Désolé.  La restauration n'est pas possible.  Ce navigateur ne supporte pas HTML5 File API."
+    "backupLoadFail":"La restauration a échoué, vérifiez votre fichier",
+    "backupHtmlFail":"Désolé. La restauration n'est pas possible. Ce navigateur ne supporte pas l'API HTML5.",
+    "zoomInButton":"Zoomer",
+    "zoomOutButton":"Dézoomer",
+    "searchButton":"Recherche...",
+    "backupDataButton":"Sauvegarder les données",
+    "restoreDataButton":"Restaurer les données",
+    "centerMarkerButton":"Centrer le marqueur en surbrillance",
+    "addNoteButton":"Ajouter une note",
+    "cancelNoteButton":"Annuler la note",
+    "viewFullscreenButton":"Affichage en plein écran",
+    "exitFullscreenButton":"Quitter le plein écran"
   },
   "credits":{
     "botCreated":"Créé par __untamed0__, sous __license__",
@@ -63,7 +83,7 @@
     "botAssets":"Le logo, les icônes, la carte et le texte de Witcher 3 appartiennent à __cdpr__ "
   },
   "misc":{
-    "contribute":"Travaux en cours ! Aide appréciée au __link__",
+    "contribute":"Travaux en cours ! Aide appréciée sur __link__",
     "discuss":"Vos commentaires, suggestions ? Discuter sur __link__",
     "helpTranslate":"Vous voulez aider ou améliorer les traductions ?",
     "portraitWarn":"Remarque : la carte est optimisée en mode paysage, cliquez pour annuler",
@@ -130,14 +150,14 @@
   },
   "poi":{
     "label":{
-      "witcherGear":"Augmentation d'éqquipement"
+      "witcherGear":"Augmentation d'équipement"
     },
     "desc":{
       "witcherGear":{
         "silversword":{
           "feline":{
             "standard":"À l'intérieur de la Ruine de Tayiar Est, derrière un mur que vous pouvez détruire",
-            "enhanced":"Vous devez monter d'un niveau",
+            "enhanced":"Vous devez monter à l'étage",
             "superior":"",
             "mastercrafted":""
           },
@@ -152,6 +172,12 @@
             "enhanced":"",
             "superior":"",
             "mastercrafted":""
+          },
+          "wolven":{
+            "standard":"",
+            "enhanced":"Descendez dans la grotte",
+            "superior":"",
+            "mastercrafted":"Vous la trouverez à proximité du trésor caché"
           }
         },
         "steelsword":{
@@ -172,6 +198,12 @@
             "enhanced":"",
             "superior":"",
             "mastercrafted":""
+          },
+          "wolven":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":"Vous la trouverez dans la cale de l'épave"
           }
         },
         "crossbow":{
@@ -196,6 +228,12 @@
             "enhanced":"",
             "superior":"",
             "mastercrafted":""
+          },
+          "wolven":{
+            "standard":"",
+            "enhanced":"Plongez dans l'eau",
+            "superior":"",
+            "mastercrafted":"Le coffre est dans le puits"
           }
         },
         "boots":{
@@ -216,12 +254,18 @@
             "enhanced":"",
             "superior":"",
             "mastercrafted":""
+          },
+          "wolven":{
+            "standard":"",
+            "enhanced":"Descendez dans la grotte",
+            "superior":"",
+            "mastercrafted":""
           }
         },
         "gauntlets":{
           "feline":{
             "standard":"",
-            "enhanced":"À l'intérieur d'un puits de la carrière de Colgers",
+            "enhanced":"À l'intérieur d'un puits de la carrière des anciens",
             "superior":"",
             "mastercrafted":""
           },
@@ -232,6 +276,12 @@
             "mastercrafted":""
           },
           "ursine":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "wolven":{
             "standard":"",
             "enhanced":"",
             "superior":"",
@@ -252,6 +302,12 @@
             "mastercrafted":""
           },
           "ursine":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "wolven":{
             "standard":"",
             "enhanced":"",
             "superior":"",
@@ -280,6 +336,12 @@
             "enhanced":"Épée d'argent de l'École de l'Ours améliorée",
             "superior":"Épée d'argent de l'École de l'Ours supérieure",
             "mastercrafted":"Épée d'argent de l'École de l'Ours de maître"
+          },
+          "wolven":{
+            "standard":"Épée d'argent de l'école du loup",
+            "enhanced":"Épée d'argent de l'école du loup améliorée",
+            "superior":"Épée d'argent de l'école du loup supérieure",
+            "mastercrafted":"Épée d'argent de l'école du loup de maître"
           }
         },
         "steelsword":{
@@ -299,7 +361,13 @@
             "standard":"Épée d'acier de l'École de l'Ours",
             "enhanced":"Épée d'acier de l'École de l'Ours améliorée",
             "superior":"Épée d'acier de l'École de l'Ours supérieure",
-            "mastercrafted":"Épée d'acier de l'École de l'Ours supérieure de Maître"
+            "mastercrafted":"Épée d'acier de l'École de l'Ours de Maître"
+          },
+          "wolven":{
+            "standard":"Épée d'acier de l'école du loup",
+            "enhanced":"Épée d'acier de l'école du loup améliorée",
+            "superior":"Épée d'acier de l'école du loup supérieure",
+            "mastercrafted":"Épée d'acier de l'école du loup de maître"
           }
         },
         "crossbow":{
@@ -324,6 +392,12 @@
             "enhanced":"Armure de l'École de l'Ours améliorée",
             "superior":"Armure de l'école de l'Ours supérieure",
             "mastercrafted":"Armure de l'École de l'Ours de maître"
+          },
+          "wolven":{
+            "standard":"Armure de l'école du loup",
+            "enhanced":"Armure de l'école du loup améliorée",
+            "superior":"Armure de l'école du loup supérieure",
+            "mastercrafted":"Armure de l'école du loup de maître"
           }
         },
         "boots":{
@@ -344,6 +418,12 @@
             "enhanced":"Bottes de l'École de l'Ours améliorées",
             "superior":"Bottes de l'École de l'Ours supérieures",
             "mastercrafted":"Bottes de l'École de l'Ours de maître"
+          },
+          "wolven":{
+            "standard":"Bottes de l'école du loup",
+            "enhanced":"Bottes de l'école du loup améliorées",
+            "superior":"Bottes de l'école du loup supérieures",
+            "mastercrafted":"Bottes de l'école du loup de maître"
           }
         },
         "gauntlets":{
@@ -364,6 +444,12 @@
             "enhanced":"Gantelets de l'École de l'Ours améliorés",
             "superior":"Gantelets de l'École de l'Ours supérieurs",
             "mastercrafted":"Gantelets de l'École de l'Ours de maître"
+          },
+          "wolven":{
+            "standard":"Gantelets de l'école du loup",
+            "enhanced":"Gantelets de l'école du loup améliorés",
+            "superior":"Gantelets de l'école du loup supérieurs",
+            "mastercrafted":"Gantelets de l'école du loup de maître"
           }
         },
         "trousers":{
@@ -384,6 +470,12 @@
             "enhanced":"Pantalon de l'École de l'Ours amélioré",
             "superior":"Pantalon de l'École de l'Ours supérieur",
             "mastercrafted":"Pantalon de l'École de l'Ours de maître"
+          },
+          "wolven":{
+            "standard":"Pantalon de l'école du loup",
+            "enhanced":"Pantalon de l'école du loup amélioré",
+            "superior":"Pantalon de l'école du loup supérieur",
+            "mastercrafted":"Pantalon de l'école du loup de maître"
           }
         }
       }

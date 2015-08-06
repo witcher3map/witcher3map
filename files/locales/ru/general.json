@@ -10,6 +10,16 @@
     "resultsFound":"результатов найдено.",
     "searchPlaceholder":"Введите поисковой запрос..."
   },
+  "notes":{
+    "label":"Метка:",
+    "title":"Заголовок:",
+    "note":"Заметка:",
+    "enterLabel":"Введите метку карты...",
+    "enterTitle":"Введите заголовок заметки...",
+    "enterText":"Введите текст заметки...",
+    "saveNote":"Сохранить заметку",
+    "deleteNote":"Удалить заметку"
+  },
   "sidebar":{
     "returnToMapSelection":"Вернуться на страницу выбора карты",
     "alchemy":"Ингредиенты",
@@ -55,7 +65,17 @@
     "backupLoad":"Восстановление настроек:",
     "backupLoadSuccess":"Восстановление данных завершено!",
     "backupLoadFail":"Восстановление не удалось, перепроверьте файл",
-    "backupHtmlFail":"Извините. Восстановление не возможно. Ваш браузер не поддерживает HTML5 File Api."
+    "backupHtmlFail":"Извините. Восстановление не возможно. Ваш браузер не поддерживает HTML5 File Api.",
+    "zoomInButton":"Увеличить",
+    "zoomOutButton":"Уменьшить",
+    "searchButton":"Поиск...",
+    "backupDataButton":"Резервное копирование данных",
+    "restoreDataButton":"Восстановление данных",
+    "centerMarkerButton":"Center Highlighted Marker",
+    "addNoteButton":"Добавить заметку",
+    "cancelNoteButton":"Cancel Note",
+    "viewFullscreenButton":"View Fullscreen",
+    "exitFullscreenButton":"Exit Fullscreen"
   },
   "credits":{
     "botCreated":"Создано __untamed0__, по лицензии __license__",
@@ -152,6 +172,12 @@
             "enhanced":"",
             "superior":"",
             "mastercrafted":""
+          },
+          "wolven":{
+            "standard":"",
+            "enhanced":"Going down into the cave",
+            "superior":"",
+            "mastercrafted":"You will find near the hidden treasure"
           }
         },
         "steelsword":{
@@ -172,6 +198,12 @@
             "enhanced":"",
             "superior":"",
             "mastercrafted":""
+          },
+          "wolven":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":"You will find in the hold of the sunken ship"
           }
         },
         "crossbow":{
@@ -196,6 +228,12 @@
             "enhanced":"",
             "superior":"",
             "mastercrafted":""
+          },
+          "wolven":{
+            "standard":"",
+            "enhanced":"Dive into the water",
+            "superior":"",
+            "mastercrafted":"The chest is inside the well"
           }
         },
         "boots":{
@@ -214,6 +252,12 @@
           "ursine":{
             "standard":"",
             "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "wolven":{
+            "standard":"",
+            "enhanced":"Going down into the cave",
             "superior":"",
             "mastercrafted":""
           }
@@ -236,6 +280,12 @@
             "enhanced":"",
             "superior":"",
             "mastercrafted":""
+          },
+          "wolven":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
           }
         },
         "trousers":{
@@ -252,6 +302,12 @@
             "mastercrafted":""
           },
           "ursine":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "wolven":{
             "standard":"",
             "enhanced":"",
             "superior":"",
@@ -280,6 +336,12 @@
             "enhanced":"Чертеж: улучшенный серебряный меч Школы Медведя",
             "superior":"Чертеж: отличный серебряный меч Школы Медведя",
             "mastercrafted":"Чертеж: мастерский серебряный меч Школы Медведя"
+          },
+          "wolven":{
+            "standard":"Чертеж: серебряный меч Школы Волка",
+            "enhanced":"Чертеж: улучшенный серебряный меч Школы Волка",
+            "superior":"Чертеж: отличный серебряный меч Школы Волка",
+            "mastercrafted":"Чертеж: мастерский серебряный меч Школы Волка"
           }
         },
         "steelsword":{
@@ -300,6 +362,12 @@
             "enhanced":"Чертеж: улучшенный стальной меч Школы Медведя",
             "superior":"Чертеж: отличный стальной меч Школы Медведя",
             "mastercrafted":"Чертеж: мастерский стальной меч Школы Медведя"
+          },
+          "wolven":{
+            "standard":"Чертеж: стальной меч Школы Волка",
+            "enhanced":"Чертеж: улучшенный стальной меч Школы Волка",
+            "superior":"Чертеж: отличный стальной меч Школы Волка",
+            "mastercrafted":"Чертеж: мастерский стальной меч Школы Волка"
           }
         },
         "crossbow":{
@@ -324,6 +392,12 @@
             "enhanced":"Чертеж: улучшенный доспех Школы Медведя",
             "superior":"Чертеж: отличный доспех Школы Медведя",
             "mastercrafted":"Чертеж: мастерский доспех Школы Медведя"
+          },
+          "wolven":{
+            "standard":"Чертеж: доспех Школы Волка",
+            "enhanced":"Чертеж: улучшенный доспех Школы Волка",
+            "superior":"Чертеж: отличный доспех Школы Волка",
+            "mastercrafted":"Чертеж: мастерский доспех Школы Волка"
           }
         },
         "boots":{
@@ -344,6 +418,12 @@
             "enhanced":"Чертеж: улучшенные сапоги Школы Медведя",
             "superior":"Чертеж: отличные сапоги Школы Медведя",
             "mastercrafted":"Чертеж: мастерские сапоги Школы Медведя"
+          },
+          "wolven":{
+            "standard":"Чертеж: сапоги Школы Волка",
+            "enhanced":"Чертеж: улучшенные сапоги Школы Волка",
+            "superior":"Чертеж: отличные сапоги Школы Волка",
+            "mastercrafted":"Чертеж: мастерские сапоги Школы Волка"
           }
         },
         "gauntlets":{
@@ -364,6 +444,12 @@
             "enhanced":"Чертеж: улучшенные перчатки Школы Медведя",
             "superior":"Чертеж: отличные перчатки Школы Медведя",
             "mastercrafted":"Чертеж: мастерские перчатки Школы Медведя"
+          },
+          "wolven":{
+            "standard":"Чертеж: перчатки Школы Волка",
+            "enhanced":"Чертеж: улучшенные перчатки Школы Волка",
+            "superior":"Чертеж: отличные перчатки Школы Волка",
+            "mastercrafted":"Чертеж: мастерские перчатки Школы Волка"
           }
         },
         "trousers":{
@@ -384,6 +470,12 @@
             "enhanced":"Чертеж: улучшенные штаны Школы Медведя",
             "superior":"Чертеж: отличные штаны Школы Медведя",
             "mastercrafted":"Чертеж: мастерские штаны Школы Медведя"
+          },
+          "wolven":{
+            "standard":"Чертеж: штаны Школы Волка",
+            "enhanced":"Чертеж: улучшенные штаны Школы Волка",
+            "superior":"Чертеж: отличные штаны Школы Волка",
+            "mastercrafted":"Чертеж: мастерские штаны Школы Волка"
           }
         }
       }
