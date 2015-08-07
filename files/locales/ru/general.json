@@ -71,11 +71,11 @@
     "searchButton":"Поиск...",
     "backupDataButton":"Резервное копирование данных",
     "restoreDataButton":"Восстановление данных",
-    "centerMarkerButton":"Center Highlighted Marker",
+    "centerMarkerButton":"Центр выделенного маркера",
     "addNoteButton":"Добавить заметку",
-    "cancelNoteButton":"Cancel Note",
-    "viewFullscreenButton":"View Fullscreen",
-    "exitFullscreenButton":"Exit Fullscreen"
+    "cancelNoteButton":"Отменить заметку",
+    "viewFullscreenButton":"Полноэкранный просмотр",
+    "exitFullscreenButton":"Выход из полноэкранного просмотра"
   },
   "credits":{
     "botCreated":"Создано __untamed0__, по лицензии __license__",
@@ -175,9 +175,9 @@
           },
           "wolven":{
             "standard":"",
-            "enhanced":"Going down into the cave",
+            "enhanced":"Спуститься в пещеру",
             "superior":"",
-            "mastercrafted":"You will find near the hidden treasure"
+            "mastercrafted":"Вы найдете рядом около спрятанного сокровища"
           }
         },
         "steelsword":{
@@ -203,7 +203,7 @@
             "standard":"",
             "enhanced":"",
             "superior":"",
-            "mastercrafted":"You will find in the hold of the sunken ship"
+            "mastercrafted":"Вы найдете в трюме затонувшего корабля"
           }
         },
         "crossbow":{
@@ -231,9 +231,9 @@
           },
           "wolven":{
             "standard":"",
-            "enhanced":"Dive into the water",
+            "enhanced":"Погрузиться под воду",
             "superior":"",
-            "mastercrafted":"The chest is inside the well"
+            "mastercrafted":"Сундук внутри колодца"
           }
         },
         "boots":{
@@ -257,7 +257,7 @@
           },
           "wolven":{
             "standard":"",
-            "enhanced":"Going down into the cave",
+            "enhanced":"Спуститься в пещеру",
             "superior":"",
             "mastercrafted":""
           }
