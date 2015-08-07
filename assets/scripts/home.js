@@ -19,15 +19,15 @@ var options = {
 $.i18n.init(options, function() {
 	$(document).i18n();
 	$.i18n.loadNamespace('v', function() {
-		$.getScript("files/js/mapdata-velen.js").done(function(script, textStatus) {
+		$.getScript("files/scripts/mapdata-velen.js").done(function(script, textStatus) {
 			$(document).trigger('loadMapdata');
 			$(document).unbind('loadMapdata');
 			$.i18n.loadNamespace('s', function() {
-				$.getScript("files/js/mapdata-skellige.js").done(function(script, textStatus) {
+				$.getScript("files/scripts/mapdata-skellige.js").done(function(script, textStatus) {
 					$(document).trigger('loadMapdata');
 					$(document).unbind('loadMapdata');
 					$.i18n.loadNamespace('w', function() {
-						$.getScript("files/js/mapdata-white_orchard.js").done(function(script, textStatus) {
+						$.getScript("files/scripts/mapdata-white_orchard.js").done(function(script, textStatus) {
 							$(document).trigger('loadMapdata');
 							$(document).unbind('loadMapdata');
 
@@ -61,11 +61,11 @@ window.changeLang = function(lang) {
 };
 
 var languageOptions = [
-	{text: "English",value: "en",selected: (localStorage['lang'] == "en" ? true : false), description: " ",imageSrc: "files/img/flags/en.png"},
-	{text: "Deutsch",value: "de",selected: (localStorage['lang'] == "de" ? true : false),description: " ",imageSrc: "files/img/flags/de.png"},
-	{text: "Русский",value: "ru",selected: (localStorage['lang'] == "ru" ? true : false),description: " ",imageSrc: "files/img/flags/ru.png"},
-	{text: "Polski",value: "pl",selected: (localStorage['lang'] == "pl" ? true : false),description: " ",imageSrc: "files/img/flags/pl.png"},
-	{text: "Français",value: "fr",selected: (localStorage['lang'] == "fr" ? true : false),description: " ",imageSrc: "files/img/flags/fr.png"}
+	{text: "English",value: "en",selected: (localStorage['lang'] == "en" ? true : false), description: " ",imageSrc: "files/images/flags/en.png"},
+	{text: "Deutsch",value: "de",selected: (localStorage['lang'] == "de" ? true : false),description: " ",imageSrc: "files/images/flags/de.png"},
+	{text: "Русский",value: "ru",selected: (localStorage['lang'] == "ru" ? true : false),description: " ",imageSrc: "files/images/flags/ru.png"},
+	{text: "Polski",value: "pl",selected: (localStorage['lang'] == "pl" ? true : false),description: " ",imageSrc: "files/images/flags/pl.png"},
+	{text: "Français",value: "fr",selected: (localStorage['lang'] == "fr" ? true : false),description: " ",imageSrc: "files/images/flags/fr.png"}
 ];
 
 $('#lang-switcher').ddslick({

@@ -527,7 +527,7 @@ $(document).on("loadCustom", function() {
 		var backupFileName = 'witcher3map_backup_'+formattedDate+'.json';
 		if (confirm($.t('controls.backupSave', {fileName:backupFileName}))) {
 			if(!fileSaver) {
-				fileSaver = $.getScript('../files/js/FileSaver.min.js', function() {
+				fileSaver = $.getScript('../files/scripts/FileSaver.min.js', function() {
 					var blob = new Blob([JSON.stringify(localStorage)], {type: "text/plain;charset=utf-8"});
 					saveAs(blob, backupFileName);
 				});

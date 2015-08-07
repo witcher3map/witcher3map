@@ -34,7 +34,7 @@ html, body {
 	height: 100%;
 }
 body {
-	background: #040404 url('../img/homebg.jpg') no-repeat;
+	background: #040404 url('../images/homebg.jpg') no-repeat;
 	background-attachment: fixed;
 	background-position: bottom right;
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
@@ -64,7 +64,7 @@ div#text {
 }
 div#logo {
 	margin: 10px auto 10px auto;
-	background: url('../img/logo.png') no-repeat;
+	background: url('../images/logo.png') no-repeat;
 	width: 300px;
 	height: 155px;
 }
@@ -76,7 +76,7 @@ ul#nav li {
 	margin: 20px 10px 0 10px;
 	width: 245px;
 	height: 79px;
-	background: url('../img/homenav.png') bottom no-repeat;
+	background: url('../images/homenav.png') bottom no-repeat;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 21px;

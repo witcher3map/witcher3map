@@ -43,11 +43,11 @@
 	};
 
 	var languageOptions = [
-		{text: "English",value: "en",selected: (localStorage['lang'] == "en" ? true : false), description: " ",imageSrc: "../files/img/flags/en.png"},
-		{text: "Deutsch",value: "de",selected: (localStorage['lang'] == "de" ? true : false),description: " ",imageSrc: "../files/img/flags/de.png"},
-		{text: "Русский",value: "ru",selected: (localStorage['lang'] == "ru" ? true : false),description: " ",imageSrc: "../files/img/flags/ru.png"},
-		{text: "Polski",value: "pl",selected: (localStorage['lang'] == "pl" ? true : false),description: " ",imageSrc: "../files/img/flags/pl.png"},
-		{text: "Français",value: "fr",selected: (localStorage['lang'] == "fr" ? true : false),description: " ",imageSrc: "../files/img/flags/fr.png"}
+		{text: "English",value: "en",selected: (localStorage['lang'] == "en" ? true : false), description: " ",imageSrc: "../files/images/flags/en.png"},
+		{text: "Deutsch",value: "de",selected: (localStorage['lang'] == "de" ? true : false),description: " ",imageSrc: "../files/images/flags/de.png"},
+		{text: "Русский",value: "ru",selected: (localStorage['lang'] == "ru" ? true : false),description: " ",imageSrc: "../files/images/flags/ru.png"},
+		{text: "Polski",value: "pl",selected: (localStorage['lang'] == "pl" ? true : false),description: " ",imageSrc: "../files/images/flags/pl.png"},
+		{text: "Français",value: "fr",selected: (localStorage['lang'] == "fr" ? true : false),description: " ",imageSrc: "../files/images/flags/fr.png"}
 	];
 
 	$('#lang-switcher').ddslick({

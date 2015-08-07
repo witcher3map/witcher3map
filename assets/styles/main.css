@@ -57,7 +57,7 @@ div#sidebar {
 div#sidebar-border {
 	width: 15px;
 	background-repeat: repeat-y;
-	background-image: url('../img/border.png');
+	background-image: url('../images/border.png');
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -97,7 +97,7 @@ div#logo {
     margin-left: auto;
     margin-right: auto;
 	margin-bottom: 10px;
-	background: url('../img/logo.png') no-repeat;
+	background: url('../images/logo.png') no-repeat;
 }
 ul.key {
 	list-style-type: none;
@@ -195,7 +195,7 @@ ul.key  li.none {
 	cursor: default;
 }
 div#note {
-	background: url('../img/paperfull.png') no-repeat;
+	background: url('../images/paperfull.png') no-repeat;
 	color: #000;
 	font-size: 18px;
 	text-align: center;
@@ -382,7 +382,7 @@ div#title {
 	left: 0;
 	right: 0;
 	z-index: 1;
-	background: url('../img/paper.png') no-repeat;
+	background: url('../images/paper.png') no-repeat;
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
 	color: #000;
 	font-size: 24px;
@@ -397,7 +397,7 @@ div#hide-sidebar {
 	position: absolute;
 	left: 390px;
 	top: 0px;
-	background: rgba(0, 0, 0, .7) url(../img/sidebarhide.png) no-repeat 0px 3px;
+	background: rgba(0, 0, 0, .7) url(../images/sidebarhide.png) no-repeat 0px 3px;
 	border-bottom-right-radius: 8px;
 	width: 28px;
 	height: 32px;
@@ -478,7 +478,7 @@ div#popup-wrap img#popup-close {
 	div#logo {
 		width: 140px;
 		height: 72px;
-		background: url('../img/logo-small.png') no-repeat;
+		background: url('../images/logo-small.png') no-repeat;
 		margin-left: 20px;
 	}
 	div#sidebar {
@@ -578,7 +578,7 @@ div#popup-wrap img#popup-close {
 		width: 200px;
 		height: 46px;
 		z-index: 1000;
-		background: url('../img/paper.png') no-repeat;
+		background: url('../images/paper.png') no-repeat;
 		font-family: 'PFDinTextCondPro', Arial, sans-serif;
 		color: #000;
 		font-size: 16px;
@@ -589,32 +589,32 @@ div#popup-wrap img#popup-close {
 		cursor: pointer;
 	}
 }
-i.alchemy { background-image:url('../img/icons/alchemy.png'); }
-i.abandoned { background-image:url('../img/icons/abandoned.png'); }
-i.armourer { background-image:url('../img/icons/armourer.png'); }
-i.armourerstable { background-image:url('../img/icons/armourerstable.png'); }
-i.banditcamp { background-image:url('../img/icons/banditcamp.png'); }
-i.barber { background-image:url('../img/icons/barber.png'); }
-i.blacksmith { background-image:url('../img/icons/blacksmith.png'); }
-i.brothel { background-image:url('../img/icons/brothel.png'); }
-i.entrance { background-image:url('../img/icons/entrance.png'); }
-i.grindstone { background-image:url('../img/icons/grindstone.png'); }
-i.guarded { background-image:url('../img/icons/guarded.png'); }
-i.gwent { background-image:url('../img/icons/gwent.png'); }
-i.harbor { background-image:url('../img/icons/harbor.png'); }
-i.herbalist { background-image:url('../img/icons/herbalist.png'); }
-i.hidden { background-image:url('../img/icons/hidden.png'); }
-i.innkeep { background-image:url('../img/icons/tavern.png'); }
-i.monsternest { background-image:url('../img/icons/monsternest.png'); }
-i.monsterden { background-image:url('../img/icons/monsterden.png'); }
-i.notice { background-image:url('../img/icons/notice.png'); }
-i.pid { background-image:url('../img/icons/pid.png'); }
-i.pop { background-image:url('../img/icons/pop.png'); }
-i.poi { background-image:url('../img/icons/poi.png'); }
-i.signpost { background-image:url('../img/icons/fasttravel.png'); }
-i.shopkeeper { background-image:url('../img/icons/merchant.png'); }
-i.smugglers { background-image:url('../img/icons/smugglers.png'); }
-i.spoils { background-image:url('../img/icons/spoils.png'); }
+i.alchemy { background-image:url('../images/icons/alchemy.png'); }
+i.abandoned { background-image:url('../images/icons/abandoned.png'); }
+i.armourer { background-image:url('../images/icons/armourer.png'); }
+i.armourerstable { background-image:url('../images/icons/armourerstable.png'); }
+i.banditcamp { background-image:url('../images/icons/banditcamp.png'); }
+i.barber { background-image:url('../images/icons/barber.png'); }
+i.blacksmith { background-image:url('../images/icons/blacksmith.png'); }
+i.brothel { background-image:url('../images/icons/brothel.png'); }
+i.entrance { background-image:url('../images/icons/entrance.png'); }
+i.grindstone { background-image:url('../images/icons/grindstone.png'); }
+i.guarded { background-image:url('../images/icons/guarded.png'); }
+i.gwent { background-image:url('../images/icons/gwent.png'); }
+i.harbor { background-image:url('../images/icons/harbor.png'); }
+i.herbalist { background-image:url('../images/icons/herbalist.png'); }
+i.hidden { background-image:url('../images/icons/hidden.png'); }
+i.innkeep { background-image:url('../images/icons/tavern.png'); }
+i.monsternest { background-image:url('../images/icons/monsternest.png'); }
+i.monsterden { background-image:url('../images/icons/monsterden.png'); }
+i.notice { background-image:url('../images/icons/notice.png'); }
+i.pid { background-image:url('../images/icons/pid.png'); }
+i.pop { background-image:url('../images/icons/pop.png'); }
+i.poi { background-image:url('../images/icons/poi.png'); }
+i.signpost { background-image:url('../images/icons/fasttravel.png'); }
+i.shopkeeper { background-image:url('../images/icons/merchant.png'); }
+i.smugglers { background-image:url('../images/icons/smugglers.png'); }
+i.spoils { background-image:url('../images/icons/spoils.png'); }
 .leaflet-container {
 	background: #222;
 }
@@ -716,11 +716,11 @@ i.spoils { background-image:url('../img/icons/spoils.png'); }
 	float: left;
 	width: 26px;
 	height: 26px;
-	background: url(../img/search.png) no-repeat 2px 2px;
+	background: url(../images/search.png) no-repeat 2px 2px;
 	border-radius: 4px;
 }
 .leaflet-control-search .search-button:hover {
-	background: url(../img/searchhover.png) no-repeat 2px 2px;
+	background: url(../images/searchhover.png) no-repeat 2px 2px;
 	background-color: rgba(0, 0, 0, .3);
 }
 .leaflet-control-search .search-tooltip {
@@ -780,7 +780,7 @@ div.leaflet-bar a.leaflet-disabled:hover {
 	color: #999;
 }
 .leaflet-control-fullscreen a {
-	background: rgba(0, 0, 0, .3) url(../img/fullscreen.png) no-repeat 0 0;
+	background: rgba(0, 0, 0, .3) url(../images/fullscreen.png) no-repeat 0 0;
 	background-size: 52px 52px;
 }
 .leaflet-fullscreen-on .leaflet-control-fullscreen a {

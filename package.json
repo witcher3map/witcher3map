@@ -20,13 +20,12 @@
   "license": "CC-BY-NC-SA-4.0",
   "devDependencies": {
     "browserify": "latest",
-    "jquery": "^2.1.4",
     "mkdirp": "^0.5.1",
     "ncp": "^2.0.0",
     "rimraf": "^2.4.2"
   },
   "scripts": {
-    "clean": "rimraf dist/favicon.ico dist/index.html dist/files dist/s dist/v dist/w",
+    "clean": "rimraf dist/favicon.ico dist/index.html dist/files/fonts dist/files/images dist/files/locales dist/files/scripts dist/files/styles dist/s dist/v dist/w",
     "build": "npm run build:distfolders && npm run build:fonts && npm run build:images && npm run build:locales && npm run build:markup && npm run build:scripts && npm run build:styles",
     "build:distfolders": "mkdirp dist/files --mode 0444",
     "build:fonts": "ncp assets/fonts dist/files/fonts",
