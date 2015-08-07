@@ -1,0 +1,27 @@
+{
+  "name": "witcher3map",
+  "version": "2.0.0",
+  "description": "Unofficial Witcher 3 interactive maps, with a mobile & tablet friendly design faithful to the game.",
+  "main": "index.js",
+  "author": {
+    "name": "untamed0",
+    "url": "https://github.com/untamed0"
+  },
+  "contributors": [
+    {
+      "name": "mcarver",
+      "url": "https://github.com/mcarver"
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "browserify": "latest",
+    "jquery": "^2.1.4"
+  },
+  "scripts": {
+    "build": "npm run build:scripts -s && npm run build:styles -s && npm run build:markup -s",
+    "build:scripts": "",
+    "build:styles": "",
+    "build:markup": "",
+  }
+}

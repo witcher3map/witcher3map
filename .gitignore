@@ -1,4 +1,6 @@
-src/files/maps
+node_modules
+assets/files/maps
+dist
 
 .idea
 *.iml
