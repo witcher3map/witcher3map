@@ -13,15 +13,27 @@
       "url": "https://github.com/mcarver"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/untamed0/witcher3map"
+  },
   "license": "CC-BY-NC-SA-4.0",
   "devDependencies": {
     "browserify": "latest",
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
+    "rimraf": "^2.4.2"
   },
   "scripts": {
-    "build": "npm run build:scripts -s && npm run build:styles -s && npm run build:markup -s",
-    "build:scripts": "",
-    "build:styles": "",
-    "build:markup": "",
+    "clean": "rimraf dist",
+    "build": "npm run build:distfolders && npm run build:fonts && npm run build:images && npm run build:locales && npm run build:markup && npm run build:scripts && npm run build:styles",
+    "build:distfolders": "mkdirp dist/files --mode 0444",
+    "build:fonts": "ncp assets/fonts dist/files/fonts",
+    "build:images": "ncp assets/images dist/files/images",
+    "build:locales": "ncp assets/locales dist/files/locales",
+    "build:markup": "ncp assets/markup dist",
+    "build:scripts": "ncp assets/scripts dist/files/scripts",
+    "build:styles": "ncp assets/styles dist/files/styles"
   }
 }
