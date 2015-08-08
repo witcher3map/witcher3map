@@ -1,4 +1,6 @@
 $(document).on("loadShared", function () {
+	L.Icon.Default.imagePath = '../files/images/leaflet';
+
 	window.createMarker = function (coord, icon, label, popup, dataKey) {
 		var mapKey = 'markers-' + map_path + '-hidden';
 		var marker = L.marker(coord, setMarker(icon)).bindLabel(label).bindPopup(popup);
