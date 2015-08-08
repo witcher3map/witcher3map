@@ -39,24 +39,29 @@
   },
   "license": "CC-BY-NC-SA-4.0",
   "devDependencies": {
-    "browserify": "latest",
     "http-server": "^0.8.0",
+    "i18next": "^1.10.4",
     "imagemin": "^3.2.0",
+    "jquery": "^2.1.4",
     "jscat": "0.0.2",
     "jshint": "^2.8.0",
+    "leaflet": "^0.7.3",
     "mkdirp": "^0.5.1",
     "mve": "^0.1.2",
     "ncp": "^2.0.0",
     "parallelshell": "^2.0.0",
     "rimraf": "^2.4.2",
-    "uglify-js": "^2.4.24",
     "watch": "^0.16.0"
   },
+
+
+
+
+
   "scripts": {
     "clean": "rimraf dist/favicon.ico dist/index.html dist/files/fonts dist/files/images dist/files/locales dist/files/scripts dist/files/styles dist/s dist/v dist/w",
     "lint": "jshint assets/scripts/custom/**.js",
-    "uglify": "uglifyjs assets/scripts/vendor/**.js --output dist/files/scripts/vendor.bundle.js --comments",
-    "concat": "jscat assets/scripts/vendor/initial/*.js assets/scripts/vendor/modules/*.js assets/scripts/vendor/plugins/*.js > dist/files/scripts/vendor.bundle.js",
+    "concat": "jscat node_modules/jquery/dist/jquery.min.js node_modules/i18next/node_modules/i18next-client/i18next.min.js node_modules/leaflet/dist/leaflet.js assets/scripts/vendor/*.js > dist/files/scripts/vendor.bundle.js",
     "prebuild": "npm run clean -s && mkdirp dist/files --mode 0444",
     "build": "npm run build:fonts && npm run build:images && npm run build:locales && npm run build:markup && npm run build:scripts && npm run build:styles",
     "build:fonts": "ncp assets/fonts dist/files/fonts",
