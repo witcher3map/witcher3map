@@ -23,18 +23,27 @@
     "http-server": "^0.8.0",
     "mkdirp": "^0.5.1",
     "ncp": "^2.0.0",
-    "rimraf": "^2.4.2"
+    "parallelshell": "^2.0.0",
+    "rimraf": "^2.4.2",
+    "watch": "^0.16.0"
   },
   "scripts": {
     "clean": "rimraf dist/favicon.ico dist/index.html dist/files/fonts dist/files/images dist/files/locales dist/files/scripts dist/files/styles dist/s dist/v dist/w",
     "prebuild": "mkdirp dist/files --mode 0444",
     "build": "npm run build:fonts && npm run build:images && npm run build:locales && npm run build:markup && npm run build:scripts && npm run build:styles",
     "build:fonts": "ncp assets/fonts dist/files/fonts",
+    "watch:fonts": "watch 'npm run build:fonts' assets/fonts",
     "build:images": "ncp assets/images dist/files/images",
+    "watch:images": "watch 'npm run build:images' assets/images",
     "build:locales": "ncp assets/locales dist/files/locales",
+    "watch:locales": "watch 'npm run build:locales' assets/locales",
     "build:markup": "ncp assets/markup dist",
+    "watch:markup": "watch 'npm run build:markup' assets/markup",
     "build:scripts": "ncp assets/scripts dist/files/scripts",
+    "watch:scripts": "watch 'npm run build:scripts' assets/scripts",
     "build:styles": "ncp assets/styles dist/files/styles",
+    "watch:styles": "watch 'npm run build:styles' assets/styles",
+    "build:watch": "parallelshell 'npm run watch:fonts' 'npm run watch:images' 'npm run watch:locales' 'npm run watch:markup' 'npm run watch:scripts' 'npm run watch:styles'",
     "webserver": "http-server ./dist -p 80 --silent"
   }
 }
