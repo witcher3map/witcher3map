@@ -21,6 +21,7 @@
   "devDependencies": {
     "browserify": "latest",
     "http-server": "^0.8.0",
+    "imagemin": "^3.2.0",
     "mkdirp": "^0.5.1",
     "ncp": "^2.0.0",
     "parallelshell": "^2.0.0",
@@ -30,10 +31,11 @@
   "scripts": {
     "clean": "rimraf dist/favicon.ico dist/index.html dist/files/fonts dist/files/images dist/files/locales dist/files/scripts dist/files/styles dist/s dist/v dist/w",
     "prebuild": "npm run clean -s && mkdirp dist/files --mode 0444",
-    "build": "npm run build:fonts & npm run build:images & npm run build:locales & npm run build:markup & npm run build:scripts & npm run build:styles",
+    "build": "npm run build:fonts && npm run build:images && npm run build:locales && npm run build:markup && npm run build:scripts && npm run build:styles",
     "build:fonts": "ncp assets/fonts dist/files/fonts",
     "watch:fonts": "watch 'npm run build:fonts' assets/fonts",
     "build:images": "ncp assets/images dist/files/images",
+    "build:images": "imagemin assets/images dist/files/images",
     "watch:images": "watch 'npm run build:images' assets/images",
     "build:locales": "ncp assets/locales dist/files/locales",
     "watch:locales": "watch 'npm run build:locales' assets/locales",
