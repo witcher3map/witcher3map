@@ -3,7 +3,7 @@
     "--------",
     "Build Instructions:",
     "--------",
-    "1. (place maps in dist/files/maps folder, create these folders if they don't exist)"
+    "1. (place maps in dist/files/maps folder, create these folders if they don't exist)",
     "2. npm install",
     "3. npm run build",
     "",
@@ -12,7 +12,7 @@
     "--------",
     "Development Instructions (no webserver needed!):",
     "--------",
-    "1. (place maps in dist/files/maps folder)"
+    "1. (place maps in dist/files/maps folder)",
     "2. npm install",
     "3. npm run build",
     "4. npm run webserver &",
