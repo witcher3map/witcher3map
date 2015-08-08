@@ -20,6 +20,7 @@
   "license": "CC-BY-NC-SA-4.0",
   "devDependencies": {
     "browserify": "latest",
+    "http-server": "^0.8.0",
     "mkdirp": "^0.5.1",
     "ncp": "^2.0.0",
     "rimraf": "^2.4.2"
@@ -33,6 +34,7 @@
     "build:locales": "ncp assets/locales dist/files/locales",
     "build:markup": "ncp assets/markup dist",
     "build:scripts": "ncp assets/scripts dist/files/scripts",
-    "build:styles": "ncp assets/styles dist/files/styles"
+    "build:styles": "ncp assets/styles dist/files/styles",
+    "webserver": "http-server ./dist -p 80 --silent"
   }
 }
