@@ -2,7 +2,6 @@
   "name": "witcher3map",
   "version": "2.0.0",
   "description": "Unofficial Witcher 3 interactive maps, with a mobile & tablet friendly design faithful to the game.",
-  "main": "index.js",
   "author": {
     "name": "untamed0",
     "url": "https://github.com/untamed0"
