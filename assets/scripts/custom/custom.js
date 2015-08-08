@@ -610,7 +610,7 @@ $(document).on("loadCustom", function() {
 			if(notes[map_path][i].key == noteKey) return i;
 		}
 		return -1;
-	}
+	};
 
 	var startNote = function() {
 		console.log('starting note');
@@ -660,7 +660,7 @@ $(document).on("loadCustom", function() {
 
 	var createNote = function(note) {
 		var noteMarker = null;
-		if(note.label && note.label != '') noteMarker = L.marker(L.latLng(note.lat, note.lng), setMarker(icons['note_marker'])).bindLabel(note.label).bindPopup(getNotePopup(note)).openPopup();
+		if(note.label && note.label !== '') noteMarker = L.marker(L.latLng(note.lat, note.lng), setMarker(icons['note_marker'])).bindLabel(note.label).bindPopup(getNotePopup(note)).openPopup();
 		else noteMarker = L.marker(L.latLng(note.lat, note.lng), setMarker(icons['note_marker'])).bindPopup(getNotePopup(note)).openPopup();
 		noteMarker.addTo(map);
 		noteMarkers[note.key] = noteMarker;

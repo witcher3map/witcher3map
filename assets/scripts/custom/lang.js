@@ -30,10 +30,10 @@
 			if (options.debug) console.log('loading custom');
 			$(document).trigger('loadCustom');
 
-			if (options.debug) console.log('performing language substitutions')
+			if (options.debug) console.log('performing language substitutions');
 			$(document).i18n();
 
-			if (options.debug) console.log('map loaded and ready')
+			if (options.debug) console.log('map loaded and ready');
 		});
 	});
 

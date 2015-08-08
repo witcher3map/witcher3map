@@ -1,5 +1,5 @@
 {
-  "//" : [
+  "//": [
     "--------",
     "Build Instructions:",
     "--------",
@@ -42,6 +42,7 @@
     "browserify": "latest",
     "http-server": "^0.8.0",
     "imagemin": "^3.2.0",
+    "jshint": "^2.8.0",
     "mkdirp": "^0.5.1",
     "ncp": "^2.0.0",
     "parallelshell": "^2.0.0",
@@ -50,6 +51,7 @@
   },
   "scripts": {
     "clean": "rimraf dist/favicon.ico dist/index.html dist/files/fonts dist/files/images dist/files/locales dist/files/scripts dist/files/styles dist/s dist/v dist/w",
+    "lint": "jshint assets/scripts/custom/**.js",
     "prebuild": "npm run clean -s && mkdirp dist/files --mode 0444",
     "build": "npm run build:fonts && npm run build:images && npm run build:locales && npm run build:markup && npm run build:scripts && npm run build:styles",
     "build:fonts": "ncp assets/fonts dist/files/fonts",
@@ -60,7 +62,8 @@
     "watch:locales": "watch 'npm run build:locales' assets/locales",
     "build:markup": "ncp assets/markup dist",
     "watch:markup": "watch 'npm run build:markup' assets/markup",
-    "build:scripts": "ncp assets/scripts dist/files/scripts",
+    "prebuild:scripts": "npm run lint",
+    "build:scripts": "ncp assets/scripts/custom dist/files/scripts && ncp assets/scripts/vendor dist/files/scripts",
     "watch:scripts": "watch 'npm run build:scripts' assets/scripts",
     "build:styles": "ncp assets/styles dist/files/styles",
     "watch:styles": "watch 'npm run build:styles' assets/styles",

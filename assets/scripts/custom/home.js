@@ -152,7 +152,7 @@ var doSearch = function() {
 	var count = '<li>'+results.length+' '+$.t('home.resultsFound')+'</li>';
 	resultsElement.append($(count));
 	var resultsLength = results.length;
-	for(var i=0;i<resultsLength;i++) {
+	for(i=0;i<resultsLength;i++) {
 		var item = '<li><div><a href="'+results[i].link+'">'+results[i].label+' - '+results[i].map+'</a></div><div class="searchDescription"><div class="truncated" onclick="toggleTruncate(event, this)">'+results[i].popup+'</div></div></li>';
 		resultsElement.append($(item));
 	}
