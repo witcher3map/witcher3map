@@ -53,11 +53,6 @@
     "rimraf": "^2.4.2",
     "watch": "^0.16.0"
   },
-
-
-
-
-
   "scripts": {
     "clean": "rimraf dist/favicon.ico dist/index.html dist/files/fonts dist/files/images dist/files/locales dist/files/scripts dist/files/styles dist/s dist/v dist/w",
     "lint": "jshint assets/scripts/custom/**.js",
@@ -66,7 +61,7 @@
     "build": "npm run build:fonts && npm run build:images && npm run build:locales && npm run build:markup && npm run build:scripts && npm run build:styles",
     "build:fonts": "ncp assets/fonts dist/files/fonts",
     "watch:fonts": "watch 'npm run build:fonts' assets/fonts",
-    "build:images": "imagemin assets/images dist/files/images && mve dist/files/images/favicon.ico dist/favicon.ico",
+    "build:images": "imagemin assets/images dist/files/images && ncp node_modules/leaflet/dist/images dist/files/images/leaflet && mve dist/files/images/favicon.ico dist/favicon.ico",
     "watch:images": "watch 'npm run build:images' assets/images",
     "build:locales": "ncp assets/locales dist/files/locales",
     "watch:locales": "watch 'npm run build:locales' assets/locales",
