@@ -29,8 +29,8 @@
   },
   "scripts": {
     "clean": "rimraf dist/favicon.ico dist/index.html dist/files/fonts dist/files/images dist/files/locales dist/files/scripts dist/files/styles dist/s dist/v dist/w",
-    "prebuild": "mkdirp dist/files --mode 0444",
-    "build": "npm run build:fonts && npm run build:images && npm run build:locales && npm run build:markup && npm run build:scripts && npm run build:styles",
+    "prebuild": "npm run clean -s && mkdirp dist/files --mode 0444",
+    "build": "npm run build:fonts & npm run build:images & npm run build:locales & npm run build:markup & npm run build:scripts & npm run build:styles",
     "build:fonts": "ncp assets/fonts dist/files/fonts",
     "watch:fonts": "watch 'npm run build:fonts' assets/fonts",
     "build:images": "ncp assets/images dist/files/images",
