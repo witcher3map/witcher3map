@@ -417,7 +417,7 @@ div#popup-wrap {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	vertical-align: center;
+	/*vertical-align: middle;*/
 	max-width: 600px;
 	margin: 0 auto;
 	z-index: 8;
