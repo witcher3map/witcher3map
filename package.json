@@ -40,19 +40,21 @@
     "url": "https://github.com/untamed0/witcher3map"
   },
   "license": "CC-BY-NC-SA-4.0",
+  "dependencies": {
+    "font-awesome": "^4.4.0",
+    "i18next": "^1.10.4",
+    "jquery": "^2.1.4",
+    "leaflet": "^0.7.3"
+  },
   "devDependencies": {
     "clean-css": "^3.3.8",
     "csslint": "^0.10.0",
-    "font-awesome": "^4.4.0",
     "htmllint": "^0.2.5",
     "htmllint-cli": "0.0.4",
     "http-server": "^0.8.0",
-    "i18next": "^1.10.4",
     "imagemin": "^3.2.0",
-    "jquery": "^2.1.4",
     "jscat": "0.0.2",
     "jshint": "^2.8.0",
-    "leaflet": "^0.7.3",
     "mkdirp": "^0.5.1",
     "mve": "^0.1.2",
     "ncp": "^2.0.0",
