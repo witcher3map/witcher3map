@@ -1,10 +1,14 @@
 {
   "//": [
     "--------",
+    "Setup Instructions:",
+    "--------",
+    "1. npm install",
+    "2. npm run getmaps",
+    "",
+    "--------",
     "Build Instructions:",
     "--------",
-    "1. (place maps in dist/files/maps folder, create these folders if they don't exist)",
-    "2. npm install",
     "3. npm run build",
     "",
     "All done!  The project is now available in the dist/ folder.",
@@ -12,15 +16,16 @@
     "--------",
     "Development Instructions (no webserver needed!):",
     "--------",
-    "1. (place maps in dist/files/maps folder)",
-    "2. npm install",
-    "3. npm run build",
     "4. npm run webserver &",
     "5. npm run build:watch",
     "",
-    "Open your web browser of choice and visit http://localhost.  #2 and #3 builds the project to the dist folder.",
-    "#4 runs a local web server in background.  #5 watches for changes to any files in the assets folder and if a",
-    "change is detected, the build task is executed immediately so the results are visible your browser."
+    "Open your web browser of choice and visit http://localhost.",
+    "#1 installs npm dependencies for this project.",
+    "#2 grabs the maps from dropbox (only ever do this once).",
+    "#3 builds the project to the dist folder.",
+    "#4 runs a local web server in background.",
+    "#5 watches for changes to any files in the assets folder and if a change is detected, ",
+    "the build task is executed immediately so the results are visible your browser."
   ],
   "name": "witcher3map",
   "version": "2.0.0",
@@ -49,6 +54,7 @@
   "devDependencies": {
     "clean-css": "^3.3.8",
     "csslint": "^0.10.0",
+    "download-cli": "^1.0.1",
     "htmllint": "^0.2.5",
     "htmllint-cli": "0.0.4",
     "http-server": "^0.8.0",
@@ -61,6 +67,9 @@
     "parallelshell": "^2.0.0",
     "rimraf": "^2.4.2",
     "watch": "^0.16.0"
+  },
+  "config": {
+    "mapsurl": "https://dl.dropboxusercontent.com/s/xwf2wyl1tokhnqy/maps_pngquant.zip"
   },
   "scripts": {
     "clean": "rimraf dist/favicon.ico dist/index.html dist/files/fonts dist/files/images dist/files/locales dist/files/scripts dist/files/styles dist/s dist/v dist/w",
@@ -89,6 +98,7 @@
     "build:styles": "ncp node_modules/leaflet/dist/leaflet.css dist/files/styles/leaflet.css && ncp node_modules/font-awesome/css/font-awesome.min.css dist/files/styles/font-awesome.min.css && npm run minify-styles",
     "watch:styles": "watch \"npm run build:styles\" assets/styles",
     "build:watch": "parallelshell \"npm run watch:fonts\" \"npm run watch:images\" \"npm run watch:locales\" \"npm run watch:markup\" \"npm run watch:scripts\" \"npm run watch:styles\"",
-    "webserver": "http-server ./dist -p 80 --silent"
+    "webserver": "http-server ./dist -p 80 --silent",
+    "getmaps": "download --extract --out dist/files $npm_package_config_mapsurl"
   }
 }
