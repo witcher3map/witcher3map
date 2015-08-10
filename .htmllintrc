@@ -4,5 +4,6 @@
   "attr-name-style": false,
   "attr-quote-style": false,
   "id-class-style": false,
+  "line-end-style": false,
   "tag-bans": []
 }
