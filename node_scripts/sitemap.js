@@ -24,7 +24,7 @@ var generateSitemapFromMapdata = function(namespace, mapdata) {
 			var marker = mapdata[markerType][i];
 			for(var j=0; j < marker.coords.length; j++) {
 				var coords = marker.coords[j];
-				var url = hostname + '/' + namespace + '/' + global.map_center[0] + '/' + global.map_center[1] + '/m=' + coords[0] + ',' + coords[1];
+				var url = hostname + '/' + namespace + '/#' +global.map_mZoom + '/' + coords[0] + '/' + coords[1] + '/m=' + coords[0] + ',' + coords[1];
 				sitemap.add({url: url});
 			}
 		}
