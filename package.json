@@ -102,6 +102,7 @@
     "watch:styles": "watch \"npm run build:styles\" assets/styles",
     "build:watch": "parallelshell \"npm run watch:fonts\" \"npm run watch:images\" \"npm run watch:locales\" \"npm run watch:markup\" \"npm run watch:scripts\" \"npm run watch:styles\"",
     "webserver": "http-server ./dist -p 80 --silent",
+    "start": "npm run build && npm run webserver",
     "getmaps": "download --extract --out dist/files $npm_package_config_mapsurl",
     "sitemap": "node node_scripts/sitemap.js"
   }
