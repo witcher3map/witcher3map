@@ -49,9 +49,7 @@
     "font-awesome": "^4.4.0",
     "i18next": "^1.10.4",
     "jquery": "^2.1.4",
-    "leaflet": "^0.7.3"
-  },
-  "devDependencies": {
+    "leaflet": "^0.7.3",
     "clean-css": "^3.3.8",
     "compression": "^1.5.2",
     "connect": "^3.4.0",
