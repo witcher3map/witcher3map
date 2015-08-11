@@ -31,6 +31,8 @@ $.i18n.init(i18noptions, function() {
 								$('#clear').hide();
 								$('#nav').show();
 							});
+
+							$(document).i18n();
 						});
 					});
 				});
