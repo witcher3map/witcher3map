@@ -1,35 +1,19 @@
-if (localStorage['lang'] == null) {
-	var lang = window.navigator.userLanguage || window.navigator.language;
-	lang = lang.substring(0,2);
-	localStorage['lang'] = lang;
-}
-
-var options = {
-	debug: false,
-	getAsync: true,
-	ns: 'general',
-	lng: localStorage['lang'],
-	fallbackLng: 'en',
-	resGetPath: 'files/locales/__lng__/__ns__.json',
-	useDataAttrOptions: true,
-	lngWhitelist: [ 'en', 'de', 'ru', 'pl', 'fr' ]
-};
+//empty mocks to avoid errors on mapdata files
+var L = {};
+L.latLng = function() {};
+window.markers = {};
 
 //i18n init to translate search results
-$.i18n.init(options, function() {
-	$(document).i18n();
+$.i18n.init(i18noptions, function() {
 	$.i18n.loadNamespace('v', function() {
 		$.getScript("files/scripts/mapdata-velen.js").done(function(script, textStatus) {
-			$(document).trigger('loadMapdata');
-			$(document).unbind('loadMapdata');
 			$.i18n.loadNamespace('s', function() {
 				$.getScript("files/scripts/mapdata-skellige.js").done(function(script, textStatus) {
-					$(document).trigger('loadMapdata');
-					$(document).unbind('loadMapdata');
 					$.i18n.loadNamespace('w', function() {
 						$.getScript("files/scripts/mapdata-white_orchard.js").done(function(script, textStatus) {
-							$(document).trigger('loadMapdata');
-							$(document).unbind('loadMapdata');
+							processData('velen', mapdata_velen);
+							processData('skellige', mapdata_skellige);
+							processData('white_orchard', mapdata_white_orchard);
 
 							var searchInput = $('#search');
 
@@ -47,6 +31,8 @@ $.i18n.init(options, function() {
 								$('#clear').hide();
 								$('#nav').show();
 							});
+
+							$(document).i18n();
 						});
 					});
 				});
@@ -55,47 +41,9 @@ $.i18n.init(options, function() {
 	});
 });
 
-window.changeLang = function(lang) {
-	localStorage['lang'] = lang;
-	$.i18n.setLng(lang, function() { $(document).i18n(); });
-};
-
-var languageOptions = [
-	{text: "English",value: "en",selected: (localStorage['lang'] == "en" ? true : false), description: " ",imageSrc: "files/images/flags/en.png"},
-	{text: "Deutsch",value: "de",selected: (localStorage['lang'] == "de" ? true : false),description: " ",imageSrc: "files/images/flags/de.png"},
-	{text: "Русский",value: "ru",selected: (localStorage['lang'] == "ru" ? true : false),description: " ",imageSrc: "files/images/flags/ru.png"},
-	{text: "Polski",value: "pl",selected: (localStorage['lang'] == "pl" ? true : false),description: " ",imageSrc: "files/images/flags/pl.png"},
-	{text: "Français",value: "fr",selected: (localStorage['lang'] == "fr" ? true : false),description: " ",imageSrc: "files/images/flags/fr.png"}
-];
-
-$('#lang-switcher').ddslick({
-	data: languageOptions,
-	width: 150,
-	onSelected: function(obj){
-		changeLang(obj.selectedData.value);
-	}
-});
-
-$(function() {
-	var s = $('#search-input-wrapper');
-	var pos = s.position();
-	//setup sticky searchbar
-	$(window).scroll(function() {
-		var windowpos = $(window).scrollTop();
-		if (windowpos >= pos.top) {
-			if($('#search').val()) {
-				s.addClass("sticky");
-			}
-		} else {
-			s.removeClass("sticky");
-		}
-	});
-});
-
-
 //mocks shared.js processData function to generate search results
 var mapdata = [];
-var processData = function(data) {
+var processData = function(map_path, data) {
 	var mapKey = map_path.charAt(0);
 	$.each(data, function(markerType,markers) {
 		$.each(markers, function(index,marker) {
@@ -110,9 +58,8 @@ var processData = function(data) {
 			} else {
 				label = marker.label+' ('+popupTitle+')';
 			}
-
 			mapdata.push({
-				'map': $.t('maps.'+window.map_path),
+				'map': $.t('maps.'+map_path),
 				'label':label,
 				'popup':popupText,
 				'link':link
@@ -120,11 +67,6 @@ var processData = function(data) {
 		});
 	});
 };
-
-//empty mocks to avoid errors on mapdata files
-var L = {};
-L.latLng = function() {};
-window.markers = {};
 
 //search function
 var doSearch = function() {
@@ -144,7 +86,7 @@ var doSearch = function() {
 	var results = [];
 	var mapdataLength = mapdata.length;
 	for(var i=0;i<mapdataLength;i++) {
-		if((mapdata[i].label.search(regex) != -1) || (mapdata[i].popup.search(regex) != -1)) {
+		if((mapdata[i].label.search(regex) > -1) || (mapdata[i].popup.search(regex) > -1)) {
 			results.push(mapdata[i]);
 		}
 	}
@@ -163,3 +105,19 @@ var toggleTruncate = function(e, element) {
 	e.stopPropagation();
 	$(element).toggleClass("truncated");
 };
+
+$(function() {
+	var s = $('#search-input-wrapper');
+	var pos = s.position();
+	//setup sticky searchbar
+	$(window).scroll(function() {
+		var windowpos = $(window).scrollTop();
+		if (windowpos >= pos.top) {
+			if($('#search').val()) {
+				s.addClass("sticky");
+			}
+		} else {
+			s.removeClass("sticky");
+		}
+	});
+});
