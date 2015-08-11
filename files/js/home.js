@@ -1,28 +1,10 @@
-if (localStorage['lang'] == null) {
-	var lang = window.navigator.userLanguage || window.navigator.language;
-	lang = lang.substring(0,2);
-	localStorage['lang'] = lang;
-}
-
 //empty mocks to avoid errors on mapdata files
 var L = {};
 L.latLng = function() {};
 window.markers = {};
 
-//i18n options
-var options = {
-	debug: false,
-	getAsync: true,
-	ns: 'general',
-	lng: localStorage['lang'],
-	fallbackLng: 'en',
-	resGetPath: 'files/locales/__lng__/__ns__.json',
-	useDataAttrOptions: true,
-	lngWhitelist: [ 'en', 'de', 'ru', 'pl', 'fr' ]
-};
-
 //i18n init to translate search results
-$.i18n.init(options, function() {
+$.i18n.init(i18noptions, function() {
 	$.i18n.loadNamespace('v', function() {
 		$.getScript("files/js/mapdata-velen.js").done(function(script, textStatus) {
 			$.i18n.loadNamespace('s', function() {
@@ -55,29 +37,6 @@ $.i18n.init(options, function() {
 			});
 		});
 	});
-});
-
-window.changeLang = function(lang) {
-	if(localStorage['lang'] != lang) {
-		localStorage['lang'] = lang;
-		window.location.reload();
-	}
-};
-
-var languageOptions = [
-	{text: "English",value: "en",selected: (localStorage['lang'] == "en" ? true : false), description: " ",imageSrc: "files/img/flags/en.png"},
-	{text: "Deutsch",value: "de",selected: (localStorage['lang'] == "de" ? true : false),description: " ",imageSrc: "files/img/flags/de.png"},
-	{text: "Русский",value: "ru",selected: (localStorage['lang'] == "ru" ? true : false),description: " ",imageSrc: "files/img/flags/ru.png"},
-	{text: "Polski",value: "pl",selected: (localStorage['lang'] == "pl" ? true : false),description: " ",imageSrc: "files/img/flags/pl.png"},
-	{text: "Français",value: "fr",selected: (localStorage['lang'] == "fr" ? true : false),description: " ",imageSrc: "files/img/flags/fr.png"}
-];
-
-$('#lang-switcher').ddslick({
-	data: languageOptions,
-	width: 150,
-	onSelected: function(obj){
-		changeLang(obj.selectedData.value);
-	}
 });
 
 //mocks shared.js processData function to generate search results
