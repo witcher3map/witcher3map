@@ -108,5 +108,9 @@
     "start": "node node_scripts/server.js",
     "getmaps": "download --extract --out dist/files $npm_package_config_mapsurl",
     "sitemap": "node node_scripts/sitemap.js"
+  },
+  "engines": {
+    "node":"0.12.7",
+    "npm":"2.11.3"
   }
 }
