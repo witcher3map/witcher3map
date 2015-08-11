@@ -1,8 +1,8 @@
 L.Icon.Default.imagePath = '../files/images/leaflet';
 
 var getMapdata = function(mapname) {
-	$.getScript("../files/scripts/mapdata-"+mapname+".js").done(function(script, textStatus) {
-		$.getScript("../files/scripts/custom.js").done(function(script, textStatus) {
+	$.cachedScript("../files/scripts/mapdata-"+mapname+".js").done(function(script, textStatus) {
+		$.cachedScript("../files/scripts/custom.js").done(function(script, textStatus) {
 			$(document).i18n();
 		});
 	});
