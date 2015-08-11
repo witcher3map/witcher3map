@@ -4,6 +4,12 @@ if (localStorage['lang'] == null) {
 	localStorage['lang'] = lang;
 }
 
+//empty mocks to avoid errors on mapdata files
+var L = {};
+L.latLng = function() {};
+window.markers = {};
+
+//i18n options
 var options = {
 	debug: false,
 	getAsync: true,
@@ -17,19 +23,15 @@ var options = {
 
 //i18n init to translate search results
 $.i18n.init(options, function() {
-	$(document).i18n();
 	$.i18n.loadNamespace('v', function() {
 		$.getScript("files/js/mapdata-velen.js").done(function(script, textStatus) {
-			$(document).trigger('loadMapdata');
-			$(document).unbind('loadMapdata');
 			$.i18n.loadNamespace('s', function() {
 				$.getScript("files/js/mapdata-skellige.js").done(function(script, textStatus) {
-					$(document).trigger('loadMapdata');
-					$(document).unbind('loadMapdata');
 					$.i18n.loadNamespace('w', function() {
 						$.getScript("files/js/mapdata-white_orchard.js").done(function(script, textStatus) {
-							$(document).trigger('loadMapdata');
-							$(document).unbind('loadMapdata');
+							processData('velen', mapdata_velen);
+							processData('skellige', mapdata_skellige);
+							processData('white_orchard', mapdata_white_orchard);
 
 							var searchInput = $('#search');
 
@@ -56,8 +58,10 @@ $.i18n.init(options, function() {
 });
 
 window.changeLang = function(lang) {
-	localStorage['lang'] = lang;
-	$.i18n.setLng(lang, function() { $(document).i18n(); });
+	if(localStorage['lang'] != lang) {
+		localStorage['lang'] = lang;
+		window.location.reload();
+	}
 };
 
 var languageOptions = [
@@ -76,26 +80,9 @@ $('#lang-switcher').ddslick({
 	}
 });
 
-$(function() {
-	var s = $('#search-input-wrapper');
-	var pos = s.position();
-	//setup sticky searchbar
-	$(window).scroll(function() {
-		var windowpos = $(window).scrollTop();
-		if (windowpos >= pos.top) {
-			if($('#search').val()) {
-				s.addClass("sticky");
-			}
-		} else {
-			s.removeClass("sticky");
-		}
-	});
-});
-
-
 //mocks shared.js processData function to generate search results
 var mapdata = [];
-var processData = function(data) {
+var processData = function(map_path, data) {
 	var mapKey = map_path.charAt(0);
 	$.each(data, function(markerType,markers) {
 		$.each(markers, function(index,marker) {
@@ -110,9 +97,8 @@ var processData = function(data) {
 			} else {
 				label = marker.label+' ('+popupTitle+')';
 			}
-
 			mapdata.push({
-				'map': $.t('maps.'+window.map_path),
+				'map': $.t('maps.'+map_path),
 				'label':label,
 				'popup':popupText,
 				'link':link
@@ -120,11 +106,6 @@ var processData = function(data) {
 		});
 	});
 };
-
-//empty mocks to avoid errors on mapdata files
-var L = {};
-L.latLng = function() {};
-window.markers = {};
 
 //search function
 var doSearch = function() {
@@ -144,7 +125,7 @@ var doSearch = function() {
 	var results = [];
 	var mapdataLength = mapdata.length;
 	for(var i=0;i<mapdataLength;i++) {
-		if((mapdata[i].label.search(regex) != -1) || (mapdata[i].popup.search(regex) != -1)) {
+		if((mapdata[i].label.search(regex) > -1) || (mapdata[i].popup.search(regex) > -1)) {
 			results.push(mapdata[i]);
 		}
 	}
@@ -163,3 +144,19 @@ var toggleTruncate = function(e, element) {
 	e.stopPropagation();
 	$(element).toggleClass("truncated");
 };
+
+$(function() {
+	var s = $('#search-input-wrapper');
+	var pos = s.position();
+	//setup sticky searchbar
+	$(window).scroll(function() {
+		var windowpos = $(window).scrollTop();
+		if (windowpos >= pos.top) {
+			if($('#search').val()) {
+				s.addClass("sticky");
+			}
+		} else {
+			s.removeClass("sticky");
+		}
+	});
+});

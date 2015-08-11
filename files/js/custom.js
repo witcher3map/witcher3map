@@ -1,4 +1,34 @@
-$(document).on("loadCustom", function() {
+$(function() {
+	processData(window['mapdata_'+map_path.replace('-','_')]);
+	window.allLayers = [
+		markers.abandoned,
+		markers.alchemy,
+		markers.armourer,
+		markers.armourerstable,
+		markers.banditcamp,
+		markers.barber,
+		markers.blacksmith,
+		markers.brothel,
+		markers.entrance,
+		markers.grindstone,
+		markers.guarded,
+		markers.gwent,
+		markers.harbor,
+		markers.herbalist,
+		markers.hidden,
+		markers.innkeep,
+		markers.monsterden,
+		markers.monsternest,
+		markers.notice,
+		markers.pid,
+		markers.pop,
+		markers.poi,
+		markers.shopkeeper,
+		markers.signpost,
+		markers.smugglers,
+		markers.spoils
+	];
+
 	var mobile   = ($('#sidebar').width() < 300);
 	var wayPoint = false;
 	var circle = null;
