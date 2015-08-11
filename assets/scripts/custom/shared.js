@@ -1,5 +1,33 @@
 L.Icon.Default.imagePath = '../files/images/leaflet';
 
+var getMapdata = function(mapname) {
+	$.getScript("../files/scripts/mapdata-"+mapname+".js").done(function(script, textStatus) {
+		$.getScript("../files/scripts/custom.js").done(function(script, textStatus) {
+			$(document).i18n();
+		});
+	});
+};
+
+$.i18n.init(i18noptions, function() {
+	var namespace = location.pathname.match(/\/(\w{1})\/(?:index.html)?$/)[1];
+	$.i18n.loadNamespace(namespace, function() {
+		if(namespace == "w") {
+			getMapdata('white_orchard');
+		} else if (namespace == "v") {
+			getMapdata('velen');
+		} else if (namespace == "s") {
+			getMapdata('skellige');
+		}
+	});
+});
+
+//fix bug where sidebar scrollbar doesn't appear when the language drop-down opens
+$('.dd-selected').on('click', function() {
+	setTimeout(function() {
+			$("#sidebar").getNiceScroll().resize();
+	}, 500);
+});
+
 window.createMarker = function (coord, icon, label, popup, dataKey) {
 	var mapKey = 'markers-' + map_path + '-hidden';
 	var marker = L.marker(coord, setMarker(icon)).bindLabel(label).bindPopup(popup);
