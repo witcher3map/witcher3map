@@ -89,7 +89,7 @@ $(function() {
 		map.setZoom(window.map_mZoom);
 		new L.marker(cords, {
 			icon : L.icon({
-				iconUrl  : '../files/img/searchhover.png',
+				iconUrl  : '../files/images/searchhover.png',
 				iconSize : [22, 22]
 			})
 		}).addTo(map);
@@ -166,7 +166,7 @@ $(function() {
 		}
 		wayPoint = new L.marker(e.latlng, {
 			icon : L.icon({
-				iconUrl  : '../files/img/icons/waypoint.png',
+				iconUrl  : '../files/images/icons/waypoint.png',
 				iconSize : [26, 32]
 			})
 		}).on('click', function() {
@@ -454,7 +454,7 @@ $(function() {
 	};
 
 	var popup = function(title, content) {
-		$('body').prepend('<div id="popup-wrap"><div id="popup-border"><img id="popup-close" src="../files/img/exit.png" alt="Close" onclick="popupClose();"><div id="popup-content"><h1>' + title + '</h1><hr>' + content + '</div></div></div>');
+		$('body').prepend('<div id="popup-wrap"><div id="popup-border"><img id="popup-close" src="../files/images/exit.png" alt="Close" onclick="popupClose();"><div id="popup-content"><h1>' + title + '</h1><hr>' + content + '</div></div></div>');
 		$('div#popup-content').niceScroll({
 			cursorcolor  : '#5E4F32',
 			cursorborder : 'none',
@@ -739,7 +739,7 @@ $(function() {
 			var hashWayPoint = hashParams.w.split(",");
 			wayPoint = new L.marker(L.latLng(hashWayPoint[0], hashWayPoint[1]), {
 				icon : L.icon({
-					iconUrl  : '../files/img/icons/waypoint.png',
+					iconUrl  : '../files/images/icons/waypoint.png',
 					iconSize : [26, 32]
 				})
 			}).on('click', function() {
