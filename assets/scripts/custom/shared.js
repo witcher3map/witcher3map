@@ -21,11 +21,13 @@ $.i18n.init(i18noptions, function() {
 	});
 });
 
-//fix bug where sidebar scrollbar doesn't appear when the language drop-down opens
-$('.dd-selected').on('click', function() {
-	setTimeout(function() {
-			$("#sidebar").getNiceScroll().resize();
-	}, 500);
+$(function() {
+	//fix bug where sidebar scrollbar doesn't appear when the language drop-down opens
+	$('.dd-selected').on('click', function() {
+		setTimeout(function() {
+				$("#sidebar").getNiceScroll().resize();
+		}, 500);
+	});
 });
 
 window.createMarker = function (coord, icon, label, popup, dataKey) {
