@@ -33,7 +33,7 @@ After cloning the repository run the following commands:
 
 2. `npm run getmaps` _(downloads the map files from Dropbox and extracts them properly, you only need to do this once.)_
 
-3. `npm run webserver &` _(runs a local webserver listening on port 80 in the background. open a web browser and visit http://localhost)_
+3. `npm start &` _(runs a local webserver listening on port 80 in the background. open a web browser and visit http://localhost)_
 
 4. `npm run build:watch` _(watches the assets folder for changes and automatically runs the build task necessary to update the dist folder.)_
 
