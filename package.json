@@ -38,27 +38,28 @@
   },
   "license": "CC-BY-NC-SA-4.0",
   "dependencies": {
-    "font-awesome": "^4.4.0",
-    "i18next": "^1.10.4",
-    "jquery": "^2.1.4",
-    "leaflet": "^0.7.3",
     "clean-css": "^3.3.8",
     "compression": "^1.5.2",
     "connect": "^3.4.0",
     "csslint": "^0.10.0",
     "download-cli": "^1.0.1",
     "express": "^4.13.3",
+    "font-awesome": "^4.4.0",
     "fs": "0.0.2",
     "htmllint": "^0.2.5",
     "htmllint-cli": "0.0.4",
+    "i18next": "^1.10.4",
+    "jquery": "^2.1.4",
     "jscat": "0.0.2",
     "jshint": "^2.8.0",
+    "leaflet": "^0.7.3",
     "mkdirp": "^0.5.1",
     "ncp": "^2.0.0",
     "parallelshell": "^2.0.0",
     "rimraf": "^2.4.2",
     "serve-static": "^1.10.0",
     "sitemap": "^1.0.0",
+    "uglify-js": "^2.4.24",
     "watch": "^0.16.0"
   },
   "config": {
@@ -100,7 +101,7 @@
     "start": "npm run webserver"
   },
   "engines": {
-    "node":"0.12.7",
-    "npm":"2.11.3"
+    "node": "0.12.7",
+    "npm": "2.11.3"
   }
 }
