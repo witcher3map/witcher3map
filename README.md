@@ -23,9 +23,19 @@ If you notice anything missing or have any improvements please create a pull req
 
 You can also help with translating the project into other languages. We use a translation editor called Crowdin, you can find our project page [here](https://crowdin.com/project/witcher3map). Crowdin offers an easy to use interface so you don't have to be familiar with Git or Github.
 
-Map Files
+How do I contribute code changes?
 --------------------------------------
-The map files are excluded from this repository due to their size (500MB) To download them [click here](https://mega.co.nz/#!TRM2CbLa!VWTS1fsV58kF1GoH4Bxz_U2EHNAUH9vlu_HBSP6seEo), extract, and place the resulting 'maps' folder in the 'file' directory.
+Ensure you have [git](http://git-scm.com/downloads) and [Node.js](https://nodejs.org/download/) installed.
+
+After cloning the repository run the following commands:
+
+1. `npm install` _(downloads dependencies for the project from NPM and builds the project to the dist/ folder.)_
+
+2. `npm run getmaps` _(downloads the map files from Dropbox and extracts them properly, you only need to do this once.)_
+
+3. `npm start &` _(runs a local webserver listening on port 80 in the background. open a web browser and visit http://localhost)_
+
+4. `npm run build:watch` _(watches the assets folder for changes and automatically runs the build task necessary to update the dist folder.)_
 
 Credits & Licence
 --------------------------------------

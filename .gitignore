@@ -1,5 +1,6 @@
-files/maps
-
+node_modules
+dist
+npm-debug.log
 .idea
 *.iml
 .DS_Store

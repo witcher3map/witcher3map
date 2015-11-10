@@ -1,0 +1,108 @@
+{
+  "//": [
+    "--------",
+    "Setup Instructions:",
+    "--------",
+    "1. npm install",
+    "2. npm run getmaps",
+    "",
+    "--------",
+    "Development Instructions (no webserver needed!):",
+    "--------",
+    "3. npm start &",
+    "4. npm run build:watch",
+    "",
+    "Open your web browser of choice and visit http://localhost.",
+    "#1 installs npm dependencies for this project and builds the project to the dist/ folder.",
+    "#2 grabs the maps from dropbox (only ever do this once).",
+    "#3 runs a web server using node/express in background.",
+    "#4 watches for changes to any files in the assets folder and if a change is detected, ",
+    "the build task is executed immediately so the results are visible your browser."
+  ],
+  "name": "witcher3map",
+  "version": "2.0.0",
+  "description": "Unofficial Witcher 3 interactive maps, with a mobile & tablet friendly design faithful to the game.",
+  "author": {
+    "name": "untamed0",
+    "url": "https://github.com/untamed0"
+  },
+  "contributors": [
+    {
+      "name": "mcarver",
+      "url": "https://github.com/mcarver"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/untamed0/witcher3map"
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "dependencies": {
+    "clean-css": "^3.3.8",
+    "compression": "^1.5.2",
+    "connect": "^3.4.0",
+    "csslint": "^0.10.0",
+    "download-cli": "^1.0.1",
+    "express": "^4.13.3",
+    "font-awesome": "^4.4.0",
+    "fs": "0.0.2",
+    "htmllint": "^0.2.5",
+    "htmllint-cli": "0.0.4",
+    "i18next": "^1.10.4",
+    "jquery": "^2.1.4",
+    "jscat": "0.0.2",
+    "jscs": "^2.4.0",
+    "jshint": "^2.8.0",
+    "leaflet": "^0.7.3",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
+    "parallelshell": "^2.0.0",
+    "rimraf": "^2.4.2",
+    "serve-static": "^1.10.0",
+    "sitemap": "^1.0.0",
+    "uglify-js": "^2.4.24",
+    "watch": "^0.16.0"
+  },
+  "config": {
+    "mapsurl": "https://dl.dropboxusercontent.com/s/xwf2wyl1tokhnqy/maps_pngquant.zip"
+  },
+  "scripts": {
+    "postinstall": "npm run build",
+    "clean": "rimraf dist/favicon.ico dist/sitemap.xml dist/index.html dist/files/fonts dist/files/images dist/files/locales dist/files/scripts dist/files/styles dist/s dist/v dist/w",
+    "lint-scripts": "jshint assets/scripts/custom && jscs -v assets/scripts/custom",
+    "lint-styles": "csslint assets/styles",
+    "lint-markup": "htmllint assets/markup/*.html && htmllint assets/markup/**/*.html",
+    "concat-vendor-scripts": "jscat node_modules/jquery/dist/jquery.min.js node_modules/i18next/node_modules/i18next-client/i18next.min.js node_modules/leaflet/dist/leaflet.js assets/scripts/vendor/FileSaver.min.js assets/scripts/vendor/jquery.ddslick.min.js assets/scripts/vendor/jquery.nicescroll.min.js assets/scripts/vendor/leaflet.plugins.js > dist/files/scripts/vendor.bundle.js && uglifyjs assets/scripts/vendor/leaflet-hash-params.js assets/scripts/vendor/leaflet-search.js --compress >> dist/files/scripts/vendor.bundle.js",
+    "minify-styles": "cleancss --skip-rebase assets/styles/home.css --output dist/files/styles/home.min.css && cleancss --skip-rebase assets/styles/main.css --output dist/files/styles/main.min.css",
+    "favicon": "ncp assets/favicon/favicon.ico dist/favicon.ico",
+    "create-dirs": "mkdirp dist/files/fonts dist/files/images dist/files/locales dist/files/scripts dist/files/styles",
+    "prebuild": "npm run clean && npm run create-dirs",
+    "build": "npm run build:fonts && npm run build:images && npm run build:locales && npm run build:markup && npm run build:scripts && npm run build:styles",
+    "postbuild": "npm run sitemap",
+    "build:fonts": "ncp node_modules/font-awesome/fonts dist/files/fonts && ncp assets/fonts dist/files/fonts",
+    "watch:fonts": "watch \"npm run build:fonts\" assets/fonts",
+    "build:images": "ncp assets/images dist/files/images && ncp node_modules/leaflet/dist/images dist/files/images/leaflet",
+    "postbuild:images": "npm run favicon",
+    "watch:images": "watch \"npm run build:images\" assets/images",
+    "build:locales": "ncp assets/locales dist/files/locales",
+    "watch:locales": "watch \"npm run build:locales\" assets/locales",
+    "prebuild:markup": "npm run lint-markup",
+    "build:markup": "ncp assets/markup dist",
+    "watch:markup": "watch \"npm run build:markup\" assets/markup",
+    "prebuild:scripts": "npm run lint-scripts",
+    "build:scripts": "ncp assets/scripts/custom dist/files/scripts && npm run concat-vendor-scripts",
+    "watch:scripts": "watch \"npm run build:scripts\" assets/scripts",
+    "prebuild:styles": "npm run lint-styles",
+    "build:styles": "ncp node_modules/leaflet/dist/leaflet.css dist/files/styles/leaflet.css && ncp node_modules/font-awesome/css/font-awesome.min.css dist/files/styles/font-awesome.min.css && npm run minify-styles",
+    "watch:styles": "watch \"npm run build:styles\" assets/styles",
+    "build:watch": "parallelshell \"npm run watch:fonts\" \"npm run watch:images\" \"npm run watch:locales\" \"npm run watch:markup\" \"npm run watch:scripts\" \"npm run watch:styles\"",
+    "webserver": "node node_scripts/server.js",
+    "getmaps": "download --extract --out dist/files $npm_package_config_mapsurl",
+    "sitemap": "node node_scripts/sitemap.js",
+    "start": "npm run webserver"
+  },
+  "engines": {
+    "node": "0.12.7",
+    "npm": "2.11.3"
+  }
+}
