@@ -173,7 +173,7 @@ window.mapdata_velen = {
 	}, { // SW Velen
 		coords: [[-69.81, -142.91]],
 		label: $.t("v:banditcamp.label"),
-		popup: $.t("v:banditcamp.desc") + $.t("v:banditcamp.bug")
+		popup: $.t("v:banditcamp.desc")
 	}],
 
 // Barber
