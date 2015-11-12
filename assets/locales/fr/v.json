@@ -49,8 +49,7 @@
   },
   "banditcamp":{
     "label":"Camp de bandits",
-    "desc":"Un groupe de dangereux bandits ont établi leur camp ici. ",
-    "bug":"Endroit buggé, jamais montré comme vidé."
+    "desc":"Un groupe de dangereux bandits ont établi leur camp ici. "
   },
   "barber":{
     "label":"Barbier",
