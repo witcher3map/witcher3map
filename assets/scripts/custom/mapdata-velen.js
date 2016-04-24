@@ -280,6 +280,10 @@ window.mapdata_velen = {
 		coords: [[-28.77, -77.74]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
+	}, {
+		coords: [[32.064,-111.226]],
+		label: $.t("entrance.label"),
+		popup: $.t("entrance.desc")
 	}, { // SW Velen
 		coords: [[-75.36, -124.19]],
 		label: $.t("entrance.label"),
@@ -1182,6 +1186,11 @@ window.mapdata_velen = {
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.silversword.ursine.mastercrafted"),
 		popup: $.t("poi.desc.witcherGear.silversword.ursine.mastercrafted")
+	}, {
+		coords: [[-16.278,-115.906]],
+		label: $.t("poi.label.witcherGear"),
+		popupTitle: $.t("poi.popup.witcherGear.steelsword.ursine.mastercrafted"),
+		popup: $.t("poi.desc.witcherGear.steelsword.ursine.mastercrafted")
 	}, {
 		coords: [[-81.2, -70]],
 		label: $.t("poi.label.witcherGear"),
