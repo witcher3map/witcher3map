@@ -1,7 +1,7 @@
 window.map_path   = 'kaer_morhen';
-window.map_sWest  = L.latLng(-85, -180);
-window.map_nEast  = L.latLng(41, 0);
-window.map_center = [-66, -90];
+window.map_sWest  = L.latLng(0, 0);
+window.map_nEast  = L.latLng(160, 128);
+window.map_center = [64, 58];
 window.map_mZoom  = 6;
 window.mapdata_kaer_morhen = {
 // Abandoned Site
@@ -16,7 +16,7 @@ window.mapdata_kaer_morhen = {
 // Armourer's Table
 	armourerstable: [{
 		coords: [
-			[-65.385,-83.870],
+			[65.813, 68.547],
 		],
 		label: $.t("armourerstable.label"),
 		popup: $.t("armourerstable.desc")
@@ -36,19 +36,19 @@ window.mapdata_kaer_morhen = {
 
 // Entrance
 	entrance: [{
-		coords: [[6.403,-81.475]],
+		coords: [[132.531, 70.109]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc"),
 	}, {
-		coords: [[-0.308,-86.309]],
+		coords: [[127.781, 66.672]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[-78.349,-79.102]],
+		coords: [[34.844, 71.719]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[-74.730,-107.600]],
+		coords: [[46.063, 51.453]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}],
@@ -56,8 +56,8 @@ window.mapdata_kaer_morhen = {
 // Grindstone
 	grindstone: [{
 		coords: [
-			[-66.355,-93.735],
-			[-64.951,-83.232]
+			[64.297, 61.328],
+			[66.703, 68.813]
 		],
 		label: $.t("grindstone.label"),
 		popup: $.t("grindstone.desc")
@@ -66,8 +66,8 @@ window.mapdata_kaer_morhen = {
 // Guarded Treasure
 	guarded: [{
 		coords: [
-			[-11.953,-73.960],
-			[-33.615,-105.732],
+			[119.406, 75.438],
+			[102.625, 52.906],
 		],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.desc")
@@ -79,8 +79,8 @@ window.mapdata_kaer_morhen = {
 // Harbor
 	harbor: [{
 		coords: [
-			[-33.615,-100.327],
-			[-52.616,-88.418],
+			[102.531, 56.703],
+			[83.891, 65.078],
 		],
 		label: $.t("harbor.label"),
 		popup: $.t("harbor.desc")
@@ -109,7 +109,7 @@ window.mapdata_kaer_morhen = {
 
 // Place of Power
 	pop: [{
-		coords: [[-2.987,-84.463]],
+		coords: [[125.781, 67.891]],
 		label: $.t("pop.label"),
 		popupTitle: $.t("pop.popup", {sign: $.t("signs.igni")}),
 		popup: $.t("pop.desc")
@@ -123,15 +123,15 @@ window.mapdata_kaer_morhen = {
 
 // Sign Post
 	signpost: [{
-		coords: [[-54.162,-87.627]],
+		coords: [[82.109, 65.656]],
 		label: $.t("k:signpost.label.lakesideHut"),
 		popup: $.t("k:signpost.desc.lakesideHut")
 	}, {
-		coords: [[-74.032,-101.887]],
+		coords: [[47.922, 55.547]],
 		label: $.t("k:signpost.label.ironMine"),
 		popup: $.t("k:signpost.desc.ironMine")
 	}, {
-		coords: [[-68.065,-97.427]],
+		coords: [[61.172, 58.734]],
 		label: $.t("k:signpost.label.kaerMorhen"),
 		popup: $.t("k:signpost.desc.kaerMorhen")
 	}],

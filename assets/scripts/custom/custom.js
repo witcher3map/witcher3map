@@ -84,7 +84,7 @@ $(function() {
 		layers: allLayers
 	};
 
-	if (map_path === 'velen'){
+	if (map_path === 'velen' || map_path === 'kaer_morhen'){
 		map_settings['crs'] = L.CRS.Simple;
 	}
 
@@ -158,7 +158,7 @@ $(function() {
 		noWrap: true
 	};
 
-	if (map_path === 'velen'){
+	if (map_path === 'velen' || map_path === 'kaer_morhen'){
 		layer_settings['continuousWorld'] = true;
 		layer_settings['crs'] = L.CRS.Simple;
 	}
