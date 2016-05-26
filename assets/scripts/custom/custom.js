@@ -74,16 +74,21 @@ $(function() {
 		cursorborder : 'none',
 	});
 
-	var map = L.map('map', {
+	var map_settings = {
 		minZoom: 2,
 		maxZoom: window.map_mZoom,
 		center: window.map_center,
 		zoom: 3,
 		attributionControl: false,
 		zoomControl: false,
-		layers: allLayers,
-		crs: L.CRS.Simple
-	});
+		layers: allLayers
+	};
+
+	if (map_path === 'velen'){
+		map_settings['crs'] = L.CRS.Simple;
+	}
+
+	var map = L.map('map', map_settings);
 
 	var go = function (cords) {
 		map.panTo(cords);
@@ -147,13 +152,18 @@ $(function() {
 		});
 	}
 
-	L.tileLayer('../files/maps/' + window.map_path + '/{z}/{x}/{y}.png', {
+	var layer_settings = {
 		tms: true,
 		bounds: bounds,
-		noWrap: true,
-		continuousWorld: true,
-		crs: L.CRS.Simple
-	}).addTo(map);
+		noWrap: true
+	};
+
+	if (map_path === 'velen'){
+		layer_settings['continuousWorld'] = true;
+		layer_settings['crs'] = L.CRS.Simple;
+	}
+
+	L.tileLayer('../files/maps/' + window.map_path + '/{z}/{x}/{y}.png', layer_settings).addTo(map);
 
 	map.dragging._draggable.on('predrag', function() {
 		var pos = map._initialTopLeftPoint.subtract(this._newPos);
