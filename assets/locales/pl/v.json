@@ -49,8 +49,7 @@
   },
   "banditcamp":{
     "label":"Obóz Bandytów",
-    "desc":"Grupa niebezpiecznych bandytów rozbiła tutaj swój obóz. ",
-    "bug":"Zabugowany teren, nigdy nie pokazuje się jako wyczyszczony."
+    "desc":"Grupa niebezpiecznych bandytów rozbiła tutaj swój obóz. "
   },
   "barber":{
     "label":"Fryzjer",

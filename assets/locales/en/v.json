@@ -49,8 +49,7 @@
 	},
 	"banditcamp": {
 		"label": "Bandit Camp",
-		"desc": "A group of dangerous bandits have made camp here. ",
-		"bug": "Bugged area, never shows as cleared."
+		"desc": "A group of dangerous bandits have made camp here. "
 	},
 	"barber": {
 		"label": "Barber",
