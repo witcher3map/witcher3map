@@ -40,18 +40,23 @@ fs.stat('dist/index.html', function(err, stats) {
 			sitemap.add({url: hostname+'/v/', changefreq: 'daily', lastmod: stats.mtime, priority: 1.0});
 			fs.stat('dist/s/index.html', function(err, stats) {
 				sitemap.add({url: hostname+'/s/', changefreq: 'daily', lastmod: stats.mtime, priority: 1.0});
+				fs.stat('dist/k/index.html', function(err, stats) {
+					sitemap.add({url: hostname+'/s/', changefreq: 'daily', lastmod: stats.mtime, priority: 1.0});
 
-				//generate sitemap entries from each mapdata file
-				require('../assets/scripts/custom/mapdata-skellige.js');
-				generateSitemapFromMapdata('s', global.mapdata_skellige);
-				require('../assets/scripts/custom/mapdata-velen.js');
-				generateSitemapFromMapdata('v', global.mapdata_velen);
-				require('../assets/scripts/custom/mapdata-white_orchard.js');
-				generateSitemapFromMapdata('w', global.mapdata_white_orchard);
+					//generate sitemap entries from each mapdata file
+					require('../assets/scripts/custom/mapdata-skellige.js');
+					generateSitemapFromMapdata('s', global.mapdata_skellige);
+					require('../assets/scripts/custom/mapdata-velen.js');
+					generateSitemapFromMapdata('v', global.mapdata_velen);
+					require('../assets/scripts/custom/mapdata-white_orchard.js');
+					generateSitemapFromMapdata('w', global.mapdata_white_orchard);
+					require('../assets/scripts/custom/mapdata-kaer_morhen.js');
+					generateSitemapFromMapdata('k', global.mapdata_kaer_morhen);
 
-				//write the sitemap
-				fs.writeFileSync("dist/sitemap.xml", sitemap.toString());
-				console.log('Sitemap has been created at dist/sitemap.xml.');
+					//write the sitemap
+					fs.writeFileSync("dist/sitemap.xml", sitemap.toString());
+					console.log('Sitemap has been created at dist/sitemap.xml.');
+				});
 			});
 		});
 	});

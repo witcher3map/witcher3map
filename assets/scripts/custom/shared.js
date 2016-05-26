@@ -17,6 +17,8 @@ $.i18n.init(i18noptions, function() {
 			getMapdata('velen');
 		} else if (namespace == "s") {
 			getMapdata('skellige');
+		} else if (namespace == "k") {
+			getMapdata('kaer_morhen');
 		}
 	});
 });

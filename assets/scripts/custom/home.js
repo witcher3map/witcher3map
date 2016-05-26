@@ -11,28 +11,34 @@ $.i18n.init(i18noptions, function() {
 				$.cachedScript("files/scripts/mapdata-skellige.js").done(function(script, textStatus) {
 					$.i18n.loadNamespace('w', function() {
 						$.cachedScript("files/scripts/mapdata-white_orchard.js").done(function(script, textStatus) {
-							processData('velen', mapdata_velen);
-							processData('skellige', mapdata_skellige);
-							processData('white_orchard', mapdata_white_orchard);
+							$.i18n.loadNamespace('k', function() {
+								$.cachedScript("files/scripts/mapdata-kaer_morhen.js").done(function(script, textStatus) {
 
-							var searchInput = $('#search');
+									processData('velen', mapdata_velen);
+									processData('skellige', mapdata_skellige);
+									processData('white_orchard', mapdata_white_orchard);
+									processData('kaer_morhen', mapdata.kaer_morhen);
 
-							//bind the search when all scripts are loaded
-							searchInput.keyup(function() {
-								doSearch();
+									var searchInput = $('#search');
+
+									//bind the search when all scripts are loaded
+									searchInput.keyup(function() {
+										doSearch();
+									});
+
+									//auto search when coming from back button
+									if(searchInput.val()) doSearch();
+
+									$('#clear').click(function () {
+										$('#search').val('');
+										$('#results').empty();
+										$('#clear').hide();
+										$('#nav').show();
+									});
+
+									$(document).i18n();
+								});
 							});
-
-							//auto search when coming from back button
-							if(searchInput.val()) doSearch();
-
-							$('#clear').click(function () {
-								$('#search').val('');
-								$('#results').empty();
-								$('#clear').hide();
-								$('#nav').show();
-							});
-
-							$(document).i18n();
 						});
 					});
 				});
