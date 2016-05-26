@@ -1,6 +1,8 @@
 window.map_path   = 'velen';
-window.map_sWest  = L.latLng(-85.05, -180);
-window.map_nEast  = L.latLng(85.05, 135);
+//window.map_sWest  = L.latLng(-85.05, -180);
+//window.map_nEast  = L.latLng(85.05, 135);
+window.map_sWest  = L.latLng(-512, -512);
+window.map_nEast  = L.latLng(512, 512);
 window.map_center = [60, -5];
 window.map_mZoom  = 6;
 window.mapdata_velen = {
@@ -8,50 +10,50 @@ window.mapdata_velen = {
 	abandoned: [{
 		coords: [
 			// NW Velen
-			[-53.59, -56.34],
-			[-29.34, -136.23],
-			[-50.25, -140.63],
-			[-58.95, -142.21]
+			[82.797, 87.984],
+			[106.219, 31.016],
+			[86.703, 27.938],
+			[75.875, 26.844]
 		],
 		label: $.t("abandoned.label"),
 		popup: $.t("abandoned.desc")
 	}, { // NE Velen
-		coords: [[-17.06, 8.26]],
+		coords: [[115.828, 133.875]],
 		label: $.t("abandoned.label"),
 		popup: $.t("abandoned.desc") + '(lvl 4<span> ' + $.t("v:monsters.drowners") + '</span>)'
 	}, {
-		coords: [[13.70, 46.05]],
+		coords: [[138.031, 160.625]],
           label: $.t("abandoned.label"),
 		popup: $.t("abandoned.desc") + '(lvl 9<span> ' + $.t("v:monsters.drowners") + '</span>)'
 	}, {
-		coords: [[-8.23, 72.16]],
+		coords: [[122.281, 179.266]],
           label: $.t("abandoned.label"),
 		popup: $.t("abandoned.desc") + '(lvl 9<span> ' + $.t("v:monsters.ghouls") + '</span> &amp; lvl 11<span> ' + $.t("v:monsters.alghoul") + '</span>)'
 	}, { // SW Velen
-		coords: [[-79.70, -112.15]],
+		coords: [[29.984, 48.000]],
           label: $.t("abandoned.label"),
 		popup: $.t("abandoned.desc") + '(lvl 9<span> ' + $.t("v:monsters.bandits") + '</span>)'
 	}, {
-		coords: [[-78.68, -40.69]],
+		coords: [[33.969, 99.250]],
           label: $.t("abandoned.label"),
 		popup: $.t("abandoned.desc") + '(lvl 9<span> ' + $.t("v:monsters.endregas") + '</span>)'
 	}, { // SE Velen
-		coords: [[-36.95, 3.08]],
+		coords: [[99.938, 130.172]],
           label: $.t("abandoned.label"),
 		popup: $.t("abandoned.desc") + '(lvl 5<span> ' + $.t("v:monsters.bandits") + '</span>)'
 	}],
 
 // Alchemy Supplies
 	alchemy: [{ //Novigrad
-		coords: [[77.71, -15.91]],
+		coords: [[218.984,116.516]],
 		label: $.t("v:alchemy.label") + '*',
 		popup: $.t("v:alchemy.desc*")
 	}, {
-		coords: [[79.75, -49.83]],
+		coords: [[226.328, 92.500]],
 		label: $.t("v:alchemy.label"),
 		popup: $.t("v:alchemy.desc")
 	}, { // NW Velen
-		coords: [[-18.52, -110.21]],
+		coords: [[114.813,49.547]],
 		label: $.t("v:alchemy.label"),
 		popupTitle: $.t("v:alchemy.pellar"),
 		popup: $.t("v:alchemy.desc")
@@ -59,27 +61,27 @@ window.mapdata_velen = {
 
 // Armourer
 	armourer: [{ // Novigrad
-		coords: [[74.23, -38.23]],
+		coords: [[208.672, 100.828]],
 		label: $.t("v:armourer.journeymanLabel"),
 		popup: $.t("v:armourer.desc")
 	}, { // Oxenfurt
-		coords: [[38.82, 54.01]],
+		coords: [[158.047, 166.344]],
 		label: $.t("v:armourer.journeymanLabel"),
 		popup: $.t("v:armourer.desc")
 	}, { // NE Velen
-		coords: [[2.18, -12.92]],
+		coords: [[129.688, 118.719]],
 		label: $.t("v:armourer.amateurLabel"),
 		popup: $.t("v:armourer.desc") + ' ' + $.t("v:misc.rescue") + ' <a href="#6/-18.761/-25.785">' + $.t("v:misc.locations.petesLanding") + '</a>'
 	}, { // NW Velen
-		coords: [[-31.25, -71.02]],
+		coords: [[104.734,77.531]],
 		label: $.t("v:armourer.journeymanLabel"),
 		popup: $.t("v:armourer.desc")
 	}, {
-		coords: [[-54.06, -122.97]],
+		coords: [[82.266, 40.422]],
 		label: $.t("v:armourer.amateurLabel"),
 		popup: $.t("v:armourer.desc")
 	}, {
-		coords: [[-30.87, -71.63]],
+		coords: [[104.906, 77.063]],
 		label: $.t("v:armourer.masterLabel"),
 		popupTitle: $.t("v:armourer.yoana"),
 		popup: $.t("v:armourer.quest") + $.t("v:armourer.desc")
@@ -89,21 +91,21 @@ window.mapdata_velen = {
 	armourerstable: [{
 		coords: [
 			// Novigrad
-			[75.27, -43.35],
-			[75.00, -40.68],
+			[211.531, 97.141],
+			[210.750, 99.016],
 			// Oxenfurt
-			[41.74, 51.23],
+			[160.922, 164.297],
 			// NE Velen
-			[2.48, -12.42],
+			[129.844, 119.094],
 			// NW Velen
-			[-29.07, -106.97],
-			[-30.41, -73.01],
-			[-63.95, -75.66],
-			[-54.01, -122.37],
-			[-59.04, -143.61],
+			[106.609, 51.953],
+			[105.375, 76.094],
+			[68.625, 74.219],
+			[82.313, 40.984],
+			[75.859, 25.828],
 			// SE Velen
-			[-35.53, 54.58],
-			[-33.60, -26.28]
+			[101.047, 166.734],
+			[102.688, 109.234]
 		],
 		label: $.t("armourerstable.label"),
 		popup: $.t("armourerstable.desc")
@@ -113,65 +115,65 @@ window.mapdata_velen = {
 	banditcamp: [{
 		coords: [
 			// NE Velen
-			[11.61, -54.42],
+			[136.625, 89.219],
 			// NW Velen
-			[-23.92, -95.51],
-			[-42.81, -128.14],
-			[-48.69, -130.78],
-			[-51.67, -133.59],
-			[-40.18, -136.49],
-			[-61.14, -145.81],
-			[-57.70, -154.75],
+			[110.625, 60.016],
+			[94.344, 37.016],
+			[88.375, 34.984],
+			[85.125, 33.172],
+			[96.938, 31.047],
+			[72.953, 24.188],
+			[77.656, 17.750],
 			// SW Velen
-			[-64.55, -146.69],
-			[-65.04, -142.34],
+			[67.531, 23.656],
+			[66.703, 26.719],
 			// SE Velen
-			[-29.69, -17.23]
+			[106.188, 115.703]
 		],
 		label: $.t("v:banditcamp.label"),
 		popup: $.t("v:banditcamp.desc")
 	}, { // S Novigrad
-		coords: [[55.43, -63.00]],
+		coords: [[175.547, 83.125]],
 		label: $.t("v:banditcamp.label"),
 		popup: $.t("v:banditcamp.desc") + '(lvl 9)'
 	}, { // E Novigrad
-		coords: [[74.40, 49.06]],
+		coords: [[209.156, 162.734]],
 		label: $.t("v:banditcamp.label"),
 		popup: $.t("v:banditcamp.desc") + '(lvl 7)'
 	}, { // NE Velen
-		coords: [[0.53, 33.05]],
+		coords: [[128.469, 151.563]],
 		label: $.t("v:banditcamp.label"),
 		popup: $.t("v:banditcamp.desc") + '(lvl 9)'
 	}, {
-		coords: [[8.67, 1.76]],
+		coords: [[134.406, 129.094]],
 		label: $.t("v:banditcamp.label"),
 		popup: $.t("v:banditcamp.desc") + '(lvl 9)'
 	}, { // SE Velen
-		coords: [[-77.24, 36.69]],
+		coords: [[38.828, 153.984]],
 		label: $.t("v:banditcamp.label"),
 		popup: $.t("v:banditcamp.desc") + '(lvl 10)'
 	}, {
-		coords: [[-53.33, 54.49]],
+		coords: [[83.094, 166.906]],
 		label: $.t("v:banditcamp.label"),
 		popup: $.t("v:banditcamp.desc") + '(lvl 9)'
 	}, {
-		coords: [[-26.90, 24.43]],
+		coords: [[108.234, 145.344]],
 		label: $.t("v:banditcamp.label"),
 		popup: $.t("v:banditcamp.desc") + '(lvl 9)'
 	}, {
-		coords: [[-38.96, -4.75]],
+		coords: [[97.828, 124.594]],
 		label: $.t("v:banditcamp.label"),
 		popup: $.t("v:banditcamp.desc") + '(lvl 7-9)'
 	}, {
-		coords: [[13.37, 84.36]],
+		coords: [[137.688, 187.797]],
 		label: $.t("v:banditcamp.label"),
 		popup: $.t("v:banditcamp.desc") + '(lvl 9)'
 	}, {
-		coords: [[-74.40, -6.81]],
+		coords: [[47.000, 123.172]],
 		label: $.t("v:banditcamp.label"),
 		popup: $.t("v:banditcamp.desc") + '(lvl 9)'
 	}, { // SW Velen
-		coords: [[-69.81, -142.91]],
+		coords: [[57.922, 26.797]],
 		label: $.t("v:banditcamp.label"),
 		popup: $.t("v:banditcamp.desc") + $.t("v:banditcamp.bug")
 	}],
@@ -180,59 +182,59 @@ window.mapdata_velen = {
 	barber: [{
 		coords: [
 			// Novigrad
-			[76.45, -33.18],
-			[76.32, -20.39],
+			[215.016, 104.297],
+			[214.484, 113.281],
 			// Oxenfurt
-			[33.87, 52.12]
+			[153.734,164.906]
 		],
 		label: $.t("v:barber.label"),
 		popup: $.t("v:barber.desc")
 	}, { // NW Velen
-		coords: [[-54.36, -81.81]],
+		coords: [[81.891, 69.703]],
 		label: $.t("v:barber.label"),
 		popup: $.t("v:barber.desc") + $.t("v:barber.free") + $.t("v:misc.rescue") + ' <a href="#6/-35.362/-127.430">' + $.t("v:barber.rescueLocation") + '</a>'
 	}],
 
 // Blacksmith
 	blacksmith: [{ // Novigrad
-		coords: [[69.15, -41.00]],
+		coords: [[197.094, 98.766]],
 		label: $.t("v:blacksmith.masterLabel"),
 		popupTitle: $.t("v:blacksmith.hattori"),
 		popup: $.t("v:blacksmith.quest") + $.t("v:blacksmith.desc")
 	}, {
-		coords: [[73.14, -37.96]],
+		coords: [[205.875, 100.891]],
 		label: $.t("v:blacksmith.journeymanLabel"),
 		popup: $.t("v:blacksmith.availability") + $.t("v:blacksmith.desc")
 	}, {
-		coords: [[75.17, -43.15]],
+		coords: [[211.188, 97.266]],
 		label: $.t("v:blacksmith.amateurLabel"),
 		popup: $.t("v:blacksmith.availability") + $.t("v:blacksmith.desc")
 	}, { // Oxenfurt
-		coords: [[32.00, 59.77]],
+		coords: [[152.125, 170.453]],
 		label: $.t("v:blacksmith.journeymanLabel"),
 		popup: $.t("v:blacksmith.availability") + $.t("v:blacksmith.desc")
 	}, { // NW Velen
-		coords: [[-29.27, -106.47]],
+		coords: [[106.328, 52.313]],
 		label: $.t("v:blacksmith.amateurLabel"),
 		popup: $.t("v:blacksmith.desc")
 	}, {
-		coords: [[-64.28, -75.87]],
+		coords: [[67.844, 74.031]],
 		label: $.t("v:blacksmith.amateurLabel"),
 		popup: $.t("v:blacksmith.desc")
 	}, { // SE Velen
-		coords: [[-32.96, -26.91]],
+		coords: [[103.156, 108.813]],
 		label: $.t("v:blacksmith.amateurLabel"),
 		popup: $.t("v:blacksmith.desc")
 	}],
 
 // Brothel
 	brothel: [{ // Novigrad
-		coords: [[71.22, -41.84]],
+		coords: [[201.547, 98.188]],
 		label: $.t("v:brothel.label.crippledKate"),
 		popupTitle: $.t("v:brothel.popup.crippledKate"),
 		popup: $.t("v:brothel.desc")
 	}, {
-		coords: [[78.34, -33.40]],
+		coords: [[221.109, 104.109]],
 		label: $.t("v:brothel.label.passiflora"),
 		popupTitle: $.t("v:brothel.popup.passiflora"),
 		popup: $.t("v:brothel.desc")
@@ -241,43 +243,43 @@ window.mapdata_velen = {
 // Entrance
 	// todo, entrance to what?
 	entrance: [{ // Novigrad
-		coords: [[80.68, -55.02]],
+		coords: [[229.984, 88.844]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, { // NE Novigrad
-		coords: [[82.18, 32.78]],
+		coords: [[237.406, 151.125]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, { // SE Novigrad
-		coords: [[58.34, 66.68]],
+		coords: [[179.438, 175.406]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[61.02, 89.12]],
+		coords: [[183.219, 191.281]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[36.43, 114.21]],
+		coords: [[156.031, 209.125]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, { // S Novigrad
-		coords: [[53.96, -71.48]],
+		coords: [[173.750, 77.156]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, { // NE Velen
-		coords: [[27.06, -29.27]],
+		coords: [[148.141, 107.047]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, { // NW Velen
-		coords: [[3.05, -122.17]],
+		coords: [[130.313, 41.109]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[-26.70, -63.75]],
+		coords: [[108.234, 82.484]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[-28.77, -77.74]],
+		coords: [[106.703, 72.578]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
@@ -285,55 +287,55 @@ window.mapdata_velen = {
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, { // SW Velen
-		coords: [[-75.36, -124.19]],
+		coords: [[44.531, 39.563]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[-76.32, -114.87]],
+		coords: [[41.688, 46.266]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, { // SE Velen
-		coords: [[-71.64, -1.67]],
+		coords: [[53.891, 126.719]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[-70.16, 39.55]],
+		coords: [[56.984, 155.984]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[-48.52, -29.03]],
+		coords: [[88.688, 107.078]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[-22.84, 72.02]],
+		coords: [[111.266, 179.234]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[-56.51, 80.33]],
+		coords: [[79.094, 185.234]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[-43.71, 39.20]],
+		coords: [[93.344, 155.813]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[-35.32, 69.74]],
+		coords: [[101.266, 177.547]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[-38.00, 70.36]],
+		coords: [[98.906, 177.766]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[-79.628, 2.351]],
+		coords: [[30.172, 129.672]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[-52.670, 31.069]],
+		coords: [[83.766, 149.953]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[-75.834, 50.361]],
+		coords: [[43.094, 163.641]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}],
@@ -342,25 +344,25 @@ window.mapdata_velen = {
 	grindstone: [{
 		coords: [
 			// Novigrad
-			[75.27, -42.95],
-			[74.96, -40.28],
+			[211.547, 97.453],
+			[210.641, 99.266],
 			// S Novigrad
-			[48.86, -51.39],
+			[168.094, 91.391],
 			// Oxenfurt
-			[41.64, 51.53],
+			[160.734, 164.500],
 			// NE Velen
-			[2.48, -13.42],
+			[129.922, 118.313],
 			// NW Velen
-			[32.84, -114.26],
-			[-29.07, -105.97],
-			[-30.64, -72.55],
-			[-53.67, -80.20],
-			[-64.05, -75.06],
-			[-54.01, -123.57],
-			[-59.09, -144.05],
+			[153.016, 46.609],
+			[106.594, 52.625],
+			[105.156, 76.313],
+			[82.734, 70.828],
+			[68.234, 74.516],
+			[82.328, 40.094],
+			[75.875, 25.531],
 			// SE Velen
-			[-35.89, 55.20],
-			[-33.80, -26.81]
+			[100.703, 167.141],
+			[102.531, 108.906]
 		],
 		label: $.t("grindstone.label"),
 		popup: $.t("grindstone.desc")
@@ -370,330 +372,330 @@ window.mapdata_velen = {
 	guarded: [{
 		coords: [
 			// NE Velen
-				[22.51, -56.78],
+				[144.641, 87.578],
 			// NW Velen
-				[-28.07, -119.66],
-				[-38.62, -123.40],
-				[-38.27, -149.24],
+				[107.281, 42.953],
+				[98.313, 40.141],
+				[98.578, 21.844],
 			// SE Velen
-				[-73.42, 31.77],
-				[-51.78, -6.42]
+				[49.641, 150.531],
+				[84.875, 123.281]
 		],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: ""})
 	}, { // NE Novigrad
-		coords: [[76.43, -2.07]],
+		coords: [[215.016, 126.328]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 8 <span>" + $.t("v:monsters.hag.water") + "</span>)"})
 	}, {
-		coords: [[80.52, -4.53]],
+		coords: [[229.563, 124.656]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 15 <span>" + $.t("v:monsters.hag.bilge") + "</span>)"})
 	}, {
-		coords: [[82.61, -33.49]],
+		coords: [[239.594, 104.219]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 23 <span>" + $.t("v:monsters.armoredArachas") + "</span>)"})
 	}, { // SE Novigrad
-		coords: [[45.62, 99.05]],
+		coords: [[164.563, 198.594]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 20 <span>" + $.t("v:monsters.leshen") + "</span>)"})
 	}, { // S Novigrad
-		coords: [[51.97, -12.00]],
+		coords: [[171.500, 119.516]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 18 <span>" + $.t("v:monsters.wyvern") + "</span>)"})
 	}, {
-		coords: [[62.00, -97.38]],
+		coords: [[184.609, 58.609]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 15 <span>" + $.t("v:monsters.wraiths.noon") + "</span>)"})
 	}, { // NE Velen
-		coords: [[-8.93, 12.30]],
+		coords: [[121.781, 136.625]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 13 <span>" + $.t("v:monsters.alghoul") + "</span>)"})
 	}, {
-		coords: [[-7.89, 55.37]],
+		coords: [[122.484, 167.156]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 9 <span>" + $.t("v:monsters.drowners") + "</span>)"})
 	}, { // NW Velen
-		coords: [[4.193, -82.463]],
+		coords: [[131.297, 69.172]],
 		label: $.t("guarded.label"),
 		popup: 'Available after the \'Master Armorers\' (lvl 26) quest. ' + $.t("guarded.desc", {monster: "(lvl 19 <span>" + $.t("v:monsters.cyclops") + "</span>)"})
 	}, {
-		coords: [[-62.39, -118.17]],
+		coords: [[70.859, 44.063]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 7 <span>" + $.t("v:monsters.wraiths.wraiths") + "</span>)"})
 	}, {
-		coords: [[-43.55, -40.08]],
+		coords: [[93.516, 99.344]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 14 <span>" + $.t("v:monsters.forktail") + "</span>)"})
 	}, {
-		coords: [[-45.61, -152.31]],
+		coords: [[91.563, 19.516]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 4 <span>" + $.t("v:monsters.drowners") + "</span>)"})
 	}, {
-		coords: [[25.96, -99.67]],
+		coords: [[147.047, 57.047]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 14 <span>" + $.t("v:monsters.basilisk") + "</span>)"})
 	}, { // SW Velen
-		coords: [[-77.77, -102.04]],
+		coords: [[37.094, 55.438]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 8 <span>" + $.t("v:monsters.hag.water") + "</span>)"})
 	}, {
-		coords: [[-81.30, -69.74]],
+		coords: [[23.172, 78.391]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 18 <span>" + $.t("v:monsters.wraiths.noon") + "/" + $.t("v:monsters.wraiths.night") + "</span>)"})
 	}, {
-		coords: [[-82.20, -69.57]],
+		coords: [[18.750, 78.531]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 19 <span>" + $.t("v:monsters.gargoyle") + "</span>)"})
 	}, {
-		coords: [[-78.56, -48.91]],
+		coords: [[34.438, 93.125]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 13 <span>" + $.t("v:monsters.alghoul") + "</span>)"})
 	}, { // SE Velen
-		coords: [[-70.260, 102.440]],
+		coords: [[56.953, 200.891]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 24 <span>" + $.t("v:monsters.elemental.earth") + "</span>)"})
 	}, {
-		coords: [[-75.81, 30.63]],
+		coords: [[43.328, 149.781]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 20 <span>" + $.t("v:monsters.hag.bilge") + "</span>)"})
 	}, {
-		coords: [[-80.190, 28.870]],
+		coords: [[28.078, 148.406]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 14 <span>" + $.t("v:monsters.wyvern") + "</span>)"})
 	}, {
-		coords: [[-81.11, 31.33]],
+		coords: [[24.063, 150.188]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 19 <span>" + $.t("v:monsters.cyclops") + "</span>)"})
 	}, {
-		coords: [[-63.27, 48.87]],
+		coords: [[69.406, 162.688]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: "(lvl 8 <span>" + $.t("v:monsters.hag.water") + "</span>)"})
 	}],
 
 // Gwent Player
 	gwent: [{ // Novigrad
-		coords: [[72.900, -39.790]],
+		coords: [[205.438, 99.578]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.shopkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[74.618, -35.132]],
+		coords: [[209.703, 102.953]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.bookMerchant"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[71.00, -41.90]],
+		coords: [[200.859, 98.078]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.crippledKate"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[78.25, -33.79]],
+		coords: [[220.813, 103.844]],
 		label: $.t("v:gwent.label.tournament"),
 		popupTitle: $.t("v:gwent.popup.tournament"),
 		popup: $.t("v:gwent.desc.tournament")
 	}, {
-		coords: [[72.58, -26.21]],
+		coords: [[204.547, 109.125]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.shopkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[70.15, -36.93]],
+		coords: [[199.141, 101.578]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.shopkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[71.43, -35.51]],
+		coords: [[201.953, 102.656]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.herbalist"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[70.14, -1.45]],
+		coords: [[199.188, 126.813]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.innkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[70.00, -20.27]],
+		coords: [[198.813, 113.438]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.merchant"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[70.12, -29.16]],
+		coords: [[199.109, 107.094]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.innkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[73.32, -43.81]],
+		coords: [[206.406, 96.734]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.innkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[76.25, -23.95]],
+		coords: [[214.328, 110.844]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.innkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[73.20, -37.66]],
+		coords: [[206.063, 101.203]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.blacksmith"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[73.81, -37.76]],
+		coords: [[207.625, 101.047]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.banker"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[74.52, -46.63]],
+		coords: [[209.453, 94.750]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.fishmonger"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[75.37, -43.15]],
+		coords: [[211.859, 97.172]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.blacksmith"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[75.49, -44.62]],
+		coords: [[212.156, 96.172]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.shopkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[76.87, -33.02]],
+		coords: [[216.281, 104.438]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.shopkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[75.04, -20.82]],
+		coords: [[210.859, 113.031]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.shopkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[75.39, -19.02]],
+		coords: [[211.969, 114.422]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.loanShark"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[79.80, -49.53]],
+		coords: [[226.516, 92.531]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.alchemist"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[77.77, -15.58]],
+		coords: [[219.125, 116.844]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.alchemist"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[74.55, -32.41]],
+		coords: [[209.516, 104.938]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.innkeeper"),
 		popup: $.t("v:gwent.desc.warn") + $.t("v:gwent.desc.player")
 	}, { // S Novigrad
-		coords: [[62.43, -14.22]],
+		coords: [[185.375, 117.734]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.innkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, { // SE Novigrad
-		coords: [[50.64, 72.27]],
+		coords: [[170.047, 179.250]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.herbalist"),
 		popup: $.t("v:gwent.desc.player")
 	}, { // Oxenfurt
-		coords: [[36.56, 52.47]],
+		coords: [[156.094, 165.297]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.innkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[38.92, 54.21]],
+		coords: [[158.281, 166.453]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.armorer"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[40.11, 51.68]],
+		coords: [[159.344, 164.703]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.shopkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[32.20, 59.87]],
+		coords: [[152.344, 170.422]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.blacksmith"),
 		popup: $.t("v:gwent.desc.player")
 	}, { // NE Velen
-		coords: [[2.58, -12.92]],
+		coords: [[129.922, 118.688]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.armorer"),
 		popup: $.t("v:gwent.desc.player") + $.t("v:misc.rescue") + '<a href="#6/-18.761/-25.785">' + $.t("v:misc.locations.petesLanding") + '</a>'
 	}, { // NW Velen
-		coords: [[-27.64, -102.54]],
+		coords: [[107.641, 54.969]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.shopkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[-28.87, -106.47]],
+		coords: [[106.688, 52.172]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.blacksmith"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[-34.76, -72.57]],
+		coords: [[101.750, 76.297]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.shopkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[-31.90, -71.52]],
+		coords: [[104.297, 76.969]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.quartermaster"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[-31.15, -70.82]],
+		coords: [[104.813, 77.609]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.shopkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[-28.39, -75.45]],
+		coords: [[107.078, 74.234]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.bloodyBaron"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[-52.60, -81.19]],
+		coords: [[84.000, 70.125]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.shopkeeper"),
 		popup: $.t("v:gwent.desc.player") + $.t("v:misc.rescue") + '<a href="#6/-61.954/-33.893">' + $.t("v:misc.locations.banditsCamp") + '</a>'
 	}, {
-		coords: [[-62.53, -76.44]],
+		coords: [[70.688, 73.453]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.shopkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[-54.27, -121.56]],
+		coords: [[81.969, 41.453]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.shopkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[-53.86, -122.97]],
+		coords: [[82.453, 40.422]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.armorer"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[-30.67, -71.43]],
+		coords: [[105.125, 77.000]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.yoana"),
 		popup: $.t("v:gwent.desc.player")
 	}, { // SE Velen
-		coords: [[-36.78, -24.15]],
+		coords: [[99.984, 110.703]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.shopkeeper"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[-32.76, -26.61]],
+		coords: [[103.469, 108.953]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.blacksmith"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[-78.74, 108.44]],
+		coords: [[33.672, 204.953]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.quartermaster"),
 		popup: $.t("v:gwent.desc.player")
 	}, {
-		coords: [[-57.20, 27.23]],
+		coords: [[78.219, 147.219]],
 		label: $.t("v:gwent.label.player"),
 		popupTitle: $.t("v:gwent.popup.player"),
 		popup: $.t("v:gwent.desc.quest") + $.t("v:gwent.desc.player")
@@ -703,22 +705,22 @@ window.mapdata_velen = {
 	harbor: [{
 		coords: [
 			// Novigrad
-			[70.64, -58.93],
+			[199.828, 86.109],
 			// Oxenfurt
-			[38.17, 46.85],
+			[157.563, 161.406],
 			// NE Velen
-			[-6.53, 62.93],
-			[-19.10, 9.49],
-			[-18.40, -32.93],
+			[123.422, 172.734],
+			[114.156, 134.563],
+			[114.813, 104.563],
 			// NW Velen
-			[-54.32, -54.32],
-			[-41.54, -142.82],
-			[-27.64, -121.82],
+			[82.125, 89.125],
+			[95.344, 26.344],
+			[107.375, 41.438],
 			// SW Velen
-			[-71.90, -73.92],
-			[-80.18, -114.17],
+			[53.266, 75.359],
+			[28.094, 46.609],
 			// SE Velen
-			[-78.78, -11.07]
+			[33.641, 119.953]
 		],
 		label: $.t("harbor.label"),
 		popup: $.t("harbor.desc")
@@ -728,29 +730,29 @@ window.mapdata_velen = {
 	herbalist: [{
 		coords: [
 			// Novigrad
-			[73.65, -34.89],
-			[71.33, -35.51],
+			[207.172, 103.047],
+			[201.656, 102.625],
 			// S Novigrad
-			[61.89, -13.16],
+			[184.547, 118.500],
 			// SE Novigrad
-			[50.54, 72.07]
+			[169.859, 179.094]
 		],
 		label: $.t("herbalist.label"),
 		popup: $.t("herbalist.desc")
 	}, { // NW Velen
-		coords: [[-50.26, -138.91]],
+		coords: [[86.609, 29.156]],
 		label: $.t("herbalist.label"),
 		popup: $.t("v:misc.liberated") + $.t("herbalist.desc")
 	}, {
-		coords: [[-28.15, -135.26]],
+		coords: [[107.125, 31.641]],
 		label: $.t("herbalist.label"),
 		popup: $.t("v:misc.liberated") + $.t("herbalist.desc")
 	}, { // SW Velen
-		coords: [[-78.53, -41.44]],
+		coords: [[34.578, 98.656]],
 		label: $.t("herbalist.label"),
 		popup: $.t("v:misc.liberated") + $.t("herbalist.desc")
 	}, { // SE Velen
-		coords: [[-36.92, 2.37]],
+		coords: [[99.828, 129.547]],
 		label: $.t("herbalist.label"),
 		popup: $.t("v:misc.liberated") + $.t("herbalist.desc")
 	}],
@@ -759,79 +761,79 @@ window.mapdata_velen = {
 	hidden: [{
 		coords: [
 			// NW Velen
-			[33.06, -115.25],
-			[-27.92, -128.06],
-			[-31.65, -143.17],
-			[-42.33, -140.33],
+			[153.063, 45.953],
+			[107.531, 36.859],
+			[104.422, 26.078],
+			[94.859, 28.031],
 			// SW Velen
-			[-71.34, -107.75],
+			[54.469, 51.313],
 			// SE Velen
-			[-29.99, 28.39]
+			[105.625, 148.141]
 		],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.desc")
 	},{ // S Novigrad
-		coords: [[34.55, -43.68]],
+		coords: [[154.313, 96.734]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 6 <span>' + $.t("v:monsters.nekkers") + '</span>'})
 	}, {
-		coords: [[49.38, -68.91]],
+		coords: [[168.563, 78.875]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 15 <span>' + $.t("v:monsters.mucknixers") + '</span>'})
 	}, { // NE Velen
-		coords: [[-16.89, 10.06]],
+		coords: [[115.891, 134.969]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 10 <span>' + $.t("v:monsters.drowners") + '</span>'})
 	}, {
-		coords: [[3.03, 64.56]],
+		coords: [[130.344, 173.906]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 4 <span>' + $.t("v:monsters.drowners") + '</span>'})
 	}, {
-		coords: [[45.49, 26.76]],
+		coords: [[164.563, 146.844]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 4 <span>' + $.t("v:monsters.drowners") + '</span>'})
 	}, {
-		coords: [[-3.51, 21.40]],
+		coords: [[125.625, 143.594]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 4 <span>' + $.t("v:monsters.foglet") + '</span>'})
 	}, {
-		coords: [[52.35, 16.17]],
+		coords: [[171.813,139.453]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 18 <span>' + $.t("v:monsters.hag.bilge") + '</span>'})
 	}, {
-		coords: [[47.72, 38.50]],
+		coords: [[166.922, 155.281]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 32 <span>' + $.t("v:monsters.basilisk") + '</span>'})
 	}, { // NW Velen
-		coords: [[-50.76, -155.04]],
+		coords: [[86.016, 17.078]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 4 <span>' + $.t("v:monsters.drowners") + '</span>'})
 	}, { // SE Velen
-		coords: [[-72.84, 77.08]],
+		coords: [[50.922, 182.641]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 22 <span>' + $.t("v:monsters.fiend") + '</span>'})
 	}, {
-		coords: [[-37.16, 97.29]],
+		coords: [[99.469, 197.203]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 4 <span>' + $.t("v:monsters.foglet") + '</span>'})
 	}, {
-		coords: [[-20.96, 48.78]],
+		coords: [[112.969, 162.563]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 9 <span>' + $.t("v:monsters.bandits") + '</span>'})
 	}, { // SW Velen
-		coords: [[-70.50, -150.64]],
+		coords: [[56.438, 20.781]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 28 <span>' + $.t("v:monsters.hag.grave") + '</span>'})
 	}, {
-		coords: [[-72.78, -131.40]],
+		coords: [[51.297, 34.500]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 10 <span>' + $.t("v:monsters.bandits") + '</span>'})
 	}, {
-		coords: [[-71.09, -109.96]],
+		coords: [[55.031, 49.828]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 13 <span>' + $.t("v:monsters.wraiths.wraiths") + '</span>'})
 	}, {
-		coords: [[-76.90, -80.68]],
+		coords: [[39.859, 70.531]],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.guarded", {monster: 'lvl 4 <span>' + $.t("v:monsters.drowners") + '</span>'})
 	}],

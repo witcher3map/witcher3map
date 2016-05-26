@@ -81,7 +81,8 @@ $(function() {
 		zoom: 3,
 		attributionControl: false,
 		zoomControl: false,
-		layers: allLayers
+		layers: allLayers,
+		crs: L.CRS.Simple
 	});
 
 	var go = function (cords) {
@@ -149,7 +150,9 @@ $(function() {
 	L.tileLayer('../files/maps/' + window.map_path + '/{z}/{x}/{y}.png', {
 		tms: true,
 		bounds: bounds,
-		noWrap: true
+		noWrap: true,
+		continuousWorld: true,
+		crs: L.CRS.Simple
 	}).addTo(map);
 
 	map.dragging._draggable.on('predrag', function() {
