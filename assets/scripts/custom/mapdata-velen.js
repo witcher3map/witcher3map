@@ -1,8 +1,6 @@
 window.map_path   = 'velen';
-//window.map_sWest  = L.latLng(-85.05, -180);
-//window.map_nEast  = L.latLng(85.05, 135);
-window.map_sWest  = L.latLng(-512, -512);
-window.map_nEast  = L.latLng(512, 512);
+window.map_sWest  = L.latLng(0, 0);
+window.map_nEast  = L.latLng(288, 256);
 window.map_center = [60, -5];
 window.map_mZoom  = 6;
 window.mapdata_velen = {
@@ -283,7 +281,7 @@ window.mapdata_velen = {
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, {
-		coords: [[32.064,-111.226]],
+		coords: [[152.172, 48.781]],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}, { // SW Velen
@@ -840,46 +838,46 @@ window.mapdata_velen = {
 
 // Innkeep
 	innkeep: [{ // Novigrad
-		coords: [[73.24, -44.21]],
+		coords: [[206.000, 96.547]],
 		label: $.t("v:innkeep.inns.theGoldenSturgen"),
 		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:innkeep.desc.foodDrinkAndGwent")
 	}, {
-		coords: [[78.22, -33.49]],
+		coords: [[220.609, 104.172]],
 		label: $.t("v:innkeep.inns.passiflora"),
 		popup: $.t("v:innkeep.desc.foodDrinkAndGwent")
 	}, {
-		coords: [[76.20, -24.35]],
+		coords: [[214.000, 110.672]],
 		label: $.t("v:innkeep.inns.theNowhere"),
 		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:innkeep.desc.foodAndDrink")
 	}, {
-		coords: [[70.02, -29.56]],
+		coords: [[198.859, 106.875]],
 		label: $.t("v:innkeep.inns.rosemaryAndThyme"),
 		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:innkeep.desc.foodAndDrink")
 	}, {
-		coords: [[70.04, -1.85]],
+		coords: [[198.875, 126.656]],
 		label: $.t("v:innkeep.inns.sevenCatsInn"),
 		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:innkeep.desc.foodDrinkAndGwent")
 	}, {
-		coords: [[74.50, -32.61]],
+		coords: [[209.328, 104.719]],
 		label: $.t("v:innkeep.inns.theKingfisher"),
 		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:misc.disappearingTrader") + $.t("v:innkeep.desc.foodDrinkAndGwent")
 	}, { // S Novigrad
-		coords: [[62.33, -14.02]],
+		coords: [[185.125, 118.047]],
 		label: $.t("v:innkeep.inns.cunnyOfTheGoose"),
 		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:innkeep.desc.foodDrinkAndGwent")
 	}, { // Oxenfurt
-		coords: [[36.46, 52.27]],
+		coords: [[156.063, 165.172]],
 		label: $.t("v:innkeep.inns.theAlchemy"),
 		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:innkeep.desc.foodDrinkAndGwent")
 	}, { // NE Velen
-		coords: [[0.09, -45.62]],
+		coords: [[128.141, 95.516]],
 		label: $.t("v:innkeep.inns.innAtTheCrossroads"),
 		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:innkeep.desc.gwentAndDrink")
@@ -889,18 +887,18 @@ window.mapdata_velen = {
 	monsterden: [{
 		coords: [
 			// NE Velen
-			[20.47, -13.76],
+			[142.984, 118.125],
 			// SE Velen
-			[-54.47, 12.00]
+			[81.656, 136.359]
 		],
 		label: $.t("monsterden.label"),
 		popup: $.t("monsterden.desc", {monster: ''})
 	}, { // NE Novigrad
-		coords: [[82.19, -32.08]],
+		coords: [[237.641, 105.016]],
 		label: $.t("monsterden.label"),
 		popup: $.t("monsterden.desc", {monster: '(lvl 19 <span>' + $.t("v:monsters.golem") + '</span>)'})
 	}, { // S Novigrad
-		coords: [[46.99, -40.08]],
+		coords: [[165.891, 99.375]],
 		label: $.t("monsterden.label"),
 		popup: $.t("monsterden.desc", {monster: '(lvl 16 <span>' + $.t("v:monsters.rabidRockTroll") + '</span> &amp; lvl 18 <span>' + $.t("v:monsters.nekkers") + '</span>)'})
 	}],
@@ -909,78 +907,78 @@ window.mapdata_velen = {
 	monsternest: [{
 		coords: [
 			// NE Velen
-			[33.87, 10.20],
-			[41.44, -0.79],
+			[153.734, 135.203],
+			[160.500, 127.328],
 			// NW Velen
-			[-23.97, -55.95],
-			[-36.56, -87.14],
-			[-53.38, -57.74],
+			[110.656, 88.094],
+			[100.078, 66.047],
+			[82.969, 86.828],
 			// SW Velen
-			[-75.14, -122.29],
-			[-74.73, -121.49],
+			[44.984, 40.906],
+			[45.984, 41.656],
 			// SE Velen
-			[-68.69, -2.20]
+			[60.047, 126.375]
 		],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: ''})
 	}, { // S Novigrad
-		coords: [[34.31, -60.51]],
+		coords: [[154.141, 85.000]],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: '(lvl 6 <span>' + $.t("v:monsters.rotfiends") + '</span>)'})
 	}, {
-		coords: [[49.84, -45.97]],
+		coords: [[169.094, 95.281]],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: '(lvl 9 <span>' + $.t("v:monsters.endregas") + '</span>)'})
 	}, {
-		coords: [[50.79, -42.19]],
+		coords: [[170.313, 98.000]],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: '(lvl 9 <span>' + $.t("v:monsters.endregas") + '</span>)'})
 	}, {
-		coords: [[50.98, -20.99]],
+		coords: [[170.266, 112.969]],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: '(lvl 6 <span>' + $.t("v:monsters.rotfiends") + '</span>)'})
 	}, { // NE Velen
-		coords: [[7.36, 48.78]],
+		coords: [[133.422, 162.531]],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: '(lvl 9 <span>' + $.t("v:monsters.ghouls") + '</span>)'})
 	}, {
-		coords: [[8.01, 47.37]],
+		coords: [[133.750, 161.688]],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: '(lvl 9 <span>' + $.t("v:monsters.ghouls") + '</span>)'})
 	}, {
-		coords: [[-2.94, 27.38]],
+		coords: [[125.938, 147.391]],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: '(lvl 9 <span>' + $.t("v:monsters.ghouls") + '</span>)'})
 	}, {
-		coords: [[41.64, 13.97]],
+		coords: [[160.750, 137.891]],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: '(lvl 6 <span>' + $.t("v:monsters.rotfiends") + '</span>)'})
 	}, { // SW Velen
-		coords: [[-75.68, -27.11]],
+		coords: [[43.578, 108.563]],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: '(lvl 4&amp;9 <span>' + $.t("v:monsters.drowners") + '</span>)'})
 	}, { // SE Velen
-		coords: [[-50.23, 57.57]],
+		coords: [[86.891, 168.969]],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: '(lvl 8 <span>' + $.t("v:monsters.nekkers") + '</span>)'})
 	}, {
-		coords: [[-46.01, 52.56]],
+		coords: [[91.297, 165.547]],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: '(lvl 8/9 <span>' + $.t("v:monsters.nekkers") + '</span>)'})
 	}, {
-		coords: [[-49.04, 46.93]],
+		coords: [[88.094, 161.422]],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: '(lvl 8/9 <span>' + $.t("v:monsters.nekkers") + '</span>)'})
 	}, {
-		coords: [[-49.12, 42.36]],
+		coords: [[87.891, 158.172]],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: '(lvl 8/9 <span>' + $.t("v:monsters.nekkers") + '</span>)'})
 	}, {
-		coords: [[-40.18, 80.29]],
+		coords: [[96.875, 185.094]],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: '(lvl 21 <span>' + $.t("v:monsters.wyvern") + '</span>)'})
 	}, {
-		coords: [[-41.38, 80.38]],
+		coords: [[95.656, 185.125]],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc", {monster: '(lvl 21 <span>' + $.t("v:monsters.wyvern") + '</span>)'})
 	}],
@@ -989,31 +987,31 @@ window.mapdata_velen = {
 	notice: [{
 		coords: [
 			// Novigrad
-			[74.38, -34.06],
-			[73.00, -43.37],
-			[76.74, -32.21],
-			[64.42, -38.42],
+			[209.078, 103.609],
+			[205.641, 97.031],
+			[215.844, 105.000],
+			[188.594, 100.641],
 			// NE Novigrad
-			[82.13, 3.43],
+			[237.172, 130.297],
 			// E Novigrad
-			[69.60, -1.93],
-			[73.07, 42.19],
+			[198.047, 126.578],
+			[205.750, 157.922],
 			// S Novigrad
-			[62.59, -16.70],
+			[185.500, 116.000],
 			// Oxenfurt
-			[38.89, 52.29],
+			[158.156, 165.109],
 			// NE Velen
-			[4.65, -12.04],
-			[1.14, -46.41],
-			[33.36, -21.18],
+			[131.547, 119.453],
+			[128.953, 95.047],
+			[153.344, 112.781],
 			// NW Velen
-			[-54.19, -120.50],
-			[-31.50, -69.08],
-			[-63.51, -73.74],
+			[82.078, 42.078],
+			[104.547, 78.828],
+			[69.234, 75.438],
 			// SE Velen
-			[-58.08, 27.95],
-			[-36.17, -26.02],
-			[-78.73, 110.17]
+			[77.266, 147.797],
+			[100.641, 109.469],
+			[33.688, 206.219]
 		],
 		label: $.t("notice.label"),
 		popup: $.t("notice.desc")
@@ -1023,64 +1021,64 @@ window.mapdata_velen = {
 	pid: [{
 		coords: [
 			// NE Velen
-			[26.43, -11.87],
+			[147.578, 119.578],
 			// NW Velen
-			[-33.94, -132.36]
+			[102.500, 33.828]
 		],
 		label: $.t("pid.label"),
 		popup: $.t("pid.desc", {monster: ''})
 	}, { // SE Novigrad
-		coords: [[20.47, 100.55]],
+		coords: [[142.984, 199.375]],
 		label: $.t("pid.label"),
 		popup: $.t("pid.desc", {monster: '(lvl 9 <span>' + $.t("v:monsters.bandits") + '</span>)'})
 	}, { // NE Velen
-		coords: [[-17.64, -29.18]],
+		coords: [[115.391, 107.094]],
 		label: $.t("pid.label"),
 		popup: $.t("pid.desc", {monster: '(lvl 10-16 <span>' + $.t("v:monsters.bandits") + '</span>)'})
 	}, { // NW Velen
-		coords: [[-61.23, -33.93]],
+		coords: [[72.656, 103.797]],
 		label: $.t("pid.label"),
 		popup: $.t("pid.desc", {monster: '(lvl 5 <span>' + $.t("v:monsters.bandits") + '</span>)'})
 	}],
 
 // Place of Power
 	pop: [{ // Novigrad
-		coords: [[80.72, -40.83]],
+		coords: [[230.391, 98.688]],
 		label: $.t("pop.label"),
 		popupTitle: $.t("pop.popup", {sign: $.t("signs.igni")}),
 		popup: $.t("pop.desc")
 	}, { // E Novigrad
-		coords: [[71.02, 48.78]],
+		coords: [[200.813, 162.688]],
 		label: $.t("pop.label"),
 		popupTitle: $.t("pop.popup", {sign: $.t("signs.axii")}),
 		popup: $.t("pop.desc")
 	}, { // NW Velen
-		coords: [[32.69, -112.60]],
+		coords: [[152.688, 47.781]],
 		label: $.t("pop.label"),
 		popupTitle: $.t("pop.popup", {sign: $.t("signs.quen")}),
 		popup: $.t("pop.desc")
 	}, { // SW Velen
-		coords: [[-82.85, -72.69]],
+		coords: [[15.063, 76.14]],
 		label: $.t("pop.label"),
 		popupTitle: $.t("pop.popup", {sign: $.t("signs.aard")}),
 		popup: $.t("pop.desc")
 	}, {
-		coords: [[-71.82, -105.91]],
+		coords: [[53.313, 52.578]],
 		label: $.t("pop.label") + '*',
 		popupTitle: $.t("pop.popup", {sign: $.t("signs.yrden")}),
 		popup: $.t("v:misc.wanderingInTheDark") + $.t("pop.desc")
 	}, { // SE Velen
-		coords: [[-78.19, 7.91]],
+		coords: [[35.688, 133.594]],
 		label: $.t("pop.label") + '*',
 		popupTitle: $.t("pop.popup", {sign: $.t("signs.quen")}),
 		popup: $.t("v:misc.baldMountain") + $.t("pop.desc")
 	}, {
-		coords: [[-70.41, 38.41]],
+		coords: [[55.922, 154.672]],
 		label: $.t("pop.label"),
 		popupTitle: $.t("pop.popup", {sign: $.t("signs.igni")}),
 		popup: $.t("pop.desc")
 	}, {
-		coords: [[-55.68, 18.94]],
+		coords: [[80.219, 141.359]],
 		label: $.t("pop.label"),
 		popupTitle: $.t("pop.popup", {sign: $.t("signs.yrden")}),
 		popup: $.t("pop.desc")
@@ -1088,153 +1086,153 @@ window.mapdata_velen = {
 
 // Point of Interest
 	poi: [{ // Novigrad
-		coords: [[74.84, -25.88]],
+		coords: [[210.156, 109.453]],
 		label: $.t("v:poi.label.triss"),
 		popup: $.t("v:poi.desc.triss")
 	}, {
-		coords: [[70.12, -28.76]],
+		coords: [[199.000, 107.484]],
 		label: $.t("v:poi.label.dandelionAndZoltan"),
 		popup: $.t("v:poi.desc.dandelionAndZoltan")
 	}, {
-		coords: [[77.245, -24.829]],
+		coords: [[217.453, 110.297]],
 		label: $.t("v:poi.label.vilmeriusHospital"),
 		popup: $.t("v:poi.desc.vilmeriusHospital")
 	}, { // NW Velen
-		coords: [[-47.34, -111.81]],
+		coords: [[89.828, 48.344]],
 		label: $.t("v:poi.label.keira"),
 		popup: $.t("v:poi.desc.keira")
 	}, { // Velen
-		coords: [[61.90, -91.82]],
+		coords: [[184.469, 62.484]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.crossbow.feline"),
 		popup: $.t("poi.desc.witcherGear.crossbow.feline")
 	}, {
-		coords: [[57.651, -30.169]],
+		coords: [[178.547, 106.328]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.silversword.feline.superior"),
 		popup: $.t("poi.desc.witcherGear.silversword.feline.superior")
 	}, {
-		coords: [[75.70, -19.50]],
+		coords: [[212.688, 113.969]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.silversword.feline.enhanced"),
 		popup: $.t("poi.desc.witcherGear.silversword.feline.enhanced")
 	}, {
-		coords: [[60.60, 89.80]],
+		coords: [[182.563, 191.609]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.silversword.feline.standard"),
 		popup: $.t("poi.desc.witcherGear.silversword.feline.standard")
 	}, {
-		coords: [[36.50, 114,50]],
+		coords: [[156.031, 208.844]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.armor.feline.enhanced"),
 		popup: $.t("poi.desc.witcherGear.armor.feline.enhanced")
 	}, {
-		coords: [[33, -114.5]],
+		coords: [[153.094, 46.281]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.silversword.griffin.standard"),
 		popup: $.t("poi.desc.witcherGear.silversword.griffin.standard")
 	}, {
-		coords: [[29.373, -73]],
+		coords: [[149.938, 75.813]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.boots.griffin.enhanced"),
 		popup: $.t("poi.desc.witcherGear.boots.griffin.enhanced")
 	}, {
-		coords: [[41, -1]],
+		coords: [[160.063, 127.094]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.steelsword.griffin.standard"),
 		popup: $.t("poi.desc.witcherGear.steelsword.griffin.standard")
 	}, {
-		coords: [[36.5, 35]],
+		coords: [[156.047, 152.828]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.armor.griffin.enhanced"),
 		popup: $.t("poi.desc.witcherGear.armor.griffin.enhanced")
 	}, {
-		coords: [[22, 9.5]],
+		coords: [[144.234, 134.609]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.gauntlets.feline.enhanced"),
 		popup: $.t("poi.desc.witcherGear.gauntlets.feline.enhanced")
 	}, {
-		coords: [[-28, -61]],
+		coords: [[107.375, 84.438]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.trousers.griffin.enhanced"),
 		popup: $.t("poi.desc.witcherGear.trousers.griffin.enhanced")
 	}, {
-		coords: [[-57, -156]],
+		coords: [[78.516, 16.875]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.steelsword.griffin.enhanced"),
 		popup: $.t("poi.desc.witcherGear.steelsword.griffin.enhanced")
 	}, {
-		coords: [[-61, -8.5]],
+		coords: [[73.047, 121.813]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.armor.feline.superior"),
 		popup: $.t("poi.desc.witcherGear.armor.feline.superior")
 	}, {
-		coords: [[-54.5, 12]],
+		coords: [[81.594, 136.344]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.armor.griffin.standard"),
 		popup: $.t("poi.desc.witcherGear.armor.griffin.standard")
 	}, {
-		coords: [[-64, 38]],
+		coords: [[68.297, 154.859]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.steelsword.ursine.superior"),
 		popup: $.t("v:misc.guardedBy", {monster: 'lvl 25 <span>' + $.t("v:monsters.elemental.earth") + '</span>'})
 	}, {
-		coords: [[-81.1, 30.8]],
+		coords: [[23.953, 149.766]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.armor.ursine.mastercrafted"),
 		popup: $.t("poi.desc.witcherGear.armor.ursine.mastercrafted")
 	}, {
-		coords: [[-75.6, -28]],
+		coords: [[43.828, 107.953]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.silversword.ursine.mastercrafted"),
 		popup: $.t("poi.desc.witcherGear.silversword.ursine.mastercrafted")
 	}, {
-		coords: [[-16.278,-115.906]],
+		coords: [[116.344, 45.563]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.steelsword.ursine.mastercrafted"),
 		popup: $.t("poi.desc.witcherGear.steelsword.ursine.mastercrafted")
 	}, {
-		coords: [[-81.2, -70]],
+		coords: [[23.656, 78.094]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.gauntlets.griffin.enhanced"),
 		popup: $.t("poi.desc.witcherGear.gauntlets.griffin.enhanced")
 	}, {
-		coords: [[-72.047, 3.999]],
+		coords: [[53.000, 130.547]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.silversword.ursine.superior"),
 		popup: $.t("poi.desc.witcherGear.silversword.ursine.superior")
 	}, {
-		coords: [[20.406, -14.304]],
+		coords: [[142.922, 117.656]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.gauntlets.ursine.superior"),
 		popup: $.t("poi.desc.witcherGear.gauntlets.ursine.superior")
 	}, {
-		coords: [[-28.710, -77.410]],
+		coords: [[106.703, 72.750]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.silversword.wolven.enhanced"),
 		popup: $.t("poi.desc.witcherGear.silversword.wolven.enhanced")
 	}, {
-		coords: [[-23.645, 72.070]],
+		coords: [[110.813, 179.125]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.boots.wolven.enhanced"),
 		popup: $.t("poi.desc.witcherGear.boots.wolven.enhanced")
 	}, {
-		coords: [[-77.128, -78.926]],
+		coords: [[39.219, 71.719]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.armor.wolven.enhanced"),
 		popup: $.t("poi.desc.witcherGear.armor.wolven.enhanced")
 	}, {
-		coords: [[-72.836, 76.816]],
+		coords: [[50.953, 182.453]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.silversword.wolven.mastercrafted"),
 		popup: $.t("poi.desc.witcherGear.silversword.wolven.mastercrafted")
 	}, {
-		coords: [[-77.897, -104.963]],
+		coords: [[36.688, 53.203]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.armor.wolven.mastercrafted"),
 		popup: $.t("poi.desc.witcherGear.armor.wolven.mastercrafted")
 	}, {
-		coords: [[-74.496, -145.239]],
+		coords: [[46.797, 24.547]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.steelsword.wolven.mastercrafted"),
 		popup: $.t("poi.desc.witcherGear.steelsword.wolven.mastercrafted")
@@ -1242,75 +1240,75 @@ window.mapdata_velen = {
 
 // Shopkeeper
 	shopkeeper: [{ // Novigrad
-		coords: [[74.22, -35.41]],
+		coords: [[208.734, 102.859]],
 		label: $.t("v:shopkeeper.label.bookMerchant"),
 		popup: $.t("v:shopkeeper.desc.bookMerchant")
 	}, {
-		coords: [[74.578, -35.332]],
+		coords: [[209.594, 102.828]],
 		label: $.t("v:shopkeeper.label.bookMerchant"),
 		popup: $.t("v:shopkeeper.desc.bookMerchant")
 	}, {
-		coords: [[72.82, -39.99]],
+		coords: [[205.109, 99.563]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.alchemyFoodAndDrink")
 	}, {
-		coords: [[73.71, -37.96]],
+		coords: [[207.375, 100.969]],
 		label: $.t("v:shopkeeper.label.banker"),
 		popup: $.t("v:shopkeeper.desc.banker")
 	}, {
-		coords: [[69.90, -20.47]],
+		coords: [[198.516, 113.328]],
 		label: $.t("v:shopkeeper.label.clothingMerchant"),
 		popup: $.t("v:shopkeeper.desc.clothingMerchant")
 	}, {
-		coords: [[70.05, -37.13]],
+		coords: [[198.891, 101.484]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.kingfOfBeggarsMerchant")
 	}, {
-		coords: [[76.81, -33.26]],
+		coords: [[216.016, 104.219]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.aeramasTrinketMerchant")
 	}, {
-		coords: [[75.41, -44.82]],
+		coords: [[211.797, 96.109]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.alchemyFoodAndDrink")
 	}, {
-		coords: [[74.47, -46.93]],
+		coords: [[209.234, 94.563]],
 		label: $.t("v:shopkeeper.label.fishmonger"),
 		popup: $.t("v:shopkeeper.desc.fishmonger")
 	}, {
-		coords: [[76.57, -50.10]],
+		coords: [[215.203, 92.344]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.emptyBottlesMerchant")
 	}, {
-		coords: [[76.12, -49.04]],
+		coords: [[213.813, 93.063]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.runesAndAlchemy")
 	}, {
-		coords: [[74.98, -20.57]],
+		coords: [[210.578, 113.344]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.uselessMerchant")
 	}, {
-		coords: [[72.58, -26.41]],
+		coords: [[204.500, 109.047]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.gemDustWeaponsFoodAndDrink")
 	}, {
-		coords: [[75.33, -19.28]],
+		coords: [[211.516, 114.313]],
 		label: $.t("v:shopkeeper.label.loanShark"),
 		popup: $.t("v:shopkeeper.desc.uselessMerchant")
 	}, {
-		coords: [[75.61, -23.82]],
+		coords: [[212.547, 110.969]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.craftingSupplies")
 	}, {
-		coords: [[71.00, -41.60]],
+		coords: [[200.828, 98.297]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.foodAndDrink")
 	}, { // NE Novigrad
-		coords: [[80.92, 50.49]],
+		coords: [[231.297, 163.828]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.runesAlchemyAndFood")
 	}, { // SE Novigrad
-		coords: [[3.43, 97.08]],
+		coords: [[130.578, 196.953]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:misc.rescuedMerchant")
 	}, /*{ // S Novigrad
@@ -1319,512 +1317,512 @@ window.mapdata_velen = {
 		label: $.t("shopkeeper.shopkeeper"),
 		popup: '???'
 	},*/ {
-		coords: [[58.677, -55.415]],
+		coords: [[179.969, 88.781]],
 		label: $.t("v:shopkeeper.label.wanderingMerchant"),
 		popup: $.t("v:shopkeeper.desc.windmillMerchant")
 	}, {
-		coords: [[63.27, -63.46]],
+		coords: [[186.656, 82.938]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.craftingSuppliesFoodAndWeapons")
 	}, {
-		coords: [[48.72, -51.94]],
+		coords: [[167.844, 90.969]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.armourAndCraftingSupplies")
 	}, {
-		coords: [[57.98, -12.00]],
+		coords: [[179.188, 119.516]],
 		label: $.t("v:shopkeeper.label.wanderingMerchant"),
 		popupTitle: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.runesAlchemyAndFood")
 	}, { // Oxenfurt
-		coords: [[40.01, 51.48]],
+		coords: [[159.141, 164.516]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.paintMerchant")
 	}, { // NE Velen
-		coords: [[26.00, 30.11]],
+		coords: [[147.313, 149.422]],
 		label: $.t("v:shopkeeper.label.wanderingMerchant"),
 		popupTitle: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.runesAlchemyAndFood")
 	}, {
-		coords: [[31.65, -17.93]],
+		coords: [[151.781, 115.188]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:misc.rescuedMerchant") + $.t("v:shopkeeper.desc.alchemyAndFood")
 	}, {
-		coords: [[-6.84, 72.38]],
+		coords: [[123.156, 179.266]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:misc.liberated") + $.t("v:shopkeeper.desc.weaponsAndCraftingSupplies")
 	}, {
-		coords: [[13.07, 46.27]],
+		coords: [[137.406, 160.781]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:misc.liberated") + $.t("v:shopkeeper.desc.runesAlchemyAndFood")
 	}, { // NW Velen
-		coords: [[-27.84, -102.74]],
+		coords: [[107.469, 54.906]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.uselessMerchant")
 	}, {
-		coords: [[-34.96, -72.77]],
+		coords: [[101.547, 76.094]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.gwentAndDrinks")
 	}, {
-		coords: [[-54.42, -121.65]],
+		coords: [[81.797, 41.406]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.gwentAndJewellery")
 	}, {
-		coords: [[-47.04, -112.50]],
+		coords: [[90.109, 47.906]],
 		label: $.t("v:shopkeeper.label.keira"),
 		popup: $.t("v:shopkeeper.desc.alchemyRecipesAndClearance")
 	}, {
-		coords: [[-32.03, -71.77]],
+		coords: [[104.031, 76.875]],
 		label: $.t("v:shopkeeper.label.quartermaster"),
 		popup: $.t("v:shopkeeper.desc.gwentFoodAndDrink")
 	}, {
-		coords: [[-36.10, -72.51]],
+		coords: [[100.531, 76.344]],
 		label: $.t("v:shopkeeper.label.anselm"),
 		popup: $.t("v:misc.rescuedMerchant") + $.t("v:shopkeeper.desc.blindersMerchant")
 	}, {
-		coords: [[-62.57, -76.89]],
+		coords: [[70.563, 73.188]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.drinksAndSaddlebags")
 	}, {
-		coords: [[-52.70, -81.49]],
+		coords: [[83.766, 69.922]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.gwentAndDrinks") + $.t("v:misc.rescue") + '<a href="#6/-61.954/-33.893">' + $.t("v:misc.locations.banditsCamp") + '</a>'
 	}, {
-		coords: [[-52.96, -56.65]],
+		coords: [[83.531, 87.641]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.runesAndAlchemy")
 	}, {
-		coords: [[-45.09, -138.96]],
+		coords: [[92.156, 29.109]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.armourAndCraftingSupplies")
 	}, {
-		coords: [[-58.36, -142.91]],
+		coords: [[76.797, 26.313]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.armourAndCraftingSupplies")
 	}, { // SW Velen
-		coords: [[-79.58, -114.12]],
+		coords: [[30.359, 46.734]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:misc.liberated") + $.t("v:shopkeeper.desc.runesAlchemyAndFood")
 	}, { // SE Velen
-		coords: [[-36.17, 3.69]],
+		coords: [[100.578, 130.578]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:misc.rescuedMerchant") + $.t("v:shopkeeper.desc.alchemyAndFood")
 	}, {
-		coords: [[-36.88, -24.35]],
+		coords: [[99.844, 110.594]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.gwentAndCrafting")
 	}, {
-		coords: [[-37.79, -26.19]],
+		coords: [[99.000, 109.281]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.runesAlchemyAndFood")
 	}, {
-		coords: [[-78.79, 108.24]],
+		coords: [[33.453, 204.859]],
 		label: $.t("v:shopkeeper.label.quartermaster"),
 		popup: $.t("v:shopkeeper.desc.uselessMerchant")
 	}, {
-		coords: [[-57.35, 27.03]],
+		coords: [[78.078, 147.141]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.disappearingDrinksMerchant")
 	}, {
-		coords: [[-76.16, 107.67]],
+		coords: [[42.156, 204.500]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.runesAndAlchemy")
 	}, {
-		coords: [[-75.93, 110.28]],
+		coords: [[42.844, 206.344]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.armourAndCraftingSupplies")
 	}, {
-		coords: [[-75.50, 110.81]],
+		coords: [[44.063, 206.734]],
 		label: $.t("v:shopkeeper.label.shopkeeper"),
 		popup: $.t("v:shopkeeper.desc.weaponsAndCraftingSupplies")
 	}],
 
 // Sign Post
 	signpost: [{ // Novigrad
-		coords: [[73.76, -33.97]],
+		coords: [[207.375, 103.750]],
 		label: $.t("v:signpost.label.hierarchSquare"),
 		popup: $.t("v:signpost.desc.hierarchSquare")
 	}, {
-		coords: [[74.23, -15.86]],
+		coords: [[208.766, 116.672]],
 		label: $.t("v:signpost.label.southernGate"),
 		popup: $.t("v:signpost.desc.southernGate")
 	}, {
-		coords: [[76.44, -16.20]],
+		coords: [[214.813, 116.297]],
 		label: $.t("v:signpost.label.oxenfurtGate"),
 		popup: $.t("v:signpost.desc.oxenfurtGate")
 	}, {
-		coords: [[77.64, -36.47]],
+		coords: [[218.563, 102.031]],
 		label: $.t("v:signpost.label.stGregorysBridge"),
 		popup: $.t("v:signpost.desc.stGregorysBridge")
 	}, {
-		coords: [[79.73, -51.24]],
+		coords: [[226.313, 91.547]],
 		label: $.t("v:signpost.label.electorsSquare"),
 		popup: $.t("v:signpost.desc.electorsSquare")
 	}, {
-		coords: [[71.16, -22.94]],
+		coords: [[201.391, 111.484]],
 		label: $.t("v:signpost.label.tretogorGate"),
 		popup: $.t("v:signpost.desc.tretogorGate")
 	}, {
-		coords: [[68.94, -27.77]],
+		coords: [[196.563, 108.094]],
 		label: $.t("v:signpost.label.gateOfTheHierarch"),
 		popup: $.t("v:signpost.desc.gateOfTheHierarch")
 	}, {
-		coords: [[66.32, -35.31]],
+		coords: [[191.688, 102.781]],
 		label: $.t("v:signpost.label.gloryGate"),
 		popup: $.t("v:signpost.desc.gloryGate")
 	}, {
-		coords: [[65.99, -43.90]],
+		coords: [[191.250, 96.672]],
 		label: $.t("v:signpost.label.portsideGate"),
 		popup: $.t("v:signpost.desc.portsideGate")
 	}, {
-		coords: [[69.57, -55.28]],
+		coords: [[197.969, 88.609]],
 		label: $.t("v:signpost.label.novigradDocks"),
 		popup: $.t("v:signpost.desc.novigradDocks")
 	}, {
-		coords: [[75.39, -8.88]],
+		coords: [[211.828, 121.703]],
 		label: $.t("v:signpost.label.arette"),
 		popup: $.t("v:signpost.desc.arette")
 	}, {
-		coords: [[69.57, -2.81]],
+		coords: [[198.016, 125.922]],
 		label: $.t("v:signpost.label.sevenCatsInn"),
 		popup: $.t("v:signpost.desc.sevenCatsInn")
 	}, { // NE Novigrad
-		coords: [[83.53, -9.40]],
+		coords: [[245.109, 121.094]],
 		label: $.t("v:signpost.label.sarrasinGrange"),
 		popup: $.t("v:signpost.desc.sarrasinGrange")
 	}, {
-		coords: [[81.92, 3.60]],
+		coords: [[236.125, 130.438]],
 		label: $.t("v:signpost.label.yantra"),
 		popup: $.t("v:signpost.desc.yantra")
 	}, {
-		coords: [[82.09, 30.15]],
+		coords: [[237.031, 149.219]],
 		label: $.t("v:signpost.label.isolatedHut"),
 		popup: $.t("v:signpost.desc.isolatedHut")
 	}, {
-		coords: [[76.24, 18.26]],
+		coords: [[214.219, 140.781]],
 		label: $.t("v:signpost.label.honeyfillMeadworks"),
 		popup: $.t("v:signpost.desc.honeyfillMeadworks")
 	}, {
-		coords: [[79.04, 65.21]],
+		coords: [[223.516, 174.375]],
 		label: $.t("v:signpost.label.martinFeuillesFarmstead"),
 		popup: $.t("v:signpost.desc.martinFeuillesFarmstead")
 	}, {
-		coords: [[81.02, 49.09]],
+		coords: [[231.734, 162.984]],
 		label: $.t("v:signpost.label.winespringGrange"),
 		popup: $.t("v:signpost.desc.winespringGrange")
 	}, {
-		coords: [[79.59, 31.03]],
+		coords: [[225.672, 149.938]],
 		label: $.t("v:signpost.label.moldavieResidence"),
 		popup: $.t("v:signpost.desc.moldavieResidence")
 	}, {
-		coords: [[81.66, -31.55]],
+		coords: [[234.469, 105.234]],
 		label: $.t("v:signpost.label.cavern"),
 		popup: $.t("v:signpost.desc.cavern")
 	}, { // E Novigrad
-		coords: [[72.92, 41.31]],
+		coords: [[205.438, 157.313]],
 		label: $.t("v:signpost.label.alness"),
 		popup: $.t("v:signpost.desc.alness")
 	}, {
-		coords: [[67.58, 31.03]],
+		coords: [[194.000, 149.969]],
 		label: $.t("v:signpost.label.wheatFields"),
 		popup: $.t("v:signpost.desc.wheatFields")
 	}, {
-		coords: [[65.31, 46.67]],
+		coords: [[189.813, 161.063]],
 		label: $.t("v:signpost.label.vegelbudResidence"),
 		popup: $.t("v:signpost.desc.vegelbudResidence")
 	}, { // SE Novigrad
-		coords: [[62.02, 39.11]],
+		coords: [[184.719, 155.609]],
 		label: $.t("v:signpost.label.carsten"),
 		popup: $.t("v:signpost.desc.carsten")
 	}, {
-		coords: [[58.56, 66.27]],
+		coords: [[179.703, 174.922]],
 		label: $.t("v:signpost.label.temerianPartisanHideout"),
 		popup: $.t("v:signpost.desc.temerianPartisanHideout")
 	}, {
-		coords: [[59.82, 85.87]],
+		coords: [[181.391, 189.266]],
 		label: $.t("v:signpost.label.estTayiar"),
 		popup: $.t("v:signpost.desc.estTayiar")
 	}, {
-		coords: [[49.45, 70.67]],
+		coords: [[168.672, 178.078]],
 		label: $.t("v:signpost.label.herbalistsHut"),
 		popup: $.t("v:signpost.desc.herbalistsHut")
 	}, {
-		coords: [[35.51, 110.67]],
+		coords: [[155.203, 206.688]],
 		label: $.t("v:signpost.label.aeramasAbandonedManor"),
 		popup: $.t("v:signpost.desc.aeramasAbandonedManor")
 	}, {
-		coords: [[19.89, 83.06]],
+		coords: [[142.641, 186.875]],
 		label: $.t("v:signpost.label.crossroads"),
 		popup: $.t("v:signpost.desc.crossroads")
 	}, {
-		coords: [[49.85, 52.73]],
+		coords: [[168.969, 165.375]],
 		label: $.t("v:signpost.label.gustfieldsFarm"),
 		popup: $.t("v:signpost.desc.gustfieldsFarm")
 	}, {
-		coords: [[76.64, 37.00]],
+		coords: [[215.406, 154.203]],
 		label: $.t("v:signpost.label.dancingWindmill"),
 		popup: $.t("v:signpost.desc.dancingWindmill")
 	}, { // S Novigrad
-		coords: [[67.20, -65.48]],
+		coords: [[193.328, 81.500]],
 		label: $.t("v:signpost.label.loggersHut"),
 		popup: $.t("v:signpost.desc.loggersHut")
 	}, {
-		coords: [[66.92, -85.25]],
+		coords: [[192.875, 67.359]],
 		label: $.t("v:signpost.label.lighthouse"),
 		popup: $.t("v:signpost.desc.lighthouse")
 	}, {
-		coords: [[61.90, -14.08]],
+		coords: [[184.484, 117.922]],
 		label: $.t("v:signpost.label.cunnyOfTheGoose"),
 		popup: $.t("v:signpost.desc.cunnyOfTheGoose")
 	}, {
-		coords: [[58.03, -29.44]],
+		coords: [[179.016, 106.938]],
 		label: $.t("v:signpost.label.drahimCastle"),
 		popup: $.t("v:signpost.desc.drahimCastle")
 	}, {
-		coords: [[54.10, -71.98]],
+		coords: [[173.828, 76.719]],
 		label: $.t("v:signpost.label.widowsGrotto"),
 		popup: $.t("v:signpost.desc.widowsGrotto")
 	}, {
-		coords: [[45.98, -51.33]],
+		coords: [[165.188, 91.438]],
 		label: $.t("v:signpost.label.ursten"),
 		popup: $.t("v:signpost.desc.ursten")
 	}, {
-		coords: [[60.50, -55.55]],
+		coords: [[182.469, 88.563]],
 		label: $.t("v:signpost.label.luciansWindmill"),
 		popup: $.t("v:signpost.desc.luciansWindmill")
 	}, {
-		coords: [[62.35, 11.69]],
+		coords: [[185.109, 136.172]],
 		label: $.t("v:signpost.label.eternalFireChapel"),
 		popup: $.t("v:signpost.desc.eternalFireChapel")
 	}, {
-		coords: [[37.11, -27.23]],
+		coords: [[156.516, 108.625]],
 		label: $.t("v:signpost.label.borderPost"),
 		popup: $.t("v:signpost.desc.borderPost")
 	}, { // Oxenfurt
-		coords: [[38.17, 62.31]],
+		coords: [[157.484, 172.031]],
 		label: $.t("v:signpost.label.novigradGate"),
 		popup: $.t("v:signpost.desc.novigradGate")
 	}, {
-		coords: [[29.10, 52.58]],
+		coords: [[149.547, 165.094]],
 		label: $.t("v:signpost.label.westernGate"),
 		popup: $.t("v:signpost.desc.westernGate")
 	}, {
-		coords: [[37.40, 48.34]],
+		coords: [[156.859, 162.375]],
 		label: $.t("v:signpost.label.oxenfurtHarbor"),
 		popup: $.t("v:signpost.desc.oxenfurtHarbor")
 	}, { // NE Velen
-		coords: [[15.62, 25.66]],
+		coords: [[139.359, 146.203]],
 		label: $.t("v:signpost.label.stonecuttersSettlement"),
 		popup: $.t("v:signpost.desc.stonecuttersSettlement")
 	}, {
-		coords: [[35.96, 34.41]],
+		coords: [[155.391, 152.375]],
 		label: $.t("v:signpost.label.whiteEagleFort"),
 		popup: $.t("v:signpost.desc.whiteEagleFort")
 	}, {
-		coords: [[27.45, 12.00]],
+		coords: [[148.453, 136.422]],
 		label: $.t("v:signpost.label.codgersQuarry"),
 		popup: $.t("v:signpost.desc.codgersQuarry")
 	}, {
-		coords: [[39.61, -2.42]],
+		coords: [[158.813, 126.328]],
 		label: $.t("v:signpost.label.hindhold"),
 		popup: $.t("v:signpost.desc.hindhold")
 	}, {
-		coords: [[-4.01, 63.37]],
+		coords: [[125.281, 173.141]],
 		label: $.t("v:signpost.label.ferryStation"),
 		popup: $.t("v:signpost.desc.ferryStation")
 	}, {
-		coords: [[13.75, -9.05]],
+		coords: [[137.906, 121.516]],
 		label: $.t("v:signpost.label.hangedMansTree"),
 		popup: $.t("v:signpost.desc.hangedMansTree")
 	}, {
-		coords: [[5.22, 5.41]],
+		coords: [[131.859, 131.781]],
 		label: $.t("v:signpost.label.devilsPit"),
 		popup: $.t("v:signpost.desc.devilsPit")
 	}, {
-		coords: [[1.43, -15.16]],
+		coords: [[129.016, 116.984]],
 		label: $.t("v:signpost.label.mulbrydale"),
 		popup: $.t("v:signpost.desc.mulbrydale")
 	}, {
-		coords: [[0.82, -47.20]],
+		coords: [[128.797, 94.375]],
 		label: $.t("v:signpost.label.innAtTheCrossroads"),
 		popup: $.t("v:signpost.desc.innAtTheCrossroads")
 	}, { // NW Velen
-		coords: [[21.78, -106.54]],
+		coords: [[143.859, 52.156]],
 		label: $.t("v:signpost.label.harpyFeedingGround"),
 		popup: $.t("v:signpost.desc.harpyFeedingGround")
 	}, {
-		coords: [[30.56, -114.31]],
+		coords: [[150.906, 46.625]],
 		label: $.t("v:signpost.label.lornruk"),
 		popup: $.t("v:signpost.desc.lornruk")
 	}, {
-		coords: [[-1.85, -98.61]],
+		coords: [[126.828, 57.891]],
 		label: $.t("v:signpost.label.heatherton"),
 		popup: $.t("v:signpost.desc.heatherton")
 	}, {
-		coords: [[0.97, -110.39]],
+		coords: [[128.688, 49.313]],
 		label: $.t("v:signpost.label.abandonedTower"),
 		popup: $.t("v:signpost.desc.abandonedTower")
 	}, {
-		coords: [[2.37, -122.34]],
+		coords: [[129.781, 40.859]],
 		label: $.t("v:signpost.label.isolatedShack"),
 		popup: $.t("v:signpost.desc.isolatedShack")
 	}, {
-		coords: [[-28.27, -103.97]],
+		coords: [[107.016, 54.078]],
 		label: $.t("v:signpost.label.blackbough"),
 		popup: $.t("v:signpost.desc.blackbough")
 	}, {
-		coords: [[-32.44, -123.05]],
+		coords: [[103.656, 40.563]],
 		label: $.t("v:signpost.label.hangmansAlley"),
 		popup: $.t("v:signpost.desc.hangmansAlley")
 	}, {
-		coords: [[-39.71, -74.62]],
+		coords: [[97.219, 74.875]],
 		label: $.t("v:signpost.label.crowsPerch"),
 		popup: $.t("v:signpost.desc.crowsPerch")
 	}, {
-		coords: [[-52.81, -55.63]],
+		coords: [[83.781, 88.406]],
 		label: $.t("v:signpost.label.boatmakersHut"),
 		popup: $.t("v:signpost.desc.boatmakersHut")
 	}, {
-		coords: [[-50.35, -140.98]],
+		coords: [[86.516, 27.609]],
 		label: $.t("v:signpost.label.refugeesCamp"),
 		popup: $.t("v:signpost.desc.refugeesCamp")
 	}, {
-		coords: [[-45.01, -140.36]],
+		coords: [[92.203, 28.359]],
 		label: $.t("v:signpost.label.coastOfWrecks"),
 		popup: $.t("v:signpost.desc.coastOfWrecks")
 	}, {
-		coords: [[-53.67, -119.50]],
+		coords: [[82.688, 42.859]],
 		label: $.t("v:signpost.label.midcopse"),
 		popup: $.t("v:signpost.desc.midcopse")
 	}, {
-		coords: [[-57.30, -98.57]],
+		coords: [[78.109, 57.844]],
 		label: $.t("v:signpost.label.wastrelManor"),
 		popup: $.t("v:signpost.desc.wastrelManor")
 	}, {
-		coords: [[-62.01, -34.94]],
+		coords: [[71.516, 103.234]],
 		label: $.t("v:signpost.label.banditsCamp"),
 		popup: $.t("v:signpost.desc.banditsCamp")
 	}, {
-		coords: [[-63.55, -74.44]],
+		coords: [[69.109, 75.000]],
 		label: $.t("v:signpost.label.oreton"),
 		popup: $.t("v:signpost.desc.oreton")
 	}, {
-		coords: [[-45.68, -127.05]],
+		coords: [[91.438, 37.625]],
 		label: $.t("v:signpost.label.forestHut"),
 		popup: $.t("v:signpost.desc.forestHut")
 	}, {
-		coords: [[-13.67, -84.20]],
+		coords: [[118.281, 68.047]],
 		label: $.t("v:signpost.label.wolvenGlade"),
 		popup: $.t("v:signpost.desc.wolvenGlade")
 	}, {
-		coords: [[-28.84, -60.56]],
+		coords: [[106.688, 84.781]],
 		label: $.t("v:signpost.label.burnedRuins"),
 		popup: $.t("v:signpost.desc.burnedRuins")
 	}, {
-		coords: [[-47.10, -92.64]],
+		coords: [[89.984, 61.938]],
 		label: $.t("v:signpost.label.trollBridge"),
 		popup: $.t("v:signpost.desc.trollBridge")
 	}, {
-		coords: [[-53.96, -80.86]],
+		coords: [[82.281, 70.359]],
 		label: $.t("v:signpost.label.claywich"),
 		popup: $.t("v:signpost.desc.claywich")
 	}, {
-		coords: [[-69.33, -39.59]],
+		coords: [[58.672, 99.766]],
 		label: $.t("v:signpost.label.drudge"),
 		popup: $.t("v:signpost.desc.drudge")
 	}, { // SW Velen
-		coords: [[-64.09, -147.83]],
+		coords: [[68.141, 22.922]],
 		label: $.t("v:signpost.label.condyle"),
 		popup: $.t("v:signpost.desc.condyle")
 	}, {
-		coords: [[-65.73, -128.41]],
+		coords: [[65.422, 36.578]],
 		label: $.t("v:signpost.label.duenHen"),
 		popup: $.t("v:signpost.desc.duenHen")
 	}, {
-		coords: [[-73.30, -69.92]],
+		coords: [[49.875, 78.141]],
 		label: $.t("v:signpost.label.fykeIsle"),
 		popup: $.t("v:signpost.desc.fykeIsle")
 	}, {
-		coords: [[-77.12, -112.72]],
+		coords: [[39.219, 47.703]],
 		label: $.t("v:signpost.label.byways"),
 		popup: $.t("v:signpost.desc.byways")
 	}, {
-		coords: [[-80.79, -69.83]],
+		coords: [[25.406, 78.266]],
 		label: $.t("v:signpost.label.frischlow"),
 		popup: $.t("v:signpost.desc.frischlow")
 	}, {
-		coords: [[-78.73, -41.44]],
+		coords: [[33.813, 98.703]],
 		label: $.t("v:signpost.label.olenasGrove"),
 		popup: $.t("v:signpost.desc.olenasGrove")
 	}, { // SE Velen
-		coords: [[-79.15, -10.28]],
+		coords: [[32.125, 120.547]],
 		label: $.t("v:signpost.label.roadToBaldMountain"),
 		popup: $.t("v:signpost.desc.roadToBaldMountain")
 	}, {
-		coords: [[-80.90, 30.32]],
+		coords: [[25.000, 149.563]],
 		label: $.t("v:signpost.label.destroyedBastion"),
 		popup: $.t("v:signpost.desc.destroyedBastion")
 	}, {
-		coords: [[-76.49, 41.62]],
+		coords: [[41.250, 157.594]],
 		label: $.t("v:signpost.label.crossroadsVillage"),
 		popup: $.t("v:signpost.desc.crossroadsVillage")
 	}, {
-		coords: [[-77.56, 110.92]],
+		coords: [[37.828, 206.734]],
 		label: $.t("v:signpost.label.nilfgaardianArmyGroupCenterCamp"),
 		popup: $.t("v:signpost.desc.nilfgaardianArmyGroupCenterCamp")
 	}, {
-		coords: [[-74.73, 98.61]],
+		coords: [[46.219, 198.172]],
 		label: $.t("v:signpost.label.houseOfRespite"),
 		popup: $.t("v:signpost.desc.houseOfRespite")
 	}, {
-		coords: [[-69.16, 82.13]],
+		coords: [[59.203, 186.266]],
 		label: $.t("v:signpost.label.kimboltWay"),
 		popup: $.t("v:signpost.desc.kimboltWay")
 	}, {
-		coords: [[-67.09, 22.19]],
+		coords: [[62.953, 143.797]],
 		label: $.t("v:signpost.label.theOrphansOfCrookbackBog"),
 		popup: $.t("v:signpost.desc.theOrphansOfCrookbackBog")
 	}, {
-		coords: [[-65.05, 37.53]],
+		coords: [[66.625, 154.531]],
 		label: $.t("v:signpost.label.ruinedTower"),
 		popup: $.t("v:signpost.desc.ruinedTower")
 	}, {
-		coords: [[-70.73, 43.68]],
+		coords: [[55.734, 159.281]],
 		label: $.t("v:signpost.label.ancientOak"),
 		popup: $.t("v:signpost.desc.ancientOak")
 	}, {
-		coords: [[-58.79, 30.63]],
+		coords: [[76.219, 149.703]],
 		label: $.t("v:signpost.label.downwarren"),
 		popup: $.t("v:signpost.desc.downwarren")
 	}, {
-		coords: [[-54.39, 10.99]],
+		coords: [[82.016, 135.516]],
 		label: $.t("v:signpost.label.dragonslayersGrotto"),
 		popup: $.t("v:signpost.desc.dragonslayersGrotto")
 	}, {
-		coords: [[-48.75, 30.72]],
+		coords: [[88.328, 149.813]],
 		label: $.t("v:signpost.label.reardonManor"),
 		popup: $.t("v:signpost.desc.reardonManor")
 	}, {
-		coords: [[-50.63, 67.32]],
+		coords: [[86.313, 175.969]],
 		label: $.t("v:signpost.label.benek"),
 		popup: $.t("v:signpost.desc.benek")
 	}, {
-		coords: [[-36.10, 51.68]],
+		coords: [[100.563, 164.641]],
 		label: $.t("v:signpost.label.toderas"),
 		popup: $.t("v:signpost.desc.toderas")
 	}, {
-		coords: [[-34.42, 11.69]],
+		coords: [[101.938, 136.266]],
 		label: $.t("v:signpost.label.lurtch"),
 		popup: $.t("v:signpost.desc.lurtch")
 	}, {
-		coords: [[-36.81, -25.97]],
+		coords: [[99.906, 109.500]],
 		label: $.t("v:signpost.label.lindenvale"),
 		popup: $.t("v:signpost.desc.lindenvale")
 	}, {
-		coords: [[-17.22, 40.17]],
+		coords: [[115.656, 156.328]],
 		label: $.t("v:signpost.label.maraudersBridge"),
 		popup: $.t("v:signpost.desc.maraudersBridge")
 	}, {
-		coords: [[-22.92, 71.59]],
+		coords: [[111.234, 178.766]],
 		label: $.t("v:signpost.label.grotto"),
 		popup: $.t("v:signpost.desc.grotto")
 	}],
@@ -1833,12 +1831,12 @@ window.mapdata_velen = {
 	smugglers: [{
 		coords: [
 			// Novigrad
-			[67.37, -33.44],
-			[71.07, -9.14],
+			[193.547, 103.891],
+			[201.000, 121.516],
 			// S Novigrad
-			[61.17, -84.11],
+			[183.547, 68.297],
 			// NW Velen
-			[-58.90, -158.82]
+			[75.844, 15.000]
 		],
 		label: $.t("smugglers.label"),
 		popup: $.t("smugglers.desc")
@@ -1846,15 +1844,15 @@ window.mapdata_velen = {
 
 // Spoils of War
 	spoils: [{ // NE Velen
-		coords: [[33.91, -68.51]],
+		coords: [[153.609, 79.109]],
 		label: $.t("spoils.label"),
 		popup: $.t("spoils.desc", {monster: ''})
 	}, { // NW Velen
-		coords: [[-22.72, -32.04]],
+		coords: [[111.500, 105.250]],
 		label: $.t("spoils.label"),
 		popup: $.t("spoils.desc", {monster: '(lvl 4 <span>' + $.t("v:monsters.drowners") + '</span>)'})
 	}, { // SW Velen
-		coords: [[-74.75, -144.93]],
+		coords: [[46.078, 24.953]],
 		label: $.t("spoils.label"),
 		popup: $.t("spoils.desc", {monster: '(lvl 10 <span>' + $.t("v:monsters.drowners") + '</span>)'})
 	}]
