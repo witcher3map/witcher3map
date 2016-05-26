@@ -157,8 +157,8 @@
 				"silversword": {
 					"feline": {
 						"standard": "Inside the Est Tayiar Ruine, behind a Wall that you can break",
-						"enhanced": "You need to climp up a Leader",
-						"superior": "",
+						"enhanced": "Upstairs of a building - accessible by the ladder from the side of Oxenfurt Gate",
+						"superior": "Behind breakable stalagmites, on a stone shelf located on the right side of the cave",
 						"mastercrafted": ""
 					},
 					"griffin": {
@@ -182,9 +182,9 @@
 				},
 				"steelsword": {
 					"feline": {
-						"standard": "",
-						"enhanced": "",
-						"superior": "",
+						"standard": "Inside Drahim Castle, down the ladder",
+						"enhanced": "Inside the cave, behind a small stone wall on the left side",
+						"superior": "At the end of the cave, in a chest on a wooden platform",
 						"mastercrafted": ""
 					},
 					"griffin": {

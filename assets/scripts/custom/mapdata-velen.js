@@ -1107,10 +1107,15 @@ window.mapdata_velen = {
 		popupTitle: $.t("poi.popup.witcherGear.crossbow.feline"),
 		popup: $.t("poi.desc.witcherGear.crossbow.feline")
 	}, {
-		coords: [[178.547, 106.328]],
+		coords: [[166.359, 99.516]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.silversword.feline.superior"),
 		popup: $.t("poi.desc.witcherGear.silversword.feline.superior")
+	}, {
+		coords: [[178.547, 106.328]],
+		label: $.t("poi.label.witcherGear"),
+		popupTitle: $.t("poi.popup.witcherGear.steelsword.feline.standard"),
+		popup: $.t("poi.desc.witcherGear.steelsword.feline.standard")
 	}, {
 		coords: [[212.688, 113.969]],
 		label: $.t("poi.label.witcherGear"),
@@ -1126,6 +1131,16 @@ window.mapdata_velen = {
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.armor.feline.enhanced"),
 		popup: $.t("poi.desc.witcherGear.armor.feline.enhanced")
+	}, {
+		coords: [[92.859, 155.953]],
+		label: $.t("poi.label.witcherGear"),
+		popupTitle: $.t("poi.popup.witcherGear.steelsword.feline.enhanced"),
+		popup: $.t("poi.desc.witcherGear.steelsword.feline.enhanced")
+	}, {	
+		coords: [[237.984, 105.422]],
+		label: $.t("poi.label.witcherGear"),
+		popupTitle: $.t("poi.popup.witcherGear.steelsword.feline.superior"),
+		popup: $.t("poi.desc.witcherGear.steelsword.feline.superior")
 	}, {
 		coords: [[153.094, 46.281]],
 		label: $.t("poi.label.witcherGear"),
