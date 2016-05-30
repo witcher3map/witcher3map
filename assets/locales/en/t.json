@@ -113,6 +113,10 @@
 			"WildKingdom": "Mutual of Beauclair's Wild Kingdom",
 			"kingforhire": "King for Hire",
 			"winewars": "Wine Wars: Belgaard",
+			"facethestrage": "Turn and Face the Strange",
+			"bigfeet": "Big Feet to Fill: The FIrst Group",
+			"knightstale": "A Knight's Tale",
+			"XXX": "XXX",
 			"XXX": "XXX"
 		},
 		"desc": {
@@ -120,18 +124,29 @@
 			"WildKingdom": "XXX",
 			"kingforhire": "XXX",
 			"winewars": "XXX",
+			"facethestrage": "Level 35 - you should automaticly pick up this Quest, while your the Main Quest `La Cage au Fou`",
+			"bigfeet": "XXX",
+			"knightstale": "Level 40 - You get this Quest at the Notice Board in Castel Ravello Vineyard",
+			"XXX": "XXX",
 			"XXX": "XXX"
 		}
 	},
+
 	"contracts": {
 		"label": {
 			"biggamehunter": "Big Game Hunter",
+			"coldasice": "Feet as Cold as Ice",
+			"XXX": "XXX",
+			"XXX": "XXX",
 			"XXX": "XXX",
 			"XXX": "XXX"
 		},
 		"desc": {
-			"XXX": "XXX",
 			"biggamehunter": "Level 37 Witcher Contract. Started on the Notice Board near Dulcinea Windmill",
+			"coldasice": "Level 45.",
+			"XXX": "XXX",
+			"XXX": "XXX",
+			"XXX": "XXX",
 			"XXX": "XXX"
 		}
 	},
@@ -154,6 +169,15 @@
 			"plegmund": "Plegmund'S Bridge",
 			"corvobianco": "Corvo Bianco Vineyard",
 			"palace": "Beauclar Palace",
+			"palacegardens": "Palace Gardens",
+			"embassy": "Nilfgaardian Embassy",
+			"gate": "Metinna Gate",
+			"francollarts": "Francollarts",
+			"fort": "Fort Astre Ruins",
+			"fox": "Fox Hollow",
+			"castelravello": "Castel Ravello Vineyard",
+			"XXX": "XXX",
+			"XXX": "XXX",
 			"XXX": "XXX",
 			"XXX": "XXX"
 		},
@@ -163,6 +187,15 @@
 			"plegmund": "XXX",
 			"corvobianco": "XXX",
 			"palace": "XXX",
+			"palacegardens": "XXX",
+			"embassy": "XXX",
+			"gate": "XXX",
+			"francollarts": "XXX",
+			"fort": "XXX",
+			"fox": "XXX",
+			"castelravello": "XXX",
+			"XXX": "XXX",
+			"XXX": "XXX",
 			"XXX": "XXX",
 			"XXX": "XXX"
 		}
