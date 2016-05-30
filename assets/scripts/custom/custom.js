@@ -26,6 +26,9 @@ $(function() {
 		markers.shopkeeper,
 		markers.signpost,
 		markers.smugglers,
+		markers.sidequests,
+		markers.contracts,
+		//markers.vinecontract,
 		markers.spoils
 	];
 
@@ -84,7 +87,7 @@ $(function() {
 		layers: allLayers
 	};
 
-	if (map_path === 'velen' || map_path === 'kaer_morhen'){
+	if (map_path === 'velen' || map_path === 'toussaint'){
 		map_settings['crs'] = L.CRS.Simple;
 	}
 
@@ -158,7 +161,7 @@ $(function() {
 		noWrap: true
 	};
 
-	if (map_path === 'velen' || map_path === 'kaer_morhen'){
+	if (map_path === 'velen' || map_path === 'toussaint'){
 		layer_settings['continuousWorld'] = true;
 		layer_settings['crs'] = L.CRS.Simple;
 	}

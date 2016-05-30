@@ -28,6 +28,7 @@ $(function() {
 		markers.smugglers,
 		markers.sidequests,
 		markers.contracts,
+		//markers.vinecontract,
 		markers.spoils
 	];
 
