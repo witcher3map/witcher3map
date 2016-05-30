@@ -1,0 +1,299 @@
+{
+  "monsters":{
+    "alghouls":"Algoules",
+    "bandits":"Bandits",
+    "basilisk":"Basilic",
+    "cyclops":"Cyclope",
+    "drowners":"Noyeurs",
+    "echidna":"Sirène",
+    "elemental":{
+      "earth":"Élémentaire de terre",
+      "ice":"Élémentaire de glace"
+    },
+    "endrega":"Endriague",
+    "gargoyles":"Gargouilles",
+    "ghost":"Fantôme",
+    "harpies":"Harpies",
+    "nekkers":"Nekkers",
+    "nekkerWarrior":"Guerrier Nekker",
+    "sirens":"Sirènes",
+    "wolves":"Loups",
+    "wraiths":{
+      "wraiths":"Spectres",
+      "wraith":"Spectre"
+    },
+    "wyvern":"Wyverne"
+  },
+  "alchemy":{
+    "gremist":{
+      "label":"Gremist",
+      "desc":"'Alchimiste de niveau supérieur' (lvl 24)"
+    }
+  },
+  "armourer":{
+    "amateurLabel":"Armurier amateur",
+    "journeymanLabel":"Armurier compagnon",
+    "desc":"Ici, vous pouvez fabriquer des armures, réparer votre équipement endommagé, démonter de l'équipement pour récupérer des pièces ou retirer des améliorations des emplacements."
+  },
+  "banditcamp":{
+    "label":"Camp de bandits",
+    "desc":"Un groupe de dangereux bandits a installé son camp ici. "
+  },
+  "barber":{
+    "label":"Barbier",
+    "desc":"Visitez les barbiers pour un rasage ou une nouvelle coupe de cheveux. "
+  },
+  "blacksmith":{
+    "amateurLabel":"Forgeron amateur",
+    "journeymanLabel":"Forgeron compagnon",
+    "desc":"Ici, vous pouvez fabriquer des armures, réparer votre équipement endommagé, démonter de l'équipement pour récupérer des pièces ou retirer des améliorations des emplacements."
+  },
+  "gwent":{
+    "label":{
+      "player":"Joueur de Gwynt"
+    },
+    "desc":{
+      "player":"Jouez vos pièces durement gagnées en jouant au Gwynt ici. "
+    },
+    "popup":{
+      "player":"Joueur de Gwynt",
+      "armorer":"Armurier Joueur de Gwynt",
+      "blacksmith":"Forgeron Joueur de Gwynt",
+      "gremist":"Gremist Joueur de Gwynt",
+      "herbalist":"Herboriste Joueur de Gwynt",
+      "innkeeper":"Aubergiste Joueur de Gwynt",
+      "shopkeeper":"Marchand Joueur de Gwynt"
+    }
+  },
+  "innkeep":{
+    "inns":{
+      "harvikenInn":"Auberge Harviken",
+      "houseOfWarriors":"Maison des guerriers",
+      "uriallaHarbourInn":"Auberge du port d'Urilla",
+      "svorlagInn":"Auberge de Svorlag",
+      "arinbjornInn":"Auberge de Arinbjorn",
+      "theNewPort":"Nouveau port"
+    },
+    "popup":"Aubergiste",
+    "desc":{
+      "foodAndDrink":"vend de la nourriture et des boissons",
+      "foodDrinkAndGwent":"vend de la nourriture, des boissons et des cartes de Gwynt"
+    }
+  },
+  "misc":{
+    "liberated":"Le marchand apparait après avoir libéré le lieu. "
+  },
+  "poi":{
+    "label":{
+      "juttaAnDimun":"Jutta An Dimun",
+      "ursineSteelSword":"Épée d'acier de l'École de l'Ours",
+      "enhancedUrsineBoots":"Bottes de l'École de l'Ours améliorées",
+      "mastercraftedGriffinSteelSword":"Épée d'acier de l'École du Griffon de maître",
+      "enhancedUrsineGauntlets":"Gantelets de l'École de l'Ours améliorés",
+      "superiorGriffinArmourSet":"Armure de l'École du Griffon supérieure",
+      "mastercraftedGriffinArmor":"Armure  de l'École du Griffon de maître",
+      "superiorGriffinSteelSword":"Épée d'acier de l'École du Griffon supérieure",
+      "ursineSilverSword":"Épée d'argent de l'École de l'Ours",
+      "ursineArmorSet":"Armure de l'École de l'Ours",
+      "ursineCrossbow":"Arbalète de l'École de l'Ours",
+      "superiorGriffinSilverSword":"Épée d'argent de l'École du Griffon supérieure",
+      "mastercraftedGriffinSilverSword":"Épée d'argent de l'École du Griffon de maître",
+      "jarlMadmanLugos":"Jarl Lugos le Dingue",
+      "mastercraftedFelineArmor":"Armure de l'École du Chat de maître",
+      "mastercraftedFelineSteelSword":"Épée d'acier de l'école du Chat de maître",
+      "mastercraftedFelineSilverSword":"Épée d'argent de l'école du Chat de maître",
+      "mastercraftedWolvenGauntlets":"Gantelets de l'école du Loup de maître",
+      "mastercraftedWolvenTrousers":"Pantalon de l'école du Loup de maître",
+      "mastercraftedWolvenBoots":"Bottes de l'école du Loup de maître",
+      "superiorWolvenSteelSword":"Épée d'acier de l'école du Loup supérieure",
+      "superiorWolvenSilverSword":"Épée d'argent de l'école du Loup supérieure",
+      "superiorWolvenArmor":"Armure de l'école du Loup supérieure"
+    },
+    "popupTitle":{
+      "ursineSteelSword":"Schéma Épée d'acier de l'École de l'Ours",
+      "enhancedUrsineBoots":"Schéma Bottes de l'École de l'Ours améliorées",
+      "mastercraftedGriffinSteelSword":"Schéma Épée d'acier de l'École du Griffon de maître",
+      "enhancedUrsineGauntlets":"Schéma Gantelets de l'École de l'Ours améliorés",
+      "superiorGriffinArmourSet":"Schéma Armure de l'École du Griffon supérieure",
+      "mastercraftedGriffinArmor":"Schéma Armure  de l'École du Griffon de maître",
+      "superiorGriffinSteelSword":"Schéma Épée d'acier de l'École du Griffon supérieure",
+      "ursineSilverSword":"Schéma Épée d'argent de l'École de l'Ours",
+      "ursineArmorSet":"Schéma Armure de l'École de l'Ours",
+      "ursineCrossbow":"Schéma Arbalète de l'École de l'Ours",
+      "superiorGriffinSilverSword":"Schéma Épée d'argent de l'École du Griffon supérieure",
+      "mastercraftedGriffinSilverSword":"Schéma Épée d'argent de l'École du Griffon de maître",
+      "jarlMadmanLugos":"Jarl Lugos le Dingue",
+      "mastercraftedFelineArmor":"Schéma Armure de l'école du Chat de maître",
+      "mastercraftedFelineSteelSword":"Schéma Épée d'acier de l'école du Chat de maître",
+      "mastercraftedFelineSilverSword":"Schéma Épée d'argent de l'école du Chat de maître",
+      "mastercraftedWolvenGauntlets":"Schéma gants de l'école du Loup de maître",
+      "mastercraftedWolvenTrousers":"Schéma pantalon de l'école du Loup de maître",
+      "mastercraftedWolvenBoots":"Schéma bottes de l'école du Loup de maître",
+      "superiorWolvenSteelSword":"Schéma épée d'acier de l'école du Loup supérieure",
+      "superiorWolvenSilverSword":"Schéma épée d'argent de l'école du Loup supérieure",
+      "superiorWolvenArmor":"Schéma armure de l'école du Loup supérieure"
+    },
+    "desc":{
+      "juttaAnDimun":"À faire",
+      "ursineSteelSword":"Dans un coffre au pied de cette ruine",
+      "enhancedUrsineBoots":"Dans une grotte non signalée du flan de la montagne",
+      "mastercraftedGriffinSteelSword":"",
+      "enhancedUrsineGauntlets":"",
+      "superiorGriffinArmourSet":"Armure, bottes, gantelets, pantalon",
+      "mastercraftedGriffinArmor":"",
+      "superiorGriffinSteelSword":"",
+      "ursineSilverSword":"",
+      "ursineArmorSet":"Armure, bottes, gantelets, pantalon",
+      "ursineCrossbow":"",
+      "superiorGriffinSilverSword":"Dans des cavernes plus bas",
+      "mastercraftedGriffinSilverSword":"",
+      "jarlMadmanLugos":"Vous obtenez la carte 'Vampire: Katakan' de lui (Quête Gwynt : Skellige) (toutes les cartes <a href=\"https:\/\/wiiare.in\/portfolio-type\/the-witcher-3-wild-hunt-card-collector-achievement-trophy-guide\/\" target=\"_blank\">ici (US)<\/a>",
+      "mastercraftedFelineArmor":"Entrez dans l'antre du monstre au sud de Trottheim.  À l'entrée, tournez à gauche.  tous les schémas se trouvent dans un coffre (Armure de maître de l'école du Chat, gantelets, pantalon et bottes).",
+      "mastercraftedFelineSteelSword":"Après être entré dans l'antre du monstre et fait le ménage, tournez à gauche, comme vous montez les escaliers il y a un petit renforcement. Le schéma est dans le coffre.",
+      "mastercraftedFelineSilverSword":"Entrez dans l'antre du monstre, tournez à droite et le mur s'effondrera. Le schéma est dans le coffre..",
+      "mastercraftedWolvenTrousers":"Vous devez escalader le mur de l'ancienne tour de garde.",
+      "superiorWolvenSteelSword":"Descendez dans les catacombes et entrez dans une pièce remplie de gaz toxique",
+      "superiorWolvenArmor":"Vous l'obtiendrez au deuxième étage de la forteresse"
+    }
+  },
+  "pop":{
+    "desc":{
+      "kingsGambit":"Quête 'Gambit royal'. Puisez des forces sur un site d'Énergie pour obtenir un bonus temporaire. Quand vous utilisez un site d'Énergie pour la première fois, vous obtenez aussi 1 point de compétence",
+      "sunstone":"Quête 'La pierre de soleil'. Puisez des forces sur un site d'Énergie pour obtenir un bonus temporaire. Quand vous utilisez un site d'Énergie pour la première fois, vous obtenez aussi 1 point de compétence"
+    }
+  },
+  "shopkeeper":{
+    "label":{
+      "shopkeeper":"Commerçant",
+      "tailor":"Tailleur",
+      "wanderingMerchant":"Marchand ambulant"
+    },
+    "desc":{
+      "armourAndCraftingSupplies":"Vend des armures et fournitures d'artisanat",
+      "barber":"C'est aussi un barbier",
+      "clothesAndCraftingSupplies":"Vend des vêtements et des fournitures d'artisanat. ",
+      "craftingSuppliesAndFish":"Vend des fournitures d'artisanat et des poissons",
+      "mapsCraftingSupplies":"Vend des cartes et des fournitures d'artisanat",
+      "mapsCraftingSuppliesFoodAndDrink":"Vend des cartes, des fournitures d'alchimie, de nourriture et boisson",
+      "mapsCraftingSuppliesFishAndSaddles":"Vend des cartes, des fournitures d'alchimie, des poissons et des selles de maître (+75)"
+    }
+  },
+  "signpost":{
+    "label":{
+      "trottheim":"Trottheim",
+      "harviken":"Harviken",
+      "larvik":"Larvik",
+      "freyasGarden":"Jardin de Freya",
+      "lofoten":"Lofoten",
+      "lofotenCemetery":"Cimetière de Lofoten",
+      "isolatedHut":"Cabane isolée",
+      "lurthen":"Lurthen",
+      "trailToYngvarsFang":"Piste du Croc d'Yngvar",
+      "yngvarsFang":"Croc d'Yngvar",
+      "uriallaHarbor":"Port de Urialla",
+      "bayOfWinds":"Baies des vents",
+      "hov":"Hov",
+      "svorlag":"Svorlag",
+      "oldWatchtower":"Ancienne tour de garde",
+      "thePaliGapCoast":"Côte de Pali Gap",
+      "kaerAlmhult":"Kaer Almhult",
+      "marlinCoast":"Cote de Marlin",
+      "gullPoint":"Pointe des mouettes",
+      "dorveRuins":"Ruine de Dorve",
+      "clanTordarrochForge":"Forge du Clan Tordarroch",
+      "urskar":"Urskar",
+      "abandonedVillage":"Village abandonné",
+      "torGvalchca":"Tor Gvalch'ca",
+      "elverumLighthouse":"Phare de Elverum",
+      "ruinedInn":"Auberge en ruine",
+      "fyresdal":"Fyresdal",
+      "kaerMuire":"Kaer Muire",
+      "holmsteinsPort":"Port de Holmstein",
+      "wildShore":"Côte sauvage",
+      "fornhala":"Fornhala",
+      "distillery":"Distillerie",
+      "grotto":"Grotte",
+      "palisade":"Palissade",
+      "arinbjorn":"Arinbjorn",
+      "sund":"Sund",
+      "fayrlund":"Fayrlund",
+      "boxholm":"Bolthorn",
+      "rannvaig":"Rannvaig",
+      "blandare":"Blandare",
+      "druidsCamp":"Camp de Druides",
+      "redgill":"Redgill",
+      "abandonedSawmill":"Scierie abandonnée",
+      "gedyneith":"Gedyneith",
+      "gedyneith2":"Gedyneith",
+      "whaleGraveyard":"Cimetière des baleines",
+      "crossroads":"Carrefour",
+      "minersCamp":"Camp de mineurs",
+      "eldbergLighthouse":"Phare d'Eldberg",
+      "kaerGelen":"Kaer Gelen",
+      "KaerTroldeHarbor":"Port de Kaer Trolde",
+      "bridgeToKaerTrolde":"Pont vers Kaer Trolde",
+      "rogne":"Rogne",
+      "yustiannasGrotto":"Grotte de Yustianna",
+      "giantsToes":"Doigts des géants",
+      "ancientCrypt":"Ancienne crypte"
+    },
+    "desc":{
+      "trottheim":"Ce village était autrefois célèbre dans tout Skellige pour sa population, exclusivement constituée de femmes suite à une série de raids désastreux",
+      "harviken":"Siège du clan Dimun et site où Holger Main-noire distribue le butin après un raid réussi",
+      "larvik":"Le plus grand village de Hindarsfjall et la maison de siège à Donar, chef du Clan de Hindar. Ses habitants sont des traditionalistes folkloriques, justes et pieux dans leur dévotion à Freya",
+      "freyasGarden":"Jardin dédié à la déesse Freya. Autrefois magnifique et rempli de milliers de fleurs parfumées et d'herbes, aujourd'hui, il se trouve abandonné et en friche",
+      "lofoten":"Autrefois riche et vivant, Lofoten est aujourd'hui une ruine dévastée",
+      "lofotenCemetery":"Les habitants de Lofoten viennent ici pour entretenir les tombes familiales et prier Freya de veiller sur leurs défunts",
+      "isolatedHut":"Ici vivait autrefois une herboriste venue du continent. Rejetée de tous, elle s'installa à l'écart des villages dans cette petite maison côtière, où elle recevait parfois un visiteur occasionnel en quête d'onguents magiques",
+      "lurthen":"Le plus célèbre natif de Lurthen fut un certain Peter Pijus, notoirement connu pour sa capacité à vider d'un trait un tonneau d'hydromel sans sombrer dans l'inconscience",
+      "trailToYngvarsFang":"Début de la piste menant au Croc d'Yngvar, gloire et fierté d'An Skelligg",
+      "yngvarsFang":"Ce sommet porte le nom de l'ours légendaire terrassé par Tyr, l'héroïque fondateur du clan Tuirseach",
+      "uriallaHarbor":"Les charpentiers de ce port, considérés comme les meilleurs de l'île, sont renommés pour la finesse de leur travail et leur perfectionnisme",
+      "bayOfWinds":"Il y a trois générations, cette baie était un lieu de rencontre très apprécié des jeunes gens de la région. Hélas, un terrible orage vint mettre fin à cette tradition au cours d'une funeste nuit où plusieurs fêtards furent emportés au large par les flots déchaînés",
+      "hov":"Ce village est connu dans tout Skellige pour son arène, où étaient autrefois organisés de sanglants combats entre les plus féroces guerriers des îles",
+      "svorlag":"Village fondé par le légendaire Sove, qui tua ici même une terrifiante chimère",
+      "oldWatchtower":"Ruines d'une ancienne tour de garde où, d'après la légende, une princesse du Kovir s'enferma, convaincue que seul un homme capable de la libérer mériterait de l'épouser. Hélas pour elle, aucun prétendant ne se présenta… La pauvre mourut de vieillesse et, comme elle, la tour sombra peu à peu dans l'oubli après sa mort",
+      "thePaliGapCoast":"D'après les anciens, une grotte isolée sur cette côte servait jadis de retraite au plus célèbre barde du monde (avant l'ascension de Jaskier, évidemment) : le grand Xirdneh de Zanguebar, réputé de Nazair aux Monts des Dragons pour son fougueux jeu de luth",
+      "kaerAlmhult":"Construite il y a plusieurs siècles, la forteresse de Kaer Almhult devait à l'origine être la résidence du roi de Skellige. En fin de compte, chaque souverain successif préféra régner depuis son propre château. Kaer Almhult fut transformée en prison et n'est aujourd'hui plus qu'une ruine branlante",
+      "marlinCoast":"Les pêcheurs se réunissaient autrefois ici pour aller pêcher le marlin",
+      "gullPoint":"Les poules de mer parcourent plusieurs miles et se rassemblent sur ce bout de terre aride pour pondre des œufs",
+      "dorveRuins":"Ruines d'un village détruit par le géant de glace",
+      "clanTordarrochForge":"Forge jadis considérée comme la meilleure de tout Skellige. Après avoir pris le contrôle de l'île, le géant de glace en fit son garde-manger",
+      "urskar":"Ici, les villageois étaient réputés pour leur amour des harengs marinés. Ils en mangeaient au petit-déjeuner, dîner et souper et en faisaient même des confitures et des compotes",
+      "abandonedVillage":"Les villageois ont fui en toute hâte devant la colère soudaine du géant de glace",
+      "torGvalchca":"Une ancienne tour qui a été érigée à l'époque où les elfes étaient les maîtres incontestés de ces terres",
+      "elverumLighthouse":"L'ancien gardien de ce phare était renommé pour son excentricité. Poète et tapissier à ses heures, il aimait courir nu autour du phare en criant un esprit sain dans un corps sain et mangeait chaque matin un grand bol de queues de poisson",
+      "ruinedInn":"Ruined and burned-down tavern which once treated locals and travelers to the best roast lamb around",
+      "fyresdal":"Ceux qui vivent ici paraissent difficiles de l'extérieur, mais sont doux et tendre de l'intérieur",
+      "kaerMuire":"Bien qu'elle ne soit plus que l'ombre de sa splendeur passée, cette forteresse est le siège du clan Drummond depuis plusieurs siècles",
+      "holmsteinsPort":"Les jetées et les quais du village d'Helmstein, premier port du clan Drummond",
+      "wildShore":"Cette côte sauvage est un endroit très apprécié des amants fougueux comme des bandits",
+      "fornhala":"Mystérieux village abandonné",
+      "distillery":"Un voile de secret enveloppe ce lieu. Tout ce qui est connu est qu'il produit le plus beaux hooch dans tout skellige",
+      "grotto":"Endroit qui ne peut être atteint que par bateau",
+      "palisade":"Cette palissade marquait autrefois la frontière entre les territoires des clans Drummond et an Craite",
+      "arinbjorn":"Village paisible où le silence et la tranquillité sont parfois troublés par un accès de violence dû à une consommation excessive d'hydromel",
+      "sund":"Petit village dont les habitants sont pour la plupart des bergers",
+      "fayrlund":"Ce petit village est réputé pour former les meilleurs chasseurs de Skellige",
+      "boxholm":"Bolthorn étais jadis un village prospère au service de la forteresse proche, Kaer Nyssen. Aujourd'hui, il n'en reste plus qu'un tas de pierres, de débris et de souvenirs",
+      "rannvaig":"Il y a une quinzaine d'années l'un des pêcheurs de Rannvaig attrapa un flétan énorme et dès lors tous les autres villageois ont consacré leur vie à battre son record",
+      "blandare":"Contrairement à la plupart des villages de Skellige, Blandare n'est pas un port. Ses habitants vivent principalement de l'élevage de moutons et de l'exploitation minière",
+      "druidsCamp":"Campement installé par les druides enquêtant sur le cataclysme magique ayant ravagé la forêt toute proche",
+      "redgill":"Les habitants de ce village se sont enfuis lorsqu'un cataclysme magique a frappé la région",
+      "abandonedSawmill":"Bien que situé profondément dans la forêt, un endroit idéal pour la récolte du bois, la scierie se trouve maintenant abandonnée",
+      "gedyneith":"Un chêne qui est sacré pour tous les habitants de Skellige, comme il est adoré par les druides et les disciples de Freya. Les plus importantes cérémonies de l'île se sont tenues ici, y compris les mariages et couronnements royaux",
+      "gedyneith2":"Un chêne qui est sacré pour tous les habitants de Skellige, comme il est adoré par les druides et les disciples de Freya. Les plus importantes cérémonies de l'île se sont tenues ici, y compris les mariages et couronnements royaux",
+      "whaleGraveyard":"Les habitants de l'île viennent ici pour recueillir les os qu'ils utilisent pour construire leurs huttes",
+      "crossroads":"Bifurcation sur la route menant à Kaer Trolde",
+      "minersCamp":"Petit camp que les mineurs utilisent comme base pour leur  prospection d'or lors des expéditions dans les montagnes au nord",
+      "eldbergLighthouse":"Phare construit sur ordre du Jarl Skjordal pour éclairer la mer et la route vers Arinbjorn",
+      "kaerGelen":"Les ruines de ce vieux fort abritent un ramassis de vauriens et de malfrats",
+      "KaerTroldeHarbor":"L'un des ports plus fréquentés de Skellige. Des marchandises en provenance de tous les coins du monde sont amenées ici pour être vendues et commercialisées",
+      "bridgeToKaerTrolde":"D'après la légende, ce pont de pierre fut bâti par le fondateur héroïque du clan an Craite, Grymmdjarr lui-même",
+      "rogne":"Ce village de montagne abrite des esprits difficiles et indomptables",
+      "yustiannasGrotto":"Yustianna était une pirate redoutable, fille d'un homme du clan an Craite et d'une femme capturée pendant un raid. Fine lame et navigatrice hors pair, elle faisait régner la terreur sur la Grande Mer et son nom faisait trembler sur tout le continent, d'Ofir à Zanguebar. Cette grotte serait, dit-on, l'endroit où elle cachait son butin au retour de chaque raid",
+      "giantsToes":"Les habitants des îles pensent qu'Ouroboros, dans sa colère, transforma des géants en pierre… mais il s'agit en vérité d'une simple formation rocheuse",
+      "ancientCrypt":"Bien que les habitants de Skellige soient célèbres pour leurs actes de bravoure qui frôlent la folie, il y a certains endroits que même eux, ils évitent. Ceci est l'un d'entre eux"
+    }
+  }
+}

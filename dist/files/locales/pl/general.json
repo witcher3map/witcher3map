@@ -1,0 +1,505 @@
+{
+  "maps":{
+    "velen":"Velen i Novigrad",
+    "skellige":"Wyspy Skellige",
+    "white_orchard":"Biały Sad",
+    "kaer_morhen":"Kaer Morhen"
+  },
+  "home":{
+    "tagline":"Nieoficjalne interaktywne mapy do Wiedźmina 3<br>(Obecnie w fazie rozwoju)",
+    "resultsFound":"wynik(-i) znalezione.",
+    "searchPlaceholder":"Wprowadź wyszukiwane hasła..."
+  },
+  "notes":{
+    "label":"Etykieta:",
+    "title":"Tytuł:",
+    "note":"Notatka:",
+    "enterLabel":"Wprowadź etykietę mapy",
+    "enterTitle":"Wprowadź tytuł notatki...",
+    "enterText":"Wprowadź treść notatki...",
+    "saveNote":"Zapisz notatkę",
+    "deleteNote":"Usuń notatkę"
+  },
+  "sidebar":{
+    "returnToMapSelection":"Powrót do wyboru mapy",
+    "alchemy":"Składniki alchemiczne",
+    "abandoned":"Opuszczone miejsce",
+    "armourer":"Płatnerz",
+    "armourerstable":"Stół płatnerski",
+    "banditcamp":"Obóz bandytów",
+    "barber":"Fryzjer",
+    "blacksmith":"Kowal",
+    "brothel":"Burdel",
+    "loveInterest":"Ukochana",
+    "entrance":"Wejście",
+    "grindstone":"Kamień szlifierski",
+    "guarded":"Strzeżony skarb",
+    "gwent":"Gracz gwinta",
+    "harbor":"Port",
+    "herbalist":"Zielarz",
+    "hidden":"Ukryty skarb",
+    "innkeep":"Karczma",
+    "monsternest":"Gniazdo potworów",
+    "monsterden":"Kryjówka potworów",
+    "notice":"Tablica ogłoszeniowa",
+    "pid":"Osoba w potrzebie",
+    "pop":"Miejsce Mocy",
+    "poi":"Ciekawe miejsce",
+    "signpost":"Drogowskaz",
+    "shopkeeper":"Kupiec",
+    "smugglers":"Kontrabanda",
+    "spoils":"Łupy wojenne"
+  },
+  "controls":{
+    "show":"Pokaż wszystko",
+    "hide":"Ukryj wszystko",
+    "showCounts":"Pokaż liczniki",
+    "hideCounts":"Ukryj liczniki",
+    "resetInvisible":"Zresetuj niewidoczne znaczniki",
+    "resetInvisConfirm":"To zresetuje wszystkie widzialne\/zaznaczone znaki na mapie, do postaci domyślnej, jesteś pewien?",
+    "hideMonsters":"Ukryj potwory",
+    "showMonsters":"Pokaż potwory",
+    "helpFeatures":"Funkcje i pomoc",
+    "credits":"Twórcy",
+    "backupSave":"Pobierzesz cała kopię zapasowa ustawień - Wiedźmin 3 Mapa \n\nPlik zostanie zapisany jako: __fileName__\n\nJesteś pewien?",
+    "backupLoad":"Przywracanie ustawień:",
+    "backupLoadSuccess":"Ukończono przywracanie danych!",
+    "backupLoadFail":"Przywracanie nie powiodło się, sprawdź plik",
+    "backupHtmlFail":"Niestety, przywracanie nie jest możliwe.  Ta przeglądarka nie obsługuje HTML5 File API.",
+    "zoomInButton":"Przybliż",
+    "zoomOutButton":"Oddal",
+    "searchButton":"Wyszukaj...",
+    "backupDataButton":"Wykonaj kopię zapasową",
+    "restoreDataButton":"Przywróć kopię zapasową",
+    "centerMarkerButton":"Centruj podświetlony znacznik",
+    "addNoteButton":"Dodaj notatkę",
+    "cancelNoteButton":"Anuluj notatkę",
+    "viewFullscreenButton":"Włącz pełny ekran",
+    "exitFullscreenButton":"Wyłącz pełny ekran"
+  },
+  "credits":{
+    "botCreated":"Stworzone przez __untamed0__, na licencji __license__",
+    "botHelp":"Dzięki pomocy __mcarver__ i innych __contributors__. Dziękuje __designGears__ i __hhrhhr__ za mapy i wyciąganie danych. Po listę wszystkich bibliotek Javascript użytych, __jsCredits__.",
+    "botAssets":"Wiedźmin 3, logo, ikony, mapy i tekst są własnością __cdpr__"
+  },
+  "misc":{
+    "contribute":"Prace w toku! Pomoc mile widziana w __link__",
+    "discuss":"Opinie, sugestie? Dyskutuj na __link__",
+    "helpTranslate":"Chcesz pomóc lub poprawić tłumaczenia?",
+    "portraitWarn":"Uwaga: mapę najlepiej jest oglądać w trybie poziomym, stuknij, aby zamknąć",
+    "loveInterestDesc":"Spotkaj się ze swoją ukochaną w tym miejscu",
+    "nsfwConfirm":"Zmieni \"Burdel\" na ukochaną, jesteś pewny?",
+    "nsfwUndo":"Czy na pewno chcesz wrócić?"
+  },
+  "abandoned":{
+    "label":"Opuszczone miejsce",
+    "desc":"Opuszczone miejsce które zostało zaatakowanie przez bandytów lub potwory. Pokonaj niebezpieczeństwo żeby powrócili tu ludzie"
+  },
+  "armourerstable":{
+    "label":"Stół płatnerski",
+    "desc":"Stół płatnerski zapewni ci przez określony czas zwiększony pancerz."
+  },
+  "boat":{
+    "label":"Łódź",
+    "desc":"Możesz użyć łodzi do podróżowania po zbiornikach wodnych"
+  },
+  "entrance":{
+    "label":"Wejście",
+    "desc":"Wejście do jaskini lub ruin"
+  },
+  "entranceunderwatercave":{
+    "label":"Podwodna jaskinia",
+    "desc":"Podwodne wejście do jaskini"
+  },
+  "grindstone":{
+    "label":"Kamień szlifierski",
+    "desc":"Miecz naostrzony tutaj, zadaje więcej obrażeń"
+  },
+  "guarded":{
+    "label":"Strzeżony skarb",
+    "desc":"Szczególnie potężny potwór __monster__ strzeże skrzyni z cennym skarbem"
+  },
+  "harbor":{
+    "label":"Port",
+    "desc":"Miejsce gdzie można znaleźć łódź, łodzie będą się tu pojawiać"
+  },
+  "herbalist":{
+    "label":"Zielarz",
+    "desc":"Tu możesz kupić składniki alchemiczne"
+  },
+  "hidden":{
+    "label":"Ukryty skarb",
+    "desc":"Ukryty skarb z wartościowymi przedmiotami",
+    "guarded":"Ukryty skarb z wartościowymi przedmiotami (Pilnowany przez __monster__)"
+  },
+  "monsterden":{
+    "label":"Kryjówka potworów",
+    "desc":"W okolicy jest potwór. Uważaj na żyjącego niedaleko __monster__"
+  },
+  "monsternest":{
+    "label":"Gniazdo potworów",
+    "desc":"Można je zniszczyć petardą Kartacz lub Gwiazda Tańcząca __monster__"
+  },
+  "notice":{
+    "label":"Tablica ogłoszeniowa",
+    "desc":"Tutaj możesz znaleźć zlecenia na potwory, oraz ogłoszenia na temat aktualnych problemów mieszkańców"
+  },
+  "pid":{
+    "label":"Osoba w potrzebie",
+    "desc":"Znajduje się tu osoba lub grupa osób które potrzebują pomoc z __monster__"
+  },
+  "poi":{
+    "label":{
+      "witcherGear":"Wiedźmiński rynsztunek"
+    },
+    "desc":{
+      "witcherGear":{
+        "silversword":{
+          "feline":{
+            "standard":"Wewnątrz Ruin Est Tayiar, za ścianą, którą możesz zniszczyć",
+            "enhanced":"Musisz wspiąć się po drabinie",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "griffin":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "ursine":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "wolven":{
+            "standard":"",
+            "enhanced":"Wejście do jaskini",
+            "superior":"",
+            "mastercrafted":"W pobliżu znajdziesz ukryty skarb"
+          }
+        },
+        "steelsword":{
+          "feline":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "griffin":{
+            "standard":"Obok gniazda potworów",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "ursine":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "wolven":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":"Znajdziesz w ładowni zatopionego statku"
+          }
+        },
+        "crossbow":{
+          "feline":"",
+          "ursine":""
+        },
+        "armor":{
+          "feline":{
+            "standard":"",
+            "enhanced":"Na szczycie Zniszczonej rezydencji Aeramasa",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "griffin":{
+            "standard":"Wewnątrz Groty Smokobójców",
+            "enhanced":"Obok trolla w Forcie Białego Orła",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "ursine":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "wolven":{
+            "standard":"",
+            "enhanced":"Zanurkuj",
+            "superior":"",
+            "mastercrafted":"Skrzynia jest w studni"
+          }
+        },
+        "boots":{
+          "feline":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "griffin":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "ursine":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "wolven":{
+            "standard":"",
+            "enhanced":"Wejście do jaskini",
+            "superior":"",
+            "mastercrafted":""
+          }
+        },
+        "gauntlets":{
+          "feline":{
+            "standard":"",
+            "enhanced":"Wewnątrz wału w Kamieniołomie Starych Pryków",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "griffin":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "ursine":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "wolven":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          }
+        },
+        "trousers":{
+          "feline":{
+            "standard":"",
+            "enhanced":"Wewnątrz spalonych ruin",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "griffin":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "ursine":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          },
+          "wolven":{
+            "standard":"",
+            "enhanced":"",
+            "superior":"",
+            "mastercrafted":""
+          }
+        }
+      }
+    },
+    "popup":{
+      "witcherGear":{
+        "silversword":{
+          "feline":{
+            "standard":"Srebrny miecz wiedźmińskiej szkoły kota",
+            "enhanced":"Ulepszony srebrny miecz wiedźmińskiej szkoły kota",
+            "superior":"Wyśmienity srebrny miecz wiedźmińskiej szkoły kota",
+            "mastercrafted":"Mistrzowski srebrny miecz wiedźmińskiej szkoły kota"
+          },
+          "griffin":{
+            "standard":"Srebrny miecz wiedźmińskiej szkoły gryfa",
+            "enhanced":"Ulepszony srebrny miecz wiedźmińskiej szkoły gryfa",
+            "superior":"Wyśmienity srebrny miecz wiedźmińskiej szkoły gryfa",
+            "mastercrafted":"Mistrzowski srebrny miecz wiedźmińskiej szkoły gryfa"
+          },
+          "ursine":{
+            "standard":"Srebrny miecz wiedźmińskiej szkoły niedźwiedzia",
+            "enhanced":"Ulepszony srebrny miecz wiedźmińskiej szkoły niedźwiedzia",
+            "superior":"Wyśmienity srebrny miecz wiedźmińskiej szkoły niedźwiedzia",
+            "mastercrafted":"Mistrzowski srebrny miecz wiedźmińskiej szkoły niedźwiedzia"
+          },
+          "wolven":{
+            "standard":"Srebrny miecz wiedźmińskiego cechu wilka",
+            "enhanced":"Ulepszony srebrny miecz wiedźmińskiego cechu wilka",
+            "superior":"Wyśmienity srebrny miecz wiedźmińskiego cechu wilka",
+            "mastercrafted":"Mistrzowski srebrny miecz wiedźmińskiego cechu wilka"
+          }
+        },
+        "steelsword":{
+          "feline":{
+            "standard":"Stalowy miecz wiedźmińskiej szkoły kota",
+            "enhanced":"Ulepszony stalowy miecz wiedźmińskiej szkoły kota",
+            "superior":"Wyśmienity stalowy miecz wiedźmińskiej szkoły kota",
+            "mastercrafted":"Mistrzowski stalowy miecz wiedźmińskiej szkoły kota"
+          },
+          "griffin":{
+            "standard":"Stalowy miecz wiedźmińskiej szkoły gryfa",
+            "enhanced":"Ulepszony stalowy miecz wiedźmińskiej szkoły gryfa",
+            "superior":"Wyśmienity stalowy miecz wiedźmińskiej szkoły gryfa",
+            "mastercrafted":"Mistrzowski stalowy miecz wiedźmińskiej szkoły gryfa"
+          },
+          "ursine":{
+            "standard":"Stalowy miecz wiedźmińskiej szkoły niedźwiedzia",
+            "enhanced":"Ulepszony stalowy miecz wiedźmińskiej szkoły niedźwiedzia",
+            "superior":"Wyśmienity stalowy miecz wiedźmińskiej szkoły niedźwiedzia",
+            "mastercrafted":"Mistrzowski stalowy miecz wiedźmińskiej szkoły niedźwiedzia"
+          },
+          "wolven":{
+            "standard":"Stalowy miecz wiedźmińskiego cechu wilka",
+            "enhanced":"Ulepszony stalowy miecz wiedźmińskiego cechu wilka",
+            "superior":"Wyśmienity stalowy miecz wiedźmińskiego cechu wilka",
+            "mastercrafted":"Mistrzowski stalowy miecz wiedźmińskiego cechu wilka"
+          }
+        },
+        "crossbow":{
+          "feline":"Kusza wiedźmińskiej szkoły kota",
+          "ursine":"Kusza wiedźmińskiej szkoły niedźwiedzia"
+        },
+        "armor":{
+          "feline":{
+            "standard":"Zbroja wiedźmińskiej szkoły kota",
+            "enhanced":"Ulepszona zbroja wiedźmińskiej szkoły kota",
+            "superior":"Wyśmienita zbroja wiedźmińskiej szkoły kota",
+            "mastercrafted":"Mistrzowska zbroja wiedźmińskiej szkoły kota"
+          },
+          "griffin":{
+            "standard":"Zbroja wiedźmińskiej szkoły gryfa",
+            "enhanced":"Ulepszona zbroja wiedźmińskiej szkoły gryfa",
+            "superior":"Wyśmienita zbroja wiedźmińskiej szkoły gryfa",
+            "mastercrafted":"Mistrzowska zbroja wiedźmińskiej szkoły gryfa"
+          },
+          "ursine":{
+            "standard":"Zbroja wiedźmińskiej szkoły niedźwiedzia",
+            "enhanced":"Ulepszona zbroja wiedźmińskiej szkoły niedźwiedzia",
+            "superior":"Wyśmienita zbroja wiedźmińskiej szkoły niedźwiedzia",
+            "mastercrafted":"Mistrzowska zbroja wiedźmińskiej szkoły niedźwiedzia"
+          },
+          "wolven":{
+            "standard":"Zbroja wiedźmińskiego cechu wilka",
+            "enhanced":"Ulepszona zbroja wiedźmińskiego cechu wilka",
+            "superior":"Wyśmienita zbroja wiedźmińskiego cechu wilka",
+            "mastercrafted":"Mistrzowska zbroja wiedźmińskiego cechu wilka"
+          }
+        },
+        "boots":{
+          "feline":{
+            "standard":"Buty wiedźmińskiej szkoły kota",
+            "enhanced":"Ulepszone buty wiedźmińskiej szkoły kota",
+            "superior":"Wyśmienite buty wiedźmińskiej szkoły kota",
+            "mastercrafted":"Mistrzowskie buty wiedźmińskiej szkoły kota"
+          },
+          "griffin":{
+            "standard":"Buty wiedźmińskiej szkoły gryfa",
+            "enhanced":"Ulepszone buty wiedźmińskiej szkoły gryfa",
+            "superior":"Wyśmienite buty wiedźmińskiej szkoły gryfa",
+            "mastercrafted":"Mistrzowskie buty wiedźmińskiej szkoły gryfa"
+          },
+          "ursine":{
+            "standard":"Buty wiedźmińskiej szkoły niedźwiedzia",
+            "enhanced":"Ulepszone buty wiedźmińskiej szkoły niedźwiedzia",
+            "superior":"Wyśmienite buty wiedźmińskiej szkoły niedźwiedzia",
+            "mastercrafted":"Mistrzowskie buty wiedźmińskiej szkoły niedźwiedzia"
+          },
+          "wolven":{
+            "standard":"Buty wiedźmińskiego cechu wilka",
+            "enhanced":"Ulepszone buty wiedźmińskiego cechu wilka",
+            "superior":"Wyśmienite buty wiedźmińskiego cechu wilka",
+            "mastercrafted":"Mistrzowskie buty wiedźmińskiego cechu wilka"
+          }
+        },
+        "gauntlets":{
+          "feline":{
+            "standard":"Rękawice wiedźmińskiej szkoły kota",
+            "enhanced":"Ulepszone rękawice wiedźmińskiej szkoły kota",
+            "superior":"Wyśmienite rękawice wiedźmińskiej szkoły kota",
+            "mastercrafted":"Mistrzowskie rękawice wiedźmińskiej szkoły kota"
+          },
+          "griffin":{
+            "standard":"Rękawice wiedźmińskiej szkoły gryfa",
+            "enhanced":"Ulepszone rękawice wiedźmińskiej szkoły gryfa",
+            "superior":"Wyśmienite rękawice wiedźmińskiej szkoły gryfa",
+            "mastercrafted":"Mistrzowskie rękawice wiedźmińskiej szkoły gryfa"
+          },
+          "ursine":{
+            "standard":"Rękawice wiedźmińskiej szkoły niedźwiedzia",
+            "enhanced":"Ulepszone rękawice wiedźmińskiej szkoły niedźwiedzia",
+            "superior":"Wyśmienite rękawice wiedźmińskiej szkoły niedźwiedzia",
+            "mastercrafted":"Mistrzowskie rękawice wiedźmińskiej szkoły niedźwiedzia"
+          },
+          "wolven":{
+            "standard":"Rękawice wiedźmińskiego cechu wilka",
+            "enhanced":"Ulepszone rękawice wiedźmińskiego cechu wilka",
+            "superior":"Wyśmienite rękawice wiedźmińskiego cechu wilka",
+            "mastercrafted":"Mistrzowskie rękawice wiedźmińskiego cechu wilka"
+          }
+        },
+        "trousers":{
+          "feline":{
+            "standard":"Spodnie wiedźmińskiej szkoły kota",
+            "enhanced":"Ulepszone spodnie wiedźmińskiej szkoły kota",
+            "superior":"Wyśmienite spodnie wiedźmińskiej szkoły kota",
+            "mastercrafted":"Mistrzowskie spodnie wiedźmińskiej szkoły kota"
+          },
+          "griffin":{
+            "standard":"Spodnie wiedźmińskiej szkoły gryfa",
+            "enhanced":"Ulepszone spodnie wiedźmińskiej szkoły gryfa",
+            "superior":"Wyśmienite spodnie wiedźmińskiej szkoły gryfa",
+            "mastercrafted":"Mistrzowskie spodnie wiedźmińskiej szkoły gryfa"
+          },
+          "ursine":{
+            "standard":"Spodnie wiedźmińskiej szkoły niedźwiedzia",
+            "enhanced":"Ulepszone spodnie wiedźmińskiej szkoły niedźwiedzia",
+            "superior":"Wyśmienite spodnie wiedźmińskiej szkoły niedźwiedzia",
+            "mastercrafted":"Mistrzowskie spodnie wiedźmińskiej szkoły niedźwiedzia"
+          },
+          "wolven":{
+            "standard":"Spodnie wiedźmińskiego cechu wilka",
+            "enhanced":"Ulepszone spodnie wiedźmińskiego cechu wilka",
+            "superior":"Wyśmienite spodnie wiedźmińskiego cechu wilka",
+            "mastercrafted":"Mistrzowskie spodnie wiedźmińskiego cechu wilka"
+          }
+        }
+      }
+    }
+  },
+  "pop":{
+    "label":"Miejsce Mocy",
+    "label*":"Miejsce Mocy*",
+    "desc":"Zaczerpnij mocy z miejsca mocy aby otrzymać tymczasowy bonus. Za pierwszym razem kiedy zaczerpujesz moc z miejsca mocy otrzymasz 1 punkt umiejętności",
+    "popup":"Miejsce Mocy - __sign__"
+  },
+  "smugglers":{
+    "label":"Kontrabanda",
+    "desc":"Tutaj została ukryta kontrabanda"
+  },
+  "spoils":{
+    "label":"Łupy wojenne",
+    "desc":"Przeszukaj to miejsce w poszukiwaniu łupu po bitwie lub pokonaniu potworów __monster__"
+  },
+  "signs":{
+    "aard":"Aard",
+    "axii":"Aksji",
+    "igni":"Igni",
+    "quen":"Quen",
+    "yrden":"Yrden"
+  }
+}

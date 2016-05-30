@@ -1,0 +1,158 @@
+{
+	"monsters": {
+		"alghouls": "Alghouls",
+		"bandits": "Bandits",
+		"basilisk": "Basilisk",
+		"cyclops": "Cyclops",
+		"drowners": "Drowners",
+		"echidna": "Echidna",
+		"elemental": {
+			"earth": "Earth Elemental",
+			"ice" : "Ice"
+		},
+		"endrega": "Endrega",
+		"gargoyles": "Gargoyles",
+		"ghost": "Ghost",
+		"harpies": "Harpies",
+		"nekkers": "Nekkers",
+		"nekkerWarrior": "Nekker Warrior",
+		"sirens": "Sirens",
+		"wolves" : "Wolves",
+		"wraiths": {
+			"wraiths": "Wraiths",
+			"wraith": "Wraith"
+		},
+		"wyvern": "Wyvern"
+	},
+	"alchemy": {
+		"gremist": {
+			"label": "Gremist",
+			"desc": "'Practicum in Advanced Alchemy' (lvl 24) Quest"
+		}
+	},
+	"armourer": {
+		"amateurLabel": "Amateur Armorer",
+		"journeymanLabel": "Journeyman Armorer",
+		"desc": "Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
+	},
+	"banditcamp": {
+		"label": "Bandit Camp",
+		"desc": "A group of dangerous bandits have made camp here. "
+	},
+	"barber": {
+		"label": "Barber",
+		"desc": "Visit barbers for a shave or a new haircut. "
+	},
+	"blacksmith": {
+		"amateurLabel": "Amateur Blacksmith",
+		"journeymanLabel": "Journeyman Blacksmith",
+		"desc": "Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
+	},
+	"gwent": {
+		"label": {
+			"XXX": "XXX",
+			"XXX": "XXX"
+		},
+		"desc": {
+			"XXX": "XXX",
+			"XXX": "XXX"
+		},
+		"popup": {
+			"XXX": "XXX",
+			"XXX": "XXX"
+		}
+	},
+	"innkeep": {
+		"inns": {
+			"cockatraice": "XXX",
+			"XXX": "XXX"
+		},
+		"popup": "Innkeep",
+		"desc": {
+			"cockatraice": "XXX",
+			"XXX": "XXX"
+		}
+	},
+	"misc": {
+		"XXX": "XXX",
+		"XXX": "XXX"
+	},
+	"poi": {
+		"label": {
+			"XXX": "XXX",
+			"XXX": "XXX"
+		},
+		"popupTitle": {
+			"XXX": "XXX",
+			"XXX": "XXX"
+		},
+		"desc": {
+			"XXX": "XXX",
+			"XXX": "XXX"
+		}
+	},
+	"pop": {
+		"desc": {
+			"XXX": "XXX",
+			"XXX": "XXX"
+		}
+	},
+	"shopkeeper": {
+		"label": {
+			"XXX": "XXX",
+			"XXX": "XXX"
+		},
+		"desc": {
+			"XXX": "XXX",
+			"XXX": "XXX"
+		}
+	},
+	"sidequests": {
+		"label": {
+			"gwenttournment": "Gwent: To Everything - Turn, Turn, Tournamenet!",
+			"WildKingdom": "Mutual of Beauclair's Wild Kingdom",
+			"kingforhire": "King for Hire",
+			"winewars": "Wine Wars: Belgaard",
+			"XXX": "XXX"
+		},
+		"desc": {
+			"gwenttournment": "XXX",
+			"WildKingdom": "XXX",
+			"kingforhire": "XXX",
+			"winewars": "XXX",
+			"XXX": "XXX"
+		}
+	},
+	"contracts": {
+		"label": {
+			"biggamehunter": "Big Game Hunter",
+			"XXX": "XXX",
+			"XXX": "XXX"
+		},
+		"desc": {
+			"XXX": "XXX",
+			"biggamehunter": "Level 37 Witcher Contract. Started on the Notice Board near Dulcinea Windmill",
+			"XXX": "XXX"
+		}
+	},
+	"signpost": {
+		"label": {
+			"dulcineawindmill": "Dulcinea Windmill",
+			"cockatraice": "The Cockatrice Inn",
+			"plegmund": "Plegmund'S Bridge",
+			"XXX": "XXX",
+			"XXX": "XXX",
+			"XXX": "XXX",
+			"XXX": "XXX"
+		},
+		"desc": {
+			"dulcineawindmill": "XXX",
+			"cockatraice": "XXX",
+			"plegmund": "XXX",
+			"XXX": "XXX",
+			"XXX": "XXX",
+			"XXX": "XXX",
+			"XXX": "XXX"
+		}
+	}
+}

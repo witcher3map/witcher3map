@@ -1,0 +1,505 @@
+{
+	"maps": {
+		"velen": "Velen & Novigrad",
+		"skellige": "Skellige Isles",
+		"white_orchard": "White Orchard",
+		"kaer_morhen": "Kaer Morhen"
+	},
+	"home": {
+		"tagline": "Unofficial The Witcher 3 Interactive Maps<br>(Currently under development)",
+		"resultsFound": "result(s) found.",
+		"searchPlaceholder": "Enter search terms..."
+	},
+	"notes": {
+		"label": "Label:",
+		"title": "Title:",
+		"note": "Note:",
+		"enterLabel": "Enter map label...",
+		"enterTitle": "Enter note title...",
+		"enterText": "Enter note text...",
+		"saveNote": "Save Note",
+		"deleteNote": "Delete Note"
+	},
+	"sidebar": {
+		"returnToMapSelection": "Return to Map Selection Page",
+		"alchemy": "Alchemy Supplies",
+		"abandoned": "Abandoned Site",
+		"armourer": "Armorer",
+		"armourerstable": "Armorer's Table",
+		"banditcamp": "Bandit Camp",
+		"barber": "Barber",
+		"blacksmith": "Blacksmith",
+		"brothel": "Brothel",
+		"loveInterest": "Love Interest",
+		"entrance": "Entrance",
+		"grindstone": "Grindstone",
+		"guarded": "Guarded Treasure",
+		"gwent": "Gwent Player",
+		"harbor": "Harbor",
+		"herbalist": "Herbalist",
+		"hidden": "Hidden Treasure",
+		"innkeep": "Innkeep",
+		"monsternest": "Monster Nest",
+		"monsterden": "Monster Den",
+		"notice": "Notice Board",
+		"pid": "Person in Distress",
+		"pop": "Place of Power",
+		"poi": "Point of Interest",
+		"signpost": "Sign Post",
+		"shopkeeper": "Shopkeeper",
+		"smugglers": "Smugglers' Cache",
+		"spoils": "Spoils of War"
+	},
+	"controls": {
+		"show": "Show All",
+		"hide": "Hide All",
+		"showCounts": "Show Counts",
+		"hideCounts": "Hide Counts",
+		"resetInvisible": "Reset Invisible",
+		"resetInvisConfirm": "This will reset all invisible/tracked markers to their default state (visible), are you sure?",
+		"hideMonsters": "Hide Monsters",
+		"showMonsters": "Show Monsters",
+		"helpFeatures": "Features & Help",
+		"credits": "Credits",
+		"backupSave": "This will download a backup copy of all Witcher 3 Map settings.\n\nThe file will be saved as: __fileName__\n\nAre you sure?",
+		"backupLoad": "Restore your settings:",
+		"backupLoadSuccess": "Data Restore Complete!",
+		"backupLoadFail": "Restore failed, double-check your file",
+		"backupHtmlFail": "Sorry.  Restore is not possible.  This browser does not support HTML5 File APIs.",
+		"zoomInButton": "Zoom In",
+		"zoomOutButton": "Zoom Out",
+		"searchButton": "Search...",
+		"backupDataButton": "Backup Data",
+		"restoreDataButton": "Restore Data",
+		"centerMarkerButton": "Center Highlighted Marker",
+		"addNoteButton": "Add Note",
+		"cancelNoteButton": "Cancel Note",
+		"viewFullscreenButton": "View Fullscreen",
+		"exitFullscreenButton": "Exit Fullscreen"
+	},
+	"credits": {
+		"botCreated": "Created by __untamed0__, licensed under __license__",
+		"botHelp": "With help from __mcarver__, & other __contributors__. Thanks to __designGears__ & __hhrhhr__ for map & asset extraction. For the full list of Javascript libraries used, __jsCredits__.",
+		"botAssets": "Witcher 3, logo, icons, map &amp; text are the property of __cdpr__"
+	},
+	"misc": {
+		"contribute": "Work in progress! Help appreciated at __link__",
+		"discuss": "Feedback, suggestions? Discuss on __link__",
+		"helpTranslate": "Want to help or improve translations?",
+		"portraitWarn": "Note: the map is best viewed in landscape mode, tap to dismiss",
+		"loveInterestDesc": "Meet your love interest here",
+		"nsfwConfirm": "This will change 'Brothel' to 'Love Interest', are you sure?",
+		"nsfwUndo": "Are you sure you want to go back?"
+	},
+	"abandoned": {
+		"label": "Abandoned Site",
+		"desc": "A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more"
+	},
+	"armourerstable": {
+		"label": "Armorer's Table",
+		"desc": "Armorer's tables grant your gear increased armor for a limited duration."
+	},
+	"boat": {
+		"label": "Boat",
+		"desc": "You can use boats to travel across bodies of water"
+	},
+	"entrance": {
+		"label": "Entrance",
+		"desc": "Entrance to cave or ruins"
+	},
+	"entranceunderwatercave" : {
+		"label": "Underwater Cave",
+		"desc": "Underwater entrance to cave"
+	},
+	"grindstone": {
+		"label": "Grindstone",
+		"desc": "A blade sharpened here will deal more damage"
+	},
+	"guarded": {
+		"label": "Guarded Treasure",
+		"desc": "A particularly powerful monster __monster__ guards a valuable cache here"
+	},
+	"harbor": {
+		"label": "Harbor",
+		"desc": "A place where you can find a boat, boats will respawn here"
+	},
+	"herbalist": {
+		"label": "Herbalist",
+		"desc": "Here you can buy alchemy ingredients"
+	},
+	"hidden": {
+		"label": "Hidden Treasure",
+		"desc": "A hidden cache of valuable goods",
+		"guarded": "A hidden cache of valuable goods (Guarded by __monster__)"
+	},
+	"monsterden": {
+		"label": "Monster Den",
+		"desc": "Monster-infested location. A constant worry for those living nearby __monster__"
+	},
+	"monsternest": {
+		"label": "Monster Nest",
+		"desc": "Destroy monster nests with Grapeshot or Dancing Star bombs __monster__"
+	},
+	"notice": {
+		"label": "Notice Board",
+		"desc": "Here you can find monster contracts and announcements about matters of local concern"
+	},
+	"pid": {
+		"label": "Person(s) in Distress",
+		"desc": "There's a person or a group of people here in need of assistance __monster__"
+	},
+	"poi": {
+		"label": {
+			"witcherGear": "Witcher Upgrade Gear"
+		},
+		"desc": {
+			"witcherGear": {
+				"silversword": {
+					"feline": {
+						"standard": "Inside the Est Tayiar Ruine, behind a Wall that you can break",
+						"enhanced": "Upstairs of a building - accessible by the ladder from the side of Oxenfurt Gate",
+						"superior": "Behind breakable stalagmites, on a stone shelf located on the right side of the cave",
+						"mastercrafted": ""
+					},
+					"griffin": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"ursine": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "Going down into the cave",
+						"superior": "",
+						"mastercrafted": "You will find near the hidden treasure"
+					}
+				},
+				"steelsword": {
+					"feline": {
+						"standard": "Inside Drahim Castle, down the ladder",
+						"enhanced": "Inside the cave, behind a small stone wall on the left side",
+						"superior": "At the end of the cave, in a chest on a wooden platform",
+						"mastercrafted": ""
+					},
+					"griffin": {
+						"standard": "Near the Monster Nest",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"ursine": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": "End of an unmarked cave, behind a stone pillar"
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": "You will find in the hold of the sunken ship"
+					}
+				},
+				"crossbow": {
+					"feline": "",
+					"ursine": ""
+				},
+				"armor": {
+					"feline": {
+						"standard": "",
+						"enhanced": "on top of the Aeramas' Abandoned Manor",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"griffin": {
+						"standard": "Inside the Dragonslayers Grotto",
+						"enhanced": "Near the Troll at White Eagle Fort",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"ursine": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "Dive into the water",
+						"superior": "",
+						"mastercrafted": "The chest is inside the well"
+					}
+				},
+				"boots": {
+					"feline": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"griffin": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"ursine": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "Going down into the cave",
+						"superior": "",
+						"mastercrafted": ""
+					}
+				},
+				"gauntlets": {
+					"feline": {
+						"standard": "",
+						"enhanced": "Inside a Shaft from the Codgers Quarry",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"griffin": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"ursine": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					}
+				},
+				"trousers": {
+					"feline": {
+						"standard": "",
+						"enhanced": "Inside the Burned Ruin",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"griffin": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"ursine": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					}
+				}
+			}
+		},
+		"popup": {
+			"witcherGear": {
+				"silversword": {
+					"feline": {
+						"standard": "Feline Silver Sword",
+						"enhanced": "Enhanced Feline Silver Sword",
+						"superior": "Superior Feline Silver Sword",
+						"mastercrafted": "Mastercrafted Feline Silver Sword"
+					},
+					"griffin": {
+						"standard": "Griffin Silver Sword",
+						"enhanced": "Enhanced Griffin Silver Sword",
+						"superior": "Superior Griffin Silver Sword",
+						"mastercrafted": "Mastercrafted Griffin Silver Sword"
+					},
+					"ursine": {
+						"standard": "Ursine Silver Sword",
+						"enhanced": "Enhanced Ursine Silver Sword",
+						"superior": "Superior Ursine Silver Sword",
+						"mastercrafted": "Mastercrafted Ursine Silver Sword"
+					},
+					"wolven": {
+						"standard": "Wolven Silver Sword",
+						"enhanced": "Enhanced Wolven Silver Sword",
+						"superior": "Superior Wolven Silver Sword",
+						"mastercrafted": "Mastercrafted Wolven Silver Sword"
+					}
+				},
+				"steelsword": {
+					"feline": {
+						"standard": "Feline Steel Sword",
+						"enhanced": "Enhanced Feline Steel Sword",
+						"superior": "Superior Feline Steel Sword",
+						"mastercrafted": "Mastercrafted Feline Steel Sword"
+					},
+					"griffin": {
+						"standard": "Griffin Steel Sword",
+						"enhanced": "Enhanced Griffin Steel Sword",
+						"superior": "Superior Griffin Steel Sword",
+						"mastercrafted": "Mastercrafted Griffin Steel Sword"
+					},
+					"ursine": {
+						"standard": "Ursine Steel Sword",
+						"enhanced": "Enhanced Ursine Steel Sword",
+						"superior": "Superior Ursine Steel Sword",
+						"mastercrafted": "Mastercrafted Ursine Steel Sword"
+					},
+					"wolven": {
+						"standard": "Wolven Steel Sword",
+						"enhanced": "Enhanced Wolven Steel Sword",
+						"superior": "Superior Wolven Steel Sword",
+						"mastercrafted": "Mastercrafted Wolven Steel Sword"
+					}
+				},
+				"crossbow": {
+					"feline": "Feline Crossbow",
+					"ursine": "Ursine Crossbow"
+				},
+				"armor": {
+					"feline": {
+						"standard": "Feline Armor",
+						"enhanced": "Enhanced Feline Armor",
+						"superior": "Superior Feline Armor",
+						"mastercrafted": "Mastercrafted Feline Armor"
+					},
+					"griffin": {
+						"standard": "Griffin Armor",
+						"enhanced": "Enhance Griffin Armor",
+						"superior": "Superior Griffin Armor",
+						"mastercrafted": "Mastercrafted Griffin Armor"
+					},
+					"ursine": {
+						"standard": "Ursine Armor",
+						"enhanced": "Enhanced Ursine Armor",
+						"superior": "Superior Ursine Armor",
+						"mastercrafted": "Mastercrafted Ursine Armor"
+					},
+					"wolven": {
+						"standard": "Wolven Armor",
+						"enhanced": "Enhanced Wolven Armor",
+						"superior": "Superior Wolven Armor",
+						"mastercrafted": "Mastercrafted Wolven Armor"
+					}
+				},
+				"boots": {
+					"feline": {
+						"standard": "Feline Boots",
+						"enhanced": "Enhanced Feline Boots",
+						"superior": "Superior Feline Boots",
+						"mastercrafted": "Mastercrafted Feline Boots"
+					},
+					"griffin": {
+						"standard": "Griffin Boots",
+						"enhanced": "Enhance Griffin Boots",
+						"superior": "Superior Griffin Boots",
+						"mastercrafted": "Mastercrafted Griffin Boots"
+					},
+					"ursine": {
+						"standard": "Ursine Boots",
+						"enhanced": "Enhanced Ursine Boots",
+						"superior": "Superior Ursine Boots",
+						"mastercrafted": "Mastercrafted Ursine Boots"
+					},
+					"wolven": {
+						"standard": "Wolven Boots",
+						"enhanced": "Enhanced Wolven Boots",
+						"superior": "Superior Wolven Boots",
+						"mastercrafted": "Mastercrafted Wolven Boots"
+					}
+				},
+				"gauntlets": {
+					"feline": {
+						"standard": "Feline Gauntlets",
+						"enhanced": "Enhanced Feline Gauntlets",
+						"superior": "Superior Feline Gauntlets",
+						"mastercrafted": "Mastercrafted Feline Gauntlets"
+					},
+					"griffin": {
+						"standard": "Griffin Gauntlets",
+						"enhanced": "Enhance Griffin Gauntlets",
+						"superior": "Superior Griffin Gauntlets",
+						"mastercrafted": "Mastercrafted Griffin Gauntlets"
+					},
+					"ursine": {
+						"standard": "Ursine Gauntlets",
+						"enhanced": "Enhanced Ursine Gauntlets",
+						"superior": "Superior Ursine Gauntlets",
+						"mastercrafted": "Mastercrafted Ursine Gauntlets"
+					},
+					"wolven": {
+						"standard": "Wolven Gauntlets",
+						"enhanced": "Enhanced Wolven Gauntlets",
+						"superior": "Superior Wolven Gauntlets",
+						"mastercrafted": "Mastercrafted Wolven Gauntlets"
+					}
+				},
+				"trousers": {
+					"feline": {
+						"standard": "Feline Trousers",
+						"enhanced": "Enhanced Feline Trousers",
+						"superior": "Superior Feline Trousers",
+						"mastercrafted": "Mastercrafted Feline Trousers"
+					},
+					"griffin": {
+						"standard": "Griffin Trousers",
+						"enhanced": "Enhance Griffin Trousers",
+						"superior": "Superior Griffin Trousers",
+						"mastercrafted": "Mastercrafted Griffin Trousers"
+					},
+					"ursine": {
+						"standard": "Ursine Trousers",
+						"enhanced": "Enhanced Ursine Trousers",
+						"superior": "Superior Ursine Trousers",
+						"mastercrafted": "Mastercrafted Ursine Trousers"
+					},
+					"wolven": {
+						"standard": "Wolven Trousers",
+						"enhanced": "Enhanced Wolven Trousers",
+						"superior": "Superior Wolven Trousers",
+						"mastercrafted": "Mastercrafted Wolven Trousers"
+					}
+				}
+			}
+		}
+	},
+	"pop": {
+		"label": "Place of Power",
+		"label*": "Place of Power*",
+		"desc": "Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point",
+		"popup": "Place of Power - __sign__"
+	},
+	"smugglers": {
+		"label": "Smugglers' Cache",
+		"desc": "Smuggled goods have been hidden here"
+	},
+	"spoils": {
+		"label": "Spoils of War",
+		"desc": "Search here for loot left behind after a battle or skirmish __monster__"
+	},
+	"signs": {
+		"aard": "Aard",
+		"axii": "Axii",
+		"igni": "Igni",
+		"quen": "Quen",
+		"yrden": "Yrden"
+	}
+}
