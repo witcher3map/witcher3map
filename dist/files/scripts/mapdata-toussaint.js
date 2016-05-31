@@ -37,11 +37,7 @@ window.mapdata_toussaint = {
 	}],
 
 // Armourer's Table
-	armourerstable: [{
-		coords: [[56.641,75.313]],
-		label: $.t("armourerstable.label"),
-		popup: $.t("armourerstable.desc")
-	}],
+	armourerstable: [],
 
 // Bandit Camp
 	banditcamp: [{
@@ -308,11 +304,11 @@ sidequests: [{
 
 //// Contracts
 contracts: [{
-		coords: [[74.60,76.50]],
+		coords: [[74.60,74.50]],
 		label: $.t("t:contracts.label.biggamehunter"),
 		popup: $.t("t:contracts.desc.biggamehunter")
 	},{
-			coords: [[74.60,75]],
+			coords: [[74.60,75.00]],
 			label: $.t("t:contracts.label.coldasice"),
 			popup: $.t("t:contracts.desc.coldasice")
 		}],
@@ -323,8 +319,12 @@ contracts: [{
 //			coords: [[110.172,87.125]],
 //			label: $.t("t:vintercontract.label.1"),
 //			popup: $.t("t:vintercontract.desc.1")
-//		}],
-//todo 49.047,92.781 (NEW!)
+//		},{
+//				coords: [[49.047,92.781]],
+//				label: $.t("t:vintercontract.label.2"),
+//				popup: $.t("t:vintercontract.desc.2")
+//	}],
+
 
 // Spoils of War
 	spoils: []

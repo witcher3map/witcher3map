@@ -492,7 +492,7 @@ $(function() {
 				'<li><a href="https://twitter.com/DesignGears" target="_blank">@DesignGears</a> &amp <a href="https://github.com/hhrhhr" target="_blank">hhrhhr</a> - Map &amp; asset extraction</li>',
 			'</ul>',
 			'<p>Thanks to the following people for contributions to improving the map data:<br>',
-			'todo</p>',
+			'<li><a href="https://wiiare.in" target="_blank">lordfiSh</a> - Toussaint Map Markers</li></p>',
 			'<h3>Translations</h3>',
 			'<ul>',
 				'<li>German - <a href="https://github.com/ITroxxCH" target="_blank">ITroxxCH</a></li>',

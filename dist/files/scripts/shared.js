@@ -275,10 +275,10 @@ icons.contracts = L.icon({
 	iconSize : [10, 30]
 });
 
-//icons.vinecontract = L.icon({
-//	iconUrl  : '../files/images/icons/tempvinecontract.png',
-//	iconSize : [32, 28]
-//});
+icons.vinecontract = L.icon({
+ iconUrl  : '../files/images/icons/tempvinecontract.png',
+ iconSize : [32, 28]
+});
 
 
 icons.spoils = L.icon({
