@@ -615,6 +615,9 @@ i.signpost { background-image:url('../images/icons/fasttravel.png'); }
 i.shopkeeper { background-image:url('../images/icons/merchant.png'); }
 i.smugglers { background-image:url('../images/icons/smugglers.png'); }
 i.spoils { background-image:url('../images/icons/spoils.png'); }
+i.sidequests { background-image:url('../images/icons/sidequests.png'); }
+i.contracts { background-image:url('../images/icons/tempcontract.png'); }
+i.vinecontract { background-image:url('../images/icons/tempvinecontract.png'); }
 .leaflet-container {
 	background: #222;
 }

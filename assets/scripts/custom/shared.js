@@ -17,6 +17,8 @@ $.i18n.init(i18noptions, function() {
 			getMapdata('velen');
 		} else if (namespace == "s") {
 			getMapdata('skellige');
+		} else if (namespace == "t") {
+				getMapdata('toussaint');
 		} else if (namespace == "k") {
 			getMapdata('kaer_morhen');
 		}
@@ -262,6 +264,22 @@ icons.smugglers = L.icon({
 	iconUrl  : '../files/images/icons/smugglers.png',
 	iconSize : [28, 30]
 });
+
+icons.sidequests = L.icon({
+	iconUrl  : '../files/images/icons/sidequests.png',
+	iconSize : [10, 30]
+});
+
+icons.contracts = L.icon({
+	iconUrl  : '../files/images/icons/tempcontract.png',
+	iconSize : [18, 29]
+});
+
+icons.vinecontract = L.icon({
+ iconUrl  : '../files/images/icons/tempvinecontract.png',
+ iconSize : [32, 28]
+});
+
 
 icons.spoils = L.icon({
 	iconUrl  : '../files/images/icons/spoils.png',

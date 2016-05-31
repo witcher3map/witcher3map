@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Witcher 3 Interactive Map - Toussaint</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta property="og:title" content="Witcher 3 Interactive Map - Toussaint">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://witcher3map.com/t/">
+		<meta property="og:image" content="http://witcher3map.com/files/maps/toussaint/preview.jpg">
+		<meta property="og:description" content="Witcher 3 interactive map of White Orchard. All locations including shopkeepers, gwent players, merchants, places of power">
+		<meta name="description" content="Witcher 3 interactive map of Toussaint. All locations including shopkeepers, gwent players, merchants, places of power">
+		<meta name="keywords" content="Witcher 3, Witcher 3 map, Witcher 3 interactive map, Toussaint Map, The Ducky of Toussaint, Blood and Wine, gwent player map, gwent map, shopkeeper map, merchant map">
+		<link type="text/css" rel="stylesheet" href="../files/styles/leaflet.css">
+		<link type="text/css" rel="stylesheet" href="../files/styles/main.min.css">
+		<link type="text/css" rel="stylesheet" href="../files/styles/font-awesome.min.css">
+		<script type="text/javascript" src="../files/scripts/vendor.bundle.js"></script>
+	</head>
+	<body>
+		<div id="sidebar">
+			<div id="sidebar-wrap">
+				<a href="../" data-i18n="[title]sidebar.returnToMapSelection" title="Return to Map Selection"><div id="logo"></div></a>
+				<ul class="key">
+					<li><i class="alchemy"></i><div data-i18n="sidebar.alchemy">Alchemy Supplies</div></li>
+					<li><i class="abandoned"></i><div data-i18n="sidebar.abandoned">Abandoned Site</div></li>
+					<li><i class="armourer"></i><div data-i18n="sidebar.armourer">Armorer</div></li>
+					<li><i class="armourerstable"></i><div data-i18n="sidebar.armourerstable">Armorer's Table</div></li>
+					<li><i class="banditcamp"></i><div data-i18n="sidebar.banditcamp">Bandit Camp</div></li>
+					<li><i class="barber"></i><div data-i18n="sidebar.barber">Barber</div></li>
+					<li><i class="blacksmith"></i><div data-i18n="sidebar.blacksmith">Blacksmith</div></li>
+					<!--<li><i class="brothel"></i><div id="brothel-text" data-i18n="sidebar.brothel">Brothel</div></li>-->
+					<li><i class="entrance"></i><div data-i18n="sidebar.entrance">Entrance</div></li>
+					<li><i class="grindstone"></i><div data-i18n="sidebar.grindstone">Grindstone</div></li>
+					<li><i class="guarded"></i><div data-i18n="sidebar.guarded">Guarded Treasure</div></li>
+					<li><i class="gwent"></i><div data-i18n="sidebar.gwent">Gwent Player</div></li>
+					<!--<li><i class="harbor"></i><div data-i18n="sidebar.harbor">Harbor</div></li>-->
+					<li><i class="herbalist"></i><div data-i18n="sidebar.herbalist">Herbalist</div></li>
+					<li><i class="hidden"></i><div data-i18n="sidebar.hidden">Hidden Treasure</div></li>
+					<li><i class="innkeep"></i><div data-i18n="sidebar.innkeep">Innkeep</div></li>
+					<li><i class="monsternest"></i><div data-i18n="sidebar.monsternest">Monster Nest</div></li>
+					<li><i class="monsterden"></i><div data-i18n="sidebar.monsterden">Monster Den</div></li>
+					<li><i class="notice"></i><div data-i18n="sidebar.notice">Notice Board</div></li>
+					<li><i class="pid"></i><div data-i18n="sidebar.pid">Person in Distress</div></li>
+					<li><i class="pop"></i><div data-i18n="sidebar.pop">Place of Power</div></li>
+					<li><i class="poi"></i><div data-i18n="sidebar.poi">Point of Interest</div></li>
+					<li><i class="signpost"></i><div data-i18n="sidebar.signpost">Sign Post</div></li>
+					<li><i class="shopkeeper"></i><div data-i18n="sidebar.shopkeeper">Shopkeeper</div></li>
+					<!--<li><i class="smugglers"></i><div data-i18n="sidebar.smugglers">Smugglers' Cache</div></li>-->
+					<!--<li><i class="spoils"></i><div data-i18n="sidebar.spoils">Spoils of War</div></li>-->
+					<li><i class="sidequests"></i><div data-i18n="sidebar.sidequests">SideQuest</div></li>
+					<li><i class="contracts"></i><div data-i18n="sidebar.contracts">Contract</div></li>
+					<li><i class="vinecontract"></i><div data-i18n="sidebar.vinecontract">Vinter Contracts</div></li>
+
+				</ul>
+				<ul class="key controls">
+					<li style="display:none;" id="show-all"><i class="fa fa-eye"></i><div data-i18n="controls.show">Show All</div></li>
+					<li id="hide-all"><i class="fa fa-eye-slash"></i><div data-i18n="controls.hide">Hide All</div></li>
+					<li style="display:none;" id="show-counts"><i class="fa fa-check-square"></i><div data-i18n="controls.showCounts">Show Counts</div></li>
+					<li id="hide-counts"><i class="fa fa-square"></i><div data-i18n="controls.hideCounts">Hide Counts</div></li>
+					<li id="reset-tracking"><i class="fa fa-eraser"></i><div data-i18n="controls.resetInvisible">Reset Invisible</div></li>
+<!-- No monster data for white orchard yet
+					<li id="hide-monsters"><i class="fa fa-user-secret"></i><div data-i18n="controls.hideMonsters">Hide Monsters</div></li>
+					<li style="display:none;" id="show-monsters"><i class="fa fa-user-secret"></i><div data-i18n="controls.showMonsters">Show Monsters</div></li>
+-->
+					<li><a href="https://github.com/untamed0/witcher3map/wiki" target="_blank"><i class="fa fa-info-circle"></i><div data-i18n="controls.helpFeatures">Features &amp; Help</div></a></li>
+					<li class="credits"><i class="fa fa-copyright"></i><span data-i18n="controls.credits">Credits</span></li>
+					<li></li>
+				</ul>
+				<div id="note">
+	temp. map - check witcher3map.com
+				</div>
+				<div id="lang">
+					<div id="lang-switcher"></div>
+				</div>
+			</div>
+			<div id="copyright">
+				<span data-i18n="[html]credits.botCreated" data-i18n-options='{"untamed0":"<a href=\"https://github.com/untamed0\" target=\"_blank\">untamed0</a>","license":"<a href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\" target=\"_blank\">CC BY-NC-SA</a>"}'>Created by <a href="https://github.com/untamed0" target="_blank">untamed0</a>, licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA</a></span><br>
+				<span data-i18n="[html]credits.botAssets" data-i18n-options='{"cdpr":"<a href=\"http://en.cdprojektred.com\" target=\"_blank\">CD PROJEKT RED</a>"}'>Witcher 3, logo, icons, map &amp; text are the property of <a href="http://en.cdprojektred.com" target="_blank">CD PROJEKT RED</a></span>
+			</div>
+		</div>
+		<div id="sidebar-border"></div>
+		<div id="hide-sidebar"></div>
+		<div id="warn" data-i18n="misc.portraitWarn"></div>
+		<div id="info-wrap"><div id="info-fade-intro"></div><div id="info"></div><div id="info-fade-outro"></div></div>
+		<div id="map"><!-- <div id="title">White Orchard</div> --></div>
+		<script type="text/javascript" src="../files/scripts/lang-global.js"></script>
+		<script type="text/javascript" src="../files/scripts/shared.js"></script>
+	</body>
+</html>
