@@ -1,234 +1,271 @@
 {
-	"monsters": {
-		"alghouls": "Alghouls",
-		"bandits": "Bandits",
-		"basilisk": "Basilisk",
-		"cyclops": "Cyclops",
-		"drowners": "Drowners",
-		"echidna": "Echidna",
-		"elemental": {
-			"earth": "Earth Elemental",
-			"ice" : "Ice"
-		},
-		"endrega": "Endrega",
-		"gargoyles": "Gargoyles",
-		"ghost": "Ghost",
-		"harpies": "Harpies",
-		"nekkers": "Nekkers",
-		"nekkerWarrior": "Nekker Warrior",
-		"sirens": "Sirens",
-		"wolves" : "Wolves",
-		"wraiths": {
-			"wraiths": "Wraiths",
-			"wraith": "Wraith"
-		},
-		"wyvern": "Wyvern"
-	},
-	"alchemy": {
-		"gremist": {
-			"label": "Gremist",
-			"desc": "'Practicum in Advanced Alchemy' (lvl 24) Quest"
-		}
-	},
-	"armourer": {
-		"amateurLabel": "Amateur Armorer",
-		"journeymanLabel": "Journeyman Armorer",
-		"desc": "Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
-	},
-	"banditcamp": {
-		"label": "Bandit Camp",
-		"desc": "A group of dangerous bandits have made camp here. "
-	},
-	"barber": {
-		"label": "Barber",
-		"desc": "Visit barbers for a shave or a new haircut. "
-	},
-	"blacksmith": {
-		"amateurLabel": "Amateur Blacksmith",
-		"journeymanLabel": "Journeyman Blacksmith",
-		"desc": "Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
-	},
-	"gwent": {
-		"label": {
-			"XXX": "XXX"
-		},
-		"desc": {
-			"XXX": "XXX"
-		},
-		"popup": {
-			"XXX": "XXX"
-		}
-	},
-	"innkeep": {
-		"label": {
-			"cockatraice": "XXX",
-			"auberge": "The Ruddy Brush Auberge"
-		},
-		"popup": "Innkeep",
-		"desc": {
-			"cockatraice": "XXX",
-			"auberge": "accessible after you cleared the Side"
-		}
-	},
-	"misc": {
-		"XXX": "XXX"
-	},
-	"poi": {
-		"label": {
-			"manticoresteelsword": "Manticore steel sword",
-			"manticoretrousersandboots":"Manticore trousers & Manticore boots"
-		},
-		"popupTitle": {
-			"XXX": "XXX"
-		},
-		"desc": {
-			"manticoretrousersandboots": "inside the temple"
-		}
-	},
-	"pop": {
-		"desc": {
-			"XXX": "XXX"
-		}
-	},
-	"shopkeeper": {
-		"label": {
-			"XXX": "XXX"
-		},
-		"desc": {
-			"XXX": "XXX"
-		}
-	},
-	"sidequests": {
-		"label": {
-			"gwenttournment": "Gwent: To Everything - Turn, Turn, Tournamenet!",
-			"WildKingdom": "Mutual of Beauclair's Wild Kingdom",
-			"kingforhire": "King for Hire",
-			"winewars": "Wine Wars: Belgaard",
-			"facethestrage": "Turn and Face the Strange",
-			"bigfeet": "Big Feet to Fill: The FIrst Group",
-			"knightstale": "A Knight's Tale",
-			"spon": "Spoontaneous Profits!",
-			"escapology":"Applied Escapology",
-			"tilldeath":"Till Death Do You Part",
-			"huntgriffin":"Scavenger Hunt: Grandmaster Griffin Gear",
-			"huntfeline":"Scavenger Hunt: Grandmaster Feline Gear",
-			"huntursine":"Scavenger Hunt: Grandmaster Ursin Gear",
-			"huntmanticor":"Scavenger Hunt: Grandmaster Manticore Gear",
-			"huntwolven":"Scavenger Hunt: Grandmaster Wolven Gear",
-			"granite":"Goodness, Gracious, Great Balls of Granite!",
-			"onlyone":"There can be Only One",
-			"placelikehome":"No Place like Home",
-			"smittenkight":"The Warble of a Smitten Knight",
-			"wildkingdom":"Mutual Of Becaular's Wild Kingdom",
-			"master":"Master Master Master Maser!",
-			"suffering":"The Suffering of Young Francois",
-			"bigfleet":"Big Feet to Fill: The Fith Group",
-			"XXX": "XXX"
-		},
-		"desc": {
-			"gwenttournment": "Level 38 - You get this Quest at the Notice Board near the Cockatrice Inn",
-			"WildKingdom": "Level 46 - You get this Quest at the Notice Board near the Cockatrice Inn",
-			"kingforhire": "XXX - You get this Quest at the Notice Board near the Cockatrice Inn",
-			"winewars": "Level 37 - You get this Quest at the Notice Board near the Cockatrice Inn",
-			"facethestrage": "Level 35 - you should automaticly pick up this Quest, while your the Main Quest `La Cage au Fou`",
-			"bigfeet": "XXX",
-			"knightstale": "Level 40 - You get this Quest at the Notice Board in Castel Ravello Vineyard",
-			"spon": "Level 42 - This Quests starts if you Pick up the Spoon, located inside the House on Barrel",
-			"escapology":"Level 40 - You start this Quest by looting the Hidden Treasure",
-			"tilldeath":"Level 36 - You get this Quest from Charles Lanzano, located in first Floor of The Clever Clogs Tavern",
-			"huntgriffin":"",
-			"huntfeline":"",
-			"huntursine":"",
-			"huntmanticor":"",
-			"huntwolven":"",
-			"granite":"Level 36 - ",
-			"onlyone":"You get this Quest at the Notice Board at the Gran'Place",
-			"placelikehome":"You get this Quest at the Notice Board at the Gran'Place",
-			"smittenkight":"Level 35 - You get this Quest at the Notice Board at the Gran'Place",
-			"wildkingdom":"You get this Quest at the Notice Board at the Gran'Place",
-			"master":"Level 40 - Find all Diagramms",
-			"hidden":"Mini Sidequest from a Hidden Treasure",
-			"save":"Persons in Distress, save them to complete the Quest",
-			"XXX": "XXX"
-		}
-	},
-
-	"contracts": {
-		"label": {
-			"biggamehunter": "Big Game Hunter",
-			"coldasice": "Feet as Cold as Ice",
-			"XXX": "XXX"
-		},
-		"desc": {
-			"biggamehunter": "Level 37 Witcher Contract. Started on the Notice Board near Dulcinea Windmill",
-			"coldasice": "Level 45 - You get this Quest at the Notice Board near the Cockatrice Inn",
-
-
-
-			"XXX": "XXX"
-		}
-	},
-	"vintercontract": {
-		"label": {
-			"1": "XXX",
-			"2": "XXX",
-			"XXX": "XXX"
-		},
-		"desc": {
-			"1": "XXX",
-			"2": "XXX",
-			"XXX": "XXX"
-		}
-	},
-	"misc": {
-		"desc": {
-			"pop2": "Inside the Monster Den",
-			"XXX": "XXX"
-		}
-	},
-	"signpost": {
-		"label": {
-			"dulcineawindmill": "Dulcinea Windmill",
-			"cockatraice": "The Cockatrice Inn",
-			"plegmund": "Plegmund'S Bridge",
-			"corvobianco": "Corvo Bianco Vineyard",
-			"palace": "Beauclar Palace",
-			"palacegardens": "Palace Gardens",
-			"embassy": "Nilfgaardian Embassy",
-			"gate": "Metinna Gate",
-			"francollarts": "Francollarts",
-			"fort": "Fort Astre Ruins",
-			"fox": "Fox Hollow",
-			"castelravello": "Castel Ravello Vineyard",
-			"cemetry": "Mère-Lachaiselongue Cemetry",
-			"prison": "Toussaint Prison",
-			"farm": "Gelenser Farm",
-			"ruins": "Termes Palace Runins",
-			"mutnaruins":"Tesham Mutna Ruins",
-			"granplace":"Gran'Place",
-			"tunier":"Tourney Grounds",
-			"cottage": "Trastamara Hunting Cottage"
-		},
-		"desc": {
-			"dulcineawindmill": "XXX",
-			"cockatraice": "XXX",
-			"plegmund": "XXX",
-			"corvobianco": "XXX",
-			"palace": "XXX",
-			"palacegardens": "XXX",
-			"embassy": "XXX",
-			"gate": "XXX",
-			"francollarts": "XXX",
-			"fort": "XXX",
-			"fox": "XXX",
-			"castelravello": "XXX",
-			"cemetry": "XXX",
-			"prison": "XXX",
-			"farm": "XXX",
-			"mutnaruins":"XXX",
-			"granplace":"XXX",
-			"tunier":"",
-			"cottage": "XXX"
-		}
-	}
+   "monsters":{
+      "alghouls":"Alghouls",
+      "bandits":"Bandits",
+      "basilisk":"Basilisk",
+      "cyclops":"Cyclops",
+      "drowners":"Drowners",
+      "echidna":"Echidna",
+      "elemental":{
+         "earth":"Earth Elemental",
+         "ice":"Ice"
+      },
+      "endrega":"Endrega",
+      "gargoyles":"Gargoyles",
+      "ghost":"Ghost",
+      "harpies":"Harpies",
+      "nekkers":"Nekkers",
+      "nekkerWarrior":"Nekker Warrior",
+      "sirens":"Sirens",
+      "wolves":"Wolves",
+      "wraiths":{
+         "wraiths":"Wraiths",
+         "wraith":"Wraith"
+      },
+      "wyvern":"Wyvern"
+   },
+   "alchemy":{
+      "gremist":{
+         "label":"Gremist",
+         "desc":"'Practicum in Advanced Alchemy' (lvl 24) Quest"
+      }
+   },
+   "armourer":{
+      "amateurLabel":"Amateur Armorer",
+      "journeymanLabel":"Journeyman Armorer",
+      "desc":"Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
+   },
+   "banditcamp":{
+      "label":"Bandit Camp",
+      "desc":"A group of dangerous bandits have made camp here. "
+   },
+   "barber":{
+      "label":"Barber",
+      "desc":"Visit barbers for a shave or a new haircut. "
+   },
+   "blacksmith":{
+      "amateurLabel":"Amateur Blacksmith",
+      "journeymanLabel":"Journeyman Blacksmith",
+      "desc":"Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
+   },
+   "gwent":{
+      "label":{
+         "XXX":"XXX"
+      },
+      "desc":{
+         "XXX":"XXX"
+      },
+      "popup":{
+         "XXX":"XXX"
+      }
+   },
+   "innkeep":{
+      "label":{
+         "auberge":"The Ruddy Brush Auberge",
+         "salamander":"The Silver Salamander Inn",
+				 "pheasantry":"The Pheasantry",
+         "barrelandbung":"The Barrel and Bung Inn"
+      },
+      "popup":"Innkeep",
+      "desc":{
+         "cockatraice":"XXX"
+      }
+   },
+   "misc":{
+      "XXX":"XXX"
+   },
+   "poi":{
+      "label":{
+         "steel":"steel sword",
+         "silver":"silver sword",
+         "armor":"armor",
+         "gauntlets":"gauntlets",
+         "trousersboots":"trousers and boots",
+         "steelgauntletsboots":"steel sword, gauntlets and boots",
+         "silverarmorgauntlers":"silver sword, armor and gauntlets",
+         "steelbootstrousers":"steel sword, trousers and boots",
+         "silverarmortrousers":"armor, trousers and silver sword",
+         "steelsilvergauntlets":"steel sword, silver sword and gauntlets",
+         "trousersandboots":"trousers & boots",
+         "all":"steel sword, silver sword, gauntlets, armor, trousers and boots",
+         "aftercleared":"accessible after the area is cleared"
+      },
+      "popupTitle":{
+         "witchergear":"Grandmaster Witchergear"
+      },
+      "desc":{
+         "manticoretrousersandboots":"inside the temple",
+         "silverarmorgauntlers":"",
+         "gauntlets":"bottom of the lake",
+         "trousersboots":"located in a cheast, ontop of the broken bridge",
+         "steelbootstrousers":"inside the Cave",
+         "all":"The Key for the Portal is jsut outside the Cave. The are all Wolven Digramms inside, three on two locations inside the cave",
+         "armor":"the Diagram is inside the House, behind a Picurefarm on the Wall",
+         "silverarmortrousers":"Located behind a Illustion. In the next Room find the Crystal and use it on the Door, use Aard to activate the Portal. After the Portal there are the three Diagrams.",
+         "manticoresilver":"at the end Cave"
+      }
+   },
+   "pop":{
+      "desc":{
+         "XXX":"XXX"
+      }
+   },
+   "shopkeeper":{
+      "label":{
+         "XXX":"XXX"
+      },
+      "desc":{
+         "XXX":"XXX"
+      }
+   },
+   "sidequests":{
+      "label":{
+         "gwenttournment":"Gwent: To Everything - Turn, Turn, Tournamenet!",
+         "WildKingdom":"Mutual of Beauclair's Wild Kingdom",
+         "kingforhire":"King for Hire",
+         "winewars":"Wine Wars: Belgaard",
+         "facethestrage":"Turn and Face the Strange",
+         "bigfeet":"Big Feet to Fill: The FIrst Group",
+         "knightstale":"A Knight's Tale",
+         "spon":"Spoontaneous Profits!",
+         "escapology":"Applied Escapology",
+         "tilldeath":"Till Death Do You Part",
+         "huntgriffin":"Scavenger Hunt: Grandmaster Griffin Gear",
+         "huntfeline":"Scavenger Hunt: Grandmaster Feline Gear",
+         "huntursine":"Scavenger Hunt: Grandmaster Ursin Gear",
+         "huntmanticor":"Scavenger Hunt: Grandmaster Manticore Gear",
+         "huntwolven":"Scavenger Hunt: Grandmaster Wolven Gear",
+         "granite":"Goodness, Gracious, Great Balls of Granite!",
+         "onlyone":"There can be Only One",
+         "placelikehome":"No Place like Home",
+         "smittenkight":"The Warble of a Smitten Knight",
+         "wildkingdom":"Mutual Of Becaular's Wild Kingdom",
+         "master":"Master Master Master Maser!",
+         "suffering":"The Suffering of Young Francois",
+         "bigfleet":"Big Feet to Fill: The Fith Group",
+         "enjpytheplay":"But Other than that, how did you enjoy the play?",
+         "paperchase":"Paperchase",
+         "XXX":"XXX"
+      },
+      "desc":{
+         "gwenttournment":"Level 38 - You get this Quest at the Notice Board near the Cockatrice Inn",
+         "WildKingdom":"Level 46 - You get this Quest at the Notice Board near the Cockatrice Inn",
+         "kingforhire":"XXX - You get this Quest at the Notice Board near the Cockatrice Inn",
+         "winewars":"Level 37 - You get this Quest at the Notice Board near the Cockatrice Inn",
+         "facethestrage":"Level 35 - you should automaticly pick up this Quest, while your the Main Quest `La Cage au Fou`",
+         "bigfeet":"XXX",
+         "knightstale":"Level 40 - You get this Quest at the Notice Board in Castel Ravello Vineyard",
+         "spon":"Level 42 - This Quests starts if you Pick up the Spoon, located inside the House on Barrel",
+         "escapology":"Level 40 - You start this Quest by looting the Hidden Treasure",
+         "tilldeath":"Level 36 - You get this Quest from Charles Lanzano, located in first Floor of The Clever Clogs Tavern",
+         "huntgriffin":"",
+         "huntfeline":"",
+         "huntursine":"",
+         "huntmanticor":"",
+         "huntwolven":"",
+         "granite":"Level 36 - ",
+         "onlyone":"You get this Quest at the Notice Board at the Gran'Place",
+         "placelikehome":"You get this Quest at the Notice Board at the Gran'Place",
+         "smittenkight":"Level 35 - You get this Quest at the Notice Board at the Gran'Place",
+         "wildkingdom":"You get this Quest at the Notice Board at the Gran'Place",
+         "master":"Level 40 - Find all Diagramms",
+         "hidden":"Mini Sidequest from a Hidden Treasure",
+         "save":"Persons in Distress, save them to complete the Quest",
+         "enjpytheplay":"The Order in where you need to light the candles can be figgred out by using the Witcher Senses. After that dring the Wine (Questitem) `Vis la Crac`",
+         "paperchase":"",
+         "XXX":"XXX"
+      }
+   },
+   "contracts":{
+      "label":{
+         "biggamehunter":"Big Game Hunter",
+         "coldasice":"Feet as Cold as Ice",
+         "tufo":"Contract: THe Tufo Monster",
+         "bonvineblues":"Contract: Bovine Blues"
+      },
+      "desc":{
+         "biggamehunter":"Level 37 Witcher Contract. Started on the Notice Board near Dulcinea Windmill",
+         "coldasice":"Level 45 - You get this Quest at the Notice Board near the Cockatrice Inn",
+         "tufo":"Level 48 - You get this Quest at the Notice Board in Flovive",
+         "bonvineblues":"Level 38 - "
+      }
+   },
+   "vintercontract":{
+      "label":{
+         "1":"XXX",
+         "2":"XXX",
+         "XXX":"XXX"
+      },
+      "desc":{
+         "1":"XXX",
+         "2":"XXX",
+         "XXX":"XXX"
+      }
+   },
+   "misc":{
+      "desc":{
+         "insideden":"Inside the Monster Den",
+         "insidecave":"Inside the Cave",
+         "witchergear":"Witchergear:",
+         "manticore":"Manticore",
+         "griffin":"Griffin",
+         "ursine":"Ursine",
+         "wolven":"Wolven",
+         "feline":"Feline",
+         "cleared":"accessible after you cleared the Side",
+         "XXX":"XXX"
+      }
+   },
+   "signpost":{
+      "label":{
+         "dulcineawindmill":"Dulcinea Windmill",
+         "cockatraice":"The Cockatrice Inn",
+         "plegmund":"Plegmund'S Bridge",
+         "corvobianco":"Corvo Bianco Vineyard",
+         "palace":"Beauclar Palace",
+         "palacegardens":"Palace Gardens",
+         "embassy":"Nilfgaardian Embassy",
+         "gate":"Metinna Gate",
+         "francollarts":"Francollarts",
+         "fort":"Fort Astre Ruins",
+         "fox":"Fox Hollow",
+         "castelravello":"Castel Ravello Vineyard",
+         "cemetry":"Mère-Lachaiselongue Cemetry",
+         "prison":"Toussaint Prison",
+         "farm":"Gelenser Farm",
+         "ruins":"Termes Palace Runins",
+         "mutnaruins":"Tesham Mutna Ruins",
+         "granplace":"Gran'Place",
+         "tunier":"Tourney Grounds",
+         "statue":"Prophet Lebioda Statue",
+         "hortense":"Hortense Vineyard",
+         "flovive":"Flovive",
+				 "fortussar":"Fort Ussar Ruins",
+         "cottage":"Trastamara Hunting Cottage"
+      },
+      "desc":{
+         "dulcineawindmill":"XXX",
+         "cockatraice":"XXX",
+         "plegmund":"XXX",
+         "corvobianco":"XXX",
+         "palace":"XXX",
+         "palacegardens":"XXX",
+         "embassy":"XXX",
+         "gate":"XXX",
+         "francollarts":"XXX",
+         "fort":"XXX",
+         "fox":"XXX",
+         "castelravello":"XXX",
+         "cemetry":"XXX",
+         "prison":"XXX",
+         "farm":"XXX",
+         "mutnaruins":"XXX",
+         "granplace":"XXX",
+         "tunier":"",
+         "statue":"",
+         "hortense":"",
+         "flovive":"",
+         "cottage":"XXX"
+      }
+   }
 }
