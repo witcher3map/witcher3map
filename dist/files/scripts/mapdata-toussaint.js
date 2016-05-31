@@ -8,49 +8,56 @@ window.mapdata_toussaint = {
 // Abandoned Site
 	abandoned: [{
 		coords: [
-			[82.344,55.453],
-			[81.563,33.281],
-			[99.406,46.422],
-			[105.250,48.156],
-			[116.969,48.500],
+			[67.031,51.719], //new
+			[66.875,37.406], //new
+			[78.656,45.859], //new
+			[82.063,47.391], //new
+			[90.109,47.094], //new
 		],
-		label: $.t("barber.label"),
-		popup: $.t("barber.desc")
+		label: $.t("abandoned.label"),
+		popup: $.t("abandoned.desc")
 	}],
 
 // Alchemy Supplies
 	alchemy: [{
-		coords: [[59.297,72.688]],
+		coords: [[52.719,62.609]], //new
 		label: $.t("alchemy.label"),
 		popup: $.t("alchemy.desc")
 	}],
 
 // Armourer
 	armourer: [{
-		coords: [[79.344,75.016],[40.125,100.906]],
+		coords: [[39.969,81.000]], //new
 		label: $.t("armourerjourney.label"),
 		popup: $.t("armourerjourney.desc")
 	},{
-		coords: [[56.000,75.453]],
+		coords: [[50.734,65.547]],  //todo
 		label: $.t("armouretodo.label"),
 		popup: $.t("armourertodo.desc")
 	}],
 
 // Armourer's Table
 	armourerstable: [{
-		coords: [[79.172,75.703],[56.641,75.313]],
+		coords: [[56.641,75.313]],
 		label: $.t("armourerstable.label"),
 		popup: $.t("armourerstable.desc")
 	}],
 
 // Bandit Camp
-	banditcamp: [],
+	banditcamp: [{
+		coords: [
+			[52.188,100.469], //new
+		],
+		label: $.t("sidebar.banditcamp"),
+		//popup: $.t("banditcamp.desc")
+	}],
+
+
 
 // Barber
 	barber: [{
 		coords: [
-			[78.063,73.594],
-			[0,0]
+			[64.531,63.641],
 		],
 		label: $.t("barber.label"),
 		popup: $.t("barber.desc")
@@ -58,15 +65,15 @@ window.mapdata_toussaint = {
 
 // Blacksmith
 	blacksmith: [{
-		coords: [[79.344,75.016]],
+		coords: [[0,0]], //check todo
 		label: $.t("blacksmithjourney.label"),
 		popup: $.t("blacksmithjourney.desc")
 	},{
-		coords: [[56.328,77.078]],
+		coords: [[0,0]], //check todo
 		label: $.t("blacksmithgardmaster.label"),
 		popup: $.t("blacksmithgardmaster.desc")
 	}],
-//todo 56.641,75.313 some blacksmtih
+
 
 // Brothel
 	brothel: [],
@@ -74,9 +81,12 @@ window.mapdata_toussaint = {
 // Entrance
 	entrance: [{
 		coords: [
-			[110.813,87.875],
+			[86.047,72.938], //new
 			[77.063,54.563],
-			[120.672,40.703],
+			[93.047,42.656], //new
+			[47.000,79.578], //new
+			[47.234,78.734], //new
+			[48.438,92.609], //new
 		],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
@@ -85,9 +95,7 @@ window.mapdata_toussaint = {
 // Grindstone
 	grindstone: [{
 		coords: [
-			[0,0],
-			[100.563,142.563],
-			[79.469,75.984]
+			[80.609,109.656], //new //todo check
 		],
 		label: $.t("grindstone.label"),
 		popup: $.t("grindstone.desc")
@@ -102,32 +110,28 @@ window.mapdata_toussaint = {
 	gwent: [],
 
 // Harbor
-	harbor: [{
-		coords: [
-			[0,0],
-		],
-		label: $.t("harbor.label"),
-		popup: $.t("harbor.desc")
-	}],
+	harbor: [],
 
 // Herbalist
 	herbalist: [{
-			coords: [[56.594,78.141]],
-			label: $.t("t:herbalist.label.xxx"),
-			popup: $.t("t:herbalist.desc.xxx")
-	},{
-			coords: [[109.750,58.344]],
-			label: $.t("t:herbalist.label.xxx"),
-			popup: $.t("t:herbalist.desc.xxx")
+		coords: [
+			[85.328,53.734], //new
+			[51.047,66.250], //new
+		],
+		label: $.t("herbalist.label"),
+		popup: $.t("herbalist.desc")
 	}],
+
+
 
 
 // Hidden Treasure
 	hidden: [{
 		coords: [
-			[85.313,40.594],
-			[119.797,60.359],
-			[115.609,57.750],
+			[69.203,42.016], //new
+			[92.125,54.938], //new
+			[88.922,53.391], //new
+			[57.859,85.031], //new!
 		],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.desc")
@@ -135,19 +139,19 @@ window.mapdata_toussaint = {
 
 // Innkeep
 	innkeep: [{
-			coords: [[94.359,91.813]],
+			coords: [[75.406,75.188]],
 			label: $.t("t:innkeep.label.cockatraice"),
 			popup: $.t("t:innkeep.desc.cockatraice")
 		},{
-				coords: [[78.281,72.17]],
+				coords: [[64.656,62.734]],
 				label: $.t("t:innkeep.label.xxx"),
 				popup: $.t("t:innkeep.desc.xxx")
 		},{
-				coords: [[57.453,70.938]],
-				label: $.t("t:innkeep.label.xxx"),
+				coords: [[51.438,61.234]],
+				label: $.t("t:innkeep.label.xxx"), //new
 				popup: $.t("t:innkeep.desc.xxx")
 		},{
-				coords: [[42.031,100.844]],
+				coords: [[41.328,81.109]], //new
 				label: $.t("t:innkeep.label.xxx"),
 				popup: $.t("t:innkeep.desc.xxx")
 		}],
@@ -159,9 +163,9 @@ window.mapdata_toussaint = {
 // Monster Nest
 	monsternest: [{
 		coords: [
-			[86.094,89.672],
-			[52.625,104.969],
-			[69.469,40.828],
+			[70.156,74.109], //new
+			[48.172,83.641], //new
+			[58.969,42.047], //new
 		],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc")
@@ -171,14 +175,14 @@ window.mapdata_toussaint = {
 // Notice Board
 	notice: [{
 		coords: [
-			[126.563,69.063],
-			[108.375,60.313],
-			[93.875,91.250],
-			[59.750,75.000],
-			[77.250,113.250],
-			[43.500,99.000],
-			[89.000,132.750],
-			[120.875,77.938],
+			// [126.563,69.063], //todo ??
+			[84.391,55.125], //new
+			[75.141,74.844], //new
+			[52.047,63.500], //new //todo check
+			[63.875,89.469], //new //todo check
+			[41.750,80.313],
+			[71.094,102.594], //new //todo check
+			[93.609,65.781], //new //todo check
 
 		],
 		label: $.t("notice.label"),
@@ -188,19 +192,14 @@ window.mapdata_toussaint = {
 // Person in Distress
 	pid: [{
 		coords: [
-			[115.203,39.375],
+			[88.813,41.219], //new
 		],
 		label: $.t("pid.label"),
 		popup: $.t("pid.desc")
 	}],
 
 // Place of Power
-	pop: [{
-		coords: [[0,0]],
-		label: $.t("pop.label"),
-		popupTitle: $.t("pop.popup", {sign: $.t("signs.igni")}),
-		popup: $.t("pop.desc")
-	}],
+	pop: [],
 
 // Point of Interest
 	poi: [],
@@ -208,54 +207,62 @@ window.mapdata_toussaint = {
 // Shopkeeper
 	shopkeeper: [{
 		coords: [
-			[109.672,87.4383],
-			[56.500,76.641],
+			[85.391,72.594], //new //after you cleared the Vineyard
+			[50.719,65.109], //new
 		],
-		label: $.t("shopkeeper.label"),
-		popup: $.t("shopkeeper.desc")
+		label: $.t("sidebar.shopkeeper"),
+		//popup: $.t("shopkeeper.desc")
 	}],
 
 // Sign Post
 	signpost: [{
-		coords: [[110.125,90.813]],
+		coords: [[85.578,74.844]], //new
 		label: $.t("t:signpost.label.dulcineawindmill"),
 		popup: $.t("t:signpost.desc.dulcineawindmill")
 	}, {
-		coords: [[96.156,92.422]],
+		coords: [[76.563,75.891]], //new
 		label: $.t("t:signpost.label.cockatraice"),
 		popup: $.t("t:signpost.desc.cockatraice")
 	}, {
-		coords: [[187.156,81.969]],
+		coords: [[70.719,69.219]], //new
 		label: $.t("t:signpost.label.corvobianco"),
 		popup: $.t("t:signpost.desc.corvobianco")
 	}, {
-		coords: [[68.734,61.984]],
+		coords: [[58.594,55.828]],
 		label: $.t("t:signpost.label.palace"),
 		popup: $.t("t:signpost.desc.palace")
 	}, {
-		coords: [[58.594,59.219]],
+		coords: [[52.188,53.859]],
 		label: $.t("t:signpost.label.palacegardens"),
 		popup: $.t("t:signpost.desc.palacegardens")
 	}, {
-		coords: [[53.797,80.406]],
+		coords: [[49.188,67.703]], //new
 		label: $.t("t:signpost.label.gate"),
 		popup: $.t("t:signpost.desc.gate")
 	}, {
-		coords: [[39.438,98.344]],
+		coords: [[39.563,79.563]], //new
 		label: $.t("t:signpost.label.francollarts"),
 		popup: $.t("t:signpost.desc.francollarts")
 	}, {
-		coords: [[98.438,40.453]],
+		coords: [[77.813,41.813]],
 		label: $.t("t:signpost.label.fort"),
 		popup: $.t("t:signpost.desc.fort")
 	}, {
-		coords: [[119.063,48.813]],
+		coords: [[91.297,47.344]],
 		label: $.t("t:signpost.label.fox"),
 		popup: $.t("t:signpost.desc.fox")
 	}, {
-		coords: [[109.656,61.719]],
+		coords: [[85.422,55.938]],
 		label: $.t("t:signpost.label.castelravello"),
 		popup: $.t("t:signpost.desc.castelravello")
+	}, {
+		coords: [[47.969,78.094]], //new
+		label: $.t("t:signpost.label.cemetry"),
+		popup: $.t("t:signpost.desc.cemetry")
+	}, {
+		coords: [[55.359,88.313]], //new!
+		label: $.t("t:signpost.label.prison"),
+		popup: $.t("t:signpost.desc.prison")
 	}],
 
 
@@ -264,31 +271,31 @@ window.mapdata_toussaint = {
 
 //// (Side) Quests
 sidequests: [{
-		coords: [[93.578,92.125]],
+		coords: [[74.60,75.50]],
 		label: $.t("t:sidequests.label.gwenttournment"),
 		popup: $.t("t:sidequests.desc.gwenttournment")
 	}, {
-		coords: [[93.891,92.625]],
+		coords: [[74.60,77.00]],
 		label: $.t("t:sidequests.label.WildKingdom"),
 		popup: $.t("t:sidequests.desc.WildKingdom")
 	}, {
-		coords: [[92.641,91.953]],
+		coords: [[74.60,76.50]],
 		label: $.t("t:sidequests.label.kingforhire"),
 		popup: $.t("t:sidequests.desc.kingforhire")
 	}, {
-		coords: [[92.641,91.953]],
+		coords: [[74.60,76.00]],
 		label: $.t("t:sidequests.label.winewars"),
 		popup: $.t("t:sidequests.desc.winewars")
 	}, {
-		coords: [[58.672,69.984]],
+		coords: [[52.063,60.797]], //new
 		label: $.t("t:sidequests.label.facethestrage"),
 		popup: $.t("t:sidequests.desc.facethestrage")
 	}, {
-		coords: [[123.125,53.641]],
+		coords: [[94.609,50.297]],
 		label: $.t("t:sidequests.label.bigfeet"),
 		popup: $.t("t:sidequests.desc.bigfeet")
 	}, {
-		coords: [[108.328,59.875]],
+		coords: [[83.891,55.156]],
 		label: $.t("t:sidequests.label.knightstale"),
 		popup: $.t("t:sidequests.desc.knightstale")
 	}],
@@ -301,11 +308,11 @@ sidequests: [{
 
 //// Contracts
 contracts: [{
-		coords: [[93.578,91.7503]],
+		coords: [[74.60,76.50]],
 		label: $.t("t:contracts.label.biggamehunter"),
 		popup: $.t("t:contracts.desc.biggamehunter")
 	},{
-			coords: [[93.578,91.7503]],
+			coords: [[74.60,75]],
 			label: $.t("t:contracts.label.coldasice"),
 			popup: $.t("t:contracts.desc.coldasice")
 		}],
@@ -317,6 +324,7 @@ contracts: [{
 //			label: $.t("t:vintercontract.label.1"),
 //			popup: $.t("t:vintercontract.desc.1")
 //		}],
+//todo 49.047,92.781 (NEW!)
 
 // Spoils of War
 	spoils: []
