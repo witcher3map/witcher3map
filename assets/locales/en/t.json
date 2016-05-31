@@ -50,60 +50,51 @@
 	},
 	"gwent": {
 		"label": {
-			"XXX": "XXX",
 			"XXX": "XXX"
 		},
 		"desc": {
-			"XXX": "XXX",
 			"XXX": "XXX"
 		},
 		"popup": {
-			"XXX": "XXX",
 			"XXX": "XXX"
 		}
 	},
 	"innkeep": {
-		"inns": {
+		"label": {
 			"cockatraice": "XXX",
-			"XXX": "XXX"
+			"auberge": "The Ruddy Brush Auberge"
 		},
 		"popup": "Innkeep",
 		"desc": {
 			"cockatraice": "XXX",
-			"XXX": "XXX"
+			"auberge": "accessible after you cleared the Side"
 		}
 	},
 	"misc": {
-		"XXX": "XXX",
 		"XXX": "XXX"
 	},
 	"poi": {
 		"label": {
-			"XXX": "XXX",
-			"XXX": "XXX"
+			"manticoresteelsword": "Manticore steel sword",
+			"manticoretrousersandboots":"Manticore trousers & Manticore boots"
 		},
 		"popupTitle": {
-			"XXX": "XXX",
 			"XXX": "XXX"
 		},
 		"desc": {
-			"XXX": "XXX",
-			"XXX": "XXX"
+			"manticoretrousersandboots": "inside the temple"
 		}
 	},
 	"pop": {
 		"desc": {
-			"XXX": "XXX",
 			"XXX": "XXX"
 		}
 	},
 	"shopkeeper": {
 		"label": {
-			"XXX": "XXX",
 			"XXX": "XXX"
 		},
 		"desc": {
-			"XXX": "XXX",
 			"XXX": "XXX"
 		}
 	},
@@ -116,18 +107,48 @@
 			"facethestrage": "Turn and Face the Strange",
 			"bigfeet": "Big Feet to Fill: The FIrst Group",
 			"knightstale": "A Knight's Tale",
-			"XXX": "XXX",
+			"spon": "Spoontaneous Profits!",
+			"escapology":"Applied Escapology",
+			"tilldeath":"Till Death Do You Part",
+			"huntgriffin":"Scavenger Hunt: Grandmaster Griffin Gear",
+			"huntfeline":"Scavenger Hunt: Grandmaster Feline Gear",
+			"huntursine":"Scavenger Hunt: Grandmaster Ursin Gear",
+			"huntmanticor":"Scavenger Hunt: Grandmaster Manticore Gear",
+			"huntwolven":"Scavenger Hunt: Grandmaster Wolven Gear",
+			"granite":"Goodness, Gracious, Great Balls of Granite!",
+			"onlyone":"There can be Only One",
+			"placelikehome":"No Place like Home",
+			"smittenkight":"The Warble of a Smitten Knight",
+			"wildkingdom":"Mutual Of Becaular's Wild Kingdom",
+			"master":"Master Master Master Maser!",
+			"suffering":"The Suffering of Young Francois",
+			"bigfleet":"Big Feet to Fill: The Fith Group",
 			"XXX": "XXX"
 		},
 		"desc": {
-			"gwenttournment": "XXX",
-			"WildKingdom": "XXX",
-			"kingforhire": "XXX",
-			"winewars": "XXX",
+			"gwenttournment": "Level 38 - You get this Quest at the Notice Board near the Cockatrice Inn",
+			"WildKingdom": "Level 46 - You get this Quest at the Notice Board near the Cockatrice Inn",
+			"kingforhire": "XXX - You get this Quest at the Notice Board near the Cockatrice Inn",
+			"winewars": "Level 37 - You get this Quest at the Notice Board near the Cockatrice Inn",
 			"facethestrage": "Level 35 - you should automaticly pick up this Quest, while your the Main Quest `La Cage au Fou`",
 			"bigfeet": "XXX",
 			"knightstale": "Level 40 - You get this Quest at the Notice Board in Castel Ravello Vineyard",
-			"XXX": "XXX",
+			"spon": "Level 42 - This Quests starts if you Pick up the Spoon, located inside the House on Barrel",
+			"escapology":"Level 40 - You start this Quest by looting the Hidden Treasure",
+			"tilldeath":"Level 36 - You get this Quest from Charles Lanzano, located in first Floor of The Clever Clogs Tavern",
+			"huntgriffin":"",
+			"huntfeline":"",
+			"huntursine":"",
+			"huntmanticor":"",
+			"huntwolven":"",
+			"granite":"Level 36 - ",
+			"onlyone":"You get this Quest at the Notice Board at the Gran'Place",
+			"placelikehome":"You get this Quest at the Notice Board at the Gran'Place",
+			"smittenkight":"Level 35 - You get this Quest at the Notice Board at the Gran'Place",
+			"wildkingdom":"You get this Quest at the Notice Board at the Gran'Place",
+			"master":"Level 40 - Find all Diagramms",
+			"hidden":"Mini Sidequest from a Hidden Treasure",
+			"save":"Persons in Distress, save them to complete the Quest",
 			"XXX": "XXX"
 		}
 	},
@@ -136,29 +157,32 @@
 		"label": {
 			"biggamehunter": "Big Game Hunter",
 			"coldasice": "Feet as Cold as Ice",
-			"XXX": "XXX",
-			"XXX": "XXX",
-			"XXX": "XXX",
 			"XXX": "XXX"
 		},
 		"desc": {
 			"biggamehunter": "Level 37 Witcher Contract. Started on the Notice Board near Dulcinea Windmill",
-			"coldasice": "Level 45.",
-			"XXX": "XXX",
-			"XXX": "XXX",
-			"XXX": "XXX",
+			"coldasice": "Level 45 - You get this Quest at the Notice Board near the Cockatrice Inn",
+
+
+
 			"XXX": "XXX"
 		}
 	},
 	"vintercontract": {
 		"label": {
-			"1": "...",
-			"XXX": "XXX",
+			"1": "XXX",
+			"2": "XXX",
 			"XXX": "XXX"
 		},
 		"desc": {
-			"XXX": "XXX",
 			"1": "XXX",
+			"2": "XXX",
+			"XXX": "XXX"
+		}
+	},
+	"misc": {
+		"desc": {
+			"pop2": "Inside the Monster Den",
 			"XXX": "XXX"
 		}
 	},
@@ -178,8 +202,12 @@
 			"castelravello": "Castel Ravello Vineyard",
 			"cemetry": "Mère-Lachaiselongue Cemetry",
 			"prison": "Toussaint Prison",
-			"XXX": "XXX",
-			"XXX": "XXX"
+			"farm": "Gelenser Farm",
+			"ruins": "Termes Palace Runins",
+			"mutnaruins":"Tesham Mutna Ruins",
+			"granplace":"Gran'Place",
+			"tunier":"Tourney Grounds",
+			"cottage": "Trastamara Hunting Cottage"
 		},
 		"desc": {
 			"dulcineawindmill": "XXX",
@@ -196,8 +224,11 @@
 			"castelravello": "XXX",
 			"cemetry": "XXX",
 			"prison": "XXX",
-			"XXX": "XXX",
-			"XXX": "XXX"
+			"farm": "XXX",
+			"mutnaruins":"XXX",
+			"granplace":"XXX",
+			"tunier":"",
+			"cottage": "XXX"
 		}
 	}
 }

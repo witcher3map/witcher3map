@@ -266,13 +266,13 @@ icons.smugglers = L.icon({
 });
 
 icons.sidequests = L.icon({
-	iconUrl  : '../files/images/icons/sidequest.png',
+	iconUrl  : '../files/images/icons/sidequests.png',
 	iconSize : [10, 30]
 });
 
 icons.contracts = L.icon({
-	iconUrl  : '../files/images/icons/sidequest.png',
-	iconSize : [10, 30]
+	iconUrl  : '../files/images/icons/tempcontract.png',
+	iconSize : [18, 29]
 });
 
 icons.vinecontract = L.icon({
