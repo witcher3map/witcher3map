@@ -505,6 +505,10 @@ window.mapdata_toussaint = {
 		coords: [[78.328,107.422]],
 		label: $.t("t:signpost.label.montcranecastle"),
 		popup: $.t("t:signpost.desc.montcranecastle")
+	}, {
+		coords: [[82.219,85.750]],
+		label: $.t("t:signpost.label.duntynnecastle"),
+		popup: $.t("t:signpost.desc.duntynnecastle")
 	}],
 
 
