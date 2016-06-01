@@ -620,7 +620,7 @@ i.smugglers { background-image:url('../images/icons/smugglers.png'); }
 i.spoils { background-image:url('../images/icons/spoils.png'); }
 i.sidequests { background-image:url('../images/icons/sidequests.png'); }
 i.contracts { background-image:url('../images/icons/tempcontract.png'); }
-i.vinecontract { background-image:url('../images/icons/tempvinecontract.png'); }
+i.vintnercontract { background-image:url('../images/icons/vintnercontract.png'); }
 .leaflet-container {
 	background: #222;
 }

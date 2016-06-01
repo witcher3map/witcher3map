@@ -607,32 +607,32 @@ contracts: [{
 		label: $.t("t:contracts.label.biggamehunter"),
 		popup: $.t("t:contracts.desc.biggamehunter")
 	},{
-			coords: [[74.60,75.00]],
-			label: $.t("t:contracts.label.coldasice"),
-			popup: $.t("t:contracts.desc.coldasice")
-		},{
-			coords: [[71.719,102.719]],
-			label: $.t("t:contracts.label.bonvineblues"),
-			popup: $.t("t:contracts.desc.bonvineblues")
-		},{
-			coords: [[64.328,89.797]],
-			label: $.t("t:contracts.label.tufo"),
-			popup: $.t("t:contracts.desc.tufo")
-		}],
+		coords: [[74.60,75.00]],
+		label: $.t("t:contracts.label.coldasice"),
+		popup: $.t("t:contracts.desc.coldasice")
+	},{
+		coords: [[71.719,102.719]],
+		label: $.t("t:contracts.label.bonvineblues"),
+		popup: $.t("t:contracts.desc.bonvineblues")
+	},{
+		coords: [[64.328,89.797]],
+		label: $.t("t:contracts.label.tufo"),
+		popup: $.t("t:contracts.desc.tufo")
+	}],
 
 
 // Big Game Hunter - Level 37 - 93.578,91.750	 (NB)
 
-//// Vintercontract
-//	vintercontract: [{
-//			coords: [[110.172,87.125]],
-//			label: $.t("t:vintercontract.label.1"),
-//			popup: $.t("t:vintercontract.desc.1")
-//		},{
-//				coords: [[49.047,92.781]],
-//				label: $.t("t:vintercontract.label.2"),
-//				popup: $.t("t:vintercontract.desc.2")
-//	}],
+// Vintner Contract
+	vintnercontract: [{
+			coords: [[110.172,87.125]],
+			label: $.t("t:vintnercontract.label.1"),
+			popup: $.t("t:vintnercontract.desc.1")
+		},{
+			coords: [[49.047,92.781]],
+			label: $.t("t:vintnercontract.label.2"),
+			popup: $.t("t:vintnercontract.desc.2")
+	}],
 
 
 // Spoils of War
