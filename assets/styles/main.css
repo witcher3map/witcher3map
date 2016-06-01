@@ -595,6 +595,7 @@ i.armourer { background-image:url('../images/icons/armourer.png'); }
 i.armourerstable { background-image:url('../images/icons/armourerstable.png'); }
 i.banditcamp { background-image:url('../images/icons/banditcamp.png'); }
 i.barber { background-image:url('../images/icons/barber.png'); }
+i.hansebase { background-image:url('../images/icons/hansebase.png'); }
 i.blacksmith { background-image:url('../images/icons/blacksmith.png'); }
 i.brothel { background-image:url('../images/icons/brothel.png'); }
 i.entrance { background-image:url('../images/icons/entrance.png'); }
@@ -605,19 +606,21 @@ i.harbor { background-image:url('../images/icons/harbor.png'); }
 i.herbalist { background-image:url('../images/icons/herbalist.png'); }
 i.hidden { background-image:url('../images/icons/hidden.png'); }
 i.innkeep { background-image:url('../images/icons/tavern.png'); }
+i.kid { background-image:url('../images/icons/kid.png'); }
 i.monsternest { background-image:url('../images/icons/monsternest.png'); }
 i.monsterden { background-image:url('../images/icons/monsterden.png'); }
 i.notice { background-image:url('../images/icons/notice.png'); }
 i.pid { background-image:url('../images/icons/pid.png'); }
 i.pop { background-image:url('../images/icons/pop.png'); }
 i.poi { background-image:url('../images/icons/poi.png'); }
+i.signalfire { background-image:url('../images/icons/signalfire.png'); }
 i.signpost { background-image:url('../images/icons/fasttravel.png'); }
 i.shopkeeper { background-image:url('../images/icons/merchant.png'); }
 i.smugglers { background-image:url('../images/icons/smugglers.png'); }
 i.spoils { background-image:url('../images/icons/spoils.png'); }
 i.sidequests { background-image:url('../images/icons/sidequests.png'); }
 i.contracts { background-image:url('../images/icons/tempcontract.png'); }
-i.vinecontract { background-image:url('../images/icons/tempvinecontract.png'); }
+i.vintnercontract { background-image:url('../images/icons/vintnercontract.png'); }
 .leaflet-container {
 	background: #222;
 }

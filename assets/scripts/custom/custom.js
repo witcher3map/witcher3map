@@ -7,6 +7,7 @@ $(function() {
 		markers.armourerstable,
 		markers.banditcamp,
 		markers.barber,
+		markers.hansebase,
 		markers.blacksmith,
 		markers.brothel,
 		markers.entrance,
@@ -17,6 +18,7 @@ $(function() {
 		markers.herbalist,
 		markers.hidden,
 		markers.innkeep,
+		markers.kid,
 		markers.monsterden,
 		markers.monsternest,
 		markers.notice,
@@ -24,11 +26,12 @@ $(function() {
 		markers.pop,
 		markers.poi,
 		markers.shopkeeper,
+		markers.signalfire,
 		markers.signpost,
 		markers.smugglers,
 		markers.sidequests,
 		markers.contracts,
-		//markers.vinecontract,
+		markers.vintnercontract,
 		markers.spoils
 	];
 

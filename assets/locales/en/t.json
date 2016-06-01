@@ -43,6 +43,10 @@
       "label":"Barber",
       "desc":"Visit barbers for a shave or a new haircut. "
    },
+   "hansebase":{
+      "label":"Hanse Base",
+      "desc":"Expect to run into armed-to-the-teeth bandits here. "
+   },
    "blacksmith":{
       "amateurLabel":"Amateur Blacksmith",
       "journeymanLabel":"Journeyman Blacksmith",
@@ -70,6 +74,10 @@
       "desc":{
          "cockatraice":"XXX"
       }
+   },
+   "kid":{
+      "label":"Knight Errant in Distress",
+      "desc":"Here you can help a knight errant fight bandits. "
    },
    "misc":{
       "XXX":"XXX"
@@ -190,7 +198,7 @@
          "bonvineblues":"Level 38 - "
       }
    },
-   "vintercontract":{
+   "vintnercontract":{
       "label":{
          "1":"XXX",
          "2":"XXX",
@@ -216,6 +224,10 @@
          "XXX":"XXX"
       }
    },
+   "signalfire":{
+      "label":"Signal Fire",
+      "desc":"If a signal fire is lit by a torch runner, reinforcements will arrive to help the bandits in their fight. "
+   },
    "signpost":{
       "label":{
          "dulcineawindmill":"Dulcinea Windmill",
@@ -240,8 +252,11 @@
          "statue":"Prophet Lebioda Statue",
          "hortense":"Hortense Vineyard",
          "flovive":"Flovive",
-				 "fortussar":"Fort Ussar Ruins",
-         "cottage":"Trastamara Hunting Cottage"
+			"fortussar":"Fort Ussar Ruins",
+         "cottage":"Trastamara Hunting Cottage",
+         "montcranecastle":"Mont Crane Castle",
+         "duntynnecastle":"Dun Tynne Castle",
+         "duntynnehillside":"Dun Tynne Hillside"
       },
       "desc":{
          "dulcineawindmill":"XXX",
@@ -265,7 +280,10 @@
          "statue":"",
          "hortense":"",
          "flovive":"",
-         "cottage":"XXX"
+         "cottage":"XXX",
+         "montcranecastle":"Duke Roger the Reveler was, as his nickname might suggest, no teetotaler. The story of his alcohol-fueled romps number today amoung the most cherished of traditional Toussaint tales. This state of perpetual tipsiness might just be what drove his decision to surround the duchy with a series of castles, meant to protect Toussaint from the barbarous highlanders of Mount Gorgon. Thing is, no one has ever heard of such a folk.",
+         "duntynnecastle":"This castle is tied to the dark legend of Waltharius the Burly, the dashing knight who wed the beautiful Nazairi princess Hiltgunt. Waltharius then embarked on a lengthy campaign and returned to find his wife in carnal relations with his relative, upon which he flew into a rage and murdered them both. The moral of the tale is held to be that nothing good ever comes from Nazair, and that when one has a young wife, one should stay at home instead of gallivanting about on campaigns.",
+         "duntynnehillside":"The slopes of Dun Tynne long lay barren. Potential entrepreneurs were scared off by the bloody legend of Waltharius the Burly and since the area had never produced wines worthy of historical metion anyways, they had little incentive to conquer this fear. The estate's most recent owner, however - a nobleman named Roderick - decided to plant vines along the slopes stretching from the Blessure and Sansretour valleys up to the keep. As a precaution, he also planted olive groves, a much surer investment."
       }
    }
 }

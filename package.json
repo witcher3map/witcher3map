@@ -63,9 +63,6 @@
     "uglify-js": "^2.4.24",
     "watch": "^0.16.0"
   },
-  "config": {
-    "mapsurl": "https://dl.dropboxusercontent.com/s/xwf2wyl1tokhnqy/maps_pngquant.zip"
-  },
   "scripts": {
     "postinstall": "npm run build",
     "clean": "rimraf dist/favicon.ico dist/sitemap.xml dist/index.html dist/files/fonts dist/files/images dist/files/locales dist/files/scripts dist/files/styles dist/s dist/v dist/w",
@@ -97,7 +94,7 @@
     "watch:styles": "watch \"npm run build:styles\" assets/styles",
     "build:watch": "parallelshell \"npm run watch:fonts\" \"npm run watch:images\" \"npm run watch:locales\" \"npm run watch:markup\" \"npm run watch:scripts\" \"npm run watch:styles\"",
     "webserver": "node node_scripts/server.js",
-    "getmaps": "download --extract --out dist/files $npm_package_config_mapsurl",
+    "getmaps": "download --extract --out dist/files https://dl.dropboxusercontent.com/s/xwf2wyl1tokhnqy/maps_pngquant.zip",
     "sitemap": "node node_scripts/sitemap.js",
     "start": "npm run webserver"
   },
