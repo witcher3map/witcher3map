@@ -170,6 +170,11 @@ icons.barber = L.icon({
 	iconSize : [30, 30]
 });
 
+icons.base = L.icon({
+	iconUrl  : '../files/images/icons/base.png',
+	iconSize : [29, 30]
+});
+
 icons.blacksmith = L.icon({
 	iconUrl  : '../files/images/icons/blacksmith.png',
 	iconSize : [27, 30]

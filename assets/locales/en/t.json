@@ -43,6 +43,12 @@
       "label":"Barber",
       "desc":"Visit barbers for a shave or a new haircut. "
    },
+   "base":{
+      "label":{
+         "hanse":"Hanse Base"
+      },
+      "desc":"Expect to run into armed-to-the-teeth bandits here. "
+   },
    "blacksmith":{
       "amateurLabel":"Amateur Blacksmith",
       "journeymanLabel":"Journeyman Blacksmith",

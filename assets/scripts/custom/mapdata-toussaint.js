@@ -58,7 +58,6 @@ window.mapdata_toussaint = {
 			[52.188,100.469],
 			[94.984,42.109],
 			[81.125,109.641],
-			[116.047,71.625],
 			[114.250,75.781],
 		],
 		label: $.t("sidebar.banditcamp"),
@@ -74,6 +73,13 @@ window.mapdata_toussaint = {
 		],
 		label: $.t("barber.label"),
 		popup: $.t("barber.desc")
+	}],
+
+// Base
+	base: [{
+		coords: [[116.047,71.625]],
+		label: $.t("t:base.label.hanse"),
+		popup: $.t("t:base.desc")
 	}],
 
 // Blacksmith
