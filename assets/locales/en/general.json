@@ -3,7 +3,8 @@
 		"velen": "Velen & Novigrad",
 		"skellige": "Skellige Isles",
 		"white_orchard": "White Orchard",
-		"kaer_morhen": "Kaer Morhen"
+		"kaer_morhen": "Kaer Morhen",
+		"toussaint":"Toussaint"
 	},
 	"home": {
 		"tagline": "Unofficial The Witcher 3 Interactive Maps<br>(Currently under development)",
@@ -36,19 +37,23 @@
 		"guarded": "Guarded Treasure",
 		"gwent": "Gwent Player",
 		"harbor": "Harbor",
+		"hansebase": "Hanse Base",
 		"herbalist": "Herbalist",
 		"hidden": "Hidden Treasure",
 		"innkeep": "Innkeep",
+		"kid":"Knight in Distress",
 		"monsternest": "Monster Nest",
 		"monsterden": "Monster Den",
 		"notice": "Notice Board",
 		"pid": "Person in Distress",
 		"pop": "Place of Power",
 		"poi": "Point of Interest",
+		"signalfire": "Signal Fire",
 		"signpost": "Sign Post",
 		"shopkeeper": "Shopkeeper",
 		"smugglers": "Smugglers' Cache",
-		"spoils": "Spoils of War"
+		"spoils": "Spoils of War",
+		"vintnercontract": "Vintner Contract"
 	},
 	"controls": {
 		"show": "Show All",

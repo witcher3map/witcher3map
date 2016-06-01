@@ -18,7 +18,7 @@ $.i18n.init(i18noptions, function() {
 		} else if (namespace == "s") {
 			getMapdata('skellige');
 		} else if (namespace == "t") {
-				getMapdata('toussaint');
+			getMapdata('toussaint');
 		} else if (namespace == "k") {
 			getMapdata('kaer_morhen');
 		}
@@ -29,7 +29,7 @@ $(function() {
 	//fix bug where sidebar scrollbar doesn't appear when the language drop-down opens
 	$('.dd-selected').on('click', function() {
 		setTimeout(function() {
-				$("#sidebar").getNiceScroll().resize();
+			$("#sidebar").getNiceScroll().resize();
 		}, 500);
 	});
 });
@@ -170,6 +170,11 @@ icons.barber = L.icon({
 	iconSize : [30, 30]
 });
 
+icons.hansebase = L.icon({
+	iconUrl  : '../files/images/icons/hansebase.png',
+	iconSize : [29, 30]
+});
+
 icons.blacksmith = L.icon({
 	iconUrl  : '../files/images/icons/blacksmith.png',
 	iconSize : [27, 30]
@@ -220,6 +225,11 @@ icons.innkeep = L.icon({
 	iconSize : [26, 30]
 });
 
+icons.kid = L.icon({
+	iconUrl  : '../files/images/icons/kid.png',
+	iconSize : [28, 30]
+});
+
 icons.monsterden = L.icon({
 	iconUrl  : '../files/images/icons/monsterden.png',
 	iconSize : [30, 27]
@@ -255,6 +265,11 @@ icons.shopkeeper = L.icon({
 	iconSize : [21, 30]
 });
 
+icons.signalfire = L.icon({
+	iconUrl  : '../files/images/icons/signalfire.png',
+	iconSize : [17, 34]
+});
+
 icons.signpost = L.icon({
 	iconUrl  : '../files/images/icons/fasttravel.png',
 	iconSize : [27, 34]
@@ -275,11 +290,10 @@ icons.contracts = L.icon({
 	iconSize : [18, 29]
 });
 
-icons.vinecontract = L.icon({
- iconUrl  : '../files/images/icons/tempvinecontract.png',
- iconSize : [32, 28]
+icons.vintnercontract = L.icon({
+ iconUrl  : '../files/images/icons/vintnercontract.png',
+ iconSize : [23, 34]
 });
-
 
 icons.spoils = L.icon({
 	iconUrl  : '../files/images/icons/spoils.png',

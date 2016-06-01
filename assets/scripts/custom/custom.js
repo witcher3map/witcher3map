@@ -13,10 +13,12 @@ $(function() {
 		markers.grindstone,
 		markers.guarded,
 		markers.gwent,
+		markers.hansebase,
 		markers.harbor,
 		markers.herbalist,
 		markers.hidden,
 		markers.innkeep,
+		markers.kid,
 		markers.monsterden,
 		markers.monsternest,
 		markers.notice,
@@ -24,13 +26,20 @@ $(function() {
 		markers.pop,
 		markers.poi,
 		markers.shopkeeper,
+		markers.signalfire,
 		markers.signpost,
 		markers.smugglers,
 		markers.sidequests,
 		markers.contracts,
-		//markers.vinecontract,
+		markers.vintnercontract,
 		markers.spoils
 	];
+
+	// little hack to remove empty marker array so they don't break the page
+	function remove(arrOriginal, elementToRemove){
+		return arrOriginal.filter(function(el){return el !== elementToRemove;});
+	}
+	allLayers = remove(allLayers, undefined);
 
 	var mobile   = ($('#sidebar').width() < 300);
 	var wayPoint = false;

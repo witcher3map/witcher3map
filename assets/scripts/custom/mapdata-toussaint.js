@@ -47,6 +47,7 @@ window.mapdata_toussaint = {
 	armourerstable: [{
 		coords: [
 			[50.141,64.219],
+			[116.538,71.366],
 		],
 		label: $.t("armourerstable.label"),
 		popup: $.t("armourerstable.desc")
@@ -57,12 +58,10 @@ window.mapdata_toussaint = {
 		coords: [
 			[52.188,100.469],
 			[94.984,42.109],
-			[81.125,109.641],
-			[116.047,71.625],
 			[114.250,75.781],
 		],
 		label: $.t("sidebar.banditcamp"),
-		//popup: $.t("banditcamp.desc")
+		popup: $.t("banditcamp.desc")
 	}],
 
 
@@ -74,6 +73,17 @@ window.mapdata_toussaint = {
 		],
 		label: $.t("barber.label"),
 		popup: $.t("barber.desc")
+	}],
+
+// Hanse Base
+	hansebase: [{
+		coords: [
+			[116.047,71.625],
+			[96.438,44.750],
+			[80.813,108.313]
+		],
+		label: $.t("t:hansebase.label"),
+		popup: $.t("t:hansebase.desc")
 	}],
 
 // Blacksmith
@@ -120,6 +130,7 @@ window.mapdata_toussaint = {
 		coords: [
 			[79.625,109.094],
 			[50.219,64.422],
+			[116.438,71.359],
 		],
 		label: $.t("grindstone.label"),
 		popup: $.t("grindstone.desc")
@@ -229,6 +240,14 @@ window.mapdata_toussaint = {
 				popup: $.t("t:misc.desc.aftercleared")
 		}],
 
+// Knight Errant in Distress
+	kid: [{
+		coords: [
+			[77.156,103.594]
+		],
+		label: $.t("t:kid.label"),
+		popup: $.t("t:kid.desc")
+	}],
 
 // Monster Den
 	monsterden: [{
@@ -280,7 +299,6 @@ window.mapdata_toussaint = {
 			[88.813,41.219],
 			[97.813,49.516],
 			[38.203,54.750],
-			[77.156,103.594],
 			[112.969,81.328],
 		],
 		label: $.t("pid.label"),
@@ -367,8 +385,6 @@ window.mapdata_toussaint = {
 	}
 ],
 
-
-
 // Shopkeeper
 	shopkeeper: [{
 		coords: [
@@ -379,7 +395,17 @@ window.mapdata_toussaint = {
 			[113.047,81.781],
 		],
 		label: $.t("sidebar.shopkeeper"),
-		//popup: $.t("shopkeeper.desc")
+		popup: $.t("shopkeeper.desc")
+	}],
+
+// Signal Fire
+	signalfire: [{
+		coords: [
+			[81.219,109.656],
+			[117.016,71.484],
+		],
+		label: $.t("t:signalfire.label"),
+		popup: $.t("t:signalfire.desc")
 	}],
 
 // Sign Post
@@ -475,6 +501,18 @@ window.mapdata_toussaint = {
 		coords: [[69.688,115.422]],
 		label: $.t("t:signpost.label.fortussar"),
 		popup: $.t("t:signpost.desc.fortussar")
+	}, {
+		coords: [[78.328,107.422]],
+		label: $.t("t:signpost.label.montcranecastle"),
+		popup: $.t("t:signpost.desc.montcranecastle")
+	}, {
+		coords: [[82.219,85.750]],
+		label: $.t("t:signpost.label.duntynnecastle"),
+		popup: $.t("t:signpost.desc.duntynnecastle")
+	}, {
+		coords: [[79.984,94.141]],
+		label: $.t("t:signpost.label.duntynnehillside"),
+		popup: $.t("t:signpost.desc.duntynnehillside")
 	}],
 
 
@@ -577,32 +615,32 @@ contracts: [{
 		label: $.t("t:contracts.label.biggamehunter"),
 		popup: $.t("t:contracts.desc.biggamehunter")
 	},{
-			coords: [[74.60,75.00]],
-			label: $.t("t:contracts.label.coldasice"),
-			popup: $.t("t:contracts.desc.coldasice")
-		},{
-			coords: [[71.719,102.719]],
-			label: $.t("t:contracts.label.bonvineblues"),
-			popup: $.t("t:contracts.desc.bonvineblues")
-		},{
-			coords: [[64.328,89.797]],
-			label: $.t("t:contracts.label.tufo"),
-			popup: $.t("t:contracts.desc.tufo")
-		}],
+		coords: [[74.60,75.00]],
+		label: $.t("t:contracts.label.coldasice"),
+		popup: $.t("t:contracts.desc.coldasice")
+	},{
+		coords: [[71.719,102.719]],
+		label: $.t("t:contracts.label.bonvineblues"),
+		popup: $.t("t:contracts.desc.bonvineblues")
+	},{
+		coords: [[64.328,89.797]],
+		label: $.t("t:contracts.label.tufo"),
+		popup: $.t("t:contracts.desc.tufo")
+	}],
 
 
 // Big Game Hunter - Level 37 - 93.578,91.750	 (NB)
 
-//// Vintercontract
-//	vintercontract: [{
-//			coords: [[110.172,87.125]],
-//			label: $.t("t:vintercontract.label.1"),
-//			popup: $.t("t:vintercontract.desc.1")
-//		},{
-//				coords: [[49.047,92.781]],
-//				label: $.t("t:vintercontract.label.2"),
-//				popup: $.t("t:vintercontract.desc.2")
-//	}],
+// Vintner Contract
+	vintnercontract: [{
+			coords: [[110.172,87.125]],
+			label: $.t("t:vintnercontract.label.1"),
+			popup: $.t("t:vintnercontract.desc.1")
+		},{
+			coords: [[49.047,92.781]],
+			label: $.t("t:vintnercontract.label.2"),
+			popup: $.t("t:vintnercontract.desc.2")
+	}],
 
 
 // Spoils of War
