@@ -57,7 +57,6 @@ window.mapdata_toussaint = {
 		coords: [
 			[52.188,100.469],
 			[94.984,42.109],
-			[81.125,109.641],
 			[114.250,75.781],
 		],
 		label: $.t("sidebar.banditcamp"),
@@ -392,6 +391,15 @@ window.mapdata_toussaint = {
 		//popup: $.t("shopkeeper.desc")
 	}],
 
+// Signal Fire
+	signalfire: [{
+		coords: [
+			[81.219,109.656],
+		],
+		label: $.t("t:signalfire.label"),
+		popup: $.t("t:signalfire.desc")
+	}],
+
 // Sign Post
 	signpost: [{
 		coords: [[85.578,74.844]],
@@ -485,6 +493,10 @@ window.mapdata_toussaint = {
 		coords: [[69.688,115.422]],
 		label: $.t("t:signpost.label.fortussar"),
 		popup: $.t("t:signpost.desc.fortussar")
+	}, {
+		coords: [[78.328,107.422]],
+		label: $.t("t:signpost.label.montcranecastle"),
+		popup: $.t("t:signpost.desc.montcranecastle")
 	}],
 
 

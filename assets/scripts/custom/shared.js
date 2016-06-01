@@ -260,6 +260,11 @@ icons.shopkeeper = L.icon({
 	iconSize : [21, 30]
 });
 
+icons.signalfire = L.icon({
+	iconUrl  : '../files/images/icons/signalfire.png',
+	iconSize : [17, 34]
+});
+
 icons.signpost = L.icon({
 	iconUrl  : '../files/images/icons/fasttravel.png',
 	iconSize : [27, 34]

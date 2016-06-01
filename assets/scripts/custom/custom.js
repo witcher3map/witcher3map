@@ -25,6 +25,7 @@ $(function() {
 		markers.pop,
 		markers.poi,
 		markers.shopkeeper,
+		markers.signalfire,
 		markers.signpost,
 		markers.smugglers,
 		markers.sidequests,

@@ -220,6 +220,10 @@
          "XXX":"XXX"
       }
    },
+   "signalfire":{
+      "label":"Signal Fire",
+      "desc":"If a signal fire is lit by a torch runner, reinforcements will arrive to help the bandits in their fight. "
+   },
    "signpost":{
       "label":{
          "dulcineawindmill":"Dulcinea Windmill",
@@ -244,8 +248,9 @@
          "statue":"Prophet Lebioda Statue",
          "hortense":"Hortense Vineyard",
          "flovive":"Flovive",
-				 "fortussar":"Fort Ussar Ruins",
-         "cottage":"Trastamara Hunting Cottage"
+			"fortussar":"Fort Ussar Ruins",
+         "cottage":"Trastamara Hunting Cottage",
+         "montcranecastle":"Mont Crane Castle"
       },
       "desc":{
          "dulcineawindmill":"XXX",
@@ -269,7 +274,8 @@
          "statue":"",
          "hortense":"",
          "flovive":"",
-         "cottage":"XXX"
+         "cottage":"XXX",
+         "montcranecastle":"Duke Roger the Reveler was, as his nickname might suggest, no teetotaler. The story of his alcohol-fueled romps number today amoung the most cherished of traditional Toussaint tales. This state of perpetual tipsiness might just be what drove his decision to surround the duchy with a series of castles, meant to protect Toussaint from the barbarous highlanders of Mount Gorgon. Thing is, no one has ever heard of such a folk."
       }
    }
 }
