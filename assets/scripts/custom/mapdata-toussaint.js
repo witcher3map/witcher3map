@@ -75,11 +75,15 @@ window.mapdata_toussaint = {
 		popup: $.t("barber.desc")
 	}],
 
-// Base
-	base: [{
-		coords: [[116.047,71.625]],
-		label: $.t("t:base.label.hanse"),
-		popup: $.t("t:base.desc")
+// Hanse Base
+	hansebase: [{
+		coords: [
+			[116.047,71.625],
+			[96.438,44.750],
+			[80.813,108.313]
+		],
+		label: $.t("t:hansebase.label"),
+		popup: $.t("t:hansebase.desc")
 	}],
 
 // Blacksmith

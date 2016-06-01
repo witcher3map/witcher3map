@@ -170,8 +170,8 @@ icons.barber = L.icon({
 	iconSize : [30, 30]
 });
 
-icons.base = L.icon({
-	iconUrl  : '../files/images/icons/base.png',
+icons.hansebase = L.icon({
+	iconUrl  : '../files/images/icons/hansebase.png',
 	iconSize : [29, 30]
 });
 

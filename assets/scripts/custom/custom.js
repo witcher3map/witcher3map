@@ -7,7 +7,7 @@ $(function() {
 		markers.armourerstable,
 		markers.banditcamp,
 		markers.barber,
-		markers.base,
+		markers.hansebase,
 		markers.blacksmith,
 		markers.brothel,
 		markers.entrance,
