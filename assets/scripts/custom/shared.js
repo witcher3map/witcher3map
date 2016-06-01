@@ -18,7 +18,7 @@ $.i18n.init(i18noptions, function() {
 		} else if (namespace == "s") {
 			getMapdata('skellige');
 		} else if (namespace == "t") {
-				getMapdata('toussaint');
+			getMapdata('toussaint');
 		} else if (namespace == "k") {
 			getMapdata('kaer_morhen');
 		}
@@ -29,7 +29,7 @@ $(function() {
 	//fix bug where sidebar scrollbar doesn't appear when the language drop-down opens
 	$('.dd-selected').on('click', function() {
 		setTimeout(function() {
-				$("#sidebar").getNiceScroll().resize();
+			$("#sidebar").getNiceScroll().resize();
 		}, 500);
 	});
 });
