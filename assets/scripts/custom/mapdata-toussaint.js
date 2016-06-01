@@ -238,6 +238,14 @@ window.mapdata_toussaint = {
 				popup: $.t("t:misc.desc.aftercleared")
 		}],
 
+// Knight Errant in Distress
+	kid: [{
+		coords: [
+			[77.156,103.594]
+		],
+		label: $.t("t:kid.label"),
+		popup: $.t("t:kid.desc")
+	}],
 
 // Monster Den
 	monsterden: [{
@@ -289,7 +297,6 @@ window.mapdata_toussaint = {
 			[88.813,41.219],
 			[97.813,49.516],
 			[38.203,54.750],
-			[77.156,103.594],
 			[112.969,81.328],
 		],
 		label: $.t("pid.label"),
@@ -375,8 +382,6 @@ window.mapdata_toussaint = {
 	  popup: $.t("t:poi.desc.gauntlets")
 	}
 ],
-
-
 
 // Shopkeeper
 	shopkeeper: [{

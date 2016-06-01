@@ -75,6 +75,10 @@
          "cockatraice":"XXX"
       }
    },
+   "kid":{
+      "label":"Knight Errant in Distress",
+      "desc":"Here you can help a knight errant fight bandits. "
+   },
    "misc":{
       "XXX":"XXX"
    },

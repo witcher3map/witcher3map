@@ -18,6 +18,7 @@ $(function() {
 		markers.herbalist,
 		markers.hidden,
 		markers.innkeep,
+		markers.kid,
 		markers.monsterden,
 		markers.monsternest,
 		markers.notice,

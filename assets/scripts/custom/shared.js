@@ -225,6 +225,11 @@ icons.innkeep = L.icon({
 	iconSize : [26, 30]
 });
 
+icons.kid = L.icon({
+	iconUrl  : '../files/images/icons/kid.png',
+	iconSize : [28, 30]
+});
+
 icons.monsterden = L.icon({
 	iconUrl  : '../files/images/icons/monsterden.png',
 	iconSize : [30, 27]
