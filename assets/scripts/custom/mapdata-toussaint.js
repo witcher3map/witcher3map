@@ -47,6 +47,7 @@ window.mapdata_toussaint = {
 	armourerstable: [{
 		coords: [
 			[50.141,64.219],
+			[116.538,71.366],
 		],
 		label: $.t("armourerstable.label"),
 		popup: $.t("armourerstable.desc")
@@ -129,6 +130,7 @@ window.mapdata_toussaint = {
 		coords: [
 			[79.625,109.094],
 			[50.219,64.422],
+			[116.438,71.359],
 		],
 		label: $.t("grindstone.label"),
 		popup: $.t("grindstone.desc")
@@ -400,6 +402,7 @@ window.mapdata_toussaint = {
 	signalfire: [{
 		coords: [
 			[81.219,109.656],
+			[117.016,71.484],
 		],
 		label: $.t("t:signalfire.label"),
 		popup: $.t("t:signalfire.desc")
