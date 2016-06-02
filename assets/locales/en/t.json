@@ -69,7 +69,7 @@
          "manticoretrousersandboots":"inside the temple",
          "silverarmorgauntlers":"",
          "gauntlets":"bottom of the lake",
-         "trousersboots":"located in a cheast, ontop of the broken bridge",
+         "trousersboots":"located in a chest, ontop of the broken bridge",
          "steelbootstrousers":"inside the Cave",
          "all":"The Key for the Portal is jsut outside the Cave. The are all Wolven Digramms inside, three on two locations inside the cave",
          "armor":"the Diagram is inside the House, behind a Picurefarm on the Wall",
@@ -135,9 +135,9 @@
    },
    "contracts":{
       "label":{
-         "biggamehunter":"Big Game Hunter",
-         "coldasice":"Feet as Cold as Ice",
-         "tufo":"Contract: THe Tufo Monster",
+         "biggamehunter":"Contract: Big Game Hunter",
+         "coldasice":"Contract: Feet as Cold as Ice",
+         "tufo":"Contract: The Tufo Monster",
          "bonvineblues":"Contract: Bovine Blues"
       },
       "desc":{
