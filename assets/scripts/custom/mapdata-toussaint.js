@@ -520,10 +520,22 @@ window.mapdata_toussaint = {
 		coords: [[79.984,94.141]],
 		label: $.t("t:signpost.label.duntynnehillside"),
 		popup: $.t("t:signpost.desc.duntynnehillside")
-	},{
-		coords: [[113.703,74.656]],
-		label: $.t("t:signpost.label.artach"),
-		popup: $.t("t:signpost.desc.artach")
+	}, {
+		coords: [[113.828,74.422]],
+		label: $.t("t:signpost.label.arthachpalaceruins"),
+		popup: $.t("t:signpost.desc.arthachpalaceruins")
+	}, {
+		coords: [[110.344,66.078]],
+		label: $.t("t:signpost.label.thesilversalamanderinn"),
+		popup: $.t("t:signpost.desc.thesilversalamanderinn")
+	}, {
+		coords: [[104.281,80.156]],
+		label: $.t("t:signpost.label.tradingpost"),
+		popup: $.t("t:signpost.desc.tradingpost")
+	}, {
+		coords: [[93.203,73.578]],
+		label: $.t("t:signpost.label.coronatavineyard"),
+		popup: $.t("t:signpost.desc.coronatavineyard")
 	}],
 
 
