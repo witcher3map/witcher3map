@@ -173,15 +173,22 @@ window.mapdata_toussaint = {
 			[85.628,53.734],
 			[63.653,90.625],
 			[75.606,75.188],
-
-
 		],
-		label: $.t("gwent.label"),
-		popup: $.t("gwent.desc")
+		label: $.t("t:misc.label.gwent"),
+		popup: $.t("t:misc.desc.gwent")
 	}],
 
 // Harbor
-	harbor: [],
+	harbor: [{
+		coords: [
+			[47.297,60.734],
+			[56.109,74.750],
+			[61.781,88.000],
+			[96.219,60.594],
+		],
+		label: $.t("harbor.label"),
+		popup: $.t("harbor.desc")
+	}],
 
 // Herbalist
 	herbalist: [{
@@ -513,6 +520,10 @@ window.mapdata_toussaint = {
 		coords: [[79.984,94.141]],
 		label: $.t("t:signpost.label.duntynnehillside"),
 		popup: $.t("t:signpost.desc.duntynnehillside")
+	},{
+		coords: [[113.703,74.656]],
+		label: $.t("t:signpost.label.artach"),
+		popup: $.t("t:signpost.desc.artach")
 	}],
 
 
@@ -604,10 +615,15 @@ sidequests: [{
 		coords: [[50.453,63.734]],
 		label: $.t("t:sidequests.label.paperchase"),
 		popup: $.t("t:sidequests.desc.paperchase")
+	},{
+			coords: [[110.172,87.125]],
+			label: $.t("t:sidequests.label.vintnercontract1"),
+			popup: $.t("t:sidequests.desc.vintnercontract1")
+	},{
+			coords: [[49.047,92.781]],
+			label: $.t("t:sidequests.label.vintnercontract2"),
+			popup: $.t("t:sidequests.desc.vintnercontract2")
 	}],
-
-
-
 
 //// Contracts
 contracts: [{
@@ -626,20 +642,6 @@ contracts: [{
 		coords: [[64.328,89.797]],
 		label: $.t("t:contracts.label.tufo"),
 		popup: $.t("t:contracts.desc.tufo")
-	}],
-
-
-// Big Game Hunter - Level 37 - 93.578,91.750	 (NB)
-
-// Vintner Contract
-	vintnercontract: [{
-			coords: [[110.172,87.125]],
-			label: $.t("t:vintnercontract.label.1"),
-			popup: $.t("t:vintnercontract.desc.1")
-		},{
-			coords: [[49.047,92.781]],
-			label: $.t("t:vintnercontract.label.2"),
-			popup: $.t("t:vintnercontract.desc.2")
 	}],
 
 
