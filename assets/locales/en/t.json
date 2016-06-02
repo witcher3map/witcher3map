@@ -197,8 +197,11 @@
          "cottage":"Trastamara Hunting Cottage",
          "montcranecastle":"Mont Crane Castle",
          "duntynnecastle":"Dun Tynne Castle",
-         "artach":"Artach Palace Ruins",
-         "duntynnehillside":"Dun Tynne Hillside"
+         "duntynnehillside":"Dun Tynne Hillside",
+         "arthachpalaceruins":"Arthach Palace Ruins",
+         "thesilversalamanderinn":"The Silver Salamander Inn",
+         "tradingpost":"Trading Post",
+         "coronatavineyard":"Coronata Vineyard"
       },
       "desc":{
          "dulcineawindmill":"",
@@ -223,10 +226,14 @@
          "hortense":"",
          "flovive":"",
          "cottage":"",
-         "artach":"",
          "montcranecastle":"Duke Roger the Reveler was, as his nickname might suggest, no teetotaler. The story of his alcohol-fueled romps number today amoung the most cherished of traditional Toussaint tales. This state of perpetual tipsiness might just be what drove his decision to surround the duchy with a series of castles, meant to protect Toussaint from the barbarous highlanders of Mount Gorgon. Thing is, no one has ever heard of such a folk.",
          "duntynnecastle":"This castle is tied to the dark legend of Waltharius the Burly, the dashing knight who wed the beautiful Nazairi princess Hiltgunt. Waltharius then embarked on a lengthy campaign and returned to find his wife in carnal relations with his relative, upon which he flew into a rage and murdered them both. The moral of the tale is held to be that nothing good ever comes from Nazair, and that when one has a young wife, one should stay at home instead of gallivanting about on campaigns.",
-         "duntynnehillside":"The slopes of Dun Tynne long lay barren. Potential entrepreneurs were scared off by the bloody legend of Waltharius the Burly and since the area had never produced wines worthy of historical metion anyways, they had little incentive to conquer this fear. The estate's most recent owner, however - a nobleman named Roderick - decided to plant vines along the slopes stretching from the Blessure and Sansretour valleys up to the keep. As a precaution, he also planted olive groves, a much surer investment."
+         "duntynnehillside":"The slopes of Dun Tynne long lay barren. Potential entrepreneurs were scared off by the bloody legend of Waltharius the Burly and since the area had never produced wines worthy of historical metion anyways, they had little incentive to conquer this fear. The estate's most recent owner, however - a nobleman named Roderick - decided to plant vines along the slopes stretching from the Blessure and Sansretour valleys up to the keep. As a precaution, he also planted olive groves, a much surer investment.",
+         "arthachpalaceruins":"The experimental attempts to manage the waters of the Sansretour Marsh carried out by Duke Adam of Nazair did not prove very successful - to put it lightly. They flooded a great number of villages, private estates and even Arthach, an elven summer palace. These experiments were what gave the Sansretour Marsh its current shape and put half of Crane Isle permanently underwater. They also created an unpleasant bog to the north of the city where none can tread in true safety.",
+         "thesilversalamanderinn":"When the folk query this inn's Nilfgaardian owner, a certain Calixte Moire, whence came the establishment's name, the man always refers them to the Second Battle of Sodden. His Father, Antoine, showed particular courage during this battle, as evidenced by the Medal of the Silver Salamander which was awarded to him by the emperor himself in honor of his valor and dedication on the field of battle.",
+         "tradingpost":"Every self-respecting merchant does some business in the capital of Toussaint - going to hear the latest gossip from the famed Belles of Beauclair in San Sebastian, or strolling down to the Port to see if the dockmen have \"lost\" a barrel or two. But truly important business is conducted not in the city, but at the modest merchant's camp, an outpost far from the wine- and song-laden atmosphere of Beauclair's eternal celebrations.",
+         "coronatavineyard":"This line's founder, Stefen de Coronata, once asked a druid to help him be rid of the caterpillers devouring his vines.The druid suggested he raise martens, which love to feed on that insect's larvae. Stefan duly took the druid's advice and soon eradicated the plague not only in his own vineyard, but in all the neighboring ones as well. In return for this bounteous deed, he was awarded a noble title. He chose a blue wolf to adorn his crest, after deciding he would look foolish parading about with a marten on his shield."
+      
       }
    }
 }
