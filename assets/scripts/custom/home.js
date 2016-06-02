@@ -19,8 +19,8 @@ $.i18n.init(i18noptions, function() {
 											processData('velen', mapdata_velen);
 											processData('skellige', mapdata_skellige);
 											processData('white_orchard', mapdata_white_orchard);
-											processData('kaer_morhen', mapdata.kaer_morhen);
-											processData('toussaint', mapdata.toussaint);
+											processData('kaer_morhen', mapdata_kaer_morhen);
+											processData('toussaint', mapdata_toussaint);
 
 											var searchInput = $('#search');
 

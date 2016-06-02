@@ -61,7 +61,7 @@ window.mapdata_toussaint = {
 			[114.250,75.781],
 		],
 		label: $.t("sidebar.banditcamp"),
-		//popup: $.t("banditcamp.desc")
+		popup: $.t("banditcamp.desc")
 	}],
 
 
@@ -395,7 +395,7 @@ window.mapdata_toussaint = {
 			[113.047,81.781],
 		],
 		label: $.t("sidebar.shopkeeper"),
-		//popup: $.t("shopkeeper.desc")
+		popup: $.t("shopkeeper.desc")
 	}],
 
 // Signal Fire

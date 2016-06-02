@@ -840,7 +840,6 @@ window.mapdata_velen = {
 	innkeep: [{ // Novigrad
 		coords: [[206.000, 96.547]],
 		label: $.t("v:innkeep.inns.theGoldenSturgen"),
-		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:innkeep.desc.foodDrinkAndGwent")
 	}, {
 		coords: [[220.609, 104.172]],
@@ -849,37 +848,30 @@ window.mapdata_velen = {
 	}, {
 		coords: [[214.000, 110.672]],
 		label: $.t("v:innkeep.inns.theNowhere"),
-		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:innkeep.desc.foodAndDrink")
 	}, {
 		coords: [[198.859, 106.875]],
 		label: $.t("v:innkeep.inns.rosemaryAndThyme"),
-		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:innkeep.desc.foodAndDrink")
 	}, {
 		coords: [[198.875, 126.656]],
 		label: $.t("v:innkeep.inns.sevenCatsInn"),
-		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:innkeep.desc.foodDrinkAndGwent")
 	}, {
 		coords: [[209.328, 104.719]],
 		label: $.t("v:innkeep.inns.theKingfisher"),
-		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:misc.disappearingTrader") + $.t("v:innkeep.desc.foodDrinkAndGwent")
 	}, { // S Novigrad
 		coords: [[185.125, 118.047]],
 		label: $.t("v:innkeep.inns.cunnyOfTheGoose"),
-		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:innkeep.desc.foodDrinkAndGwent")
 	}, { // Oxenfurt
 		coords: [[156.063, 165.172]],
 		label: $.t("v:innkeep.inns.theAlchemy"),
-		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:innkeep.desc.foodDrinkAndGwent")
 	}, { // NE Velen
 		coords: [[128.141, 95.516]],
 		label: $.t("v:innkeep.inns.innAtTheCrossroads"),
-		popupTitle: $.t("v:innkeep.popup"),
 		popup: $.t("v:innkeep.desc.gwentAndDrink")
 	}],
 

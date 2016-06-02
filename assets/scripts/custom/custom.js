@@ -7,13 +7,13 @@ $(function() {
 		markers.armourerstable,
 		markers.banditcamp,
 		markers.barber,
-		markers.hansebase,
 		markers.blacksmith,
 		markers.brothel,
 		markers.entrance,
 		markers.grindstone,
 		markers.guarded,
 		markers.gwent,
+		markers.hansebase,
 		markers.harbor,
 		markers.herbalist,
 		markers.hidden,
@@ -34,6 +34,12 @@ $(function() {
 		markers.vintnercontract,
 		markers.spoils
 	];
+
+	// little hack to remove empty marker array so they don't break the page
+	function remove(arrOriginal, elementToRemove){
+		return arrOriginal.filter(function(el){return el !== elementToRemove;});
+	}
+	allLayers = remove(allLayers, undefined);
 
 	var mobile   = ($('#sidebar').width() < 300);
 	var wayPoint = false;
