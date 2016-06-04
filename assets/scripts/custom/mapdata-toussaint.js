@@ -120,6 +120,7 @@ window.mapdata_toussaint = {
 			[73.219,86.156],
 			[72.172,87.641],
 			[43.438,95.797],
+			[90.547,86.688],
 		],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
@@ -628,13 +629,9 @@ sidequests: [{
 		label: $.t("t:sidequests.label.paperchase"),
 		popup: $.t("t:sidequests.desc.paperchase")
 	},{
-			coords: [[110.172,87.125]],
-			label: $.t("t:sidequests.label.vintnercontract1"),
-			popup: $.t("t:sidequests.desc.vintnercontract1")
-	},{
-			coords: [[49.047,92.781]],
-			label: $.t("t:sidequests.label.vintnercontract2"),
-			popup: $.t("t:sidequests.desc.vintnercontract2")
+			coords: [[110.172,87.125],[91.094,86.703],[49.047,92.781]],
+			label: $.t("t:sidequests.label.vintnercontract"),
+			popup: $.t("t:sidequests.desc.vintnercontract")
 	}],
 
 //// Contracts

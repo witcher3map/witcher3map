@@ -103,6 +103,7 @@
          "suffering":"The Suffering of Young Francois",
          "bigfleet":"Big Feet to Fill: The Fith Group",
          "enjpytheplay":"But Other than that, how did you enjoy the play?",
+         "vintnercontract":"Vinter's Contract",
          "paperchase":"Paperchase"
       },
       "desc":{
@@ -130,6 +131,7 @@
          "hidden":"Mini Sidequest from a Hidden Treasure",
          "save":"Persons in Distress, save them to complete the Quest",
          "enjpytheplay":"The Order in where you need to light the candles can be figgred out by using the Witcher Senses. After that dring the Wine (Questitem) `Vis la Crac`",
+         "vintnercontract":"Here you can help a vinter clear a cave of monsters",
          "paperchase":""
       }
    },
@@ -233,7 +235,7 @@
          "thesilversalamanderinn":"When the folk query this inn's Nilfgaardian owner, a certain Calixte Moire, whence came the establishment's name, the man always refers them to the Second Battle of Sodden. His Father, Antoine, showed particular courage during this battle, as evidenced by the Medal of the Silver Salamander which was awarded to him by the emperor himself in honor of his valor and dedication on the field of battle.",
          "tradingpost":"Every self-respecting merchant does some business in the capital of Toussaint - going to hear the latest gossip from the famed Belles of Beauclair in San Sebastian, or strolling down to the Port to see if the dockmen have \"lost\" a barrel or two. But truly important business is conducted not in the city, but at the modest merchant's camp, an outpost far from the wine- and song-laden atmosphere of Beauclair's eternal celebrations.",
          "coronatavineyard":"This line's founder, Stefen de Coronata, once asked a druid to help him be rid of the caterpillers devouring his vines.The druid suggested he raise martens, which love to feed on that insect's larvae. Stefan duly took the druid's advice and soon eradicated the plague not only in his own vineyard, but in all the neighboring ones as well. In return for this bounteous deed, he was awarded a noble title. He chose a blue wolf to adorn his crest, after deciding he would look foolish parading about with a marten on his shield."
-      
+
       }
    }
 }
