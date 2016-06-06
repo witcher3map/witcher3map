@@ -231,8 +231,8 @@ window.mapdata_toussaint = {
 // Innkeep
 	innkeep: [{
 			coords: [[75.406,75.188]],
-			label: $.t("t:signpost.label.cockatraice"),
-			popup: $.t("t:innkeep.desc.cockatraice")
+			label: $.t("t:signpost.label.cockatrice"),
+			popup: $.t("t:innkeep.desc.cockatrice")
 		},{
 				coords: [[64.656,62.734]],
 				label: $.t("t:innkeep.label.xxx"),
@@ -443,8 +443,8 @@ window.mapdata_toussaint = {
 		popup: $.t("t:signpost.desc.dulcineawindmill")
 	}, {
 		coords: [[76.563,75.891]],
-		label: $.t("t:signpost.label.cockatraice"),
-		popup: $.t("t:signpost.desc.cockatraice")
+		label: $.t("t:signpost.label.cockatrice"),
+		popup: $.t("t:signpost.desc.cockatrice")
 	}, {
 		coords: [[70.719,69.219]],
 		label: $.t("t:signpost.label.corvobianco"),
@@ -563,24 +563,24 @@ window.mapdata_toussaint = {
 		popup: $.t("t:signpost.desc.basanefarm")
 	}, {
 		coords: [[65.719,74.813]],
-		label: $.t("t:signpost.label.croxmill"),
-		popup: $.t("t:signpost.desc.croxmill")
+		label: $.t("t:signpost.label.croixmill"),
+		popup: $.t("t:signpost.desc.croixmill")
 	}, {
 		coords: [[57.328,64.453]],
 		label: $.t("t:signpost.label.coopersgate"),
 		popup: $.t("t:signpost.desc.coopersgate")
 	}, {
 		coords: [[54.844,68.781]],
-		label: $.t("t:signpost.label.haborsgate"),
-		popup: $.t("t:signpost.desc.haborsgate")
+		label: $.t("t:signpost.label.haborgate"),
+		popup: $.t("t:signpost.desc.haborgate")
 	}, {
 		coords: [[58.500,70.047]],
 		label: $.t("t:signpost.label.sansebastian"),
 		popup: $.t("t:signpost.desc.sansebastian")
 	}, {
 		coords: [[55.859,72.984]],
-		label: $.t("t:signpost.label.port"),
-		popup: $.t("t:signpost.desc.port")
+		label: $.t("t:signpost.label.beauclairport"),
+		popup: $.t("t:signpost.desc.beauclairport")
 	}],
 
 
