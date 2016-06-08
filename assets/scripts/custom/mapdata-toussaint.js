@@ -320,11 +320,11 @@ window.mapdata_toussaint = {
 // Monster Den
 	monsterden: [{
 		coords: [
-			[65.703,43.125],
-			[75.609,89.500],
-			[95.828,100.641],
+			[65.266,43.938],
+			[75.656,89.453],
+			[96.047,100.828],
 			[107.422,76.516],
-			[89.578,108.172],
+			[89.453,108.266],
 		],
 		label: $.t("monsterden.label"),
 		popup: $.t("monsterden.desc")
