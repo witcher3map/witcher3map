@@ -581,6 +581,46 @@ window.mapdata_toussaint = {
 		coords: [[55.859,72.984]],
 		label: $.t("t:signpost.label.beauclairport"),
 		popup: $.t("t:signpost.desc.beauclairport")
+	}, {
+		coords: [[92.188,90.406]],
+		label: $.t("t:signpost.label.duntynnecrossroads"),
+		popup: $.t("t:signpost.desc.duntynnecrossroads")
+	}, {
+		coords: [[93.547,66.094]],
+		label: $.t("t:signpost.label.plegmundsbridge"),
+		popup: $.t("t:signpost.desc.plegmundsbridge")
+	}, {
+		coords: [[78.234,52.672]],
+		label: $.t("t:signpost.label.chuchotecave"),
+		popup: $.t("t:signpost.desc.chuchotecave")
+	}, {
+		coords: [[76.953,65.938]],
+		label: $.t("t:signpost.label.sansretourvalley"),
+		popup: $.t("t:signpost.desc.sansretourvalley")
+	}, {
+		coords: [[58.563,42.484]],
+		label: $.t("t:signpost.label.riouxcannesoutpost"),
+		popup: $.t("t:signpost.desc.riouxcannesoutpost")
+	}, {
+		coords: [[44.078,54.172]],
+		label: $.t("t:signpost.label.seidhellyghadamphitheater"),
+		popup: $.t("t:signpost.desc.seidhellyghadamphitheater")
+	}, {
+		coords: [[43.031,70.906]],
+		label: $.t("t:signpost.label.belgaardvineyard"),
+		popup: $.t("t:signpost.desc.belgaardvineyard")
+	}, {
+		coords: [[45.078,65.547]],
+		label: $.t("t:signpost.label.lebiodasgate"),
+		popup: $.t("t:signpost.desc.lebiodasgate")
+	}, {
+		coords: [[71.750,100.203]],
+		label: $.t("t:signpost.label.ardaisoquarry"),
+		popup: $.t("t:signpost.desc.ardaisoquarry")
+	}, {
+		coords: [[59.938,100.188]],
+		label: $.t("t:signpost.label.casteldacciaabandonedestate"),
+		popup: $.t("t:signpost.desc.casteldacciaabandonedestate")
 	}],
 
 
