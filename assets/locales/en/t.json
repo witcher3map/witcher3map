@@ -10,10 +10,6 @@
       "journeymanLabel":"Journeyman Armorer",
       "desc":"Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
    },
-   "barber":{
-      "label":"Barber",
-      "desc":"Visit barbers for a shave or a new haircut. "
-   },
    "hansebase":{
       "label":"Hanse Base",
       "desc":"Expect to run into armed-to-the-teeth bandits here. "
@@ -178,7 +174,7 @@
          "cockatrice":"The Cockatrice Inn",
          "plegmundsbridge":"Plegmund's Bridge",
          "corvobianco":"Corvo Bianco Vineyard",
-         "palace":"Beauclar Palace",
+         "palace":"Beauclair Palace",
          "palacegardens":"Palace Gardens",
          "embassy":"Nilfgaardian Embassy",
          "gate":"Metinna Gate",
