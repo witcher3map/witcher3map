@@ -8,15 +8,17 @@ window.mapdata_toussaint = {
 // Abandoned Site
 	abandoned: [{
 		coords: [
-			[67.031,51.719],
+			[67.547,51.734],
 			[66.875,37.406],
 			[78.656,45.859],
-			[82.063,47.391],
+			[82.344,47.219],
 			[90.109,47.094],
 			[32.391,68.297],
-			[113.328,66.969],
+			[112.875,66.172],
 			[88.188,101.797],
-			[91.594,78.391],
+			[91.531,78.688],
+			[31.141,71.953],
+			[57.656,94.109],
 		],
 		label: $.t("abandoned.label"),
 		popup: $.t("abandoned.desc")
@@ -48,9 +50,14 @@ window.mapdata_toussaint = {
 // Armourer's Table
 	armourerstable: [{
 		coords: [
-			[50.141,64.219],
+			[50.500,64.453],
 			[116.538,71.366],
-			[65.156,65.309],
+			[65.422,65.344],
+			[105.047,79.422],
+			[69.609,100.609],
+			[40.047,81.156],
+			[86.156,63.734],
+			[98.203,43.688],
 		],
 		label: $.t("armourerstable.label"),
 		popup: $.t("armourerstable.desc")
@@ -64,8 +71,17 @@ window.mapdata_toussaint = {
 			[114.250,75.781],
 			[86.313,109.484],
 			[102.938,75.563],
+			[37.984,54.531],
+			[84.906,40.797],
+			[97.719,49.750],
+			[108.438,65.031],
+			[111.828,72.938],
+			[77.266,103.531],
+			[73.391,109.063],
+			[73.969,113.563],
+			[68.828,115.984],
 		],
-		label: $.t("sidebar.banditcamp"),
+		label: $.t("banditcamp.label"),
 		popup: $.t("banditcamp.desc")
 	}],
 
@@ -106,28 +122,44 @@ window.mapdata_toussaint = {
 	entrance: [{
 		coords: [
 			[86.047,72.938],
-			[77.063,54.563],
+			[79.422,53.250],
 			[93.141,41.828],
 			[47.000,79.578],
 			[47.234,78.734],
-			[48.438,92.609],
+			[48.594,92.766],
 			[58.688,84.641],
 			[49.781,100.625],
 			[48.188,100.484],
 			[28.047,81.891],
-			[65.656,43.266],
-			[95.406,42.234],
-			[95.406,42.234],
+			[65.156,43.703],
+			[95.313,41.875],
 			[95.172,45.188],
 			[102.203,64.344],
 			[46.203,51.609],
-			[44.250,54.969],
-			[73.219,86.156],
+			[43.078,56.094],
 			[72.172,87.641],
 			[43.438,95.797],
-			[90.547,86.688],
 			[60.344,113.328],
 			[108.891,82.438],
+			[107.656,80.844],
+			[94.844,94.359],
+			[95.922,100.891],
+			[96.688,106.219],
+			[90.969,86.672],
+			[84.031,84.203],
+			[77.375,87.125],
+			[73.063,86.375],
+			[50.109,84.234],
+			[39.047,67.703],
+			[35.469,59.328],
+			[56.484,44.031],
+			[57.844,50.828],
+			[59.344,51.313],
+			[91.766,41.672],
+			[93.125,53.063],
+			[64.109,51.500],
+			[68.516,114.156],
+
 		],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
@@ -138,7 +170,13 @@ window.mapdata_toussaint = {
 		coords: [
 			[79.625,109.094],
 			[50.219,64.422],
-			[116.438,71.359],
+			[116.500,71.188],
+			[104.969,79.594],
+			[69.625,100.609],
+			[40.063,80.938],
+			[65.391,65.125],
+			[86.047,63.703],
+			[98.125,43.656],
 		],
 		label: $.t("grindstone.label"),
 		popup: $.t("grindstone.desc")
@@ -148,13 +186,23 @@ window.mapdata_toussaint = {
 	guarded: 	[{
 		coords: [
 			[44.781,103.531],
-			[45.953,88.2971],
-			[37.250,62.828],
+			[46.063,88.219],
+			[37.375,63.016],
 			[66.922,91.969],
 			[111.828,72.859],
 			[37.875,93.297],
 			[89.641,93.328],
 			[99.234,79.234],
+			[59.875,111.578],
+			[69.859,81.422],
+			[73.344,109.203],
+			[73.875,113.547],
+			[76.563,113.656],
+			[106.391,86.313],
+			[114.172,75.891],
+			[79.594,67.422],
+			[84.938,40.813],
+			[86.094,43.375],
 		],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc")
@@ -215,13 +263,19 @@ window.mapdata_toussaint = {
 		coords: [
 			[69.203,42.016],
 			[92.125,54.938],
-			[88.922,53.391],
+			[89.141,53.375],
 			[57.859,85.031],
 			[77.141,42.047],
-			[102.031,63.922],
+			[102.297,64.109],
 			[42.547,54.688],
 			[24.234,72.422],
 			[96.047,80.453],
+			[44.219,64.484],
+			[63.453,81.234],
+			[61.188,102.641],
+			[54.250,106.828],
+			[94.969,42.063],
+			[95.984,88.625],
 		],
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.desc")
@@ -266,7 +320,9 @@ window.mapdata_toussaint = {
 // Knight Errant in Distress
 	kid: [{
 		coords: [
-			[77.156,103.594]
+			[77.156,103.594],
+			[97.813,49.516],
+			[38.203,54.75],
 		],
 		label: $.t("t:kid.label"),
 		popup: $.t("t:kid.desc")
@@ -275,11 +331,11 @@ window.mapdata_toussaint = {
 // Monster Den
 	monsterden: [{
 		coords: [
-			[65.703,43.125],
-			[75.609,89.500],
-			[95.828,100.641],
+			[65.266,43.938],
+			[75.656,89.453],
+			[96.047,100.828],
 			[107.422,76.516],
-			[89.578,108.172],
+			[89.453,108.266],
 		],
 		label: $.t("monsterden.label"),
 		popup: $.t("monsterden.desc")
@@ -289,13 +345,15 @@ window.mapdata_toussaint = {
 	monsternest: [{
 		coords: [
 			[70.156,74.109],
-			[48.172,83.641],
-			[58.969,42.047],
-			[32.250,79.781],
-			[77.922,95.313],
-			[33.344,85.094],
+			[48.188,84.078],
+			[58.813,41.594],
+			[32.188,79.984],
+			[33.250,84.797],
 			[93.188,110.281],
-			[97.609,70.438],
+			[76.328,86.969],
+			[68.766,115.000],
+			[75.484,40.313],
+			[75.328,40.578],
 		],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc")
@@ -313,7 +371,6 @@ window.mapdata_toussaint = {
 			[41.750,80.313],
 			[71.719,102.219],
 			[93.609,65.781],  //todo check
-
 		],
 		label: $.t("notice.label"),
 		popup: $.t("notice.desc")
@@ -322,12 +379,11 @@ window.mapdata_toussaint = {
 // Person in Distress
 	pid: [{
 		coords: [
-			[88.813,41.219],
-			[97.813,49.516],
-			[38.203,54.750],
-			[112.969,81.328],
-			[60.016,112.500],
+			[88.750,40.984],
+			[112.859,81.688],
+			[60.125,113.047],
 			[108.438,82.219],
+			[50.953,102.719],
 		],
 		label: $.t("pid.label"),
 		popup: $.t("pid.desc")
@@ -340,7 +396,7 @@ window.mapdata_toussaint = {
 		popupTitle: $.t("pop.popup", {sign: $.t("signs.quen")}),
 		popup: $.t("pop.desc")
 	},{
-		coords: [[63.297,43.797]],
+		coords: [[61.531,44.969]],
 		label: $.t("pop.label") + $.t(" ")+ $.t("t:misc.desc.insideden"),
 		popupTitle: $.t("pop.popup", {sign: $.t("signs.axii")}),
 		popup: $.t("pop.desc")
@@ -581,6 +637,46 @@ window.mapdata_toussaint = {
 		coords: [[55.859,72.984]],
 		label: $.t("t:signpost.label.beauclairport"),
 		popup: $.t("t:signpost.desc.beauclairport")
+	}, {
+		coords: [[92.188,90.406]],
+		label: $.t("t:signpost.label.duntynnecrossroads"),
+		popup: $.t("t:signpost.desc.duntynnecrossroads")
+	}, {
+		coords: [[93.547,66.094]],
+		label: $.t("t:signpost.label.plegmundsbridge"),
+		popup: $.t("t:signpost.desc.plegmundsbridge")
+	}, {
+		coords: [[78.234,52.672]],
+		label: $.t("t:signpost.label.chuchotecave"),
+		popup: $.t("t:signpost.desc.chuchotecave")
+	}, {
+		coords: [[76.953,65.938]],
+		label: $.t("t:signpost.label.sansretourvalley"),
+		popup: $.t("t:signpost.desc.sansretourvalley")
+	}, {
+		coords: [[58.563,42.484]],
+		label: $.t("t:signpost.label.riouxcannesoutpost"),
+		popup: $.t("t:signpost.desc.riouxcannesoutpost")
+	}, {
+		coords: [[44.078,54.172]],
+		label: $.t("t:signpost.label.seidhellyghadamphitheater"),
+		popup: $.t("t:signpost.desc.seidhellyghadamphitheater")
+	}, {
+		coords: [[43.031,70.906]],
+		label: $.t("t:signpost.label.belgaardvineyard"),
+		popup: $.t("t:signpost.desc.belgaardvineyard")
+	}, {
+		coords: [[45.078,65.547]],
+		label: $.t("t:signpost.label.lebiodasgate"),
+		popup: $.t("t:signpost.desc.lebiodasgate")
+	}, {
+		coords: [[71.750,100.203]],
+		label: $.t("t:signpost.label.ardaisoquarry"),
+		popup: $.t("t:signpost.desc.ardaisoquarry")
+	}, {
+		coords: [[59.938,100.188]],
+		label: $.t("t:signpost.label.casteldacciaabandonedestate"),
+		popup: $.t("t:signpost.desc.casteldacciaabandonedestate")
 	}],
 
 

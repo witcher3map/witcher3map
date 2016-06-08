@@ -10,10 +10,6 @@
       "journeymanLabel":"Journeyman Armorer",
       "desc":"Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
    },
-   "banditcamp":{
-      "label":"Bandit Camp",
-      "desc":"A group of dangerous bandits have made camp here. "
-   },
    "barber":{
       "label":"Barber",
       "desc":"Visit barbers for a shave or a new haircut. "
@@ -180,7 +176,7 @@
       "label":{
          "dulcineawindmill":"Dulcinea Windmill",
          "cockatrice":"The Cockatrice Inn",
-         "plegmund":"Plegmund'S Bridge",
+         "plegmundsbridge":"Plegmund's Bridge",
          "corvobianco":"Corvo Bianco Vineyard",
          "palace":"Beauclar Palace",
          "palacegardens":"Palace Gardens",
@@ -213,13 +209,31 @@
          "coopersgate":"Coopers Gate",
          "haborgate":"Habor Gate",
          "sansebastian":"San Sebastian",
-         "beauclairport":"Bauclair Port",
-         "coronatavineyard":"Coronata Vineyard"
+         "beauclairport":"Beauclair Port",
+         "coronatavineyard":"Coronata Vineyard",
+         "duntynnecrossroads":"Dun Tynne Crossroads",
+         "chuchotecave":"Chuchote Cave",
+         "sansretourvalley":"Sansretour Valley",
+         "riouxcannesoutpost":"Rioux-Cannes Outpost",
+         "seidhellyghadamphitheater":"Seidhe Llyghad Amphitheater",
+         "belgaardvineyard":"Belgaard Vineyard",
+         "lebiodasgate":"Lebioda's Gate",
+         "ardaisoquarry":"Ardaiso Quarry",
+         "casteldacciaabandonedestate":"Casteldaccia Abandoned Estate"
       },
       "desc":{
+         "casteldacciaabandonedestate":"Maximus Macrinus was once a knight errant famed for showing no mercy to any bandits prowling the Champs-Dèsolès. After a long and storied career, he hung up his sword at his ancestral manor and settled in for a well-deserved retirement. No one knows what brought about the subsequent murder of his entire family. Some claim a giant descended from the mountains, others, that he ran afoul of one of the largest hanses. The only undisputed fact is that everyone with any sense now avoids going anywhere near Casteldaccia.",
+         "ardaisoquarry":"Every man, be he tippler or teetotaler, knows Toussaint's economy stems from the fruit of the vine. Few, however, realize the duchy's lands are rich with deposits of slate and other valuable building materials, and that the quarrying of such was once the bedrock of local livelihoods. Thus when gods-fearing Toussaintois saw fit to build a statue of the saintly Lebioda, they had no need to send for materials from abroad - instead, they merely reactivated Ardaiso.",
+         "lebiodasgate":"Work on the Temple of Lebioda in Beauclair was begun by the prophet's most famed disciple, Plegmund. He convinced Duchess Coronata to rebuild that area of the city and dig deep catacombs for the city's wealthiest inhabitants. Those of less coin were to be buried in the new cemetry beside the temple. The poorest of the poor, however, had to continue to make do with the Orlèmurs Cemetry, connected to the city by the Temple Gate, also known as the Gate of Lebioda.",
+         "belgaardvineyard":"The vineyard's former owner racked up significant debts with a loan shark, who then sold them to bandits for collection. When they found he had no coin to collect, they murdered him alongside all other residents of his estate. As if that were not heinous enough, they then made the vineyard their base, from which they would hijack transports of wine to fuel their drunken orgies. So fierce and well-stocked were they, none could chase them off - until one brave alchemist spiced a transport crossing their territory with a powerful extract of ricin.",
+         "seidhellyghadamphitheater":"On the banks of the lake known as Seidhe Llyghad, or Eye of the Mountains, lies and ancient amphitheater - another relict of Toussaint's elven past. In 1178 the structure was restored so it could stage the works of Beauclair's most renowned theatrical virtuosos. unfortunately, its grand opening was marred by an unplanned tragic ending: the mysterious death of the play's leading lady. Ever since, the place has been deemed cursed and few dare venture anywhere near it.",
+         "riouxcannesoutpost":"The second most popularly cultivated plant in Toussaint - the first being the grapevine, of course - is the ovlive tree. It is mainly grown for its olives, which are pressed for their oil, but is also prized amoung woodcarvers. The unquestionably most cherished tree in the region, however, is the Beauclair oak, which is used in the making of wine barrels. And the most important place in Toussaint for the processing of this tree is the Rioux-Cannes woodcutters' outpost.",
+         "sansretourvalley":"The Sansretour Valley is the center of the world wine production. It is on this valley's vine-covered slopes that one can find Castel Ravello, Coronata and Vermentino - the estates of famous winemaking families which have for centuries been envy of every other vintner.",
+         "chuchotecave":"TO listen to the old folks' jabber, this place was once home to Whispess - a woodland witch eager to help any in need. When Whispess peered into a vertain knight's heart, she saw that it was black and refused him aid. The knight reacted with wrath and burned the witch alive in her cave. Soon afterward, the knight went mad and killed himself - claiming he was tourtured by a strange voice whispering in his ear that no one else could hear.",
+         "duntynnecrossroads":"Dear traveler, you have entered the territory of Dun Tynne, lands belonging to the nobly-born Sir Roderick. If you wish to pay him a visit, walk westward from here and you shall surely happen upon his castle. If, however, you seek a route to the Pittapatte river, you should make your way north.",
          "dulcineawindmill":"Lady Dulcinea was a noblewoman at Duchess Caroberta's court. According to legend, whenever she appeared duels knights would duel for her favor and noblewoman would faint out jealousy. Yet rather then accepting the advances of one of her gentlemen suitors, Lady Dulcinea, tired of the pomp of the ducal court, agreed to the proposal of a simple miller and abandoned the palace to dwell with him in him mill. Word is, she lived there happily ever after.",
          "cockatrice":"There was a time when the Cockatrice's owner, Adam de Guy, loved to recount the tale of how the inn got its name. In his youth, his story went, he served as squire to a knight errant and togehter they defeated a bloodthirsty cockatrice. The beast's head decorated the auberge's entrance for many years until a certain traveler from Oxenfurt ascertained it was unfortunately but a rather amateurish hobbling thether of pheasant, weasel and pig parts. His pride wounded, de Guy took down his trophy, but the inn kept its name.",
-         "plegmund":"Built during the reign of Duchess Caroberta, this bridge was meant to facilitate traffic between vineyards on opposite banks of the Sansretour. It was named after a pilgrim quite popular in Toussaint at the time, a certain disciple of the Prophet Lebioda who on this very spot performed one of his many miracles: traversing the river without getting his feet wet.",
+         "plegmundsbridge":"Built during the reign of Duchess Caroberta, this bridge was meant to facilitate traffic between vineyards on opposite banks of the Sansretour. It was named after a pilgrim quite popular in Toussaint at the time, a certain disciple of the Prophet Lebioda who on this very spot performed one of his many miracles: traversing the river without getting his feet wet.",
          "corvobianco":"Constructed on elven ruins, Corvo Bianco - Known as Gwyn Cerbin in the Elder Speech - is one of the older vineyards in the duchy and producer of the startlingly unique wine, Sepremento. Sadly, the rakish lifestyle of one of its owners, the member of the Bolius line, drove the possession into ruin. The next owner, Baron Rossell, tried to return the vineyard to its former glory, but to no avail. Corvo Bianco was then auctioned off and eventually passed under the control of the Ducal Treasury.",
          "palace":"One of the best-preserved artifacts of the elven era, the Beauclair Palace was painstakingly restored and partially rebuilt by the famed Nilfgaardian architect Faramond. Master Faramond, a scholar and expert on nonhuman architecture, is considered the found of the Noeelven School, of which Beauclair Palace, home to the rulers of Toussaint, is the most characteristic example.",
          "palacegardens":"The fabulous gardens on the shores of Seidhe Llygad were, like Beauclair Palace, nearly destroyed during the Elven Conflicts. Master Faramond, who let the renovation efforts, did what he could, but some of the more delicate plants could not be saved. Today this popular recreation spot for courtiers is filled mainly with spruces, olive trees, Beauclair oaks, rose bushes, juniper thickets, rhododendrons and, of course, grapevines.",
@@ -233,7 +247,7 @@
          "prison":"It is hard to believe Toussaint, now so vibrant and full of life, once fell victim to a leprosy epidemic. To isolate the infected from the healthy, by ducal decree a leper colony was created on Crane Island. When all the colony's inhabitants died, the complex gradually fell into ruin and the decision was made to adapt it into a prison, which it remains to this day.",
          "farm":"Old man Gelenser grew radishes. Yes, radishes. Not grapes, not olives, not even beets. As he himself put it: \"Dadgummit, I can't very well live on bread and wine alone now can I?!\" Old Man Gelenser did not found a radish empire,. The history of his line is not filled with amazing legends. He lived, sired children, planted radishes and died. O Lebioda, give us all such a clam and simple life.",
          "mutnaruins":"It is widely accepted that vampires came into our would during the Conjuntion of the Spheres. They quickly spread across all the Continent, trying to adapt to their new situation. According to legend, one of them, Khagmar, settled in Toussaint. Grim tales are whispered about his deeds, but whether he truly even existed is hard to say. The tales do agree on one thing, however: Khagmar's story is inextricably tied to the mysterious fortress known as Tesham Mutna.",
-         "granplace":"Toussaint's largest marketplace overflows with colorful stalls and merchants from every corner of the world. They say if you cannot find what you seek at Bauclair's market, it doesn't exist. In addition to wine of every label and vintage, here one can buy slate from Ardaiso, fleece from Toussaint merinos raised at Basane or olive oil from the groves of Dun Tynne.",
+         "granplace":"Toussaint's largest marketplace overflows with colorful stalls and merchants from every corner of the world. They say if you cannot find what you seek at Beauclair's market, it doesn't exist. In addition to wine of every label and vintage, here one can buy slate from Ardaiso, fleece from Toussaint merinos raised at Basane or olive oil from the groves of Dun Tynne.",
          "tunier":"Tradition is sacred in Toussaint. This fair duchy has a great many traditions, perhaps the most hallowed of which are the spectacular knightly tourneys held during nearly every important local festival. These events have earned fame and respect not only in all of Nilfgaard, but in the North as well. Thus knights journey from almost literally the entire would to enter the lists and gain glory testing their mettle against each other and the best of Toussaint chivarly.",
          "statue":"During the reign of Duchess Caroberta, Toussaint was visited by a certain disciple of the Prophet Lebioda named Plegmund. His words and deed - which includes miracles - were so persuasive, soon nearly the entire duchy had converted to the new faith. They crowned this outburst of religiousity with the construction of a temple dedicated to the prophet, but that was not enough for Plegmund. He convinced the duchess to build a statue of Lebioda - the likes of which the would had never seen.",
          "hortense":"Toussaint can boast many world-famous vineyards, such as Castel Ravello, Pomerol, Vermentino and Tufo. Their owners take great care to maintain the time-tested traditions and heirloom recipes on which the reputation of the wines they produce rests. But Toussaint is also home to numerous smaller vineyards which do not even possess their own crests and whose wines have yet to win any particular renown, making it difficult to say much about them. Hortense is just such a place.",

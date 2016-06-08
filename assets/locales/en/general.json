@@ -104,6 +104,10 @@
 		"label": "Armorer's Table",
 		"desc": "Armorer's tables grant your gear increased armor for a limited duration."
 	},
+	"banditcamp":{
+		"label":"Bandit Camp",
+		"desc":"A group of dangerous bandits have made camp here. "
+	},
 	"boat": {
 		"label": "Boat",
 		"desc": "You can use boats to travel across bodies of water"
