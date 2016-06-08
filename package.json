@@ -69,7 +69,7 @@
     "lint-scripts": "jshint assets/scripts/custom && jscs -v assets/scripts/custom",
     "lint-styles": "csslint assets/styles",
     "lint-markup": "htmllint assets/markup/*.html && htmllint assets/markup/**/*.html",
-    "concat-vendor-scripts": "jscat node_modules/jquery/dist/jquery.min.js node_modules/i18next/node_modules/i18next-client/i18next.min.js node_modules/leaflet/dist/leaflet.js assets/scripts/vendor/FileSaver.min.js assets/scripts/vendor/jquery.ddslick.min.js assets/scripts/vendor/jquery.nicescroll.min.js assets/scripts/vendor/leaflet.plugins.js > dist/files/scripts/vendor.bundle.js && uglifyjs assets/scripts/vendor/leaflet-hash-params.js assets/scripts/vendor/leaflet-search.js --compress >> dist/files/scripts/vendor.bundle.js",
+    "concat-vendor-scripts": "jscat node_modules/jquery/dist/jquery.min.js node_modules/i18next/node_modules/i18next-client/i18next.min.js node_modules/leaflet/dist/leaflet.js assets/scripts/vendor/FileSaver.min.js assets/scripts/vendor/jquery.ddslick.min.js assets/scripts/vendor/jquery.nicescroll.min.js assets/scripts/vendor/leaflet.plugins.js > dist/files/scripts/vendor.bundle.js && uglifyjs assets/scripts/vendor/leaflet-hash-params.js assets/scripts/vendor/leaflet-search.js assets/scripts/vendor/elasticlunr.js --compress >> dist/files/scripts/vendor.bundle.js",
     "minify-styles": "cleancss --skip-rebase assets/styles/home.css --output dist/files/styles/home.min.css && cleancss --skip-rebase assets/styles/main.css --output dist/files/styles/main.min.css",
     "favicon": "ncp assets/favicon/favicon.ico dist/favicon.ico",
     "create-dirs": "mkdirp dist/files/fonts dist/files/images dist/files/locales dist/files/scripts dist/files/styles",

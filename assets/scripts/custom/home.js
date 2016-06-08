@@ -3,6 +3,13 @@ var L = {};
 L.latLng = function() {};
 window.markers = {};
 
+var searchidx = elasticlunr(function () {
+    this.addField('label');
+    this.addField('map');
+    this.addField('popup');
+    this.addField('link');
+});
+
 //i18n init to translate search results
 $.i18n.init(i18noptions, function() {
 	$.i18n.loadNamespace('v', function() {
@@ -53,7 +60,7 @@ $.i18n.init(i18noptions, function() {
 });
 
 //mocks shared.js processData function to generate search results
-var mapdata = [];
+var count = 0;
 var processData = function(map_path, data) {
 	var mapKey = map_path.charAt(0);
 	$.each(data, function(markerType,markers) {
@@ -62,7 +69,7 @@ var processData = function(map_path, data) {
 				return;
 			}
 			var link = window.location.href.replace(window.location.hash, '')+mapKey+'/#3/'+marker.coords[0][0]+'/'+marker.coords[0][1]+'/m='+marker.coords[0][0]+','+marker.coords[0][1];
-			var popupText = marker.popup.replace(/<a\b[^>]*>/i,"").replace(/<\/a>/i, "");
+			var popupText = marker.popup.replace(/<\/?[^>]+(>|$)/g,"");
 			var popupTitle = (marker.popupTitle ? marker.popupTitle : '' );
 			var label;
 			if(popupTitle === '') {
@@ -72,12 +79,17 @@ var processData = function(map_path, data) {
 			} else {
 				label = marker.label+' ('+popupTitle+')';
 			}
-			mapdata.push({
+
+			var search_doc = {
+				'id': count,
 				'map': $.t('maps.'+map_path),
-				'label':label,
-				'popup':popupText,
-				'link':link
-			});
+				'label': label,
+				'popup': popupText,
+				'link': link
+			};
+			searchidx.addDoc(search_doc);
+
+			count++;
 		});
 	});
 };
@@ -96,20 +108,22 @@ var doSearch = function() {
 		$('#clear').show();
 		$('#nav').hide();
 	}
-	var regex = new RegExp('(?=[^\\s])' + searchText, 'gi');
-	var results = [];
-	var mapdataLength = mapdata.length;
-	for(var i=0;i<mapdataLength;i++) {
-		if((mapdata[i].label.search(regex) > -1) || (mapdata[i].popup.search(regex) > -1)) {
-			results.push(mapdata[i]);
+
+	var searchResults = searchidx.search(searchText, {
+		fields: {
+			label: {boost: 10},
+			popup: {boost: 5},
+			map: {boost: 1}
 		}
-	}
+	});
+
 	resultsElement.empty();
-	var count = '<li>'+results.length+' '+$.t('home.resultsFound')+'</li>';
+	var count = '<li>'+searchResults.length+' '+$.t('home.resultsFound')+'</li>';
 	resultsElement.append($(count));
-	var resultsLength = results.length;
+	var resultsLength = searchResults.length;
 	for(i=0;i<resultsLength;i++) {
-		var item = '<li><div><a href="'+results[i].link+'">'+results[i].label+' - '+results[i].map+'</a></div><div class="searchDescription"><div class="truncated" onclick="toggleTruncate(event, this)">'+results[i].popup+'</div></div></li>';
+		var mId = searchResults[i]['ref'];
+		var item = '<li><div><a href="'+searchidx.documentStore.docs[mId].link+'">'+searchidx.documentStore.docs[mId].label+' - '+searchidx.documentStore.docs[mId].map+'</a></div><div class="searchDescription"><div class="truncated" onclick="toggleTruncate(event, this)">'+searchidx.documentStore.docs[mId].popup+'</div></div></li>';
 		resultsElement.append($(item));
 	}
 };
