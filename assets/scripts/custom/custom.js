@@ -120,21 +120,12 @@ $(function() {
 	map.setMaxBounds(bounds);
 
 	if (!mobile) {
+
 		var searchData = [];
 		$.each(allLayers, function(key, layer) {
 			$.each(layer._layers, function(key, marker) {
 				searchData.push({ loc : [marker._latlng.lat,marker._latlng.lng] , title : marker._popup._content.replace(/<h1>/, '').replace(/<\/h1>/, ' - ').replace(/\\'/g, '') });
 			});
-		});
-
-		searchData.sort(function(a,b) {
-			if (a.title < b.title) {
-				return -1;
-			}
-			if (a.title > b.title) {
-				return 1;
-			}
-			return 0;
 		});
 
 		map.addControl(new L.Control.Search({
@@ -147,9 +138,23 @@ $(function() {
 			text         : $.t('controls.searchButton'),
 			filterJSON   : function(json){ return json; },
 			callData     : function(text, callResponse) {
-				callResponse($.grep(searchData, function(data) {
-					return data.title.match(new RegExp(text, 'i'));
-				}));
+
+				var options = {
+					caseSensitive: false,
+					includeScore: true,
+					shouldSort: true,
+					tokenize: false,
+					threshold: 0.2,
+					location: 0,
+					distance: 100,
+					maxPatternLength: 32,
+					keys: ["title"]
+				};
+				var fuse = new Fuse(searchData, options);
+				var result= fuse.search(text);
+
+				callResponse(result);
+
 				setTimeout(function() {
 					$('.search-tooltip').getNiceScroll().resize();
 				},200);
