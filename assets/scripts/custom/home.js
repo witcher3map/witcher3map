@@ -111,8 +111,8 @@ var doSearch = function() {
 
 	var searchResults = searchidx.search(searchText, {
 		fields: {
-			label: {boost: 10},
-			popup: {boost: 5},
+			label: {boost: 1},
+			popup: {boost: 1},
 			map: {boost: 1}
 		}
 	});
