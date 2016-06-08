@@ -58,6 +58,9 @@ var processData = function(map_path, data) {
 	var mapKey = map_path.charAt(0);
 	$.each(data, function(markerType,markers) {
 		$.each(markers, function(index,marker) {
+			if (!marker || !marker.popup) {
+				return;
+			}
 			var link = window.location.href.replace(window.location.hash, '')+mapKey+'/#3/'+marker.coords[0][0]+'/'+marker.coords[0][1]+'/m='+marker.coords[0][0]+','+marker.coords[0][1];
 			var popupText = marker.popup.replace(/<a\b[^>]*>/i,"").replace(/<\/a>/i, "");
 			var popupTitle = (marker.popupTitle ? marker.popupTitle : '' );
