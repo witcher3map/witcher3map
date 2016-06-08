@@ -289,7 +289,9 @@ window.mapdata_toussaint = {
 // Knight Errant in Distress
 	kid: [{
 		coords: [
-			[77.156,103.594]
+			[77.156,103.594],
+			[97.813,49.516],
+			[38.203,54.75],
 		],
 		label: $.t("t:kid.label"),
 		popup: $.t("t:kid.desc")
@@ -347,12 +349,11 @@ window.mapdata_toussaint = {
 // Person in Distress
 	pid: [{
 		coords: [
-			[88.813,41.219],
-			[97.813,49.516],
-			[38.203,54.750],
-			[112.969,81.328],
-			[60.016,112.500],
+			[88.750,40.984],
+			[112.859,81.688],
+			[60.125,113.047],
 			[108.438,82.219],
+			[50.953,102.719],
 		],
 		label: $.t("pid.label"),
 		popup: $.t("pid.desc")
