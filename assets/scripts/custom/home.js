@@ -3,13 +3,6 @@ var L = {};
 L.latLng = function() {};
 window.markers = {};
 
-var searchidx = elasticlunr(function () {
-    this.addField('label');
-    this.addField('map');
-    this.addField('popup');
-    this.addField('link');
-});
-
 //i18n init to translate search results
 $.i18n.init(i18noptions, function() {
 	$.i18n.loadNamespace('v', function() {
@@ -61,6 +54,7 @@ $.i18n.init(i18noptions, function() {
 
 //mocks shared.js processData function to generate search results
 var count = 0;
+var mapdata = [];
 var processData = function(map_path, data) {
 	var mapKey = map_path.charAt(0);
 	$.each(data, function(markerType,markers) {
@@ -80,19 +74,20 @@ var processData = function(map_path, data) {
 				label = marker.label+' ('+popupTitle+')';
 			}
 
-			var search_doc = {
+			mapdata.push({
 				'id': count,
 				'map': $.t('maps.'+map_path),
-				'label': label,
-				'popup': popupText,
-				'link': link
-			};
-			searchidx.addDoc(search_doc);
+				'label':label,
+				'popup':popupText,
+				'link':link
+			});
 
 			count++;
 		});
 	});
 };
+
+
 
 //search function
 var doSearch = function() {
@@ -109,21 +104,26 @@ var doSearch = function() {
 		$('#nav').hide();
 	}
 
-	var searchResults = searchidx.search(searchText, {
-		fields: {
-			label: {boost: 1},
-			popup: {boost: 1},
-			map: {boost: 1}
-		}
-	});
+	var options = {
+		caseSensitive: false,
+		includeScore: true,
+		shouldSort: true,
+		tokenize: false,
+		threshold: 0.2,
+		location: 0,
+		distance: 100,
+		maxPatternLength: 32,
+		keys: ["map","label","popup"]
+	};
+	var fuse = new Fuse(mapdata, options);
+	var result = fuse.search(searchText);
 
 	resultsElement.empty();
-	var count = '<li>'+searchResults.length+' '+$.t('home.resultsFound')+'</li>';
+	var count = '<li>'+result.length+' '+$.t('home.resultsFound')+'</li>';
 	resultsElement.append($(count));
-	var resultsLength = searchResults.length;
+	var resultsLength = result.length;
 	for(i=0;i<resultsLength;i++) {
-		var mId = searchResults[i]['ref'];
-		var item = '<li><div><a href="'+searchidx.documentStore.docs[mId].link+'">'+searchidx.documentStore.docs[mId].label+' - '+searchidx.documentStore.docs[mId].map+'</a></div><div class="searchDescription"><div class="truncated" onclick="toggleTruncate(event, this)">'+searchidx.documentStore.docs[mId].popup+'</div></div></li>';
+		var item = '<li><div><a href="'+result[i].link+'">'+result[i].label+' - '+result[i].map+'</a></div><div class="searchDescription"><div class="truncated" onclick="toggleTruncate(event, this)">'+result[i].popup+'</div></div></li>';
 		resultsElement.append($(item));
 	}
 };
