@@ -232,7 +232,7 @@ div#lang {
 	text-align:center;
 }
 div#lang-switcher {
-	margin:0 auto;
+	margin: 25px auto 0;
 }
 div#lang-switcher .dd-select {
 	background:rgba(0, 0, 0, 0) !important;
@@ -251,12 +251,26 @@ div#lang-switcher .dd-selected-image, div#lang-switcher .dd-option-image {
 div#lang-switcher .dd-options {
 	background:rgba(0, 0, 0, 0) !important;
 	border: solid 1px #635540;
-	box-shadow:none;
+	box-shadow: none;
+	line-height: 22px;
+}
+div#lang-switcher .dd-options > li {
+	border-bottom: solid 1px #635540;
+}
+div#lang-switcher .dd-options > li:last-child {
+	border-bottom: none;
 }
 div#lang-switcher .dd-option {
 	background:rgba(0, 0, 0, 0.9) !important;
-	border-bottom: solid 1px #635540;
 	color: #635540;
+	border: none;
+}
+div#lang-switcher .dd-option:hover {
+	background: rgba(33, 29, 24, 0.95) !important;
+	color: #907854;
+}
+div#lang-switcher .dd-selected-text, div#lang-switcher .dd-option-text {
+	cursor: pointer;
 }
 div#copyright {
 	font-size: 13px;
