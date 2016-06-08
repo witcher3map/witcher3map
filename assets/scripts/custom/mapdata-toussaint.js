@@ -50,9 +50,14 @@ window.mapdata_toussaint = {
 // Armourer's Table
 	armourerstable: [{
 		coords: [
-			[50.141,64.219],
+			[50.500,64.453],
 			[116.538,71.366],
-			[65.156,65.309],
+			[65.422,65.344],
+			[105.047,79.422],
+			[69.609,100.609],
+			[40.047,81.156],
+			[86.156,63.734],
+			[98.203,43.688],
 		],
 		label: $.t("armourerstable.label"),
 		popup: $.t("armourerstable.desc")
