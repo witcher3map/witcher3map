@@ -36,19 +36,18 @@ window.mapdata_kaer_morhen = {
 
 // Entrance
 	entrance: [{
-		coords: [[132.531, 70.109]],
-		label: $.t("entrance.label"),
-		popup: $.t("entrance.desc"),
-	}, {
-		coords: [[127.781, 66.672]],
-		label: $.t("entrance.label"),
-		popup: $.t("entrance.desc")
-	}, {
-		coords: [[34.844, 71.719]],
-		label: $.t("entrance.label"),
-		popup: $.t("entrance.desc")
-	}, {
-		coords: [[46.063, 51.453]],
+		coords: [
+			[135.875,73.875],
+			[132.531, 70.109],
+			[127.781, 66.672],
+			[34.844, 71.719],
+			[46.063, 51.453],
+			[88.188,73.125],
+			[75.422,43.063],
+			[70.906,67.406],
+			[61.391,88.547],
+			[50.219,60.594],
+		],
 		label: $.t("entrance.label"),
 		popup: $.t("entrance.desc")
 	}],
@@ -57,7 +56,8 @@ window.mapdata_kaer_morhen = {
 	grindstone: [{
 		coords: [
 			[64.297, 61.328],
-			[66.703, 68.813]
+			[66.703, 68.813],
+			[62.156,61.688],
 		],
 		label: $.t("grindstone.label"),
 		popup: $.t("grindstone.desc")
@@ -66,7 +66,7 @@ window.mapdata_kaer_morhen = {
 // Guarded Treasure
 	guarded: [{
 		coords: [
-			[119.406, 75.438],
+			[119.313,74.906],
 			[102.625, 52.906],
 		],
 		label: $.t("hidden.label"),
@@ -79,7 +79,7 @@ window.mapdata_kaer_morhen = {
 // Harbor
 	harbor: [{
 		coords: [
-			[102.531, 56.703],
+			[85.938,60.000],
 			[83.891, 65.078],
 		],
 		label: $.t("harbor.label"),
@@ -90,7 +90,18 @@ window.mapdata_kaer_morhen = {
 	herbalist: [],
 
 // Hidden Treasure
-	hidden: [],
+	hidden: [{
+		coords: [
+			[33.531,73.688],
+			[46.531,49.531],
+			[58.000,91.625],
+			[73.500,37.906],
+			[90.219,69.406],
+			[117.359,59.234],
+		],
+		label: $.t("hidden.label"),
+		popup: $.t("hidden.desc")
+	}],
 
 // Innkeep
 	innkeep: [],
@@ -134,6 +145,14 @@ window.mapdata_kaer_morhen = {
 		coords: [[61.172, 58.734]],
 		label: $.t("k:signpost.label.kaerMorhen"),
 		popup: $.t("k:signpost.desc.kaerMorhen")
+	}, {
+		coords: [[62.531,43.719]],
+		label: $.t("k:signpost.label.bastion"),
+		popup: $.t("k:signpost.desc.bastion")
+	}, {
+		coords: [[116.625,58.813]],
+		label: $.t("k:signpost.label.ruinedwatchtower"),
+		popup: $.t("k:signpost.desc.ruinedwatchtower")
 	}],
 
 // Smugglers' Cache
