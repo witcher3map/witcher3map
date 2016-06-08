@@ -385,7 +385,7 @@ window.mapdata_toussaint = {
 		popupTitle: $.t("pop.popup", {sign: $.t("signs.quen")}),
 		popup: $.t("pop.desc")
 	},{
-		coords: [[63.297,43.797]],
+		coords: [[61.531,44.969]],
 		label: $.t("pop.label") + $.t(" ")+ $.t("t:misc.desc.insideden"),
 		popupTitle: $.t("pop.popup", {sign: $.t("signs.axii")}),
 		popup: $.t("pop.desc")
