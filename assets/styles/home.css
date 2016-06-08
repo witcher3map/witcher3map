@@ -88,9 +88,22 @@ ul#nav li {
 	color: #4F3C2F;
 	text-decoration: none;
 	display: block;
+	position: relative;
+}
+#nav li a img {
+	position: absolute;
+	bottom: -4px;
+	right: 0;
+	width: 160px;
+	opacity: 0.4;
+	left: 0;
+	margin: auto;
 }
 #nav li a:hover {
 	color: #020202;
+}
+#nav li a:hover img {
+	opacity: 0.7;
 }
 #nav li.enabled:hover {
 	background-position: top;
