@@ -141,12 +141,12 @@ $(function() {
 
 				var options = {
 					caseSensitive: false,
-					includeScore: true,
+					includeScore: false,
 					shouldSort: true,
 					tokenize: false,
 					threshold: 0.2,
 					location: 0,
-					distance: 100,
+					distance: 10000,
 					maxPatternLength: 32,
 					keys: ["title"]
 				};
