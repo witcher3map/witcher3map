@@ -10,10 +10,6 @@
       "journeymanLabel":"Journeyman Armorer",
       "desc":"Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
    },
-   "barber":{
-      "label":"Barber",
-      "desc":"Visit barbers for a shave or a new haircut. "
-   },
    "hansebase":{
       "label":"Hanse Base",
       "desc":"Expect to run into armed-to-the-teeth bandits here. "
@@ -178,7 +174,7 @@
          "cockatrice":"The Cockatrice Inn",
          "plegmundsbridge":"Plegmund's Bridge",
          "corvobianco":"Corvo Bianco Vineyard",
-         "palace":"Beauclar Palace",
+         "palace":"Beauclair Palace",
          "palacegardens":"Palace Gardens",
          "embassy":"Nilfgaardian Embassy",
          "gate":"Metinna Gate",
@@ -265,8 +261,8 @@
          "sansebastian":"The city of Beauclair quickly grew to fill all the space within its walls and spill out beyond it. This gave rise to the Lower Town, also known by the name if its founder - San Sebastian. Currently the district is primarily home to laborers and their workshops and links Haunteville with the port - the center of trade for Beauclair and the entire duchy.",
          "beauclairport":"The best wine comes from Toussaint - any sommelier will tell you as much. Bottles bearing its famed labels are worth fortunes and even grace the tables of kings - indeed, today one can barely imagine a royal feast without Cote-de-Blessure or Est Est. And it is here, at Beauclair's port, that this wine begins its journey both to the sound - into the heart of the Nilfgaardian Empire - and to the far-off North.",
          "tradingpost":"Every self-respecting merchant does some business in the capital of Toussaint - going to hear the latest gossip from the famed Belles of Beauclair in San Sebastian, or strolling down to the Port to see if the dockmen have \"lost\" a barrel or two. But truly important business is conducted not in the city, but at the modest merchant's camp, an outpost far from the wine- and song-laden atmosphere of Beauclair's eternal celebrations.",
-         "coronatavineyard":"This line's founder, Stefen de Coronata, once asked a druid to help him be rid of the caterpillers devouring his vines.The druid suggested he raise martens, which love to feed on that insect's larvae. Stefan duly took the druid's advice and soon eradicated the plague not only in his own vineyard, but in all the neighboring ones as well. In return for this bounteous deed, he was awarded a noble title. He chose a blue wolf to adorn his crest, after deciding he would look foolish parading about with a marten on his shield."
-
+         "coronatavineyard":"This line's founder, Stefen de Coronata, once asked a druid to help him be rid of the caterpillers devouring his vines.The druid suggested he raise martens, which love to feed on that insect's larvae. Stefan duly took the druid's advice and soon eradicated the plague not only in his own vineyard, but in all the neighboring ones as well. In return for this bounteous deed, he was awarded a noble title. He chose a blue wolf to adorn his crest, after deciding he would look foolish parading about with a marten on his shield.",
+         "ruins":"Toussaint was once a land of elves. The ducal palace is the most prominent remnant of that era, but it is not the only. The Aen Seidhe left behind a great many smaller and larger structures whose function can today only be guessed at. An example of this are the Termes Palace ruins, which some tie to the legendary resting place of the last elven king, while others consider them a tmeple to shome forgotten deity. What they were in truth, we shall never know."
       }
    }
 }

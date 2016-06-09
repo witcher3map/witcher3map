@@ -53,6 +53,7 @@ $.i18n.init(i18noptions, function() {
 });
 
 //mocks shared.js processData function to generate search results
+var count = 0;
 var mapdata = [];
 var processData = function(map_path, data) {
 	var mapKey = map_path.charAt(0);
@@ -62,7 +63,7 @@ var processData = function(map_path, data) {
 				return;
 			}
 			var link = window.location.href.replace(window.location.hash, '')+mapKey+'/#3/'+marker.coords[0][0]+'/'+marker.coords[0][1]+'/m='+marker.coords[0][0]+','+marker.coords[0][1];
-			var popupText = marker.popup.replace(/<a\b[^>]*>/i,"").replace(/<\/a>/i, "");
+			var popupText = marker.popup.replace(/<\/?[^>]+(>|$)/g,"");
 			var popupTitle = (marker.popupTitle ? marker.popupTitle : '' );
 			var label;
 			if(popupTitle === '') {
@@ -72,15 +73,21 @@ var processData = function(map_path, data) {
 			} else {
 				label = marker.label+' ('+popupTitle+')';
 			}
+
 			mapdata.push({
+				'id': count,
 				'map': $.t('maps.'+map_path),
 				'label':label,
 				'popup':popupText,
 				'link':link
 			});
+
+			count++;
 		});
 	});
 };
+
+
 
 //search function
 var doSearch = function() {
@@ -96,20 +103,27 @@ var doSearch = function() {
 		$('#clear').show();
 		$('#nav').hide();
 	}
-	var regex = new RegExp('(?=[^\\s])' + searchText, 'gi');
-	var results = [];
-	var mapdataLength = mapdata.length;
-	for(var i=0;i<mapdataLength;i++) {
-		if((mapdata[i].label.search(regex) > -1) || (mapdata[i].popup.search(regex) > -1)) {
-			results.push(mapdata[i]);
-		}
-	}
+
+	var options = {
+		caseSensitive: false,
+		includeScore: false,
+		shouldSort: true,
+		tokenize: false,
+		threshold: 0.2,
+		location: 0,
+		distance: 10000,
+		maxPatternLength: 32,
+		keys: ["map","label","popup"]
+	};
+	var fuse = new Fuse(mapdata, options);
+	var result = fuse.search(searchText);
+
 	resultsElement.empty();
-	var count = '<li>'+results.length+' '+$.t('home.resultsFound')+'</li>';
+	var count = '<li>'+result.length+' '+$.t('home.resultsFound')+'</li>';
 	resultsElement.append($(count));
-	var resultsLength = results.length;
+	var resultsLength = result.length;
 	for(i=0;i<resultsLength;i++) {
-		var item = '<li><div><a href="'+results[i].link+'">'+results[i].label+' - '+results[i].map+'</a></div><div class="searchDescription"><div class="truncated" onclick="toggleTruncate(event, this)">'+results[i].popup+'</div></div></li>';
+		var item = '<li><div><a href="'+result[i].link+'">'+result[i].label+' - '+result[i].map+'</a></div><div class="searchDescription"><div class="truncated" onclick="toggleTruncate(event, this)">'+result[i].popup+'</div></div></li>';
 		resultsElement.append($(item));
 	}
 };

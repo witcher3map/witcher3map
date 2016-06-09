@@ -92,8 +92,8 @@ window.mapdata_toussaint = {
 		coords: [
 			[64.531,63.641],
 		],
-		label: $.t("sidebar.barber"),
-		//popup: $.t("sidebar.desc")
+		label: $.t("barber.label"),
+		popup: $.t("barber.desc")
 	}],
 
 // Hanse Base
