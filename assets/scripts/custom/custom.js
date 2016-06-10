@@ -102,8 +102,8 @@ $(function() {
 
 	var map = L.map('map', map_settings);
 
-	var go = function (cords) {
-		map.panTo(cords);
+	window.go = function (cords) {
+		map.setView(cords);
 		map.setZoom(window.map_mZoom);
 		new L.marker(cords, {
 			icon : L.icon({
