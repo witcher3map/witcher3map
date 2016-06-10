@@ -1,6 +1,6 @@
 window.map_path   = 'toussaint';
 window.map_sWest  = L.latLng(0, 0);
-window.map_nEast  = L.latLng(160, 160);
+window.map_nEast  = L.latLng(144, 144);
 window.map_center = [64, 58];
 window.map_mZoom  = 6;
 window.mapdata_toussaint = {

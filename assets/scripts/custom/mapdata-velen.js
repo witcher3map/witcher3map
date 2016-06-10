@@ -1,7 +1,7 @@
 window.map_path   = 'velen';
 window.map_sWest  = L.latLng(0, 0);
-window.map_nEast  = L.latLng(288, 256);
-window.map_center = [60, -5];
+window.map_nEast  = L.latLng(256, 224);
+window.map_center = [120, 120];
 window.map_mZoom  = 6;
 window.mapdata_velen = {
 // Abandoned Site
