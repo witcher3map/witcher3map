@@ -1,0 +1,3 @@
+[submodule "dist/files/maps"]
+	path = dist/files/maps
+	url = https://github.com/witcher3map/witcher3map-maps.git
