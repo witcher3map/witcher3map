@@ -55,3 +55,4 @@ This software uses the following libraries developed by third parties, and are l
 * [Leaflet.EasyButton](http://git.io/vLhAa) (MIT)
 * [FileSaver.js](http://git.io/vLhxv) (MIT)
 * [Font Awesome](http://fortawesome.github.io/Font-Awesome/) (MIT)
+* [Fuse](http://kiro.me/projects/fuse.html) (APACHE 2.0)
