@@ -1,41 +1,37 @@
---quiet
---warnings=floats,font-faces,font-sizes,rules-count,selector-max-approaching,star-property-hack,underscore-property-hack,universal-selector,unqualified-attributes
---errors=duplicate-properties,empty-rules,errors,gradients,import,known-properties,regex-selectors,selector-max,vendor-prefix
-
-#CSSLINT RULES
-#-------------
-#adjoining-classes            - (ignored) - Don't use adjoining classes.
-#box-model                    - (ignored) - Don't use width or height when using padding or border.
-#box-sizing                   - (ignored) - The box-sizing properties isn't supported in IE6 and IE7.
-#bulletproof-font-face        - (ignored) - Use the bulletproof @font-face syntax to avoid 404's in old IE (http://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax).
-#compatible-vendor-prefixes   - (ignored) - Include all compatible vendor prefixes to reach a wider range of users.
-#display-property-grouping    - (ignored) - Certain properties shouldn't be used with certain display property values.
-#duplicate-background-images  - (ignored) - Every background-image should be unique. Use a common class for e.g. sprites.
-#duplicate-properties         - [error]   - Duplicate properties must appear one after the other.
-#empty-rules                  - [error]   - Rules without any properties specified should be removed.
-#errors                       - [error]   - This rule looks for recoverable syntax errors.
-#fallback-colors              - (ignored) - For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color.
-#floats                       - [warning] - This rule tests if the float property is used too many times
-#font-faces                   - [warning] - Too many different web fonts in the same stylesheet.
-#font-sizes                   - (ignored) - Checks the number of font-size declarations.
-#gradients                    - [error]   - When using a vendor-prefixed gradient, make sure to use them all.
-#ids                          - (ignored) - Selectors should not contain IDs.
-#import                       - [error]   - Don't use @import, use <link> instead.
-#important                    - (ignored) - Be careful when using !important declaration
-#known-properties             - [error]   - Properties should be known (listed in CSS3 specification) or be a vendor-prefixed property.
-#outline-none                 - (ignored) - Use of outline: none or outline: 0 should be limited to :focus rules.
-#overqualified-elements       - (ignored) - Don't use classes or IDs with elements (a.foo or a#foo).
-#qualified-headings           - (ignored) - Headings should not be qualified (namespaced).
-#regex-selectors              - [error]   - Selectors that look like regular expressions are slow and should be avoided.
-#rules-count                  - [warning] - Track how many rules there are.
-#selector-max                 - [error]   - Will error when selector count is > 4095.
-#selector-max-approaching     - [warning] - Will warn when selector count is >= 3800 selectors.
-#shorthand                    - (ignored) - Use shorthand properties where possible.
-#star-property-hack           - [warning] - Checks for the star property hack (targets IE6/7)
-#text-indent                  - (ignored) - Checks for text indent less than -99px
-#underscore-property-hack     - [warning] - Checks for the underscore property hack (targets IE6)
-#unique-headings              - (ignored) - Headings should be defined only once.
-#universal-selector           - [warning] - The universal selector (*) is known to be slow.
-#unqualified-attributes       - [warning] - Unqualified attribute selectors are known to be slow.
-#vendor-prefix                - [error]   - When using a vendor-prefixed property, make sure to include the standard one.
-#zero-units                   - (ignored) - You don't need to specify units when a value is 0.
+{
+	"important": false,
+	"adjoining-classes": false,
+	"known-properties": true,
+	"box-sizing": false,
+	"box-model": false,
+	"overqualified-elements": false,
+	"display-property-grouping": false,
+	"bulletproof-font-face": false,
+	"compatible-vendor-prefixes": false,
+	"regex-selectors": true,
+	"errors": true,
+	"duplicate-background-images": false,
+	"duplicate-properties": true,
+	"empty-rules": true,
+	"selector-max-approaching": false,
+	"gradients": true,
+	"fallback-colors": false,
+	"font-sizes": false,
+	"font-faces": false,
+	"floats": false,
+	"star-property-hack": false,
+	"outline-none": false,
+	"import": true,
+	"ids": false,
+	"underscore-property-hack": false,
+	"rules-count": false,
+	"qualified-headings": false,
+	"selector-max": true,
+	"shorthand": false,
+	"text-indent": false,
+	"unique-headings": false,
+	"universal-selector": false,
+	"unqualified-attributes": false,
+	"vendor-prefix": true,
+	"zero-units": false
+}
