@@ -8,7 +8,7 @@
 		"echidna": "Echidna",
 		"elemental": {
 			"earth": "Earth Elemental",
-			"ice" : "Ice"
+			"ice": "Ice"
 		},
 		"endrega": "Endrega",
 		"gargoyles": "Gargoyles",
@@ -17,7 +17,7 @@
 		"nekkers": "Nekkers",
 		"nekkerWarrior": "Nekker Warrior",
 		"sirens": "Sirens",
-		"wolves" : "Wolves",
+		"wolves": "Wolves",
 		"wraiths": {
 			"wraiths": "Wraiths",
 			"wraith": "Wraith"

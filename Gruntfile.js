@@ -43,6 +43,15 @@ module.exports = function (grunt) {
 			},
 		},
 
+		jsonlint: {
+			locales: {
+				src: ['assets/locales/{,**/}*.json'],
+				options: {
+					reporter: 'jshint',
+				}
+			}
+		},
+
 		// SYNC will only copy changed files!
 		sync: {
 			scripts: {
@@ -180,6 +189,10 @@ module.exports = function (grunt) {
 				files: '<%= htmlhint.markup.src %>',
 				tasks: ['htmlhint', 'sync:markup'],
 			},
+			locales: {
+				files: '<%= jsonlint.locales.src %>',
+				tasks: ['jsonlint:locales', 'sync:locales']
+			},
 			other: {
 				files: [
 					'<%= sync.images.cwd %>',
@@ -204,6 +217,7 @@ module.exports = function (grunt) {
 
 	grunt.loadNpmTasks('gruntify-eslint');
 	grunt.loadNpmTasks('grunt-htmlhint');
+	grunt.loadNpmTasks('grunt-jsonlint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');

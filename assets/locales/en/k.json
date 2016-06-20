@@ -8,7 +8,7 @@
 		"echidna": "Echidna",
 		"elemental": {
 			"earth": "Earth Elemental",
-			"ice" : "Ice"
+			"ice": "Ice"
 		},
 		"endrega": "Endrega",
 		"gargoyles": "Gargoyles",
@@ -17,7 +17,7 @@
 		"nekkers": "Nekkers",
 		"nekkerWarrior": "Nekker Warrior",
 		"sirens": "Sirens",
-		"wolves" : "Wolves",
+		"wolves": "Wolves",
 		"wraiths": {
 			"wraiths": "Wraiths",
 			"wraith": "Wraith"
@@ -183,12 +183,12 @@
 			"lakesideHut": "Lakeside Hut",
 			"ironMine": "Iron Mine",
 			"kaerMorhen": "Kaer Morhen",
-			"bastion":"Bastion",
-			"ruinedwatchtower":"Ruined Watchtower"
+			"bastion": "Bastion",
+			"ruinedwatchtower": "Ruined Watchtower"
 		},
 		"desc": {
-			"ruinedwatchtower":"This lakeside watchtower was once the pride of the Wolf School witchers, yet today lies in ruins, the only sound the wind whistling past its stones.",
-			"bastion":"Once young witchers trained here. Now the bastion is a forgotten ruin.",
+			"ruinedwatchtower": "This lakeside watchtower was once the pride of the Wolf School witchers, yet today lies in ruins, the only sound the wind whistling past its stones.",
+			"bastion": "Once young witchers trained here. Now the bastion is a forgotten ruin.",
 			"lakesideHut": "A dozen years ago a hermit lived here who brewed excellent mead. The witchers would visit him from time to time and chat about far-off lands.",
 			"ironMine": "Iron ore was once extracted from this place for use in the Wolf School's forges.",
 			"kaerMorhen": "The keep of the Sea of Yore, home to the witchers of the Wolf School."
