@@ -21,23 +21,23 @@ window.mapdata_velen = {
 		popup: $.t("abandoned.desc") + '(lvl 4<span> ' + $.t("v:monsters.drowners") + '</span>)'
 	}, {
 		coords: [[138.031, 160.625]],
-          label: $.t("abandoned.label"),
+		label: $.t("abandoned.label"),
 		popup: $.t("abandoned.desc") + '(lvl 9<span> ' + $.t("v:monsters.drowners") + '</span>)'
 	}, {
 		coords: [[122.281, 179.266]],
-          label: $.t("abandoned.label"),
+		label: $.t("abandoned.label"),
 		popup: $.t("abandoned.desc") + '(lvl 9<span> ' + $.t("v:monsters.ghouls") + '</span> &amp; lvl 11<span> ' + $.t("v:monsters.alghoul") + '</span>)'
 	}, { // SW Velen
 		coords: [[29.984, 48.000]],
-          label: $.t("abandoned.label"),
+		label: $.t("abandoned.label"),
 		popup: $.t("abandoned.desc") + '(lvl 9<span> ' + $.t("v:monsters.bandits") + '</span>)'
 	}, {
 		coords: [[33.969, 99.250]],
-          label: $.t("abandoned.label"),
+		label: $.t("abandoned.label"),
 		popup: $.t("abandoned.desc") + '(lvl 9<span> ' + $.t("v:monsters.endregas") + '</span>)'
 	}, { // SE Velen
 		coords: [[99.938, 130.172]],
-          label: $.t("abandoned.label"),
+		label: $.t("abandoned.label"),
 		popup: $.t("abandoned.desc") + '(lvl 5<span> ' + $.t("v:monsters.bandits") + '</span>)'
 	}],
 

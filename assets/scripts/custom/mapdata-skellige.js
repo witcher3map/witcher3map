@@ -820,7 +820,7 @@ window.mapdata_skellige = {
 		popupTitle: $.t("s:poi.popupTitle.ursineSteelSword"),
 		popup: $.t("s:poi.desc.ursineSteelSword")
 	}, {
-	coords: [[-57.404, -49.349]],
+		coords: [[-57.404, -49.349]],
 		label: $.t("s:poi.label.enhancedUrsineBoots"),
 		popupTitle: $.t("s:poi.popupTitle.enhancedUrsineBoots"),
 		popup: $.t("s:poi.desc.enhancedUrsineBoots")
