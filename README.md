@@ -31,11 +31,11 @@ After cloning the repository run the following commands:
 
 1. `npm install` _(downloads dependencies for the project from NPM and builds the project to the dist/ folder.)_
 
-2. `npm run getmaps` _(downloads the map files from Dropbox and extracts them properly, you only need to do this once.)_
+2. `grunt build` _(download & extracts map files, lints markup/js/css/json, creates vendor bundle, minifies js/css, builds the dist folder)_
 
-3. `npm start &` _(runs a local webserver listening on port 80 in the background. open a web browser and visit http://localhost)_
+3. `grunt server` _(runs a local webserver listening on port 80 in the background and watches files for changes. Open your web browser to http://localhost)_
 
-4. `npm run build:watch` _(watches the assets folder for changes and automatically runs the build task necessary to update the dist folder.)_
+Optional: `grunt rebuild` _(same thing as build but doesn't download the maps again.)_
 
 Credits & Licence
 --------------------------------------
