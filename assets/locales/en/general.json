@@ -53,7 +53,8 @@
 		"shopkeeper": "Shopkeeper",
 		"smugglers": "Smugglers' Cache",
 		"spoils": "Spoils of War",
-		"vintnercontract": "Vintner Contract"
+		"vintnercontract": "Vintner Contract",
+		"vineyardinfestation": "Vineyard Infestation"
 	},
 	"controls": {
 		"show": "Show All",
@@ -514,5 +515,9 @@
 		"igni": "Igni",
 		"quen": "Quen",
 		"yrden": "Yrden"
+	},
+	"vineyardinfestation": {
+		"label": "Vineyard Infestation",
+		"desc": "Vineyard infested by monsters."
 	}
 }

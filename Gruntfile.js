@@ -195,7 +195,7 @@ module.exports = function (grunt) {
 			},
 			other: {
 				files: [
-					'<%= sync.images.cwd %>',
+					'assets/images/**',
 					'<%= sync.fonts.cwd %>',
 				],
 				tasks: ['sync:images', 'sync:fonts'],

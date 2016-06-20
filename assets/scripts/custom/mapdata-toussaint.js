@@ -46,7 +46,6 @@ window.mapdata_toussaint = {
 		popup: $.t("armourerxxx.desc")
 	}],
 
-
 // Armourer's Table
 	armourerstable: [{
 		coords: [
@@ -85,8 +84,6 @@ window.mapdata_toussaint = {
 		popup: $.t("banditcamp.desc")
 	}],
 
-
-
 // Barber
 	barber: [{
 		coords: [
@@ -113,7 +110,6 @@ window.mapdata_toussaint = {
 		label: $.t("blacksmithxxx.label"),
 		popup: $.t("blacksmithxxx.desc")
 	}],
-
 
 // Brothel
 	brothel: [],
@@ -208,7 +204,6 @@ window.mapdata_toussaint = {
 		popup: $.t("guarded.desc")
 	}],
 
-
 // Gwent Player
 	gwent: [{
 		coords: [
@@ -280,7 +275,6 @@ window.mapdata_toussaint = {
 		label: $.t("hidden.label"),
 		popup: $.t("hidden.desc")
 	}],
-
 
 // Innkeep
 	innkeep: [{
@@ -358,7 +352,6 @@ window.mapdata_toussaint = {
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc")
 	}],
-
 
 // Notice Board
 	notice: [{
@@ -679,7 +672,6 @@ window.mapdata_toussaint = {
 		popup: $.t("t:signpost.desc.casteldacciaabandonedestate")
 	}],
 
-
 // Smugglers' Cache
 	smugglers: [],
 
@@ -782,7 +774,6 @@ window.mapdata_toussaint = {
 		popup: $.t("t:sidequests.desc.portait")
 	}],
 
-
 //// Contracts
 	contracts: [{
 		coords: [[74.60,74.50]],
@@ -802,6 +793,18 @@ window.mapdata_toussaint = {
 		popup: $.t("t:contracts.desc.tufo")
 	}],
 
+//// Vineyard Infestation
+	vineyardinfestation: [{
+		coords: [
+			[75.469,62.594],
+			[97.859,70.625],
+			[46.453,75.563],
+			[79.125,86.391],
+			[77.875,95.344]
+		],
+		label: $.t("sidebar.vineyardinfestation"),
+		popup: $.t("vineyardinfestation.desc")
+	}],
 
 // Spoils of War
 	spoils: []
