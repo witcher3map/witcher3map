@@ -1,6 +1,6 @@
 var isRoot = (location.pathname.match(/\/(\w{1})\/(?:index.html)?$/)) ? false : true;
 
-if (localStorage['lang'] === null) {
+if (localStorage['lang'] == null) {
 	var lang = window.navigator.userLanguage || window.navigator.language;
 	lang = lang.substring(0,2);
 	localStorage['lang'] = lang;

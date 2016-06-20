@@ -33,7 +33,10 @@ window.mapdata_toussaint = {
 
 // Armourer
 	armourer: [{
-		coords: [[39.969,81.000],[64.956,65.109]],
+		coords: [
+			[39.969,81.000],
+			[64.956,65.109]
+		],
 		label: $.t("armourerjourney.label"),
 		popup: $.t("armourerjourney.desc")
 	},{
@@ -106,7 +109,10 @@ window.mapdata_toussaint = {
 
 // Blacksmith
 	blacksmith: [{
-		coords: [[49.813,64.359],[65.113,64.688]],
+		coords: [
+			[49.813,64.359],
+			[65.113,64.688]
+		],
 		label: $.t("blacksmithxxx.label"),
 		popup: $.t("blacksmithxxx.desc")
 	}],

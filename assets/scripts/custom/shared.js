@@ -124,7 +124,7 @@ window.processData = function (data) {
 		var items = data[dataKey];
 		var groupItems = [];
 		items.forEach(function (item) {
-			if (item.popupTitle === null) {
+			if (item.popupTitle == null) {
 				item.popupTitle = item.label;
 			}
 			item.coords.forEach(function (coord) {
