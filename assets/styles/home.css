@@ -269,6 +269,9 @@ div#footer > a:hover {
 	color: #ddd;
 	text-decoration: underline;
 }
+i.close-search {
+	display: none;
+}
 @media all and (max-width: 800px) {
 	body {
 		background-position: right center;

@@ -166,7 +166,7 @@ module.exports = function (grunt) {
 			},
 			css: {
 				files: 'assets/styles/**.css',
-				tasks: ['cssmin:styles'],
+				tasks: ['csslint:styles', 'cssmin:styles'],
 			},
 			scripts: {
 				files: '<%= eslint.scripts %>', 
@@ -191,7 +191,7 @@ module.exports = function (grunt) {
 
 		express: {
 			options: {
-				port: 81,
+				port: 80,
 			},
 			dev: {
 				options: {
@@ -208,7 +208,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-csslint');
 	grunt.loadNpmTasks('grunt-express-server');
@@ -217,27 +216,29 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-curl');
 	grunt.loadNpmTasks('grunt-zip');
 
-	grunt.registerTask('server', [ 'express:dev', 'watch' ])
+	grunt.registerTask('server', ['express:dev', 'watch']);
 
 	grunt.registerTask('build', [
 		'clean:dist',
 		'csslint',
-//		'htmlhint',
-//		'eslint',
+		'htmlhint',
+		'eslint',
 		'uglify',
+		'cssmin',
 		'curl:maps',
 		'unzip:maps',
+		'copy',
 		'sync',
 	]);
 
+	// doesn't download maps
 	grunt.registerTask('rebuild', [
 		'clean:dist',
 		'csslint',
-//		'htmlhint',
-//		'eslint',
+		'htmlhint',
+		'eslint',
 		'uglify',
 		'cssmin',
-//		'curl:maps',
 		'unzip:maps',
 		'copy',
 		'sync',
