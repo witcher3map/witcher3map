@@ -229,6 +229,7 @@ module.exports = function (grunt) {
 		'unzip:maps',
 		'copy',
 		'sync',
+		'sitemap_xml',
 	]);
 
 	// doesn't download maps
@@ -242,6 +243,7 @@ module.exports = function (grunt) {
 		'unzip:maps',
 		'copy',
 		'sync',
+		'sitemap_xml',
 	]);
 
 };
