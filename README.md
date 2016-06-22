@@ -37,6 +37,14 @@ After cloning the repository run the following commands:
 
 4. `npm run build:watch` _(watches the assets folder for changes and automatically runs the build task necessary to update the dist folder.)_
 
+Or if you prefer Docker:
+
+Ensure you have [Docker](https://www.docker.com/products/overview) and [Docker Compose](https://docs.docker.com/compose/install/) installed and run the following commands:
+
+1. `docker-compose up -d app` _(builds and runs container on port 80)_
+
+2. In another terminal, `docker exec -it witcher3map_app_1 npm run build:watch` _(watches the assets folder for changes and automatically runs the build task necessary to update the dist folder.)_
+
 Credits & Licence
 --------------------------------------
 Created by [untamed0](https://github.com/untamed0). Licensed under [CC BY-NC-SA](http://creativecommons.org/licenses/by-nc-sa/4.0/). With help from [mcarver](https://github.com/mcarver) and the other [contributors](https://github.com/untamed0/witcher3map/graphs/contributors). Thanks to [@DesignGears](https://twitter.com/DesignGears) & [hhrhhr](https://github.com/hhrhhr) for map & asset extraction.
