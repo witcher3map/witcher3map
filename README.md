@@ -41,6 +41,8 @@ Or if you prefer Docker:
 
 Ensure you have [Docker](https://www.docker.com/products/overview) and [Docker Compose](https://docs.docker.com/compose/install/) installed and run the following commands:
 
+0. `git submodule init && git submodule update` _(gets the maps)_
+
 1. `docker-compose up -d app` _(builds and runs container on port 80)_
 
 2. In another terminal, `docker exec -it witcher3map_app_1 npm run build:watch` _(watches the assets folder for changes and automatically runs the build task necessary to update the dist folder.)_
