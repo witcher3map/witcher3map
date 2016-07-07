@@ -95,10 +95,10 @@ var doSearch = function() {
 	var resultsElement = $('#results');
 	var searchText = searchElement.val();
 	if(searchText.length === 0) {
-			resultsElement.empty();
-			$('#clear').hide();
-			$('#nav').show();
-			return;
+		resultsElement.empty();
+		$('#clear').hide();
+		$('#nav').show();
+		return;
 	} else {
 		$('#clear').show();
 		$('#nav').hide();

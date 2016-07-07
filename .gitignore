@@ -4,3 +4,5 @@ dist
 .idea
 *.iml
 .DS_Store
+witcher3map-maps
+tmp

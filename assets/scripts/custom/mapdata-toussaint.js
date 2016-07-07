@@ -33,7 +33,10 @@ window.mapdata_toussaint = {
 
 // Armourer
 	armourer: [{
-		coords: [[39.969,81.000],[64.956,65.109]],
+		coords: [
+			[39.969,81.000],
+			[64.956,65.109]
+		],
 		label: $.t("armourerjourney.label"),
 		popup: $.t("armourerjourney.desc")
 	},{
@@ -45,7 +48,6 @@ window.mapdata_toussaint = {
 		label: $.t("armourexxx.label"),
 		popup: $.t("armourerxxx.desc")
 	}],
-
 
 // Armourer's Table
 	armourerstable: [{
@@ -85,8 +87,6 @@ window.mapdata_toussaint = {
 		popup: $.t("banditcamp.desc")
 	}],
 
-
-
 // Barber
 	barber: [{
 		coords: [
@@ -109,11 +109,13 @@ window.mapdata_toussaint = {
 
 // Blacksmith
 	blacksmith: [{
-		coords: [[49.813,64.359],[65.113,64.688]],
+		coords: [
+			[49.813,64.359],
+			[65.113,64.688]
+		],
 		label: $.t("blacksmithxxx.label"),
 		popup: $.t("blacksmithxxx.desc")
 	}],
-
 
 // Brothel
 	brothel: [],
@@ -208,7 +210,6 @@ window.mapdata_toussaint = {
 		popup: $.t("guarded.desc")
 	}],
 
-
 // Gwent Player
 	gwent: [{
 		coords: [
@@ -281,41 +282,40 @@ window.mapdata_toussaint = {
 		popup: $.t("hidden.desc")
 	}],
 
-
 // Innkeep
 	innkeep: [{
-			coords: [[75.406,75.188]],
-			label: $.t("t:signpost.label.cockatrice"),
-			popup: $.t("t:innkeep.desc.cockatrice")
-		},{
-				coords: [[64.656,62.734]],
-				label: $.t("t:innkeep.label.xxx"),
-				popup: $.t("t:innkeep.desc.xxx")
-		},{
-				coords: [[51.438,61.234]],
-				label: $.t("t:innkeep.label.pheasantry"),
-				popup: $.t("t:innkeep.desc.pheasantry")
-		},{
-				coords: [[41.328,81.109]],
-				label: $.t("t:innkeep.label.xxx"),
-				popup: $.t("t:innkeep.desc.xxx")
-		},{
-				coords: [[90.703,47.578]],
-				label: $.t("t:innkeep.label.auberge"),
-				popup: $.t("t:misc.desc.cleared")
-		},{
-				coords: [[63.453,90.625]],
-				label: $.t("t:innkeep.label.barrelandbung"),
-				popup: $.t("t:misc.desc.barrelandbung")
-		},{
-				coords: [[113.891,66.391]],
-				label: $.t("t:innkeep.label.salamander"),
-				popup: $.t("t:misc.desc.aftercleared")
-		},{
-				coords: [[52.128,65]],
-				label: $.t("t:innkeep.label.houseofpleasure"),
-				popup: $.t("t:innkeep.desc.houseofpleasure")
-		}],
+		coords: [[75.406,75.188]],
+		label: $.t("t:signpost.label.cockatrice"),
+		popup: $.t("t:innkeep.desc.cockatrice")
+	},{
+		coords: [[64.656,62.734]],
+		label: $.t("t:innkeep.label.xxx"),
+		popup: $.t("t:innkeep.desc.xxx")
+	},{
+		coords: [[51.438,61.234]],
+		label: $.t("t:innkeep.label.pheasantry"),
+		popup: $.t("t:innkeep.desc.pheasantry")
+	},{
+		coords: [[41.328,81.109]],
+		label: $.t("t:innkeep.label.xxx"),
+		popup: $.t("t:innkeep.desc.xxx")
+	},{
+		coords: [[90.703,47.578]],
+		label: $.t("t:innkeep.label.auberge"),
+		popup: $.t("t:misc.desc.cleared")
+	},{
+		coords: [[63.453,90.625]],
+		label: $.t("t:innkeep.label.barrelandbung"),
+		popup: $.t("t:misc.desc.barrelandbung")
+	},{
+		coords: [[113.891,66.391]],
+		label: $.t("t:innkeep.label.salamander"),
+		popup: $.t("t:misc.desc.aftercleared")
+	},{
+		coords: [[52.128,65]],
+		label: $.t("t:innkeep.label.houseofpleasure"),
+		popup: $.t("t:innkeep.desc.houseofpleasure")
+	}],
 
 // Knight Errant in Distress
 	kid: [{
@@ -358,7 +358,6 @@ window.mapdata_toussaint = {
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc")
 	}],
-
 
 // Notice Board
 	notice: [{
@@ -419,53 +418,53 @@ window.mapdata_toussaint = {
 
 // Point of Interest
 	poi: [{
-	  coords: [[69.984,42.813]],
-	  label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.manticore") +$.t(" ") + $.t("t:poi.label.steel"),
-	  popup: $.t("t:poi.desc.steel")
+		coords: [[69.984,42.813]],
+		label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.manticore") +$.t(" ") + $.t("t:poi.label.steel"),
+		popup: $.t("t:poi.desc.steel")
 	},{
-	  coords: [[97.984,60.766]],
-	  label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.manticore") +$.t(" ") +$.t("t:poi.label.trousersandboots"),
-	  popup: $.t("t:poi.desc.manticoretrousersandboots")
+		coords: [[97.984,60.766]],
+		label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.manticore") +$.t(" ") +$.t("t:poi.label.trousersandboots"),
+		popup: $.t("t:poi.desc.manticoretrousersandboots")
 	},{
-	  coords: [[46.984,51.500]],
-	  label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.manticore") +$.t(" ") +$.t("t:poi.label.silver"),
-	  popup: $.t("t:poi.desc.manticoresilver")
+		coords: [[46.984,51.500]],
+		label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.manticore") +$.t(" ") +$.t("t:poi.label.silver"),
+		popup: $.t("t:poi.desc.manticoresilver")
 	},{
-	  coords: [[69.078,116.578]],
-	  label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.griffin") +$.t(" ") +$.t("t:poi.label.steelgauntletsboots"),
-	  popup: $.t("t:poi.desc.steelgauntletsboots")
+		coords: [[69.078,116.578]],
+		label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.griffin") +$.t(" ") +$.t("t:poi.label.steelgauntletsboots"),
+		popup: $.t("t:poi.desc.steelgauntletsboots")
 	},{
-	  coords: [[65.641,91.719]],
-	  label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.ursine") +$.t(" ") +$.t("t:poi.label.silverarmorgauntlers"),
-	  popup: $.t("t:poi.desc.silverarmorgauntlers")
+		coords: [[65.641,91.719]],
+		label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.ursine") +$.t(" ") +$.t("t:poi.label.silverarmorgauntlers"),
+		popup: $.t("t:poi.desc.silverarmorgauntlers")
 	},{
-	  coords: [[80.469,107.956]],
-	  label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.griffin") +$.t(" ") +$.t("t:poi.label.silverarmortrousers"),
-	  popup: $.t("t:poi.desc.silverarmortrousers")
+		coords: [[80.469,107.956]],
+		label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.griffin") +$.t(" ") +$.t("t:poi.label.silverarmortrousers"),
+		popup: $.t("t:poi.desc.silverarmortrousers")
 	},{
-	  coords: [[73.156,86.656]],
-	  label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.ursine") +$.t(" ") +$.t("t:poi.label.steelbootstrousers"),
-	  popup: $.t("t:poi.desc.steelbootstrousers")
+		coords: [[73.156,86.656]],
+		label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.ursine") +$.t(" ") +$.t("t:poi.label.steelbootstrousers"),
+		popup: $.t("t:poi.desc.steelbootstrousers")
 	},{
-	  coords: [[113.609,81.078]],
-	  label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.feline") +$.t(" ") +$.t("t:poi.label.armor"),
-	  popup: $.t("t:poi.desc.armor")
+		coords: [[113.609,81.078]],
+		label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.feline") +$.t(" ") +$.t("t:poi.label.armor"),
+		popup: $.t("t:poi.desc.armor")
 	},{
-	  coords: [[116.781,71.500]],
-	  label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.feline") +$.t(" ") +$.t("t:poi.label.trousersboots"),
-	  popup: $.t("t:poi.desc.trousersboots")
+		coords: [[116.781,71.500]],
+		label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.feline") +$.t(" ") +$.t("t:poi.label.trousersboots"),
+		popup: $.t("t:poi.desc.trousersboots")
 	},{
-	  coords: [[107.422,77]],
-	  label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.feline") +$.t(" ") +$.t("t:poi.label.steelsilvergauntlets"),
-	  popup: $.t("t:poi.desc.steelbootstrousers")
+		coords: [[107.422,77]],
+		label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.feline") +$.t(" ") +$.t("t:poi.label.steelsilvergauntlets"),
+		popup: $.t("t:poi.desc.steelbootstrousers")
 	},{
-	  coords: [[49.781,101]],
-	  label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.wolven") +$.t(" ") +$.t("t:poi.label.all"),
-	  popup: $.t("t:poi.desc.all")
+		coords: [[49.781,101]],
+		label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.wolven") +$.t(" ") +$.t("t:poi.label.all"),
+		popup: $.t("t:poi.desc.all")
 	},{
-	  coords: [[91.547,106.172]],
-	  label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.manticore") +$.t(" ") +$.t("t:poi.label.gauntlets"),
-	  popup: $.t("t:poi.desc.gauntlets")
+		coords: [[91.547,106.172]],
+		label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.manticore") +$.t(" ") +$.t("t:poi.label.gauntlets"),
+		popup: $.t("t:poi.desc.gauntlets")
 	}
 ],
 
@@ -679,12 +678,11 @@ window.mapdata_toussaint = {
 		popup: $.t("t:signpost.desc.casteldacciaabandonedestate")
 	}],
 
-
 // Smugglers' Cache
 	smugglers: [],
 
 //// (Side) Quests
-sidequests: [{
+	sidequests: [{
 		coords: [[74.60,75.50]],
 		label: $.t("t:sidequests.label.gwenttournment"),
 		popup: $.t("t:sidequests.desc.gwenttournment")
@@ -769,22 +767,21 @@ sidequests: [{
 		label: $.t("t:sidequests.label.paperchase"),
 		popup: $.t("t:sidequests.desc.paperchase")
 	},{
-			coords: [[110.172,87.125],[91.094,86.703],[49.047,92.781],[85.563,72.172]],
-			label: $.t("t:sidequests.label.vintnercontract"),
-			popup: $.t("t:sidequests.desc.vintnercontract")
+		coords: [[110.172,87.125],[91.094,86.703],[49.047,92.781],[85.563,72.172]],
+		label: $.t("t:sidequests.label.vintnercontract"),
+		popup: $.t("t:sidequests.desc.vintnercontract")
 	},{
-			coords: [[89.781,56.984]],
-			label: $.t("t:sidequests.label.footsteps"),
-			popup: $.t("t:sidequests.desc.footsteps")
+		coords: [[89.781,56.984]],
+		label: $.t("t:sidequests.label.footsteps"),
+		popup: $.t("t:sidequests.desc.footsteps")
 	},{
-			coords: [[51.438,63.797]],
-			label: $.t("t:sidequests.label.portait"),
-			popup: $.t("t:sidequests.desc.portait")
+		coords: [[51.438,63.797]],
+		label: $.t("t:sidequests.label.portait"),
+		popup: $.t("t:sidequests.desc.portait")
 	}],
 
-
 //// Contracts
-contracts: [{
+	contracts: [{
 		coords: [[74.60,74.50]],
 		label: $.t("t:contracts.label.biggamehunter"),
 		popup: $.t("t:contracts.desc.biggamehunter")
@@ -802,6 +799,18 @@ contracts: [{
 		popup: $.t("t:contracts.desc.tufo")
 	}],
 
+//// Vineyard Infestation
+	vineyardinfestation: [{
+		coords: [
+			[75.469,62.594],
+			[97.859,70.625],
+			[46.453,75.563],
+			[79.125,86.391],
+			[77.875,95.344]
+		],
+		label: $.t("sidebar.vineyardinfestation"),
+		popup: $.t("vineyardinfestation.desc")
+	}],
 
 // Spoils of War
 	spoils: []

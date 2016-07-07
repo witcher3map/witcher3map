@@ -1,268 +1,265 @@
 {
-   "alchemy":{
-      "gremist":{
-         "label":"Gremist",
-         "desc":"'Practicum in Advanced Alchemy' (lvl 24) Quest"
-      }
-   },
-   "armourer":{
-      "amateurLabel":"Amateur Armorer",
-      "journeymanLabel":"Journeyman Armorer",
-      "desc":"Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
-   },
-   "hansebase":{
-      "label":"Hanse Base",
-      "desc":"Expect to run into armed-to-the-teeth bandits here. "
-   },
-   "blacksmith":{
-      "amateurLabel":"Amateur Blacksmith",
-      "journeymanLabel":"Journeyman Blacksmith",
-      "desc":"Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
-   },
-   "innkeep":{
-      "label":{
-         "auberge":"The Ruddy Brush Auberge",
-         "salamander":"The Silver Salamander Inn",
-         "pheasantry":"The Pheasantry",
-         "houseofpleasure":"The Bells of Beauclair - House of Pleasure",
-         "barrelandbung":"The Barrel and Bung Inn"
-      },
-      "popup":"Innkeep",
-      "desc":{
-         "cockatrice":""
-      }
-   },
-   "kid":{
-      "label":"Knight Errant in Distress",
-      "desc":"Here you can help a knight errant fight bandits. "
-   },
-   "misc":{
-      "":""
-   },
-   "poi":{
-      "label":{
-         "steel":"steel sword",
-         "silver":"silver sword",
-         "armor":"armor",
-         "gauntlets":"gauntlets",
-         "trousersboots":"trousers and boots",
-         "steelgauntletsboots":"steel sword, gauntlets and boots",
-         "silverarmorgauntlers":"silver sword, armor and gauntlets",
-         "steelbootstrousers":"steel sword, trousers and boots",
-         "silverarmortrousers":"armor, trousers and silver sword",
-         "steelsilvergauntlets":"steel sword, silver sword and gauntlets",
-         "trousersandboots":"trousers & boots",
-         "all":"steel sword, silver sword, gauntlets, armor, trousers and boots"
-      },
-      "popupTitle":{
-         "witchergear":"Grandmaster Witchergear"
-      },
-      "desc":{
-         "manticoretrousersandboots":"inside the temple",
-         "silverarmorgauntlers":"",
-         "steelgauntletsboots":"",
-         "steel":"",
-         "gauntlets":"bottom of the lake",
-         "trousersboots":"located in a chest, ontop of the broken bridge",
-         "steelbootstrousers":"inside the Cave",
-         "all":"The Key for the Portal is jsut outside the Cave. The are all Wolven Digramms inside, three on two locations inside the cave",
-         "armor":"the Diagram is inside the House, behind a Picurefarm on the Wall",
-         "silverarmortrousers":"Located behind a Illustion. In the next Room find the Crystal and use it on the Door, use Aard to activate the Portal. After the Portal there are the three Diagrams.",
-         "manticoresilver":"at the end Cave"
-      }
-   },
-   "sidequests":{
-      "label":{
-         "gwenttournment":"Gwent: To Everything - Turn, Turn, Tournamenet!",
-         "WildKingdom":"Mutual of Beauclair's Wild Kingdom",
-         "kingforhire":"King for Hire",
-         "winewars":"Wine Wars: Belgaard",
-         "facethestrage":"Turn and Face the Strange",
-         "bigfeet":"Big Feet to Fill: The FIrst Group",
-         "knightstale":"A Knight's Tale",
-         "spon":"Spoontaneous Profits!",
-         "escapology":"Applied Escapology",
-         "tilldeath":"Till Death Do You Part",
-         "huntgriffin":"Scavenger Hunt: Grandmaster Griffin Gear",
-         "huntfeline":"Scavenger Hunt: Grandmaster Feline Gear",
-         "huntursine":"Scavenger Hunt: Grandmaster Ursin Gear",
-         "huntmanticor":"Scavenger Hunt: Grandmaster Manticore Gear",
-         "huntwolven":"Scavenger Hunt: Grandmaster Wolven Gear",
-         "granite":"Goodness, Gracious, Great Balls of Granite!",
-         "onlyone":"There can be Only One",
-         "placelikehome":"No Place like Home",
-         "smittenkight":"The Warble of a Smitten Knight",
-         "wildkingdom":"Mutual Of Becaular's Wild Kingdom",
-         "master":"Master Master Master Maser!",
-         "suffering":"The Suffering of Young Francois",
-         "bigfleet":"Big Feet to Fill: The Fith Group",
-         "enjpytheplay":"But Other than that, how did you enjoy the play?",
-         "vintnercontract":"Vinter's Contract",
-         "footsteps":"The Propeht Lebioda's Footsteps",
-         "portait":"A portait of the witcher as an old man",
-         "paperchase":"Paperchase"
-      },
-      "desc":{
-         "gwenttournment":"Level 38 - You get this Quest at the Notice Board near the Cockatrice Inn",
-         "WildKingdom":"Level 46 - You get this Quest at the Notice Board near the Cockatrice Inn",
-         "kingforhire":" - You get this Quest at the Notice Board near the Cockatrice Inn",
-         "winewars":"Level 37 - You get this Quest at the Notice Board near the Cockatrice Inn",
-         "facethestrage":"Level 35 - you should automaticly pick up this Quest, while your the Main Quest `La Cage au Fou`",
-         "bigfeet":"",
-         "knightstale":"Level 40 - You get this Quest at the Notice Board in Castel Ravello Vineyard",
-         "spon":"Level 42 - This Quests starts if you Pick up the Spoon, located inside the House on Barrel",
-         "escapology":"Level 40 - You start this Quest by looting the Hidden Treasure",
-         "tilldeath":"Level 36 - You get this Quest from Charles Lanzano, located in first Floor of The Clever Clogs Tavern",
-         "huntgriffin":"",
-         "huntfeline":"",
-         "huntursine":"",
-         "huntmanticor":"",
-         "huntwolven":"",
-         "granite":"Level 36 - ",
-         "onlyone":"You get this Quest at the Notice Board at the Gran'Place",
-         "placelikehome":"You get this Quest at the Notice Board at the Gran'Place",
-         "smittenkight":"Level 35 - You get this Quest at the Notice Board at the Gran'Place",
-         "wildkingdom":"You get this Quest at the Notice Board at the Gran'Place",
-         "master":"Level 40 - Find all Diagramms",
-         "hidden":"Mini Sidequest from a Hidden Treasure",
-         "save":"Persons in Distress, save them to complete the Quest",
-         "enjpytheplay":"The Order in where you need to light the candles can be figgred out by using the Witcher Senses. After that dring the Wine (Questitem) `Vis la Crac`",
-         "vintnercontract":"Here you can help a vinter clear a cave of monsters",
-         "footsteps":"Here you can solve a problem related to the construction of Lebioda's statue",
-         "portait":"",
-         "paperchase":""
-      }
-   },
-   "contracts":{
-      "label":{
-         "biggamehunter":"Contract: Big Game Hunter",
-         "coldasice":"Contract: Feet as Cold as Ice",
-         "tufo":"Contract: The Tufo Monster",
-         "bonvineblues":"Contract: Bovine Blues"
-      },
-      "desc":{
-         "biggamehunter":"Level 37 Witcher Contract. Started on the Notice Board near Dulcinea Windmill",
-         "coldasice":"Level 45 - You get this Quest at the Notice Board near the Cockatrice Inn",
-         "tufo":"Level 48 - You get this Quest at the Notice Board in Flovive",
-         "bonvineblues":"Level 38 - "
-      }
-   },
-   "misc":{
-     "label":{
-        "gwent":"Gwent Player"
-     },
-      "desc":{
-         "insideden":"Inside the Monster Den",
-         "insidecave":"Inside the Cave",
-         "witchergear":"Witchergear:",
-         "manticore":"Manticore",
-         "griffin":"Griffin",
-         "ursine":"Ursine",
-         "wolven":"Wolven",
-         "feline":"Feline",
-         "gwent":"Gwent Player from that you can win a Skellige Card (I Have a Gwent Problem Achievement)",
-         "aftercleared":"accessible after the area is cleared"
-      }
-   },
-   "signalfire":{
-      "label":"Signal Fire",
-      "desc":"If a signal fire is lit by a torch runner, reinforcements will arrive to help the bandits in their fight. "
-   },
-   "signpost":{
-      "label":{
-         "dulcineawindmill":"Dulcinea Windmill",
-         "cockatrice":"The Cockatrice Inn",
-         "plegmundsbridge":"Plegmund's Bridge",
-         "corvobianco":"Corvo Bianco Vineyard",
-         "palace":"Beauclair Palace",
-         "palacegardens":"Palace Gardens",
-         "embassy":"Nilfgaardian Embassy",
-         "gate":"Metinna Gate",
-         "francollarts":"Francollarts",
-         "fort":"Fort Astre Ruins",
-         "fox":"Fox Hollow",
-         "castelravello":"Castel Ravello Vineyard",
-         "cemetry":"Mère-Lachaiselongue Cemetry",
-         "prison":"Toussaint Prison",
-         "farm":"Gelenser Farm",
-         "ruins":"Termes Palace Runins",
-         "mutnaruins":"Tesham Mutna Ruins",
-         "granplace":"Gran'Place",
-         "tunier":"Tourney Grounds",
-         "statue":"Prophet Lebioda Statue",
-         "hortense":"Hortense Vineyard",
-         "flovive":"Flovive",
-         "fortussar":"Fort Ussar Ruins",
-         "cottage":"Trastamara Hunting Cottage",
-         "montcranecastle":"Mont Crane Castle",
-         "duntynnecastle":"Dun Tynne Castle",
-         "duntynnehillside":"Dun Tynne Hillside",
-         "arthachpalaceruins":"Arthach Palace Ruins",
-         "thesilversalamanderinn":"The Silver Salamander Inn",
-         "tradingpost":"Trading Post",
-         "basanefarm":"Basane Farm",
-         "croixmill":"Count de la Croix's Mill",
-         "coopersgate":"Coopers Gate",
-         "haborgate":"Habor Gate",
-         "sansebastian":"San Sebastian",
-         "beauclairport":"Beauclair Port",
-         "coronatavineyard":"Coronata Vineyard",
-         "duntynnecrossroads":"Dun Tynne Crossroads",
-         "chuchotecave":"Chuchote Cave",
-         "sansretourvalley":"Sansretour Valley",
-         "riouxcannesoutpost":"Rioux-Cannes Outpost",
-         "seidhellyghadamphitheater":"Seidhe Llyghad Amphitheater",
-         "belgaardvineyard":"Belgaard Vineyard",
-         "lebiodasgate":"Lebioda's Gate",
-         "ardaisoquarry":"Ardaiso Quarry",
-         "casteldacciaabandonedestate":"Casteldaccia Abandoned Estate"
-      },
-      "desc":{
-         "casteldacciaabandonedestate":"Maximus Macrinus was once a knight errant famed for showing no mercy to any bandits prowling the Champs-Dèsolès. After a long and storied career, he hung up his sword at his ancestral manor and settled in for a well-deserved retirement. No one knows what brought about the subsequent murder of his entire family. Some claim a giant descended from the mountains, others, that he ran afoul of one of the largest hanses. The only undisputed fact is that everyone with any sense now avoids going anywhere near Casteldaccia.",
-         "ardaisoquarry":"Every man, be he tippler or teetotaler, knows Toussaint's economy stems from the fruit of the vine. Few, however, realize the duchy's lands are rich with deposits of slate and other valuable building materials, and that the quarrying of such was once the bedrock of local livelihoods. Thus when gods-fearing Toussaintois saw fit to build a statue of the saintly Lebioda, they had no need to send for materials from abroad - instead, they merely reactivated Ardaiso.",
-         "lebiodasgate":"Work on the Temple of Lebioda in Beauclair was begun by the prophet's most famed disciple, Plegmund. He convinced Duchess Coronata to rebuild that area of the city and dig deep catacombs for the city's wealthiest inhabitants. Those of less coin were to be buried in the new cemetry beside the temple. The poorest of the poor, however, had to continue to make do with the Orlèmurs Cemetry, connected to the city by the Temple Gate, also known as the Gate of Lebioda.",
-         "belgaardvineyard":"The vineyard's former owner racked up significant debts with a loan shark, who then sold them to bandits for collection. When they found he had no coin to collect, they murdered him alongside all other residents of his estate. As if that were not heinous enough, they then made the vineyard their base, from which they would hijack transports of wine to fuel their drunken orgies. So fierce and well-stocked were they, none could chase them off - until one brave alchemist spiced a transport crossing their territory with a powerful extract of ricin.",
-         "seidhellyghadamphitheater":"On the banks of the lake known as Seidhe Llyghad, or Eye of the Mountains, lies and ancient amphitheater - another relict of Toussaint's elven past. In 1178 the structure was restored so it could stage the works of Beauclair's most renowned theatrical virtuosos. unfortunately, its grand opening was marred by an unplanned tragic ending: the mysterious death of the play's leading lady. Ever since, the place has been deemed cursed and few dare venture anywhere near it.",
-         "riouxcannesoutpost":"The second most popularly cultivated plant in Toussaint - the first being the grapevine, of course - is the ovlive tree. It is mainly grown for its olives, which are pressed for their oil, but is also prized amoung woodcarvers. The unquestionably most cherished tree in the region, however, is the Beauclair oak, which is used in the making of wine barrels. And the most important place in Toussaint for the processing of this tree is the Rioux-Cannes woodcutters' outpost.",
-         "sansretourvalley":"The Sansretour Valley is the center of the world wine production. It is on this valley's vine-covered slopes that one can find Castel Ravello, Coronata and Vermentino - the estates of famous winemaking families which have for centuries been envy of every other vintner.",
-         "chuchotecave":"To listen to the old folks' jabber, this place was once home to Whispess - a woodland witch eager to help any in need. When Whispess peered into a vertain knight's heart, she saw that it was black and refused him aid. The knight reacted with wrath and burned the witch alive in her cave. Soon afterward, the knight went mad and killed himself - claiming he was tourtured by a strange voice whispering in his ear that no one else could hear.",
-         "duntynnecrossroads":"Dear traveler, you have entered the territory of Dun Tynne, lands belonging to the nobly-born Sir Roderick. If you wish to pay him a visit, walk westward from here and you shall surely happen upon his castle. If, however, you seek a route to the Pittapatte river, you should make your way north.",
-         "dulcineawindmill":"Lady Dulcinea was a noblewoman at Duchess Caroberta's court. According to legend, whenever she appeared duels knights would duel for her favor and noblewoman would faint out jealousy. Yet rather then accepting the advances of one of her gentlemen suitors, Lady Dulcinea, tired of the pomp of the ducal court, agreed to the proposal of a simple miller and abandoned the palace to dwell with him in him mill. Word is, she lived there happily ever after.",
-         "cockatrice":"There was a time when the Cockatrice's owner, Adam de Guy, loved to recount the tale of how the inn got its name. In his youth, his story went, he served as squire to a knight errant and togehter they defeated a bloodthirsty cockatrice. The beast's head decorated the auberge's entrance for many years until a certain traveler from Oxenfurt ascertained it was unfortunately but a rather amateurish hobbling thether of pheasant, weasel and pig parts. His pride wounded, de Guy took down his trophy, but the inn kept its name.",
-         "plegmundsbridge":"Built during the reign of Duchess Caroberta, this bridge was meant to facilitate traffic between vineyards on opposite banks of the Sansretour. It was named after a pilgrim quite popular in Toussaint at the time, a certain disciple of the Prophet Lebioda who on this very spot performed one of his many miracles: traversing the river without getting his feet wet.",
-         "corvobianco":"Constructed on elven ruins, Corvo Bianco - Known as Gwyn Cerbin in the Elder Speech - is one of the older vineyards in the duchy and producer of the startlingly unique wine, Sepremento. Sadly, the rakish lifestyle of one of its owners, the member of the Bolius line, drove the possession into ruin. The next owner, Baron Rossell, tried to return the vineyard to its former glory, but to no avail. Corvo Bianco was then auctioned off and eventually passed under the control of the Ducal Treasury.",
-         "palace":"One of the best-preserved artifacts of the elven era, the Beauclair Palace was painstakingly restored and partially rebuilt by the famed Nilfgaardian architect Faramond. Master Faramond, a scholar and expert on nonhuman architecture, is considered the found of the Noeelven School, of which Beauclair Palace, home to the rulers of Toussaint, is the most characteristic example.",
-         "palacegardens":"The fabulous gardens on the shores of Seidhe Llygad were, like Beauclair Palace, nearly destroyed during the Elven Conflicts. Master Faramond, who let the renovation efforts, did what he could, but some of the more delicate plants could not be saved. Today this popular recreation spot for courtiers is filled mainly with spruces, olive trees, Beauclair oaks, rose bushes, juniper thickets, rhododendrons and, of course, grapevines.",
-         "embassy":"Toussaint is a vassal duchy of the Nilfgaardian Empire. Duchess Anna Henrietta is the rightful ruler of the region, but in practice she submits to the will of her dearest elder cousin - Emhyr van Emreis. It was certainly out of concern for Her Enlightened Grace and her little realm that the emperor founded an embassy in Toussaint, consisting of a handful of dignataries who dwell in the duchy full-time and use their experience to help with her, de facto enlightened, decisions.",
-         "gate":"Toussaint's mighty rivers are not the only route for getting wine out of the duchy. During the spring run-off, the Sansretour becomes very dangerous to navigate and the local exporters turn to transport methods less likely to result in catastrophic loss. These merchants group together into caravans, hire guards and set out with their goods overland. Their favored destination? Metinna, whose capital is likewise name Metinna, leading some Toussaintois to joke their win is medicine from that kingdom's fabled lack of imagination.",
-         "francollarts":"The Caroberta Woods are named after Toussaint's reigning duchess' grandmother - Duchess Carolina Roberta - who loved organizing elaborate games of hide and seek in this forest. A small trappers' post located on its outskirts has grown into the tranquil village known as Francollarts. Here hunters, woodcutters and beekeepers come to sell the fruit of the woods. The village springs to life once a year, when Baron Trastamara organizes his annual Wood Festival and invites all the court out for a spectacular hunt.",
-         "fort":"Once upon a time, the lord Epicèa mounted his steed and vowed to complete a full circuit around the castle - riding atop its walls. Sadly, he did not fulfill his oath and instead plummeted to his doom after a few paces. Cungigunde, his beautiful daughter, swore that day she would only marry the man who could finish her father's deed. Many stripling lad lost his life attempting to fulfill that comely maid's cruel condition. When finally once succeeded, he surveyed the carnage she had wrought and decided she was unworthy of his affections. Realizing with despair how despicably she had acted, Cungigunde threw herself from the castle walls, dying smashed against the rocks below like so many of her unfortunate suitors.",
-         "fox":"In a small valley at the foot of Mount Gorgon lies the village of Fox Hollow. This village's fields - inexplicably and miraculousely - grow pots. Earthenware vessels spring unbidden from the ground, as if though some magic trick worked by nature, no human intervention required. The ports come in all shapes and sizes, which is why Fox Hollow maintains trade connections with the village of Dudno in Maecht - for that vilage's fields, inexplicably and miraculousely, grow lids. Of all shapes and sizes.",
-         "castelravello":"Connoisseurs claim the best wines of Metinna or Alba do not hold a candle to even the most mediocre labels from the Sansretour Valley. Among the countless larger and smaller local vineyards found here, Castel Ravello is the most renowned - and for good reason. From its slopes come Pomio, Fiorano, Erveluce and Est Est -  the wine realm's uncontested king.",
-         "cemetry":"At Belgaard Vineyard, a famous act of poisoning once occurred which took the lives of a large gang of bandits who were ransacking the area. The folk charged with cleaning up in the aftermath originally planned to burn the bodies, but on pious sould thought even rotten dung-diddlers such as they deserve better. He thus paid for their bodies to be laid to rest in a small cemetery: Mère-Lachaiselongue. Later, Sir Ramon of Gichon died a martyr's death here trying to get rid of the bandites' constantly returning wraiths.",
-         "prison":"It is hard to believe Toussaint, now so vibrant and full of life, once fell victim to a leprosy epidemic. To isolate the infected from the healthy, by ducal decree a leper colony was created on Crane Island. When all the colony's inhabitants died, the complex gradually fell into ruin and the decision was made to adapt it into a prison, which it remains to this day.",
-         "farm":"Old man Gelenser grew radishes. Yes, radishes. Not grapes, not olives, not even beets. As he himself put it: \"Dadgummit, I can't very well live on bread and wine alone now can I?!\" Old Man Gelenser did not found a radish empire,. The history of his line is not filled with amazing legends. He lived, sired children, planted radishes and died. O Lebioda, give us all such a clam and simple life.",
-         "mutnaruins":"It is widely accepted that vampires came into our would during the Conjuntion of the Spheres. They quickly spread across all the Continent, trying to adapt to their new situation. According to legend, one of them, Khagmar, settled in Toussaint. Grim tales are whispered about his deeds, but whether he truly even existed is hard to say. The tales do agree on one thing, however: Khagmar's story is inextricably tied to the mysterious fortress known as Tesham Mutna.",
-         "granplace":"Toussaint's largest marketplace overflows with colorful stalls and merchants from every corner of the world. They say if you cannot find what you seek at Beauclair's market, it doesn't exist. In addition to wine of every label and vintage, here one can buy slate from Ardaiso, fleece from Toussaint merinos raised at Basane or olive oil from the groves of Dun Tynne.",
-         "tunier":"Tradition is sacred in Toussaint. This fair duchy has a great many traditions, perhaps the most hallowed of which are the spectacular knightly tourneys held during nearly every important local festival. These events have earned fame and respect not only in all of Nilfgaard, but in the North as well. Thus knights journey from almost literally the entire would to enter the lists and gain glory testing their mettle against each other and the best of Toussaint chivarly.",
-         "statue":"During the reign of Duchess Caroberta, Toussaint was visited by a certain disciple of the Prophet Lebioda named Plegmund. His words and deed - which includes miracles - were so persuasive, soon nearly the entire duchy had converted to the new faith. They crowned this outburst of religiousity with the construction of a temple dedicated to the prophet, but that was not enough for Plegmund. He convinced the duchess to build a statue of Lebioda - the likes of which the would had never seen.",
-         "hortense":"Toussaint can boast many world-famous vineyards, such as Castel Ravello, Pomerol, Vermentino and Tufo. Their owners take great care to maintain the time-tested traditions and heirloom recipes on which the reputation of the wines they produce rests. But Toussaint is also home to numerous smaller vineyards which do not even possess their own crests and whose wines have yet to win any particular renown, making it difficult to say much about them. Hortense is just such a place.",
-         "flovive":"Once upon a time, a plague of frogs visited the Sansretour Marsh. Duchess Ademarta declared a prize would be given to whomever freed the land of these accursed amphibians. Yet neither the knights errant nor the druids nor anyone else proved up to the task - until a poor raftsman name Flovive figured out a way. He serenaded the frogs with hid violin and they, entranced by this melody, followed him out of the duchy. In memory of this event, the settlement where Toussaint's raftsman dwell bears his name.",
-         "cottage":"Amadis de Trastamara obtained this property from Duchess Caroberta in recognition for his service to Toussaint. The ruler's gift came with an unexpected barb, however, for the house turned out to be haunted and, even worse, deep in tax arrears. Trastamara consulted the druids of Caed Myrkvid about his case and was given the following advice: if you cannot reach a deal with the spectar, let it be and call it a day.",
-         "montcranecastle":"Duke Roger the Reveler was, as his nickname might suggest, no teetotaler. The story of his alcohol-fueled romps number today amoung the most cherished of traditional Toussaint tales. This state of perpetual tipsiness might just be what drove his decision to surround the duchy with a series of castles, meant to protect Toussaint from the barbarous highlanders of Mount Gorgon. Thing is, no one has ever heard of such a folk.",
-         "duntynnecastle":"This castle is tied to the dark legend of Waltharius the Burly, the dashing knight who wed the beautiful Nazairi princess Hiltgunt. Waltharius then embarked on a lengthy campaign and returned to find his wife in carnal relations with his relative, upon which he flew into a rage and murdered them both. The moral of the tale is held to be that nothing good ever comes from Nazair, and that when one has a young wife, one should stay at home instead of gallivanting about on campaigns.",
-         "duntynnehillside":"The slopes of Dun Tynne long lay barren. Potential entrepreneurs were scared off by the bloody legend of Waltharius the Burly and since the area had never produced wines worthy of historical metion anyways, they had little incentive to conquer this fear. The estate's most recent owner, however - a nobleman named Roderick - decided to plant vines along the slopes stretching from the Blessure and Sansretour valleys up to the keep. As a precaution, he also planted olive groves, a much surer investment.",
-         "arthachpalaceruins":"The experimental attempts to manage the waters of the Sansretour Marsh carried out by Duke Adam of Nazair did not prove very successful - to put it lightly. They flooded a great number of villages, private estates and even Arthach, an elven summer palace. These experiments were what gave the Sansretour Marsh its current shape and put half of Crane Isle permanently underwater. They also created an unpleasant bog to the north of the city where none can tread in true safety.",
-         "thesilversalamanderinn":"When the folk query this inn's Nilfgaardian owner, a certain Calixte Moire, whence came the establishment's name, the man always refers them to the Second Battle of Sodden. His Father, Antoine, showed particular courage during this battle, as evidenced by the Medal of the Silver Salamander which was awarded to him by the emperor himself in honor of his valor and dedication on the field of battle.",
-         "basanefarm":"Contrary to appearances, Toussaint does not live and die by the wine trade alone. It also exports valuable building materials and a great quantity of wool. The clover-rich slopes of Mont Crane provide sustenance to a broad variety of sheep, including the famed Toussaint merinos, whose fleece fetches mind-boggling sums. Basane is one of the estates specializes in the breeding and pasturing of these remarkable beasts.",
-         "croixmill":"The de la Croix family never had much luck in business. Their grapevines fell victim to Duke Adam of Nazair's attempts to regulate the flow of the Sansretour and their olive groves were devoured by a plague of armored scale insects. After this, they restored their old water mill, counting on the production of bread to be their ticket to success. And it nearly was - until they found oud the hard way high concentrations of flour in restricted spaces can lead to powerful dust explosions.",
-         "coopersgate":"Experts know the secret to Toussaint wine lies not in the vines of its hills but in the oaks of its forests. So desirable are barrels made from this wood, it seemed loggers would cut the duchy clear until protests from angry druids stopped them. After years of negotiations, a compromise was reached and a special organization, the Coopers' Guild, was created. Thanks to its strict supervision of the industry, logging became sustainable and it became the richest guild in the city - as evidenced by the proud gate it funded.",
-         "haborgate":"When laying the stones of the defensive walls surrounding the Haunteville, the inhabitants of Beauclair had no inkling how much their city would eventually grow. The mushroom-like expansion of San Sebastian and the Port District forced Beauclair's residents to knock though an additional passageway to facilitate the circulation of traffic between the capital's districts. Some even called for the wall to be torn down altogether - for what had they to fear, with their town protected by the bravest knights errant the would has ever known?",
-         "sansebastian":"The city of Beauclair quickly grew to fill all the space within its walls and spill out beyond it. This gave rise to the Lower Town, also known by the name if its founder - San Sebastian. Currently the district is primarily home to laborers and their workshops and links Haunteville with the port - the center of trade for Beauclair and the entire duchy.",
-         "beauclairport":"The best wine comes from Toussaint - any sommelier will tell you as much. Bottles bearing its famed labels are worth fortunes and even grace the tables of kings - indeed, today one can barely imagine a royal feast without Cote-de-Blessure or Est Est. And it is here, at Beauclair's port, that this wine begins its journey both to the sound - into the heart of the Nilfgaardian Empire - and to the far-off North.",
-         "tradingpost":"Every self-respecting merchant does some business in the capital of Toussaint - going to hear the latest gossip from the famed Belles of Beauclair in San Sebastian, or strolling down to the Port to see if the dockmen have \"lost\" a barrel or two. But truly important business is conducted not in the city, but at the modest merchant's camp, an outpost far from the wine- and song-laden atmosphere of Beauclair's eternal celebrations.",
-         "coronatavineyard":"This line's founder, Stefen de Coronata, once asked a druid to help him be rid of the caterpillers devouring his vines.The druid suggested he raise martens, which love to feed on that insect's larvae. Stefan duly took the druid's advice and soon eradicated the plague not only in his own vineyard, but in all the neighboring ones as well. In return for this bounteous deed, he was awarded a noble title. He chose a blue wolf to adorn his crest, after deciding he would look foolish parading about with a marten on his shield.",
-         "ruins":"Toussaint was once a land of elves. The ducal palace is the most prominent remnant of that era, but it is not the only. The Aen Seidhe left behind a great many smaller and larger structures whose function can today only be guessed at. An example of this are the Termes Palace ruins, which some tie to the legendary resting place of the last elven king, while others consider them a tmeple to shome forgotten deity. What they were in truth, we shall never know."
-      }
-   }
+	"alchemy": {
+		"gremist": {
+			"label": "Gremist",
+			"desc": "'Practicum in Advanced Alchemy' (lvl 24) Quest"
+		}
+	},
+	"armourer": {
+		"amateurLabel": "Amateur Armorer",
+		"journeymanLabel": "Journeyman Armorer",
+		"desc": "Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
+	},
+	"hansebase": {
+		"label": "Hanse Base",
+		"desc": "Expect to run into armed-to-the-teeth bandits here. "
+	},
+	"blacksmith": {
+		"amateurLabel": "Amateur Blacksmith",
+		"journeymanLabel": "Journeyman Blacksmith",
+		"desc": "Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
+	},
+	"innkeep": {
+		"label": {
+			"auberge": "The Ruddy Brush Auberge",
+			"salamander": "The Silver Salamander Inn",
+			"pheasantry": "The Pheasantry",
+			"houseofpleasure": "The Bells of Beauclair - House of Pleasure",
+			"barrelandbung": "The Barrel and Bung Inn"
+		},
+		"popup": "Innkeep",
+		"desc": {
+			"cockatrice": ""
+		}
+	},
+	"kid": {
+		"label": "Knight Errant in Distress",
+		"desc": "Here you can help a knight errant fight bandits. "
+	},
+	"misc": {
+		"label": {
+			"gwent": "Gwent Player"
+		},
+		"desc": {
+			"insideden": "Inside the Monster Den",
+			"insidecave": "Inside the Cave",
+			"witchergear": "Witchergear:",
+			"manticore": "Manticore",
+			"griffin": "Griffin",
+			"ursine": "Ursine",
+			"wolven": "Wolven",
+			"feline": "Feline",
+			"gwent": "Gwent Player from that you can win a Skellige Card (I Have a Gwent Problem Achievement)",
+			"aftercleared": "accessible after the area is cleared"
+		}
+	},
+	"poi": {
+		"label": {
+			"steel": "steel sword",
+			"silver": "silver sword",
+			"armor": "armor",
+			"gauntlets": "gauntlets",
+			"trousersboots": "trousers and boots",
+			"steelgauntletsboots": "steel sword, gauntlets and boots",
+			"silverarmorgauntlers": "silver sword, armor and gauntlets",
+			"steelbootstrousers": "steel sword, trousers and boots",
+			"silverarmortrousers": "armor, trousers and silver sword",
+			"steelsilvergauntlets": "steel sword, silver sword and gauntlets",
+			"trousersandboots": "trousers & boots",
+			"all": "steel sword, silver sword, gauntlets, armor, trousers and boots"
+		},
+		"popupTitle": {
+			"witchergear": "Grandmaster Witchergear"
+		},
+		"desc": {
+			"manticoretrousersandboots": "inside the temple",
+			"silverarmorgauntlers": "",
+			"steelgauntletsboots": "",
+			"steel": "",
+			"gauntlets": "bottom of the lake",
+			"trousersboots": "located in a chest, ontop of the broken bridge",
+			"steelbootstrousers": "inside the Cave",
+			"all": "The Key for the Portal is jsut outside the Cave. The are all Wolven Digramms inside, three on two locations inside the cave",
+			"armor": "the Diagram is inside the House, behind a Picurefarm on the Wall",
+			"silverarmortrousers": "Located behind a Illustion. In the next Room find the Crystal and use it on the Door, use Aard to activate the Portal. After the Portal there are the three Diagrams.",
+			"manticoresilver": "at the end Cave"
+		}
+	},
+	"sidequests": {
+		"label": {
+			"gwenttournment": "Gwent: To Everything - Turn, Turn, Tournamenet!",
+			"WildKingdom": "Mutual of Beauclair's Wild Kingdom",
+			"kingforhire": "King for Hire",
+			"winewars": "Wine Wars: Belgaard",
+			"facethestrage": "Turn and Face the Strange",
+			"bigfeet": "Big Feet to Fill: The FIrst Group",
+			"knightstale": "A Knight's Tale",
+			"spon": "Spoontaneous Profits!",
+			"escapology": "Applied Escapology",
+			"tilldeath": "Till Death Do You Part",
+			"huntgriffin": "Scavenger Hunt: Grandmaster Griffin Gear",
+			"huntfeline": "Scavenger Hunt: Grandmaster Feline Gear",
+			"huntursine": "Scavenger Hunt: Grandmaster Ursin Gear",
+			"huntmanticor": "Scavenger Hunt: Grandmaster Manticore Gear",
+			"huntwolven": "Scavenger Hunt: Grandmaster Wolven Gear",
+			"granite": "Goodness, Gracious, Great Balls of Granite!",
+			"onlyone": "There can be Only One",
+			"placelikehome": "No Place like Home",
+			"smittenkight": "The Warble of a Smitten Knight",
+			"wildkingdom": "Mutual Of Becaular's Wild Kingdom",
+			"master": "Master Master Master Maser!",
+			"suffering": "The Suffering of Young Francois",
+			"bigfleet": "Big Feet to Fill: The Fith Group",
+			"enjpytheplay": "But Other than that, how did you enjoy the play?",
+			"vintnercontract": "Vinter's Contract",
+			"footsteps": "The Propeht Lebioda's Footsteps",
+			"portait": "A portait of the witcher as an old man",
+			"paperchase": "Paperchase"
+		},
+		"desc": {
+			"gwenttournment": "Level 38 - You get this Quest at the Notice Board near the Cockatrice Inn",
+			"WildKingdom": "Level 46 - You get this Quest at the Notice Board near the Cockatrice Inn",
+			"kingforhire": " - You get this Quest at the Notice Board near the Cockatrice Inn",
+			"winewars": "Level 37 - You get this Quest at the Notice Board near the Cockatrice Inn",
+			"facethestrage": "Level 35 - you should automaticly pick up this Quest, while your the Main Quest `La Cage au Fou`",
+			"bigfeet": "",
+			"knightstale": "Level 40 - You get this Quest at the Notice Board in Castel Ravello Vineyard",
+			"spon": "Level 42 - This Quests starts if you Pick up the Spoon, located inside the House on Barrel",
+			"escapology": "Level 40 - You start this Quest by looting the Hidden Treasure",
+			"tilldeath": "Level 36 - You get this Quest from Charles Lanzano, located in first Floor of The Clever Clogs Tavern",
+			"huntgriffin": "",
+			"huntfeline": "",
+			"huntursine": "",
+			"huntmanticor": "",
+			"huntwolven": "",
+			"granite": "Level 36 - ",
+			"onlyone": "You get this Quest at the Notice Board at the Gran'Place",
+			"placelikehome": "You get this Quest at the Notice Board at the Gran'Place",
+			"smittenkight": "Level 35 - You get this Quest at the Notice Board at the Gran'Place",
+			"wildkingdom": "You get this Quest at the Notice Board at the Gran'Place",
+			"master": "Level 40 - Find all Diagramms",
+			"hidden": "Mini Sidequest from a Hidden Treasure",
+			"save": "Persons in Distress, save them to complete the Quest",
+			"enjpytheplay": "The Order in where you need to light the candles can be figgred out by using the Witcher Senses. After that dring the Wine (Questitem) `Vis la Crac`",
+			"vintnercontract": "Here you can help a vinter clear a cave of monsters",
+			"footsteps": "Here you can solve a problem related to the construction of Lebioda's statue",
+			"portait": "",
+			"paperchase": ""
+		}
+	},
+	"contracts": {
+		"label": {
+			"biggamehunter": "Contract: Big Game Hunter",
+			"coldasice": "Contract: Feet as Cold as Ice",
+			"tufo": "Contract: The Tufo Monster",
+			"bonvineblues": "Contract: Bovine Blues"
+		},
+		"desc": {
+			"biggamehunter": "Level 37 Witcher Contract. Started on the Notice Board near Dulcinea Windmill",
+			"coldasice": "Level 45 - You get this Quest at the Notice Board near the Cockatrice Inn",
+			"tufo": "Level 48 - You get this Quest at the Notice Board in Flovive",
+			"bonvineblues": "Level 38 - "
+		}
+	},
+	"signalfire": {
+		"label": "Signal Fire",
+		"desc": "If a signal fire is lit by a torch runner, reinforcements will arrive to help the bandits in their fight. "
+	},
+	"signpost": {
+		"label": {
+			"dulcineawindmill": "Dulcinea Windmill",
+			"cockatrice": "The Cockatrice Inn",
+			"plegmundsbridge": "Plegmund's Bridge",
+			"corvobianco": "Corvo Bianco Vineyard",
+			"palace": "Beauclair Palace",
+			"palacegardens": "Palace Gardens",
+			"embassy": "Nilfgaardian Embassy",
+			"gate": "Metinna Gate",
+			"francollarts": "Francollarts",
+			"fort": "Fort Astre Ruins",
+			"fox": "Fox Hollow",
+			"castelravello": "Castel Ravello Vineyard",
+			"cemetry": "Mère-Lachaiselongue Cemetry",
+			"prison": "Toussaint Prison",
+			"farm": "Gelenser Farm",
+			"ruins": "Termes Palace Runins",
+			"mutnaruins": "Tesham Mutna Ruins",
+			"granplace": "Gran'Place",
+			"tunier": "Tourney Grounds",
+			"statue": "Prophet Lebioda Statue",
+			"hortense": "Hortense Vineyard",
+			"flovive": "Flovive",
+			"fortussar": "Fort Ussar Ruins",
+			"cottage": "Trastamara Hunting Cottage",
+			"montcranecastle": "Mont Crane Castle",
+			"duntynnecastle": "Dun Tynne Castle",
+			"duntynnehillside": "Dun Tynne Hillside",
+			"arthachpalaceruins": "Arthach Palace Ruins",
+			"thesilversalamanderinn": "The Silver Salamander Inn",
+			"tradingpost": "Trading Post",
+			"basanefarm": "Basane Farm",
+			"croixmill": "Count de la Croix's Mill",
+			"coopersgate": "Coopers Gate",
+			"haborgate": "Habor Gate",
+			"sansebastian": "San Sebastian",
+			"beauclairport": "Beauclair Port",
+			"coronatavineyard": "Coronata Vineyard",
+			"duntynnecrossroads": "Dun Tynne Crossroads",
+			"chuchotecave": "Chuchote Cave",
+			"sansretourvalley": "Sansretour Valley",
+			"riouxcannesoutpost": "Rioux-Cannes Outpost",
+			"seidhellyghadamphitheater": "Seidhe Llyghad Amphitheater",
+			"belgaardvineyard": "Belgaard Vineyard",
+			"lebiodasgate": "Lebioda's Gate",
+			"ardaisoquarry": "Ardaiso Quarry",
+			"casteldacciaabandonedestate": "Casteldaccia Abandoned Estate"
+		},
+		"desc": {
+			"casteldacciaabandonedestate": "Maximus Macrinus was once a knight errant famed for showing no mercy to any bandits prowling the Champs-Dèsolès. After a long and storied career, he hung up his sword at his ancestral manor and settled in for a well-deserved retirement. No one knows what brought about the subsequent murder of his entire family. Some claim a giant descended from the mountains, others, that he ran afoul of one of the largest hanses. The only undisputed fact is that everyone with any sense now avoids going anywhere near Casteldaccia.",
+			"ardaisoquarry": "Every man, be he tippler or teetotaler, knows Toussaint's economy stems from the fruit of the vine. Few, however, realize the duchy's lands are rich with deposits of slate and other valuable building materials, and that the quarrying of such was once the bedrock of local livelihoods. Thus when gods-fearing Toussaintois saw fit to build a statue of the saintly Lebioda, they had no need to send for materials from abroad - instead, they merely reactivated Ardaiso.",
+			"lebiodasgate": "Work on the Temple of Lebioda in Beauclair was begun by the prophet's most famed disciple, Plegmund. He convinced Duchess Coronata to rebuild that area of the city and dig deep catacombs for the city's wealthiest inhabitants. Those of less coin were to be buried in the new cemetry beside the temple. The poorest of the poor, however, had to continue to make do with the Orlèmurs Cemetry, connected to the city by the Temple Gate, also known as the Gate of Lebioda.",
+			"belgaardvineyard": "The vineyard's former owner racked up significant debts with a loan shark, who then sold them to bandits for collection. When they found he had no coin to collect, they murdered him alongside all other residents of his estate. As if that were not heinous enough, they then made the vineyard their base, from which they would hijack transports of wine to fuel their drunken orgies. So fierce and well-stocked were they, none could chase them off - until one brave alchemist spiced a transport crossing their territory with a powerful extract of ricin.",
+			"seidhellyghadamphitheater": "On the banks of the lake known as Seidhe Llyghad, or Eye of the Mountains, lies and ancient amphitheater - another relict of Toussaint's elven past. In 1178 the structure was restored so it could stage the works of Beauclair's most renowned theatrical virtuosos. unfortunately, its grand opening was marred by an unplanned tragic ending: the mysterious death of the play's leading lady. Ever since, the place has been deemed cursed and few dare venture anywhere near it.",
+			"riouxcannesoutpost": "The second most popularly cultivated plant in Toussaint - the first being the grapevine, of course - is the ovlive tree. It is mainly grown for its olives, which are pressed for their oil, but is also prized amoung woodcarvers. The unquestionably most cherished tree in the region, however, is the Beauclair oak, which is used in the making of wine barrels. And the most important place in Toussaint for the processing of this tree is the Rioux-Cannes woodcutters' outpost.",
+			"sansretourvalley": "The Sansretour Valley is the center of the world wine production. It is on this valley's vine-covered slopes that one can find Castel Ravello, Coronata and Vermentino - the estates of famous winemaking families which have for centuries been envy of every other vintner.",
+			"chuchotecave": "To listen to the old folks' jabber, this place was once home to Whispess - a woodland witch eager to help any in need. When Whispess peered into a vertain knight's heart, she saw that it was black and refused him aid. The knight reacted with wrath and burned the witch alive in her cave. Soon afterward, the knight went mad and killed himself - claiming he was tourtured by a strange voice whispering in his ear that no one else could hear.",
+			"duntynnecrossroads": "Dear traveler, you have entered the territory of Dun Tynne, lands belonging to the nobly-born Sir Roderick. If you wish to pay him a visit, walk westward from here and you shall surely happen upon his castle. If, however, you seek a route to the Pittapatte river, you should make your way north.",
+			"dulcineawindmill": "Lady Dulcinea was a noblewoman at Duchess Caroberta's court. According to legend, whenever she appeared duels knights would duel for her favor and noblewoman would faint out jealousy. Yet rather then accepting the advances of one of her gentlemen suitors, Lady Dulcinea, tired of the pomp of the ducal court, agreed to the proposal of a simple miller and abandoned the palace to dwell with him in him mill. Word is, she lived there happily ever after.",
+			"cockatrice": "There was a time when the Cockatrice's owner, Adam de Guy, loved to recount the tale of how the inn got its name. In his youth, his story went, he served as squire to a knight errant and togehter they defeated a bloodthirsty cockatrice. The beast's head decorated the auberge's entrance for many years until a certain traveler from Oxenfurt ascertained it was unfortunately but a rather amateurish hobbling thether of pheasant, weasel and pig parts. His pride wounded, de Guy took down his trophy, but the inn kept its name.",
+			"plegmundsbridge": "Built during the reign of Duchess Caroberta, this bridge was meant to facilitate traffic between vineyards on opposite banks of the Sansretour. It was named after a pilgrim quite popular in Toussaint at the time, a certain disciple of the Prophet Lebioda who on this very spot performed one of his many miracles: traversing the river without getting his feet wet.",
+			"corvobianco": "Constructed on elven ruins, Corvo Bianco - Known as Gwyn Cerbin in the Elder Speech - is one of the older vineyards in the duchy and producer of the startlingly unique wine, Sepremento. Sadly, the rakish lifestyle of one of its owners, the member of the Bolius line, drove the possession into ruin. The next owner, Baron Rossell, tried to return the vineyard to its former glory, but to no avail. Corvo Bianco was then auctioned off and eventually passed under the control of the Ducal Treasury.",
+			"palace": "One of the best-preserved artifacts of the elven era, the Beauclair Palace was painstakingly restored and partially rebuilt by the famed Nilfgaardian architect Faramond. Master Faramond, a scholar and expert on nonhuman architecture, is considered the found of the Noeelven School, of which Beauclair Palace, home to the rulers of Toussaint, is the most characteristic example.",
+			"palacegardens": "The fabulous gardens on the shores of Seidhe Llygad were, like Beauclair Palace, nearly destroyed during the Elven Conflicts. Master Faramond, who let the renovation efforts, did what he could, but some of the more delicate plants could not be saved. Today this popular recreation spot for courtiers is filled mainly with spruces, olive trees, Beauclair oaks, rose bushes, juniper thickets, rhododendrons and, of course, grapevines.",
+			"embassy": "Toussaint is a vassal duchy of the Nilfgaardian Empire. Duchess Anna Henrietta is the rightful ruler of the region, but in practice she submits to the will of her dearest elder cousin - Emhyr van Emreis. It was certainly out of concern for Her Enlightened Grace and her little realm that the emperor founded an embassy in Toussaint, consisting of a handful of dignataries who dwell in the duchy full-time and use their experience to help with her, de facto enlightened, decisions.",
+			"gate": "Toussaint's mighty rivers are not the only route for getting wine out of the duchy. During the spring run-off, the Sansretour becomes very dangerous to navigate and the local exporters turn to transport methods less likely to result in catastrophic loss. These merchants group together into caravans, hire guards and set out with their goods overland. Their favored destination? Metinna, whose capital is likewise name Metinna, leading some Toussaintois to joke their win is medicine from that kingdom's fabled lack of imagination.",
+			"francollarts": "The Caroberta Woods are named after Toussaint's reigning duchess' grandmother - Duchess Carolina Roberta - who loved organizing elaborate games of hide and seek in this forest. A small trappers' post located on its outskirts has grown into the tranquil village known as Francollarts. Here hunters, woodcutters and beekeepers come to sell the fruit of the woods. The village springs to life once a year, when Baron Trastamara organizes his annual Wood Festival and invites all the court out for a spectacular hunt.",
+			"fort": "Once upon a time, the lord Epicèa mounted his steed and vowed to complete a full circuit around the castle - riding atop its walls. Sadly, he did not fulfill his oath and instead plummeted to his doom after a few paces. Cungigunde, his beautiful daughter, swore that day she would only marry the man who could finish her father's deed. Many stripling lad lost his life attempting to fulfill that comely maid's cruel condition. When finally once succeeded, he surveyed the carnage she had wrought and decided she was unworthy of his affections. Realizing with despair how despicably she had acted, Cungigunde threw herself from the castle walls, dying smashed against the rocks below like so many of her unfortunate suitors.",
+			"fox": "In a small valley at the foot of Mount Gorgon lies the village of Fox Hollow. This village's fields - inexplicably and miraculousely - grow pots. Earthenware vessels spring unbidden from the ground, as if though some magic trick worked by nature, no human intervention required. The ports come in all shapes and sizes, which is why Fox Hollow maintains trade connections with the village of Dudno in Maecht - for that vilage's fields, inexplicably and miraculousely, grow lids. Of all shapes and sizes.",
+			"castelravello": "Connoisseurs claim the best wines of Metinna or Alba do not hold a candle to even the most mediocre labels from the Sansretour Valley. Among the countless larger and smaller local vineyards found here, Castel Ravello is the most renowned - and for good reason. From its slopes come Pomio, Fiorano, Erveluce and Est Est -  the wine realm's uncontested king.",
+			"cemetry": "At Belgaard Vineyard, a famous act of poisoning once occurred which took the lives of a large gang of bandits who were ransacking the area. The folk charged with cleaning up in the aftermath originally planned to burn the bodies, but on pious sould thought even rotten dung-diddlers such as they deserve better. He thus paid for their bodies to be laid to rest in a small cemetery: Mère-Lachaiselongue. Later, Sir Ramon of Gichon died a martyr's death here trying to get rid of the bandites' constantly returning wraiths.",
+			"prison": "It is hard to believe Toussaint, now so vibrant and full of life, once fell victim to a leprosy epidemic. To isolate the infected from the healthy, by ducal decree a leper colony was created on Crane Island. When all the colony's inhabitants died, the complex gradually fell into ruin and the decision was made to adapt it into a prison, which it remains to this day.",
+			"farm": "Old man Gelenser grew radishes. Yes, radishes. Not grapes, not olives, not even beets. As he himself put it: \"Dadgummit, I can't very well live on bread and wine alone now can I?!\" Old Man Gelenser did not found a radish empire,. The history of his line is not filled with amazing legends. He lived, sired children, planted radishes and died. O Lebioda, give us all such a clam and simple life.",
+			"mutnaruins": "It is widely accepted that vampires came into our would during the Conjuntion of the Spheres. They quickly spread across all the Continent, trying to adapt to their new situation. According to legend, one of them, Khagmar, settled in Toussaint. Grim tales are whispered about his deeds, but whether he truly even existed is hard to say. The tales do agree on one thing, however: Khagmar's story is inextricably tied to the mysterious fortress known as Tesham Mutna.",
+			"granplace": "Toussaint's largest marketplace overflows with colorful stalls and merchants from every corner of the world. They say if you cannot find what you seek at Beauclair's market, it doesn't exist. In addition to wine of every label and vintage, here one can buy slate from Ardaiso, fleece from Toussaint merinos raised at Basane or olive oil from the groves of Dun Tynne.",
+			"tunier": "Tradition is sacred in Toussaint. This fair duchy has a great many traditions, perhaps the most hallowed of which are the spectacular knightly tourneys held during nearly every important local festival. These events have earned fame and respect not only in all of Nilfgaard, but in the North as well. Thus knights journey from almost literally the entire would to enter the lists and gain glory testing their mettle against each other and the best of Toussaint chivarly.",
+			"statue": "During the reign of Duchess Caroberta, Toussaint was visited by a certain disciple of the Prophet Lebioda named Plegmund. His words and deed - which includes miracles - were so persuasive, soon nearly the entire duchy had converted to the new faith. They crowned this outburst of religiousity with the construction of a temple dedicated to the prophet, but that was not enough for Plegmund. He convinced the duchess to build a statue of Lebioda - the likes of which the would had never seen.",
+			"hortense": "Toussaint can boast many world-famous vineyards, such as Castel Ravello, Pomerol, Vermentino and Tufo. Their owners take great care to maintain the time-tested traditions and heirloom recipes on which the reputation of the wines they produce rests. But Toussaint is also home to numerous smaller vineyards which do not even possess their own crests and whose wines have yet to win any particular renown, making it difficult to say much about them. Hortense is just such a place.",
+			"flovive": "Once upon a time, a plague of frogs visited the Sansretour Marsh. Duchess Ademarta declared a prize would be given to whomever freed the land of these accursed amphibians. Yet neither the knights errant nor the druids nor anyone else proved up to the task - until a poor raftsman name Flovive figured out a way. He serenaded the frogs with hid violin and they, entranced by this melody, followed him out of the duchy. In memory of this event, the settlement where Toussaint's raftsman dwell bears his name.",
+			"cottage": "Amadis de Trastamara obtained this property from Duchess Caroberta in recognition for his service to Toussaint. The ruler's gift came with an unexpected barb, however, for the house turned out to be haunted and, even worse, deep in tax arrears. Trastamara consulted the druids of Caed Myrkvid about his case and was given the following advice: if you cannot reach a deal with the spectar, let it be and call it a day.",
+			"montcranecastle": "Duke Roger the Reveler was, as his nickname might suggest, no teetotaler. The story of his alcohol-fueled romps number today amoung the most cherished of traditional Toussaint tales. This state of perpetual tipsiness might just be what drove his decision to surround the duchy with a series of castles, meant to protect Toussaint from the barbarous highlanders of Mount Gorgon. Thing is, no one has ever heard of such a folk.",
+			"duntynnecastle": "This castle is tied to the dark legend of Waltharius the Burly, the dashing knight who wed the beautiful Nazairi princess Hiltgunt. Waltharius then embarked on a lengthy campaign and returned to find his wife in carnal relations with his relative, upon which he flew into a rage and murdered them both. The moral of the tale is held to be that nothing good ever comes from Nazair, and that when one has a young wife, one should stay at home instead of gallivanting about on campaigns.",
+			"duntynnehillside": "The slopes of Dun Tynne long lay barren. Potential entrepreneurs were scared off by the bloody legend of Waltharius the Burly and since the area had never produced wines worthy of historical metion anyways, they had little incentive to conquer this fear. The estate's most recent owner, however - a nobleman named Roderick - decided to plant vines along the slopes stretching from the Blessure and Sansretour valleys up to the keep. As a precaution, he also planted olive groves, a much surer investment.",
+			"arthachpalaceruins": "The experimental attempts to manage the waters of the Sansretour Marsh carried out by Duke Adam of Nazair did not prove very successful - to put it lightly. They flooded a great number of villages, private estates and even Arthach, an elven summer palace. These experiments were what gave the Sansretour Marsh its current shape and put half of Crane Isle permanently underwater. They also created an unpleasant bog to the north of the city where none can tread in true safety.",
+			"thesilversalamanderinn": "When the folk query this inn's Nilfgaardian owner, a certain Calixte Moire, whence came the establishment's name, the man always refers them to the Second Battle of Sodden. His Father, Antoine, showed particular courage during this battle, as evidenced by the Medal of the Silver Salamander which was awarded to him by the emperor himself in honor of his valor and dedication on the field of battle.",
+			"basanefarm": "Contrary to appearances, Toussaint does not live and die by the wine trade alone. It also exports valuable building materials and a great quantity of wool. The clover-rich slopes of Mont Crane provide sustenance to a broad variety of sheep, including the famed Toussaint merinos, whose fleece fetches mind-boggling sums. Basane is one of the estates specializes in the breeding and pasturing of these remarkable beasts.",
+			"croixmill": "The de la Croix family never had much luck in business. Their grapevines fell victim to Duke Adam of Nazair's attempts to regulate the flow of the Sansretour and their olive groves were devoured by a plague of armored scale insects. After this, they restored their old water mill, counting on the production of bread to be their ticket to success. And it nearly was - until they found oud the hard way high concentrations of flour in restricted spaces can lead to powerful dust explosions.",
+			"coopersgate": "Experts know the secret to Toussaint wine lies not in the vines of its hills but in the oaks of its forests. So desirable are barrels made from this wood, it seemed loggers would cut the duchy clear until protests from angry druids stopped them. After years of negotiations, a compromise was reached and a special organization, the Coopers' Guild, was created. Thanks to its strict supervision of the industry, logging became sustainable and it became the richest guild in the city - as evidenced by the proud gate it funded.",
+			"haborgate": "When laying the stones of the defensive walls surrounding the Haunteville, the inhabitants of Beauclair had no inkling how much their city would eventually grow. The mushroom-like expansion of San Sebastian and the Port District forced Beauclair's residents to knock though an additional passageway to facilitate the circulation of traffic between the capital's districts. Some even called for the wall to be torn down altogether - for what had they to fear, with their town protected by the bravest knights errant the would has ever known?",
+			"sansebastian": "The city of Beauclair quickly grew to fill all the space within its walls and spill out beyond it. This gave rise to the Lower Town, also known by the name if its founder - San Sebastian. Currently the district is primarily home to laborers and their workshops and links Haunteville with the port - the center of trade for Beauclair and the entire duchy.",
+			"beauclairport": "The best wine comes from Toussaint - any sommelier will tell you as much. Bottles bearing its famed labels are worth fortunes and even grace the tables of kings - indeed, today one can barely imagine a royal feast without Cote-de-Blessure or Est Est. And it is here, at Beauclair's port, that this wine begins its journey both to the sound - into the heart of the Nilfgaardian Empire - and to the far-off North.",
+			"tradingpost": "Every self-respecting merchant does some business in the capital of Toussaint - going to hear the latest gossip from the famed Belles of Beauclair in San Sebastian, or strolling down to the Port to see if the dockmen have \"lost\" a barrel or two. But truly important business is conducted not in the city, but at the modest merchant's camp, an outpost far from the wine- and song-laden atmosphere of Beauclair's eternal celebrations.",
+			"coronatavineyard": "This line's founder, Stefen de Coronata, once asked a druid to help him be rid of the caterpillers devouring his vines.The druid suggested he raise martens, which love to feed on that insect's larvae. Stefan duly took the druid's advice and soon eradicated the plague not only in his own vineyard, but in all the neighboring ones as well. In return for this bounteous deed, he was awarded a noble title. He chose a blue wolf to adorn his crest, after deciding he would look foolish parading about with a marten on his shield.",
+			"ruins": "Toussaint was once a land of elves. The ducal palace is the most prominent remnant of that era, but it is not the only. The Aen Seidhe left behind a great many smaller and larger structures whose function can today only be guessed at. An example of this are the Termes Palace ruins, which some tie to the legendary resting place of the last elven king, while others consider them a tmeple to shome forgotten deity. What they were in truth, we shall never know."
+		}
+	}
 }

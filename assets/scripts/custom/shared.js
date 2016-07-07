@@ -291,9 +291,14 @@ icons.contracts = L.icon({
 	iconSize : [18, 29]
 });
 
+icons.vineyardinfestation = L.icon({
+	iconUrl  : '../files/images/icons/vineyardinfestation.png',
+	iconSize : [28, 32]
+});
+
 icons.vintnercontract = L.icon({
- iconUrl  : '../files/images/icons/vintnercontract.png',
- iconSize : [23, 34]
+	iconUrl  : '../files/images/icons/vintnercontract.png',
+	iconSize : [23, 34]
 });
 
 icons.spoils = L.icon({

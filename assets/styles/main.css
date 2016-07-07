@@ -637,6 +637,7 @@ i.shopkeeper { background-image:url('../images/icons/merchant.png'); }
 i.smugglers { background-image:url('../images/icons/smugglers.png'); }
 i.spoils { background-image:url('../images/icons/spoils.png'); }
 i.sidequests { background-image:url('../images/icons/sidequests.png'); }
+i.vineyardinfestation { background-image:url('../images/icons/vineyardinfestation.png'); }
 i.contracts { background-image:url('../images/icons/tempcontract.png'); }
 i.vintnercontract { background-image:url('../images/icons/vintnercontract.png'); }
 .leaflet-container {
@@ -885,14 +886,23 @@ button.easy-button-button {
 div#restoreDiv {
 	font-family: 'PFDinTextCondPro', Arial, sans-serif;
 	color: #AF834E;
-	z-index:1;
+	z-index: 1;
 	position:absolute;
 	box-shadow: 0 1px 7px rgba(0, 0, 0, .65);
 	background: rgba(0, 0, 0, .4);
-	padding-left:5px;
+	padding-left: 5px;
 }
 div#restoreDiv > div> button {
-	background:none;
+	background: none;
 	color: #AF834E;
-	border:none;
+	border: none;
+}
+li#show-all {
+	display: none;
+}
+li#show-counts {
+	display: none;
+}
+li#show-monsters {
+	display: none;
 }

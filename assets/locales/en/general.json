@@ -41,7 +41,7 @@
 		"herbalist": "Herbalist",
 		"hidden": "Hidden Treasure",
 		"innkeep": "Innkeep",
-		"kid":"Knight in Distress",
+		"kid": "Knight in Distress",
 		"monsternest": "Monster Nest",
 		"monsterden": "Monster Den",
 		"notice": "Notice Board",
@@ -53,7 +53,8 @@
 		"shopkeeper": "Shopkeeper",
 		"smugglers": "Smugglers' Cache",
 		"spoils": "Spoils of War",
-		"vintnercontract": "Vintner Contract"
+		"vintnercontract": "Vintner Contract",
+		"vineyardinfestation": "Vineyard Infestation"
 	},
 	"controls": {
 		"show": "Show All",
@@ -104,13 +105,13 @@
 		"label": "Armorer's Table",
 		"desc": "Armorer's tables grant your gear increased armor for a limited duration."
 	},
-	"banditcamp":{
-		"label":"Bandit Camp",
-		"desc":"A group of dangerous bandits have made camp here. "
+	"banditcamp": {
+		"label": "Bandit Camp",
+		"desc": "A group of dangerous bandits have made camp here. "
 	},
-	"barber":{
-		"label":"Barber",
-		"desc":"Visit barbers for a shave or a new haircut. "
+	"barber": {
+		"label": "Barber",
+		"desc": "Visit barbers for a shave or a new haircut. "
 	},
 	"boat": {
 		"label": "Boat",
@@ -120,7 +121,7 @@
 		"label": "Entrance",
 		"desc": "Entrance to cave or ruins"
 	},
-	"entranceunderwatercave" : {
+	"entranceunderwatercave": {
 		"label": "Underwater Cave",
 		"desc": "Underwater entrance to cave"
 	},
@@ -514,5 +515,9 @@
 		"igni": "Igni",
 		"quen": "Quen",
 		"yrden": "Yrden"
+	},
+	"vineyardinfestation": {
+		"label": "Vineyard Infestation",
+		"desc": "Vineyard infested by monsters."
 	}
 }

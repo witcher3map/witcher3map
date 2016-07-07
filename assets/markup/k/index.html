@@ -2,19 +2,19 @@
 <html lang="en">
 	<head>
 		<title>Witcher 3 Interactive Map - Kaer Morhen</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<meta property="og:title" content="Witcher 3 Interactive Map - Kaer Morhen">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="http://witcher3map.com/k/">
-		<meta property="og:image" content="http://witcher3map.com/files/maps/kaer_morhen/preview.jpg">
-		<meta property="og:description" content="Witcher 3 interactive map of Kaer Morhen. All locations including shopkeepers, gwent players, merchants, places of power">
-		<meta name="description" content="Witcher 3 interactive map of Kaer Morhen. All locations including shopkeepers, gwent players, merchants, places of power">
-		<meta name="keywords" content="Witcher 3, Witcher 3 map, Witcher 3 interactive map, Kaer Morhen Map, gwent player map, gwent map, shopkeeper map, merchant map">
-		<link type="text/css" rel="stylesheet" href="../files/styles/leaflet.css">
-		<link type="text/css" rel="stylesheet" href="../files/styles/main.min.css">
-		<link type="text/css" rel="stylesheet" href="../files/styles/font-awesome.min.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<meta property="og:title" content="Witcher 3 Interactive Map - Kaer Morhen" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://witcher3map.com/k/" />
+		<meta property="og:image" content="http://witcher3map.com/files/maps/kaer_morhen/preview.jpg" />
+		<meta property="og:description" content="Witcher 3 interactive map of Kaer Morhen. All locations including shopkeepers, gwent players, merchants, places of power" />
+		<meta name="description" content="Witcher 3 interactive map of Kaer Morhen. All locations including shopkeepers, gwent players, merchants, places of power" />
+		<meta name="keywords" content="Witcher 3, Witcher 3 map, Witcher 3 interactive map, Kaer Morhen Map, gwent player map, gwent map, shopkeeper map, merchant map" />
+		<link type="text/css" rel="stylesheet" href="../files/styles/leaflet.css" />
+		<link type="text/css" rel="stylesheet" href="../files/styles/main.min.css" />
+		<link type="text/css" rel="stylesheet" href="../files/styles/font-awesome.min.css" />
 		<script type="text/javascript" src="../files/scripts/vendor.bundle.js"></script>
 		<script type="text/javascript">
 			if(document.location.protocol!='file:'){(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date;c=e.createElement(f);d=e.getElementsByTagName(f)[0];c.async=1;c.src=g;d.parentNode.insertBefore(c,d)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-64557825-1','auto');ga('send','pageview');}
@@ -54,19 +54,19 @@
 					<!--<li class="none"></li>-->
 				</ul>
 				<ul class="key controls">
-					<li style="display:none;" id="show-all"><i class="fa fa-eye"></i><div data-i18n="controls.show">Show All</div></li>
+					<li id="show-all"><i class="fa fa-eye"></i><div data-i18n="controls.show">Show All</div></li>
 					<li id="hide-all"><i class="fa fa-eye-slash"></i><div data-i18n="controls.hide">Hide All</div></li>
-					<li style="display:none;" id="show-counts"><i class="fa fa-check-square"></i><div data-i18n="controls.showCounts">Show Counts</div></li>
+					<li id="show-counts"><i class="fa fa-check-square"></i><div data-i18n="controls.showCounts">Show Counts</div></li>
 					<li id="hide-counts"><i class="fa fa-square"></i><div data-i18n="controls.hideCounts">Hide Counts</div></li>
 					<li id="reset-tracking"><i class="fa fa-eraser"></i><div data-i18n="controls.resetInvisible">Reset Invisible</div></li>
 					<li id="hide-monsters"><i class="fa fa-user-secret"></i><div data-i18n="controls.hideMonsters">Hide Monsters</div></li>
-					<li style="display:none;" id="show-monsters"><i class="fa fa-user-secret"></i><div data-i18n="controls.showMonsters">Show Monsters</div></li>
+					<li id="show-monsters"><i class="fa fa-user-secret"></i><div data-i18n="controls.showMonsters">Show Monsters</div></li>
 					<li><a href="https://github.com/witcher3map/witcher3map/wiki" target="_blank"><i class="fa fa-info-circle"></i><div data-i18n="controls.helpFeatures">Features &amp; Help</div></a></li>
 					<li class="credits"><i class="fa fa-copyright"></i><span data-i18n="controls.credits">Credits</span></li>
 				</ul>
 				<div id="note">
 					<span id="note-msg">
-						<span data-i18n="[html]misc.contribute" data-i18n-options='{"link":"<a href=\"https://github.com/witcher3map/witcher3map\" target=\"_blank\">Github</a>"}'>Work in progress! Help appreciated at <a href="https://github.com/witcher3map/witcher3map" target="_blank">Github</a></span><br>
+						<span data-i18n="[html]misc.contribute" data-i18n-options="{'link':'<a href=\'https://github.com/witcher3map/witcher3map\' target=\'_blank\'>Github</a>'}">Work in progress! Help appreciated at <a href="https://github.com/witcher3map/witcher3map" target="_blank">Github</a></span><br />
 						<a href="https://crowdin.com/project/witcher3map" target="_blank" data-i18n="misc.helpTranslate">Want to help or improve translations?</a>
 					</span>
 				</div>
@@ -75,8 +75,8 @@
 				</div>
 			</div>
 			<div id="copyright">
-				<span data-i18n="[html]credits.botCreated" data-i18n-options='{"untamed0":"<a href=\"https://github.com/untamed0\" target=\"_blank\">untamed0</a>","license":"<a href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\" target=\"_blank\">CC BY-NC-SA</a>"}'>Created by <a href="https://github.com/untamed0" target="_blank">untamed0</a>, licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA</a></span><br>
-				<span data-i18n="[html]credits.botAssets" data-i18n-options='{"cdpr":"<a href=\"http://en.cdprojektred.com\" target=\"_blank\">CD PROJEKT RED</a>"}'>Witcher 3, logo, icons, map &amp; text are the property of <a href="http://en.cdprojektred.com" target="_blank">CD PROJEKT RED</a></span>
+				<span data-i18n="[html]credits.botCreated" data-i18n-options="{'untamed0':'<a href=\'https://github.com/untamed0\'' target=\'_blank\''>untamed0</a>','license':'<a href=\'http://creativecommons.org/licenses/by-nc-sa/4.0/\' target=\'_blank\'>CC BY-NC-SA</a>'}">Created by <a href="https://github.com/untamed0" target="_blank">untamed0</a>, licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA</a></span><br />
+				<span data-i18n="[html]credits.botAssets" data-i18n-options="{'cdpr':'<a href=\'http://en.cdprojektred.com\' target=\'_blank\'>CD PROJEKT RED</a>'}">Witcher 3, logo, icons, map &amp; text are the property of <a href="http://en.cdprojektred.com" target="_blank">CD PROJEKT RED</a></span>
 			</div>
 		</div>
 		<div id="sidebar-border"></div>
