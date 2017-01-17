@@ -766,8 +766,8 @@ window.mapdata_toussaint = {
 		coords: [[50.453,63.734]],
 		label: $.t("t:sidequests.label.paperchase"),
 		popup: $.t("t:sidequests.desc.paperchase")
-	},{
-		coords: [[110.172,87.125],[91.094,86.703],[49.047,92.781],[85.563,72.172]],
+	}, {
+		coords: [[91.094,86.703],[49.047,92.781],[85.563,72.172]],
 		label: $.t("t:sidequests.label.vintnercontract"),
 		popup: $.t("t:sidequests.desc.vintnercontract")
 	},{
