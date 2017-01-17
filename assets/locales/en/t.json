@@ -8,6 +8,8 @@
 	"armourer": {
 		"amateurLabel": "Amateur Armorer",
 		"journeymanLabel": "Journeyman Armorer",
+		"masterLabel": "Master Armorer*",
+		"lafargue": "Grandmaster Smith* (Lafargue)",
 		"desc": "Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
 	},
 	"hansebase": {
@@ -47,8 +49,8 @@
 			"ursine": "Ursine",
 			"wolven": "Wolven",
 			"feline": "Feline",
-			"gwent": "Gwent Player from that you can win a Skellige Card (I Have a Gwent Problem Achievement)",
-			"aftercleared": "accessible after the area is cleared"
+			"gwent": "Gwent Player from that you can win a Skellige Card (I Have a Gwent Problem Achievement).",
+			"aftercleared": "Will become accessible when the area is cleared."
 		}
 	},
 	"poi": {
