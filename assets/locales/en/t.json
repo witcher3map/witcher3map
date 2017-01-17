@@ -28,9 +28,7 @@
 			"barrelandbung": "The Barrel and Bung Inn"
 		},
 		"popup": "Innkeep",
-		"desc": {
-			"cockatrice": ""
-		}
+		"desc": "Here you can buy or sell various items."
 	},
 	"kid": {
 		"label": "Knight Errant in Distress",

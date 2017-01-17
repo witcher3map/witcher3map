@@ -286,19 +286,19 @@ window.mapdata_toussaint = {
 	innkeep: [{
 		coords: [[75.406,75.188]],
 		label: $.t("t:signpost.label.cockatrice"),
-		popup: $.t("t:innkeep.desc.cockatrice")
+		popup: $.t("t:innkeep.desc")
 	},{
 		coords: [[64.656,62.734]],
-		label: $.t("t:innkeep.label.xxx"),
-		popup: $.t("t:innkeep.desc.xxx")
+		label: $.t("t:innkeep.popup"),
+		popup: $.t("t:innkeep.desc")
 	},{
 		coords: [[51.438,61.234]],
 		label: $.t("t:innkeep.label.pheasantry"),
-		popup: $.t("t:innkeep.desc.pheasantry")
+		popup: $.t("t:innkeep.desc")
 	},{
 		coords: [[41.328,81.109]],
-		label: $.t("t:innkeep.label.xxx"),
-		popup: $.t("t:innkeep.desc.xxx")
+		label: $.t("t:innkeep.popup"),
+		popup: $.t("t:innkeep.desc")
 	},{
 		coords: [[90.703,47.578]],
 		label: $.t("t:innkeep.label.auberge"),
@@ -306,7 +306,7 @@ window.mapdata_toussaint = {
 	},{
 		coords: [[63.453,90.625]],
 		label: $.t("t:innkeep.label.barrelandbung"),
-		popup: $.t("t:misc.desc.barrelandbung")
+		popup: $.t("t:innkeep.desc")
 	},{
 		coords: [[113.891,66.391]],
 		label: $.t("t:innkeep.label.salamander"),
@@ -314,7 +314,7 @@ window.mapdata_toussaint = {
 	},{
 		coords: [[52.128,65]],
 		label: $.t("t:innkeep.label.houseofpleasure"),
-		popup: $.t("t:innkeep.desc.houseofpleasure")
+		popup: $.t("t:innkeep.desc")
 	}],
 
 // Knight Errant in Distress
