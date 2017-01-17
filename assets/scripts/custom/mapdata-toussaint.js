@@ -302,7 +302,7 @@ window.mapdata_toussaint = {
 	},{
 		coords: [[90.703,47.578]],
 		label: $.t("t:innkeep.label.auberge"),
-		popup: $.t("t:misc.desc.cleared")
+		popup: $.t("t:misc.desc.aftercleared")
 	},{
 		coords: [[63.453,90.625]],
 		label: $.t("t:innkeep.label.barrelandbung"),
@@ -716,8 +716,8 @@ window.mapdata_toussaint = {
 		popup: $.t("t:sidequests.desc.knightstale")
 	}, {
 		coords: [[37.594,97.641]], //todo makers
-		label: $.t("t:sidequests.label.spon"),
-		popup: $.t("t:sidequests.desc.spon")
+		label: $.t("t:sidequests.label.spoon"),
+		popup: $.t("t:sidequests.desc.spoon")
 	}, {
 		coords: [[57.891,85.313]],
 		label: $.t("t:sidequests.label.escapology"),
@@ -760,8 +760,8 @@ window.mapdata_toussaint = {
 		popup: $.t("t:sidequests.desc.save")
 	}, {
 		coords: [[42.500,55.313]],
-		label: $.t("t:sidequests.label.enjpytheplay"),
-		popup: $.t("t:sidequests.desc.enjpytheplay")
+		label: $.t("t:sidequests.label.enjoytheplay"),
+		popup: $.t("t:sidequests.desc.enjoytheplay")
 	}, {
 		coords: [[50.453,63.734]],
 		label: $.t("t:sidequests.label.paperchase"),
