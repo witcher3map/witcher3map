@@ -703,10 +703,6 @@ window.mapdata_toussaint = {
 		label: $.t("t:sidequests.label.facethestrage"),
 		popup: $.t("t:sidequests.desc.facethestrage")
 	}, {
-		coords: [[94.609,50.297]],
-		label: $.t("t:sidequests.label.bigfeet"),
-		popup: $.t("t:sidequests.desc.bigfeet")
-	}, {
 		coords: [[83.891,55.156]],
 		label: $.t("t:sidequests.label.knightstale"),
 		popup: $.t("t:sidequests.desc.knightstale")
@@ -755,10 +751,6 @@ window.mapdata_toussaint = {
 		label: $.t("t:sidequests.label.onlyone"),
 		popup: $.t("t:sidequests.desc.onlyone") + $.t(' <a href="https://wiiare.in/witcher3/embodiment-of-the-five-virtues/" target="_blank">[Questhelp]</a>')
 	}, {
-		coords: [[101.484,61.531]],
-		label: $.t("t:sidequests.label.bigfleet"),
-		popup: $.t("t:sidequests.desc.save")
-	}, {
 		coords: [[42.500,55.313]],
 		label: $.t("t:sidequests.label.enjoytheplay"),
 		popup: $.t("t:sidequests.desc.enjoytheplay")
@@ -770,14 +762,42 @@ window.mapdata_toussaint = {
 		coords: [[91.094,86.703],[49.047,92.781],[85.563,72.172]],
 		label: $.t("t:sidequests.label.vintnercontract"),
 		popup: $.t("t:sidequests.desc.vintnercontract")
-	},{
-		coords: [[89.781,56.984]],
-		label: $.t("t:sidequests.label.footsteps"),
-		popup: $.t("t:sidequests.desc.footsteps")
-	},{
+	}, {
 		coords: [[51.438,63.797]],
 		label: $.t("t:sidequests.label.portait"),
 		popup: $.t("t:sidequests.desc.portait")
+	}, {
+		coords: [[94.516,93.641]],
+		label: $.t("t:sidequests.label.phantoms"),
+		popup: $.t("t:sidequests.desc.phantoms")
+	}, {
+		coords: [[42.625, 89.625]],
+		label: $.t("t:sidequests.label.cosplay"),
+		popup: $.t("t:sidequests.desc.cosplay")
+	},
+
+	// Quests Related to The Propeht Lebioda's Footsteps
+	// They actually, at least in GoY Edition, have their own icon.
+	{
+		coords: [[94.609,50.297]],
+		label: $.t("t:sidequests.label.bigfeet1"),
+		popup: $.t("t:sidequests.desc.footsteps")
+	}, {
+		coords: [[92.063,63.344]],
+		label: $.t("t:sidequests.label.bigfeet2"),
+		label: $.t("t:sidequests.label.footsteps"),
+	}, {
+		coords: [[89.781,56.984]],
+		label: $.t("t:sidequests.label.bigfeet3"),
+		popup: $.t("t:sidequests.desc.footsteps")
+	}, {
+		coords: [[107.750,72.266]],
+		label: $.t("t:sidequests.label.bigfeet4"),
+		popup: $.t("t:sidequests.desc.footsteps")
+	}, {
+		coords: [[101.484,61.531]],
+		label: $.t("t:sidequests.label.bigfeet5"),
+		popup: $.t("t:sidequests.desc.footsteps")
 	}],
 
 //// Contracts

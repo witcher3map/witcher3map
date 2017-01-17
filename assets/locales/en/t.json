@@ -92,7 +92,6 @@
 			"kingforhire": "King for Hire",
 			"winewars": "Wine Wars: Belgaard",
 			"facethestrage": "Turn and Face the Strange",
-			"bigfeet": "Big Feet to Fill: The FIrst Group",
 			"knightstale": "A Knight's Tale",
 			"spoon": "Spoontaneous Profits!",
 			"escapology": "Applied Escapology",
@@ -109,12 +108,17 @@
 			"wildkingdom": "Mutual Of Becaular's Wild Kingdom",
 			"master": "Master Master Master Master!",
 			"suffering": "The Suffering of Young Francois",
-			"bigfleet": "Big Feet to Fill: The Fith Group",
-			"footsteps": "The Propeht Lebioda's Footsteps",
-			"paperchase": "Paperchase"
 			"enjoytheplay": "But Other Than That, How Did You Enjoy the Play?",
 			"vintnercontract": "Vintner's Contract",
 			"portait": "A Portait of the Witcher as an Old Man",
+			"paperchase": "Paperchase",
+			"phantoms": "Equine Phantoms",
+			"cosplay": "Extreme Cosplay",
+			"bigfeet1": "Big Feet to Fill: The First Group",
+			"bigfeet2": "Big Feet to Fill: The Second Group",
+			"bigfeet3": "Big Feet to Fill: The Third Group",
+			"bigfeet4": "Big Feet to Fill: The Fourth Group",
+			"bigfeet5": "Big Feet to Fill: The Fifth Group"
 		},
 		"desc": {
 			"gwenttournment": "Level 38 - You get this Quest at the Notice Board near the Cockatrice Inn",
@@ -122,7 +126,6 @@
 			"kingforhire": "You get this Quest at the Notice Board near the Cockatrice Inn",
 			"winewars": "Level 37 - You get this Quest at the Notice Board near the Cockatrice Inn",
 			"facethestrage": "Level 35 - you should automaticly pick up this Quest, while your the Main Quest `La Cage au Fou`",
-			"bigfeet": "",
 			"knightstale": "Level 40 - You get this Quest at the Notice Board in Castel Ravello Vineyard",
 			"spoon": "Level 42 - This Quests starts if you Pick up the Spoon, located inside the House on Barrel",
 			"escapology": "Level 40 - You start this Quest by looting the Hidden Treasure",
@@ -142,9 +145,11 @@
 			"save": "Persons in Distress, save them to complete the Quest",
 			"enjoytheplay": "The Order in where you need to light the candles can be figgred out by using the Witcher Senses. After that dring the Wine (Questitem) `Vis la Crac`",
 			"vintnercontract": "Here you can help a vinter clear a cave of monsters",
-			"footsteps": "Here you can solve a problem related to the construction of Lebioda's statue",
+			"footsteps": "The Propeht Lebioda's Footsteps: Here you can solve a problem related to the construction of Lebioda's statue",
 			"portait": "",
-			"paperchase": ""
+			"paperchase": "",
+			"phantoms": "Level 44 - ",
+			"cosplay": ""
 		}
 	},
 	"contracts": {
