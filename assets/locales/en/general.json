@@ -503,7 +503,7 @@
 	},
 	"smugglers": {
 		"label": "Smugglers' Cache",
-		"desc": "Smuggled goods have been hidden here"
+		"desc": "Smuggled goods have been hidden here. "
 	},
 	"spoils": {
 		"label": "Spoils of War",
