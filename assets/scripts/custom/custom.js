@@ -647,7 +647,7 @@ $(function() {
 	var noteStatus = false;
 	var noteCursorCss = null;
 	var notePopupOpen = false;
-	L.easyButton('fa-book', function(btn, map) {
+	L.easyButton('fa-pencil', function(btn, map) {
 		if(!noteStatus) {
 			startNote();
 		}
