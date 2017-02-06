@@ -97,6 +97,10 @@ $(function() {
 		layers: allLayers
 	};
 
+	var label_settings = {
+		direction: 'auto'
+	};
+
 	if (map_path === 'velen' || map_path === 'hos_velen' || map_path === 'toussaint' || map_path === 'kaer_morhen'){
 		map_settings['crs'] = L.CRS.Simple;
 	}
@@ -695,7 +699,7 @@ $(function() {
 		note.title = $('#note-title').val();
 		note.text = $('#note-text').val();
 		var marker = noteMarkers[note.key];
-		marker.bindLabel(note.label);
+		marker.bindLabel(note.label, label_settings);
 		marker.bindPopup(getNotePopup(note));
 		noteMarkers[note.key] = marker;
 		backupNotes();
@@ -721,8 +725,11 @@ $(function() {
 
 	var createNote = function(note) {
 		var noteMarker = null;
-		if(note.label && note.label !== '') noteMarker = L.marker(L.latLng(note.lat, note.lng), setMarker(icons['note_marker'])).bindLabel(note.label).bindPopup(getNotePopup(note)).openPopup();
-		else noteMarker = L.marker(L.latLng(note.lat, note.lng), setMarker(icons['note_marker'])).bindPopup(getNotePopup(note)).openPopup();
+		if (note.label && note.label !== '') {
+			noteMarker = L.marker(L.latLng(note.lat, note.lng), setMarker(icons['note_marker'])).bindLabel(note.label, label_settings).bindPopup(getNotePopup(note)).openPopup();
+		} else {
+			noteMarker = L.marker(L.latLng(note.lat, note.lng), setMarker(icons['note_marker'])).bindPopup(getNotePopup(note)).openPopup();
+		}
 		noteMarker.addTo(map);
 		noteMarkers[note.key] = noteMarker;
 	};

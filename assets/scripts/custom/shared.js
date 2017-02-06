@@ -37,7 +37,7 @@ $(function() {
 
 window.createMarker = function (coord, icon, label, popup, dataKey) {
 	var mapKey = 'markers-' + map_path + '-hidden';
-	var marker = L.marker(coord, setMarker(icon)).bindLabel(label).bindPopup(popup);
+	var marker = L.marker(coord, setMarker(icon)).bindLabel(label, {direction: 'auto'}).bindPopup(popup);
 
 	marker.on('contextmenu', function (e) {
 		toggleOpacity(e, mapKey);
