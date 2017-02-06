@@ -26,7 +26,7 @@ window.mapdata_velen = {
 	}, {
 		coords: [[122.281, 179.266]],
 		label: $.t("abandoned.label"),
-		popup: $.t("abandoned.desc") + '(lvl 9<span> ' + $.t("v:monsters.ghouls") + '</span> &amp; lvl 11<span> ' + $.t("v:monsters.alghoul") + '</span>)'
+		popup: $.t("abandoned.desc") + '(lvl 9<span> ' + $.t("v:monsters.ghouls") + '</span> and lvl 11<span> ' + $.t("v:monsters.alghoul") + '</span>)'
 	}, { // SW Velen
 		coords: [[29.984, 48.000]],
 		label: $.t("abandoned.label"),
@@ -43,7 +43,7 @@ window.mapdata_velen = {
 
 // Alchemy Supplies
 	alchemy: [{ //Novigrad
-		coords: [[218.984,116.516]],
+		coords: [[218.984, 116.516]],
 		label: $.t("v:alchemy.label") + '*',
 		popup: $.t("v:alchemy.desc*")
 	}, {
@@ -51,7 +51,7 @@ window.mapdata_velen = {
 		label: $.t("v:alchemy.label"),
 		popup: $.t("v:alchemy.desc")
 	}, { // NW Velen
-		coords: [[114.813,49.547]],
+		coords: [[114.813, 49.547]],
 		label: $.t("v:alchemy.label"),
 		popupTitle: $.t("v:alchemy.pellar"),
 		popup: $.t("v:alchemy.desc")
@@ -71,7 +71,7 @@ window.mapdata_velen = {
 		label: $.t("v:armourer.amateurLabel"),
 		popup: $.t("v:armourer.desc") + ' ' + $.t("v:misc.rescue") + ' <a href="#6/-18.761/-25.785">' + $.t("v:misc.locations.petesLanding") + '</a>'
 	}, { // NW Velen
-		coords: [[104.734,77.531]],
+		coords: [[104.734, 77.531]],
 		label: $.t("v:armourer.journeymanLabel"),
 		popup: $.t("v:armourer.desc")
 	}, {
@@ -183,7 +183,7 @@ window.mapdata_velen = {
 			[215.016, 104.297],
 			[214.484, 113.281],
 			// Oxenfurt
-			[153.734,164.906]
+			[153.734, 164.906]
 		],
 		label: $.t("v:barber.label"),
 		popup: $.t("v:barber.desc")
@@ -369,8 +369,6 @@ window.mapdata_velen = {
 // Guarded Treasure
 	guarded: [{
 		coords: [
-			// NE Velen
-				[144.641, 87.578],
 			// NW Velen
 				[107.281, 42.953],
 				[98.313, 40.141],
@@ -384,91 +382,95 @@ window.mapdata_velen = {
 	}, { // NE Novigrad
 		coords: [[215.016, 126.328]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 8 <span>" + $.t("v:monsters.hag.water") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 8<span> " + $.t("v:monsters.hag.water") + "</span>)"})
 	}, {
 		coords: [[229.563, 124.656]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 15 <span>" + $.t("v:monsters.hag.bilge") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 15<span> " + $.t("v:monsters.hag.bilge") + "</span>)"})
 	}, {
 		coords: [[239.594, 104.219]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 23 <span>" + $.t("v:monsters.armoredArachas") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 23<span> " + $.t("v:monsters.armoredArachas") + "</span>)"})
 	}, { // SE Novigrad
 		coords: [[164.563, 198.594]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 20 <span>" + $.t("v:monsters.leshen") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 20<span> " + $.t("v:monsters.leshen") + "</span>)"})
 	}, { // S Novigrad
 		coords: [[171.500, 119.516]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 18 <span>" + $.t("v:monsters.wyvern") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 18<span> " + $.t("v:monsters.wyvern") + "</span>)"})
 	}, {
 		coords: [[184.609, 58.609]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 15 <span>" + $.t("v:monsters.wraiths.noon") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 15<span> " + $.t("v:monsters.wraiths.noon") + "</span>)"})
 	}, { // NE Velen
 		coords: [[121.781, 136.625]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 13 <span>" + $.t("v:monsters.alghoul") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 13<span> " + $.t("v:monsters.alghoul") + "</span>)"})
 	}, {
 		coords: [[122.484, 167.156]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 9 <span>" + $.t("v:monsters.drowners") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 9<span> " + $.t("v:monsters.drowners") + "</span>)"})
+	}, {
+		coords: [[144.641, 87.578]],
+		label: $.t("guarded.label"),
+		popup: $.t("guarded.desc", {monster: "(lvl xx<span> " + $.t("v:monsters.hag.water") + "</span>)"})
 	}, { // NW Velen
 		coords: [[131.297, 69.172]],
 		label: $.t("guarded.label"),
-		popup: 'Available after the \'Master Armorers\' (lvl 26) quest. ' + $.t("guarded.desc", {monster: "(lvl 19 <span>" + $.t("v:monsters.cyclops") + "</span>)"})
+		popup: 'Available after the \'Master Armorers\' (lvl 26) quest. ' + $.t("guarded.desc", {monster: "(lvl 19<span> " + $.t("v:monsters.cyclops") + "</span>)"})
 	}, {
 		coords: [[70.859, 44.063]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 7 <span>" + $.t("v:monsters.wraiths.wraiths") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 7<span> " + $.t("v:monsters.wraiths.wraiths") + "</span>)"})
 	}, {
 		coords: [[93.516, 99.344]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 14 <span>" + $.t("v:monsters.forktail") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 14<span> " + $.t("v:monsters.forktail") + "</span>)"})
 	}, {
 		coords: [[91.563, 19.516]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 4 <span>" + $.t("v:monsters.drowners") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 4<span> " + $.t("v:monsters.drowners") + "</span>)"})
 	}, {
 		coords: [[147.047, 57.047]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 14 <span>" + $.t("v:monsters.basilisk") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 14<span> " + $.t("v:monsters.basilisk") + "</span>)"})
 	}, { // SW Velen
 		coords: [[37.094, 55.438]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 8 <span>" + $.t("v:monsters.hag.water") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 8<span> " + $.t("v:monsters.hag.water") + "</span>)"})
 	}, {
 		coords: [[23.172, 78.391]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 18 <span>" + $.t("v:monsters.wraiths.noon") + "/" + $.t("v:monsters.wraiths.night") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 18<span> " + $.t("v:monsters.wraiths.noon") + "/" + $.t("v:monsters.wraiths.night") + "</span>)"})
 	}, {
 		coords: [[18.750, 78.531]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 19 <span>" + $.t("v:monsters.gargoyle") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 19<span> " + $.t("v:monsters.gargoyle") + "</span>)"})
 	}, {
 		coords: [[34.438, 93.125]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 13 <span>" + $.t("v:monsters.alghoul") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 13<span> " + $.t("v:monsters.alghoul") + "</span>)"})
 	}, { // SE Velen
 		coords: [[56.953, 200.891]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 24 <span>" + $.t("v:monsters.elemental.earth") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 24<span> " + $.t("v:monsters.elemental.earth") + "</span>)"})
 	}, {
 		coords: [[43.328, 149.781]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 20 <span>" + $.t("v:monsters.hag.bilge") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 20<span> " + $.t("v:monsters.hag.bilge") + "</span>)"})
 	}, {
 		coords: [[28.078, 148.406]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 14 <span>" + $.t("v:monsters.wyvern") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 14<span> " + $.t("v:monsters.wyvern") + "</span>)"})
 	}, {
 		coords: [[24.063, 150.188]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 19 <span>" + $.t("v:monsters.cyclops") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 19<span> " + $.t("v:monsters.cyclops") + "</span>)"})
 	}, {
 		coords: [[69.406, 162.688]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: "(lvl 8 <span>" + $.t("v:monsters.hag.water") + "</span>)"})
+		popup: $.t("guarded.desc", {monster: "(lvl 8<span> " + $.t("v:monsters.hag.water") + "</span>)"})
 	}],
 
 // Gwent Player
@@ -773,67 +775,67 @@ window.mapdata_velen = {
 	},{ // S Novigrad
 		coords: [[154.313, 96.734]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 6 <span>' + $.t("v:monsters.nekkers") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 6<span> ' + $.t("v:monsters.nekkers") + '</span>'})
 	}, {
 		coords: [[168.563, 78.875]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 15 <span>' + $.t("v:monsters.mucknixers") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 15<span> ' + $.t("v:monsters.mucknixers") + '</span>'})
 	}, { // NE Velen
 		coords: [[115.891, 134.969]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 10 <span>' + $.t("v:monsters.drowners") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 10<span> ' + $.t("v:monsters.drowners") + '</span>'})
 	}, {
 		coords: [[130.344, 173.906]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 4 <span>' + $.t("v:monsters.drowners") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 4<span> ' + $.t("v:monsters.drowners") + '</span>'})
 	}, {
 		coords: [[164.563, 146.844]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 4 <span>' + $.t("v:monsters.drowners") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 4<span> ' + $.t("v:monsters.drowners") + '</span>'})
 	}, {
 		coords: [[125.625, 143.594]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 4 <span>' + $.t("v:monsters.foglet") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 4<span> ' + $.t("v:monsters.foglet") + '</span>'})
 	}, {
 		coords: [[171.813,139.453]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 18 <span>' + $.t("v:monsters.hag.bilge") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 18<span> ' + $.t("v:monsters.hag.bilge") + '</span>'})
 	}, {
 		coords: [[166.922, 155.281]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 32 <span>' + $.t("v:monsters.basilisk") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 32<span> ' + $.t("v:monsters.basilisk") + '</span>'})
 	}, { // NW Velen
 		coords: [[86.016, 17.078]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 4 <span>' + $.t("v:monsters.drowners") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 4<span> ' + $.t("v:monsters.drowners") + '</span>'})
 	}, { // SE Velen
 		coords: [[50.922, 182.641]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 22 <span>' + $.t("v:monsters.fiend") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 22<span> ' + $.t("v:monsters.fiend") + '</span>'})
 	}, {
 		coords: [[99.469, 197.203]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 4 <span>' + $.t("v:monsters.foglet") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 4<span> ' + $.t("v:monsters.foglet") + '</span>'})
 	}, {
 		coords: [[112.969, 162.563]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 9 <span>' + $.t("v:monsters.bandits") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 9<span> ' + $.t("v:monsters.bandits") + '</span>'})
 	}, { // SW Velen
 		coords: [[56.438, 20.781]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 28 <span>' + $.t("v:monsters.hag.grave") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 28<span> ' + $.t("v:monsters.hag.grave") + '</span>'})
 	}, {
 		coords: [[51.297, 34.500]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 10 <span>' + $.t("v:monsters.bandits") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 10<span> ' + $.t("v:monsters.bandits") + '</span>'})
 	}, {
 		coords: [[55.031, 49.828]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 13 <span>' + $.t("v:monsters.wraiths.wraiths") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 13<span> ' + $.t("v:monsters.wraiths.wraiths") + '</span>'})
 	}, {
 		coords: [[39.859, 70.531]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.guarded", {monster: 'lvl 4 <span>' + $.t("v:monsters.drowners") + '</span>'})
+		popup: $.t("hidden.guarded", {monster: 'lvl 4<span> ' + $.t("v:monsters.drowners") + '</span>'})
 	}],
 
 // Innkeep
@@ -888,11 +890,11 @@ window.mapdata_velen = {
 	}, { // NE Novigrad
 		coords: [[237.641, 105.016]],
 		label: $.t("monsterden.label"),
-		popup: $.t("monsterden.desc", {monster: '(lvl 19 <span>' + $.t("v:monsters.golem") + '</span>)'})
+		popup: $.t("monsterden.desc", {monster: '(lvl 19<span> ' + $.t("v:monsters.golem") + '</span>)'})
 	}, { // S Novigrad
 		coords: [[165.891, 99.375]],
 		label: $.t("monsterden.label"),
-		popup: $.t("monsterden.desc", {monster: '(lvl 16 <span>' + $.t("v:monsters.rabidRockTroll") + '</span> &amp; lvl 18 <span>' + $.t("v:monsters.nekkers") + '</span>)'})
+		popup: $.t("monsterden.desc", {monster: '(lvl 16<span> ' + $.t("v:monsters.rabidRockTroll") + '</span> and lvl 18<span> ' + $.t("v:monsters.nekkers") + '</span>)'})
 	}],
 
 // Monster Nest
@@ -916,63 +918,63 @@ window.mapdata_velen = {
 	}, { // S Novigrad
 		coords: [[154.141, 85.000]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 6 <span>' + $.t("v:monsters.rotfiends") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 6<span> ' + $.t("v:monsters.rotfiends") + '</span>)'})
 	}, {
 		coords: [[169.094, 95.281]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 9 <span>' + $.t("v:monsters.endregas") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 9<span> ' + $.t("v:monsters.endregas") + '</span>)'})
 	}, {
 		coords: [[170.313, 98.000]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 9 <span>' + $.t("v:monsters.endregas") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 9<span> ' + $.t("v:monsters.endregas") + '</span>)'})
 	}, {
 		coords: [[170.266, 112.969]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 6 <span>' + $.t("v:monsters.rotfiends") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 6<span> ' + $.t("v:monsters.rotfiends") + '</span>)'})
 	}, { // NE Velen
 		coords: [[133.422, 162.531]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 9 <span>' + $.t("v:monsters.ghouls") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 9<span> ' + $.t("v:monsters.ghouls") + '</span>)'})
 	}, {
 		coords: [[133.750, 161.688]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 9 <span>' + $.t("v:monsters.ghouls") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 9<span> ' + $.t("v:monsters.ghouls") + '</span>)'})
 	}, {
 		coords: [[125.938, 147.391]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 9 <span>' + $.t("v:monsters.ghouls") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 9<span> ' + $.t("v:monsters.ghouls") + '</span>)'})
 	}, {
 		coords: [[160.750, 137.891]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 6 <span>' + $.t("v:monsters.rotfiends") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 6<span> ' + $.t("v:monsters.rotfiends") + '</span>)'})
 	}, { // SW Velen
 		coords: [[43.578, 108.563]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 4&amp;9 <span>' + $.t("v:monsters.drowners") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 4-9<span> ' + $.t("v:monsters.drowners") + '</span>)'})
 	}, { // SE Velen
 		coords: [[86.891, 168.969]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 8 <span>' + $.t("v:monsters.nekkers") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 8<span> ' + $.t("v:monsters.nekkers") + '</span>)'})
 	}, {
 		coords: [[91.297, 165.547]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 8/9 <span>' + $.t("v:monsters.nekkers") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 8-9<span> ' + $.t("v:monsters.nekkers") + '</span>)'})
 	}, {
 		coords: [[88.094, 161.422]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 8/9 <span>' + $.t("v:monsters.nekkers") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 8-9<span> ' + $.t("v:monsters.nekkers") + '</span>)'})
 	}, {
 		coords: [[87.891, 158.172]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 8/9 <span>' + $.t("v:monsters.nekkers") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 8-9<span> ' + $.t("v:monsters.nekkers") + '</span>)'})
 	}, {
 		coords: [[96.875, 185.094]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 21 <span>' + $.t("v:monsters.wyvern") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 21<span> ' + $.t("v:monsters.wyvern") + '</span>)'})
 	}, {
 		coords: [[95.656, 185.125]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 21 <span>' + $.t("v:monsters.wyvern") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 21<span> ' + $.t("v:monsters.wyvern") + '</span>)'})
 	}],
 
 // Notice Board
@@ -1022,15 +1024,15 @@ window.mapdata_velen = {
 	}, { // SE Novigrad
 		coords: [[142.984, 199.375]],
 		label: $.t("pid.label"),
-		popup: $.t("pid.desc", {monster: '(lvl 9 <span>' + $.t("v:monsters.bandits") + '</span>)'})
+		popup: $.t("pid.desc", {monster: '(lvl 9<span> ' + $.t("v:monsters.bandits") + '</span>)'})
 	}, { // NE Velen
 		coords: [[115.391, 107.094]],
 		label: $.t("pid.label"),
-		popup: $.t("pid.desc", {monster: '(lvl 10-16 <span>' + $.t("v:monsters.bandits") + '</span>)'})
+		popup: $.t("pid.desc", {monster: '(lvl 10-16<span> ' + $.t("v:monsters.bandits") + '</span>)'})
 	}, { // NW Velen
 		coords: [[72.656, 103.797]],
 		label: $.t("pid.label"),
-		popup: $.t("pid.desc", {monster: '(lvl 5 <span>' + $.t("v:monsters.bandits") + '</span>)'})
+		popup: $.t("pid.desc", {monster: '(lvl 5<span> ' + $.t("v:monsters.bandits") + '</span>)'})
 	}],
 
 // Place of Power
@@ -1857,10 +1859,10 @@ window.mapdata_velen = {
 	}, { // NW Velen
 		coords: [[111.500, 105.250]],
 		label: $.t("spoils.label"),
-		popup: $.t("spoils.desc", {monster: '(lvl 4 <span>' + $.t("v:monsters.drowners") + '</span>)'})
+		popup: $.t("spoils.desc", {monster: '(lvl 4<span> ' + $.t("v:monsters.drowners") + '</span>)'})
 	}, { // SW Velen
 		coords: [[46.078, 24.953]],
 		label: $.t("spoils.label"),
-		popup: $.t("spoils.desc", {monster: '(lvl 10 <span>' + $.t("v:monsters.drowners") + '</span>)'})
+		popup: $.t("spoils.desc", {monster: '(lvl 10<span> ' + $.t("v:monsters.drowners") + '</span>)'})
 	}]
 };

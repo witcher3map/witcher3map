@@ -1,22 +1,15 @@
 {
 	"monsters": {
-		"alghouls": "Alghouls",
-		"bandits": "Bandits",
 		"basilisk": "Basilisk",
 		"cyclops": "Cyclops",
 		"drowners": "Drowners",
-		"echidna": "Echidna",
-		"elemental": {
-			"earth": "Earth Elemental",
-			"ice": "Ice"
-		},
 		"endrega": "Endrega",
 		"gargoyles": "Gargoyles",
 		"ghost": "Ghost",
 		"harpies": "Harpies",
+		"leshen": "Leshen",
 		"nekkers": "Nekkers",
 		"nekkerWarrior": "Nekker Warrior",
-		"sirens": "Sirens",
 		"wolves": "Wolves",
 		"wraiths": {
 			"wraiths": "Wraiths",

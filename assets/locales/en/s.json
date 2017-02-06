@@ -3,12 +3,13 @@
 		"alghouls": "Alghouls",
 		"bandits": "Bandits",
 		"basilisk": "Basilisk",
+		"bear": "Bear",
 		"cyclops": "Cyclops",
 		"drowners": "Drowners",
 		"echidna": "Echidna",
 		"elemental": {
 			"earth": "Earth Elemental",
-			"ice": "Ice"
+			"ice": "Ice Elemental"
 		},
 		"endrega": "Endrega",
 		"gargoyles": "Gargoyles",
