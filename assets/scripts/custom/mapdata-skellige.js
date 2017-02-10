@@ -604,59 +604,59 @@ window.mapdata_skellige = {
 	}, { // Spikeroog
 		coords: [[26.274, -104.238]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.desc", {monster: '(lvl 15<span> ' + $.t("s:monsters.drowners") + '</span>)'})
+		popup: $.t("hidden.guarded", {monster: '(lvl 15<span> ' + $.t("s:monsters.drowners") + '</span>)'})
 	}, {
 		coords: [[27.020, -95.977]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'})
+		popup: $.t("hidden.guarded", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'})
 	}, { // Undvik
 		coords: [[-55.937, -121.223]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.desc", {monster: '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'})
+		popup: $.t("hidden.guarded", {monster: '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'})
 	}, { // Eastern Islands
 		coords: [[-12.039, -98.701]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.desc", {monster: '(lvl 12-14<span> ' + $.t("s:monsters.bandits") + '</span>)'})
+		popup: $.t("hidden.guarded", {monster: '(lvl 12-14<span> ' + $.t("s:monsters.bandits") + '</span>)'})
 	}, { // Faroe
 		coords: [[-78.469, 42.957]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.desc", {monster: '(lvl 9<span> ' + $.t("s:monsters.endrega") + '</span>)'})
+		popup: $.t("hidden.guarded", {monster: '(lvl 9<span> ' + $.t("s:monsters.endrega") + '</span>)'})
 	}, { // Ard Skellig
 		coords: [[-36.315, 0.264]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.desc", {monster: '(lvl 15<span> ' + $.t("s:monsters.drowners") + '</span>)'})
+		popup: $.t("hidden.guarded", {monster: '(lvl 15<span> ' + $.t("s:monsters.drowners") + '</span>)'})
 	}, {
 		coords: [[-58.825, -3.735]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'})
+		popup: $.t("hidden.guarded", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'})
 	}, {
 		coords: [[-32.287, -50.757]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.desc", {monster: '(lvl 19<span> ' + $.t("s:monsters.sirens") + '</span>)'})
+		popup: $.t("hidden.guarded", {monster: '(lvl 19<span> ' + $.t("s:monsters.sirens") + '</span>)'})
 	}, {
 		coords: [[-72.262, 5.317]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'})
+		popup: $.t("hidden.guarded", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'})
 	}, {
 		coords: [[-21.739, 30.498]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.desc", {monster: '(lvl 30<span> ' + $.t("s:monsters.cyclops") + '</span>)'})
+		popup: $.t("hidden.guarded", {monster: '(lvl 30<span> ' + $.t("s:monsters.cyclops") + '</span>)'})
 	}, {
 		coords: [[-24.127, -69.829]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.desc", {monster: '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'})
+		popup: $.t("hidden.guarded", {monster: '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'})
 	}, { // Sea
 		coords: [[4.083, -78.223]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.desc", {monster: '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'})
+		popup: $.t("hidden.guarded", {monster: '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'})
 	}, {
 		coords: [[31.541, -65.566]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.desc", {monster: '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'})
+		popup: $.t("hidden.guarded", {monster: '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'})
 	}, {
 		coords: [[50.373, -7.515]],
 		label: $.t("hidden.label"),
-		popup: $.t("hidden.desc", {monster: '(lvl 16<span> ' + $.t("s:monsters.echidna") + '</span>)'})
+		popup: $.t("hidden.guarded", {monster: '(lvl 16<span> ' + $.t("s:monsters.echidna") + '</span>)'})
 	}],
 
 // Innkeep
