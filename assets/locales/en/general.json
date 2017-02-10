@@ -154,6 +154,58 @@
 		"label": "Monster Nest",
 		"desc": "Destroy monster nests with Grapeshot or Dancing Star bombs __monster__"
 	},
+	"monsters": {
+		"alghoul": "Alghoul",
+		"alghouls": "Alghouls",
+		"arachas": {
+			"armored": "Armored Arachas",
+			"venomous": "Venomous Arachas"
+		},
+		"archgriffin": "Archgriffin",
+		"bandits": "Bandits",
+		"basilisk": "Basilisk",
+		"bear": "Bear",
+		"bears": "Bears",
+		"cyclops": "Cyclops",
+		"drowners": "Drowners",
+		"echidna": "Echidna",
+		"elemental": {
+			"earth": "Earth Elemental",
+			"fire": "Fire Elemental",
+			"ice": "Ice Elemental"
+		},
+		"endregas": "Endregas",
+		"fiend": "Fiend",
+		"foglet": "Foglet",
+		"foglets": "Foglets",
+		"forktail": "Forktail",
+		"gargoyle": "Gargoyle",
+		"gargoyles": "Gargoyles",
+		"ghost": "Ghost",
+		"ghouls": "Ghouls",
+		"golem": "Golem",
+		"griffin": "Griffin",
+		"hag": {
+			"bilge": "Bilge Hag",
+			"grave": "Grave Hag",
+			"water": "Water Hag"
+		},
+		"harpies": "Harpies",
+		"leshen": "Leshen",
+		"mucknixers": "Mucknixers",
+		"nekkers": "Nekkers",
+		"nekkerWarrior": "Nekker Warrior",
+		"nightwraith": "Nightwraith",
+		"noonwraith": "Noonwraith",
+		"pirates": "Pirates",
+		"rabidRockTroll": "Rabid Rock Troll",
+		"rotfiends": "Rotfiends",
+		"sirens": "Sirens",
+		"wolves": "Wolves",
+		"wraith": "Wraith",
+		"wraiths": "Wraiths",
+		"wyvern": "Wyvern"
+	},
 	"notice": {
 		"label": "Notice Board",
 		"desc": "Here you can find monster contracts and announcements about matters of local concern"
