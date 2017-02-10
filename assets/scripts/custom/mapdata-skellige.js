@@ -320,7 +320,6 @@ window.mapdata_skellige = {
 		coords: [
 			// Sea
 			[-73.788, 20.347],
-			[-70.215, 35.552],
 		],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc")
@@ -402,6 +401,10 @@ window.mapdata_skellige = {
 		popup: $.t("guarded.desc", {monster: '(lvl 16<span> ' + $.t("s:monsters.bear") + '</span>)'})
 	}, {
 		coords: [[55.279, -40.869]],
+		label: $.t("guarded.label"),
+		popup: $.t("guarded.desc", {monster: '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'})
+	}, {
+		coords: [[-70.215, 35.552]],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'})
 	}],
@@ -1319,8 +1322,7 @@ window.mapdata_skellige = {
 // Spoils of War
 	spoils: [{
 		coords: [
-			[-50.709, 43.550],
-			[-69.396, 25.356],
+
 			[-77.466, -63.193],
 			[-16.426, -144.009],
 			[-20.879, -158.467],
@@ -1339,5 +1341,13 @@ window.mapdata_skellige = {
 		coords: [[57.891, -28.564]],
 		label: $.t("spoils.label"),
 		popup: $.t("spoils.desc", {monster: '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'})
+	}, {
+		coords: [[-69.396, 25.356]],
+		label: $.t("spoils.label"),
+		popup: $.t("spoils.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span>)'})
+	}, {
+		coords: [[-50.709, 43.550]],
+		label: $.t("spoils.label"),
+		popup: $.t("spoils.desc", {monster: '(lvl 16<span> ' + $.t("s:monsters.echidna") + '</span>)'})
 	}],
 };
