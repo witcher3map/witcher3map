@@ -17,174 +17,22 @@
 		},
 		"wyvern": "Wyvern"
 	},
-	"alchemy": {
-		"gremist": {
-			"label": "Gremist",
-			"desc": "'Practicum in Advanced Alchemy' (lvl 24) Quest"
-		}
-	},
-	"armourer": {
-		"amateurLabel": "Amateur Armorer",
-		"journeymanLabel": "Journeyman Armorer",
-		"desc": "Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
-	},
-	"banditcamp": {
-		"label": "Bandit Camp",
-		"desc": "A group of dangerous bandits have made camp here. "
-	},
-	"barber": {
-		"label": "Barber",
-		"desc": "Visit barbers for a shave or a new haircut. "
-	},
-	"blacksmith": {
-		"amateurLabel": "Amateur Blacksmith",
-		"journeymanLabel": "Journeyman Blacksmith",
-		"desc": "Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
-	},
-	"gwent": {
-		"label": {
-			"player": "Gwent Player"
-		},
-		"desc": {
-			"player": "Gamble your hard earned coin playing Gwent here. "
-		},
-		"popup": {
-			"player": "Gwent Player",
-			"armorer": "Armorer Gwent Player",
-			"blacksmith": "Blacksmith Gwent Player",
-			"gremist": "Gremist Gwent Player",
-			"herbalist": "Herbalist Gwent Player",
-			"innkeeper": "Innkeeper Gwent Player",
-			"shopkeeper": "Shopkeeper Gwent Player"
-		}
-	},
-	"innkeep": {
-		"inns": {
-			"harvikenInn": "Harviken Inn",
-			"houseOfWarriors": "House of Warriors",
-			"uriallaHarbourInn": "Urialla Harbour Inn",
-			"svorlagInn": "Svorlag Inn",
-			"arinbjornInn": "Arinbjorn Inn",
-			"theNewPort": "The New Port"
-		},
-		"popup": "Innkeep",
-		"desc": {
-			"foodAndDrink": "Sells Food and drink",
-			"foodDrinkAndGwent": "Sells Gwent cards, food, and drink"
-		}
-	},
-	"misc": {
-		"liberated": "This merchant appears after liberating the area. "
-	},
 	"poi": {
-		"label": {
-			"juttaAnDimun": "Jutta An Dimun",
-			"ursineSteelSword": "Ursine Steel Sword",
-			"enhancedUrsineBoots": "Enhanced Ursine Boots",
-			"mastercraftedGriffinSteelSword": "Mastercrafted Griffin Steel Sword",
-			"enhancedUrsineGauntlets": "Enhanced Ursine Gauntlets",
-			"superiorGriffinArmourSet": "Superior Griffin Armour Set",
-			"mastercraftedGriffinArmor": "Mastercrafted Griffin Armor",
-			"superiorGriffinSteelSword": "Superior Griffin Steel Sword",
-			"ursineSilverSword": "Ursine Silver Sword",
-			"ursineArmorSet": "Ursine Armor Set",
-			"ursineCrossbow": "Ursine Crossbow",
-			"superiorGriffinSilverSword": "Superior Griffin Silver Sword",
-			"mastercraftedGriffinSilverSword": "Mastercrafted Griffin Silver Sword",
-			"jarlMadmanLugos": "Jarl Madman Lugos",
-			"mastercraftedFelineArmor": "Mastercrafted Feline Armor",
-			"mastercraftedFelineSteelSword": "Mastercrafted Feline Steel Sword",
-			"mastercraftedFelineSilverSword": "Mastercrafted Feline Silver Sword",
-			"mastercraftedWolvenGauntlets": "Mastercrafted Wolven Gauntlets",
-			"mastercraftedWolvenTrousers": "Mastercrafted Wolven Trousers",
-			"mastercraftedWolvenBoots": "Mastercrafted Wolven Boots",
-			"superiorWolvenSteelSword": "Superior Wolven Steel Sword",
-			"superiorWolvenSilverSword": "Superior Wolven Silver Sword",
-			"superiorWolvenArmor": "Superior Wolven Armor"
-		},
-		"popupTitle": {
-			"ursineSteelSword": "Ursine Steel Sword Diagram",
-			"enhancedUrsineBoots": "Enhanced Ursine Boots Diagram",
-			"mastercraftedGriffinSteelSword": "Mastercrafted Griffin Steel Sword Diagram",
-			"enhancedUrsineGauntlets": "Enhanced Ursine Gauntlets Diagram",
-			"superiorGriffinArmourSet": "Superior Griffin Armour Set Diagrams",
-			"mastercraftedGriffinArmor": "Mastercrafted Griffin Armor Diagrams",
-			"superiorGriffinSteelSword": "Superior Griffin Steel Sword Diagram",
-			"ursineSilverSword": "Ursine Silver Sword Diagram",
-			"ursineArmorSet": "Ursine Armor Set Diagrams",
-			"ursineCrossbow": "Ursine Crossbow Diagram",
-			"superiorGriffinSilverSword": "Superior Griffin Silver Sword Diagram",
-			"mastercraftedGriffinSilverSword": "Mastercrafted Griffin Silver Sword Diagram",
-			"jarlMadmanLugos": "Jarl Madman Lugos",
-			"mastercraftedFelineArmor": "Mastercrafted Feline Armor Diagram",
-			"mastercraftedFelineSteelSword": "Mastercrafted Feline Steel Sword Diagram",
-			"mastercraftedFelineSilverSword": "Mastercrafted Feline Silver Sword Diagram",
-			"mastercraftedWolvenGauntlets": "Mastercrafted Wolven Gauntlets Diagram",
-			"mastercraftedWolvenTrousers": "Mastercrafted Wolven Trousers Diagram",
-			"mastercraftedWolvenBoots": "Mastercrafted Wolven Boots Diagram",
-			"superiorWolvenSteelSword": "Superior Wolven Steel Sword Diagram",
-			"superiorWolvenSilverSword": "Superior Wolven Silver Sword Diagram",
-			"superiorWolvenArmor": "Superior Wolven Armor Diagram"
-		},
-		"desc": {
-			"juttaAnDimun": "todo",
-			"ursineSteelSword": "In a chest in the basement of this ruin",
-			"enhancedUrsineBoots": "In an unmarked cave in the mountainside",
-			"mastercraftedGriffinSteelSword": "",
-			"enhancedUrsineGauntlets": "",
-			"superiorGriffinArmourSet": "Armor, boots, gauntlets, trousers",
-			"mastercraftedGriffinArmor": "",
-			"superiorGriffinSteelSword": "",
-			"ursineSilverSword": "",
-			"ursineArmorSet": "Armor, gauntlets, trousers and boots",
-			"ursineCrossbow": "",
-			"superiorGriffinSilverSword": "Located in the cave system below",
-			"mastercraftedGriffinSilverSword": "",
-			"jarlMadmanLugos": "You get the Card 'Vampire: Katakan' from him (Gwent Quest: Skellige) (all cards <a href=\"https://wiiare.in/portfolio-type/the-witcher-3-wild-hunt-card-collector-achievement-trophy-guide/\" target=\"_blank\">here</a>",
-			"mastercraftedFelineArmor": "Enter the monster den to the south at the shoreline.  After a little splashing, go to the left when you enter.  All of the armor diagrams will be in the chest there (Mastercrafted Feline Armor, Gautlets, Trousers and Boots).",
-			"mastercraftedFelineSteelSword": "When entering the monster den and fighting off foes, go left, as your climbing up the stairs there is a small alcove on the left. The diagram is in the chest.",
-			"mastercraftedFelineSilverSword": "Enter the monster den, go to the right and the wall crumbles.  The diagram is in a chest right there.",
-			"mastercraftedWolvenTrousers": "You must climb the wall of the old watchtower.",
-			"superiorWolvenSteelSword": "Going down to the catacomb and enter a room filled with poison gas",
-			"superiorWolvenArmor": "You need to get to the second floor of the fortress"
-		}
-	},
-	"pop": {
-		"desc": {
-			"kingsGambit": "'King's Gambit Quest'. Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point",
-			"sunstone": "'The Sunstone' quest. Draw from a Place of Power to gain a temporary bonus. The first time you draw from any Place of Power, you also receive 1 Ability Point"
-		}
-	},
-	"shopkeeper": {
-		"label": {
-			"shopkeeper": "Shopkeeper",
-			"tailor": "Tailor",
-			"wanderingMerchant": "Wandering Merchant"
-		},
-		"desc": {
-			"armourAndCraftingSupplies": "Sells armour and crafting supplies",
-			"barber": "Is also a barber",
-			"clothesAndCraftingSupplies": "Sells clothes and crafting supplies. ",
-			"craftingSuppliesAndFish": "Sells crafting supplies and fish",
-			"mapsCraftingSupplies": "Sells maps and crafting supplies",
-			"mapsCraftingSuppliesFoodAndDrink": "Sells maps, crafting supplies, food, and drink",
-			"mapsCraftingSuppliesFishAndSaddles": "Sells maps, crafting supplies, fish and 'Mastercrafted Cavalry Saddle' (+75)"
-		}
 	},
 	"signpost": {
 		"label": {
-			"lakesideHut": "Lakeside Hut",
+			"bastion": "Bastion",
 			"ironMine": "Iron Mine",
 			"kaerMorhen": "Kaer Morhen",
-			"bastion": "Bastion",
-			"ruinedwatchtower": "Ruined Watchtower"
+			"lakesideHut": "Lakeside Hut",
+			"ruinedWatchtower": "Ruined Watchtower"
 		},
 		"desc": {
-			"ruinedwatchtower": "This lakeside watchtower was once the pride of the Wolf School witchers, yet today lies in ruins, the only sound the wind whistling past its stones.",
 			"bastion": "Once young witchers trained here. Now the bastion is a forgotten ruin.",
-			"lakesideHut": "A dozen years ago a hermit lived here who brewed excellent mead. The witchers would visit him from time to time and chat about far-off lands.",
 			"ironMine": "Iron ore was once extracted from this place for use in the Wolf School's forges.",
-			"kaerMorhen": "The keep of the Sea of Yore, home to the witchers of the Wolf School."
+			"kaerMorhen": "The keep of the Sea of Yore, home to the witchers of the Wolf School.",
+			"lakesideHut": "A dozen years ago a hermit lived here who brewed excellent mead. The witchers would visit him from time to time and chat about far-off lands.",
+			"ruinedWatchtower": "This lakeside watchtower was once the pride of the Wolf School witchers, yet today lies in ruins, the only sound the wind whistling past its stones."
 		}
 	}
 }
