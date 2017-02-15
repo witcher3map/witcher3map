@@ -101,6 +101,12 @@
 		"label": "Abandoned Site",
 		"desc": "A place abandoned due to monster or bandit attacks. Once the danger is eliminated, it will fill with life once more"
 	},
+	"armourer": {
+		"labelAmateur": "Amateur Armorer",
+		"labelJourneyman": "Journeyman Armorer",
+		"labelMaster": "Master Armorer",
+		"desc": "Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
+	},
 	"armourerstable": {
 		"label": "Armorer's Table",
 		"desc": "Armorer's tables grant your gear increased armor for a limited duration."
@@ -112,6 +118,12 @@
 	"barber": {
 		"label": "Barber",
 		"desc": "Visit barbers for a shave or a new haircut. "
+	},
+	"blacksmith": {
+		"labelAmateur": "Amateur Blacksmith",
+		"labelJourneyman": "Journeyman Blacksmith",
+		"labelMaster": "Master Blacksmith",
+		"desc": "Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
 	},
 	"boat": {
 		"label": "Boat",

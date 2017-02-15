@@ -40,12 +40,8 @@
 		"desc*": "Here you can buy alchemy ingredients, also pays well trophies"
 	},
 	"armourer": {
-		"amateurLabel": "Amateur Armorer",
-		"journeymanLabel": "Journeyman Armorer",
-		"masterLabel": "Master Armorer*",
-		"quest": "Is available after the \"Master Armorers\" (lvl 26) quest. ",
-		"desc": "Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets.",
-		"yoana": "Master Armorer* (Yoana)"
+		"yoana": "Master Armorer (Yoana)",
+		"quest": "Available after finishing \"Master Armorers\" (lvl 26) quest. "
 	},
 	"banditcamp": {
 		"label": "Bandit Camp",
@@ -58,13 +54,8 @@
 		"rescueLocation": "here"
 	},
 	"blacksmith": {
-		"amateurLabel": "Amateur Blacksmith",
-		"journeymanLabel": "Journeyman Blacksmith",
-		"masterLabel": "Master Blacksmith*",
-		"hattori": "Master Blacksmith* (Hattori)",
-		"desc": "Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets.",
-		"availability": "This blacksmith is available immediately. ",
-		"quest": "You must complete \"Of Swords and Dumplings\" (level 24) quest in order to unlock this blacksmith. "
+		"hattori": "Master Blacksmith (Hattori)",
+		"quest": "Available after finishing \"Of Swords and Dumplings\" (level 24) quest. "
 	},
 	"brothel": {
 		"label": {

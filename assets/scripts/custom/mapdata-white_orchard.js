@@ -20,8 +20,8 @@ window.mapdata_white_orchard = {
 // Armourer
 	armourer: [{
 		coords: [[-69.069, -88.945]],
-		label: $.t("w:armourer.amateurLabel"),
-		popup: $.t("w:armourer.desc")
+		label: $.t("armourer.labelAmateur"),
+		popup: $.t("armourer.desc")
 	}],
 
 // Armourer's Table
@@ -53,8 +53,8 @@ window.mapdata_white_orchard = {
 // Blacksmith
 	blacksmith: [{
 		coords: [[-26.981, -151.348]],
-		label: $.t("w:blacksmith.amateurLabel"),
-		popup: $.t("w:blacksmith.desc")
+		label: $.t("blacksmith.labelAmateur"),
+		popup: $.t("blacksmith.desc")
 	}],
 
 // Brothel

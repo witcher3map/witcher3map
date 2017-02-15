@@ -60,29 +60,29 @@ window.mapdata_velen = {
 // Armourer
 	armourer: [{ // Novigrad
 		coords: [[208.672, 100.828]],
-		label: $.t("v:armourer.journeymanLabel"),
-		popup: $.t("v:armourer.desc")
+		label: $.t("armourer.labelJourneyman"),
+		popup: $.t("armourer.desc")
 	}, { // Oxenfurt
 		coords: [[158.047, 166.344]],
-		label: $.t("v:armourer.journeymanLabel"),
-		popup: $.t("v:armourer.desc")
+		label: $.t("armourer.labelJourneyman"),
+		popup: $.t("armourer.desc")
 	}, { // NE Velen
 		coords: [[129.688, 118.719]],
-		label: $.t("v:armourer.amateurLabel"),
-		popup: $.t("v:armourer.desc") + ' ' + $.t("v:misc.rescue") + ' <a href="#6/-18.761/-25.785">' + $.t("v:misc.locations.petesLanding") + '</a>'
+		label: $.t("armourer.labelAmateur"),
+		popup: $.t("armourer.desc") + ' ' + $.t("v:misc.rescue") + ' <a href="#6/-18.761/-25.785">' + $.t("v:misc.locations.petesLanding") + '</a>'
 	}, { // NW Velen
 		coords: [[104.734, 77.531]],
-		label: $.t("v:armourer.journeymanLabel"),
-		popup: $.t("v:armourer.desc")
+		label: $.t("armourer.labelJourneyman"),
+		popup: $.t("armourer.desc")
 	}, {
 		coords: [[82.266, 40.422]],
-		label: $.t("v:armourer.amateurLabel"),
-		popup: $.t("v:armourer.desc")
+		label: $.t("armourer.labelAmateur"),
+		popup: $.t("armourer.desc")
 	}, {
 		coords: [[104.906, 77.063]],
-		label: $.t("v:armourer.masterLabel"),
+		label: $.t("armourer.labelMaster"),
 		popupTitle: $.t("v:armourer.yoana"),
-		popup: $.t("v:armourer.quest") + $.t("v:armourer.desc")
+		popup: $.t("v:armourer.quest") + $.t("armourer.desc")
 	}],
 
 // Armourer's Table
@@ -196,33 +196,33 @@ window.mapdata_velen = {
 // Blacksmith
 	blacksmith: [{ // Novigrad
 		coords: [[197.094, 98.766]],
-		label: $.t("v:blacksmith.masterLabel"),
+		label: $.t("blacksmith.labelMaster"),
 		popupTitle: $.t("v:blacksmith.hattori"),
-		popup: $.t("v:blacksmith.quest") + $.t("v:blacksmith.desc")
+		popup: $.t("v:blacksmith.quest") + $.t("blacksmith.desc")
 	}, {
 		coords: [[205.875, 100.891]],
-		label: $.t("v:blacksmith.journeymanLabel"),
-		popup: $.t("v:blacksmith.availability") + $.t("v:blacksmith.desc")
+		label: $.t("blacksmith.labelJourneyman"),
+		popup: $.t("blacksmith.desc")
 	}, {
 		coords: [[211.188, 97.266]],
-		label: $.t("v:blacksmith.amateurLabel"),
-		popup: $.t("v:blacksmith.availability") + $.t("v:blacksmith.desc")
+		label: $.t("blacksmith.labelAmateur"),
+		popup: $.t("blacksmith.desc")
 	}, { // Oxenfurt
 		coords: [[152.125, 170.453]],
-		label: $.t("v:blacksmith.journeymanLabel"),
-		popup: $.t("v:blacksmith.availability") + $.t("v:blacksmith.desc")
+		label: $.t("blacksmith.labelJourneyman"),
+		popup: $.t("blacksmith.desc")
 	}, { // NW Velen
 		coords: [[106.328, 52.313]],
-		label: $.t("v:blacksmith.amateurLabel"),
-		popup: $.t("v:blacksmith.desc")
+		label: $.t("blacksmith.labelAmateur"),
+		popup: $.t("blacksmith.desc")
 	}, {
 		coords: [[67.844, 74.031]],
-		label: $.t("v:blacksmith.amateurLabel"),
-		popup: $.t("v:blacksmith.desc")
+		label: $.t("blacksmith.labelAmateur"),
+		popup: $.t("blacksmith.desc")
 	}, { // SE Velen
 		coords: [[103.156, 108.813]],
-		label: $.t("v:blacksmith.amateurLabel"),
-		popup: $.t("v:blacksmith.desc")
+		label: $.t("blacksmith.labelAmateur"),
+		popup: $.t("blacksmith.desc")
 	}],
 
 // Brothel
