@@ -43,8 +43,8 @@ window.mapdata_white_orchard = {
 			[-72.462, -16.699],
 			[-66.000, -19.688]
 		],
-		label: $.t("w:banditcamp.label"),
-		popup: $.t("w:banditcamp.desc")
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc")
 	}],
 
 // Barber

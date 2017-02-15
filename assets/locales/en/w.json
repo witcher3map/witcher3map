@@ -1,8 +1,4 @@
 {
-	"banditcamp": {
-		"label": "Bandit Camp",
-		"desc": "A group of dangerous bandits have made camp here. "
-	},
 	"gwent": {
 		"label": {
 			"player": "Gwent Player"

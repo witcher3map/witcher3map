@@ -43,13 +43,7 @@
 		"yoana": "Master Armorer (Yoana)",
 		"quest": "Available after finishing \"Master Armorers\" (lvl 26) quest. "
 	},
-	"banditcamp": {
-		"label": "Bandit Camp",
-		"desc": "A group of dangerous bandits have made camp here. "
-	},
 	"barber": {
-		"label": "Barber",
-		"desc": "Visit barbers for a shave or a new haircut. ",
 		"free": "Cuts Hair for free! ",
 		"rescueLocation": "here"
 	},

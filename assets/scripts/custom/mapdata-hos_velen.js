@@ -128,52 +128,52 @@ window.mapdata_hos_velen = {
 			// SE Velen
 			[106.188, 115.703]
 		],
-		label: $.t("v:banditcamp.label"),
-		popup: $.t("v:banditcamp.desc")
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc")
 	}, { // S Novigrad
 		coords: [[175.547, 83.125]],
-		label: $.t("v:banditcamp.label"),
-		popup: $.t("v:banditcamp.desc") + '(lvl 9)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 9)'
 	}, { // E Novigrad
 		coords: [[209.156, 162.734]],
-		label: $.t("v:banditcamp.label"),
-		popup: $.t("v:banditcamp.desc") + '(lvl 7)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 7)'
 	}, { // NE Velen
 		coords: [[128.469, 151.563]],
-		label: $.t("v:banditcamp.label"),
-		popup: $.t("v:banditcamp.desc") + '(lvl 9)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 9)'
 	}, {
 		coords: [[134.406, 129.094]],
-		label: $.t("v:banditcamp.label"),
-		popup: $.t("v:banditcamp.desc") + '(lvl 9)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 9)'
 	}, { // SE Velen
 		coords: [[38.828, 153.984]],
-		label: $.t("v:banditcamp.label"),
-		popup: $.t("v:banditcamp.desc") + '(lvl 10)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 10)'
 	}, {
 		coords: [[83.094, 166.906]],
-		label: $.t("v:banditcamp.label"),
-		popup: $.t("v:banditcamp.desc") + '(lvl 9)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 9)'
 	}, {
 		coords: [[108.234, 145.344]],
-		label: $.t("v:banditcamp.label"),
-		popup: $.t("v:banditcamp.desc") + '(lvl 9)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 9)'
 	}, {
 		coords: [[97.828, 124.594]],
-		label: $.t("v:banditcamp.label"),
-		popup: $.t("v:banditcamp.desc") + '(lvl 7-9)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 7-9)'
 	}, {
 		coords: [[137.688, 187.797]],
-		label: $.t("v:banditcamp.label"),
-		popup: $.t("v:banditcamp.desc") + '(lvl 9)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 9)'
 	}, {
 		coords: [[47.000, 123.172]],
-		label: $.t("v:banditcamp.label"),
-		popup: $.t("v:banditcamp.desc") + '(lvl 9)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 9)'
 	}, { // SW Velen
 		coords: [[57.922, 26.797]],
-		label: $.t("v:banditcamp.label"),
-		popup: $.t("v:banditcamp.desc")
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc")
 	}],
 
 // Barber
@@ -185,12 +185,12 @@ window.mapdata_hos_velen = {
 			// Oxenfurt
 			[153.734,164.906]
 		],
-		label: $.t("v:barber.label"),
-		popup: $.t("v:barber.desc")
+		label: $.t("barber.label"),
+		popup: $.t("barber.desc")
 	}, { // NW Velen
 		coords: [[81.891, 69.703]],
-		label: $.t("v:barber.label"),
-		popup: $.t("v:barber.desc") + $.t("v:barber.free") + $.t("v:misc.rescue") + ' <a href="#6/-35.362/-127.430">' + $.t("v:barber.rescueLocation") + '</a>'
+		label: $.t("barber.label"),
+		popup: $.t("barber.desc") + $.t("v:barber.free") + $.t("v:misc.rescue") + ' <a href="#6/-35.362/-127.430">' + $.t("v:barber.rescueLocation") + '</a>'
 	}],
 
 // Blacksmith

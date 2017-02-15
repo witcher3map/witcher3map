@@ -83,28 +83,28 @@ window.mapdata_skellige = {
 			// Sea
 			[20.797, 38.848],
 		],
-		label: $.t("s:banditcamp.label"),
-		popup: $.t("s:banditcamp.desc")
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc")
 	}, { // Spikeroog
 		coords: [[21.861, -121.047]],
-		label: $.t("s:banditcamp.label"),
-		popup: $.t("s:banditcamp.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
 	}, { // Ard Skellig
 		coords: [[-29.459, -17.886]],
-		label: $.t("s:banditcamp.label"),
-		popup: $.t("s:banditcamp.desc") + '(lvl 15<span> ' + $.t("s:monsters.bandits") + '</span>)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 15<span> ' + $.t("s:monsters.bandits") + '</span>)'
 	}, {
 		coords: [[-61.260, -50.669]],
-		label: $.t("s:banditcamp.label"),
-		popup: $.t("s:banditcamp.desc") + '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'
 	}, {
 		coords: [[-14.562, 27.861]],
-		label: $.t("s:banditcamp.label"),
-		popup: $.t("s:banditcamp.desc") + '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'
 	}, {
 		coords: [[5.616, 15.557]],
-		label: $.t("s:banditcamp.label"),
-		popup: $.t("s:banditcamp.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
 	}],
 
 // Barber
@@ -114,8 +114,8 @@ window.mapdata_skellige = {
 			[31.072, -111.973],
 			[-3.601, -34.277],
 		],
-		label: $.t("s:barber.label"),
-		popup: $.t("s:barber.desc")
+		label: $.t("barber.label"),
+		popup: $.t("barber.desc")
 	}],
 
 // Blacksmith
