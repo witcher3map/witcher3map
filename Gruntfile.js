@@ -178,11 +178,11 @@ module.exports = function (grunt) {
 				tasks: ['csslint:styles', 'cssmin:styles'],
 			},
 			scripts: {
-				files: '<%= eslint.scripts %>', 
+				files: '<%= eslint.scripts %>',
 				tasks: ['eslint:scripts', 'sync:scripts'],
 			},
 			vendor: {
-				files: 'assets/scripts/vendor/**.js', 
+				files: 'assets/scripts/vendor/**.js',
 				tasks: ['uglify:vendor'],
 			},
 			markup: {

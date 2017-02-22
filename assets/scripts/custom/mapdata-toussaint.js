@@ -37,16 +37,16 @@ window.mapdata_toussaint = {
 			[39.969,81.000],
 			[64.956,65.109]
 		],
-		label: $.t("armourerjourney.label"),
-		popup: $.t("armourerjourney.desc")
-	},{
-		coords: [[50.734,65.547]],  //todo
-		label: $.t("armouretodo.label"),
-		popup: $.t("armourertodo.desc")
-	},{
-		coords: [[50.281,64.297]],  //todo
-		label: $.t("armourexxx.label"),
-		popup: $.t("armourerxxx.desc")
+		label: $.t("t:armourer.journeymanLabel"),
+		popup: $.t("t:armourer.desc")
+	}, {
+		coords: [[50.734,65.547]],
+		label: $.t("t:armourer.lafargue"),
+		popup: $.t("t:armourer.desc")
+	}, {
+		coords: [[50.281,64.297]],
+		label: $.t("t:armourer.masterLabel"),
+		popup: $.t("t:armourer.desc")
 	}],
 
 // Armourer's Table
@@ -113,8 +113,8 @@ window.mapdata_toussaint = {
 			[49.813,64.359],
 			[65.113,64.688]
 		],
-		label: $.t("blacksmithxxx.label"),
-		popup: $.t("blacksmithxxx.desc")
+		label: $.t("t:blacksmith.journeymanLabel"),
+		popup: $.t("t:blacksmith.desc")
 	}],
 
 // Brothel
@@ -286,27 +286,27 @@ window.mapdata_toussaint = {
 	innkeep: [{
 		coords: [[75.406,75.188]],
 		label: $.t("t:signpost.label.cockatrice"),
-		popup: $.t("t:innkeep.desc.cockatrice")
+		popup: $.t("t:innkeep.desc")
 	},{
 		coords: [[64.656,62.734]],
-		label: $.t("t:innkeep.label.xxx"),
-		popup: $.t("t:innkeep.desc.xxx")
+		label: $.t("t:innkeep.popup"),
+		popup: $.t("t:innkeep.desc")
 	},{
 		coords: [[51.438,61.234]],
 		label: $.t("t:innkeep.label.pheasantry"),
-		popup: $.t("t:innkeep.desc.pheasantry")
+		popup: $.t("t:innkeep.desc")
 	},{
 		coords: [[41.328,81.109]],
-		label: $.t("t:innkeep.label.xxx"),
-		popup: $.t("t:innkeep.desc.xxx")
+		label: $.t("t:innkeep.popup"),
+		popup: $.t("t:innkeep.desc")
 	},{
 		coords: [[90.703,47.578]],
 		label: $.t("t:innkeep.label.auberge"),
-		popup: $.t("t:misc.desc.cleared")
+		popup: $.t("t:misc.desc.aftercleared")
 	},{
 		coords: [[63.453,90.625]],
 		label: $.t("t:innkeep.label.barrelandbung"),
-		popup: $.t("t:misc.desc.barrelandbung")
+		popup: $.t("t:innkeep.desc")
 	},{
 		coords: [[113.891,66.391]],
 		label: $.t("t:innkeep.label.salamander"),
@@ -314,7 +314,7 @@ window.mapdata_toussaint = {
 	},{
 		coords: [[52.128,65]],
 		label: $.t("t:innkeep.label.houseofpleasure"),
-		popup: $.t("t:innkeep.desc.houseofpleasure")
+		popup: $.t("t:innkeep.desc")
 	}],
 
 // Knight Errant in Distress
@@ -703,10 +703,6 @@ window.mapdata_toussaint = {
 		label: $.t("t:sidequests.label.facethestrage"),
 		popup: $.t("t:sidequests.desc.facethestrage")
 	}, {
-		coords: [[94.609,50.297]],
-		label: $.t("t:sidequests.label.bigfeet"),
-		popup: $.t("t:sidequests.desc.bigfeet")
-	}, {
 		coords: [[83.891,55.156]],
 		label: $.t("t:sidequests.label.knightstale"),
 		popup: $.t("t:sidequests.desc.knightstale")
@@ -716,8 +712,8 @@ window.mapdata_toussaint = {
 		popup: $.t("t:sidequests.desc.knightstale")
 	}, {
 		coords: [[37.594,97.641]], //todo makers
-		label: $.t("t:sidequests.label.spon"),
-		popup: $.t("t:sidequests.desc.spon")
+		label: $.t("t:sidequests.label.spoon"),
+		popup: $.t("t:sidequests.desc.spoon")
 	}, {
 		coords: [[57.891,85.313]],
 		label: $.t("t:sidequests.label.escapology"),
@@ -755,29 +751,53 @@ window.mapdata_toussaint = {
 		label: $.t("t:sidequests.label.onlyone"),
 		popup: $.t("t:sidequests.desc.onlyone") + $.t(' <a href="https://wiiare.in/witcher3/embodiment-of-the-five-virtues/" target="_blank">[Questhelp]</a>')
 	}, {
-		coords: [[101.484,61.531]],
-		label: $.t("t:sidequests.label.bigfleet"),
-		popup: $.t("t:sidequests.desc.save")
-	}, {
 		coords: [[42.500,55.313]],
-		label: $.t("t:sidequests.label.enjpytheplay"),
-		popup: $.t("t:sidequests.desc.enjpytheplay")
+		label: $.t("t:sidequests.label.enjoytheplay"),
+		popup: $.t("t:sidequests.desc.enjoytheplay")
 	}, {
 		coords: [[50.453,63.734]],
 		label: $.t("t:sidequests.label.paperchase"),
 		popup: $.t("t:sidequests.desc.paperchase")
-	},{
-		coords: [[110.172,87.125],[91.094,86.703],[49.047,92.781],[85.563,72.172]],
+	}, {
+		coords: [[91.094,86.703],[49.047,92.781],[85.563,72.172]],
 		label: $.t("t:sidequests.label.vintnercontract"),
 		popup: $.t("t:sidequests.desc.vintnercontract")
-	},{
-		coords: [[89.781,56.984]],
-		label: $.t("t:sidequests.label.footsteps"),
-		popup: $.t("t:sidequests.desc.footsteps")
-	},{
+	}, {
 		coords: [[51.438,63.797]],
 		label: $.t("t:sidequests.label.portait"),
 		popup: $.t("t:sidequests.desc.portait")
+	}, {
+		coords: [[94.516,93.641]],
+		label: $.t("t:sidequests.label.phantoms"),
+		popup: $.t("t:sidequests.desc.phantoms")
+	}, {
+		coords: [[42.625, 89.625]],
+		label: $.t("t:sidequests.label.cosplay"),
+		popup: $.t("t:sidequests.desc.cosplay")
+	},
+
+	// Quests Related to The Propeht Lebioda's Footsteps
+	// They actually, at least in GoY Edition, have their own icon.
+	{
+		coords: [[94.609,50.297]],
+		label: $.t("t:sidequests.label.bigfeet1"),
+		popup: $.t("t:sidequests.desc.footsteps")
+	}, {
+		coords: [[92.063,63.344]],
+		label: $.t("t:sidequests.label.bigfeet2"),
+		label: $.t("t:sidequests.label.footsteps"),
+	}, {
+		coords: [[89.781,56.984]],
+		label: $.t("t:sidequests.label.bigfeet3"),
+		popup: $.t("t:sidequests.desc.footsteps")
+	}, {
+		coords: [[107.750,72.266]],
+		label: $.t("t:sidequests.label.bigfeet4"),
+		popup: $.t("t:sidequests.desc.footsteps")
+	}, {
+		coords: [[101.484,61.531]],
+		label: $.t("t:sidequests.label.bigfeet5"),
+		popup: $.t("t:sidequests.desc.footsteps")
 	}],
 
 //// Contracts
