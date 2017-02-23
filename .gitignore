@@ -1,6 +1,9 @@
 node_modules
 npm-debug.log
-dist
+dist/*
+!dist/files
+dist/files/*
+!dist/files/maps
 .idea
 *.iml
 .DS_Store

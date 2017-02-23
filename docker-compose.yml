@@ -1,0 +1,8 @@
+app:
+  build: .
+  volumes:
+    - .:/home/app
+    - /home/app/node_modules
+    - /home/app/dist
+  ports:
+    - '80:8080'
