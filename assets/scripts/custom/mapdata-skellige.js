@@ -41,20 +41,20 @@ window.mapdata_skellige = {
 // Armourer
 	armourer: [{ // Hindarsfjall
 		coords: [[-29.037, 98.569]],
-		label: $.t("s:armourer.amateurLabel"),
-		popup: $.t("s:armourer.desc")
+		label: $.t("armourer.labelAmateur"),
+		popup: $.t("armourer.desc")
 	}, { // An Skellig
 		coords: [[49.253, 39.243]],
-		label: $.t("s:armourer.amateurLabel"),
-		popup: $.t("s:armourer.desc")
+		label: $.t("armourer.labelAmateur"),
+		popup: $.t("armourer.desc")
 	}, { // Ard Skellig
 		coords: [[-62.492, -37.705]],
-		label: $.t("s:armourer.journeymanLabel"),
-		popup: $.t("s:armourer.desc")
+		label: $.t("armourer.labelJourneyman"),
+		popup: $.t("armourer.desc")
 	}, {
 		coords: [[2.965, -40.210]],
-		label: $.t("s:armourer.journeymanLabel"),
-		popup: $.t("s:armourer.desc")
+		label: $.t("armourer.labelJourneyman"),
+		popup: $.t("armourer.desc")
 	}],
 
 // Armourer's Table
@@ -83,28 +83,28 @@ window.mapdata_skellige = {
 			// Sea
 			[20.797, 38.848],
 		],
-		label: $.t("s:banditcamp.label"),
-		popup: $.t("s:banditcamp.desc")
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc")
 	}, { // Spikeroog
 		coords: [[21.861, -121.047]],
-		label: $.t("s:banditcamp.label"),
-		popup: $.t("s:banditcamp.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
 	}, { // Ard Skellig
 		coords: [[-29.459, -17.886]],
-		label: $.t("s:banditcamp.label"),
-		popup: $.t("s:banditcamp.desc") + '(lvl 15<span> ' + $.t("s:monsters.bandits") + '</span>)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 15<span> ' + $.t("s:monsters.bandits") + '</span>)'
 	}, {
 		coords: [[-61.260, -50.669]],
-		label: $.t("s:banditcamp.label"),
-		popup: $.t("s:banditcamp.desc") + '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'
 	}, {
 		coords: [[-14.562, 27.861]],
-		label: $.t("s:banditcamp.label"),
-		popup: $.t("s:banditcamp.desc") + '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'
 	}, {
 		coords: [[5.616, 15.557]],
-		label: $.t("s:banditcamp.label"),
-		popup: $.t("s:banditcamp.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
+		label: $.t("banditcamp.label"),
+		popup: $.t("banditcamp.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
 	}],
 
 // Barber
@@ -114,47 +114,47 @@ window.mapdata_skellige = {
 			[31.072, -111.973],
 			[-3.601, -34.277],
 		],
-		label: $.t("s:barber.label"),
-		popup: $.t("s:barber.desc")
+		label: $.t("barber.label"),
+		popup: $.t("barber.desc")
 	}],
 
 // Blacksmith
 	blacksmith: [{ // Faroe
 		coords: [[-77.390, 50.142]],
-		label: $.t("s:blacksmith.amateurLabel"),
-		popup: $.t("s:blacksmith.desc")
+		label: $.t("blacksmith.labelAmateur"),
+		popup: $.t("blacksmith.desc")
 	}, { // Hindarsfjall
 		coords: [[-28.613, 102.458]],
-		label: $.t("s:blacksmith.amateurLabel"),
-		popup: $.t("s:blacksmith.desc")
+		label: $.t("blacksmith.labelAmateur"),
+		popup: $.t("blacksmith.desc")
 	}, { // An Skellig
 		coords: [[50.641, 38.013]],
-		label: $.t("s:blacksmith.amateurLabel"),
-		popup: $.t("s:blacksmith.desc")
+		label: $.t("blacksmith.labelAmateur"),
+		popup: $.t("blacksmith.desc")
 	}, { // Spikeroog
 		coords: [[33.101, -111.709]],
-		label: $.t("s:blacksmith.amateurLabel"),
-		popup: $.t("s:blacksmith.desc")
+		label: $.t("blacksmith.labelAmateur"),
+		popup: $.t("blacksmith.desc")
 	}, { // Ard Skellig
 		coords: [[-62.007, -37.903]],
-		label: $.t("s:blacksmith.journeymanLabel"),
-		popup: $.t("s:blacksmith.desc")
+		label: $.t("blacksmith.labelJourneyman"),
+		popup: $.t("blacksmith.desc")
 	}, {
 		coords: [[-39.504, -63.647]],
-		label: $.t("s:blacksmith.amateurLabel"),
-		popup: $.t("s:blacksmith.desc")
+		label: $.t("blacksmith.labelAmateur"),
+		popup: $.t("blacksmith.desc")
 	}, {
 		coords: [[-37.265, -32.014]],
-		label: $.t("s:blacksmith.amateurLabel"),
-		popup: $.t("s:blacksmith.desc")
+		label: $.t("blacksmith.labelAmateur"),
+		popup: $.t("blacksmith.desc")
 	}, {
 		coords: [[-56.945, -15.513]],
-		label: $.t("s:blacksmith.amateurLabel"),
-		popup: $.t("s:blacksmith.desc")
+		label: $.t("blacksmith.labelAmateur"),
+		popup: $.t("blacksmith.desc")
 	}, {
 		coords: [[3.141, -40.649]],
-		label: $.t("s:blacksmith.journeymanLabel"),
-		popup: $.t("s:blacksmith.desc")
+		label: $.t("blacksmith.labelJourneyman"),
+		popup: $.t("blacksmith.desc")
 	}],
 
 // Brothel

@@ -152,8 +152,8 @@ window.mapdata_kaer_morhen = {
 		popup: $.t("k:signpost.desc.bastion")
 	}, {
 		coords: [[116.625, 58.813]],
-		label: $.t("k:signpost.label.ruinedwatchtower"),
-		popup: $.t("k:signpost.desc.ruinedwatchtower")
+		label: $.t("k:signpost.label.ruinedWatchtower"),
+		popup: $.t("k:signpost.desc.ruinedWatchtower")
 	}],
 
 // Smugglers' Cache
