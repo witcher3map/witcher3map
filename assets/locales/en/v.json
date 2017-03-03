@@ -41,7 +41,7 @@
 	},
 	"armourer": {
 		"yoana": "Master Armorer (Yoana)",
-		"quest": "Available after finishing \"Master Armorers\" (lvl 26) quest. "
+		"yoanaQuest": "Available after finishing \"Master Armorers\" (lvl 26) quest. "
 	},
 	"barber": {
 		"free": "Cuts Hair for free! ",
@@ -49,7 +49,7 @@
 	},
 	"blacksmith": {
 		"hattori": "Master Blacksmith (Hattori)",
-		"quest": "Available after finishing \"Of Swords and Dumplings\" (level 24) quest. "
+		"hattoriQuest": "Available after finishing \"Of Swords and Dumplings\" (lvl 24) quest. "
 	},
 	"brothel": {
 		"label": {

@@ -82,7 +82,7 @@ window.mapdata_velen = {
 		coords: [[104.906, 77.063]],
 		label: $.t("armourer.labelMaster"),
 		popupTitle: $.t("v:armourer.yoana"),
-		popup: $.t("v:armourer.quest") + $.t("armourer.desc")
+		popup: $.t("v:armourer.yoanaQuest") + $.t("armourer.desc")
 	}],
 
 // Armourer's Table
@@ -198,7 +198,7 @@ window.mapdata_velen = {
 		coords: [[197.094, 98.766]],
 		label: $.t("blacksmith.labelMaster"),
 		popupTitle: $.t("v:blacksmith.hattori"),
-		popup: $.t("v:blacksmith.quest") + $.t("blacksmith.desc")
+		popup: $.t("v:blacksmith.hattoriQuest") + $.t("blacksmith.desc")
 	}, {
 		coords: [[205.875, 100.891]],
 		label: $.t("blacksmith.labelJourneyman"),

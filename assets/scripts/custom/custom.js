@@ -585,18 +585,13 @@ $(function() {
 		});
 	}, 100);
 
-	var fileSaver = null;
 	var backupData = function() {
 		var currentDate = new Date();
 		var formattedDate = currentDate.getFullYear()+'-'+((currentDate.getMonth()+1 < 10) ? '0' : '')+(currentDate.getMonth()+1)+'-'+((currentDate.getDate() < 10) ? '0' : '')+currentDate.getDate();
 		var backupFileName = 'witcher3map_backup_'+formattedDate+'.json';
 		if (confirm($.t('controls.backupSave', {fileName:backupFileName}))) {
-			if(!fileSaver) {
-				fileSaver = $.getScript('../files/scripts/FileSaver.min.js', function() {
-					var blob = new Blob([JSON.stringify(localStorage)], {type: "text/plain;charset=utf-8"});
-					saveAs(blob, backupFileName);
-				});
-			}
+			var blob = new Blob([JSON.stringify(localStorage)], {type: "text/plain;charset=utf-8"});
+			saveAs(blob, backupFileName);
 		}
 	};
 	var showRestore = function() {
