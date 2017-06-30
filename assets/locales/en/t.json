@@ -1,25 +1,11 @@
 {
-	"alchemy": {
-		"gremist": {
-			"label": "Gremist",
-			"desc": "'Practicum in Advanced Alchemy' (lvl 24) Quest"
-		}
-	},
 	"armourer": {
-		"amateurLabel": "Amateur Armorer",
-		"journeymanLabel": "Journeyman Armorer",
-		"masterLabel": "Master Armorer*",
-		"lafargue": "Grandmaster Smith* (Lafargue)",
-		"desc": "Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
+		"lafargue": "Grandmaster Smith (Lafargue)",
+		"lafargueQuest": "Available after finishing \"Master Master Master Master!\" (lvl 40) quest. "
 	},
 	"hansebase": {
 		"label": "Hanse Base",
 		"desc": "Expect to run into armed-to-the-teeth bandits here. "
-	},
-	"blacksmith": {
-		"amateurLabel": "Amateur Blacksmith",
-		"journeymanLabel": "Journeyman Blacksmith",
-		"desc": "Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
 	},
 	"innkeep": {
 		"label": {

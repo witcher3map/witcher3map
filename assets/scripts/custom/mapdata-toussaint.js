@@ -37,16 +37,16 @@ window.mapdata_toussaint = {
 			[39.969,81.000],
 			[64.956,65.109]
 		],
-		label: $.t("t:armourer.journeymanLabel"),
-		popup: $.t("t:armourer.desc")
+		label: $.t("armourer.labelJourneyman"),
+		popup: $.t("armourer.desc")
 	}, {
 		coords: [[50.734,65.547]],
 		label: $.t("t:armourer.lafargue"),
-		popup: $.t("t:armourer.desc")
+		popup: $.t("t:armourer.lafargueQuest") + $.t("armourer.desc")
 	}, {
 		coords: [[50.281,64.297]],
-		label: $.t("t:armourer.masterLabel"),
-		popup: $.t("t:armourer.desc")
+		label: $.t("armourer.labelMaster"),
+		popup: $.t("armourer.desc")
 	}],
 
 // Armourer's Table
@@ -113,8 +113,8 @@ window.mapdata_toussaint = {
 			[49.813,64.359],
 			[65.113,64.688]
 		],
-		label: $.t("t:blacksmith.journeymanLabel"),
-		popup: $.t("t:blacksmith.desc")
+		label: $.t("blacksmith.labelJourneyman"),
+		popup: $.t("blacksmith.desc")
 	}],
 
 // Brothel

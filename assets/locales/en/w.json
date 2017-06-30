@@ -1,16 +1,4 @@
 {
-	"armourer": {
-		"amateurLabel": "Amateur Armorer",
-		"desc": "Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
-	},
-	"banditcamp": {
-		"label": "Bandit Camp",
-		"desc": "A group of dangerous bandits have made camp here. "
-	},
-	"blacksmith": {
-		"amateurLabel": "Amateur Blacksmith",
-		"desc": "Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets."
-	},
 	"gwent": {
 		"label": {
 			"player": "Gwent Player"

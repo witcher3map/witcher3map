@@ -40,31 +40,16 @@
 		"desc*": "Here you can buy alchemy ingredients, also pays well trophies"
 	},
 	"armourer": {
-		"amateurLabel": "Amateur Armorer",
-		"journeymanLabel": "Journeyman Armorer",
-		"masterLabel": "Master Armorer*",
-		"quest": "Is available after the \"Master Armorers\" (lvl 26) quest. ",
-		"desc": "Here you can craft armor, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets.",
-		"yoana": "Master Armorer* (Yoana)"
-	},
-	"banditcamp": {
-		"label": "Bandit Camp",
-		"desc": "A group of dangerous bandits have made camp here. "
+		"yoana": "Master Armorer (Yoana)",
+		"yoanaQuest": "Available after finishing \"Master Armorers\" (lvl 26) quest. "
 	},
 	"barber": {
-		"label": "Barber",
-		"desc": "Visit barbers for a shave or a new haircut. ",
 		"free": "Cuts Hair for free! ",
 		"rescueLocation": "here"
 	},
 	"blacksmith": {
-		"amateurLabel": "Amateur Blacksmith",
-		"journeymanLabel": "Journeyman Blacksmith",
-		"masterLabel": "Master Blacksmith*",
-		"hattori": "Master Blacksmith* (Hattori)",
-		"desc": "Here you can craft weapons, repair damaged equipment, dismantle equipment for parts or remove upgrades from sockets.",
-		"availability": "This blacksmith is available immediately. ",
-		"quest": "You must complete \"Of Swords and Dumplings\" (lvl 24) quest in order to unlock this blacksmith. "
+		"hattori": "Master Blacksmith (Hattori)",
+		"hattoriQuest": "Available after finishing \"Of Swords and Dumplings\" (lvl 24) quest. "
 	},
 	"brothel": {
 		"label": {
