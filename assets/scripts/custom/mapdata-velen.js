@@ -69,7 +69,7 @@ window.mapdata_velen = {
 	}, { // NE Velen
 		coords: [[129.688, 118.719]],
 		label: $.t("armourer.labelAmateur"),
-		popup: $.t("armourer.desc") + ' ' + $.t("v:misc.rescue") + ' <a href="#6/-18.761/-25.785">' + $.t("v:misc.locations.petesLanding") + '</a>'
+		popup: $.t("armourer.desc") + ' ' + $.t("v:misc.rescue") + ' <a href="#5/115.391/107.094">' + $.t("v:misc.locations.petesLanding") + '</a>'
 	}, { // NW Velen
 		coords: [[104.734, 77.531]],
 		label: $.t("armourer.labelJourneyman"),
