@@ -1181,13 +1181,9 @@ window.mapdata_skellige = {
 		label: $.t("s:signpost.label.abandonedSawmill"),
 		popup: $.t("s:signpost.desc.abandonedSawmill")
 	}, {
-		coords: [[-22.614, 12.986]],
+		coords: [[-21.882, 18.215]],
 		label: $.t("s:signpost.label.gedyneith"),
 		popup: $.t("s:signpost.desc.gedyneith")
-	}, {
-		coords: [[-22.533, 17.996]],
-		label: $.t("s:signpost.label.gedyneith2"),
-		popup: $.t("s:signpost.desc.gedyneith2")
 	}, {
 		coords: [[-13.475, 24.390]],
 		label: $.t("s:signpost.label.whaleGraveyard"),
