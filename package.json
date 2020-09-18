@@ -40,7 +40,7 @@
     "compression": "^1.6.2",
     "ddslick": "^1.0.1",
     "express": "^4.13.4",
-    "file-saver": "github:eligrey/FileSaver.js",
+    "file-saver": "^2.0.2",
     "font-awesome": "^4.6.3",
     "fuse.js": "^2.2.0",
     "grunt": "^1.0.1",

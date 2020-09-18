@@ -134,7 +134,7 @@ module.exports = function (grunt) {
 					'node_modules/nicescroll/jquery.nicescroll.js',
 					'node_modules/leaflet/dist/leaflet-src.js',
 					'node_modules/fuse.js/src/fuse.js',
-					'node_modules/file-saver/FileSaver.js',
+					'node_modules/file-saver/dist/FileSaver.js',
 					'assets/scripts/vendor/**.js', // vendor folder
 				],
 				dest: 'dist/files/scripts/vendor.bundle.js',
