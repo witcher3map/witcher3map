@@ -14,17 +14,17 @@ window.mapdata_white_orchard = {
 		popup: $.t("abandoned.desc")
 	}],
 
-// Alchemy Supplies
+	// Alchemy Supplies
 	alchemy: [],
 
-// Armourer
+	// Armourer
 	armourer: [{
 		coords: [[-69.069, -88.945]],
 		label: $.t("armourer.labelAmateur"),
 		popup: $.t("armourer.desc")
 	}],
 
-// Armourer's Table
+	// Armourer's Table
 	armourerstable: [{
 		coords: [
 			[-25.362, -152.539],
@@ -33,7 +33,7 @@ window.mapdata_white_orchard = {
 		popup: $.t("armourerstable.desc")
 	}],
 
-// Bandit Camp
+	// Bandit Camp
 	banditcamp: [{
 		coords: [
 			[-81.596, -122.168],
@@ -47,20 +47,20 @@ window.mapdata_white_orchard = {
 		popup: $.t("banditcamp.desc")
 	}],
 
-// Barber
+	// Barber
 	barber: [],
 
-// Blacksmith
+	// Blacksmith
 	blacksmith: [{
 		coords: [[-26.981, -151.348]],
 		label: $.t("blacksmith.labelAmateur"),
 		popup: $.t("blacksmith.desc")
 	}],
 
-// Brothel
+	// Brothel
 	brothel: [],
 
-// Entrance
+	// Entrance
 	entrance: [{
 		coords: [[-79.592, -84.199]],
 		label: $.t("entrance.label"),
@@ -71,7 +71,7 @@ window.mapdata_white_orchard = {
 		popup: $.t("entrance.desc")
 	}],
 
-// Grindstone
+	// Grindstone
 	grindstone: [{
 		coords: [
 			[-68.948, -88.006],
@@ -83,7 +83,7 @@ window.mapdata_white_orchard = {
 		popup: $.t("grindstone.desc")
 	}],
 
-// Guarded Treasure
+	// Guarded Treasure
 	guarded: [{
 		coords: [
 			[-74.914, -59.766],
@@ -96,7 +96,7 @@ window.mapdata_white_orchard = {
 		popup: $.t("guarded.desc")
 	}],
 
-// Gwent Player
+	// Gwent Player
 	gwent: [{
 		coords: [[-65.946, -81.387]],
 		label: $.t("w:gwent.label.player"),
@@ -105,7 +105,7 @@ window.mapdata_white_orchard = {
 
 	harbor: [],
 
-// Herbalist
+	// Herbalist
 	herbalist: [{
 		coords: [[-66.267, -132.627]],
 		label: $.t("herbalist.label"),
@@ -116,7 +116,7 @@ window.mapdata_white_orchard = {
 		popup: $.t("w:misc.liberated") + $.t("herbalist.desc")
 	}],
 
-// Hidden Treasure
+	// Hidden Treasure
 	hidden: [{
 		coords: [
 			[-47.220, -111.006],
@@ -127,7 +127,7 @@ window.mapdata_white_orchard = {
 		popup: $.t("hidden.desc")
 	}],
 
-// Innkeep
+	// Innkeep
 	innkeep: [{
 		coords: [[-65.731, -80.068]],
 		label: $.t("w:innkeep.inns.whiteOrchardInn"),
@@ -135,10 +135,10 @@ window.mapdata_white_orchard = {
 		popup: $.t("w:innkeep.desc.foodDrinkAndGwent") + $.t("w:misc.disappears")
 	}],
 
-// Monster Den
+	// Monster Den
 	monsterden: [],
 
-// Monster Nest
+	// Monster Nest
 	monsternest: [{
 		coords: [
 			[-14.264, -95.625],
@@ -149,17 +149,17 @@ window.mapdata_white_orchard = {
 		popup: $.t("monsternest.desc")
 	}],
 
-// Notice Board
+	// Notice Board
 	notice: [{
 		coords: [[-67.643, -89.385]],
 		label: $.t("notice.label"),
 		popup: $.t("notice.desc")
 	}],
 
-// Person in Distress
+	// Person in Distress
 	pid: [],
 
-// Place of Power
+	// Place of Power
 	pop: [{
 		coords: [[-81.492, -106.699]],
 		label: $.t("pop.label"),
@@ -192,7 +192,7 @@ window.mapdata_white_orchard = {
 		popup: $.t("pop.desc")
 	}],
 
-// Point of Interest
+	// Point of Interest
 	poi: [{
 		coords: [[-49.611, 7.998]],
 		label: $.t("w:poi.label.lootableBattlefield"),
@@ -211,7 +211,7 @@ window.mapdata_white_orchard = {
 		popup: $.t("w:poi.desc.crystalSkull")
 	}],
 
-// Shopkeeper
+	// Shopkeeper
 	shopkeeper: [{
 		coords: [[-66.320, -75.674]],
 		label: $.t("w:shopkeeper.label.shopkeeper"),
@@ -222,7 +222,7 @@ window.mapdata_white_orchard = {
 		popup: $.t("w:shopkeeper.desc.alchemyRunesAndFood")
 	}],
 
-// Sign Post
+	// Sign Post
 	signpost: [{
 		coords: [[-78.955, -85.869]],
 		label: $.t("w:signpost.label.abandonedVillage"),
@@ -265,14 +265,14 @@ window.mapdata_white_orchard = {
 		popup: $.t("w:signpost.desc.ransackedVillage")
 	}],
 
-// Smugglers' Cache
+	// Smugglers' Cache
 	smugglers: [{
 		coords: [[-76.720, -31.201]],
 		label: $.t("smugglers.label"),
 		popup: $.t("smugglers.desc")
 	}],
 
-// Spoils of War
+	// Spoils of War
 	spoils: [{
 		coords: [[-12.726, -128.452]],
 		label: $.t("spoils.label"),

@@ -41,7 +41,7 @@ window.mapdata_velen = {
 		popup: $.t("abandoned.desc") + '(lvl 5<span> ' + $.t("v:monsters.bandits") + '</span>)'
 	}],
 
-// Alchemy Supplies
+	// Alchemy Supplies
 	alchemy: [{ //Novigrad
 		coords: [[218.984, 116.516]],
 		label: $.t("v:alchemy.label") + '*',
@@ -57,7 +57,7 @@ window.mapdata_velen = {
 		popup: $.t("v:alchemy.desc")
 	}],
 
-// Armourer
+	// Armourer
 	armourer: [{ // Novigrad
 		coords: [[208.672, 100.828]],
 		label: $.t("armourer.labelJourneyman"),
@@ -85,7 +85,7 @@ window.mapdata_velen = {
 		popup: $.t("v:armourer.yoanaQuest") + $.t("armourer.desc")
 	}],
 
-// Armourer's Table
+	// Armourer's Table
 	armourerstable: [{
 		coords: [
 			// Novigrad
@@ -109,7 +109,7 @@ window.mapdata_velen = {
 		popup: $.t("armourerstable.desc")
 	}],
 
-// Bandit Camp
+	// Bandit Camp
 	banditcamp: [{
 		coords: [
 			// NE Velen
@@ -176,7 +176,7 @@ window.mapdata_velen = {
 		popup: $.t("banditcamp.desc")
 	}],
 
-// Barber
+	// Barber
 	barber: [{
 		coords: [
 			// Novigrad
@@ -193,7 +193,7 @@ window.mapdata_velen = {
 		popup: $.t("barber.desc") + $.t("v:barber.free") + $.t("v:misc.rescue") + ' <a href="#6/-35.362/-127.430">' + $.t("v:barber.rescueLocation") + '</a>'
 	}],
 
-// Blacksmith
+	// Blacksmith
 	blacksmith: [{ // Novigrad
 		coords: [[197.094, 98.766]],
 		label: $.t("blacksmith.labelMaster"),
@@ -225,7 +225,7 @@ window.mapdata_velen = {
 		popup: $.t("blacksmith.desc")
 	}],
 
-// Brothel
+	// Brothel
 	brothel: [{ // Novigrad
 		coords: [[201.547, 98.188]],
 		label: $.t("v:brothel.label.crippledKate"),
@@ -238,7 +238,7 @@ window.mapdata_velen = {
 		popup: $.t("v:brothel.desc")
 	}],
 
-// Entrance
+	// Entrance
 	// todo, entrance to what?
 	entrance: [{ // Novigrad
 		coords: [[229.984, 88.844]],
@@ -338,7 +338,7 @@ window.mapdata_velen = {
 		popup: $.t("entrance.desc")
 	}],
 
-// Grindstone
+	// Grindstone
 	grindstone: [{
 		coords: [
 			// Novigrad
@@ -366,16 +366,16 @@ window.mapdata_velen = {
 		popup: $.t("grindstone.desc")
 	}],
 
-// Guarded Treasure
+	// Guarded Treasure
 	guarded: [{
 		coords: [
 			// NW Velen
-				[107.281, 42.953],
-				[98.313, 40.141],
-				[98.578, 21.844],
+			[107.281, 42.953],
+			[98.313, 40.141],
+			[98.578, 21.844],
 			// SE Velen
-				[49.641, 150.531],
-				[84.875, 123.281]
+			[49.641, 150.531],
+			[84.875, 123.281]
 		],
 		label: $.t("guarded.label"),
 		popup: $.t("guarded.desc", {monster: ""})
@@ -473,7 +473,7 @@ window.mapdata_velen = {
 		popup: $.t("guarded.desc", {monster: "(lvl 8<span> " + $.t("v:monsters.hag.water") + "</span>)"})
 	}],
 
-// Gwent Player
+	// Gwent Player
 	gwent: [{ // Novigrad
 		coords: [[205.438, 99.578]],
 		label: $.t("v:gwent.label.player"),
@@ -701,7 +701,7 @@ window.mapdata_velen = {
 		popup: $.t("v:gwent.desc.quest") + $.t("v:gwent.desc.player")
 	}],
 
-// Harbor
+	// Harbor
 	harbor: [{
 		coords: [
 			// Novigrad
@@ -726,7 +726,7 @@ window.mapdata_velen = {
 		popup: $.t("harbor.desc")
 	}],
 
-// Herbalist
+	// Herbalist
 	herbalist: [{
 		coords: [
 			// Novigrad
@@ -757,7 +757,7 @@ window.mapdata_velen = {
 		popup: $.t("v:misc.liberated") + $.t("herbalist.desc")
 	}],
 
-// Hidden Treasure
+	// Hidden Treasure
 	hidden: [{
 		coords: [
 			// NW Velen
@@ -838,7 +838,7 @@ window.mapdata_velen = {
 		popup: $.t("hidden.guarded", {monster: 'lvl 4<span> ' + $.t("v:monsters.drowners") + '</span>'})
 	}],
 
-// Innkeep
+	// Innkeep
 	innkeep: [{ // Novigrad
 		coords: [[206.000, 96.547]],
 		label: $.t("v:innkeep.inns.theGoldenSturgen"),
@@ -877,7 +877,7 @@ window.mapdata_velen = {
 		popup: $.t("v:innkeep.desc.gwentAndDrink")
 	}],
 
-// Monster Den
+	// Monster Den
 	monsterden: [{
 		coords: [
 			// NE Velen
@@ -897,7 +897,7 @@ window.mapdata_velen = {
 		popup: $.t("monsterden.desc", {monster: '(lvl 16<span> ' + $.t("v:monsters.rabidRockTroll") + '</span> and lvl 18<span> ' + $.t("v:monsters.nekkers") + '</span>)'})
 	}],
 
-// Monster Nest
+	// Monster Nest
 	monsternest: [{
 		coords: [
 			// NE Velen
@@ -977,7 +977,7 @@ window.mapdata_velen = {
 		popup: $.t("monsternest.desc", {monster: '(lvl 21<span> ' + $.t("v:monsters.wyvern") + '</span>)'})
 	}],
 
-// Notice Board
+	// Notice Board
 	notice: [{
 		coords: [
 			// Novigrad
@@ -1011,7 +1011,7 @@ window.mapdata_velen = {
 		popup: $.t("notice.desc")
 	}],
 
-// Person in Distress
+	// Person in Distress
 	pid: [{
 		coords: [
 			// NE Velen
@@ -1035,7 +1035,7 @@ window.mapdata_velen = {
 		popup: $.t("pid.desc", {monster: '(lvl 5<span> ' + $.t("v:monsters.bandits") + '</span>)'})
 	}],
 
-// Place of Power
+	// Place of Power
 	pop: [{ // Novigrad
 		coords: [[230.391, 98.688]],
 		label: $.t("pop.label"),
@@ -1078,7 +1078,7 @@ window.mapdata_velen = {
 		popup: $.t("pop.desc")
 	}],
 
-// Point of Interest
+	// Point of Interest
 	poi: [{ // Novigrad
 		coords: [[210.156, 109.453]],
 		label: $.t("v:poi.label.triss"),
@@ -1247,7 +1247,7 @@ window.mapdata_velen = {
 		popup: $.t("poi.desc.witcherGear.steelsword.wolven.mastercrafted")
 	}],
 
-// Shopkeeper
+	// Shopkeeper
 	shopkeeper: [{ // Novigrad
 		coords: [[208.734, 102.859]],
 		label: $.t("v:shopkeeper.label.bookMerchant"),
@@ -1445,7 +1445,7 @@ window.mapdata_velen = {
 		popup: $.t("v:shopkeeper.desc.weaponsAndCraftingSupplies")
 	}],
 
-// Sign Post
+	// Sign Post
 	signpost: [{ // Novigrad
 		coords: [[207.375, 103.750]],
 		label: $.t("v:signpost.label.hierarchSquare"),
@@ -1836,7 +1836,7 @@ window.mapdata_velen = {
 		popup: $.t("v:signpost.desc.grotto")
 	}],
 
-// Smugglers' Cache
+	// Smugglers' Cache
 	smugglers: [{
 		coords: [
 			// Novigrad
@@ -1851,7 +1851,7 @@ window.mapdata_velen = {
 		popup: $.t("smugglers.desc")
 	}],
 
-// Spoils of War
+	// Spoils of War
 	spoils: [{ // NE Velen
 		coords: [[153.609, 79.109]],
 		label: $.t("spoils.label"),

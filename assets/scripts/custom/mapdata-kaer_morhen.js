@@ -7,13 +7,13 @@ window.mapdata_kaer_morhen = {
 // Abandoned Site
 	abandoned: [],
 
-// Alchemy Supplies
+	// Alchemy Supplies
 	alchemy: [],
 
-// Armourer
+	// Armourer
 	armourer: [],
 
-// Armourer's Table
+	// Armourer's Table
 	armourerstable: [{
 		coords: [
 			[65.813, 68.547],
@@ -22,19 +22,19 @@ window.mapdata_kaer_morhen = {
 		popup: $.t("armourerstable.desc")
 	}],
 
-// Bandit Camp
+	// Bandit Camp
 	banditcamp: [],
 
-// Barber
+	// Barber
 	barber: [],
 
-// Blacksmith
+	// Blacksmith
 	blacksmith: [],
 
-// Brothel
+	// Brothel
 	brothel: [],
 
-// Entrance
+	// Entrance
 	entrance: [{
 		coords: [
 			[135.875, 73.875],
@@ -52,7 +52,7 @@ window.mapdata_kaer_morhen = {
 		popup: $.t("entrance.desc")
 	}],
 
-// Grindstone
+	// Grindstone
 	grindstone: [{
 		coords: [
 			[64.297, 61.328],
@@ -63,7 +63,7 @@ window.mapdata_kaer_morhen = {
 		popup: $.t("grindstone.desc")
 	}],
 
-// Guarded Treasure
+	// Guarded Treasure
 	guarded: [{
 		coords: [[119.313, 74.906]],
 		label: $.t("guarded.label"),
@@ -74,10 +74,10 @@ window.mapdata_kaer_morhen = {
 		popup: $.t("guarded.desc", {monster: "(lvl 20<span> " + $.t("k:monsters.leshen") + "</span>)"})
 	}],
 
-// Gwent Player
+	// Gwent Player
 	gwent: [],
 
-// Harbor
+	// Harbor
 	harbor: [{
 		coords: [
 			[85.938, 60.000],
@@ -87,10 +87,10 @@ window.mapdata_kaer_morhen = {
 		popup: $.t("harbor.desc")
 	}],
 
-// Herbalist
+	// Herbalist
 	herbalist: [],
 
-// Hidden Treasure
+	// Hidden Treasure
 	hidden: [{
 		coords: [
 			[33.531, 73.688],
@@ -104,22 +104,22 @@ window.mapdata_kaer_morhen = {
 		popup: $.t("hidden.desc")
 	}],
 
-// Innkeep
+	// Innkeep
 	innkeep: [],
 
-// Monster Den
+	// Monster Den
 	monsterden: [],
 
-// Monster Nest
+	// Monster Nest
 	monsternest: [],
 
-// Notice Board
+	// Notice Board
 	notice: [],
 
-// Person in Distress
+	// Person in Distress
 	pid: [],
 
-// Place of Power
+	// Place of Power
 	pop: [{
 		coords: [[125.781, 67.891]],
 		label: $.t("pop.label"),
@@ -127,13 +127,13 @@ window.mapdata_kaer_morhen = {
 		popup: $.t("pop.desc")
 	}],
 
-// Point of Interest
+	// Point of Interest
 	poi: [],
 
-// Shopkeeper
+	// Shopkeeper
 	shopkeeper: [],
 
-// Sign Post
+	// Sign Post
 	signpost: [{
 		coords: [[82.109, 65.656]],
 		label: $.t("k:signpost.label.lakesideHut"),
@@ -156,9 +156,9 @@ window.mapdata_kaer_morhen = {
 		popup: $.t("k:signpost.desc.ruinedWatchtower")
 	}],
 
-// Smugglers' Cache
+	// Smugglers' Cache
 	smugglers: [],
 
-// Spoils of War
+	// Spoils of War
 	spoils: []
 };

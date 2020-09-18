@@ -23,7 +23,7 @@ window.mapdata_skellige = {
 		popup: $.t("abandoned.desc") + '(lvl 14<span> ' + $.t("s:monsters.bandits") + '</span>)'
 	}],
 
-// Alchemy Supplies
+	// Alchemy Supplies
 	alchemy: [{
 		coords: [[-20.468, 93.318]],
 		label: $.t("alchemy.label"),
@@ -38,7 +38,7 @@ window.mapdata_skellige = {
 		popup: $.t("s:alchemy.gremist.desc")
 	}],
 
-// Armourer
+	// Armourer
 	armourer: [{ // Hindarsfjall
 		coords: [[-29.037, 98.569]],
 		label: $.t("armourer.labelAmateur"),
@@ -57,7 +57,7 @@ window.mapdata_skellige = {
 		popup: $.t("armourer.desc")
 	}],
 
-// Armourer's Table
+	// Armourer's Table
 	armourerstable: [{
 		coords: [
 			// Hindarsfjall
@@ -77,7 +77,7 @@ window.mapdata_skellige = {
 		popup: $.t("armourerstable.desc")
 	}],
 
-// Bandit Camp
+	// Bandit Camp
 	banditcamp: [{
 		coords: [
 			// Sea
@@ -107,7 +107,7 @@ window.mapdata_skellige = {
 		popup: $.t("banditcamp.desc") + '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'
 	}],
 
-// Barber
+	// Barber
 	barber: [{
 		coords: [
 			// Spikeroog
@@ -118,7 +118,7 @@ window.mapdata_skellige = {
 		popup: $.t("barber.desc")
 	}],
 
-// Blacksmith
+	// Blacksmith
 	blacksmith: [{ // Faroe
 		coords: [[-77.390, 50.142]],
 		label: $.t("blacksmith.labelAmateur"),
@@ -157,10 +157,10 @@ window.mapdata_skellige = {
 		popup: $.t("blacksmith.desc")
 	}],
 
-// Brothel
+	// Brothel
 	brothel: [],
 
-// Entrance
+	// Entrance
 	// todo, entrance to what?
 	entrance: [{ // Faroe
 		coords: [[-78.469, 43.484]],
@@ -292,7 +292,7 @@ window.mapdata_skellige = {
 		popup: $.t("entrance.desc")
 	}],
 
-// Grindstone
+	// Grindstone
 	grindstone: [{
 		coords: [
 			// Faroe
@@ -315,7 +315,7 @@ window.mapdata_skellige = {
 		popup: $.t("grindstone.desc")
 	}],
 
-// Guarded Treasure
+	// Guarded Treasure
 	guarded: [{
 		coords: [
 			// Sea
@@ -409,7 +409,7 @@ window.mapdata_skellige = {
 		popup: $.t("guarded.desc", {monster: '(lvl 18<span> ' + $.t("s:monsters.drowners") + '</span>)'})
 	}],
 
-// Gwent Player
+	// Gwent Player
 	gwent: [{ // Faroe
 		coords: [[-77.455, 49.227]],
 		label: $.t("s:gwent.label.player"),
@@ -547,7 +547,7 @@ window.mapdata_skellige = {
 		popup: $.t("s:gwent.desc.player")
 	}],
 
-// Harbor
+	// Harbor
 	harbor: [{
 		coords: [
 			[-6.075, -40.496],
@@ -572,18 +572,18 @@ window.mapdata_skellige = {
 		popup: $.t("harbor.desc")
 	}],
 
-// Herbalist
+	// Herbalist
 	herbalist: [{
 		coords: [
 			// Ard Skellig
-				[-32.473, 14.722],
-				[-6.097, -34.607],
+			[-32.473, 14.722],
+			[-6.097, -34.607],
 		],
 		label: $.t("herbalist.label"),
 		popup: $.t("alchemy.desc")
 	}],
 
-// Hidden Treasure
+	// Hidden Treasure
 	hidden: [{
 		coords: [
 			// An Skellig
@@ -662,7 +662,7 @@ window.mapdata_skellige = {
 		popup: $.t("hidden.guarded", {monster: '(lvl 16<span> ' + $.t("s:monsters.echidna") + '</span>)'})
 	}],
 
-// Innkeep
+	// Innkeep
 	innkeep: [{ // Faroe
 		coords: [[-77.485, 49.007]],
 		label: $.t("s:innkeep.inns.harvikenInn"),
@@ -695,7 +695,7 @@ window.mapdata_skellige = {
 		popup:  $.t("s:innkeep.desc.foodDrinkAndGwent")
 	}],
 
-// Monster Den
+	// Monster Den
 	monsterden: [{
 		coords: [
 			// Faroe
@@ -722,7 +722,7 @@ window.mapdata_skellige = {
 		popup: $.t("monsterden.desc", {monster: '(lvl 21<span> ' + $.t("s:monsters.alghouls") + '</span>)'})
 	}],
 
-// Monster Nest
+	// Monster Nest
 	monsternest: [{ // An Skellig
 		coords: [[50.458, 26.521]],
 		label: $.t("monsternest.label"),
@@ -745,7 +745,7 @@ window.mapdata_skellige = {
 		popup: $.t("monsternest.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span> and lvl 19<span> ' + $.t("s:monsters.echidna") + '</span>)'})
 	}],
 
-// Notice Board
+	// Notice Board
 	notice: [{
 		coords: [
 			// Hindarsfjall
@@ -764,7 +764,7 @@ window.mapdata_skellige = {
 		popup: $.t("notice.desc")
 	}],
 
-// Person in Distress
+	// Person in Distress
 	pid: [{ // Ard Skellig
 		coords: [[-33.633, -40.298]],
 		label: $.t("pid.label"),
@@ -775,7 +775,7 @@ window.mapdata_skellige = {
 		popup: $.t("pid.desc", {monster: '(lvl 12<span> ' + $.t("s:monsters.bandits") + '</span>)'})
 	}],
 
-// Place of Power
+	// Place of Power
 	pop: [{ // Faroe
 		coords: [[-76.851, 40.891]],
 		label: $.t("pop.label"),
@@ -823,7 +823,7 @@ window.mapdata_skellige = {
 		popup: $.t("s:pop.desc.sunstone")
 	}],
 
-// Point of Interest
+	// Point of Interest
 	poi: [{ // Faroe
 		coords: [[-76.985, 57.788]],
 		label: $.t("s:poi.label.juttaAnDimun"),
@@ -940,7 +940,7 @@ window.mapdata_skellige = {
 		popup: $.t("s:poi.desc.superiorWolvenArmor")
 	}],
 
-// Shopkeeper
+	// Shopkeeper
 	shopkeeper: [{ // Hindarsfjall
 		coords: [[-29.306, 99.492]],
 		label: $.t("s:shopkeeper.label.shopkeeper"),
@@ -1007,7 +1007,7 @@ window.mapdata_skellige = {
 		popup: $.t("s:shopkeeper.desc.mapsCraftingSupplies")
 	}],
 
-// Sign Post
+	// Sign Post
 	signpost: [{ // Faroe
 		coords: [[-77.490, 69.829]],
 		label: $.t("s:signpost.label.trottheim"),
@@ -1234,7 +1234,7 @@ window.mapdata_skellige = {
 		popup: $.t("s:signpost.desc.ancientCrypt")
 	}],
 
-// Smugglers' Cache
+	// Smugglers' Cache
 	smugglers: [{
 		coords: [
 			[-27.722, -50.098],
@@ -1319,7 +1319,7 @@ window.mapdata_skellige = {
 	}],
 
 
-// Spoils of War
+	// Spoils of War
 	spoils: [{
 		coords: [
 

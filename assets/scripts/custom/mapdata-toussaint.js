@@ -5,7 +5,7 @@ window.map_center = [64, 58];
 window.map_mZoom  = 6;
 window.mapdata_toussaint = {
 
-// Abandoned Site
+	// Abandoned Site
 	abandoned: [{
 		coords: [
 			[67.547,51.734],
@@ -24,14 +24,14 @@ window.mapdata_toussaint = {
 		popup: $.t("abandoned.desc")
 	}],
 
-// Alchemy Supplies
+	// Alchemy Supplies
 	alchemy: [{
 		coords: [[52.719,62.609]],
 		label: $.t("alchemy.label"),
 		popup: $.t("alchemy.desc")
 	}],
 
-// Armourer
+	// Armourer
 	armourer: [{
 		coords: [
 			[39.969,81.000],
@@ -49,7 +49,7 @@ window.mapdata_toussaint = {
 		popup: $.t("armourer.desc")
 	}],
 
-// Armourer's Table
+	// Armourer's Table
 	armourerstable: [{
 		coords: [
 			[50.500,64.453],
@@ -65,7 +65,7 @@ window.mapdata_toussaint = {
 		popup: $.t("armourerstable.desc")
 	}],
 
-// Bandit Camp
+	// Bandit Camp
 	banditcamp: [{
 		coords: [
 			[52.188,100.469],
@@ -87,7 +87,7 @@ window.mapdata_toussaint = {
 		popup: $.t("banditcamp.desc")
 	}],
 
-// Barber
+	// Barber
 	barber: [{
 		coords: [
 			[64.531,63.641],
@@ -96,7 +96,7 @@ window.mapdata_toussaint = {
 		popup: $.t("barber.desc")
 	}],
 
-// Hanse Base
+	// Hanse Base
 	hansebase: [{
 		coords: [
 			[116.047,71.625],
@@ -107,7 +107,7 @@ window.mapdata_toussaint = {
 		popup: $.t("t:hansebase.desc")
 	}],
 
-// Blacksmith
+	// Blacksmith
 	blacksmith: [{
 		coords: [
 			[49.813,64.359],
@@ -117,10 +117,10 @@ window.mapdata_toussaint = {
 		popup: $.t("blacksmith.desc")
 	}],
 
-// Brothel
+	// Brothel
 	brothel: [],
 
-// Entrance
+	// Entrance
 	entrance: [{
 		coords: [
 			[86.047,72.938],
@@ -167,7 +167,7 @@ window.mapdata_toussaint = {
 		popup: $.t("entrance.desc")
 	}],
 
-// Grindstone
+	// Grindstone
 	grindstone: [{
 		coords: [
 			[79.625,109.094],
@@ -184,7 +184,7 @@ window.mapdata_toussaint = {
 		popup: $.t("grindstone.desc")
 	}],
 
-// Guarded Treasure
+	// Guarded Treasure
 	guarded: 	[{
 		coords: [
 			[44.781,103.531],
@@ -210,7 +210,7 @@ window.mapdata_toussaint = {
 		popup: $.t("guarded.desc")
 	}],
 
-// Gwent Player
+	// Gwent Player
 	gwent: [{
 		coords: [
 			[51.297,60.781],
@@ -237,7 +237,7 @@ window.mapdata_toussaint = {
 		popup: $.t("t:misc.desc.gwent")
 	}],
 
-// Harbor
+	// Harbor
 	harbor: [{
 		coords: [
 			[47.297,60.734],
@@ -249,7 +249,7 @@ window.mapdata_toussaint = {
 		popup: $.t("harbor.desc")
 	}],
 
-// Herbalist
+	// Herbalist
 	herbalist: [{
 		coords: [
 			[85.328,53.734],
@@ -259,7 +259,7 @@ window.mapdata_toussaint = {
 		popup: $.t("herbalist.desc")
 	}],
 
-// Hidden Treasure
+	// Hidden Treasure
 	hidden: [{
 		coords: [
 			[69.203,42.016],
@@ -282,7 +282,7 @@ window.mapdata_toussaint = {
 		popup: $.t("hidden.desc")
 	}],
 
-// Innkeep
+	// Innkeep
 	innkeep: [{
 		coords: [[75.406,75.188]],
 		label: $.t("t:signpost.label.cockatrice"),
@@ -317,7 +317,7 @@ window.mapdata_toussaint = {
 		popup: $.t("t:innkeep.desc")
 	}],
 
-// Knight Errant in Distress
+	// Knight Errant in Distress
 	kid: [{
 		coords: [
 			[77.156,103.594],
@@ -328,7 +328,7 @@ window.mapdata_toussaint = {
 		popup: $.t("t:kid.desc")
 	}],
 
-// Monster Den
+	// Monster Den
 	monsterden: [{
 		coords: [
 			[65.266,43.938],
@@ -341,7 +341,7 @@ window.mapdata_toussaint = {
 		popup: $.t("monsterden.desc")
 	}],
 
-// Monster Nest
+	// Monster Nest
 	monsternest: [{
 		coords: [
 			[70.156,74.109],
@@ -359,7 +359,7 @@ window.mapdata_toussaint = {
 		popup: $.t("monsternest.desc")
 	}],
 
-// Notice Board
+	// Notice Board
 	notice: [{
 		coords: [
 			// [126.563,69.063], //todo ??
@@ -375,7 +375,7 @@ window.mapdata_toussaint = {
 		popup: $.t("notice.desc")
 	}],
 
-// Person in Distress
+	// Person in Distress
 	pid: [{
 		coords: [
 			[88.750,40.984],
@@ -388,7 +388,7 @@ window.mapdata_toussaint = {
 		popup: $.t("pid.desc")
 	}],
 
-// Place of Power
+	// Place of Power
 	pop: [{
 		coords: [[48.422,100.266]],
 		label: $.t("pop.label"),
@@ -416,7 +416,7 @@ window.mapdata_toussaint = {
 		popup: $.t("pop.desc")
 	}],
 
-// Point of Interest
+	// Point of Interest
 	poi: [{
 		coords: [[69.984,42.813]],
 		label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.manticore") +$.t(" ") + $.t("t:poi.label.steel"),
@@ -466,9 +466,9 @@ window.mapdata_toussaint = {
 		label: $.t("t:misc.desc.witchergear") +$.t(" ") +$.t("t:misc.desc.manticore") +$.t(" ") +$.t("t:poi.label.gauntlets"),
 		popup: $.t("t:poi.desc.gauntlets")
 	}
-],
+	],
 
-// Shopkeeper
+	// Shopkeeper
 	shopkeeper: [{
 		coords: [
 			[85.391,72.594],  //after you cleared the Vineyard
@@ -481,7 +481,7 @@ window.mapdata_toussaint = {
 		popup: $.t("shopkeeper.desc")
 	}],
 
-// Signal Fire
+	// Signal Fire
 	signalfire: [{
 		coords: [
 			[81.219,109.656],
@@ -491,7 +491,7 @@ window.mapdata_toussaint = {
 		popup: $.t("t:signalfire.desc")
 	}],
 
-// Sign Post
+	// Sign Post
 	signpost: [{
 		coords: [[85.578,74.844]],
 		label: $.t("t:signpost.label.dulcineawindmill"),
@@ -678,10 +678,10 @@ window.mapdata_toussaint = {
 		popup: $.t("t:signpost.desc.casteldacciaabandonedestate")
 	}],
 
-// Smugglers' Cache
+	// Smugglers' Cache
 	smugglers: [],
 
-//// (Side) Quests
+	//// (Side) Quests
 	sidequests: [{
 		coords: [[74.60,75.50]],
 		label: $.t("t:sidequests.label.gwenttournment"),
@@ -800,7 +800,7 @@ window.mapdata_toussaint = {
 		popup: $.t("t:sidequests.desc.footsteps")
 	}],
 
-//// Contracts
+	//// Contracts
 	contracts: [{
 		coords: [[74.60,74.50]],
 		label: $.t("t:contracts.label.biggamehunter"),
@@ -819,7 +819,7 @@ window.mapdata_toussaint = {
 		popup: $.t("t:contracts.desc.tufo")
 	}],
 
-//// Vineyard Infestation
+	//// Vineyard Infestation
 	vineyardinfestation: [{
 		coords: [
 			[75.469,62.594],
@@ -832,6 +832,6 @@ window.mapdata_toussaint = {
 		popup: $.t("vineyardinfestation.desc")
 	}],
 
-// Spoils of War
+	// Spoils of War
 	spoils: []
 };

@@ -14,7 +14,7 @@ $.i18n.init(i18noptions, function() {
 		if (namespace == "w") {
 			getMapdata('white_orchard');
 		} else if (namespace == "v") {
-//			getMapdata('velen');
+			//			getMapdata('velen');
 			getMapdata('hos_velen');
 		} else if (namespace == "s") {
 			getMapdata('skellige');
