@@ -1095,6 +1095,10 @@ window.mapdata_velen = {
 		coords: [[89.828, 48.344]],
 		label: $.t("v:poi.label.keira"),
 		popup: $.t("v:poi.desc.keira")
+	}, {
+		coords: [[171.375, 87.250]],
+		label: $.t("v:poi.label.johnVerdunCamp"),
+		popup: $.t("v:poi.desc.johnVerdunCamp")
 	}, { // Velen
 		coords: [[184.469, 62.484]],
 		label: $.t("poi.label.witcherGear"),

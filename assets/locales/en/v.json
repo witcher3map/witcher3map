@@ -131,12 +131,14 @@
 			"dandelionAndZoltan": "Dandelion &amp; Zoltan's Residence",
 			"vilmeriusHospital": "Vilmerius Hospital",
 			"keira": "Keira Metz's Residence"
+			"johnVerdunCamp": "John Verdun's camp"			
 		},
 		"desc": {
 			"triss": "todo",
 			"dandelionAndZoltan": "todo",
 			"vilmeriusHospital": "todo",
 			"keira": "todo"
+			"johnVerdunCamp": "If you saved John Verdun from drowners he will appear here."
 		}
 	},
 	"shopkeeper": {
