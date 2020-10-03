@@ -1161,6 +1161,16 @@ window.mapdata_velen = {
 		popupTitle: $.t("poi.popup.witcherGear.gauntlets.feline.enhanced"),
 		popup: $.t("poi.desc.witcherGear.gauntlets.feline.enhanced")
 	}, {
+		coords: [[99.219, 179.188]],
+		label: $.t("poi.label.witcherGear"),
+		popupTitle: $.t("poi.popup.witcherGear.boots.feline.enhanced"),
+		popup: $.t("poi.desc.witcherGear.boots.feline.enhanced")
+	}, {
+		coords: [[152.313, 169.844]],
+		label: $.t("poi.label.witcherGear"),
+		popupTitle: $.t("poi.popup.witcherGear.trousers.feline.enhanced"),
+		popup: $.t("poi.desc.witcherGear.trousers.feline.enhanced")
+	}, {
 		coords: [[107.375, 84.438]],
 		label: $.t("poi.label.witcherGear"),
 		popupTitle: $.t("poi.popup.witcherGear.trousers.griffin.enhanced"),
