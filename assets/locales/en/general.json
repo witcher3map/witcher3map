@@ -1,10 +1,10 @@
 {
 	"maps": {
-		"velen": "Velen & Novigrad",
-		"skellige": "Skellige Isles",
-		"white_orchard": "White Orchard",
-		"kaer_morhen": "Kaer Morhen",
-		"toussaint": "Toussaint"
+		"velen": "ولن و نویگراد",
+		"skellige": "جزایر اسکلگه",
+		"white_orchard": "وایت ارکارد",
+		"kaer_morhen": "کر مورهن",
+		"toussaint": "توسانت"
 	},
 	"home": {
 		"tagline": "Unofficial The Witcher 3 Interactive Maps<br>(Currently under development)",
