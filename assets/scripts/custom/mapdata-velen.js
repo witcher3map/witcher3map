@@ -190,7 +190,7 @@ window.mapdata_velen = {
 	}, { // NW Velen
 		coords: [[81.891, 69.703]],
 		label: $.t("barber.label"),
-		popup: $.t("barber.desc") + $.t("v:barber.free") + $.t("v:misc.rescue") + ' <a href="#6/-35.362/-127.430">' + $.t("v:barber.rescueLocation") + '</a>'
+		popup: $.t("barber.desc") + $.t("v:barber.free") + $.t("v:misc.rescue") + ' <a href="#5/102.500/33.828">' + $.t("v:barber.rescueLocation") + '</a>'
 	}],
 
 	// Blacksmith
