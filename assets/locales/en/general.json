@@ -164,7 +164,8 @@
 	},
 	"monsternest": {
 		"label": "Monster Nest",
-		"desc": "Destroy monster nests with Grapeshot or Dancing Star bombs __monster__"
+		"desc": "Destroy monster nests with Grapeshot or Dancing Star bombs __monster__",
+		"label*": "Monster Nest*"
 	},
 	"monsters": {
 		"alghoul": "Alghoul",

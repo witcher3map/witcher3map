@@ -1,4 +1,22 @@
 {
+	"monsters": {
+		"archespore": "Archespore",
+		"barghest": "Barghest",
+		"giantCentipede": "Giant Centipede",
+		"kikimore": {
+			"kikimores": "Kikimores",
+			"warrior": "Kikimore Warrior",
+			"worker": "Kikimore Worker"
+		},
+		"panther": "Panther",
+		"slyzard": "Slyzard",
+		"vampires": {
+			"bruxa": "Bruxa",
+			"fleder": "Fleder",
+			"garkain": "Garkain"
+		},
+		"werewolf": "Werewolf"
+	},
 	"armourer": {
 		"lafargue": "Grandmaster Smith (Lafargue)",
 		"lafargueQuest": "Available after finishing \"Master Master Master Master!\" (lvl 40) quest. "
