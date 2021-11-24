@@ -187,27 +187,39 @@ window.mapdata_toussaint = {
 	// Guarded Treasure
 	guarded: 	[{
 		coords: [
-			[44.781,103.531],
 			[46.063,88.219],
 			[37.375,63.016],
 			[66.922,91.969],
 			[111.828,72.859],
-			[37.875,93.297],
 			[89.641,93.328],
 			[99.234,79.234],
 			[59.875,111.578],
-			[69.859,81.422],
 			[73.344,109.203],
 			[73.875,113.547],
 			[76.563,113.656],
 			[106.391,86.313],
 			[114.172,75.891],
 			[79.594,67.422],
-			[84.938,40.813],
-			[86.094,43.375],
+			[84.938,40.813]
 		],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc")
+		popup: $.t("guarded.desc", {monster: ""})
+	}, { // central Toussaint
+		coords: [[69.859,81.422]],
+		label: $.t("guarded.label"),
+		popup: $.t("guarded.desc", {monster: "(lvl 44<span> " + $.t("t:monsters.barghest") + "s</span>)"})
+	}, { // SE Toussaint
+		coords: [[37.875,93.297]],
+		label: $.t("guarded.label"),
+		popup: $.t("guarded.desc", {monster: "(lvl 40<span> " + $.t("general:monsters.foglets") + "</span>)"})
+	}, {
+		coords: [[44.781,103.531]],
+		label: $.t("guarded.label"),
+		popup: $.t("guarded.desc", {monster: "(lvl 47<span> " + $.t("t:monsters.vampires.garkain") + " & 2 lvl 44 " + $.t("t:monsters.vampires.fleder") + "</span>)"})
+	}, { // E Toussaint
+		coords: [[86.094,43.375]],
+		label: $.t("guarded.label"),
+		popup: $.t("guarded.desc", {monster: "(lvl 46<span> " + $.t("general:monsters.rabidRockTroll") + "</span>)"})
 	}],
 
 	// Gwent Player
@@ -330,33 +342,76 @@ window.mapdata_toussaint = {
 
 	// Monster Den
 	monsterden: [{
-		coords: [
-			[65.266,43.938],
-			[75.656,89.453],
-			[96.047,100.828],
-			[107.422,76.516],
-			[89.453,108.266],
-		],
+		coords: [],
 		label: $.t("monsterden.label"),
 		popup: $.t("monsterden.desc")
+	}, { // Central
+		coords: [[75.656,89.453]],
+		label: $.t("monsterden.label"),
+		popup: $.t("monsterden.desc", {monster: '(lvl 44<span> ' + $.t("t:monsters.kikimore.warrior") + " and lvl 44 " + $.t("t:monsters.kikimore.worker") + 's</span>)'})
+	}, { // N
+		coords: [[107.422,76.516]],
+		label: $.t("monsterden.label"),
+		popup: $.t("monsterden.desc", {monster: '(lvl ?<span> ' + $.t("t:monsters.archespore") + '</span>)'})
+	}, { // E
+		coords: [[89.453,108.266]],
+		label: $.t("monsterden.label"),
+		popup: $.t("monsterden.desc", {monster: '(lvl 44<span> ' + $.t("t:monsters.vampires.garkain") + " and lvl 44 " + $.t("t:monsters.vampires.fleder") + '</span>)'})
+	}, {
+		coords: [[96.047,100.828]],
+		label: $.t("monsterden.label"),
+		popup: $.t("monsterden.desc", {monster: '(lvl 48<span> ' + $.t("t:monsters.werewolf") + " and lvl 35 " + $.t("general:monsters.wolves") + '</span>)'})
+	}, { // W
+		coords: [[65.266,43.938]],
+		label: $.t("monsterden.label"),
+		popup: $.t("monsterden.desc", {monster: '(lvl 36<span> ' + $.t("t:monsters.kikimore.warrior") + " and lvl 36 " + $.t("t:monsters.kikimore.worker") + 's</span>)'})
 	}],
 
 	// Monster Nest
 	monsternest: [{
-		coords: [
-			[70.156,74.109],
-			[48.188,84.078],
-			[58.813,41.594],
-			[32.188,79.984],
-			[33.250,84.797],
-			[93.188,110.281],
-			[76.328,86.969],
-			[68.766,115.000],
-			[75.484,40.313],
-			[75.328,40.578],
-		],
+		coords: [],
 		label: $.t("monsternest.label"),
 		popup: $.t("monsternest.desc")
+	}, { // central
+		coords: [[76.328,86.969]],
+		label: $.t("monsternest.label"),
+		popup: $.t("monsternest.desc", {monster: "(<span>" + $.t("t:monsters.kikimore.kikimores") + "</span>)"})
+	}, {
+		coords: [[70.156,74.109]],
+		label: $.t("monsternest.label"),
+		popup: $.t("monsternest.desc", {monster: "(lvl 37<span>" + $.t("t:monsters.archespore") + "</span>)"})
+	}, { // NE
+		coords: [[93.188,110.281]],
+		label: $.t("monsternest.label"),
+		popup: $.t("monsternest.desc", {monster: "(lvl 45<span> " + $.t("general:monsters.forktail") + "</span>)"})
+	}, { // E
+		coords: [[68.766,115.000]],
+		label: $.t("monsternest.label*"),
+		popup: $.t("monsternest.desc", {monster: "(lvl ?<span> " + $.t("t:monsters.slyzard") + "</span>) </br>*" + $.t("t:contracts.label.bonvineblues")})
+	}, { // S
+		coords: [[48.188,84.078]],
+		label: $.t("monsternest.label"),
+		popup: $.t("monsternest.desc", {monster: "(lvl 37<span> " + $.t("t:monsters.archespore") + "</span>)"})
+	}, {
+		coords: [[33.250,84.797]],
+		label: $.t("monsternest.label"),
+		popup: $.t("monsternest.desc", {monster: "(lvl 38<span> " + $.t("t:monsters.giantCentipede") + "</span>)"})
+	}, {
+		coords: [[32.188,79.984]],
+		label: $.t("monsternest.label"),
+		popup: $.t("monsternest.desc", {monster: "(lvl 43<span> " + $.t("t:monsters.giantCentipede") + "</span>)"})
+	}, { // W
+		coords: [[75.484,40.313]],
+		label: $.t("monsternest.label*"),
+		popup: $.t("monsternest.desc", {monster: "(lvl ?<span> " + $.t("t:monsters.giantCentipede") + "</span>) </br>*" + $.t("t:contracts.label.biggamehunter")})
+	}, {
+		coords: [[75.328,40.578]],
+		label: $.t("monsternest.label*"),
+		popup: $.t("monsternest.desc", {monster: "(lvl ?<span> " + $.t("t:monsters.giantCentipede") + "</span>) </br>*" + $.t("t:contracts.label.biggamehunter")})
+	}, {
+		coords: [[58.813,41.594]],
+		label: $.t("monsternest.label"),
+		popup: $.t("monsternest.desc", {monster: "(lvl 44<span> " + $.t("general:monsters.harpies") + "</span>)"})
 	}],
 
 	// Notice Board
@@ -785,7 +840,7 @@ window.mapdata_toussaint = {
 	}, {
 		coords: [[92.063,63.344]],
 		label: $.t("t:sidequests.label.bigfeet2"),
-		label: $.t("t:sidequests.label.footsteps"),
+		popup: $.t("t:sidequests.desc.footsteps")
 	}, {
 		coords: [[89.781,56.984]],
 		label: $.t("t:sidequests.label.bigfeet3"),
