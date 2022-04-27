@@ -43,7 +43,7 @@
     "file-saver": "^2.0.2",
     "font-awesome": "^4.6.3",
     "fuse.js": "^2.2.0",
-    "grunt": "^1.0.1",
+    "grunt": "^1.5.2",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-csslint": "^2.0.0",
