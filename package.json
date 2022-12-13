@@ -39,7 +39,7 @@
   "dependencies": {
     "compression": "^1.6.2",
     "ddslick": "^1.0.1",
-    "express": "^4.13.4",
+    "express": "^4.17.3",
     "file-saver": "^2.0.2",
     "font-awesome": "^4.6.3",
     "fuse.js": "^2.2.0",
