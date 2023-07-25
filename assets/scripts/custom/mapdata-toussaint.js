@@ -785,7 +785,7 @@ window.mapdata_toussaint = {
 	}, {
 		coords: [[92.063,63.344]],
 		label: $.t("t:sidequests.label.bigfeet2"),
-		label: $.t("t:sidequests.label.footsteps"),
+		label: $.t("t:sidequests.desc.footsteps"),
 	}, {
 		coords: [[89.781,56.984]],
 		label: $.t("t:sidequests.label.bigfeet3"),
